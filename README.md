@@ -12,6 +12,8 @@
 
 ****
 
+:video_game: &nbsp;Все вопросы можно проходить в игровом формате, с опытом, уровнями, достижениями и интервальными повторениями: [DevOps Quest](https://va1halla.github.io/devops-exercises/quest/) ([как запустить](quest/README.md))
+
 <!-- ALL-TOPICS-LIST:START -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
