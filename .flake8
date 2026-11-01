@@ -1,0 +1,3 @@
+[flake8]
+# Solutions imported from the python-exercises repository are kept as-is
+exclude = .git,__pycache__,topics/python/exercises,topics/python/solutions
