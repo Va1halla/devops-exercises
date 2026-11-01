@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DevOps Quest</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;700&family=Unbounded:wght@600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="status" id="status"></header>
+  <nav class="tabs" id="tabs" aria-label="Разделы">
+    <button class="tab" data-go="home">Карта тем</button>
+    <button class="tab" data-go="achievements">Достижения</button>
+    <button class="tab" data-go="profile">Профиль</button>
+  </nav>
+  <main id="main"></main>
+</div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<noscript>Для DevOps Quest нужен JavaScript.</noscript>
+<script src="vendor/marked.min.js"></script>
+<script src="vendor/purify.min.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
