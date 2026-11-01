@@ -1,13 +1,13 @@
-## AWS EC2 - EBS Volume Creation
+## AWS EC2 - создание тома EBS
 
-### Requirements
+### Требования
 
-One EC2 instance that you can get rid of :)
+Один экземпляр EC2, который не жалко удалить :)
 
-### Objectives
+### Цели
 
-1. Create a volume in the same AZ as your instance, with the following properties:
-  1. gp2 volume type
-  2. 4 GiB size
-2. Once created, attach it to your EC2 instance
-3. Remove your EC2 instance. What happened to the EBS volumes attached to the EC2 instance?
+1. Создать том в той же AZ, что и экземпляр, со следующими параметрами:
+  1. тип тома gp2
+  2. размер 4 GiB
+2. После создания подключить его к экземпляру EC2
+3. Удалить экземпляр EC2. Что произошло с томами EBS, подключёнными к экземпляру EC2?

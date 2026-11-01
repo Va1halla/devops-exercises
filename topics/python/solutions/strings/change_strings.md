@@ -1,7 +1,7 @@
-## Change Strings
+## Изменение строк
 
-Modify the string "cat" to "bat"
+Изменить строку "cat" на "bat"
 
-### Soltuion
+### Решение
 
-`"cat".replace("c", "b")` OR `"b" + "cat"[1:]`
+`"cat".replace("c", "b")` ИЛИ `"b" + "cat"[1:]`

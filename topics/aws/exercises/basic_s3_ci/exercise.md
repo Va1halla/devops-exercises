@@ -1,9 +1,9 @@
-# Basic CI with S3
+# Простой CI с S3
 
-## Objectives
+## Цели
 
-1. Create a new S3 bucket
-2. Add to the bucket index.html file and make it a static website
-3. Create a GitHub repo and put the index.html there
-4. Make sure to connect your AWS account to GitHub
-5. Create a CI pipeline in AWS to publish the updated index.html from GitHub every time someone makes a change to the repo, to a specific branch
+1. Создать новый бакет S3
+2. Добавить в бакет файл index.html и сделать его статическим сайтом
+3. Создать репозиторий на GitHub и положить туда index.html
+4. Подключить свой аккаунт AWS к GitHub
+5. Создать в AWS CI-пайплайн, который публикует обновлённый index.html из GitHub каждый раз, когда кто-то вносит изменения в определённую ветку репозитория

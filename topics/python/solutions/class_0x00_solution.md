@@ -1,6 +1,6 @@
-## Class 0x00 - Solution
+## Класс 0x00 — решение
 
-1. write a simple class that has two attributes of which one has a default value and has two methods
+1. написать простой класс с двумя атрибутами, один из которых имеет значение по умолчанию, и с двумя методами
 
 ```python
 from typing import Optional
@@ -47,7 +47,7 @@ student1.change_department("CS")
 print(student1.department)
 ```
 
-Output
+Вывод
 
 ```
 Name is Ayobami, I'm in department Statistics

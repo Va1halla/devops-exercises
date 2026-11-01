@@ -1,40 +1,40 @@
-# Elasticsearch, Kibana and AWS
+# Elasticsearch, Kibana и AWS
 
-Your task is to build an elasticsearch cluster along with Kibana dashboard on one of the following clouds:
+Задача — построить кластер elasticsearch вместе с дашбордом Kibana в одном из следующих облаков:
 
 * AWS
 * OpenStack
 * Azure
 * GCP
 
-You have to describe in details (preferably with some drawings) how you are going to set it up.
-Please describe in detail:
+Нужно подробно описать (желательно с рисунками), как вы собираетесь это настроить.
+Опишите подробно:
 
-- How you scale it up or down
-- How you quickly (less 20 minutes) provision the cluster
-- How you apply security policy for access control
-- How you transfer the logs from the app to ELK
-- How you deal with multi apps running in different regions
+- Как масштабировать кластер вверх или вниз
+- Как быстро (менее чем за 20 минут) развернуть кластер
+- Как применить политику безопасности для управления доступом
+- Как передавать логи из приложения в ELK
+- Как работать с несколькими приложениями, запущенными в разных регионах
 
-# Solution
+# Решение
 
-This one out of many possible solutions. This solution is relying heavily on AWS.
+Это одно из множества возможных решений. Оно в значительной степени опирается на AWS.
 
-* Create a VPC with subnet so we can place Elasticsearch node(s) in internal environment only.
-  If required, we will also setup NAT for public access. 
+* Создать VPC с подсетью, чтобы разместить узел(ы) Elasticsearch только во внутренней среде.
+  При необходимости также настроим NAT для публичного доступа. 
 
-* Create an IAM role for the access to the cluster. Also, create a separate role for admin access.
+* Создать IAM-роль для доступа к кластеру. Также создать отдельную роль для административного доступа.
 
-* To provision the solution quickly, we will use the elasticsearch service directly from AWS for production deployment.
-  This way we also cover multiple AZs. As for authentication, we either use Amazon cognito or the organization LDAP server.
+* Чтобы быстро развернуть решение, для production-развёртывания используем сервис elasticsearch непосредственно от AWS.
+  Так мы также покрываем несколько AZ. Для аутентификации используем либо Amazon cognito, либо LDAP-сервер организации.
 
-* To transfer data, we will have to install logstash agent on the instances. The agent will be responsible
-  for pushing the data to elasticsearch.
+* Для передачи данных нужно установить агент logstash на инстансы. Агент будет отвечать
+  за отправку данных в elasticsearch.
 
-* For monitoring we will use:
+* Для мониторинга используем:
 
-    * Cloud watch to monitor cluster resource utilization
-    * Cloud metrics dashboard
+    * Cloud watch для мониторинга использования ресурсов кластера
+    * Дашборд Cloud metrics
 
-* If access required from multiple regions we will transfer all the data to S3 which will allow us to view the data
-  from different regions and consolidate it in one dashboard
+* Если требуется доступ из нескольких регионов, будем передавать все данные в S3, что позволит просматривать данные
+  из разных регионов и объединить их в одном дашборде

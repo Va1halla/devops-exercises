@@ -1,20 +1,20 @@
-## EC2 - Create an AMI
+## EC2 - создание AMI
 
-### Requirements
+### Требования
 
-One running EC2 instance
+Один работающий экземпляр EC2
 
-### Objectives
+### Цели
 
-1. Make some changes in the operating system of your instance (create files, modify files, ...)
-2. Create an AMI image from running EC2 instance
-3. Launch a new instance using the custom AMI you've created
+1. Внести изменения в операционную систему экземпляра (создать файлы, изменить файлы, ...)
+2. Создать образ AMI из работающего экземпляра EC2
+3. Запустить новый экземпляр из созданного собственного AMI
 
-### Solution
+### Решение
 
-1. Connect to your EC2 instance (ssh, console, ...)
-2. Make some changes in the operating system
-3. Go to EC2 service
-4. Right click on the instance where you made some changes -> Image and templates ->  Create image
-5. Give the image a name and click on "Create image"
-6. Launch new instance and choose the image you've just created
+1. Подключиться к экземпляру EC2 (ssh, консоль, ...)
+2. Внести изменения в операционную систему
+3. Перейти в сервис EC2
+4. Щёлкнуть правой кнопкой по экземпляру, в котором были изменения -> Image and templates ->  Create image
+5. Задать имя образа и нажать "Create image"
+6. Запустить новый экземпляр и выбрать только что созданный образ

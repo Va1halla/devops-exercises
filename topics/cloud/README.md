@@ -1,118 +1,118 @@
-## Cloud
+## Облако (Cloud)
 
 <details>
-<summary>What is Cloud Computing? What is a Cloud Provider?</summary><br><b>
+<summary>Что такое облачные вычисления (Cloud Computing)? Что такое облачный провайдер (Cloud Provider)?</summary><br><b>
 
-Cloud computing refers to the delivery of on-demand computing services 
-over the internet on a pay-as-you-go basis.
+Облачные вычисления — это предоставление вычислительных услуг по запросу 
+через интернет с оплатой по факту использования (pay-as-you-go).
 
-In simple words, Cloud computing is a service that lets you use any computing
-service such as a server, storage, networking, databases, and intelligence, 
-right through your browser without owning anything. You can do anything you 
-can think of unless it doesn’t require you to stay close to your hardware.
+Проще говоря, облачные вычисления — это сервис, который позволяет использовать любые вычислительные
+услуги, такие как серверы, хранилища, сети, базы данных и аналитика, 
+прямо через браузер, ничем не владея. Можно делать всё, что угодно, 
+если только это не требует физической близости к оборудованию.
 
-Cloud service providers are companies that establish public clouds, manage private clouds, or offer on-demand cloud computing components (also known as cloud computing services) like Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service(SaaS). Cloud services can reduce business process costs when compared to on-premise IT.
+Облачные провайдеры — это компании, которые создают публичные облака, управляют частными облаками или предлагают компоненты облачных вычислений по запросу (также известные как облачные сервисы), такие как Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS) и Software-as-a-Service(SaaS). Облачные сервисы могут снизить затраты на бизнес-процессы по сравнению с локальной (on-premise) IT-инфраструктурой.
 </b></details>
 
 <details>
-<summary>What are the advantages of cloud computing? Mention at least 3 advantages</summary><br><b>
+<summary>Каковы преимущества облачных вычислений? Назовите как минимум 3 преимущества</summary><br><b>
 
-* Pay as you go: you are paying only for what you are using. No upfront payments and payment stops when resources are no longer used.
-* Scalable: resources are scaled down or up based on demand
-* High availability: resources and applications provide seamless experience, even when some services are down
-* Disaster recovery 
+* Оплата по факту использования (pay as you go): платите только за то, что используете. Нет предоплаты, и оплата прекращается, когда ресурсы больше не используются.
+* Масштабируемость: ресурсы масштабируются вниз или вверх в зависимости от потребности
+* Высокая доступность: ресурсы и приложения работают бесперебойно, даже когда некоторые сервисы недоступны
+* Аварийное восстановление (disaster recovery) 
 </b></details>
 
 <details>
-<summary>True or False? Cloud computing is a consumption-based model (users only pay for for resources they use)</summary><br><b>
+<summary>Правда или ложь? Облачные вычисления — это модель, основанная на потреблении (пользователи платят только за те ресурсы, которые используют)</summary><br><b>
 
-True
+Правда
 </b></details>
 
 <details>
-<summary>What types of Cloud Computing services are there?</summary><br><b>
+<summary>Какие типы облачных сервисов существуют?</summary><br><b>
 
-IAAS - Infrastructure as a Service
-PAAS - Platform as a Service
-SAAS - Software as a Service
+IAAS - Infrastructure as a Service (инфраструктура как услуга)
+PAAS - Platform as a Service (платформа как услуга)
+SAAS - Software as a Service (программное обеспечение как услуга)
 </b></details>
 
 <details>
-<summary>Explain each of the following and give an example:
+<summary>Объясните каждое из следующих понятий и приведите пример:
 
   * IAAS
   * PAAS
   * SAAS</summary><br><b>
-  * IAAS - Users have control over complete Operating System and don't need to worry about the physical resources, which is managed by Cloud Service Provider.
-  * PAAS - CLoud Service Provider takes care of Operating System, Middlewares and users only need to focus on our Data and Application.
-  * SAAS - A cloud based method to provide software to users, software logics running on cloud, can be run on-premises or managed by Cloud Service Provider.
+  * IAAS - пользователи полностью контролируют операционную систему и не беспокоятся о физических ресурсах, которыми управляет облачный провайдер.
+  * PAAS - облачный провайдер берёт на себя операционную систему и промежуточное ПО (middleware), а пользователям нужно сосредоточиться только на своих данных и приложении.
+  * SAAS - облачный способ предоставления ПО пользователям: логика ПО работает в облаке и может выполняться локально (on-premises) или управляться облачным провайдером.
 </b></details>
 
 <details>
-<summary>What types of clouds (or cloud deployments) are there?</summary><br><b>
+<summary>Какие типы облаков (или облачных развёртываний) существуют?</summary><br><b>
 
-  * Public - Cloud services sharing computing resources among multiple customers
-  * Private - Cloud services having computing resources limited to specific customer or organization, managed by third party or organizations itself
-  * Hybrid - Combination of public and private clouds
+  * Public (публичное) - облачные сервисы, разделяющие вычислительные ресурсы между множеством клиентов
+  * Private (частное) - облачные сервисы, вычислительные ресурсы которых ограничены конкретным клиентом или организацией; управляются третьей стороной или самой организацией
+  * Hybrid (гибридное) - сочетание публичного и частного облаков
 </b></details>
 
 <details>
-<summary>What are the differences between Cloud Providers and On-Premise solution?</summary><br><b>
+<summary>В чём различия между облачными провайдерами и локальным (On-Premise) решением?</summary><br><b>
 
-In cloud providers, someone else owns and manages the hardware, hire the relevant infrastructure teams and pays for real-estate (for both hardware and people). You can focus on your business.
+В случае облачных провайдеров кто-то другой владеет оборудованием и управляет им, нанимает соответствующие инфраструктурные команды и платит за помещения (и для оборудования, и для людей). Вы можете сосредоточиться на своём бизнесе.
 
-In On-Premise solution, it's quite the opposite. You need to take care of hardware, infrastructure teams and pay for everything which can be quite expensive. On the other hand it's tailored to your needs.
+В On-Premise решении всё наоборот. Нужно самостоятельно заботиться об оборудовании, инфраструктурных командах и платить за всё, что может быть довольно дорого. С другой стороны, такое решение подстроено под ваши нужды.
 </b></details>
 
 <details>
-<summary>What is Serverless Computing?</summary><br><b>
+<summary>Что такое бессерверные вычисления (Serverless Computing)?</summary><br><b>
 
-The main idea behind serverless computing is that you don't need to manage the creation and configuration of server. All you need to focus on is splitting your app into multiple functions which will be triggered by some actions.
+Основная идея бессерверных вычислений в том, что не нужно управлять созданием и настройкой сервера. Нужно лишь разбить приложение на несколько функций, которые будут запускаться определёнными действиями.
 
-It's important to note that:
+Важно отметить:
 
-* Serverless Computing is still using servers. So saying there are no servers in serverless computing is completely wrong
-* Serverless Computing allows you to have a different paying model. You basically pay only when your functions are running and not when the VM or containers are running as in other payment models
+* Serverless Computing всё равно использует серверы. Поэтому утверждение, что в бессерверных вычислениях нет серверов, совершенно неверно
+* Serverless Computing позволяет использовать другую модель оплаты. По сути, вы платите только тогда, когда работают ваши функции, а не когда работают VM или контейнеры, как в других моделях оплаты
 </b></details>
 
 <details>
-<summary>Can we replace any type of computing on servers with serverless?</summary><br><b>
+<summary>Можно ли заменить любой тип вычислений на серверах бессерверными?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Is there a difference between managed service to SaaS or is it the same thing?</summary><br><b>
+<summary>Есть ли разница между управляемым сервисом (managed service) и SaaS, или это одно и то же?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is auto scaling?</summary><br><b>
+<summary>Что такое автомасштабирование (auto scaling)?</summary><br><b>
 
-AWS definition: "AWS Auto Scaling monitors your applications and automatically adjusts capacity to maintain steady, predictable performance at the lowest possible cost"
+Определение AWS: «AWS Auto Scaling отслеживает ваши приложения и автоматически регулирует мощности, чтобы поддерживать стабильную, предсказуемую производительность при минимально возможных затратах»
 
-Read more about auto scaling [here](https://aws.amazon.com/autoscaling)
+Подробнее об автомасштабировании [здесь](https://aws.amazon.com/autoscaling)
 </b></details>
 
 <details>
-<summary>What is the difference between horizontal scaling and vertical scaling?</summary><br><b>
+<summary>В чём разница между горизонтальным и вертикальным масштабированием?</summary><br><b>
 
-[AWS Docs](https://wa.aws.amazon.com/wellarchitected/2020-07-02T19-33-23/wat.concept.horizontal-scaling.en.html):
+[Документация AWS](https://wa.aws.amazon.com/wellarchitected/2020-07-02T19-33-23/wat.concept.horizontal-scaling.en.html):
 
-A "horizontally scalable" system is one that can increase capacity by adding more computers to the system. This is in contrast to a "vertically scalable" system, which is constrained to running its processes on only one computer; in such systems the only way to increase performance is to add more resources into one computer in the form of faster (or more) CPUs, memory or storage.
+«Горизонтально масштабируемая» система — это система, которая может увеличивать мощность путём добавления в неё новых компьютеров. Это противоположность «вертикально масштабируемой» системе, которая ограничена выполнением своих процессов только на одном компьютере; в таких системах единственный способ повысить производительность — добавить ресурсы в этот компьютер в виде более быстрых (или дополнительных) CPU, памяти или хранилища.
 
-Horizontally scalable systems are oftentimes able to outperform vertically scalable systems by enabling parallel execution of workloads and distributing those across many different computers.
+Горизонтально масштабируемые системы зачастую способны превзойти по производительности вертикально масштабируемые за счёт параллельного выполнения рабочих нагрузок и их распределения между множеством различных компьютеров.
 </b></details>
 
 <details>
-<summary>True or False? Auto Scaling is about adding resources (such as instances) and not about removing resource</summary><br><b>
+<summary>Правда или ложь? Auto Scaling — это добавление ресурсов (например, инстансов), а не их удаление</summary><br><b>
 
-False. Auto scaling adjusts capacity and this can mean removing some resources based on usage and performances.
+Ложь. Автомасштабирование регулирует мощности, и это может означать удаление некоторых ресурсов в зависимости от использования и производительности.
 </b></details>
 
-#### Cloud - Security
+#### Облако - Безопасность
 
 <details>
-<summary>How to secure instances in the cloud?</summary><br><b>
+<summary>Как защитить инстансы в облаке?</summary><br><b>
 
-  * Instance should have minimal permissions needed. You don't want an instance-level incident to become an account-level incident
-  * Instances should be accessed through load balancers or bastion hosts. In other words, they should be off the internet (in a private subnet behind a NAT). 
-  * Using latest OS images with your instances (or at least apply latest patches)
+  * У инстанса должны быть минимально необходимые права. Нельзя допустить, чтобы инцидент на уровне инстанса превратился в инцидент на уровне аккаунта
+  * Доступ к инстансам должен осуществляться через балансировщики нагрузки или bastion-хосты. Иными словами, они не должны быть доступны из интернета (находиться в приватной подсети за NAT). 
+  * Использовать последние образы ОС для инстансов (или как минимум устанавливать последние патчи)
   </b></details>

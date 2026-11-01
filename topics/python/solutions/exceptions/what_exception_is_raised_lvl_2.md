@@ -1,9 +1,9 @@
-## What Exception is Raised? - Level 2
+## Какое исключение будет выброшено? — уровень 2
 
-For each of the following statement, specify what exception will be raised
+Для каждого из следующих выражений указать, какое исключение будет выброшено
 
 1. `chars = "abc";chars[0]='h'`
 
-### Solution
+### Решение
 
 1. TypeError

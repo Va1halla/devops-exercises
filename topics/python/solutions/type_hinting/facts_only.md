@@ -1,8 +1,8 @@
-## Facts Only - Solution
+## Только факты — решение
 
-Which of the following statements regarding type hinting is true?
+Какие из следующих утверждений об аннотациях типов (type hinting) верны?
 
-1. Type hinting is a special syntax used in functions and variables declarations to provide the developer with the information on the type of the variable - True
-2. Type Hinting is a fairly new feature of Python, introduced in Python 3 - True. It was introduced with Python 3.5 to be accurate
-3. Python enforces type hints meaning you can set a variable with the type hint of string with an integer value - False. Python doesn't enforce type hints, meaning you can still change the variable type even with specific type hint
+1. Аннотации типов — это специальный синтаксис, используемый в объявлениях функций и переменных, чтобы сообщить разработчику информацию о типе переменной — верно
+2. Аннотации типов — сравнительно новая возможность Python, появившаяся в Python 3 — верно. Если точнее, она появилась в Python 3.5
+3. Python принудительно проверяет аннотации типов, то есть переменной с аннотацией типа string можно присвоить целочисленное значение — неверно. Python не проверяет аннотации типов принудительно, то есть тип переменной можно изменить даже при наличии конкретной аннотации
 

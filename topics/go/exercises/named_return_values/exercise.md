@@ -1,8 +1,8 @@
-# Names Return Values
+# Именованные возвращаемые значения
 
-## Objectives
+## Задачи
 
-1. What is the result of the following code?
+1. Каков результат выполнения следующего кода?
 
 ```Go
 package main
@@ -19,9 +19,9 @@ func main() {
 }
 ```
 
-2. Fix the code above
+2. Исправьте код выше
 
-3. Will the following code work properly? Explain
+3. Будет ли следующий код работать правильно? Объясните
 
 ```Go
 package main
@@ -38,6 +38,6 @@ func main() {
 }
 ```
 
-## Solution
+## Решение
 
-Click [here](solution.md) to view the solution
+Нажмите [здесь](solution.md), чтобы посмотреть решение

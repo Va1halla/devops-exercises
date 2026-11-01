@@ -1,9 +1,9 @@
-# Rename S3 Bucket
+# Переименование S3-бакета
 
-## Requirements
+## Требования
 
-* An existing S3 bucket tracked by Terraform.
-If you don't have it, you can use the following block and run `terraform apply`:
+* Существующий S3-бакет (bucket), отслеживаемый Terraform.
+Если его нет, можно использовать следующий блок и выполнить `terraform apply`:
 
 ```terraform
 resource "aws_s3_bucket" "some_bucket" {
@@ -11,27 +11,27 @@ resource "aws_s3_bucket" "some_bucket" {
 }
 ```
 
-Attention: Since S3 buckets are globally unique, you will likely have to rename the bucket as someone else might have named it that way already.
+Внимание: поскольку имена S3-бакетов глобально уникальны, скорее всего, придётся переименовать бакет, так как кто-то другой мог уже занять это имя.
 
-## Objectives
+## Задачи
 
-1. Rename an existing S3 bucket and make sure it's still tracked by Terraform
+1. Переименовать существующий S3-бакет и убедиться, что он по-прежнему отслеживается Terraform
 
-## Solution
+## Решение
 
 ```sh
-# A bucket name is immutable in AWS so we'll have to create a new bucket
+# Имя бакета в AWS неизменяемо, поэтому придётся создать новый бакет
 aws s3 mb s3://some-new-bucket-123
 
-# Sync old bucket to new bucket
+# Синхронизировать старый бакет с новым
 aws s3 sync s3://some-old-bucket s3://some-new-bucket-123
 
-# Option 1 (remove and import)
+# Вариант 1 (удаление и импорт)
 
-## Remove the old bucket from Terraform's state
+## Удалить старый бакет из состояния (state) Terraform
 terraform state rm aws_s3_bucket.some_bucket
 
-## Import new bucket to Terraform's state
+## Импортировать новый бакет в состояние Terraform
 terraform import aws_s3_bucket.some_bucket some-new-bucket-123
 
 : '
@@ -42,9 +42,9 @@ The resources that were imported are shown above. These resources are now in
 your Terraform state and will henceforth be managed by Terraform.
 '
 
-# Option 2 (move)
+# Вариант 2 (перемещение)
 
-## Move the old bucket from Terraform's state to the new one
+## Переместить старый бакет в состоянии Terraform на новый
 terraform state mv aws_s3_bucket.some_bucket some-new-bucket-123
 
 : '
@@ -52,14 +52,14 @@ Move "aws_s3_bucket.some_bucket" to "aws_s3_bucket.some-new-bucket-123"
 Successfully moved 1 object(s).
 '
 
-# Modify Terraform file
+# Изменить файл Terraform
 
-# Modify the Terraform definition to include the new name
+# Изменить определение в Terraform, указав новое имя
 # resource "aws_s3_bucket" "some_bucket" {
 #    bucket = "some-new-bucket-123"
 # }
 
-# Remove old bucket
+# Удалить старый бакет
 aws s3 rm s3://some-old-bucket --recursive
 aws s3 rb s3://some-old-bucket
 ```

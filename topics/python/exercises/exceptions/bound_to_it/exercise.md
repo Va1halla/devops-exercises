@@ -1,8 +1,8 @@
-# Bound to It
+# Привязанный к нему
 
-## Objectives
+## Цели
 
-Kratos, angry developer, wanted to track the count of how many instances are created out of the class "Car". This is the code he wrote:
+Кратос, сердитый разработчик, хотел отслеживать, сколько экземпляров класса "Car" создано. Вот код, который он написал:
 
 ```python 
 count = 0 
@@ -19,5 +19,5 @@ car = Car("Red")
 print(f"After: {count}")
 ```
 
-1. What's the problem with the code? What exception will it raise?
-2. What would you suggest Kratos to fix it?
+1. В чём проблема этого кода? Какое исключение он выбросит?
+2. Что бы вы посоветовали Кратосу, чтобы это исправить?

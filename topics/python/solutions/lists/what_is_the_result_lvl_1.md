@@ -1,4 +1,4 @@
-## What is the result?
+## Каков результат?
 
 1. `'x = 'pizza,';print(x)`
 2. `x = ('pizza',);print(x)`
@@ -8,7 +8,7 @@
 6. `print('/n\n/n/n'.split())`
 7. `(1, 2) < (1, 2, 3)`
 
-### Solution
+### Решение
 
 1. `pizza,`
 2. `('pizza')`

@@ -1,28 +1,28 @@
-## AWS - Launch EC2 Web Instance
+## AWS - запуск веб-экземпляра EC2
 
-### Objectives
+### Цели
 
-Launch one EC2 instance with the following requirements:
+Запустить один экземпляр EC2 со следующими требованиями:
 
-1. Amazon Linux 2 image
-2. Instance type: pick up one that has 1 vCPUs and 1 GiB memory
-3. Instance storage should be deleted upon the termination of the instance
-4. When the instance starts, it should install:
-  1. Install the httpd package
-  2. Start the httpd service
-  3. Make sure the content of /var/www/html/index.html is `I made it! This is is awesome!`
-5. It should have the tag: "Type: web" and the name of the instance should be "web-1"
-6. HTTP traffic (port 80) should be accepted from anywhere
+1. Образ Amazon Linux 2
+2. Тип экземпляра: выбрать тот, у которого 1 vCPU и 1 GiB памяти
+3. Хранилище экземпляра должно удаляться при его завершении (termination)
+4. При запуске экземпляр должен:
+  1. Установить пакет httpd
+  2. Запустить сервис httpd
+  3. Сделать так, чтобы содержимое /var/www/html/index.html было `I made it! This is is awesome!`
+5. У него должен быть тег "Type: web", а имя экземпляра — "web-1"
+6. HTTP-трафик (порт 80) должен приниматься откуда угодно
 
-### Solution
+### Решение
 
-1. Choose a region close to you 
-2. Go to EC2 service
-3. Click on "Instances" in the menu and click on "Launch instances"
-4. Choose image: Amazon Linux 2
-5. Choose instance type: t2.micro 
-6. Make sure "Delete on Termination" is checked in the storage section
-7. Under the "User data" field the following:
+1. Выбрать ближайший регион 
+2. Перейти в сервис EC2
+3. Нажать "Instances" в меню и нажать "Launch instances"
+4. Выбрать образ: Amazon Linux 2
+5. Выбрать тип экземпляра: t2.micro 
+6. Убедиться, что в разделе хранилища отмечено "Delete on Termination"
+7. В поле "User data" указать следующее:
 
 ```
 yum update -y
@@ -31,24 +31,24 @@ systemctl start httpd
 systemctl enable httpd
 echo "<h1>I made it! This is is awesome!</h1>" > /var/www/html/index.html
 ```
-8. Add tags with the following keys and values:
-  * key "Type" and the value "web"
-  * key "Name" and the value "web-1"
-9. In the security group section, add a rule to accept HTTP traffic (TCP) on port 80 from anywhere
-10. Click on "Review" and then click on "Launch" after reviewing.
-11. If you don't have a key pair, create one and download it.
+8. Добавить теги со следующими ключами и значениями:
+  * ключ "Type" и значение "web"
+  * ключ "Name" и значение "web-1"
+9. В разделе группы безопасности добавить правило, разрешающее HTTP-трафик (TCP) на порт 80 откуда угодно
+10. Нажать "Review", а после проверки — "Launch".
+11. Если пары ключей нет, создать её и скачать.
 
-12. ### Solution using Terraform
+12. ### Решение с помощью Terraform
 
 ```
  
 provider "aws" {
-  region = "us-east-1" // Or your desired region
+  region = "us-east-1" // Или нужный вам регион
 }
 
 resource "aws_instance" "web_server" {
-  ami           = "ami-12345678" // Replace with the correct AMI for Amazon Linux 2
-  instance_type = "t2.micro" // Or any instance type with 1 vCPU and 1 GiB memory
+  ami           = "ami-12345678" // Замените на подходящий AMI для Amazon Linux 2
+  instance_type = "t2.micro" // Или любой тип экземпляра с 1 vCPU и 1 GiB памяти
 
   tags = {
     Name = "web-1"
@@ -56,7 +56,7 @@ resource "aws_instance" "web_server" {
   }
 
   root_block_device {
-    volume_size           = 8 // Or any desired size
+    volume_size           = 8 // Или любой нужный размер
     delete_on_termination = true
   }
 
@@ -72,7 +72,7 @@ resource "aws_instance" "web_server" {
     connection {
       type        = "ssh"
       user        = "ec2-user"
-      private_key = file("~/.ssh/your_private_key.pem") // Replace with the path to your private key
+      private_key = file("~/.ssh/your_private_key.pem") // Замените на путь к своему приватному ключу
       host        = self.public_ip
     }
   }

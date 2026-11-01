@@ -1,20 +1,20 @@
 ## AWS ElastiCache
 
-### Objectives
+### Цели
 
-1. Create ElastiCache Redis
-  * Instance type should be "cache.t2.micro"
-  * Replicas should be 0
+1. Создать ElastiCache Redis
+  * Тип экземпляра — "cache.t2.micro"
+  * Количество реплик — 0
 
-### Solution
+### Решение
 
-#### Console
+#### Консоль
 
-1. Go to ElastiCache service
-2. Click on "Get Started Now"
-3. Choose "Redis"
-4. Insert a name and description
-5. Choose "cache.t2.micro" an node type
-6. Set number of replicas to 0
-7. Create new subnet group
-8. Click on "Create"
+1. Перейти в сервис ElastiCache
+2. Нажать "Get Started Now"
+3. Выбрать "Redis"
+4. Ввести имя и описание
+5. Выбрать "cache.t2.micro" в качестве типа узла
+6. Установить количество реплик 0
+7. Создать новую группу подсетей (subnet group)
+8. Нажать "Create"

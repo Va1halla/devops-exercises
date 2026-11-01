@@ -1,7 +1,7 @@
-## Choose a Data Type
+## Выбор типа данных
 
-For each of the following scenarios, choose the data type you would use
+Для каждого из следующих сценариев выбрать тип данных, который стоит использовать
 
-1. Storing the string "Hello World" - str
-2. Mapping between fruit names and their color - dict: {'apple': 'red'}
-3. A collection of numbers (sorted) - list: [1, 5, 6]
+1. Хранение строки "Hello World" — str
+2. Сопоставление названий фруктов и их цвета — dict: {'apple': 'red'}
+3. Коллекция чисел (отсортированная) — list: [1, 5, 6]

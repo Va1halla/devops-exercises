@@ -1,18 +1,18 @@
-## AWS - Credential Report
+## AWS - отчёт об учётных данных (Credential Report)
 
-### Objectives
+### Цели
 
-1. Create/Download a credential report
-2. Answer the following questions based on the report:
-  1. Are there users with MFA not activated?
-  2. Are there users with password enabled that didn't 
-3. Explain the use case for using the credential report
+1. Создать/скачать отчёт об учётных данных
+2. Ответить на следующие вопросы по отчёту:
+  1. Есть ли пользователи, у которых не активирована MFA?
+  2. Есть ли пользователи с включённым паролем, которые не 
+3. Объяснить, в каких случаях используется отчёт об учётных данных
 
-### Solution
+### Решение
 
-1. Go to the AWS IAM service
-2. Under "Access Reports" click on "Credential report"
-3. Click on "Download Report" and open it once it's downloaded
-4. Answer the questions in this exercises by inspecting the report
+1. Перейти в сервис AWS IAM
+2. В разделе "Access Reports" нажать "Credential report"
+3. Нажать "Download Report" и открыть его после скачивания
+4. Ответить на вопросы упражнения, изучив отчёт
 
-The credential report is useful to identify whether there any users who need assistance or attention in regards to their security. For example a user who didn't change his password for a long time and didn't activate MFA.
+Отчёт об учётных данных помогает выявить пользователей, которым требуется помощь или внимание с точки зрения безопасности. Например, пользователя, который давно не менял пароль и не активировал MFA.

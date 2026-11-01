@@ -1,9 +1,9 @@
-## Strongly Typed
+## Строгая типизация
 
-1. Python is strongly typed. What does it mean?
-2. Is it true even in case of a mutable object?
+1. Python — язык со строгой типизацией. Что это значит?
+2. Верно ли это даже в случае изменяемого объекта?
 
-### Solution
+### Решение
 
-1. It means the type of an object doesn't changes
-2. Yes, even for mutable types (such as List, Dictionary) it is still strongly typed and the type can't be changed
+1. Это значит, что тип объекта не меняется
+2. Да, даже для изменяемых типов (таких как List, Dictionary) типизация остаётся строгой, и тип изменить нельзя

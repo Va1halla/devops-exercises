@@ -1,62 +1,62 @@
 <p align="center"><img src="images/python_exercises.png"/></p>
 
 
-:information_source: &nbsp;This repo contains questions and exercises to learn and practice Python
+:information_source: &nbsp;Этот репозиторий содержит вопросы и упражнения для изучения и практики Python
 
-:bar_chart: &nbsp;There are currently **231** exercises and questions
+:bar_chart: &nbsp;Сейчас здесь **231** упражнение и вопрос
 
-- [Free App for Learning Python](#free-app-for-learning-python)
-- [Exercises](#exercises)
+- [Бесплатное приложение для изучения Python](#бесплатное-приложение-для-изучения-python)
+- [Упражнения](#упражнения)
   - [Hello World](#hello-world)
-  - [Objects \& Data Types](#objects--data-types)
-  - [Variables](#variables)
-  - [Booleans](#booleans)
-  - [Strings](#strings)
-  - [Numbers](#numbers)
-  - [Lists \& Tuples](#lists--tuples)
-  - [Dictionaries](#dictionaries)
-  - [Loops](#loops)
-  - [Functions](#functions)
-  - [Classes](#classes)
-  - [OOP](#oop)
-  - [Magic Methods](#magic-methods)
-  - [Unit Testing](#unit-testing)
-  - [Exceptions](#exceptions)
-  - [Regex](#regex)
-  - [Files](#files)
-  - [Operating Systems](#operating-systems)
-  - [Improve the Code](#improve-the-code)
-  - [Type Hinting](#type-hinting)
-  - [Misc](#misc)
+  - [Объекты и типы данных](#объекты-и-типы-данных)
+  - [Переменные](#переменные)
+  - [Логические значения](#логические-значения)
+  - [Строки](#строки)
+  - [Числа](#числа)
+  - [Списки и кортежи](#списки-и-кортежи)
+  - [Словари](#словари)
+  - [Циклы](#циклы)
+  - [Функции](#функции)
+  - [Классы](#классы)
+  - [ООП](#ооп)
+  - [Магические методы](#магические-методы)
+  - [Модульное тестирование](#модульное-тестирование)
+  - [Исключения](#исключения)
+  - [Регулярные выражения](#регулярные-выражения)
+  - [Файлы](#файлы)
+  - [Операционные системы](#операционные-системы)
+  - [Улучшите код](#улучшите-код)
+  - [Аннотации типов](#аннотации-типов)
+  - [Разное](#разное)
   - [Lambda](#lambda)
-- [Questions](#questions)
+- [Вопросы](#вопросы)
   - [Hello World](#hello-world-1)
-  - [Conditionals](#conditionals)
-  - [Loops](#loops-1)
-  - [Classes](#classes-1)
-  - [Strings](#strings-1)
-  - [Lists](#lists)
-      - [Python - OOP](#python---oop)
-      - [Python - Exceptions](#python---exceptions)
-      - [Python Built-in functions](#python-built-in-functions)
-      - [Properties](#properties)
-      - [Python - Lists](#python---lists)
-      - [Python - Dictionaries](#python---dictionaries)
-        - [Common Algorithms Implementation](#common-algorithms-implementation)
-      - [Python Files](#python-files)
-      - [Python OS](#python-os)
-      - [Python Regex](#python-regex)
-      - [Python Strings](#python-strings)
-      - [Python Iterators](#python-iterators)
-      - [Python Misc](#python-misc)
-      - [Python - Slicing](#python---slicing)
-      - [Python Debugging](#python-debugging)
-      - [Python - Linked List](#python---linked-list)
-      - [Python - Stack](#python---stack)
-      - [Python Testing](#python-testing)
+  - [Условные операторы](#условные-операторы)
+  - [Циклы](#циклы-1)
+  - [Классы](#классы-1)
+  - [Строки](#строки-1)
+  - [Списки](#списки)
+      - [Python — ООП](#python--ооп)
+      - [Python — исключения](#python--исключения)
+      - [Встроенные функции Python](#встроенные-функции-python)
+      - [Свойства](#свойства)
+      - [Python — списки](#python--списки)
+      - [Python — словари](#python--словари)
+        - [Реализация распространённых алгоритмов](#реализация-распространённых-алгоритмов)
+      - [Python — файлы](#python--файлы)
+      - [Python — ОС](#python--ос)
+      - [Python — регулярные выражения](#python--регулярные-выражения)
+      - [Python — строки](#python--строки)
+      - [Python — итераторы](#python--итераторы)
+      - [Python — разное](#python--разное)
+      - [Python — срезы](#python--срезы)
+      - [Python — отладка](#python--отладка)
+      - [Python — связный список](#python--связный-список)
+      - [Python — стек](#python--стек)
+      - [Python — тестирование](#python--тестирование)
       - [Flask](#flask)
 
-# Free App for Learning Python
+# Бесплатное приложение для изучения Python
 
 <p align="center">
   <a href="https://play.google.com/store/apps/details?id=com.codingshell.python_hero" target="_blank">
@@ -64,230 +64,230 @@
   </a>
 </p>
 
-# Exercises
+# Упражнения
 
 <a name="exercises-hello-world"></a>
 ## Hello World
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| Hello World! | [Exercise](exercises/hello_world/hello_world.md) | Solution](solutions/hello_world/hello_world.md | |
-| Python Characteristics | [Exercise](exercises/hello_world/python_characteristics.md) | [Solution](solutions/hello_world/python_characteristics.md) | |
-| What is the result? - Level 1 | [Exercise](exercises/hello_world/what_is_the_result_lvl_1.md) | [Solution](solutions/hello_world/what_is_the_result_lvl_1.md) | |
-| What is the result? - Level 2 | [Exercise](exercises/hello_world/what_is_the_result_lvl_2.md) | | |
+| Hello World! | [Упражнение](exercises/hello_world/hello_world.md) | Решение](solutions/hello_world/hello_world.md | |
+| Характеристики Python | [Упражнение](exercises/hello_world/python_characteristics.md) | [Решение](solutions/hello_world/python_characteristics.md) | |
+| Каков результат? — уровень 1 | [Упражнение](exercises/hello_world/what_is_the_result_lvl_1.md) | [Решение](solutions/hello_world/what_is_the_result_lvl_1.md) | |
+| Каков результат? — уровень 2 | [Упражнение](exercises/hello_world/what_is_the_result_lvl_2.md) | | |
 
 <a name="exercises-objects"></a>
-## Objects & Data Types
+## Объекты и типы данных
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| Objects 101 | [Exercise](exercises/data_types/objects_101.md) | [Solution](solutions/data_types/objects_101.md) | |
-| Data Types? I know a few | [Exercise](exercises/data_types/I_know_a_few.md) | [Solution](solutions/exceptions/I_know_a_few.md) | |
-| Choose a Data Type - level 1 | [Exercise](exercises/data_types/choose_datatype_level_1.md) | [Solution](solutions/data_types/choose_datatype_level_1.md) | |
-| Choose a Data Type - level 2 | [Exercise](exercises/data_types/choose_datatype_level_2.md) | [Solution](solutions/data_types/choose_datatype_level_2.md) | |
-| Mutability | [Exercise](exercises/data_types/mutability.md) | [Solution](solutions/data_types/mutability.md) | |
-| Strongly Typed | [Exercise](exercises/data_types/strongly_typed.md) | [Solution](solutions/data_types/strongly_typed.md) | |
-| Object Creation | [Exercise](exercises/data_types/object_creation.md) | [Solution](solutions/data_types/object_creation.md) | |
+| Объекты: основы | [Упражнение](exercises/data_types/objects_101.md) | [Решение](solutions/data_types/objects_101.md) | |
+| Типы данных? Знаю парочку | [Упражнение](exercises/data_types/I_know_a_few.md) | [Решение](solutions/exceptions/I_know_a_few.md) | |
+| Выбор типа данных — уровень 1 | [Упражнение](exercises/data_types/choose_datatype_level_1.md) | [Решение](solutions/data_types/choose_datatype_level_1.md) | |
+| Выбор типа данных — уровень 2 | [Упражнение](exercises/data_types/choose_datatype_level_2.md) | [Решение](solutions/data_types/choose_datatype_level_2.md) | |
+| Изменяемость | [Упражнение](exercises/data_types/mutability.md) | [Решение](solutions/data_types/mutability.md) | |
+| Строгая типизация | [Упражнение](exercises/data_types/strongly_typed.md) | [Решение](solutions/data_types/strongly_typed.md) | |
+| Создание объекта | [Упражнение](exercises/data_types/object_creation.md) | [Решение](solutions/data_types/object_creation.md) | |
 
 <a name="exercises-variables"></a>
-## Variables
+## Переменные
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| Valid Names | [Exercise](exercises/variables/valid_names.md) | [Solution](solutions/variables/valid_names.md) | |
-| Locations or Names | [Exercise](exercises/variables/locations_or_names.md) | [Solution](solutions/variables/locations_or_names.md) | |
-| Types | [Exercise](exercises/variables/types.md) | [Solution](solutions/variables/types.md) | |
-| Multiple Value Assignment | [Exercise](exercises/variables/multiple_value_assigment.md) | [Solution](solutions/variables/multiple_value_assigment.md) | |
-| Copying Variables | [Exercise](exercises/variables/copying_variables.md) | [Solution](solutions/variables/copying_variables.md) | |
-| Mutable Objects | [Exercise](exercises/variables/mutable_objects.md) | [Solution](solutions/variables/mutable_objects.md) | |
+| Допустимые имена | [Упражнение](exercises/variables/valid_names.md) | [Решение](solutions/variables/valid_names.md) | |
+| Области памяти или имена | [Упражнение](exercises/variables/locations_or_names.md) | [Решение](solutions/variables/locations_or_names.md) | |
+| Типы | [Упражнение](exercises/variables/types.md) | [Решение](solutions/variables/types.md) | |
+| Множественное присваивание | [Упражнение](exercises/variables/multiple_value_assigment.md) | [Решение](solutions/variables/multiple_value_assigment.md) | |
+| Копирование переменных | [Упражнение](exercises/variables/copying_variables.md) | [Решение](solutions/variables/copying_variables.md) | |
+| Изменяемые объекты | [Упражнение](exercises/variables/mutable_objects.md) | [Решение](solutions/variables/mutable_objects.md) | |
 
 <a name="exercises-booleans"></a>
-## Booleans
+## Логические значения
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| True or False? | [Exercise](exercises/booleans/true_or_false.md) | [Solution](solutions/booleans/true_or_false.md) | |
-| Conversion | [Exercise](exercises/booleans/conversion.md) | [Solution](solutions/booleans/conversion.md) | |
+| True или False? | [Упражнение](exercises/booleans/true_or_false.md) | [Решение](solutions/booleans/true_or_false.md) | |
+| Преобразование | [Упражнение](exercises/booleans/conversion.md) | [Решение](solutions/booleans/conversion.md) | |
 
 <a name="exercises-strings"></a>
-## Strings
+## Строки
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| 22 times | [Exercise](exercises/hello_world/22_times.md) | | |
-| Variables | [Exercise](exercises/strings/variables.md) | [Solution](solutions/strings/variables.md) | |
-| What is the result? - Level 1 | [Exercise](exercises/strings/what_is_the_result_lvl_1.md) | [Solution](solutions/strings/what_is_the_result_lvl_1.md) | |
-| What is the result? - Level 2 | [Exercise](exercises/strings/what_is_the_result_lvl_2.md) | [Solution](solutions/strings/what_is_the_result_lvl_2.md) | |
-| Starts with a letter | [Exercise](exercises/strings/letter_start.md) | [Solution](solutions/strings/letter_start.md) | |
-| Change Strings | [Exercise](exercises/strings/change_strings.md) | [Solution](solutions/strings/change_strings.md) | |
-| All Digits | [Exercise](exercises/strings/all_digits.md) | [Solution](solutions/strings/all_digits.md) | |
-| Removing Characters | [Exercise](exercises/strings/removing_characters.md) | [Solution](solutions/strings/removing_characters.md) | |
-| Reverse a String | [Exercise](exercises/strings/reverse_string.md) | [Solution](solutions/strings/reverse_string.md) | |
-| Compress Strings | [Exercise](exercises/strings/compress_strings.md) | | |
-| Slicing - Level 1 | [Exercise](exercises/strings/slicing_lvl_1.md) | [Solution](solutions/strings/slicing_lvl_1.md) | |
-| Slicing - Level 2 | [Exercise](exercises/strings/slicing_lvl_2.md) | [Solution](solutions/strings/slicing_lvl_2.md) | |
-| Swap Case | [Exercise](exercises/swap_case/exercise.md) | [Solution](exercises/swap_case/solution.py) | HackerRank |
-| Count Substring | [Exercise](exercises/count_substring/exercise.md) | [Solution](exercises/count_substring/solution.py) | HackerRank |
-| Capitalize! | [Exercise](exercises/capitalize/exercise.md) | [Solution](exercises/capitalize/solution.py) | HackerRank |
+| 22 раза | [Упражнение](exercises/hello_world/22_times.md) | | |
+| Переменные | [Упражнение](exercises/strings/variables.md) | [Решение](solutions/strings/variables.md) | |
+| Каков результат? — уровень 1 | [Упражнение](exercises/strings/what_is_the_result_lvl_1.md) | [Решение](solutions/strings/what_is_the_result_lvl_1.md) | |
+| Каков результат? — уровень 2 | [Упражнение](exercises/strings/what_is_the_result_lvl_2.md) | [Решение](solutions/strings/what_is_the_result_lvl_2.md) | |
+| Начинается с буквы | [Упражнение](exercises/strings/letter_start.md) | [Решение](solutions/strings/letter_start.md) | |
+| Изменение строк | [Упражнение](exercises/strings/change_strings.md) | [Решение](solutions/strings/change_strings.md) | |
+| Все цифры | [Упражнение](exercises/strings/all_digits.md) | [Решение](solutions/strings/all_digits.md) | |
+| Удаление символов | [Упражнение](exercises/strings/removing_characters.md) | [Решение](solutions/strings/removing_characters.md) | |
+| Разворот строки | [Упражнение](exercises/strings/reverse_string.md) | [Решение](solutions/strings/reverse_string.md) | |
+| Сжатие строк | [Упражнение](exercises/strings/compress_strings.md) | | |
+| Срезы — уровень 1 | [Упражнение](exercises/strings/slicing_lvl_1.md) | [Решение](solutions/strings/slicing_lvl_1.md) | |
+| Срезы — уровень 2 | [Упражнение](exercises/strings/slicing_lvl_2.md) | [Решение](solutions/strings/slicing_lvl_2.md) | |
+| Смена регистра | [Упражнение](exercises/swap_case/exercise.md) | [Решение](exercises/swap_case/solution.py) | HackerRank |
+| Подсчёт подстроки | [Упражнение](exercises/count_substring/exercise.md) | [Решение](exercises/count_substring/solution.py) | HackerRank |
+| Capitalize! | [Упражнение](exercises/capitalize/exercise.md) | [Решение](exercises/capitalize/solution.py) | HackerRank |
 
 <a name="exercises-numbers"></a>
-## Numbers
+## Числа
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| What is the result? | [Exercise](exercises/numbers/what_is_the_result.md) | [Solution](solutions/numbers/what_is_the_result.md) | |
-| Operations - Level 1 | [Exercise](exercises/numbers/operations_lvl_1.md) | [Solution](solutions/numbers/operations_lvl_1.md) | |
-| Operations - Level 2 | [Exercise](exercises/numbers/operations_lvl_2.md) | [Solution](solutions/numbers/operations_lvl_2.md) | |
-| Bases | [Exercise](exercises/numbers/bases.md) | [Solution](solutions/numbers/bases.md) | |
-| Palindrome | [Exercise](exercises/numbers/palindrome.md) | [Solution](solutions/numbers/palindrome.md) | |
+| Каков результат? | [Упражнение](exercises/numbers/what_is_the_result.md) | [Решение](solutions/numbers/what_is_the_result.md) | |
+| Операции — уровень 1 | [Упражнение](exercises/numbers/operations_lvl_1.md) | [Решение](solutions/numbers/operations_lvl_1.md) | |
+| Операции — уровень 2 | [Упражнение](exercises/numbers/operations_lvl_2.md) | [Решение](solutions/numbers/operations_lvl_2.md) | |
+| Системы счисления | [Упражнение](exercises/numbers/bases.md) | [Решение](solutions/numbers/bases.md) | |
+| Палиндром | [Упражнение](exercises/numbers/palindrome.md) | [Решение](solutions/numbers/palindrome.md) | |
 
 <a name="exercises-lists"></a>
-## Lists & Tuples
+## Списки и кортежи
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| Access List Items | [Exercise](exercises/hello_world/access_list_items.md) | [Solution](solutions/hello_world/access_list_items.md) | |
-| Equal Lists | [Exercise](exercises/lists/equal_lists.md) | [Solution](solutions/lists/equal_lists.md) | |
-| Length | [Exercise](exercises/hello_world/length.md) | | |
-| Append & Insert | [Exercise](exercises/lists/append_and_insert.md) | [Solution](solutions/lists/append_and_insert.md) | |
-| Min Max | [Exercise](exercises/lists/min_max.md) | [Solution](solutions/lists/min_max.md) | |
-| Three Biggest Items | [Exercise](exercises/lists/three_biggest_items.md) | [Solution](solutions/lists/three_biggest_items.md) | |
-| What is the result? - Level 1 | [Exercise](exercises/lists/what_is_the_result_lvl_1.md) | [Solution](solutions/lists/what_is_the_result_lvl_1.md) | |
-| What is the result? - Level 2 | [Exercise](exercises/lists/what_is_the_result_lvl_2.md) | [Solution](solutions/lists/what_is_the_result_lvl_2.md) | |
-| Running Sum | [Exercise](exercises/lists/running_sum/exercise.md) | [Solution](solutions/lists/running_sum/solution.py) | |
-| Remove Duplicates from Sorted List | [Exercise](exercises/lists/remove_duplicates/exercise.md) | [Solution](exercises/lists/remove_duplicates/solution.py) | LeetCode |
-| Find the Runner-Up Score! | [Exercise](exercises/lists/find_the_runner_up_score/exercise.md) | [Solution](solutions/lists/find_the_runner_up_score/solution.py) | HackerRank |
-| Nested Lists | [Exercise](exercises/lists/nested_lists/exercise.md) | [Solution](solutions/lists/nested_lists/solution.py) | HackerRank |
+| Доступ к элементам списка | [Упражнение](exercises/hello_world/access_list_items.md) | [Решение](solutions/hello_world/access_list_items.md) | |
+| Равные списки | [Упражнение](exercises/lists/equal_lists.md) | [Решение](solutions/lists/equal_lists.md) | |
+| Длина | [Упражнение](exercises/hello_world/length.md) | | |
+| Append и Insert | [Упражнение](exercises/lists/append_and_insert.md) | [Решение](solutions/lists/append_and_insert.md) | |
+| Минимум и максимум | [Упражнение](exercises/lists/min_max.md) | [Решение](solutions/lists/min_max.md) | |
+| Три наибольших элемента | [Упражнение](exercises/lists/three_biggest_items.md) | [Решение](solutions/lists/three_biggest_items.md) | |
+| Каков результат? — уровень 1 | [Упражнение](exercises/lists/what_is_the_result_lvl_1.md) | [Решение](solutions/lists/what_is_the_result_lvl_1.md) | |
+| Каков результат? — уровень 2 | [Упражнение](exercises/lists/what_is_the_result_lvl_2.md) | [Решение](solutions/lists/what_is_the_result_lvl_2.md) | |
+| Накопительная сумма | [Упражнение](exercises/lists/running_sum/exercise.md) | [Решение](solutions/lists/running_sum/solution.py) | |
+| Удаление дубликатов из отсортированного списка | [Упражнение](exercises/lists/remove_duplicates/exercise.md) | [Решение](exercises/lists/remove_duplicates/solution.py) | LeetCode |
+| Найти второй результат! | [Упражнение](exercises/lists/find_the_runner_up_score/exercise.md) | [Решение](solutions/lists/find_the_runner_up_score/solution.py) | HackerRank |
+| Вложенные списки | [Упражнение](exercises/lists/nested_lists/exercise.md) | [Решение](solutions/lists/nested_lists/solution.py) | HackerRank |
 
 <a name="exercises-dictionaries"></a>
-## Dictionaries
+## Словари
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| Facts Only | [Exercise](exercises/dicts/facts_only.md) | [Solution](solutions/dict/facts_only.md) | |
+| Только факты | [Упражнение](exercises/dicts/facts_only.md) | [Решение](solutions/dict/facts_only.md) | |
 
 <a name="exercises-loops"></a>
-## Loops
+## Циклы
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| Break Out | [Exercise](exercises/loops/break_out.md) | [Solution](solutions/loops/break_out.md) | |
-| Break Out 2 | [Exercise](exercises/loops/break_out.md) | [Solution](solutions/loops/break_out.md) | |
-| Every character | [Exercise](exercises/loops/every_char.md) | [Solution](solutions/loops/every_char.md) | |
-| Stream of Numbers | [Exercise](exercises/loops/numbers_stream.md) | [Solution](solutions/loops/numbers_stream.md) | |
-| Refactor-1 | [Exercise](exercises/loops/refactor_1.md) | [Solution](solutions/loops/refactor_1.py) | |
+| Выход из цикла | [Упражнение](exercises/loops/break_out.md) | [Решение](solutions/loops/break_out.md) | |
+| Выход из цикла 2 | [Упражнение](exercises/loops/break_out.md) | [Решение](solutions/loops/break_out.md) | |
+| Каждый символ | [Упражнение](exercises/loops/every_char.md) | [Решение](solutions/loops/every_char.md) | |
+| Поток чисел | [Упражнение](exercises/loops/numbers_stream.md) | [Решение](solutions/loops/numbers_stream.md) | |
+| Рефакторинг-1 | [Упражнение](exercises/loops/refactor_1.md) | [Решение](solutions/loops/refactor_1.py) | |
 
 <a name="exercises-functions"></a>
-## Functions
+## Функции
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| My First Function | [Exercise](exercises/functions/my_first_function.md) | [Solution](solutions/functions/my_first_function.md) | |
-| Calculator | [Exercise](exercises/functions/calculator.md) | [Solution](solutions/functions/calculator.md) | |
-| First Class Objects | [Exercise](exercises/functions/first_class_objects.md) | [Solution](solutions/functions/first_class_objects.md) | |
+| Моя первая функция | [Упражнение](exercises/functions/my_first_function.md) | [Решение](solutions/functions/my_first_function.md) | |
+| Калькулятор | [Упражнение](exercises/functions/calculator.md) | [Решение](solutions/functions/calculator.md) | |
+| Объекты первого класса | [Упражнение](exercises/functions/first_class_objects.md) | [Решение](solutions/functions/first_class_objects.md) | |
 
 <a name="exercises-classes"></a>
-## Classes
+## Классы
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| Classes 101 | [Exercise](exercises/classes/101.md) | [Solution](solutions/classes/101.md) | |
-| Attributes  | [Exercise](exercises/classes/attributes/exercise.md) | [Solution](exercises/classes/attributes/solution.md) | |
-| Print Order | [Exercise](exercises/classes/print_order/exercise.md) | [Solution](exercises/classes/print_order/solution.md)
+| Классы 101 | [Упражнение](exercises/classes/101.md) | [Решение](solutions/classes/101.md) | |
+| Атрибуты  | [Упражнение](exercises/classes/attributes/exercise.md) | [Решение](exercises/classes/attributes/solution.md) | |
+| Порядок вывода | [Упражнение](exercises/classes/print_order/exercise.md) | [Решение](exercises/classes/print_order/solution.md)
 
 <a name="exercises-oop"></a>
-## OOP
+## ООП
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| Inheritance | [Exercise](exercises/oop/inheritance.md) | [Solution](solutions/oop/inheritance.md) | |
+| Наследование | [Упражнение](exercises/oop/inheritance.md) | [Решение](solutions/oop/inheritance.md) | |
  
-## Magic Methods
+## Магические методы
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| Length Magic Method | [Exercise](exercises/magic_methods/length.md) | | |
+| Магический метод длины | [Упражнение](exercises/magic_methods/length.md) | | |
 
-## Unit Testing
+## Модульное тестирование
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| Calculator Unit Tests | [Exercise](exercises/unit_testing/calculator.md) | [Solution](solutions/unit_testing/calculator.md) | |
-| Fix Calculator Unit Tests | [Exercise](exercises/unit_testing/fix_calculator_tests.md) | | |
+| Модульные тесты калькулятора | [Упражнение](exercises/unit_testing/calculator.md) | [Решение](solutions/unit_testing/calculator.md) | |
+| Исправление модульных тестов калькулятора | [Упражнение](exercises/unit_testing/fix_calculator_tests.md) | | |
 
-## Exceptions
+## Исключения
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| What exception is raised? - Level 1 | [Exercise](exercises/exceptions/what_exception_is_raised_lvl_1.md) | [Solution](solutions/exceptions/what_exception_is_raised_lvl_1.md) | |
-| What exception is raised? - Level 2 | [Exercise](exercises/exceptions/what_exception_is_raised_lvl_2.md) | [Solution](solutions/exceptions/what_exception_is_raised_lvl_2.md) | |
-| Bound To It | [Exercise](exercises/exceptions/bound_to_it/exercise.md) | [Solution](exercises/exceptions/bound_to_it/solution.md)
+| Какое исключение будет выброшено? — уровень 1 | [Упражнение](exercises/exceptions/what_exception_is_raised_lvl_1.md) | [Решение](solutions/exceptions/what_exception_is_raised_lvl_1.md) | |
+| Какое исключение будет выброшено? — уровень 2 | [Упражнение](exercises/exceptions/what_exception_is_raised_lvl_2.md) | [Решение](solutions/exceptions/what_exception_is_raised_lvl_2.md) | |
+| Привязанный к нему | [Упражнение](exercises/exceptions/bound_to_it/exercise.md) | [Решение](exercises/exceptions/bound_to_it/solution.md)
 
-## Regex
+## Регулярные выражения
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| Substitute Strings | [Exercise](exercises/regex/substitute_strings.md) | [Solution](solutions/exceptions/substitute_strings.md) | |
+| Замена в строках | [Упражнение](exercises/regex/substitute_strings.md) | [Решение](solutions/exceptions/substitute_strings.md) | |
 
-## Files
+## Файлы
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| Read a File | [Exercise](exercises/files/read_file.md) | | |
-| Reverse a file | [Exercise](exercises/files/reverse_file.md) | | |
-| Print specific line | [Exercise](exercises/files/print_specific_line.md) | | |
+| Чтение файла | [Упражнение](exercises/files/read_file.md) | | |
+| Разворот файла | [Упражнение](exercises/files/reverse_file.md) | | |
+| Вывод определённой строки | [Упражнение](exercises/files/print_specific_line.md) | | |
 
-## Operating Systems
+## Операционные системы
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| File exists | [Exercise](exercises/os/file_exists.md) | | |
-| Print all the files in a directory | [Exercise](exercises/os/print_all_files_in_dir.md) | | |
+| Файл существует | [Упражнение](exercises/os/file_exists.md) | | |
+| Вывести все файлы в каталоге | [Упражнение](exercises/os/print_all_files_in_dir.md) | | |
 
-## Improve the Code
+## Улучшите код
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| If True | [Exercise](exercises/improve_the_code/if_true.md) | [Solution](solutions/improve_the_code/if_true.md) | |
-| Walrus | [Exercise](exercises/improve_the_code/walrus.md) | [Solution](solutions/improve_the_code/walrus.md) | |
-| Vowel Letters | [Exercise](exercises/improve_the_code/vowel_letters.md) | [Solution](solutions/improve_the_code/vowel_letters.md) | |
+| If True | [Упражнение](exercises/improve_the_code/if_true.md) | [Решение](solutions/improve_the_code/if_true.md) | |
+| Моржовый оператор | [Упражнение](exercises/improve_the_code/walrus.md) | [Решение](solutions/improve_the_code/walrus.md) | |
+| Гласные буквы | [Упражнение](exercises/improve_the_code/vowel_letters.md) | [Решение](solutions/improve_the_code/vowel_letters.md) | |
 
-## Type Hinting
+## Аннотации типов
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| Type Hinting Facts Only | [Exercise](exercises/type_hinting/facts_only.md) | [Solution](solutions/type_hinting/facts_only.md) | |
-| Pros & Cons | [Exercise](exercises/type_hinting/pros_and_cons.md) | [Solution](solutions/type_hinting/pros_and_cons.md) | |
-| Type Hinting 101 | [Exercise](exercises/type_hinting/type_hinting_101.md) | [Solution](solutions/type_hinting/type_hinting_101.md) | |
-| Type Hinting 102 | [Exercise](exercises/type_hinting/type_hinting_102.md) | [Solution](solutions/type_hinting/type_hinting_102.md) | |
+| Аннотации типов: только факты | [Упражнение](exercises/type_hinting/facts_only.md) | [Решение](solutions/type_hinting/facts_only.md) | |
+| Плюсы и минусы | [Упражнение](exercises/type_hinting/pros_and_cons.md) | [Решение](solutions/type_hinting/pros_and_cons.md) | |
+| Аннотации типов 101 | [Упражнение](exercises/type_hinting/type_hinting_101.md) | [Решение](solutions/type_hinting/type_hinting_101.md) | |
+| Аннотации типов 102 | [Упражнение](exercises/type_hinting/type_hinting_102.md) | [Решение](solutions/type_hinting/type_hinting_102.md) | |
 
-## Misc
+## Разное
 
-|Name|Objective & Instructions|Solution|Comments|
+|Название|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|
-| Random Number | [Exercise](exercises/misc/random_number.md) | | |
-| Random Item | [Exercise](exercises/misc/random_item.md) | | |
+| Случайное число | [Упражнение](exercises/misc/random_number.md) | | |
+| Случайный элемент | [Упражнение](exercises/misc/random_item.md) | | |
 
 ## Lambda
 
-|Name|Objective & Instructions|Solution||
+|Название|Цель и инструкции|Решение||
 |--------|--------|------|----|
-| Multiply the arguments and return the result | [Exercise](exercises/Lambda/Exe1.md) | [Solution](solutions/lambda/soluntion1.md) | |
-| Write a python program to generate a function to double a specified number. | [Exercise](exercises/Lambda/Exe2.md) | [Solution](solutions/lambda/solution2.md) | | |
+| Перемножить аргументы и вернуть результат | [Упражнение](exercises/Lambda/Exe1.md) | [Решение](solutions/lambda/soluntion1.md) | |
+| Написать программу на Python, которая создаёт функцию, удваивающую заданное число. | [Упражнение](exercises/Lambda/Exe2.md) | [Решение](solutions/lambda/solution2.md) | | |
 
-# Questions
+# Вопросы
 
 <a name="questions-hello-world"></a>
 ## Hello World
 
 <details>
-<summary>How to print "Hello World"?</summary><br><b>
+<summary>Как вывести "Hello World"?</summary><br><b>
 
 `print("Hello World")`
 </b></details>
 
 <details>
-<summary>How to print "Hello Amazing" and then print "World" on the same line? (to clarify, you should use two print statements)</summary><br><b>
+<summary>Как вывести "Hello Amazing", а затем "World" на той же строке? (уточнение: нужно использовать две инструкции print)</summary><br><b>
 
 ```Python
 print("Hello Amazing", end=" ")
@@ -296,14 +296,14 @@ print("World")
 </b></details>
 
 <details>
-<summary>The following program reads two numbers from the user
+<summary>Следующая программа считывает два числа, введённых пользователем
 
 ```python
 x = int(input())
 y = int(input())
 ```
 
-print the sum and the difference between the numbers
+выведите сумму и разность этих чисел
 </summary><br><b>
 
 ```python
@@ -312,10 +312,10 @@ print(x - y)
 ```
 </b></details>
 
-## Conditionals
+## Условные операторы
 
 <details>
-<summary>Read a number from the user and check whether it's even. If it's even, print "yay". If it's not, print "nay"</summary><br><b>
+<summary>Считайте число, введённое пользователем, и проверьте, чётное ли оно. Если чётное, выведите "yay". Если нет, выведите "nay"</summary><br><b>
 
 ```python
 x = int(input())
@@ -327,10 +327,10 @@ else:
 ```
 </b></details>
 
-## Loops
+## Циклы
 
 <details>
-<summary>given an integer (n) print all the numbers between 0 and n (including n)</summary><br><b>
+<summary>дано целое число (n): выведите все числа от 0 до n (включая n)</summary><br><b>
 
 ```python
 for i in range(n + 1):
@@ -339,7 +339,7 @@ for i in range(n + 1):
 </b></details>
 
 <details>
-<summary>given an integer (n) print all the numbers between 0 and n (including n) that are even</summary><br><b>
+<summary>дано целое число (n): выведите все чётные числа от 0 до n (включая n)</summary><br><b>
 
 ```python
 for i in range(n + 1):
@@ -349,10 +349,10 @@ for i in range(n + 1):
 </b></details>
 
 <a name="questions-classes"></a>
-## Classes
+## Классы
 
 <details>
-<summary>Define a class that does nothing</summary><br><b>
+<summary>Определите класс, который ничего не делает</summary><br><b>
 
 ```python
 class SomeClass:
@@ -361,53 +361,53 @@ class SomeClass:
 </b></details>
 
 <details>
-<summary>True or False? If <code>c</code> is an instance of a class, then in <code>c.x = 1</code>, <code>x</code> is a variable of the value 1</summary><br><b>
+<summary>Верно или нет? Если <code>c</code> — экземпляр класса, то в <code>c.x = 1</code> <code>x</code> — это переменная со значением 1</summary><br><b>
 
-False. `x` is an attribute in the case `c.x = 1`
+Неверно. В случае `c.x = 1` `x` — это атрибут
 </b></details>
 
 <details>
-<summary>True or False? Every object in Python has attributes</summary><br><b>
+<summary>Верно или нет? У каждого объекта в Python есть атрибуты</summary><br><b>
 
-True. You can think on attributes as private dictionaries but instead of accessing them with `[]` or `.get`, they are accessed by using a dot.
+Верно. Атрибуты можно представлять как приватные словари, но вместо доступа через `[]` или `.get` к ним обращаются через точку.
 </b></details>
 
 <details>
-<summary>True or False? As opposed to variables, attributes can't contain any Python object, only several selected types</summary><br><b>
+<summary>Верно или нет? В отличие от переменных, атрибуты могут содержать не любой объект Python, а только несколько определённых типов</summary><br><b>
 
-False. Like variables, attributes can contain any Python object.
+Неверно. Как и переменные, атрибуты могут содержать любой объект Python.
 </b></details>
 
-## Strings
+## Строки
 
 <details>
-<summary>How to convert <code>"2 0 1 7"</code> to the list <code>[2, 0, 1, 7]</code>?</summary><br><b>
+<summary>Как преобразовать <code>"2 0 1 7"</code> в список <code>[2, 0, 1, 7]</code>?</summary><br><b>
 
 ```python
 [int(i) for in in "2 0 1 7".split()]
 ```
 </b></details>
 
-## Lists
+## Списки
 
 <details>
-<summary>How to remove duplicates from a given sorted list?</summary><br><b>
+<summary>Как удалить дубликаты из заданного отсортированного списка?</summary><br><b>
 
 ```python
 
 ```
 </b></details>
 
-#### Python - OOP
+#### Python — ООП
 
 <details>
-<summary>Explain inheritance and how to use it in Python</summary><br><b>
+<summary>Объясните, что такое наследование и как его использовать в Python</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain and demonstrate class attributes & instance attributes</summary><br><b>
+<summary>Объясните и продемонстрируйте атрибуты класса и атрибуты экземпляра</summary><br><b>
 
-In the following block of code `x` is a class attribute while `self.y` is a instance attribute
+В следующем блоке кода `x` — атрибут класса, а `self.y` — атрибут экземпляра
 
 ```
 class MyClass(object):
@@ -418,14 +418,14 @@ class MyClass(object):
 ```
 </b></details>
 
-#### Python - Exceptions
+#### Python — исключения
 
 <details>
-<summary>What is an error? What is an exception? What types of exceptions are you familiar with?</summary><br><b>
+<summary>Что такое ошибка? Что такое исключение? С какими типами исключений вы знакомы?</summary><br><b>
 
 ```
-#  Note that you generally don't need to know the compiling process but knowing where everything comes from
-#  and giving complete answers shows that you truly know what you are talking about.
+#  Обычно знать процесс компиляции не обязательно, но понимание того, откуда всё берётся,
+#  и полные ответы показывают, что вы действительно разбираетесь в теме.
 
 Generally, every compiling process have a two steps.
     - Analysis
@@ -484,15 +484,15 @@ Generally, every compiling process have a two steps.
 </b></details>
 
 <details>
-<summary>Explain Exception Handling and how to use it in Python</summary><br><b>
+<summary>Объясните обработку исключений и как её использовать в Python</summary><br><b>
 
-**Exceptions:** Errors detected during execution are called Exceptions.
+**Исключения:** ошибки, обнаруженные во время выполнения, называются исключениями (Exceptions).
 
-**Handling Exception:** When an error occurs, or exception as we call it, Python will normally stop and generate an error message.</br>
-Exceptions can be handled using `try` and `except` statement in python.
+**Обработка исключений:** когда возникает ошибка, или, как мы её называем, исключение, Python обычно останавливается и выводит сообщение об ошибке.</br>
+Исключения можно обрабатывать с помощью инструкций `try` и `except` в Python.
 
-**Example:** Following example asks the user for input until a valid integer has been entered. </br>
-If user enter a non-integer value it will raise exception and using except it will catch that exception and ask the user to enter valid integer again.
+**Пример:** следующий пример запрашивает у пользователя ввод, пока не будет введено корректное целое число. </br>
+Если пользователь введёт нецелое значение, будет выброшено исключение; с помощью except оно будет перехвачено, и пользователя снова попросят ввести корректное целое число.
 
 
 ```py
@@ -505,12 +505,12 @@ while True:
 
 ```
 
-For more details about errors and exceptions follow this [https://docs.python.org/3/tutorial/errors.html](https://docs.python.org/3/tutorial/errors.html)
+Подробнее об ошибках и исключениях: [https://docs.python.org/3/tutorial/errors.html](https://docs.python.org/3/tutorial/errors.html)
 
 </b></details>
 
 <details>
-<summary>What is the result of running the following function?
+<summary>Каков результат выполнения следующей функции?
 
 ```
 def true_or_false():
@@ -523,10 +523,10 @@ def true_or_false():
 False
 </b></details>
 
-#### Python Built-in functions
+#### Встроенные функции Python
 
 <details>
-<summary>Explain the following built-in functions (their purpose + use case example):
+<summary>Объясните следующие встроенные функции (их назначение + пример использования):
 
   * repr
   * any
@@ -534,15 +534,15 @@ False
 </b></details>
 
 <details>
-<summary>What is the difference between repr function and str?</summary><br><b>
+<summary>В чём разница между функциями repr и str?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the __call__ method?</summary><br><b>
+<summary>Что такое метод __call__?</summary><br><b>
 
-It is used to emulate callable objects. It allows a class instance to be called as a function.
+Он используется для эмуляции вызываемых объектов. Он позволяет вызывать экземпляр класса как функцию.
 
-- Example code:
+- Пример кода:
 
 ```
 class Foo:
@@ -555,7 +555,7 @@ f = Foo()
 f()
 ```
 
-- Result:
+- Результат:
 
 ```
 Called!
@@ -564,65 +564,65 @@ Called!
 </b></details>
 
 <details>
-<summary>Do classes has the __call__ method as well? What for?</summary><br><b>
+<summary>Есть ли метод __call__ и у классов? Для чего?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What _ is used for in Python?</summary><br><b>
+<summary>Для чего в Python используется _?</summary><br><b>
 
-1. Translation lookup in i18n
-2. Hold the result of the last executed expression or statement in the interactive interpreter.
-3. As a general purpose "throwaway" variable name. For example: x, y, _ = get_data() (x and y are used but since we don't care about third variable, we "threw it away").
+1. Поиск перевода в i18n
+2. Хранение результата последнего выполненного выражения или инструкции в интерактивном интерпретаторе.
+3. Как универсальное имя «выбрасываемой» переменной. Например: x, y, _ = get_data() (x и y используются, а поскольку третья переменная не нужна, мы её «выбросили»).
 </b></details>
 
 <details>
-<summary>Explain what is GIL</summary><br><b>
-	Python Global Interpreter Lock (GIL) is a type of process lock which is used by python whenever it deals with processes. Generally, Python only uses only one thread to execute the set of written statements. This means that in python only one thread will be executed at a time
+<summary>Объясните, что такое GIL</summary><br><b>
+	Python Global Interpreter Lock (GIL) — это разновидность блокировки процесса, которую Python использует при работе с процессами. Как правило, Python использует только один поток для выполнения набора написанных инструкций. Это значит, что в Python одновременно выполняется только один поток
 </b></details>
 
 <details>
-<summary>What is Lambda? How is it used?</summary><br><b>
+<summary>Что такое Lambda? Как она используется?</summary><br><b>
 
-A <code>lambda</code> expression is an 'anonymous' function, the difference from a normal defined function using the keyword `def`` is the syntax and usage.
+Выражение <code>lambda</code> — это «анонимная» функция; от обычной функции, определённой с помощью ключевого слова `def``, она отличается синтаксисом и способом использования.
 
-The syntax is:
+Синтаксис:
 
 ```lambda[parameters]: [expresion]```
 
-**Examples:**
+**Примеры:**
 
-* A lambda function add 10 with any argument passed.
+* Lambda-функция, прибавляющая 10 к любому переданному аргументу.
 
 ```py
 x = lambda a: a + 10
 print(x(10))
 ```
 
-* An addition function
+* Функция сложения
 
 ```py
 addition = lambda x, y: x + y
 print(addition(10, 20))
 ```
 
-* Squaring function
+* Функция возведения в квадрат
 
 ```py
 square = lambda x : x ** 2
 print(square(5))
 ```
-Generally it is considered a bad practice under PEP 8 to assign a lambda expresion, they are meant to be used as parameters and inside of other defined functions.
+Согласно PEP 8 присваивать lambda-выражение переменной обычно считается плохой практикой: они предназначены для использования в качестве параметров и внутри других определённых функций.
 
 </b></details>
 
-#### Properties
+#### Свойства
 
 <details>
-<summary>Are there private variables in Python? How would you make an attribute of a class, private?</summary><br><b>
+<summary>Есть ли в Python приватные переменные? Как сделать атрибут класса приватным?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain the following:
+<summary>Объясните следующее:
 
 * getter
 * setter
@@ -630,11 +630,11 @@ Generally it is considered a bad practice under PEP 8 to assign a lambda expresi
 </b></details>
 
 <details>
-<summary>Explain what is @property</summary><br><b>
+<summary>Объясните, что такое @property</summary><br><b>
 </b></details>
 
 <details>
-<summary>How do you swap values between two variables?</summary><br><b>
+<summary>Как поменять местами значения двух переменных?</summary><br><b>
 
 ```
 x, y = y, x
@@ -642,16 +642,16 @@ x, y = y, x
 </b></details>
 
 <details>
-<summary>Explain the following object's magic variables:
+<summary>Объясните следующие магические переменные объекта:
 
   * __dict__
 </summary><br><b>
 </b></details>
 
 <details>
-<summary>Write a function to return the sum of one or more numbers. The user will decide how many numbers to use</summary><br><b>
+<summary>Напишите функцию, возвращающую сумму одного или нескольких чисел. Пользователь сам решает, сколько чисел использовать</summary><br><b>
 
-First you ask the user for the amount of numbers that will be use. Use a while loop that runs until amount_of_numbers becomes 0 through subtracting amount_of_numbers by one each loop. In the while loop you want ask the user for a number which will be added a variable each time the loop runs.
+Сначала нужно спросить у пользователя, сколько чисел будет использовано. Затем использовать цикл while, который выполняется, пока amount_of_numbers не станет 0, уменьшая amount_of_numbers на единицу на каждой итерации. В цикле while нужно запрашивать у пользователя число, которое на каждой итерации прибавляется к переменной.
 
 ```
 def return_sum():
@@ -667,7 +667,7 @@ def return_sum():
 </b></details>
 
 <details>
-<summary>Print the average of [2, 5, 6]. It should be rounded to 3 decimal places</summary><br><b>
+<summary>Выведите среднее значение [2, 5, 6]. Оно должно быть округлено до 3 знаков после запятой</summary><br><b>
 
 ```
 li = [2, 5, 6]
@@ -675,50 +675,50 @@ print("{0:.3f}".format(sum(li)/len(li)))
 ```
 </b></details>
 
-#### Python - Lists
+#### Python — списки
 
 <details>
-<summary>What is a tuple in Python? What is it used for?</summary><br><b>
+<summary>Что такое кортеж (tuple) в Python? Для чего он используется?</summary><br><b>
 
-A tuple is a built-in data type in Python. It's used for storing multiple items in a single variable.
+Кортеж — встроенный тип данных в Python. Он используется для хранения нескольких элементов в одной переменной.
 </b></details>
 
 <details>
-<summary>List, like a tuple, is also used for storing multiple items. What is then, the difference between a tuple and a list?</summary><br><b>
+<summary>Список (list), как и кортеж, тоже используется для хранения нескольких элементов. В чём тогда разница между кортежем и списком?</summary><br><b>
 
-List, as opposed to a tuple, is a mutable data type. It means we can modify it and at items to it.
+Список, в отличие от кортежа, — изменяемый тип данных. Это значит, что его можно изменять и добавлять в него элементы.
 </b></details>
 
 <details>
-<summary>How to add the number 2 to the list <code>x = [1, 2, 3]</code></summary><br><b>
+<summary>Как добавить число 2 в список <code>x = [1, 2, 3]</code></summary><br><b>
 
 `x.append(2)`
 </b></details>
 
 <details>
-<summary>How to get the last element of a list?</summary><br><b>
+<summary>Как получить последний элемент списка?</summary><br><b>
 
 `some_list[-1]`
 </b></details>
 
 <details>
-<summary>How to add the items of [1, 2, 3] to the list [4, 5, 6]?</summary><br><b>
+<summary>Как добавить элементы [1, 2, 3] в список [4, 5, 6]?</summary><br><b>
 x = [4, 5, 6]
 x.extend([1, 2, 3])
 
-Don't use `append` unless you would like the list as one item.
+Не используйте `append`, если только не нужно добавить список как один элемент.
 </b></details>
 
 <details>
-<summary>How to remove the first 3 items from a list?</summary><br><b>
+<summary>Как удалить первые 3 элемента из списка?</summary><br><b>
 
 `my_list[0:3] = []`
 </b></details>
 
 <details>
-<summary>How to insert an item to the beginning of a list? What about two items?</summary><br><b>
+<summary>Как вставить элемент в начало списка? А два элемента?</summary><br><b>
 
-- One item:
+- Один элемент:
 
 ```
 numbers = [1, 2, 3, 4, 5]
@@ -726,7 +726,7 @@ numbers.insert(0, 0)
 print(numbers)
 ```
 
-- Multiple items or list:
+- Несколько элементов или список:
 
 ```
 numbers_1 = [2, 3, 4, 5]
@@ -738,13 +738,13 @@ print(numbers_1)
 </b></details>
 
 <details>
-<summary>How to sort list by the length of items?</summary><br><b>
+<summary>Как отсортировать список по длине элементов?</summary><br><b>
 
 ```
 sorted_li = sorted(li, key=len)
 ```
 
-Or without creating a new list:
+Или без создания нового списка:
 
 ```
 li.sort(key=len)
@@ -752,17 +752,17 @@ li.sort(key=len)
 </b></details>
 
 <details>
-<summary>Do you know what is the difference between list.sort() and sorted(list)?</summary><br><b>
+<summary>В чём разница между list.sort() и sorted(list)?</summary><br><b>
 
-* sorted(list) will return a new list (original list doesn't change)
-* list.sort() will return None but the list is change in-place
+* sorted(list) возвращает новый список (исходный список не меняется)
+* list.sort() возвращает None, но список изменяется на месте (in-place)
 
-* sorted() works on any iterable (Dictionaries, Strings, ...)
-* list.sort() is faster than sorted(list) in case of Lists
+* sorted() работает с любым итерируемым объектом (словари, строки, ...)
+* list.sort() быстрее, чем sorted(list), в случае списков
 </b></details>
 
 <details>
-<summary>Convert every string to an integer: <code>[['1', '2', '3'], ['4', '5', '6']]</code></summary><br><b>
+<summary>Преобразуйте каждую строку в целое число: <code>[['1', '2', '3'], ['4', '5', '6']]</code></summary><br><b>
 
 ```
 nested_li = [['1', '2', '3'], ['4', '5', '6']]
@@ -771,13 +771,13 @@ nested_li = [['1', '2', '3'], ['4', '5', '6']]
 </b></details>
 
 <details>
-<summary>How to merge two sorted lists into one sorted list?</summary><br><b>
+<summary>Как объединить два отсортированных списка в один отсортированный список?</summary><br><b>
 
 ```
 sorted(li1 + li2)
 ```
 
-Another way:
+Другой способ:
 
 ```
 i, j = 0
@@ -796,20 +796,20 @@ merged_li = merged_li + merged_li[i:] + merged_li[j:]
 </b></details>
 
 <details>
-<summary>How to check if all the elements in a given lists are unique? so [1, 2, 3] is unique but [1, 1, 2, 3] is not unique because 1 exists twice</summary><br><b>
+<summary>Как проверить, что все элементы заданного списка уникальны? То есть [1, 2, 3] — уникальный, а [1, 1, 2, 3] — нет, потому что 1 встречается дважды</summary><br><b>
 </b>
 
-There are many ways of solving this problem:<br>
+Есть много способов решить эту задачу:<br>
 <code># Note: :list and -> bool are just python typings, they are not needed for the correct execution of the algorithm. </code>
 
-Taking advantage of sets and len:
+С использованием множеств (set) и len:
 
 ```
 def is_unique(l:list) -> bool:
     return len(set(l)) == len(l)
 ```
 
-This one is can be seen used in other programming languages.
+Такой вариант можно встретить и в других языках программирования.
 
 ```
 def is_unique2(l:list) -> bool:
@@ -822,7 +822,7 @@ def is_unique2(l:list) -> bool:
     return True
 ```
 
-Here we just count and make sure every element is just repeated once.
+Здесь мы просто считаем и проверяем, что каждый элемент встречается только один раз.
 
 ```
 def is_unique3(l:list) -> bool:
@@ -832,7 +832,7 @@ def is_unique3(l:list) -> bool:
     return True
 ```
 
-This one might look more convulated but hey, one liners.
+Этот вариант может выглядеть более запутанным, но зато в одну строку.
 
 ```
 def is_unique4(l:list) -> bool:
@@ -841,7 +841,7 @@ def is_unique4(l:list) -> bool:
 </details>
 
 <details>
-<summary>You have the following function
+<summary>Есть следующая функция
 
 ```
 def my_func(li = []):
@@ -849,7 +849,7 @@ def my_func(li = []):
     print(li)
 ```
 
-If we call it 3 times, what would be the result each call?
+Если вызвать её 3 раза, каким будет результат каждого вызова?
 </summary><br><b>
 
 ```
@@ -861,7 +861,7 @@ If we call it 3 times, what would be the result each call?
 
 
 <details>
-<summary>How to iterate over a list?</summary><br><b>
+<summary>Как перебрать элементы списка?</summary><br><b>
 
 ```
 for item in some_list:
@@ -870,7 +870,7 @@ for item in some_list:
 </b></details>
 
 <details>
-<summary>How to iterate over a list with indexes?</summary><br><b>
+<summary>Как перебрать элементы списка вместе с индексами?</summary><br><b>
 
 ```
 for i, item in enumerate(some_list):
@@ -879,16 +879,16 @@ for i, item in enumerate(some_list):
 </b></details>
 
 <details>
-<summary>How to start list iteration from 2nd index?</summary><br><b>
+<summary>Как начать перебор списка со 2-го индекса?</summary><br><b>
 
-Using range like this
+С помощью range, вот так
 
 ```
 for i in range(1, len(some_list)):
     some_list[i]
 ```
 
-Another way is using slicing
+Другой способ — использовать срез
 
 ```
 for i in some_list[1:]:
@@ -896,15 +896,15 @@ for i in some_list[1:]:
 </b></details>
 
 <details>
-<summary>How to iterate over a list in reverse order?</summary><br><b>
+<summary>Как перебрать список в обратном порядке?</summary><br><b>
 
-Method 1
+Способ 1
 ```
 for i in reversed(li):
     ...
 ```
 
-Method 2
+Способ 2
 ```
 n = len(li) - 1
 while n > 0:
@@ -914,7 +914,7 @@ while n > 0:
 </b></details>
 
 <details>
-<summary>Sort a list of lists by the second item of each nested list</summary><br><b>
+<summary>Отсортируйте список списков по второму элементу каждого вложенного списка</summary><br><b>
 
 ```
 li = [[1, 4], [2, 1], [3, 9], [4, 2], [4, 5]]
@@ -922,7 +922,7 @@ li = [[1, 4], [2, 1], [3, 9], [4, 2], [4, 5]]
 sorted(li, key=lambda l: l[1])
 ```
 
-or
+или
 
 ```
 li.sort(key=lambda l: l[1)
@@ -930,7 +930,7 @@ li.sort(key=lambda l: l[1)
 </b></details>
 
 <details>
-<summary>Combine [1, 2, 3] and ['x', 'y', 'z'] so the result is [(1, 'x'), (2, 'y'), (3, 'z')]</summary><br><b>
+<summary>Объедините [1, 2, 3] и ['x', 'y', 'z'] так, чтобы результат был [(1, 'x'), (2, 'y'), (3, 'z')]</summary><br><b>
 
 ```
 nums = [1, 2, 3]
@@ -941,13 +941,13 @@ list(zip(nums, letters))
 </b></details>
 
 <details>
-<summary>What is List Comprehension? Is it better than a typical loop? Why? Can you demonstrate how to use it?</summary><br><b>
+<summary>Что такое генератор списков (List Comprehension)? Лучше ли он обычного цикла? Почему? Продемонстрируйте, как его использовать</summary><br><b>
 
-From [Docs](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions): "List comprehensions provide a concise way to create lists. Common applications are to make new lists where each element is the result of some operations applied to each member of another sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition.".
+Из [документации](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions): «Генераторы списков дают лаконичный способ создавать списки. Типичное применение — создание новых списков, где каждый элемент является результатом некоторых операций, применённых к каждому элементу другой последовательности или итерируемого объекта, или создание подпоследовательности элементов, удовлетворяющих определённому условию.».
 
-It's better because they're compact, faster and have better readability.
+Он лучше, потому что компактнее, быстрее и лучше читается.
 
-- For loop:
+- Цикл for:
 
 ```
 number_lists = [[1, 7, 3, 1], [13, 93, 23, 12], [123, 423, 456, 653, 124]]
@@ -959,7 +959,7 @@ for number_list in number_lists:
 print(odd_numbers)
 ```
 
-- List comprehesion:
+- Генератор списка:
 
 ```
 number_lists = [[1, 7, 3, 1], [13, 93, 23, 12], [123, 423, 456, 653, 124]]
@@ -970,14 +970,14 @@ print(odd_numbers)
 </b></details>
 
 <details>
-<summary>You have the following list: <code>[{'name': 'Mario', 'food': ['mushrooms', 'goombas']}, {'name': 'Luigi', 'food': ['mushrooms', 'turtles']}]</code>
-  Extract all type of foods. Final output should be: {'mushrooms', 'goombas', 'turtles'}</summary><br><b>
+<summary>Есть следующий список: <code>[{'name': 'Mario', 'food': ['mushrooms', 'goombas']}, {'name': 'Luigi', 'food': ['mushrooms', 'turtles']}]</code>
+  Извлеките все виды еды. Итоговый вывод должен быть таким: {'mushrooms', 'goombas', 'turtles'}</summary><br><b>
 
 ```
 brothers_menu =  \
 [{'name': 'Mario', 'food': ['mushrooms', 'goombas']}, {'name': 'Luigi', 'food': ['mushrooms', 'turtles']}]
 
-# "Classic" Way
+# «Классический» способ
 def get_food(brothers_menu) -> set:
     temp = []
 
@@ -987,32 +987,32 @@ def get_food(brothers_menu) -> set:
 
     return set(temp)
 
-# One liner way (Using list comprehension)
+# Способ в одну строку (с помощью генератора списка)
 set([food for bro in x for food in bro['food']])
 ```
 </b></details>
 
-#### Python - Dictionaries
+#### Python — словари
 
 <details>
-<summary>How to create a dictionary?</summary><br><b>
+<summary>Как создать словарь?</summary><br><b>
 
 my_dict = dict(x=1, y=2)
-OR
+ИЛИ
 my_dict = {'x': 1, 'y': 2}
-OR
+ИЛИ
 my_dict = dict([('x', 1), ('y', 2)])
 </b></details>
 
 <details>
-<summary>How to remove a key from a dictionary?</summary><br><b>
+<summary>Как удалить ключ из словаря?</summary><br><b>
 
 del my_dict['some_key']
-you can also use `my_dict.pop('some_key')` which returns the value of the key.
+также можно использовать `my_dict.pop('some_key')`, который возвращает значение ключа.
 </b></details>
 
 <details>
-<summary>How to sort a dictionary by values?</summary><br><b>
+<summary>Как отсортировать словарь по значениям?</summary><br><b>
 
 ```
 {k: v for k, v in sorted(x.items(), key=lambda item: item[1])}
@@ -1020,7 +1020,7 @@ you can also use `my_dict.pop('some_key')` which returns the value of the key.
 </b></details>
 
 <details>
-<summary>How to sort a dictionary by keys?</summary><br><b>
+<summary>Как отсортировать словарь по ключам?</summary><br><b>
 
 ```
 dict(sorted(some_dictionary.items()))
@@ -1028,7 +1028,7 @@ dict(sorted(some_dictionary.items()))
 </b></details>
 
 <details>
-<summary>How to merge two dictionaries?</summary><br><b>
+<summary>Как объединить два словаря?</summary><br><b>
 
 ```
 some_dict1.update(some_dict2)
@@ -1037,7 +1037,7 @@ some_dict1.update(some_dict2)
 
 
 <details>
-<summary>Convert the string "a.b.c" to the dictionary <code>{'a': {'b': {'c': 1}}}</code></summary><br><b>
+<summary>Преобразуйте строку "a.b.c" в словарь <code>{'a': {'b': {'c': 1}}}</code></summary><br><b>
 
 ```
 output = {}
@@ -1049,18 +1049,18 @@ print(output)
 ```
 </b></details>
 
-##### Common Algorithms Implementation
+##### Реализация распространённых алгоритмов
 
 <details>
-<summary>Can you implement "binary search" in Python?</summary><br><b>
+<summary>Реализуйте «бинарный поиск» (binary search) на Python</summary><br><b>
 
-[Solution](coding/python/binary_search.py)
+[Решение](coding/python/binary_search.py)
 </b></details>
 
-#### Python Files
+#### Python — файлы
 
 <details>
-<summary>How to write to a file?</summary><br><b>
+<summary>Как записать данные в файл?</summary><br><b>
 
 ```
 with open('file.txt', 'w') as file:
@@ -1069,31 +1069,31 @@ with open('file.txt', 'w') as file:
 </b></details>
 
 <details>
-<summary>Sum all the integers in a given file</summary><br><b>
+<summary>Просуммируйте все целые числа в заданном файле</summary><br><b>
 </b></details>
 
 <details>
-<summary>Print a random line of a given file</summary><br><b>
+<summary>Выведите случайную строку заданного файла</summary><br><b>
 </b></details>
 
 <details>
-<summary>Print every 3rd line of a given file</summary><br><b>
+<summary>Выведите каждую 3-ю строку заданного файла</summary><br><b>
 </b></details>
 
 <details>
-<summary>Print the number of lines in a given file</summary><br><b>
+<summary>Выведите количество строк в заданном файле</summary><br><b>
 </b></details>
 
 <details>
-<summary>Print the number of of words in a given file</summary><br><b>
+<summary>Выведите количество слов в заданном файле</summary><br><b>
 </b></details>
 
 <details>
-<summary>Can you write a function which will print all the file in a given directory? including sub-directories</summary><br><b>
+<summary>Напишите функцию, которая выведет все файлы в заданном каталоге, включая подкаталоги</summary><br><b>
 </b></details>
 
 <details>
-<summary>Write a dictionary (variable) to a file</summary><br><b>
+<summary>Запишите словарь (переменную) в файл</summary><br><b>
 
 ```
 import json
@@ -1103,10 +1103,10 @@ with open('file.json', 'w') as f:
 ```
 </b></details>
 
-#### Python OS
+#### Python — ОС
 
 <details>
-<summary>How to print current working directory?</summary><br><b>
+<summary>Как вывести текущий рабочий каталог?</summary><br><b>
 
     import os
 
@@ -1115,66 +1115,66 @@ with open('file.json', 'w') as f:
 </b></details>
 
 <details>
-<summary>Given the path <code>/dir1/dir2/file1</code> print the file name (file1)</summary><br><b>
+<summary>Дан путь <code>/dir1/dir2/file1</code>: выведите имя файла (file1)</summary><br><b>
 
     import os
 
     print(os.path.basename('/dir1/dir2/file1'))
 
-    # Another way
+    # Другой способ
     print(os.path.split('/dir1/dir2/file1')[1])
 
 </b></details>
 
 <details>
-<summary>Given the path <code>/dir1/dir2/file1</code>
+<summary>Дан путь <code>/dir1/dir2/file1</code>
 
-1. Print the path without the file name (/dir1/dir2)
-2. Print the name of the directory where the file resides (dir2)
+1. Выведите путь без имени файла (/dir1/dir2)
+2. Выведите имя каталога, в котором находится файл (dir2)
 </summary><br><b>
 
     import os
 
-    ## Part 1.
-    # os.path.dirname gives path removing the end component
+    ## Часть 1.
+    # os.path.dirname возвращает путь без последнего компонента
     dirpath = os.path.dirname('/dir1/dir2/file1')
     print(dirpath)
 
-    ## Part 2.
+    ## Часть 2.
     print(os.path.basename(dirpath))
 
 </b></details>
 
 <details>
-<summary>How do you execute shell commands using Python?</summary><br><b>
+<summary>Как выполнять команды оболочки (shell) с помощью Python?</summary><br><b>
 </b></details>
 
 <details>
-<summary>How do you join path components? for example <code>/home</code> and <code>luig</code> will result in <code>/home/luigi</code> </summary><br><b>
+<summary>Как объединить компоненты пути? Например, <code>/home</code> и <code>luig</code> дадут <code>/home/luigi</code> </summary><br><b>
 </b></details>
 
 <details>
-<summary>How do you remove non-empty directory?</summary><br><b>
+<summary>Как удалить непустой каталог?</summary><br><b>
 </b></details>
 
-#### Python Regex
+#### Python — регулярные выражения
 
 <details>
-<summary>How do you perform regular expressions related operations in Python? (match patterns, substitute strings, etc.)</summary><br><b>
+<summary>Как выполнять операции с регулярными выражениями в Python? (сопоставление с шаблоном, замена в строках и т.д.)</summary><br><b>
 
-Using the re module
+С помощью модуля re
 </b></details>
 
 <details>
-<summary>How to find all the IP addresses in a variable? How to find them in a file?</summary><br><b>
+<summary>Как найти все IP-адреса в переменной? А в файле?</summary><br><b>
 </b></details>
 
-#### Python Strings
+#### Python — строки
 
 <details>
-<summary>Find the first repeated character in a string</summary><br><b>
+<summary>Найдите первый повторяющийся символ в строке</summary><br><b>
 
-While you iterate through the characters, store them in a dictionary and check for every character whether it's already in the dictionary.
+При переборе символов сохранять их в словаре и для каждого символа проверять, есть ли он уже в словаре.
 
 ```
 def firstRepeatedCharacter(str):
@@ -1188,7 +1188,7 @@ def firstRepeatedCharacter(str):
 </b></details>
 
 <details>
-<summary>How to extract the unique characters from a string? for example given the input "itssssssameeeemarioooooo" the output will be "mrtisaoe"</summary><br><b>
+<summary>Как извлечь уникальные символы из строки? Например, для входной строки "itssssssameeeemarioooooo" вывод будет "mrtisaoe"</summary><br><b>
 
 ```
 x = "itssssssameeeemarioooooo"
@@ -1197,7 +1197,7 @@ y = ''.join(set(x))
 </b></details>
 
 <details>
-<summary>Find all the permutations of a given string</summary><br><b>
+<summary>Найдите все перестановки заданной строки</summary><br><b>
 
 ```
 def permute_string(string):
@@ -1216,7 +1216,7 @@ def permute_string(string):
 print(permute_string("abc"))
 ```
 
-Short way (but probably not acceptable in interviews):
+Короткий способ (но, скорее всего, неприемлемый на собеседовании):
 
 ```
 from itertools import permutations
@@ -1224,22 +1224,22 @@ from itertools import permutations
 [''.join(p) for p in permutations("abc")]
 ```
 
-Detailed answer can be found here: http://codingshell.com/python-all-string-permutations
+Подробный ответ можно найти здесь: http://codingshell.com/python-all-string-permutations
 
 </b></details>
 
 <details>
-<summary>How to check if a string contains a sub string?</summary><br><b>
+<summary>Как проверить, содержит ли строка подстроку?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Find the frequency of each character in string</summary><br><b>
+<summary>Найдите частоту каждого символа в строке</summary><br><b>
 </b></details>
 
 <details>
-<summary>Count the number of spaces in a string</summary><br><b>
+<summary>Подсчитайте количество пробелов в строке</summary><br><b>
 
-You can use the "count" method like this:
+Можно использовать метод "count" вот так:
 
 ```python
 
@@ -1250,15 +1250,15 @@ ImAString.count(" ")
 </b></details>
 
 <details>
-<summary>Given a string, find the N most repeated words</summary><br><b>
+<summary>Дана строка: найдите N наиболее часто повторяющихся слов</summary><br><b>
 </b></details>
 
 <details>
-<summary>Given the string (which represents a matrix) "1 2 3\n4 5 6\n7 8 9" create rows and colums variables (should contain integers, not strings)</summary><br><b>
+<summary>Дана строка (представляющая матрицу) "1 2 3\n4 5 6\n7 8 9": создайте переменные строк и столбцов (они должны содержать целые числа, а не строки)</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the result of each of the following?
+<summary>Каков результат каждого из следующих выражений?
 
 ```
 >> ', '.join(["One", "Two", "Three"])
@@ -1275,43 +1275,43 @@ ImAString.count(" ")
 </b></details>
 
 <details>
-<summary>If <code>x = "pizza"</code>, what would be the result of <code>x[::-1]</code>?</summary><br><b>
+<summary>Если <code>x = "pizza"</code>, каким будет результат <code>x[::-1]</code>?</summary><br><b>
 
-It will reverse the string, so x would be equal to `azzip`.
+Строка будет развёрнута, то есть x будет равно `azzip`.
 </b></details>
 
 <details>
-<summary>Reverse each word in a string (while keeping the order)</summary><br><b>
+<summary>Разверните каждое слово в строке (сохранив порядок слов)</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the output of the following code: <code>"".join(["a", "h", "m", "a", "h", "a", "n", "q", "r", "l", "o", "i", "f", "o", "o"])[2::3]</code></summary><br><b>
+<summary>Каков вывод следующего кода: <code>"".join(["a", "h", "m", "a", "h", "a", "n", "q", "r", "l", "o", "i", "f", "o", "o"])[2::3]</code></summary><br><b>
 
 mario
 </b></details>
 
-#### Python Iterators
+#### Python — итераторы
 
 <details>
-<summary>What is an iterator?</summary><br><b>
+<summary>Что такое итератор?</summary><br><b>
 </b></details>
 
-#### Python Misc
+#### Python — разное
 
 <details>
-<summary>Explain data serialization and how do you perform it with Python</summary><br><b>
-</b></details>
-
-<details>
-<summary>How do you handle argument parsing in Python?</summary><br><b>
+<summary>Объясните, что такое сериализация данных и как её выполнять в Python</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is a generator? Why using generators?</summary><br><b>
+<summary>Как обрабатывать (парсить) аргументы в Python?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What would be the output of the following block?
+<summary>Что такое генератор? Зачем использовать генераторы?</summary><br><b>
+</b></details>
+
+<details>
+<summary>Каким будет вывод следующего блока?
 
 ```
 for i in range(3, 3):
@@ -1319,96 +1319,96 @@ for i in range(3, 3):
 ```
 </summary><br><b>
 
-No output :)
+Вывода не будет :)
 </b></details>
 
 <details>
-<summary>What is <code>yeild</code>? When would you use it?</summary><br><b>
+<summary>Что такое <code>yeild</code>? Когда его использовать?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain the following types of methods and how to use them:
+<summary>Объясните следующие типы методов и как их использовать:
 
-  * Static method
-  * Class method
-  * instance method</summary><br><b>
+  * Статический метод (static method)
+  * Метод класса (class method)
+  * Метод экземпляра (instance method)</summary><br><b>
 </b></details>
 
 <details>
-<summary>How to reverse a list?</summary><br><b>
+<summary>Как развернуть список?</summary><br><b>
 </b></details>
 
 <details>
-<summary>How to combine list of strings into one string with spaces between the strings</summary><br><b>
+<summary>Как объединить список строк в одну строку с пробелами между ними</summary><br><b>
 </b></details>
 
 <details>
-<summary>You have the following list of nested lists: <code>[['Mario', 90], ['Geralt', 82], ['Gordon', 88]]</code> How to sort the list by the numbers in the nested lists?</code></summary><br><b>
+<summary>Есть следующий список вложенных списков: <code>[['Mario', 90], ['Geralt', 82], ['Gordon', 88]]</code> Как отсортировать список по числам во вложенных списках?</code></summary><br><b>
 
-One way is:
+Один из способов:
 
 the_list.sort(key=lambda x: x[1])
 </b></details>
 
 <details>
-<summary>Explain the following:
+<summary>Объясните следующее:
 
   * zip()
   * map()
   * filter()</summary><br><b>
 </b></details>
 
-#### Python - Slicing
+#### Python — срезы
 
-For the following slicing exercises, assume you have the following list: `my_list = [8, 2, 1, 10, 5, 4, 3, 9]`
+В следующих упражнениях на срезы предполагается, что есть такой список: `my_list = [8, 2, 1, 10, 5, 4, 3, 9]`
 
 <details>
-<summary>What is the result of `my_list[0:4]`?</summary><br><b>
+<summary>Каков результат `my_list[0:4]`?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the result of `my_list[5:6]`?</summary><br><b>
+<summary>Каков результат `my_list[5:6]`?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the result of `my_list[5:5]`?</summary><br><b>
+<summary>Каков результат `my_list[5:5]`?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the result of `my_list[::-1]`?</summary><br><b>
+<summary>Каков результат `my_list[::-1]`?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the result of `my_list[::3]`?</summary><br><b>
+<summary>Каков результат `my_list[::3]`?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the result of `my_list[2:]`?</summary><br><b>
+<summary>Каков результат `my_list[2:]`?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the result of `my_list[:3]`?</summary><br><b>
+<summary>Каков результат `my_list[:3]`?</summary><br><b>
 </b></details>
 
-#### Python Debugging
+#### Python — отладка
 
 <details>
-<summary>How do you debug Python code?</summary><br><b>
+<summary>Как отлаживать код на Python?</summary><br><b>
 
 pdb :D
 </b></details>
 
 <details>
-<summary>How to check how much time it took to execute a certain script or block of code?</summary><br><b>
+<summary>Как проверить, сколько времени заняло выполнение определённого скрипта или блока кода?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What empty <code>return</code> returns?</summary><br><b>
+<summary>Что возвращает пустой <code>return</code>?</summary><br><b>
 </b>
 
-Short answer is: It returns a None object.
+Короткий ответ: он возвращает объект None.
 
-We could go a bit deeper and explain the difference between
+Можно копнуть глубже и объяснить разницу между
 
 ```
 def a ():
@@ -1417,7 +1417,7 @@ def a ():
 >>> None
 ```
 
-And
+и
 
 ```
 def a ():
@@ -1425,9 +1425,9 @@ def a ():
 
 >>> None
 ```
-Or we could be asked this as a following question, since they both give the same result.
+Или это могут спросить как следующий вопрос, поскольку оба варианта дают одинаковый результат.
 
-We could use the dis module to see what's going on:
+Чтобы посмотреть, что происходит, можно использовать модуль dis:
 
 ```
   2           0 LOAD_CONST               0 (<code object a at 0x0000029C4D3C2DB0, file "<dis>", line 2>)
@@ -1451,8 +1451,8 @@ Disassembly of <code object b at 0x0000029C4D3C2ED0, file "<dis>", line 5>:
               2 RETURN_VALUE
 ```
 
-An empty <code> return</code> is exactly the same as <code>return None</code> and functions without any explicit return
-will always return None regardless of the operations, therefore
+Пустой <code> return</code> — это в точности то же самое, что <code>return None</code>, а функции без явного return
+всегда возвращают None независимо от выполняемых операций, поэтому
 
 
 ```
@@ -1465,7 +1465,7 @@ def sum(a, b):
 </b></details>
 
 <details>
-<summary>How to improve the following block of code?
+<summary>Как улучшить следующий блок кода?
 
 ```
 li = []
@@ -1480,7 +1480,7 @@ for i in range(1, 10):
 </b></details>
 
 <details>
-<summary>Given the following function
+<summary>Дана следующая функция
 
 ```
 def is_int(num):
@@ -1489,19 +1489,19 @@ def is_int(num):
     else:
         print('No')
 ```
-What would be the result of is_int(2) and is_int(False)?
+Каким будет результат is_int(2) и is_int(False)?
 </summary><br><b>
 </b></details>
 
-#### Python - Linked List
+#### Python — связный список
 
 <details>
-<summary>Can you implement a linked list in Python?</summary><br><b>
+<summary>Реализуйте связный список (linked list) на Python</summary><br><b>
 
-The reason we need to implement in the first place, it's because a linked list isn't part of Python standard library.<br>
-To implement a linked list, we have to implement two structures: The linked list itself and a node which is used by the linked list.
+Реализовывать его приходится потому, что связного списка нет в стандартной библиотеке Python.<br>
+Чтобы реализовать связный список, нужно реализовать две структуры: сам связный список и узел (node), который используется связным списком.
 
-Let's start with a node. A node has some value (the data it holds) and a pointer to the next node
+Начнём с узла. У узла есть некоторое значение (данные, которые он хранит) и указатель на следующий узел
 
 ```
 class Node(object):
@@ -1510,7 +1510,7 @@ class Node(object):
         self.next = None
 ```
 
-Now the linked list. An empty linked list has nothing but an empty head.
+Теперь связный список. Пустой связный список не содержит ничего, кроме пустой головы (head).
 
 ```
 class LinkedList(object):
@@ -1518,7 +1518,7 @@ class LinkedList(object):
         self.head = None
 ```
 
-Now we can start using the linked list
+Теперь можно начать использовать связный список
 
 ```
 ll = Linkedlist()
@@ -1527,13 +1527,13 @@ ll.head.next = Node(2)
 ll.head.next.next = Node(3)
 ```
 
-What we have is:
+Получается следующее:
 
 ----       -----      ----
 | 1 | ->   | 2 |  ->  | 3 |
 ----       -----      -----
 
-Usually, more methods are implemented, like a push_head() method where you insert a node at the beginning of the linked list
+Обычно реализуют и другие методы, например push_head(), который вставляет узел в начало связного списка
 
 ```
 def push_head(self, value):
@@ -1544,7 +1544,7 @@ def push_head(self, value):
 </b></details>
 
 <details>
-<summary>Add a method to the Linked List class to traverse (print every node's data) the linked list</summary><br><b>
+<summary>Добавьте в класс Linked List метод для обхода связного списка (вывода данных каждого узла)</summary><br><b>
 
 def print_list(self):
     node = self.head
@@ -1554,9 +1554,9 @@ def print_list(self):
 </b></details>
 
 <details>
-<summary>Write a method to that will return a boolean based on whether there is a loop in a linked list or not</summary><br><b>
+<summary>Напишите метод, который возвращает логическое значение в зависимости от того, есть ли цикл в связном списке</summary><br><b>
 
-Let's use the Floyd's Cycle-Finding algorithm:
+Воспользуемся алгоритмом поиска цикла Флойда (Floyd's Cycle-Finding algorithm):
 
 ```
 def loop_exists(self):
@@ -1571,65 +1571,65 @@ def loop_exists(self):
 ```
 </b></details>
 
-#### Python - Stack
+#### Python — стек
 
 <details>
-<summary>Implement Stack in Python</summary><br><b>
+<summary>Реализуйте стек (Stack) на Python</summary><br><b>
 </b></details>
 
-#### Python Testing
+#### Python — тестирование
 
 <details>
-<summary>What is your experience with writing tests in Python?</summary><br><b>
-</b></details>
-
-<details>
-<summary>What is PEP8? Give an example of 3 style guidelines</summary><br><b>
-
-PEP8 is a list of coding conventions and style guidelines for Python
-
-5 style guidelines:
-
-    1. Limit all lines to a maximum of 79 characters.
-    2. Surround top-level function and class definitions with two blank lines.
-    3. Use commas when making a tuple of one element
-    4. Use spaces (and not tabs) for indentation
-    5. Use 4 spaces per indentation level
+<summary>Какой у вас опыт написания тестов на Python?</summary><br><b>
 </b></details>
 
 <details>
-<summary>How to test if an exception was raised?</summary><br><b>
+<summary>Что такое PEP8? Приведите пример 3 правил стиля</summary><br><b>
+
+PEP8 — это набор соглашений о написании кода и правил стиля для Python
+
+5 правил стиля:
+
+    1. Ограничивать длину всех строк максимум 79 символами.
+    2. Отделять определения функций и классов верхнего уровня двумя пустыми строками.
+    3. Использовать запятую при создании кортежа из одного элемента
+    4. Использовать для отступов пробелы (а не табуляцию)
+    5. Использовать 4 пробела на каждый уровень отступа
 </b></details>
 
 <details>
-<summary>What <code>assert</code> does in Python?</summary><br><b>
+<summary>Как проверить, было ли выброшено исключение?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain mocks</summary><br><b>
+<summary>Что делает <code>assert</code> в Python?</summary><br><b>
 </b></details>
 
 <details>
-<summary>How do you measure execution time of small code snippets?</summary><br><b>
+<summary>Объясните, что такое моки (mocks)</summary><br><b>
 </b></details>
 
 <details>
-<summary>Why one shouldn't use <code>assert</code> in non-test/production code?</summary><br><b>
+<summary>Как измерить время выполнения небольших фрагментов кода?</summary><br><b>
+</b></details>
+
+<details>
+<summary>Почему не стоит использовать <code>assert</code> в нетестовом/продакшен-коде?</summary><br><b>
 </b></details>
 
 #### Flask
 
 <details>
-<summary>Can you describe what is Django/Flask and how you have used it? Why Flask and not Django? (or vice versa)</summary><br><b>
+<summary>Опишите, что такое Django/Flask и как вы их использовали. Почему Flask, а не Django? (или наоборот)</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is a route?</summary><br><b>
-As every web framework, Flask provides a route functionality that lets you serve a content of a given URL.
+<summary>Что такое маршрут (route)?</summary><br><b>
+Как и любой веб-фреймворк, Flask предоставляет функциональность маршрутов, которая позволяет отдавать содержимое по заданному URL.
 
-There are multiple ways to map a URL with a function in Python.
+В Python есть несколько способов сопоставить URL с функцией.
 
-- Decorator: you can use python decorators. In this case we're using `app`. This `app` decorator is the instance of the `Flask` class. And route it's a method of this class.
+- Декоратор: можно использовать декораторы Python. В данном случае используется `app`. Этот декоратор `app` — экземпляр класса `Flask`, а route — метод этого класса.
 
 ```
 @app.route('/')
@@ -1637,11 +1637,10 @@ def home():
   return 'main website'
 ```
 
-- `add_url_rule` method: This is a method of the Flask class. We can also use it for map the URL with a function.
+- Метод `add_url_rule`: это метод класса Flask. Его тоже можно использовать для сопоставления URL с функцией.
 
 ```
 def home():
   return 'main website'
 
 app.add_url_rule('/', view_func=home)
-```

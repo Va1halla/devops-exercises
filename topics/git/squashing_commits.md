@@ -1,19 +1,19 @@
-## Git - Squashing Commits
+## Git — объединение (squash) коммитов
 
-### Objective
+### Цель
 
-Learn how to squash commits
+Научиться объединять (squash) коммиты
 
-### Instructions
+### Инструкции
 
-1. In a git repository, create a new file with the content "Mario" and create a new commit
-2. Make change to the content of the file you just created so the content is "Mario & Luigi" and create another commit
-3. Verify you have two separate commits
-4. Squash the latest two commits into one commit
+1. В git-репозитории создайте новый файл с содержимым "Mario" и создайте новый коммит
+2. Измените содержимое только что созданного файла на "Mario & Luigi" и создайте ещё один коммит
+3. Убедитесь, что у вас два отдельных коммита
+4. Объедините (squash) два последних коммита в один
 
-### After you complete the exercise
+### После выполнения упражнения
 
-Answer the following:
+Ответьте на вопросы:
 
-* What is the reason for squashing commits?
-* Is it possible to squash more than 2 commits?
+* Зачем объединять коммиты?
+* Можно ли объединить больше двух коммитов?

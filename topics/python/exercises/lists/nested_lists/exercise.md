@@ -1,10 +1,10 @@
-# Nested Lists - HackerRank
+# Вложенные списки — HackerRank
 
-Note: This question is from [HackerRank](https://www.hackerrank.com/challenges/nested-list/problem)
+Примечание: этот вопрос взят с [HackerRank](https://www.hackerrank.com/challenges/nested-list/problem)
 
-Given the names and grades for each student in a class of  students, store them in a nested list and print the name(s) of any student(s) having the second lowest grade.
+Даны имена и оценки каждого студента в классе из  студентов: сохранить их во вложенном списке и вывести имя (имена) студента (студентов) со второй по величине наименьшей оценкой.
 
-Sample Input 0
+Пример ввода 0
 
 5
 Harry
@@ -18,11 +18,11 @@ Akriti
 Harsh
 39
 
-Sample Output 0
+Пример вывода 0
 
 Berry
 Harry
 
-## Solution
+## Решение
 
-Click [here](solution.py) to view the solution.
+Нажмите [здесь](solution.py), чтобы посмотреть решение.

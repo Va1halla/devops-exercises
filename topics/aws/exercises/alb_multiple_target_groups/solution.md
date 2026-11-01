@@ -1,44 +1,44 @@
-## AWS ELB - ALB Multiple Target Groups
+## AWS ELB - ALB с несколькими целевыми группами (Target Groups)
 
-### Requirements                   
+### Требования                   
 
-Two EC2 instances with a simple web application that shows the web page with the string "Hey, it's a me, `<HOSTNAME>`!"
-One EC2 instance with a simple web application that shows the web page with the string "Hey, it's only a test..." under the endpoint /test
+Два экземпляра EC2 с простым веб-приложением, которое показывает веб-страницу со строкой "Hey, it's a me, `<HOSTNAME>`!"
+Один экземпляр EC2 с простым веб-приложением, которое показывает веб-страницу со строкой "Hey, it's only a test..." по эндпоинту /test
 
-### Objectives
+### Цели
 
-1. Create an application load balancer for the two instances you have, with the following properties
+1. Создать Application Load Balancer для двух имеющихся экземпляров со следующими параметрами
   1. healthy threshold: 3
   2. unhealthy threshold: 3
-  3. interval: 10 seconds
-2. Create another target group for the third instance
-  1. Traffic should be forwarded to this group based on the "/test" path
+  3. interval: 10 секунд
+2. Создать ещё одну целевую группу для третьего экземпляра
+  1. Трафик должен направляться в эту группу по пути "/test"
 
-### Solution
+### Решение
 
-#### Console
+#### Консоль
 
-1. Go to EC2 service
-2. Click in the left side menu on "Load balancers" under "Load balancing"
-3. Click on "Create load balancer"
-4. Choose "Application Load Balancer"
-5. Insert a name for the LB
-6. Choose an AZ where you want the LB to operate
-7. Choose a security group
-8. Under "Listeners and routing" click on "Create target group" and choose "Instances"
-  1. Provide a name for the target group
-  2. Set healthy threshold to 3
-  3. Set unhealthy threshold to 3
-  4. Set interval to 10 seconds
-  5. Click on "Next" and choose two out of three instances you've created
-  6. Click on "Create target group"
-9. Refresh target groups and choose the one you've just created
-10. Click on "Create load balancer" and wait for it to be provisioned
+1. Перейти в сервис EC2
+2. В меню слева нажать "Load balancers" в разделе "Load balancing"
+3. Нажать "Create load balancer"
+4. Выбрать "Application Load Balancer"
+5. Ввести имя для LB
+6. Выбрать AZ, в которой должен работать LB
+7. Выбрать группу безопасности (security group)
+8. В разделе "Listeners and routing" нажать "Create target group" и выбрать "Instances"
+  1. Указать имя целевой группы
+  2. Установить healthy threshold в 3
+  3. Установить unhealthy threshold в 3
+  4. Установить interval в 10 секунд
+  5. Нажать "Next" и выбрать два из трёх созданных экземпляров
+  6. Нажать "Create target group"
+9. Обновить список целевых групп и выбрать только что созданную
+10. Нажать "Create load balancer" и дождаться его создания
 
-11. In the left side menu click on "Target Groups" under "Load Balancing"
-12. Click on "Create target group"
-13. Set it with the same properties as previous target group but this time, add the third instance that you didn't include in the previous target group
-14. Go back to your ALB and under "Listeners" click on "Edit rules" under your current listener
-  1. Add a rule where if the path is "/test" then traffic should be forwarded to the second target group you've created
-  2. Click on "Save"
-15. Test it by going to the browser, insert the address and add "/test" to the address
+11. В меню слева нажать "Target Groups" в разделе "Load Balancing"
+12. Нажать "Create target group"
+13. Задать те же параметры, что и у предыдущей целевой группы, но на этот раз добавить третий экземпляр, который не вошёл в предыдущую группу
+14. Вернуться к своему ALB и в разделе "Listeners" нажать "Edit rules" у текущего listener
+  1. Добавить правило: если путь "/test", трафик направляется во вторую созданную целевую группу
+  2. Нажать "Save"
+15. Проверить в браузере: ввести адрес и добавить к нему "/test"

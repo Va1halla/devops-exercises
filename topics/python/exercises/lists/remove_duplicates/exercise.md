@@ -1,7 +1,7 @@
-# Remove Duplicates
+# Удаление дубликатов
 
-Note: this question is taken from [LeetCode](https://leetcode.com)
+Примечание: этот вопрос взят с [LeetCode](https://leetcode.com)
 
-## Objectives
+## Цели
 
-Given an integer list nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
+Дан список целых чисел nums, отсортированный в неубывающем порядке: удалить дубликаты на месте (in-place) так, чтобы каждый уникальный элемент встречался только один раз. Относительный порядок элементов должен сохраниться.

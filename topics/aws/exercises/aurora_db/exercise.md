@@ -1,14 +1,14 @@
-## AWS Databases - Aurora DB
+## Базы данных AWS - Aurora DB
 
-### Objectives
+### Цели
 
-1. Create an Aurora database with the following properties
-  * Edition: MySQL
-  * Instance type: db.t3.small
-  * A reader node in a different AZ
-  * Public access should be enabled
-  * Port should be set to 3306
-  * DB name: 'db'
-  * Backup retention: 10 days
+1. Создать базу данных Aurora со следующими параметрами
+  * Редакция: MySQL
+  * Тип экземпляра: db.t3.small
+  * Узел-читатель (reader) в другой AZ
+  * Публичный доступ должен быть включён
+  * Порт — 3306
+  * Имя БД: 'db'
+  * Хранение резервных копий: 10 дней
 
-2. How many instances does your DB cluster has?
+2. Сколько экземпляров в вашем кластере БД?

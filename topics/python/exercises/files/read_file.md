@@ -1,3 +1,3 @@
-## Read a File
+## Чтение файла
 
-Write a code that will read a file and print all its content
+Написать код, который прочитает файл и выведет всё его содержимое

@@ -1,33 +1,33 @@
 # Circle CI
 
-## Circle CI Questions
+## Вопросы по Circle CI
 
 ### Circle CI 101
 
 <details>
-<summary>What is Circle CI?</summary><br><b>
+<summary>Что такое Circle CI?</summary><br><b>
 
-[Circle CI](https://circleci.com): "CircleCI is a continuous integration and continuous delivery platform that can be used to implement DevOps practices."
+[Circle CI](https://circleci.com): «CircleCI — это платформа непрерывной интеграции и непрерывной доставки, которую можно использовать для внедрения практик DevOps.»
 </b></details>
 
 <details>
-<summary>What are some benefits of Circle CI?</summary><br><b>
+<summary>Каковы преимущества Circle CI?</summary><br><b>
 
-[Circle CI Docs](https://circleci.com/docs/about-circleci): "SSH into any job to debug your build issues.
-Set up parallelism in your .circleci/config.yml file to run jobs faster.
-Configure caching with two simple keys to reuse data from previous jobs in your workflow.
-Configure self-hosted runners for unique platform support.
-Access Arm resources for the machine executor.
-Use orbs, reusable packages of configuration, to integrate with third parties.
-Use pre-built Docker images in a variety of languages.
-Use the API
- to retrieve information about jobs and workflows.
-Use the CLI to access advanced tools locally.
-Get flaky test detection with test insights."
+[Документация Circle CI](https://circleci.com/docs/about-circleci): «Подключение по SSH к любому заданию для отладки проблем сборки.
+Настройка параллелизма в файле .circleci/config.yml для ускорения выполнения заданий.
+Настройка кэширования с помощью двух простых ключей для повторного использования данных из предыдущих заданий в workflow.
+Настройка self-hosted раннеров для поддержки уникальных платформ.
+Доступ к ресурсам Arm для machine executor.
+Использование orbs — переиспользуемых пакетов конфигурации — для интеграции со сторонними сервисами.
+Использование готовых Docker-образов для множества языков.
+Использование API
+ для получения информации о заданиях и workflows.
+Использование CLI для локального доступа к расширенным инструментам.
+Обнаружение нестабильных (flaky) тестов с помощью test insights.»
 </b></details>
 
 <details>
-<summary>Explain the following:
+<summary>Объясните следующие понятия:
 
 * Pipeline
 * Workflow
@@ -35,30 +35,30 @@ Get flaky test detection with test insights."
 * Steps
 </summary><br><b>
 
-* Pipeline: the entire CI/CD configuration (.circleci/config.yaml)
-* Workflow: primarily used when there is more than one job in the configuration to orchestrate the workflows
-* Jobs: One or more steps to execute as part of the CI/CD process
-* Steps: The actual commands to execute
+* Pipeline: вся конфигурация CI/CD (.circleci/config.yaml)
+* Workflow: в основном используется, когда в конфигурации больше одного задания, для оркестрации их выполнения
+* Jobs: один или несколько шагов, выполняемых в рамках процесса CI/CD
+* Steps: непосредственно выполняемые команды
 </b></details>
 
 <details>
-<summary>What is an Orb?</summary><br><b>
+<summary>Что такое Orb?</summary><br><b>
 
-[Circle CI Docs](https://circleci.com/developer/orbs): "Orbs are shareable packages of CircleCI configuration you can use to simplify your builds" 
+[Документация Circle CI](https://circleci.com/developer/orbs): «Orbs — это пакеты конфигурации CircleCI, которыми можно делиться и которые можно использовать для упрощения сборок» 
 
-They can come from the public registry or defined privately as part of an organization.
+Они могут браться из публичного реестра или определяться приватно в рамках организации.
 </b></details>
 
-### Circle CI Hands-On 101
+### Circle CI на практике 101
 
 <details>
-<summary>Where (in what location in the project) Circle CI pipelines are defined?</summary><br><b>
+<summary>Где (в каком месте проекта) определяются pipelines Circle CI?</summary><br><b>
 
 `.circleci/config.yml`
 </b></details>
 
 <details>
-<summary>Explain the following configuration file
+<summary>Объясните следующий файл конфигурации
 
 
 ```
@@ -80,6 +80,6 @@ workflows:
 ```
 </summary><br><b>
 
-This configuration file will set up one job that will checkout the code of the project will run the command `echo Hello, World!`.
-It will run in a container using the image `cimg/base:stable`.
+Этот файл конфигурации создаёт одно задание, которое выполнит checkout кода проекта и запустит команду `echo Hello, World!`.
+Задание будет выполняться в контейнере на основе образа `cimg/base:stable`.
 </b></details>

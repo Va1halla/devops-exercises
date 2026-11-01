@@ -1,9 +1,9 @@
-## Object Creation
+## Создание объекта
 
-1. Describe in detail what happens when the following code is executed: `var = 3`
+1. Подробно опишите, что происходит при выполнении следующего кода: `var = 3`
 
-### Solution
+### Решение
 
-* An object of type integer is created with the value of 3.<br>
-* The variable points `var` points to the created object<br>
-* Reference count is incremented by 1
+* Создаётся объект целочисленного типа со значением 3.<br>
+* Переменная `var` указывает на созданный объект<br>
+* Счётчик ссылок увеличивается на 1

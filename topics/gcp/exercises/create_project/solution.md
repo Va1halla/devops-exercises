@@ -1,19 +1,19 @@
-# Create a Project
+# Создание проекта
 
-## Objectives
+## Цели
 
-1. Create a project with a unique name
+1. Создать проект с уникальным именем
 
-## Solution
+## Решение
 
-### Console
+### Консоль
 
-1. Click in the top bar on "New Project" (if you already have a project then, click on the project name and then "New Project") or in the search bar insert "Create Project".
-2. Insert a globally unique project name
-3. Optionally choose an organization
-4. Optionally put it under a specific folder
-5. Click on "Create" :)
+1. Нажмите в верхней панели "New Project" (если проект уже есть, нажмите на имя проекта, а затем "New Project") или введите в строке поиска "Create Project".
+2. Введите глобально уникальное имя проекта
+3. При необходимости выберите организацию
+4. При необходимости поместите проект в определённую папку
+5. Нажмите "Create" :)
 
 ### Terraform
 
-Click [here](main.tf) to view the solution
+Нажмите [здесь](main.tf), чтобы посмотреть решение

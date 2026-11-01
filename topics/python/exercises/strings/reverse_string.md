@@ -1,3 +1,3 @@
-## Reverse String
+## Разворот строки
 
-1. Reverse a string
+1. Развернуть строку

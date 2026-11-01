@@ -1,7 +1,7 @@
 ## AWS ElastiCache
 
-### Objectives
+### Цели
 
-1. Create ElastiCache Redis
-  * Instance type should be "cache.t2.micro"
-  * Replicas should be 0
+1. Создать ElastiCache Redis
+  * Тип экземпляра — "cache.t2.micro"
+  * Количество реплик — 0

@@ -1,6 +1,6 @@
-## True or False?
+## True или False?
 
-What is the result of each of the following statements?
+Каков результат каждого из следующих выражений?
 
 1. `bool(1)` - True
 2. `bool("2017")` - True

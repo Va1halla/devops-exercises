@@ -1,3 +1,3 @@
-## Data Types? I Know a Few
+## Типы данных? Знаю парочку
 
-Which data types are you familiar with?
+С какими типами данных вы знакомы?

@@ -1,10 +1,10 @@
-## It's Alive!
+## Живой!
 
-### Objectives
+### Цели
 
-1. Write a script to determine whether a given host is down or up
+1. Написать скрипт, определяющий, доступен ли заданный хост (up) или нет (down)
 
-### Solution
+### Решение
 
 ```
 #!/usr/bin/env bash

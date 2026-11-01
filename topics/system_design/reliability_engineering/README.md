@@ -1,121 +1,121 @@
-- [Reliability](#reliability)
-- [Serviceability](#serviceability)
-- [Availability](#availability)
+- [Надёжность](#надёжность)
+- [Обслуживаемость](#обслуживаемость)
+- [Доступность](#доступность)
 - [Failover](#failover)
     - [Cold Standby](#cold-standby)
-      - [Advantages](#advantages)
-      - [Disadvantges](#disadvantges)
-    - [Use Cases](#use-cases)
+      - [Преимущества](#преимущества)
+      - [Недостатки](#недостатки)
+    - [Сценарии использования](#сценарии-использования)
     - [Warm Standby](#warm-standby)
-      - [Advantages](#advantages-1)
-      - [Disadvantages](#disadvantages)
+      - [Преимущества](#преимущества-1)
+      - [Недостатки](#недостатки-1)
     - [Hot Standby](#hot-standby)
-      - [Advantages](#advantages-2)
-      - [Disatvanges](#disatvanges)
-- [Questions](#questions)
+      - [Преимущества](#преимущества-2)
+      - [Недостатки](#недостатки-2)
+- [Вопросы](#вопросы)
   - [Failover](#failover-1)
-# Reliability
+# Надёжность
 
-[Wikipedia](https://en.wikipedia.org/wiki/Reliability,_availability_and_serviceability): "Reliability can be defined as the probability that a system will produce correct outputs up to some given time t.[5] Reliability is enhanced by features that help to avoid, detect and repair hardware faults. A reliable system does not silently continue and deliver results that include uncorrected corrupted data."
+[Wikipedia](https://en.wikipedia.org/wiki/Reliability,_availability_and_serviceability): «Надёжность (reliability) можно определить как вероятность того, что система будет выдавать правильные результаты до некоторого заданного момента времени t.[5] Надёжность повышается за счёт функций, помогающих избегать, обнаруживать и устранять аппаратные сбои. Надёжная система не продолжает молча работать и не выдаёт результаты, содержащие неисправленные повреждённые данные.»
 
-Question: can you explain the difference between Availability and Reliability?
+Вопрос: в чём разница между доступностью (Availability) и надёжностью (Reliability)?
 
-# Serviceability
+# Обслуживаемость
 
-[Wikipedia](https://en.wikipedia.org/wiki/Reliability,_availability_and_serviceability): "Serviceability or maintainability is the simplicity and speed with which a system can be repaired or maintained; if the time to repair a failed system increases, then availability will decrease."
+[Wikipedia](https://en.wikipedia.org/wiki/Reliability,_availability_and_serviceability): «Обслуживаемость (serviceability), или ремонтопригодность (maintainability), — это простота и скорость, с которой систему можно отремонтировать или обслужить; если время восстановления отказавшей системы увеличивается, доступность снижается.»
 
-# Availability
+# Доступность
 
-[Wikipedia](https://en.wikipedia.org/wiki/Reliability,_availability_and_serviceability): "Availability means the probability that a system is operational at a given time, i.e. the amount of time a device is actually operating as the percentage of total time it should be operating. High-availability systems may report availability in terms of minutes or hours of downtime per year."
+[Wikipedia](https://en.wikipedia.org/wiki/Reliability,_availability_and_serviceability): «Доступность (availability) — это вероятность того, что система работоспособна в заданный момент времени, т.е. время, в течение которого устройство фактически работает, в процентах от общего времени, в течение которого оно должно работать. Системы высокой доступности могут указывать доступность в минутах или часах простоя в год.»
 
-In simpler words, the percentage of time a system, service or app is accessible, operational
+Проще говоря, это процент времени, в течение которого система, сервис или приложение доступны и работоспособны
 
 # Failover
 
-Failover (or failover strategy) is the process of switching upon a failure from non-operational system (application, storage, DB, ...) to an operational system or a previous operational state of the same system.
+Failover (или стратегия failover) — это процесс переключения при сбое с неработоспособной системы (приложения, хранилища, БД, ...) на работоспособную систему или на предыдущее работоспособное состояние той же системы.
 
-It used to be done either automatically or manually. Today, especially in the era of public clouds, this process is often automated.
+Раньше это делалось автоматически или вручную. Сегодня, особенно в эпоху публичных облаков, этот процесс часто автоматизирован.
 
 ### Cold Standby
 
-In Cold Standby the transition to the backup/standby service happens only after the active service becomes non-operational. The process is described in the image below taking as example a database:
+При Cold Standby («холодный резерв») переход на резервный сервис происходит только после того, как активный сервис становится неработоспособным. Процесс показан на изображении ниже на примере базы данных:
 
-1. The server works against an active database
-2. The database becomes non-operational for different reasons
-3. There is a switch to the standby database. It's important to note that this switch might not be quick. It might involve a process of restoring the data and it will for sure involve redirecting the traffic to the new database instead of the previous one
+1. Сервер работает с активной базой данных
+2. База данных по разным причинам становится неработоспособной
+3. Происходит переключение на резервную базу данных. Важно отметить, что это переключение может быть небыстрым. Оно может включать процесс восстановления данных и обязательно включает перенаправление трафика на новую базу данных вместо прежней
 
 <p align="center">
 <img src="../images/architecture/db_cold_standby.png"/>
 </p>
 
-#### Advantages
+#### Преимущества
 
-* Cheap when compared to other failover options today
-There is not much more than that. Some will argue it's also simple, but personally I would say it's based on the case.
-#### Disadvantges
+* Дёшево по сравнению с другими современными вариантами failover
+На этом, в общем-то, всё. Кто-то скажет, что это ещё и просто, но лично я бы сказал, что это зависит от случая.
+#### Недостатки
 
-* There is a downtime. Users will experience non-operational service it as there is no active database until the switch the to standby database happens. This can be quick but at the same time it can take time, depends on the amount of data in the case of databases.
-* Any traffic happened during the downtime and any data the user wanted to save to the DB, is lost.
+* Есть простой. Пользователи столкнутся с неработающим сервисом, так как активной базы данных нет, пока не произойдёт переключение на резервную. Это может быть быстро, но может и занять время — в случае баз данных это зависит от объёма данных.
+* Весь трафик, пришедший во время простоя, и все данные, которые пользователь хотел сохранить в БД, теряются.
 
-### Use Cases
+### Сценарии использования
 
-* Non-critical services and projects that can stand a downtime of a couple of hours and look for a cheap failover solution
+* Некритичные сервисы и проекты, которые могут выдержать простой в пару часов и ищут дешёвое решение для failover
 
 ### Warm Standby
 
-In Cold Standby we described a situation where the standby database used only once there is a failure and there might be an operation of restoring the data first. Warm Standby is different in that way where the standby database is continuously being synced by production/operational database.
+В Cold Standby описана ситуация, когда резервная база данных используется только при сбое, и сначала может потребоваться восстановление данных. Warm Standby («тёплый резерв») отличается тем, что резервная база данных постоянно синхронизируется с рабочей (production) базой данных.
 
-The server itself isn't communicating with the standby database but the it is active because data is replicated there by the production/operational database.
+Сам сервер не взаимодействует с резервной базой данных, но она активна, поскольку рабочая база данных реплицирует в неё данные.
 
 <p align="center">
 <img src="../images/architecture/db_warm_standby.png"/>
 </p>
 
-#### Advantages
+#### Преимущества
 
-* Simple mostly. In the case of databases, most modern databases have the ability to replicate themselves with a simple configuration change
+* В основном просто. В случае баз данных большинство современных баз данных умеют реплицироваться с помощью простого изменения конфигурации
 
-#### Disadvantages
+#### Недостатки
 
-* There is a downtime. It's not as nearly as bad as in the case of Cold Standby, but data might still be lost and users will have bad experience, even if short time
+* Есть простой. Всё далеко не так плохо, как в случае Cold Standby, но данные всё же могут быть потеряны, а у пользователей будет плохой опыт, пусть и недолго
 
 ### Hot Standby
 
-Communicate simultaneously to two or more instances. In the case of databases, the server will read and write to both of them. It means that if one of them is down, the user won't experience downtime, since the server still communicates with one of the databases that holds the same data as the other instance.
+Одновременное взаимодействие с двумя или более экземплярами. В случае баз данных сервер будет читать и писать в обе. Это означает, что если одна из них недоступна, пользователь не заметит простоя, так как сервер по-прежнему взаимодействует с одной из баз данных, содержащей те же данные, что и другой экземпляр.
 
-Another name for hot standby is basically horizontal scaling.
+По сути, другое название hot standby («горячий резерв») — горизонтальное масштабирование.
 
 <p align="center">
 <img src="../images/architecture/hot_standby.png"/>
 </p>
 
-#### Advantages
+#### Преимущества
 
-* Zero downtime. Even if one database is going down, the other one can be used and the server already has communication with it so the users won't experience anything in regards to downtime.
+* Нулевой простой. Даже если одна база данных выходит из строя, можно использовать другую, а сервер уже взаимодействует с ней, так что пользователи никакого простоя не заметят.
 
-#### Disatvanges
+#### Недостатки
 
-* Can be quite pricey, especially when compared to other strategies like cold and warm standby
+* Может быть довольно дорого, особенно по сравнению с другими стратегиями, такими как cold и warm standby
 
-# Questions
+# Вопросы
 ## Failover
 
 <details>
-<summary>Explain what is a "Failover". What does it happen?</summary><br><b>
+<summary>Объясните, что такое «Failover». Когда он происходит?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain "Cold Standby" failover strategy (including pros and cons)</summary><br><b>
+<summary>Объясните стратегию failover «Cold Standby» (включая плюсы и минусы)</summary><br><b>
 </b></details>
 
 <details>
-<summary>In what situations would you use "Cold Standby"?</summary><br><b>
+<summary>В каких ситуациях стоит использовать «Cold Standby»?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain "Warm Standby" failover strategy (including pros and cons)</summary><br><b>
+<summary>Объясните стратегию failover «Warm Standby» (включая плюсы и минусы)</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain "Hot Standby" failover strategy (including pros and cons)</summary><br><b>
+<summary>Объясните стратегию failover «Hot Standby» (включая плюсы и минусы)</summary><br><b>
 </b></details>

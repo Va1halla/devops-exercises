@@ -1,83 +1,83 @@
 # Azure
 
 - [Azure](#azure)
-  - [Questions](#questions)
+  - [Вопросы](#вопросы)
     - [Azure 101](#azure-101)
     - [Azure Resource Manager](#azure-resource-manager)
-    - [Compute](#compute)
-    - [Network](#network)
-    - [Storage](#storage)
-    - [Security](#security)
+    - [Вычисления](#вычисления)
+    - [Сеть](#сеть)
+    - [Хранилище](#хранилище)
+    - [Безопасность](#безопасность)
 
-## Questions
+## Вопросы
 
 ### Azure 101
 
 <details>
-<summary>What is Azure Portal?</summary><br><b>
+<summary>Что такое Azure Portal?</summary><br><b>
 
-[Microsoft Docs](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/what-is-microsoft-azure): "The Azure portal is a web-based, unified console that provides an alternative to command-line tools. With the Azure portal, you can manage your Azure subscription by using a graphical user interface."
+[Microsoft Docs](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/what-is-microsoft-azure): «Azure portal — это веб-консоль с единым интерфейсом, которая служит альтернативой инструментам командной строки. С помощью Azure portal можно управлять подпиской Azure через графический интерфейс пользователя.»
 </b></details>
 
 <details>
-<summary>What is Azure Marketplace?</summary><br><b>
+<summary>Что такое Azure Marketplace?</summary><br><b>
 
-[Microsoft Docs](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/what-is-microsoft-azure): "Azure marketplace helps connect users with Microsoft partners, independent software vendors, and startups that are offering their solutions and services, which are optimized to run on Azure."
+[Microsoft Docs](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/what-is-microsoft-azure): «Azure marketplace помогает связать пользователей с партнёрами Microsoft, независимыми поставщиками ПО и стартапами, которые предлагают свои решения и сервисы, оптимизированные для работы в Azure.»
 </b></details>
 
 <details>
-<summary>Explain availability sets and availability zones</summary><br><b>
+<summary>Объясните, что такое availability sets и availability zones</summary><br><b>
 
-An availability set is a logical grouping of VMs that allows Azure to understand how your application is built to provide redundancy and availability. It is recommended that two or more VMs are created within an availability set to provide for a highly available application and to meet the 99.95% Azure SLA.
+Availability set (группа доступности) — это логическая группировка VM, которая позволяет Azure понять, как построено приложение, чтобы обеспечить избыточность и доступность. Рекомендуется создавать две или более VM в группе доступности, чтобы обеспечить высокую доступность приложения и соответствие SLA Azure в 99.95%.
 </b></details>
 
 <details>
-<summary>What is Azure Policy?</summary><br><b>
+<summary>Что такое Azure Policy?</summary><br><b>
 
 
-[Microsoft Learn](https://learn.microsoft.com/en-us/azure/governance/policy/overview): "Azure Policy helps to enforce organizational standards and to assess compliance at-scale. Through its compliance dashboard, it provides an aggregated view to evaluate the overall state of the environment, with the ability to drill down to the per-resource, per-policy granularity. It also helps to bring your resources to compliance through bulk remediation for existing resources and automatic remediation for new resources."
+[Microsoft Learn](https://learn.microsoft.com/en-us/azure/governance/policy/overview): «Azure Policy помогает применять организационные стандарты и оценивать соответствие (compliance) в масштабе. Через свой дашборд соответствия он предоставляет агрегированное представление для оценки общего состояния среды с возможностью детализации до уровня отдельных ресурсов и политик. Он также помогает привести ресурсы в соответствие с помощью массового исправления для существующих ресурсов и автоматического исправления для новых ресурсов.»
 </b></details>
 
 <details>
-<summary>Explain Azure managed disks</summary><br><b>
+<summary>Объясните, что такое управляемые диски (managed disks) Azure</summary><br><b>
 </b></details>
 
 ### Azure Resource Manager
 
 <details>
-<summary>Explain what's Azure Resource Manager</summary><br><b>
+<summary>Объясните, что такое Azure Resource Manager</summary><br><b>
 
-From [Azure docs](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview): "Azure Resource Manager is the deployment and management service for Azure. It provides a management layer that enables you to create, update, and delete resources in your Azure account. You use management features, like access control, locks, and tags, to secure and organize your resources after deployment."
+Из [документации Azure](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview): «Azure Resource Manager — это сервис развёртывания и управления для Azure. Он предоставляет уровень управления, позволяющий создавать, обновлять и удалять ресурсы в аккаунте Azure. Функции управления, такие как контроль доступа, блокировки (locks) и теги, используются для защиты и организации ресурсов после развёртывания.»
 </b></details>
 
 <details>
 
-<summary>What are the ARM template's sections ?</summary><br><b>
+<summary>Из каких разделов состоит шаблон ARM?</summary><br><b>
 
-[Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview): The template has the following sections:
+[Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview): Шаблон состоит из следующих разделов:
 
-Parameters - Provide values during deployment that allow the same template to be used with different environments.
+Parameters - передают значения во время развёртывания, что позволяет использовать один и тот же шаблон в разных средах.
 
-Variables - Define values that are reused in your templates. They can be constructed from parameter values.
+Variables - определяют значения, которые повторно используются в шаблонах. Их можно строить из значений параметров.
 
-User-defined functions - Create customized functions that simplify your template.
+User-defined functions - пользовательские функции, упрощающие шаблон.
 
-Resources - Specify the resources to deploy.
+Resources - задают ресурсы для развёртывания.
 
-Outputs - Return values from the deployed resources.
+Outputs - возвращают значения из развёрнутых ресурсов.
 </b></details>
 
 <details>
 
-<summary>What's an Azure Resource Group?</summary><br><b>
+<summary>Что такое Azure Resource Group?</summary><br><b>
 
-From [Azure docs](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal): "A resource group is a container that holds related resources for an Azure solution. The resource group can include all the resources for the solution, or only those resources that you want to manage as a group."
+Из [документации Azure](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal): «Группа ресурсов (resource group) — это контейнер, который содержит связанные ресурсы решения Azure. Группа ресурсов может включать все ресурсы решения или только те, которыми нужно управлять как группой.»
 </b></details>
 
-### Compute
+### Вычисления
 
 <details>
-<summary>What Azure compute services are you familiar with?</summary><br><b>
+<summary>С какими вычислительными сервисами Azure вы знакомы?</summary><br><b>
 
   * Azure Virtual Machines
   * Azure Batch
@@ -88,137 +88,137 @@ From [Azure docs](https://docs.microsoft.com/en-us/azure/azure-resource-manager/
 
 <details>
 
-<summary>What "Azure Virtual Machines" service is used for?</summary><br><b>
+<summary>Для чего используется сервис "Azure Virtual Machines"?</summary><br><b>
 
-Azure VMs support Windows and Linux OS. They can be used for hosting web servers, applications, backups, Databases, they can also be used as jump server or azure self-hosted agent for building and deploying apps.
+Azure VM поддерживают ОС Windows и Linux. Их можно использовать для размещения веб-серверов, приложений, резервных копий, баз данных, а также в качестве jump-сервера или self-hosted агента Azure для сборки и развёртывания приложений.
 </b></details>
 
 <details>
-<summary>What "Azure Virtual Machine Scale Sets" service is used for?</summary><br><b>
+<summary>Для чего используется сервис "Azure Virtual Machine Scale Sets"?</summary><br><b>
 
-Scaling Linux or Windows virtual machines; it lets you create and manage a group of load balanced VMs. The number of VM instances can automatically increase or decrease in response to demand or a defined schedule.
+Для масштабирования виртуальных машин Linux или Windows; он позволяет создавать группу VM с балансировкой нагрузки и управлять ею. Количество инстансов VM может автоматически увеличиваться или уменьшаться в зависимости от нагрузки или заданного расписания.
 </b></details>
 
 <details>
-<summary>What "Azure Functions" service is used for?</summary><br><b>
+<summary>Для чего используется сервис "Azure Functions"?</summary><br><b>
 
-Azure Functions is the serverless compute service of Azure.
+Azure Functions — это бессерверный (serverless) вычислительный сервис Azure.
 </b></details>
 
 <details>
-<summary>What "Durable Azure Function" are?</summary>
+<summary>Что такое "Durable Azure Function"?</summary>
 <br>
 
-[Microsoft Learn](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/what-is-microsoft-azure): Durable Functions is an extension of Azure Functions that lets you write stateful functions in a serverless compute environment.
+[Microsoft Learn](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/what-is-microsoft-azure): Durable Functions — это расширение Azure Functions, позволяющее писать функции с сохранением состояния (stateful) в бессерверной вычислительной среде.
 </details>
 
 <details>
-<summary>What "Azure Container Instances" service is used for?</summary><br><b>
+<summary>Для чего используется сервис "Azure Container Instances"?</summary><br><b>
 
-Running containerized applications (without the need to provision virtual machines).
+Для запуска контейнеризированных приложений (без необходимости создавать виртуальные машины).
 </b></details>
 
 <details>
-<summary>What "Azure Batch" service is used for?</summary><br><b>
+<summary>Для чего используется сервис "Azure Batch"?</summary><br><b>
 
-Running parallel and high-performance computing applications
+Для запуска параллельных и высокопроизводительных вычислительных приложений
 </b></details>
 
 <details>
-<summary>What "Azure Service Fabric" service is used for?</summary><br><b>
+<summary>Для чего используется сервис "Azure Service Fabric"?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What "Azure Kubernetes" service is used for?</summary><br><b>
+<summary>Для чего используется сервис "Azure Kubernetes"?</summary><br><b>
 </b></details>
 
-### Network
+### Сеть
 
 <details>
-<summary>What Azure network services are you familiar with?</summary><br><b>
+<summary>С какими сетевыми сервисами Azure вы знакомы?</summary><br><b>
 </b></details>
 <details>
-<summary>Explain VNet peering</summary><br><b>
+<summary>Объясните, что такое VNet peering</summary><br><b>
 
-VNet peering enables connecting virtual networks. This means that you can route traffic between resources of the connected VNets privately through IPv4 addresses. Connecting VNets within the same region is known as regional VNet Peering, however connecting VNets across Azure regions is known as global VNet Peering.
+VNet peering позволяет соединять виртуальные сети. Это означает, что можно маршрутизировать трафик между ресурсами соединённых VNet в частном порядке через IPv4-адреса. Соединение VNet в пределах одного региона называется regional VNet Peering, а соединение VNet в разных регионах Azure — global VNet Peering.
 
-</b></details>
-
-<details>
-<summary>What's an Azure region?</summary><br><b>
-
-An Azure region is a set of datacenters deployed within an interval-defined and connected through a dedicated regional low-latency network.
 </b></details>
 
 <details>
-<summary>What is the N-tier architecture?</summary><br><b>
+<summary>Что такое регион Azure?</summary><br><b>
 
-N-tier architecture divides an application into logical layers and physical tiers. Each layer has a specific responsibility. Tiers are physically separated, running on separate machines. An N-tier application can have a closed layer architecture or an open layer architecture. N-tier architectures are typically implemented as infrastructure-as-service (IaaS) applications, with each tier running on a separate set of VMs
-</b></details>
-
-### Storage
-
-<details>
-<summary>What Azure storage services are you familiar with?</summary><br><b>
+Регион Azure — это набор центров обработки данных, развёрнутых в пределах определённого периметра и соединённых выделенной региональной сетью с низкой задержкой.
 </b></details>
 
 <details>
-<summary>What storage options Azure supports?</summary><br><b>
+<summary>Что такое N-уровневая (N-tier) архитектура?</summary><br><b>
+
+N-уровневая архитектура делит приложение на логические слои (layers) и физические уровни (tiers). У каждого слоя своя зона ответственности. Уровни физически разделены и работают на отдельных машинах. N-уровневое приложение может иметь архитектуру с закрытыми слоями или с открытыми слоями. N-уровневые архитектуры обычно реализуются как приложения infrastructure-as-service (IaaS), где каждый уровень работает на отдельном наборе VM
 </b></details>
 
-### Security
+### Хранилище
 
 <details>
-<summary>What is the Azure Security Center? What are some of its features?</summary><br><b>
-
-It's a monitoring service that provides threat protection across all of the services in Azure.
-More specifically, it:
-
-* Provides security recommendations based on your usage
-* Monitors security settings and continuously all the services
-* Analyzes and identifies potential inbound attacks
-* Detects and blocks malware using machine learning
+<summary>С какими сервисами хранения Azure вы знакомы?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is Azure Active Directory?</summary><br><b>
+<summary>Какие варианты хранения поддерживает Azure?</summary><br><b>
+</b></details>
 
-Azure AD is a cloud-based identity service. You can use it as a standalone service or integrate it with existing Active Directory service you already running.
+### Безопасность
+
+<details>
+<summary>Что такое Azure Security Center? Каковы некоторые из его возможностей?</summary><br><b>
+
+Это сервис мониторинга, который обеспечивает защиту от угроз для всех сервисов в Azure.
+В частности, он:
+
+* Предоставляет рекомендации по безопасности на основе использования
+* Отслеживает настройки безопасности и непрерывно — все сервисы
+* Анализирует и выявляет потенциальные входящие атаки
+* Обнаруживает и блокирует вредоносное ПО с помощью машинного обучения
 </b></details>
 
 <details>
-<summary>What is Azure Advanced Threat Protection?</summary><br><b>
+<summary>Что такое Azure Active Directory?</summary><br><b>
+
+Azure AD — это облачный сервис идентификации. Его можно использовать как самостоятельный сервис или интегрировать с уже работающим сервисом Active Directory.
 </b></details>
 
 <details>
-<summary>What components are part of Azure ATP?</summary><br><b>
+<summary>Что такое Azure Advanced Threat Protection?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Where logs are stored in Azure Monitor?</summary><br><b>
+<summary>Какие компоненты входят в Azure ATP?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain Azure Site Recovery</summary><br><b>
+<summary>Где хранятся логи в Azure Monitor?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain what the advisor does</summary><br><b>
+<summary>Объясните, что такое Azure Site Recovery</summary><br><b>
+</b></details>
+
+<details>
+<summary>Объясните, что делает advisor</summary><br><b>
 </b></details>
 
 <details>
 
-<summary>Which protocols are available for configuring health probe</summary><br><b>
+<summary>Какие протоколы доступны для настройки health probe</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain Azure Active</summary><br><b>
+<summary>Объясните, что такое Azure Active</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is a subscription? What types of subscriptions are there?</summary><br><b>
+<summary>Что такое подписка (subscription)? Какие типы подписок существуют?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain what is a blob storage service</summary><br><b>
+<summary>Объясните, что такое сервис blob storage</summary><br><b>
 </b></details>

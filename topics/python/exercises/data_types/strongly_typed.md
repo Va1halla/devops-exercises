@@ -1,4 +1,4 @@
-## Strongly Typed
+## Строгая типизация
 
-1. Python is strongly typed. What does it mean?
-2. Is it true even in case of a mutable object?
+1. Python — язык со строгой типизацией. Что это значит?
+2. Верно ли это даже в случае изменяемого объекта?

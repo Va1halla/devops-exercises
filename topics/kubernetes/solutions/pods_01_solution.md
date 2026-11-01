@@ -1,4 +1,4 @@
-## Pods 01 - Solution
+## Pods 01 — решение
 
 ```
 kubectl run nginx --image=nginx --restart=Never

@@ -1,8 +1,8 @@
-## Python Characteristics - Solution
+## Характеристики Python — решение
 
-## Objectives
+## Цели
 
-1. What are some characteristics of the Python programming language?
-2. What type of applications use Python?
+1. Каковы некоторые характеристики языка программирования Python?
+2. В каких типах приложений используется Python?
 
-Click [here to view the solution](../../solutions/hello_world/python_characteristics.md)
+Нажмите [здесь, чтобы посмотреть решение](../../solutions/hello_world/python_characteristics.md)

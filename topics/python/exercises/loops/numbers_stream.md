@@ -1,8 +1,8 @@
-## Stream of Numbers
+## Поток чисел
 
-1. Print the numbers between 0 and 10
-2. Print the number between 0 and -10
+1. Вывести числа от 0 до 10
+2. Вывести числа от 0 до -10
 
-### Solution
+### Решение
 
-Click [here](solutions/loops/numbers_stream.md) to view the solution.
+Нажмите [здесь](solutions/loops/numbers_stream.md), чтобы посмотреть решение.

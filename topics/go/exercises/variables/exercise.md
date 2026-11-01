@@ -1,10 +1,10 @@
-# Variables
+# Переменные
 
-## Objectives
+## Задачи
 
-1. Write a Go program that will store the values of your name and age in variables (or constants), and will print the following sentence using the variables you defined: `My name is ___ and I'm ___ years old`
+1. Напишите программу на Go, которая сохраняет имя и возраст в переменных (или константах) и выводит следующее предложение с использованием определённых переменных: `My name is ___ and I'm ___ years old`
    
-2. Explain why the following program will fail?
+2. Объясните, почему следующая программа завершится с ошибкой?
 
 ```Go
 package main
@@ -18,7 +18,7 @@ func main() {
 }
 ```
 
-3. What's the output of the following program?
+3. Что выведет следующая программа?
 
 ```Go
 package main
@@ -40,6 +40,6 @@ func main() {
 }
 ```
 
-## Solution
+## Решение
 
-Click [here](main.go) to view the solution
+Нажмите [здесь](main.go), чтобы посмотреть решение

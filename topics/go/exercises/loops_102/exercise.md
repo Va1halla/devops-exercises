@@ -1,12 +1,12 @@
-# Loops 102
+# Циклы 102
 
-## Objectives
+## Задачи
 
-1. Define the following list `{'red', 'green', 'blue'}`
-   1. Iterate over the list and print each item on its own line
-2. Define a variable with a value of 1 and using a for loop add 3 3 to the variable's value, every loop. Make sure to define the loop in a way where it stops once the variable value is bigger than 100
-   1. Print the final value
+1. Определите следующий список `{'red', 'green', 'blue'}`
+   1. Переберите список и выведите каждый элемент на отдельной строке
+2. Определите переменную со значением 1 и с помощью цикла for прибавляйте 3 3 к значению переменной на каждой итерации. Цикл должен останавливаться, как только значение переменной станет больше 100
+   1. Выведите итоговое значение
 
-## Solution
+## Решение
 
-Click [here](solution.md) to view the solution.
+Нажмите [здесь](solution.md), чтобы посмотреть решение.

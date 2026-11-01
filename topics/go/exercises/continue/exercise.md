@@ -1,15 +1,15 @@
 # Continue
 
-## Objectives
+## Задачи
 
-1. Define the following
-   1. A variable called `sum` with the value of 0
-   2. A for loop that iterates a variable called `i` starts with the value 0 until it reaches 100 (the variable's value is incremented by 1 each loop)
-      1. If the value of i is 50, skip increasing the value of sum by `i`
-      2. each loop, make sure to add the value of `i` to the value of `sum`
-   3. after the loop definition, add print statement to print the value of `sum`
-      1. What's the value of `sum`?
+1. Определите следующее
+   1. Переменную с именем `sum` со значением 0
+   2. Цикл for, который перебирает переменную `i`, начиная со значения 0 и до 100 (значение переменной увеличивается на 1 на каждой итерации)
+      1. Если значение i равно 50, пропустите увеличение sum на `i`
+      2. на каждой итерации прибавляйте значение `i` к значению `sum`
+   3. после определения цикла добавьте вывод значения `sum`
+      1. Чему равно значение `sum`?
 
-## Solution
+## Решение
 
-Click [here](main.go) to view the solution.
+Нажмите [здесь](main.go), чтобы посмотреть решение.

@@ -1,43 +1,43 @@
-# Create buckets
+# Создание бакетов
 
-## Objectives
+## Цели
 
-1. Create the following buckets:
-   1. Private bucket
-      1. eu-west-2 region
-      2. Upload a single file to the bucket. Any file.
-   2. Public bucket
-      1. eu-west-1 region
-      2. Versioning should be enabled
+1. Создать следующие бакеты:
+   1. Приватный бакет
+      1. Регион eu-west-2
+      2. Загрузить в бакет один файл. Любой.
+   2. Публичный бакет
+      1. Регион eu-west-1
+      2. Должно быть включено версионирование (versioning)
 
-## Solution
+## Решение
 
-### Console
+### Консоль
 
-For the first bucket:
+Для первого бакета:
 
-1. Go to S3 service in the AWS console. If not in buckets page, click on "buckets" in the left side menu
-2. Click on "Create bucket" 
-3. Give a globally unique name for your bucket
-4. Choose the region "eu-west-2"
-5. Click on "Create bucket"
-6. Click on the bucket name
-7. Under "objects" click on "Upload" -> "Add files" -> Choose file to upload -> Click on "Upload"
+1. Перейти в сервис S3 в консоли AWS. Если открыта не страница бакетов, нажать "buckets" в меню слева
+2. Нажать "Create bucket" 
+3. Задать бакету глобально уникальное имя
+4. Выбрать регион "eu-west-2"
+5. Нажать "Create bucket"
+6. Нажать на имя бакета
+7. В разделе "objects" нажать "Upload" -> "Add files" -> выбрать файл для загрузки -> нажать "Upload"
 
-For the second bucket:
+Для второго бакета:
 
-1. Go to S3 service in the AWS console. If not in buckets page, click on "buckets" in the left side menu
-2. Click on "Create bucket" 
-3. Give a globally unique name for your bucket
-4. Choose the region "eu-west-1"
-5. Make sure to uncheck the box for "Private bucket" to make it public
-6. Make sure to check the enable box for "Bucket Versioning"
-7. Click on "Create bucket"
+1. Перейти в сервис S3 в консоли AWS. Если открыта не страница бакетов, нажать "buckets" в меню слева
+2. Нажать "Create bucket" 
+3. Задать бакету глобально уникальное имя
+4. Выбрать регион "eu-west-1"
+5. Обязательно снять флажок "Private bucket", чтобы сделать бакет публичным
+6. Обязательно отметить флажок включения для "Bucket Versioning"
+7. Нажать "Create bucket"
 
 ### Terraform
 
-Click [here](terraform/main.tf) to view the solution
+Нажмите [здесь](terraform/main.tf), чтобы посмотреть решение
 
 ### Pulumi - Python
 
-Click [here](pulumi/__main__.py) to view the solution
+Нажмите [здесь](pulumi/__main__.py), чтобы посмотреть решение

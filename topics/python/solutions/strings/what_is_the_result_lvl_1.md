@@ -1,6 +1,6 @@
-## What is the result? - Level 1
+## Каков результат? — уровень 1
 
-What is the result of each of the following statements?
+Каков результат каждого из следующих выражений?
 
 1. `"abc"*3`
 2. `"abc"*2.5`
@@ -11,7 +11,7 @@ What is the result of each of the following statements?
 7. `print("xy\"z\'")`
 8. `"qwer" "xyz"`
 
-### Solution
+### Решение
 
 1. `abcabcabc`
 2. `TypeError`

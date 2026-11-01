@@ -1,12 +1,12 @@
-## Layer by Layer
+## Слой за слоем
 
-### Objective
+### Цель
 
-Learn about image layers
+Изучить слои образов
 
-### Requirements
+### Требования
 
-Make sure Docker is installed on your system and the service is started
+Убедитесь, что в системе установлен Docker и служба запущена
 
 ```
 # Fedora/RHEL/CentOS
@@ -14,9 +14,9 @@ rpm -qa | grep docker
 systemctl status docker
 ```
 
-### Instructions
+### Инструкции
 
-1. Write a Dockefile. Any Dockefile! :) (just make sure it's a valid one)
+1. Напишите Dockefile. Любой Dockefile! :) (только убедитесь, что он корректный)
 
 ```
 FROM ubuntu
@@ -28,27 +28,27 @@ RUN dd if=/dev/zero of=some_file bs=1024 count=0 seek=1024
 RUN dd if=/dev/zero of=some_file bs=1024 count=0 seek=1024
 ```
 
-2. Build an image using the Dockerfile you've wrote
+2. Соберите образ с помощью написанного Dockerfile
 
 `docker image build -t super_cool_app:latest .`
 
-3. Which of the instructions you've used, created new layers and which added image metadata?
+3. Какие из использованных инструкций создали новые слои, а какие добавили метаданные образа?
 
 ```
 FROM, RUN -> new layer
 EXPOSE, ENV, WORKDIR -> metadata
 ```
 
-4. What ways are there to confirm your answer to the last question?
+4. Какими способами можно проверить ответ на предыдущий вопрос?
 
-You can run `docker image history super_cool_app`. It will show you each instruction and its size. Usually instructions that create new layers has non-zero size, but this is not something you can rely on by itself since, some run commands can have size of zero in `docker image history` output (e.g. `ls -l`).
+Можно выполнить `docker image history super_cool_app`. Команда покажет каждую инструкцию и её размер. Обычно инструкции, создающие новые слои, имеют ненулевой размер, но полагаться только на это нельзя, поскольку некоторые команды run могут иметь нулевой размер в выводе `docker image history` (например, `ls -l`).
 
-You can also use `docker image inspect super_cool_appl` and see if in the output, under "RootFS", there are the number of layers that matches the instructions that should create new layers.
+Также можно использовать `docker image inspect super_cool_appl` и проверить, совпадает ли в выводе, в разделе "RootFS", количество слоёв с количеством инструкций, которые должны создавать новые слои.
 
-5. Can you reduce the size of the image you've created?
+5. Можно ли уменьшить размер созданного образа?
 
-yes, for example, use all the RUN instructions as a single RUN instruction this way:
+Да, например, объединить все инструкции RUN в одну инструкцию RUN следующим образом:
 
 `RUN dd if=/dev/zero of=some_file bs=1024 count=0 seek=1024 && dd if=/dev/zero of=some_file bs=1024 count=0 seek=1024 && dd if=/dev/zero of=some_file bs=1024 count=0 seek=1024`
 
-The change in size might not be dramatic in this case, but in some cases it will make a big impact on the image size.
+В данном случае изменение размера может быть не очень заметным, но в некоторых случаях это сильно влияет на размер образа.

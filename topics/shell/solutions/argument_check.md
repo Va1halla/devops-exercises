@@ -1,14 +1,14 @@
-## Argument Check
+## Проверка аргумента
 
-### Objectives
+### Цели
 
-Note: assume the script is executed with an argument
+Примечание: считается, что скрипт запускается с аргументом
 
-1. Write a script that will check if a given argument is the string "pizza"
-2. If it's the string "pizza" print "with pineapple?"
-3. If it's not the string "pizza" print "I want pizza!"
+1. Написать скрипт, который проверяет, является ли переданный аргумент строкой "pizza"
+2. Если это строка "pizza", вывести "with pineapple?"
+3. Если это не строка "pizza", вывести "I want pizza!"
 
-### Solution
+### Решение
 
 ```
 #!/usr/bin/env bash

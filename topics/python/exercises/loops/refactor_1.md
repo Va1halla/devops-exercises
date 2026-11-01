@@ -1,6 +1,6 @@
-## Refactor 01
+## Рефакторинг 01
 
-Refactor the following code
+Провести рефакторинг следующего кода
 
 ```python
 from collections import namedtuple

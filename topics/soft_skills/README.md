@@ -1,109 +1,109 @@
-## HR & Soft Skills
+## HR и Soft Skills
 
-These are not DevOps related questions as you probably noticed, but since they are part of the DevOps interview process I've decided it might be good to keep them<br>
-There are no answers for these questions for obvious reasons :)
+Как вы, вероятно, заметили, это не вопросы по DevOps, но поскольку они являются частью собеседования на DevOps-позицию, я решил, что их стоит оставить<br>
+Ответов на эти вопросы нет по очевидным причинам :)
 
 <details>
-<summary>Tell us little bit about yourself</summary><br><b>
+<summary>Расскажите немного о себе</summary><br><b>
 </b></details>
 
 <details>
-<summary>Tell me about the best type of environment you've worked in (team, solo, pairs, ...)</summary><br><b>
+<summary>Расскажите о наиболее подходящей для вас рабочей среде (команда, в одиночку, в паре, ...)</summary><br><b>
 </b></details>
 
 <details>
-<summary>Tell me about your last big project/task you worked on</summary><br><b>
+<summary>Расскажите о последнем крупном проекте/задаче, над которым вы работали</summary><br><b>
 </b></details>
 
 <details>
-<summary>What was most challenging part in the project you worked on?</summary><br><b>
+<summary>Что было самым сложным в проекте, над которым вы работали?</summary><br><b>
 </b></details>
 
 <details>
-<summary>How did you hear about us?</summary><br><b>
+<summary>Как вы узнали о нас?</summary><br><b>
 </b></details>
 
 <details>
-<summary>How would you describe a good leadership?</summary><br><b>
+<summary>Как бы вы описали хорошее лидерство?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Describe yourself in one word</summary><br><b>
+<summary>Опишите себя одним словом</summary><br><b>
 </b></details>
 
 <details>
-<summary>Tell me about a time where you didn't agree on an implementation</summary><br><b>
+<summary>Расскажите о случае, когда вы были не согласны с реализацией</summary><br><b>
 </b></details>
 
 <details>
-<summary>How do you deal with a situation where key stakeholders are not around and a big decision needs to be made? </summary><br><b>
+<summary>Как действовать в ситуации, когда ключевых заинтересованных лиц нет рядом, а нужно принять важное решение? </summary><br><b>
 </b></details>
 
 <details>
-<summary>Where do you see yourself 5 years down the line?</summary><br><b>
+<summary>Где вы видите себя через 5 лет?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Give an example of a time when you were able to change the view of a team about a particular tool/project/technology</summary><br><b>
+<summary>Приведите пример, когда вам удалось изменить взгляд команды на определённый инструмент/проект/технологию</summary><br><b>
 </b></details>
 
 <details>
-<summary>Have you ever caused a service outage? (or broke a working project, tool, ...?)</summary><br><b>
+<summary>Вы когда-нибудь вызывали сбой сервиса? (или ломали работающий проект, инструмент, ...?)</summary><br><b>
 </b></details>
 
 <details>
-<summary>Rank the following in order 1 to 5, where 1 is most important: salaray, benefits, career, team/people, work life balance</summary><br><b>
+<summary>Расставьте по порядку от 1 до 5, где 1 — самое важное: зарплата, бонусы и льготы, карьера, команда/люди, баланс работы и личной жизни</summary><br><b>
 </b></details>
 
 <details>
-<summary>You have three important tasks scheduled for today. One is for your boss, second for a colleague who is also a friend, third is for a customer. All tasks are equally important. What do you do first?</summary><br><b>
+<summary>На сегодня запланированы три важные задачи. Одна — для начальника, вторая — для коллеги, который также является другом, третья — для клиента. Все задачи одинаково важны. Что вы сделаете первым?</summary><br><b>
 </b></details>
 
 <details>
-<summary>You have a colleague you don‘t get along with. Tell us some strategies how you create a good work relationship with them anyway.</summary><br><b>
+<summary>Есть коллега, с которым вы не ладите. Расскажите о стратегиях, с помощью которых вы всё же выстраиваете с ним хорошие рабочие отношения.</summary><br><b>
 </b></details>
 
 <details>
-<summary>What do you love about your work?</summary><br><b>
+<summary>Что вам нравится в вашей работе?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What are your responsibilities in your current position?</summary><br><b>
+<summary>Каковы ваши обязанности на текущей должности?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Why should we hire you for the role?</summary><br><b>
+<summary>Почему мы должны нанять вас на эту роль?</summary><br><b>
 </b></details>
 
-#### Pointless Questions
+#### Бессмысленные вопросы
 
 <details>
-<summary>Why do you want to work here?</summary><br><b>
-</b></details>
-
-<details>
-<summary>Why are you looking to leave your current place?</summary><br><b>
+<summary>Почему вы хотите работать здесь?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What are your strengths and weaknesses?</summary><br><b>
+<summary>Почему вы хотите уйти с текущего места работы?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Where do you see yourself in five years?</summary><br><b>
+<summary>Каковы ваши сильные и слабые стороны?</summary><br><b>
 </b></details>
 
 <details>
-<summary>When you faced with problem, what do you do?</summary><br><b>
+<summary>Где вы видите себя через пять лет?</summary><br><b>
 </b></details>
 
 <details>
-<summary>When was the last time you had to learn a new technology and what was your approach in doing so?</summary><br><b>
+<summary>Что вы делаете, когда сталкиваетесь с проблемой?</summary><br><b>
+</b></details>
+
+<details>
+<summary>Когда вам в последний раз пришлось изучать новую технологию и как вы к этому подходили?</summary><br><b>
 </b></details>
 
 
-#### Team Lead
+#### Тимлид
 
 <details>
-<summary>How would you improve productivity in your team?</summary><br><b>
+<summary>Как бы вы повысили продуктивность своей команды?</summary><br><b>
 </b></details>

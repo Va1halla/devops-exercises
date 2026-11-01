@@ -1,3 +1,3 @@
-## Substitute Strings
+## Замена в строках
 
-1. In a given string, substitute the word "green" with "blue"
+1. В заданной строке заменить слово "green" на "blue"

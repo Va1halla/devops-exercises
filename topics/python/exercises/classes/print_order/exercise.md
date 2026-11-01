@@ -1,8 +1,8 @@
-# Print Order
+# Порядок вывода
 
-## Objectives
+## Цели
 
-1. What would be the output of the following code?
+1. Каким будет вывод следующего кода?
 
 ```python
 print(1)
@@ -18,6 +18,6 @@ car1 = Car("red")
 car2 = Car("green")
 ```
 
-## Solution
+## Решение
 
-Click [here to view the solution](solution.md)
+Нажмите [здесь, чтобы посмотреть решение](solution.md)

@@ -1,8 +1,8 @@
-## Every Character
+## Каждый символ
 
-Given a variable of a string, print character of the string on its own line.
+Дана переменная со строкой: вывести каждый символ строки на отдельной строке.
 
-### Solution
+### Решение
 
 ```python
 string = "python"

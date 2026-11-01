@@ -1,18 +1,18 @@
-# Generics 101
+# Дженерики 101
 
-## Objectives
+## Задачи
 
-1. Create a new ```type``` named ```CType``` which can be ```int```, ```int32```, ```uint```, 
-and ```uint32```.
-2. Create a function to get two numbers of ```CType``` and return the summation of those two.
-   1. A (provided ```CType```)
-   2. B (provided ```CType```)
-3. Create a list of ```uints```s with at least 5 elements init.
-4. Update your second step function to get variable number of ```CType```s and
-return the summation of all of them.
-    1. Numbers (provided ```... CType```)
-5. Use your function to display the summation of your list elements.
+1. Создайте новый ```type``` с именем ```CType```, который может быть ```int```, ```int32```, ```uint```
+и ```uint32```.
+2. Создайте функцию, которая получает два числа типа ```CType``` и возвращает их сумму.
+   1. A (типа ```CType```)
+   2. B (типа ```CType```)
+3. Создайте список ```uints```s, содержащий не менее 5 элементов.
+4. Измените функцию из второго шага так, чтобы она получала переменное количество ```CType``` и
+возвращала сумму всех из них.
+    1. Numbers (типа ```... CType```)
+5. С помощью этой функции выведите сумму элементов списка.
 
-## Solution
+## Решение
 
-Click [here](main.go) to view the solution
+Нажмите [здесь](main.go), чтобы посмотреть решение

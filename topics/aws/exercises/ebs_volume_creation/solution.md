@@ -1,29 +1,29 @@
-## AWS EC2 - EBS Volume Creation
+## AWS EC2 - создание тома EBS
 
-### Requirements
+### Требования
 
-One EC2 instance that you can get rid of :)
+Один экземпляр EC2, который не жалко удалить :)
 
-### Objectives
+### Цели
 
-1. Create a volume in the same AZ as your instance, with the following properties:
-  1. gp2 volume type
-  2. 4 GiB size
-2. Once created, attach it to your EC2 instance
-3. Remove your EC2 instance. What happened to the EBS volumes attached to the EC2 instance?
+1. Создать том в той же AZ, что и экземпляр, со следующими параметрами:
+  1. тип тома gp2
+  2. размер 4 GiB
+2. После создания подключить его к экземпляру EC2
+3. Удалить экземпляр EC2. Что произошло с томами EBS, подключёнными к экземпляру EC2?
 
-### Solution
+### Решение
 
-1. Go to EC2 service
-2. Click on "Volumes" under "Elastic Block Store"
-3. Click on "Create Volume"
-4. Select the following properties 
-  1. gp2 volume type
-  2. 4 GiB size
-  3. The same AZ as your instance
-5. Click on "Create volume"
-6. Right click on the volume you've just created -> attach volume -> choose your EC2 instance and click on "Attach"
-7. Terminate your instance
-8. The default EBS volume (created when you launched the instance for the first time) will be deleted (unless you didn't check "Delete on termination"), but the volume you've created as part of this exercise, will remain
+1. Перейти в сервис EC2
+2. Нажать "Volumes" в разделе "Elastic Block Store"
+3. Нажать "Create Volume"
+4. Выбрать следующие параметры 
+  1. тип тома gp2
+  2. размер 4 GiB
+  3. та же AZ, что и у экземпляра
+5. Нажать "Create volume"
+6. Щёлкнуть правой кнопкой по созданному тому -> attach volume -> выбрать экземпляр EC2 и нажать "Attach"
+7. Завершить (terminate) экземпляр
+8. Том EBS по умолчанию (созданный при первом запуске экземпляра) будет удалён (если не был снят флажок "Delete on termination"), а том, созданный в рамках этого упражнения, останется
 
-Note: don't forget to remove the EBS volume you've created in this exercise
+Примечание: не забудьте удалить том EBS, созданный в этом упражнении

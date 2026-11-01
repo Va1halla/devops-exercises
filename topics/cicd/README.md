@@ -1,308 +1,308 @@
 ## CI/CD
 
-### CI/CD Exercises
+### Упражнения по CI/CD
 
-|Name|Topic|Objective & Instructions|Solution|Comments|
+|Название|Тема|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|----|
-| Set up a CI pipeline | CI | [Exercise](ci_for_open_source_project.md) | | |
-| Deploy to Kubernetes | Deployment | [Exercise](deploy_to_kubernetes.md) | [Solution](solutions/deploy_to_kubernetes/README.md) | |
-| Jenkins - Remove Jobs | Jenkins Scripts | [Exercise](remove_jobs.md) | [Solution](solutions/remove_jobs_solution.groovy) | |
-| Jenkins - Remove Builds | Jenkins Scripts | [Exercise](remove_builds.md) | [Solution](solutions/remove_builds_solution.groovy) | |
+| Настройка CI-конвейера | CI | [Упражнение](ci_for_open_source_project.md) | | |
+| Развёртывание в Kubernetes | Развёртывание | [Упражнение](deploy_to_kubernetes.md) | [Решение](solutions/deploy_to_kubernetes/README.md) | |
+| Jenkins - удаление заданий | Скрипты Jenkins | [Упражнение](remove_jobs.md) | [Решение](solutions/remove_jobs_solution.groovy) | |
+| Jenkins - удаление сборок | Скрипты Jenkins | [Упражнение](remove_builds.md) | [Решение](solutions/remove_builds_solution.groovy) | |
 
-### CI/CD Self Assessment
+### Самопроверка по CI/CD
 
 <details>
-<summary>What is Continuous Integration?</summary><br><b>
+<summary>Что такое непрерывная интеграция (Continuous Integration)?</summary><br><b>
 
-A development practice where developers integrate code into a shared repository frequently. It can range from a couple of changes every day or a week to a couple of changes in one hour in larger scales.
+Практика разработки, при которой разработчики часто интегрируют код в общий репозиторий. Частота может варьироваться от пары изменений в день или в неделю до пары изменений в час в более крупных масштабах.
 
-Each piece of code (change/patch) is verified to make sure that the change is safe to merge. Today, it's a common practice to test the change using an automated build that makes sure the code can be integrated. It can be one build which runs several tests in different levels (unit, functional, etc.) or several separate builds that all or some has to pass in order for the change to be merged into the repository.
+Каждый фрагмент кода (изменение/патч) проверяется, чтобы убедиться, что изменение безопасно сливать. Сегодня принято тестировать изменение с помощью автоматической сборки, которая проверяет, что код может быть интегрирован. Это может быть одна сборка, запускающая несколько тестов разных уровней (модульные, функциональные и т.д.), или несколько отдельных сборок, все или некоторые из которых должны пройти, чтобы изменение было слито в репозиторий.
 </b></details>
 
 <details>
-<summary>What is Continuous Deployment?</summary><br><b>
+<summary>Что такое непрерывное развёртывание (Continuous Deployment)?</summary><br><b>
 
-A development strategy used by developers to release software automatically into production where any code commit must pass through an automated testing phase. Only when this is successful is the release considered production worthy. This eliminates any human interaction and should be implemented only after production-ready pipelines have been set with real-time monitoring and reporting of deployed assets. If any issues are detected in production it should be easy to rollback to previous working state.
+Стратегия разработки, при которой ПО автоматически выпускается в production, а любой коммит кода должен пройти этап автоматического тестирования. Только при его успешном прохождении релиз считается пригодным для production. Это исключает любое участие человека и должно внедряться только после того, как настроены готовые к production конвейеры с мониторингом и отчётностью о развёрнутых ресурсах в реальном времени. Если в production обнаружены проблемы, должно быть легко откатиться к предыдущему рабочему состоянию.
 
-For more info please read [here](https://www.atlassian.com/continuous-delivery/continuous-deployment)
+Подробнее можно прочитать [здесь](https://www.atlassian.com/continuous-delivery/continuous-deployment)
 </b></details>
 
 <details>
-<summary>Can you describe an example of a CI (and/or CD) process starting the moment a developer submitted a change/PR to a repository?</summary><br><b>
+<summary>Опишите пример процесса CI (и/или CD), начиная с момента, когда разработчик отправил изменение/PR в репозиторий</summary><br><b>
 
-There are many answers for such a question, as CI processes vary, depending on the technologies used and the type of the project to where the change was submitted.
-Such processes can include one or more of the following stages:
+На такой вопрос есть много ответов, поскольку процессы CI различаются в зависимости от используемых технологий и типа проекта, в который отправлено изменение.
+Такие процессы могут включать один или несколько из следующих этапов:
 
-* Compile 
-* Build
-* Install
-* Configure
-* Update
-* Test
+* Компиляция 
+* Сборка
+* Установка
+* Конфигурирование
+* Обновление
+* Тестирование
 
-An example of one possible answer:
+Пример одного из возможных ответов:
 
-A developer submitted a pull request to a project. The PR (pull request) triggered two jobs (or one combined job). One job for running lint test on the change and the second job for building a package which includes the submitted change, and running multiple api/scenario tests using that package. Once all tests passed and the change was approved by a maintainer/core, it's merged/pushed to the repository. If some of the tests failed, the change will not be allowed to merged/pushed to the repository.
+Разработчик отправил pull request в проект. PR (pull request) запустил два задания (или одно объединённое задание). Одно задание запускает lint-проверку изменения, второе собирает пакет, включающий отправленное изменение, и запускает с этим пакетом несколько API-/сценарных тестов. Когда все тесты прошли и изменение одобрено мейнтейнером/core-разработчиком, оно сливается/отправляется в репозиторий. Если какие-то тесты не прошли, изменение не будет допущено к слиянию/отправке в репозиторий.
 
-A complete different answer or CI process, can describe how a developer pushes code to a repository, a workflow then triggered to build a container image and push it to the registry. Once in the registry, the k8s cluster is applied with the new changes.
+Совершенно другой ответ или процесс CI может описывать, как разработчик отправляет (push) код в репозиторий, после чего запускается workflow, который собирает образ контейнера и отправляет его в реестр (registry). Как только образ оказывается в реестре, новые изменения применяются к кластеру k8s.
 </b></details>
 
 <details>
-<summary>What is Continuous Delivery?</summary><br><b>
+<summary>Что такое непрерывная поставка (Continuous Delivery)?</summary><br><b>
 
-A development strategy used to frequently deliver code to QA and Ops for testing. This entails having a staging area that has production like features where changes can only be accepted for production after a manual review. Because of this human entanglement there is usually a time lag between release and review making it slower and error prone as compared to continuous deployment.
+Стратегия разработки, при которой код часто поставляется в QA и Ops для тестирования. Это подразумевает наличие промежуточной среды (staging) с характеристиками, близкими к production, где изменения могут быть приняты в production только после ручной проверки. Из-за этого участия человека между релизом и проверкой обычно возникает задержка, что делает процесс медленнее и более подверженным ошибкам по сравнению с непрерывным развёртыванием.
 
-For more info please read [here](https://www.atlassian.com/continuous-delivery/continuous-deployment)
+Подробнее можно прочитать [здесь](https://www.atlassian.com/continuous-delivery/continuous-deployment)
 </b></details>
 
 <details>
-<summary>What is difference between Continuous Delivery and Continuous Deployment?</summary><br><b>
+<summary>В чём разница между непрерывной поставкой (Continuous Delivery) и непрерывным развёртыванием (Continuous Deployment)?</summary><br><b>
 
-Both encapsulate the same process of deploying the changes which were compiled and/or tested in the CI pipelines.<br>
-The difference between the two is that Continuous Delivery isn't fully automated process as opposed to Continuous Deployment where every change that is tested in the process is eventually deployed to production. In continuous delivery someone is either approving the deployment process or the deployment process is based on constraints and conditions (like time constraint of deploying every week/month/...)
+Оба подхода охватывают один и тот же процесс развёртывания изменений, которые были скомпилированы и/или протестированы в CI-конвейерах.<br>
+Разница в том, что Continuous Delivery — не полностью автоматизированный процесс, в отличие от Continuous Deployment, где каждое изменение, протестированное в процессе, в итоге развёртывается в production. При Continuous Delivery кто-то либо одобряет процесс развёртывания, либо развёртывание выполняется на основе ограничений и условий (например, ограничения по времени — развёртывание раз в неделю/месяц/...)
 </b></details>
 
 <details>
-<summary>What CI/CD best practices are you familiar with? Or what do you consider as CI/CD best practice?</summary><br><b>
+<summary>Какие лучшие практики CI/CD вы знаете? Или что вы считаете лучшей практикой CI/CD?</summary><br><b>
 
-* Commit and test often.
-* Testing/Staging environment should be a clone of production environment.
-* Clean up your environments (e.g. your CI/CD pipelines may create a lot of resources. They should also take care of cleaning up everything they create)
-* The CI/CD pipelines should provide the same results when executed locally or remotely
-* Treat CI/CD as another application in your organization. Not as a glue code.
-* On demand environments instead of pre-allocated resources for CI/CD purposes
-* Stages/Steps/Tasks of pipelines should be shared between applications or microservices (don't re-invent common tasks like "cloning a project")
+* Часто коммитить и тестировать.
+* Тестовая/промежуточная (staging) среда должна быть копией production-среды.
+* Очищать окружения (например, CI/CD-конвейеры могут создавать много ресурсов. Они же должны позаботиться об очистке всего, что создают)
+* CI/CD-конвейеры должны давать одинаковые результаты при локальном и удалённом выполнении
+* Относиться к CI/CD как к ещё одному приложению в организации, а не как к связующему коду.
+* Окружения по требованию вместо заранее выделенных ресурсов для целей CI/CD
+* Этапы/шаги/задачи конвейеров должны быть общими для приложений или микросервисов (не изобретать заново типовые задачи вроде «клонирования проекта»)
 </b></details>
 
 <details>
-<summary>You are given a pipeline and a pool with 3 workers: virtual machine, baremetal and a container. How will you decide on which one of them to run the pipeline?</summary><br><b>
+<summary>Даны конвейер и пул из 3 исполнителей (workers): виртуальная машина, bare metal и контейнер. Как решить, на каком из них запускать конвейер?</summary><br><b>
 
-The decision on which type of worker (virtual machine, bare-metal, or container) to use for running a pipeline would depend on several factors, including the nature of the pipeline, the requirements of the software being built, the available resources, and the specific goals and constraints of the development and deployment process. Here are some considerations that can help in making the decision:
+Решение о том, какой тип исполнителя (виртуальная машина, bare metal или контейнер) использовать для запуска конвейера, зависит от нескольких факторов, включая характер конвейера, требования собираемого ПО, доступные ресурсы, а также конкретные цели и ограничения процесса разработки и развёртывания. Вот некоторые соображения, которые могут помочь в принятии решения:
 
-1. Pipeline requirements
-2. Resource availability
-3. Scalability and flexibility
-4. Deployment and isolation requirements
-5. Security considerations
-6. Development and operational workflows
-7. Cost considerations
+1. Требования конвейера
+2. Доступность ресурсов
+3. Масштабируемость и гибкость
+4. Требования к развёртыванию и изоляции
+5. Соображения безопасности
+6. Процессы разработки и эксплуатации
+7. Соображения стоимости
 
-Based on these considerations, the appropriate choice of worker (virtual machine, bare-metal, or container) for running the pipeline would be determined by weighing the pros and cons of each option and aligning with the specific requirements, resources, and goals of the development and deployment process. It may also be useful to consult with relevant stakeholders, such as developers, operations, and infrastructure teams, to gather input and make an informed decision.
+С учётом этих соображений подходящий выбор исполнителя (виртуальная машина, bare metal или контейнер) для запуска конвейера определяется путём взвешивания плюсов и минусов каждого варианта и их соотнесения с конкретными требованиями, ресурсами и целями процесса разработки и развёртывания. Также может быть полезно проконсультироваться с заинтересованными сторонами, например с разработчиками, командами эксплуатации и инфраструктуры, чтобы собрать мнения и принять обоснованное решение.
 </b></details>
 
 <details>
-<summary>Where do you store CI/CD pipelines? Why?</summary><br><b>
+<summary>Где хранить CI/CD-конвейеры? Почему?</summary><br><b>
 
-There are multiple approaches as to where to store the CI/CD pipeline definitions:
+Есть несколько подходов к тому, где хранить определения CI/CD-конвейеров:
 
-1. App Repository - store them in the same repository of the application they are building or testing (perhaps the most popular one)
-2. Central Repository - store all organization's/project's CI/CD pipelines in one separate repository (perhaps the best approach when multiple teams test the same set of projects and they end up having many pipelines)
-3. CI repo for every app repo - you separate CI related code from app code but you don't put everything in one place (perhaps the worst option due to the maintenance)
-4. The platform where the CI/CD pipelines are being executed (e.g. Kubernetes Cluster in case of Tekton/OpenShift Pipelines).
+1. Репозиторий приложения - хранить их в том же репозитории, что и приложение, которое они собирают или тестируют (пожалуй, самый популярный вариант)
+2. Центральный репозиторий - хранить все CI/CD-конвейеры организации/проекта в одном отдельном репозитории (пожалуй, лучший подход, когда несколько команд тестируют один и тот же набор проектов и в итоге у них появляется много конвейеров)
+3. CI-репозиторий для каждого репозитория приложения - код, связанный с CI, отделяется от кода приложения, но не складывается в одно место (пожалуй, худший вариант из-за сложности сопровождения)
+4. Платформа, на которой выполняются CI/CD-конвейеры (например, кластер Kubernetes в случае Tekton/OpenShift Pipelines).
 </b></details>
 
 <details>
-<summary>How do you perform plan capacity for your CI/CD resources? (e.g. servers, storage, etc.)</summary><br><b>
+<summary>Как выполнять планирование мощностей (capacity planning) для ресурсов CI/CD? (например, серверов, хранилища и т.д.)</summary><br><b>
 
-Capacity planning for CI/CD resources involves estimating the resources required to support the CI/CD pipeline and ensuring that the infrastructure has enough capacity to meet the demands of the pipeline. Here are some steps to perform capacity planning for CI/CD resources:
+Планирование мощностей для ресурсов CI/CD включает оценку ресурсов, необходимых для работы CI/CD-конвейера, и обеспечение достаточной мощности инфраструктуры для удовлетворения потребностей конвейера. Вот несколько шагов для планирования мощностей ресурсов CI/CD:
 
-1. Analyze workload
-2. Monitor current usage
-3. Identify resource bottlenecks
-4. Forecast future demand
-5. Plan for growth
-6. Consider scalability and elasticity
-7. Evaluate cost and budget
-8. Continuously monitor and adjust
+1. Проанализировать нагрузку
+2. Отслеживать текущее использование
+3. Выявить узкие места по ресурсам
+4. Спрогнозировать будущий спрос
+5. Спланировать рост
+6. Учесть масштабируемость и эластичность
+7. Оценить стоимость и бюджет
+8. Постоянно отслеживать и корректировать
 
-By following these steps, you can effectively plan the capacity for your CI/CD resources, ensuring that your pipeline has sufficient resources to operate efficiently and meet the demands of your development process.
+Следуя этим шагам, можно эффективно спланировать мощности ресурсов CI/CD, гарантируя, что у конвейера достаточно ресурсов для эффективной работы и удовлетворения потребностей процесса разработки.
 </b></details>
 
 <details>
-<summary>How would you structure/implement CD for an application which depends on several other applications?</summary><br><b>
+<summary>Как структурировать/реализовать CD для приложения, которое зависит от нескольких других приложений?</summary><br><b>
 
-Implementing Continuous Deployment (CD) for an application that depends on several other applications requires careful planning and coordination to ensure smooth and efficient deployment of changes across the entire ecosystem. Here are some general steps to structure/implement CD for an application with dependencies:
+Реализация непрерывного развёртывания (CD) для приложения, зависящего от нескольких других приложений, требует тщательного планирования и координации, чтобы обеспечить плавное и эффективное развёртывание изменений во всей экосистеме. Вот общие шаги для структурирования/реализации CD для приложения с зависимостями:
 
-1. Define the deployment pipeline
-2. Automate the deployment process
-3. Version control and dependency management
-4. Continuous integration and testing
-5. Rolling deployments
-6. Monitor and manage dependencies
-7. Testing across the ecosystem
-8. Rollback and recovery strategies
-9. Security and compliance
-10. Documentation and communication
+1. Определить конвейер развёртывания
+2. Автоматизировать процесс развёртывания
+3. Контроль версий и управление зависимостями
+4. Непрерывная интеграция и тестирование
+5. Постепенные (rolling) развёртывания
+6. Мониторинг зависимостей и управление ими
+7. Тестирование всей экосистемы
+8. Стратегии отката и восстановления
+9. Безопасность и соответствие требованиям (compliance)
+10. Документация и коммуникация
 
-Implementing CD for an application with dependencies requires careful planning, coordination, and automation to ensure efficient and reliable deployments. By following best practices such as automation, version control, testing, monitoring, rollback strategies, and effective communication, you can ensure a smooth and successful CD process for your application ecosystem.
+Реализация CD для приложения с зависимостями требует тщательного планирования, координации и автоматизации для обеспечения эффективных и надёжных развёртываний. Следуя лучшим практикам — автоматизации, контролю версий, тестированию, мониторингу, стратегиям отката и эффективной коммуникации, — можно обеспечить плавный и успешный процесс CD для экосистемы приложений.
 </b></details>
 
 <details>
-<summary>How do you measure your CI/CD quality? Are there any metrics or KPIs you are using for measuring the quality?</summary><br><b>
+<summary>Как измерять качество CI/CD? Какие метрики или KPI используются для измерения качества?</summary><br><b>
 
-Measuring the quality of CI/CD processes is crucial to identify areas for improvement, ensure efficient and reliable software delivery, and achieve continuous improvement. Here are some commonly used metrics and KPIs (Key Performance Indicators) to measure CI/CD quality:
+Измерение качества процессов CI/CD крайне важно, чтобы выявлять области для улучшения, обеспечивать эффективную и надёжную поставку ПО и добиваться непрерывного совершенствования. Вот некоторые часто используемые метрики и KPI (ключевые показатели эффективности, Key Performance Indicators) для измерения качества CI/CD:
 
-1. Build Success Rate: This metric measures the percentage of successful builds compared to the total number of builds. A high build success rate indicates that the majority of builds are successful and the CI/CD pipeline is stable.
-2. Build and Deployment Time: This metric measures the time it takes to build and deploy changes from code commit to production. Faster build and deployment times indicate shorter feedback loops and faster time to market.
-3. Deployment Frequency: This metric measures the frequency of deployments to production within a given time period. Higher deployment frequency indicates faster release cycles and more frequent updates to production.
-4. Mean Time to Detect (MTTD): This metric measures the average time it takes to detect issues or defects in the CI/CD pipeline or production environment. Lower MTTD indicates faster detection and resolution of issues, leading to higher quality and more reliable deployments.
-5. Mean Time to Recover (MTTR): This metric measures the average time it takes to recover from issues or incidents in the CI/CD pipeline or production environment. Lower MTTR indicates faster recovery and reduced downtime, leading to higher availability and reliability.
-6. Feedback Loop Time: This metric measures the time it takes to receive feedback on code changes, including code reviews, test results, and other feedback mechanisms. Faster feedback loop times enable quicker iterations and faster improvements in the CI/CD process.
-7. Customer Satisfaction: This metric measures the satisfaction of end-users or customers with the quality and reliability of the deployed software. Higher customer satisfaction indicates that the CI/CD process is delivering high-quality software that meets customer expectations.
+1. Доля успешных сборок (Build Success Rate): эта метрика показывает процент успешных сборок от общего числа сборок. Высокая доля успешных сборок говорит о том, что большинство сборок проходят успешно и CI/CD-конвейер стабилен.
+2. Время сборки и развёртывания (Build and Deployment Time): эта метрика показывает время, необходимое для сборки и развёртывания изменений от коммита кода до production. Меньшее время сборки и развёртывания означает более короткие циклы обратной связи и более быстрый выход на рынок.
+3. Частота развёртываний (Deployment Frequency): эта метрика показывает частоту развёртываний в production за определённый период. Более высокая частота развёртываний означает более быстрые циклы релизов и более частые обновления production.
+4. Среднее время обнаружения (Mean Time to Detect, MTTD): эта метрика показывает среднее время, необходимое для обнаружения проблем или дефектов в CI/CD-конвейере или production-среде. Меньшее MTTD означает более быстрое обнаружение и устранение проблем, что ведёт к более качественным и надёжным развёртываниям.
+5. Среднее время восстановления (Mean Time to Recover, MTTR): эта метрика показывает среднее время, необходимое для восстановления после проблем или инцидентов в CI/CD-конвейере или production-среде. Меньшее MTTR означает более быстрое восстановление и сокращение простоя, что ведёт к более высокой доступности и надёжности.
+6. Время цикла обратной связи (Feedback Loop Time): эта метрика показывает время получения обратной связи по изменениям кода, включая ревью кода, результаты тестов и другие механизмы обратной связи. Более короткий цикл обратной связи позволяет быстрее выполнять итерации и улучшать процесс CI/CD.
+7. Удовлетворённость клиентов (Customer Satisfaction): эта метрика показывает удовлетворённость конечных пользователей или клиентов качеством и надёжностью развёрнутого ПО. Более высокая удовлетворённость клиентов говорит о том, что процесс CI/CD поставляет качественное ПО, соответствующее ожиданиям клиентов.
 
-These are just some examples of metrics and KPIs that can be used to measure the quality of CI/CD processes. It's important to choose metrics that align with the goals and objectives of your organization and regularly track and analyze them to continuously improve the CI/CD process and ensure high-quality software delivery.
+Это лишь некоторые примеры метрик и KPI, которые можно использовать для измерения качества процессов CI/CD. Важно выбирать метрики, соответствующие целям и задачам организации, и регулярно отслеживать и анализировать их, чтобы непрерывно улучшать процесс CI/CD и обеспечивать поставку качественного ПО.
 </b></details>
 
 #### CI/CD - Jenkins
 
 <details>
-<summary>What is Jenkins? What have you used it for?</summary><br><b>
+<summary>Что такое Jenkins? Для чего вы его использовали?</summary><br><b>
 
-Jenkins is an open source automation tool written in Java with plugins built for Continuous Integration purpose. Jenkins is used to build and test your software projects continuously making it easier for developers to integrate changes to the project, and making it easier for users to obtain a fresh build. It also allows you to continuously deliver your software by integrating with a large number of testing and deployment technologies.
+Jenkins — это инструмент автоматизации с открытым исходным кодом, написанный на Java, с плагинами, созданными для целей непрерывной интеграции. Jenkins используется для непрерывной сборки и тестирования программных проектов, упрощая разработчикам интеграцию изменений в проект, а пользователям — получение свежей сборки. Он также позволяет непрерывно поставлять ПО за счёт интеграции с большим количеством технологий тестирования и развёртывания.
 
-Jenkins integrates development life-cycle processes of all kinds, including build, document, test, package, stage, deploy, static analysis and much more.
+Jenkins интегрирует процессы жизненного цикла разработки всех видов, включая сборку, документирование, тестирование, упаковку, staging, развёртывание, статический анализ и многое другое.
 
 </b></details>
 
 <details>
-<summary>What are the advantages of Jenkins over its competitors? Can you compare it to one of the following systems?
+<summary>Каковы преимущества Jenkins перед конкурентами? Сравните его с одной из следующих систем:
 
   * Travis
   * Bamboo
   * Teamcity
   * CircleCI</summary><br><b>
 
-  Jenkins has several advantages over its competitors, including Travis, Bamboo, TeamCity, and CircleCI. Here are some of the key advantages:
+  У Jenkins есть несколько преимуществ перед конкурентами, включая Travis, Bamboo, TeamCity и CircleCI. Вот некоторые ключевые преимущества:
 
-1. Open-source and free
-2. Customizable and flexible
-3. Wide range of integrations and Plugins
-4. Active and supportive community
+1. Открытый исходный код и бесплатность
+2. Настраиваемость и гибкость
+3. Широкий выбор интеграций и плагинов
+4. Активное и отзывчивое сообщество
 
-When comparing Jenkins to its competitors, there are some key differences in terms of features and capabilities. For example:
+При сравнении Jenkins с конкурентами есть ключевые различия в функциях и возможностях. Например:
 
-- Travis: Travis is a cloud-based CI/CD platform that is known for its ease of use and fast setup. However, it has fewer customization options and integrations compared to Jenkins.
-- Bamboo: Bamboo is a CI/CD tool from Atlassian, the makers of JIRA and Confluence. It provides a range of features for building, testing, and deploying software, but it can be more expensive and complex to set up compared to Jenkins.
-- TeamCity: TeamCity is a CI/CD tool from JetBrains, the makers of IntelliJ IDEA. It provides a range of features for building, testing, and deploying software, but it can be more complex and resource-intensive compared to Jenkins.
-- CircleCI: CircleCI is a cloud-based CI/CD platform that is known for its fast build times and easy integration with GitHub. However, it can be more expensive compared to Jenkins, especially for larger projects.
+- Travis: Travis — облачная CI/CD-платформа, известная простотой использования и быстрой настройкой. Однако у неё меньше возможностей настройки и интеграций по сравнению с Jenkins.
+- Bamboo: Bamboo — CI/CD-инструмент от Atlassian, создателей JIRA и Confluence. Он предоставляет ряд функций для сборки, тестирования и развёртывания ПО, но может быть дороже и сложнее в настройке по сравнению с Jenkins.
+- TeamCity: TeamCity — CI/CD-инструмент от JetBrains, создателей IntelliJ IDEA. Он предоставляет ряд функций для сборки, тестирования и развёртывания ПО, но может быть сложнее и требовательнее к ресурсам по сравнению с Jenkins.
+- CircleCI: CircleCI — облачная CI/CD-платформа, известная быстрыми сборками и простой интеграцией с GitHub. Однако она может быть дороже Jenkins, особенно для крупных проектов.
 </b></details>
 
 <details>
-<summary>What are the limitations or disadvantages of Jenkins?</summary><br><b>
+<summary>Каковы ограничения или недостатки Jenkins?</summary><br><b>
 
-This might be considered to be an opinionated answer:
+Этот ответ можно считать субъективным:
 
-* Old fashioned dashboards with not many options to customize it
-* Containers readiness (this has improved with Jenkins X)
-* By itself, it doesn't have many features. On the other hand, there many plugins created by the community to expand its abilities
-* Managing Jenkins and its pipelines as a code can be one hell of a nightmare
+* Старомодные панели (dashboards) с небольшим количеством возможностей настройки
+* Готовность к работе с контейнерами (ситуация улучшилась с появлением Jenkins X)
+* Сам по себе он не обладает большим количеством функций. С другой стороны, сообщество создало множество плагинов для расширения его возможностей
+* Управление Jenkins и его конвейерами как кодом может превратиться в настоящий кошмар
 </b></details>
 
 <details>
-<summary>Explain the following:
+<summary>Объясните следующие понятия:
 
 - Job
 - Build
 - Plugin
-- Node or Worker
+- Node или Worker
 - Executor</summary><br><b>
-- Job is an automation definition = what and where to execute once the user clicks on "build" 
-- Build is a running instance of a job. You can have one or more builds at any given point of time (unless limited by configuration)
-- A worker is the machine/instance on which the build is running. When a build starts, it "acquires" a worker out of a pool to run on it.
-- An executor is variable of the worker, defining how many builds can run on that worker in parallel. An executor value of 3 means, that 3 builds can run at any point on that executor (not necessarily of the same job. Any builds)
+- Задание (Job) — это определение автоматизации = что и где выполнять, когда пользователь нажимает "build" 
+- Сборка (Build) — это выполняющийся экземпляр задания. В любой момент времени может быть одна или несколько сборок (если это не ограничено конфигурацией)
+- Исполнитель (worker) — это машина/инстанс, на которой выполняется сборка. Когда сборка запускается, она «захватывает» исполнителя из пула, чтобы выполняться на нём.
+- Executor — это параметр исполнителя (worker), определяющий, сколько сборок может выполняться на нём параллельно. Значение executor, равное 3, означает, что в любой момент на этом executor могут выполняться 3 сборки (не обязательно одного и того же задания. Любые сборки)
 </b></details>
 
 <details>
-<summary>What plugins have you used in Jenkins?</summary><br><b>
+<summary>Какие плагины Jenkins вы использовали?</summary><br><b>
 
-Jenkins has a vast library of plugins, and the most commonly used plugins depend on the specific needs and requirements of each organization. However, here are some of the most popular and widely used plugins in Jenkins:
+У Jenkins обширная библиотека плагинов, и наиболее используемые плагины зависят от конкретных потребностей и требований каждой организации. Тем не менее, вот некоторые из самых популярных и широко используемых плагинов Jenkins:
 
-    Pipeline: This plugin allows users to create and manage complex, multi-stage pipelines using a simple and easy-to-use scripting language. It provides a powerful and flexible way to automate the entire software delivery process, from code commit to deployment.
+    Pipeline: этот плагин позволяет создавать сложные многоэтапные конвейеры и управлять ими с помощью простого и удобного скриптового языка. Он предоставляет мощный и гибкий способ автоматизировать весь процесс поставки ПО — от коммита кода до развёртывания.
 
-    Git: This plugin provides integration with Git, one of the most popular version control systems used today. It allows users to pull code from Git repositories, trigger builds based on code changes, and push code changes back to Git.
+    Git: этот плагин обеспечивает интеграцию с Git, одной из самых популярных систем контроля версий на сегодня. Он позволяет получать код из Git-репозиториев, запускать сборки по изменениям кода и отправлять изменения кода обратно в Git.
 
-    Docker: This plugin provides integration with Docker, a popular platform for building, shipping, and running distributed applications. It allows users to build and run Docker containers as part of their build process, enabling easy and repeatable deployment of applications.
+    Docker: этот плагин обеспечивает интеграцию с Docker, популярной платформой для сборки, доставки и запуска распределённых приложений. Он позволяет собирать и запускать контейнеры Docker в рамках процесса сборки, обеспечивая простое и воспроизводимое развёртывание приложений.
 
-    JUnit: This plugin provides integration with JUnit, a popular unit testing framework for Java applications. It allows users to run JUnit tests as part of their build process and generates reports and statistics on test results.
+    JUnit: этот плагин обеспечивает интеграцию с JUnit, популярным фреймворком модульного тестирования для Java-приложений. Он позволяет запускать тесты JUnit в рамках процесса сборки и формирует отчёты и статистику по результатам тестов.
 
-    Cobertura: This plugin provides code coverage reporting for Java applications. It allows users to measure the code coverage of their tests and generate reports on which parts of the code are covered by tests.
+    Cobertura: этот плагин предоставляет отчёты о покрытии кода для Java-приложений. Он позволяет измерять покрытие кода тестами и формировать отчёты о том, какие части кода покрыты тестами.
 
-    Email Extension: This plugin provides advanced email notification capabilities for Jenkins. It allows users to customize the content and format of email notifications, including attachments, and send notifications to specific users or groups based on build results.
+    Email Extension: этот плагин предоставляет расширенные возможности email-уведомлений для Jenkins. Он позволяет настраивать содержимое и формат email-уведомлений, включая вложения, и отправлять уведомления определённым пользователям или группам в зависимости от результатов сборки.
 
-    Artifactory: This plugin provides integration with Artifactory, a popular artifact repository for storing and managing binaries and dependencies. It allows users to publish and retrieve artifacts from Artifactory as part of their build process.
+    Artifactory: этот плагин обеспечивает интеграцию с Artifactory, популярным репозиторием артефактов для хранения бинарных файлов и зависимостей и управления ими. Он позволяет публиковать и получать артефакты из Artifactory в рамках процесса сборки.
 
-    SonarQube: This plugin provides integration with SonarQube, a popular code quality analysis tool. It allows users to run code quality checks and generate reports on code quality metrics such as code complexity, code duplication, and code coverage.
+    SonarQube: этот плагин обеспечивает интеграцию с SonarQube, популярным инструментом анализа качества кода. Он позволяет запускать проверки качества кода и формировать отчёты по таким метрикам, как сложность кода, дублирование кода и покрытие кода.
 </b></details>
 
 <details>
-<summary>Have you used Jenkins for CI or CD processes? Can you describe them?</summary><br><b>
+<summary>Использовали ли вы Jenkins для процессов CI или CD? Опишите их</summary><br><b>
 
-Let's assume we have a web application built using Node.js, and we want to automate its build and deployment process using Jenkins. Here is how we can set up a simple CI/CD pipeline using Jenkins:
+Предположим, есть веб-приложение на Node.js, и нужно автоматизировать процесс его сборки и развёртывания с помощью Jenkins. Вот как можно настроить простой CI/CD-конвейер с помощью Jenkins:
 
-1. Install Jenkins: We can install Jenkins on a dedicated server or on a cloud platform such as AWS or Google Cloud.
-2. Install necessary plugins: Depending on the specific requirements of the project, we may need to install plugins such as NodeJS, Git, Docker, and any other plugins required by the project.
-3. Create a new job: In Jenkins, a job is a defined set of instructions for automating a particular task. We can create a new job and configure it to build our Node.js application.
-4. Configure the job: We can configure the job to pull the latest code from the Git repository, install any necessary dependencies using Node.js, run unit tests, and build the application using a build script.
-5. Set up a deployment environment: We can set up a separate environment for deploying the application, such as a staging or production environment. We can use Docker to create a container image of the application and deploy it to the environment.
-6. Set up continuous deployment: We can configure the job to automatically deploy the application to the deployment environment if the build and tests pass.
-7. Monitor and troubleshoot: We can monitor the pipeline for errors or failures and troubleshoot any issues that arise.
+1. Установить Jenkins: Jenkins можно установить на выделенный сервер или на облачную платформу, например AWS или Google Cloud.
+2. Установить необходимые плагины: в зависимости от конкретных требований проекта может понадобиться установить такие плагины, как NodeJS, Git, Docker, и любые другие плагины, необходимые проекту.
+3. Создать новое задание: в Jenkins задание — это определённый набор инструкций для автоматизации конкретной задачи. Можно создать новое задание и настроить его для сборки приложения на Node.js.
+4. Настроить задание: можно настроить задание так, чтобы оно получало последний код из Git-репозитория, устанавливало необходимые зависимости с помощью Node.js, запускало модульные тесты и собирало приложение с помощью скрипта сборки.
+5. Настроить среду развёртывания: можно настроить отдельную среду для развёртывания приложения, например staging или production. С помощью Docker можно создать образ контейнера приложения и развернуть его в этой среде.
+6. Настроить непрерывное развёртывание: можно настроить задание так, чтобы оно автоматически развёртывало приложение в среде развёртывания, если сборка и тесты прошли успешно.
+7. Мониторинг и устранение неполадок: можно отслеживать конвейер на предмет ошибок или сбоев и устранять возникающие проблемы.
 
-This is just a simple example of a CI/CD pipeline using Jenkins, and the specific implementation details may vary depending on the requirements of the project.
+Это лишь простой пример CI/CD-конвейера на Jenkins, и конкретные детали реализации могут различаться в зависимости от требований проекта.
 </b></details>
 
 <details>
-<summary>What type of jobs are there? Which types have you used?</summary><br><b>
+<summary>Какие типы заданий существуют? Какие типы вы использовали?</summary><br><b>
 
-In Jenkins, there are various types of jobs, including:
+В Jenkins есть различные типы заданий, в том числе:
 
-1. Freestyle job: This is the most common type of job in Jenkins, which allows users to define custom build steps and configure various options, including build triggers, SCM polling, and post-build actions.
-2. Pipeline job: Pipeline job is a newer feature in Jenkins that allows users to define a pipeline of jobs that can be executed in a specific order. The pipeline can be defined using a Jenkinsfile, which provides a script-like syntax for defining the pipeline stages, steps, and conditions.
-3. Multi-configuration job: This type of job allows users to execute the same job with multiple configurations, such as different operating systems, browsers, or devices. Jenkins will execute the job for each configuration specified, providing a matrix of results.
-4. Maven job: This type of job is specifically designed for building Java applications using the Maven build tool. Jenkins will execute the Maven build process, including compiling, testing, and packaging the application.
-5. Parameterized job: This type of job allows users to define parameters that can be passed into the build process at runtime. Parameters can be used to customize the build process, such as specifying the version number or target environment.
+1. Freestyle job: самый распространённый тип задания в Jenkins, позволяющий определять собственные шаги сборки и настраивать различные параметры, включая триггеры сборки, опрос SCM и действия после сборки.
+2. Pipeline job: Pipeline job — более новая возможность Jenkins, позволяющая определить конвейер заданий, которые могут выполняться в определённом порядке. Конвейер можно определить с помощью Jenkinsfile, который предоставляет похожий на скрипт синтаксис для определения этапов, шагов и условий конвейера.
+3. Multi-configuration job: этот тип задания позволяет выполнять одно и то же задание с несколькими конфигурациями, например с разными операционными системами, браузерами или устройствами. Jenkins выполнит задание для каждой указанной конфигурации и выдаст матрицу результатов.
+4. Maven job: этот тип задания предназначен специально для сборки Java-приложений с помощью инструмента сборки Maven. Jenkins выполнит процесс сборки Maven, включая компиляцию, тестирование и упаковку приложения.
+5. Parameterized job: этот тип задания позволяет определять параметры, которые передаются в процесс сборки во время выполнения. Параметры можно использовать для настройки процесса сборки, например для указания номера версии или целевой среды.
 </b></details>
 
 <details>
-<summary>How did you report build results to users? What ways are there to report the results?</summary><br><b>
+<summary>Как вы сообщали пользователям о результатах сборки? Какие есть способы сообщать о результатах?</summary><br><b>
 
-You can report via:
-  * Emails
-  * Messaging apps
-  * Dashboards
+Сообщать можно через:
+  * Email
+  * Мессенджеры
+  * Панели (dashboards)
 
-Each has its own disadvantages and advantages. Emails for example, if sent too often, can be eventually disregarded or ignored.
+У каждого способа свои недостатки и преимущества. Например, письма, если отправлять их слишком часто, со временем начинают пропускать или игнорировать.
 </b></details>
 
 <details>
-<summary>You need to run unit tests every time a change submitted to a given project. Describe in details how your pipeline would look like and what will be executed in each stage</summary><br><b>
+<summary>Нужно запускать модульные тесты каждый раз, когда в проект отправляется изменение. Подробно опишите, как будет выглядеть конвейер и что будет выполняться на каждом этапе</summary><br><b>
 
-The pipelines will have multiple stages:
+Конвейер будет состоять из нескольких этапов:
 
-  * Clone the project
-  * Install test dependencies (for example, if I need tox package to run the tests, I will install it in this stage)
-  * Run unit tests
-  * (Optional) report results (For example an email to the users)
-  * Archive the relevant logs/files
+  * Клонирование проекта
+  * Установка тестовых зависимостей (например, если для запуска тестов нужен пакет tox, он устанавливается на этом этапе)
+  * Запуск модульных тестов
+  * (Необязательно) отчёт о результатах (например, письмо пользователям)
+  * Архивирование соответствующих логов/файлов
 </b></details>
 
 <details>
-<summary>How to secure Jenkins?</summary><br><b>
+<summary>Как защитить Jenkins?</summary><br><b>
 
- [Jenkins documentation](https://www.jenkins.io/doc/book/security/securing-jenkins/) provides some basic intro for securing your Jenkins server.
+ [Документация Jenkins](https://www.jenkins.io/doc/book/security/securing-jenkins/) содержит базовое введение в защиту сервера Jenkins.
 </b></details>
 
 <details>
-<summary>Describe how do you add new nodes (agents) to Jenkins</summary><br><b>
+<summary>Опишите, как добавлять новые узлы (агенты) в Jenkins</summary><br><b>
 
-You can describe the UI way to add new nodes but better to explain how to do in a way that scales like a script or using dynamic source for nodes like one of the existing clouds.
+Можно описать способ добавления новых узлов через UI, но лучше объяснить, как сделать это масштабируемым способом — например, скриптом или с помощью динамического источника узлов, такого как одно из существующих облаков.
 </b></details>
 
 <details>
-<summary>How to acquire multiple nodes for one specific build?</summary><br><b>
+<summary>Как получить несколько узлов для одной конкретной сборки?</summary><br><b>
 
-To acquire multiple nodes for a specific build in Jenkins, you can use the "Parallel" feature in the pipeline script. The "Parallel" feature allows you to run multiple stages in parallel, and each stage can run on a different node.
+Чтобы получить несколько узлов для конкретной сборки в Jenkins, можно использовать возможность "Parallel" в скрипте конвейера. "Parallel" позволяет запускать несколько этапов параллельно, причём каждый этап может выполняться на отдельном узле.
 
-Here is an example pipeline script that demonstrates how to acquire multiple nodes for a specific build:
+Вот пример скрипта конвейера, показывающий, как получить несколько узлов для конкретной сборки:
 
 ```tsx
 pipeline {
@@ -313,19 +313,19 @@ pipeline {
                 stage('Node 1') {
                     agent { label 'node1' }
                     steps {
-                        // Run build commands on Node 1
+                        // Выполнить команды сборки на Node 1
                     }
                 }
                 stage('Node 2') {
                     agent { label 'node2' }
                     steps {
-                        // Run build commands on Node 2
+                        // Выполнить команды сборки на Node 2
                     }
                 }
                 stage('Node 3') {
                     agent { label 'node3' }
                     steps {
-                        // Run build commands on Node 3
+                        // Выполнить команды сборки на Node 3
                     }
                 }
             }
@@ -333,93 +333,93 @@ pipeline {
         stage('Deploy') {
             agent any
             steps {
-                // Deploy the built artifacts
+                // Развернуть собранные артефакты
             }
         }
     }
 }
 ```
 
-In this example, the "Build" stage has three parallel stages, each running on a different node labeled as "node1", "node2", and "node3". The "Deploy" stage runs after the build is complete and runs on any available node.
+В этом примере этап "Build" содержит три параллельных этапа, каждый из которых выполняется на отдельном узле с метками "node1", "node2" и "node3". Этап "Deploy" запускается после завершения сборки и выполняется на любом доступном узле.
 
-To use this pipeline script, you will need to have the three nodes (node1, node2, and node3) configured in Jenkins. You will also need to ensure that the necessary build commands and dependencies are installed on each node.
+Чтобы использовать этот скрипт конвейера, в Jenkins должны быть настроены три узла (node1, node2 и node3). Также нужно убедиться, что на каждом узле установлены необходимые команды сборки и зависимости.
 </b></details>
 
 <details>
-<summary>Whenever a build fails, you would like to notify the team owning the job regarding the failure and provide failure reason. How would you do that?</summary><br><b>
+<summary>Каждый раз, когда сборка падает, нужно уведомлять команду, владеющую заданием, о сбое и сообщать его причину. Как это сделать?</summary><br><b>
 
-In Jenkins, you can use the "Email Notification" plugin to notify a team when a build fails. Here are the steps to set up email notifications for failed builds:
+В Jenkins для уведомления команды о падении сборки можно использовать плагин "Email Notification". Вот шаги по настройке email-уведомлений о неудачных сборках:
 
-1. Install the "Email Notification" plugin if it's not already installed in Jenkins.
-2. Go to the Jenkins job configuration page and click on "Configure".
-3. Scroll down to the "Post-build Actions" section and click on "Add post-build action".
-4. Select "Editable Email Notification" from the list of options.
-5. Fill out the required fields, such as the recipient email addresses, subject line, and email content. You can use Jenkins environment variables, such as ${BUILD_URL} and ${BUILD_LOG}, to include build-specific information in the email content.
-6. In the "Advanced Settings" section, select the "Send to recipients" option and choose "Only on failure" from the dropdown menu.
-7. Click "Save" to save the job configuration.
+1. Установить плагин "Email Notification", если он ещё не установлен в Jenkins.
+2. Перейти на страницу конфигурации задания Jenkins и нажать "Configure".
+3. Прокрутить вниз до раздела "Post-build Actions" и нажать "Add post-build action".
+4. Выбрать "Editable Email Notification" из списка вариантов.
+5. Заполнить обязательные поля, такие как адреса получателей, тема и содержимое письма. Можно использовать переменные окружения Jenkins, такие как ${BUILD_URL} и ${BUILD_LOG}, чтобы включить в письмо информацию о конкретной сборке.
+6. В разделе "Advanced Settings" выбрать опцию "Send to recipients" и в выпадающем меню выбрать "Only on failure".
+7. Нажать "Save", чтобы сохранить конфигурацию задания.
 
-With this setup, Jenkins will send an email notification to the specified recipients whenever a build fails, providing them with the failure reason and any other relevant information.
+С такой настройкой Jenkins будет отправлять email-уведомление указанным получателям каждый раз, когда сборка падает, сообщая им причину сбоя и другую релевантную информацию.
 </b></details>
 
 <details>
-<summary>There are four teams in your organization. How to prioritize the builds of each team? So the jobs of team x will always run before team y for example</summary><br><b>
+<summary>В организации четыре команды. Как расставить приоритеты сборок каждой команды? Например, чтобы задания команды x всегда выполнялись раньше заданий команды y</summary><br><b>
 
-In Jenkins, you can prioritize the builds of each team by using the "Priority Sorter" plugin. Here are the steps to set up build prioritization:
+В Jenkins приоритеты сборок каждой команды можно расставить с помощью плагина "Priority Sorter". Вот шаги по настройке приоритизации сборок:
 
-1. Install the "Priority Sorter" plugin if it's not already installed in Jenkins.
-2. Go to the Jenkins system configuration page and click on "Configure Global Security". Scroll down to the "Access Control" section and click on "Per-project basis".
-3. In the "Project default actions" section, select "Configure build triggers and execution" from the dropdown menu. Click on "Add user or group" and add the groups that represent each team in your organization.
-4. Go to each Jenkins job configuration page and click on "Configure". Scroll down to the "Build Environment" section and click on "Add build step". Select "Set build priority with Priority Sorter" from the list of options.
-5. Set the priority of the job based on the team that owns it. For example, if Team X owns the job, set the priority to a higher value than the jobs owned by Team Y. Click "Save" to save the job configuration.
+1. Установить плагин "Priority Sorter", если он ещё не установлен в Jenkins.
+2. Перейти на страницу системной конфигурации Jenkins и нажать "Configure Global Security". Прокрутить вниз до раздела "Access Control" и выбрать "Per-project basis".
+3. В разделе "Project default actions" выбрать в выпадающем меню "Configure build triggers and execution". Нажать "Add user or group" и добавить группы, представляющие каждую команду организации.
+4. Перейти на страницу конфигурации каждого задания Jenkins и нажать "Configure". Прокрутить вниз до раздела "Build Environment" и нажать "Add build step". Выбрать из списка вариантов "Set build priority with Priority Sorter".
+5. Задать приоритет задания в зависимости от команды, которая им владеет. Например, если задание принадлежит команде X, задать приоритет выше, чем у заданий команды Y. Нажать "Save", чтобы сохранить конфигурацию задания.
 
-With this setup, Jenkins will prioritize the builds of each team based on the priority value set in the job configuration. Jobs owned by Team X will have a higher priority than jobs owned by Team Y, ensuring that they are executed first.
+С такой настройкой Jenkins будет расставлять приоритеты сборок каждой команды на основе значения приоритета, заданного в конфигурации задания. Задания команды X будут иметь более высокий приоритет, чем задания команды Y, и поэтому будут выполняться первыми.
 </b></details>
 
 <details>
-<summary>If you are managing a dozen of jobs, you can probably use the Jenkins UI. But how do you manage the creation and deletion of hundreds of jobs every week/month?</summary><br><b>
+<summary>Если нужно управлять десятком заданий, вероятно, можно обойтись UI Jenkins. Но как управлять созданием и удалением сотен заданий каждую неделю/месяц?</summary><br><b>
 
-Managing the creation and deletion of hundreds of jobs every week/month in Jenkins can be a daunting task if done manually through the UI. Here are some approaches to manage large numbers of jobs efficiently:
+Управление созданием и удалением сотен заданий каждую неделю/месяц в Jenkins может быть непосильной задачей, если делать это вручную через UI. Вот несколько подходов к эффективному управлению большим количеством заданий:
 
-1. Use job templates
-2. Use Job DSL
-3. Use Jenkins REST API
-4. Use a configuration management tool
-5. Use a Jenkins job management tool
+1. Использовать шаблоны заданий
+2. Использовать Job DSL
+3. Использовать Jenkins REST API
+4. Использовать инструмент управления конфигурацией
+5. Использовать инструмент управления заданиями Jenkins
 </b></details>
 
 <details>
-<summary>What are some of Jenkins limitations?</summary><br><b>
+<summary>Каковы некоторые ограничения Jenkins?</summary><br><b>
 
-  * Testing cross-dependencies (changes from multiple projects together)
-  * Starting builds from any stage (although Cloudbees implemented something called checkpoints)
+  * Тестирование перекрёстных зависимостей (изменений из нескольких проектов вместе)
+  * Запуск сборок с любого этапа (хотя в Cloudbees реализовали так называемые checkpoints)
 </b></details>
 
 <details>
-<summary>What is the different between a scripted pipeline to declarative pipeline? Which type are you using?</summary><br><b>
+<summary>В чём разница между скриптовым (scripted) и декларативным (declarative) конвейером? Какой тип вы используете?</summary><br><b>
 
-Jenkins supports two types of pipelines: Scripted pipelines and Declarative pipelines.
+Jenkins поддерживает два типа конвейеров: скриптовые (Scripted) и декларативные (Declarative).
 
-Scripted pipelines use Groovy syntax and provide a high degree of flexibility and control over the build process. Scripted pipelines allow developers to write custom code to handle complex scenarios, but can be complex and hard to maintain.
+Скриптовые конвейеры используют синтаксис Groovy и обеспечивают высокую степень гибкости и контроля над процессом сборки. Они позволяют разработчикам писать собственный код для обработки сложных сценариев, но могут быть сложными и трудными в сопровождении.
 
-Declarative pipelines are a newer feature and provide a simpler way to define pipelines using YAML syntax. Declarative pipelines provide a more structured and opinionated way to define builds, making it easier to get started with pipelines and reducing the risk of errors.
+Декларативные конвейеры — более новая возможность, предоставляющая более простой способ определения конвейеров с использованием синтаксиса YAML. Декларативные конвейеры дают более структурированный и регламентированный способ определения сборок, что упрощает начало работы с конвейерами и снижает риск ошибок.
 
-Some key differences between the two types of pipelines are:
+Ключевые различия между двумя типами конвейеров:
 
-1. Syntax: Scripted pipelines use Groovy syntax while declarative pipelines use YAML syntax.
-2. Structure: Declarative pipelines have a more structured format and define specific stages, while scripted pipelines provide more flexibility in defining build stages and steps.
-3. Error handling: Declarative pipelines provide a more comprehensive error handling system with built-in conditions and actions, while scripted pipelines require more manual error handling.
-4. Ease of use: Declarative pipelines are easier to use for beginners and provide a simpler syntax, while scripted pipelines require more expertise in Groovy and can be more complex.
-5. Maintenance: Declarative pipelines are easier to maintain and can be modified with less effort compared to scripted pipelines, which can be more difficult to modify and extend over time.
+1. Синтаксис: скриптовые конвейеры используют синтаксис Groovy, а декларативные — синтаксис YAML.
+2. Структура: декларативные конвейеры имеют более структурированный формат и определяют конкретные этапы, а скриптовые дают больше гибкости в определении этапов и шагов сборки.
+3. Обработка ошибок: декларативные конвейеры предоставляют более полноценную систему обработки ошибок со встроенными условиями и действиями, а скриптовые требуют больше ручной обработки ошибок.
+4. Простота использования: декларативные конвейеры проще для начинающих и имеют более простой синтаксис, а скриптовые требуют больше опыта в Groovy и могут быть сложнее.
+5. Сопровождение: декларативные конвейеры проще сопровождать, и их можно изменять с меньшими усилиями по сравнению со скриптовыми, которые со временем сложнее изменять и расширять.
 
-I am familiar with both types of pipelines, but generally prefer declarative pipelines for their ease of use and simplicity.
+Я знаком с обоими типами конвейеров, но в целом предпочитаю декларативные за простоту использования.
 </b></details>
 
 <details>
-<summary>How would you implement an option of a starting a build from a certain stage and not from the beginning?</summary><br><b>
+<summary>Как реализовать возможность запуска сборки с определённого этапа, а не с самого начала?</summary><br><b>
 
-To implement an option of starting a build from a certain stage and not from the beginning in a Jenkins pipeline, we can use the `when` directive along with a custom parameter to determine the starting stage. Here are the steps to implement this:
+Чтобы реализовать в конвейере Jenkins возможность запуска сборки с определённого этапа, а не с начала, можно использовать директиву `when` вместе с пользовательским параметром, определяющим начальный этап. Вот шаги реализации:
 
-1. Add a custom parameter to the pipeline. This parameter can be a simple string or a more complex data type like a map.
+1. Добавить в конвейер пользовательский параметр. Это может быть простая строка или более сложный тип данных, например map.
     
     ```tsx
     parameters {
@@ -427,7 +427,7 @@ To implement an option of starting a build from a certain stage and not from the
     }
     ```
     
-2. Use the `when` directive to conditionally execute stages based on the value of the `START_STAGE` parameter.
+2. Использовать директиву `when` для условного выполнения этапов в зависимости от значения параметра `START_STAGE`.
     
     ```tsx
     stage('Build') {
@@ -436,7 +436,7 @@ To implement an option of starting a build from a certain stage and not from the
                 params.START_STAGE == '' || currentStage.name == params.START_STAGE
             }
         }
-        // Build steps go here
+        // Здесь шаги сборки
     }
     
     stage('Test') {
@@ -445,7 +445,7 @@ To implement an option of starting a build from a certain stage and not from the
                 params.START_STAGE == '' || currentStage.name == params.START_STAGE || previousStage.result == 'SUCCESS'
             }
         }
-        // Test steps go here
+        // Здесь шаги тестирования
     }
     
     stage('Deploy') {
@@ -454,14 +454,14 @@ To implement an option of starting a build from a certain stage and not from the
                 params.START_STAGE == '' || currentStage.name == params.START_STAGE || previousStage.result == 'SUCCESS'
             }
         }
-        // Deploy steps go here
+        // Здесь шаги развёртывания
     }
     ```
     
 
-  In this example, we use the `when` directive to execute each stage only if the `START_STAGE` parameter is empty or matches the current stage's name. Additionally, for the `Test` and `Deploy` stages, we also check if the previous stage executed successfully before running.
+  В этом примере директива `when` используется для выполнения каждого этапа, только если параметр `START_STAGE` пуст или совпадает с именем текущего этапа. Кроме того, для этапов `Test` и `Deploy` перед запуском также проверяется, что предыдущий этап выполнился успешно.
 
-3. Trigger the pipeline and pass the `START_STAGE` parameter as needed.
+3. Запустить конвейер, передав при необходимости параметр `START_STAGE`.
     
     ```tsx
     pipeline {
@@ -471,90 +471,90 @@ To implement an option of starting a build from a certain stage and not from the
         }
         stages {
             stage('Build') {
-                // Build steps go here
+                // Здесь шаги сборки
             }
             stage('Test') {
-                // Test steps go here
+                // Здесь шаги тестирования
             }
             stage('Deploy') {
-                // Deploy steps go here
+                // Здесь шаги развёртывания
             }
         }
     }
     ```
     
 
-When triggering the pipeline, you can pass the `START_STAGE` parameter to start the build from a specific stage.
+При запуске конвейера можно передать параметр `START_STAGE`, чтобы начать сборку с определённого этапа.
 
-For example, if you want to start the build from the `Test` stage, you can trigger the pipeline with the `START_STAGE` parameter set to `'Test'`:
+Например, чтобы начать сборку с этапа `Test`, можно запустить конвейер с параметром `START_STAGE`, равным `'Test'`:
 
 ```tsx
 pipeline?START_STAGE=Test
 ```
 
-This will cause the pipeline to skip the `Build` stage and start directly from the `Test` stage.
+В результате конвейер пропустит этап `Build` и начнёт сразу с этапа `Test`.
 </b></details>
 
 <details>
-<summary>Do you have experience with developing a Jenkins plugin? Can you describe this experience?</summary><br><b>
+<summary>Есть ли у вас опыт разработки плагинов для Jenkins? Опишите этот опыт</summary><br><b>
 
-Developing a Jenkins plugin requires knowledge of Java and familiarity with Jenkins API. The process typically involves setting up a development environment, creating a new plugin project, defining the plugin's extension points, and implementing the desired functionality using Java code. Once the plugin is developed, it can be packaged and deployed to Jenkins.
+Разработка плагина для Jenkins требует знания Java и знакомства с Jenkins API. Процесс обычно включает настройку среды разработки, создание нового проекта плагина, определение точек расширения плагина и реализацию нужной функциональности на Java. После разработки плагин можно упаковать и развернуть в Jenkins.
 
-The Jenkins plugin ecosystem is extensive, and there are many resources available to assist with plugin development, including documentation, forums, and online communities. Additionally, Jenkins provides tools such as Jenkins Plugin POM Generator and Jenkins Plugin Manager to help with plugin development and management.
+Экосистема плагинов Jenkins обширна, и для помощи в разработке плагинов доступно много ресурсов, включая документацию, форумы и онлайн-сообщества. Кроме того, Jenkins предоставляет такие инструменты, как Jenkins Plugin POM Generator и Jenkins Plugin Manager, для помощи в разработке плагинов и управлении ими.
 </b></details>
 
 <details>
-<summary>Have you written Jenkins scripts? If yes, what for and how they work?</summary><br><b>
+<summary>Писали ли вы скрипты для Jenkins? Если да, то для чего и как они работают?</summary><br><b>
 </b></details>
 
 #### CI/CD - GitHub Actions
 
 <details>
-<summary>What is a Workflow in GitHub Actions?</summary><br><b>
+<summary>Что такое Workflow в GitHub Actions?</summary><br><b>
 
-A YAML file that defines the automation actions and instructions to execute upon a specific event.<br>
-The file is placed in the repository itself.
+YAML-файл, определяющий действия автоматизации и инструкции, которые выполняются при наступлении определённого события.<br>
+Файл размещается в самом репозитории.
 
-A Workflow can be anything - running tests, compiling code, building packages, ...
+Workflow может делать что угодно — запускать тесты, компилировать код, собирать пакеты, ...
 </b></details>
 
 <details>
-<summary>What is a Runner in GitHub Actions?</summary><br><b>
+<summary>Что такое Runner в GitHub Actions?</summary><br><b>
 
-A workflow has to be executed somewhere. The environment where the workflow is executed is called Runner.<br>
-A Runner can be an on-premise host or GitHub hoste
+Workflow должен где-то выполняться. Среда, в которой выполняется workflow, называется Runner.<br>
+Runner может быть локальным (on-premise) хостом или размещаться на стороне GitHub
 </b></details>
 
 <details>
-<summary>What is a Job in GitHub Actions?</summary><br><b>
+<summary>Что такое Job в GitHub Actions?</summary><br><b>
 
-A job is a series of steps which are executed on the same runner/environment.<br>
-A workflow must include at least one job.
+Job — это последовательность шагов, выполняемых на одном и том же runner/окружении.<br>
+Workflow должен включать как минимум одно задание (job).
 </b></details>
 
 <details>
-<summary>What is an Action in GitHub Actions?</summary><br><b>
+<summary>Что такое Action в GitHub Actions?</summary><br><b>
 
-An action is the smallest unit in a workflow. It includes the commands to execute as part of the job.
+Action — наименьшая единица в workflow. Он включает команды, выполняемые в рамках задания (job).
 </b></details>
 
 <details>
-<summary>In GitHub Actions workflow, what the 'on' attribute/directive is used for?</summary><br><b>
+<summary>Для чего используется атрибут/директива 'on' в workflow GitHub Actions?</summary><br><b>
 
-Specify upon which events the workflow will be triggered.<br>
-For example, you might configure the workflow to trigger every time a changed is pushed to the repository.
+Указывает, при каких событиях будет запускаться workflow.<br>
+Например, можно настроить запуск workflow каждый раз, когда в репозиторий отправляется (push) изменение.
 </b></details>
 
 <details>
-<summary>True or False? In Github Actions, jobs are executed in parallel by default</summary><br><b>
+<summary>Верно или неверно? В GitHub Actions задания (jobs) по умолчанию выполняются параллельно</summary><br><b>
 
-True
+Верно
 </b></details>
 
 <details>
-<summary>How to create dependencies between jobs so one job runs after another?</summary><br><b>
+<summary>Как создать зависимости между заданиями, чтобы одно задание выполнялось после другого?</summary><br><b>
 
-Using the "needs" attribute/directive.
+С помощью атрибута/директивы "needs".
 
 ```
 jobs:
@@ -563,38 +563,38 @@ jobs:
     needs: job1
 ```
 
-In the above example, job1 must complete successfully before job2 runs
+В примере выше job1 должен успешно завершиться до запуска job2
 </b></details>
 
 <details>
-<summary>How to add a Workflow to a repository?</summary><br><b>
+<summary>Как добавить Workflow в репозиторий?</summary><br><b>
 CLI:
 
-1. Create the directory `.github/workflows` in the repository
-2. Add a YAML file
+1. Создать в репозитории каталог `.github/workflows`
+2. Добавить YAML-файл
 
 UI:
 
-1. In the repository page, click on "Actions"
-2. Choose workflow and click on "Set up this workflow"
+1. На странице репозитория нажать "Actions"
+2. Выбрать workflow и нажать "Set up this workflow"
 </b></details>
 
 #### Zuul
 
 <details>
-<summary>In Zuul, What are the <code>check</code> pipelines?</summary><br><b>
+<summary>Что такое конвейеры <code>check</code> в Zuul?</summary><br><b>
 
-`check` pipeline are triggered when a patch is uploaded to a code review system (e.g. Gerrit).<br>
+Конвейеры `check` запускаются, когда патч загружается в систему ревью кода (например, Gerrit).<br>
 </b></details>
 
 <details>
-<summary>In Zuul, What are the <code>gate</code> pipelines?</summary><br><b>
+<summary>Что такое конвейеры <code>gate</code> в Zuul?</summary><br><b>
 
-`gate` pipeline are triggered when a code reviewer approves the change in a code review system (e.g. Gerrit)
+Конвейеры `gate` запускаются, когда ревьюер одобряет изменение в системе ревью кода (например, Gerrit)
 </b></details>
 
 <details>
-<summary>True or False? <code>gate</code> pipelines run after the <code>check</code> pipelines</summary><br><b>
+<summary>Верно или неверно? Конвейеры <code>gate</code> запускаются после конвейеров <code>check</code></summary><br><b>
 
-True. `check` pipeline run when the change is uploaded, while the `gate` pipelines run when the change is approved by a reviewer
+Верно. Конвейеры `check` запускаются при загрузке изменения, а конвейеры `gate` — когда изменение одобрено ревьюером
 </b></details>

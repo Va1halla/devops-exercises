@@ -1,15 +1,15 @@
-# Slices
+# Срезы
 
-## Objectives
+## Задачи
 
-1. Why do we need slices if we have arrays?
-2. How to define an empty slice of strings called `someSlice`?
-3. What the following lines does? `append(someSlice, 'abc')`
-4. How to retrieve the first element of the slice `someSlice`?
+1. Зачем нужны срезы (slices), если есть массивы?
+2. Как определить пустой срез строк с именем `someSlice`?
+3. Что делает следующая строка? `append(someSlice, 'abc')`
+4. Как получить первый элемент среза `someSlice`?
 
-## Solution
+## Решение
 
-1. Slices, similarly to arrays, are also have size and are index based but as opposed to arrays their size can be resized when needed so it makes them a flexible option in case where you can't define what should be exactly the size of an array or when an array is expected to be added with items over time.
+1. Срезы, как и массивы, имеют размер и индексируются, но, в отличие от массивов, их размер можно менять по мере необходимости. Поэтому они удобны в случаях, когда нельзя заранее точно определить размер массива или когда ожидается, что элементы будут добавляться со временем.
 2. `var someSlice = []string{}`
-3. Adds the string 'abc' to the end of the slice `someSlice`
-4. Similarly to how it's done with arrays: `someSlice[0]`
+3. Добавляет строку 'abc' в конец среза `someSlice`
+4. Так же, как и с массивами: `someSlice[0]`

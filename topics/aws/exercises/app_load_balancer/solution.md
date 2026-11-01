@@ -1,35 +1,35 @@
 ## AWS ELB - Application Load Balancer 
 
-### Requirements
+### Требования
 
-Two EC2 instances with a simple web application that shows the web page with the string "Hey, it's a me, `<HOSTNAME>`!"
+Два экземпляра EC2 с простым веб-приложением, которое показывает веб-страницу со строкой "Hey, it's a me, `<HOSTNAME>`!"
 
-### Objectives
+### Цели
 
-1. Create an application load balancer for the two instances you have, with the following properties
+1. Создать Application Load Balancer для двух имеющихся экземпляров со следующими параметрами
   1. healthy threshold: 3
   2. unhealthy threshold: 3
-  3. interval: 10 seconds
-2. Verify load balancer is working  (= you get reply from both instances at different times)
+  3. interval: 10 секунд
+2. Проверить, что балансировщик нагрузки работает (= в разное время приходит ответ от обоих экземпляров)
 
-### Solution
+### Решение
 
-#### Console
+#### Консоль
 
-1. Go to EC2 service
-2. Click in the left side menu on "Load balancers" under "Load balancing"
-3. Click on "Create load balancer"
-4. Choose "Application Load Balancer"
-5. Insert a name for the LB
-6. Choose an AZ where you want the LB to operate
-7. Choose a security group
-8. Under "Listeners and routing" click on "Create target group" and choose "Instances"
-  1. Provide a name for the target group
-  2. Set healthy threshold to 3
-  3. Set unhealthy threshold to 3
-  4. Set interval to 10 seconds
-  5. Click on "Next" and choose the two of the instances you've created
-  6. Click on "Create target group"
-9. Refresh target groups and choose the one you've just created
-10. Click on "Create load balancer" and wait for it to be provisioned
-11. Copy DNS address and paste it in the browser. If you refresh, you should see different message based on the instance where the traffic was routed to
+1. Перейти в сервис EC2
+2. В меню слева нажать "Load balancers" в разделе "Load balancing"
+3. Нажать "Create load balancer"
+4. Выбрать "Application Load Balancer"
+5. Ввести имя для LB
+6. Выбрать AZ, в которой должен работать LB
+7. Выбрать группу безопасности (security group)
+8. В разделе "Listeners and routing" нажать "Create target group" и выбрать "Instances"
+  1. Указать имя целевой группы
+  2. Установить healthy threshold в 3
+  3. Установить unhealthy threshold в 3
+  4. Установить interval в 10 секунд
+  5. Нажать "Next" и выбрать два созданных экземпляра
+  6. Нажать "Create target group"
+9. Обновить список целевых групп и выбрать только что созданную
+10. Нажать "Create load balancer" и дождаться его создания
+11. Скопировать DNS-адрес и вставить его в браузер. При обновлении страницы должно появляться разное сообщение в зависимости от того, на какой экземпляр был направлен трафик

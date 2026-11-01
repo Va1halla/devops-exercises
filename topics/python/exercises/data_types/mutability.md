@@ -1,4 +1,4 @@
-## Mutability
+## Изменяемость
 
-1. Explain mutability
-2. Give an example of 2 data types which are mutable an 2 immutable
+1. Объясните, что такое изменяемость (mutability)
+2. Приведите пример 2 изменяемых и 2 неизменяемых типов данных

@@ -1,3 +1,3 @@
-## Print all the files in a directory
+## Вывести все файлы в каталоге
 
-Without using `os.walk` or `os.tree`, print all the files in a given directory (including any nested directories)
+Не используя `os.walk` или `os.tree`, вывести все файлы в заданном каталоге (включая все вложенные каталоги)

@@ -1,11 +1,11 @@
-# Local Provider
+# Провайдер local
 
-## Objectives
+## Задачи
 
-Learn how to use and run Terraform basic commands
+Научиться использовать и запускать базовые команды Terraform
 
-1. Create a directory called "my_first_run"
-2. Inside the directory create a file called "main.tf" with the following content
+1. Создать каталог с именем "my_first_run"
+2. Внутри каталога создать файл "main.tf" со следующим содержимым
 
 ```terraform
 resource "local_file" "mario_local_file" {
@@ -13,17 +13,17 @@ resource "local_file" "mario_local_file" {
     filename = "/tmp/who_is_it.txt"
 }
 ```
-3. Run `terraform init`. What did it do?
-4. Run `terraform plan`. What Terraform is going to perform?
-5. Finally, run 'terraform apply' and verify the file was created
+3. Выполнить `terraform init`. Что сделала команда?
+4. Выполнить `terraform plan`. Что Terraform собирается сделать?
+5. Наконец, выполнить 'terraform apply' и проверить, что файл был создан
 
-## Solution
+## Решение
 
 ```sh
-# Create a directory
+# Создать каталог
 mkdir my_first_run && cd my_first_run
 
-# Create the file 'main.tf'
+# Создать файл 'main.tf'
 cat << EOT >>  main.tf
 resource "local_file" "mario_local_file" {
     content  = "It's a me, Mario!"
@@ -31,14 +31,14 @@ resource "local_file" "mario_local_file" {
 }
 EOT
 
-# Run 'terraform init'
+# Выполнить 'terraform init'
 terraform init
-# Running 'ls -la' you'll it created '.terraform' and '.terraform.lock.hcl'
-# In addition, it initialized (downloaded and installed) the relevant provider plugins. In this case, the "hashicorp/local"
+# Выполнив 'ls -la', можно увидеть, что были созданы '.terraform' и '.terraform.lock.hcl'
+# Кроме того, команда инициализировала (скачала и установила) нужные плагины провайдеров. В данном случае — "hashicorp/local"
 
-# Run 'terraform plan'
+# Выполнить 'terraform plan'
 terraform plan
-# It shows what Terraform is going to perform once you'll run 'terraform apply'
+# Показывает, что Terraform сделает при запуске 'terraform apply'
 
 << terraform_plan_output
 Terraform will perform the following actions:
@@ -55,7 +55,7 @@ Terraform will perform the following actions:
 Plan: 1 to add, 0 to change, 0 to destroy.
 terraform_plan_output
 
-# Apply main.tf (it's better to run without -auto-approve if you are new to Terraform)
+# Применить main.tf (если вы новичок в Terraform, лучше запускать без -auto-approve)
 terraform apply -auto-approve
 
 ls /tmp/who_is_it.txt

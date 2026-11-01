@@ -1,8 +1,8 @@
-# Logical Operators
+# Логические операторы
 
-## Objectives
+## Задачи
 
-1. What is the output of the following code:
+1. Что выведет следующий код:
 
 ```Go
 package main
@@ -28,7 +28,7 @@ func main() {
 }
 ```
 
-2. What is the output of the following code:
+2. Что выведет следующий код:
 
 ```Go
 package main
@@ -54,6 +54,6 @@ func main() {
 }
 ```
 
-## Solution
+## Решение
 
-Click [here](solution.md) to view the solution
+Нажмите [здесь](solution.md), чтобы посмотреть решение

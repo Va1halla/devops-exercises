@@ -1,3 +1,3 @@
-## File Exists
+## Файл существует
 
-For a given file, check if the file exists
+Для заданного файла проверить, существует ли он

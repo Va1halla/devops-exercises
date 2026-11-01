@@ -1,17 +1,17 @@
-# Running Sum
+# Накопительная сумма
 
-## Objectives
+## Цели
 
-1. Given a list of integers, return the running sum of each element this way:
+1. Дан список целых чисел: вернуть накопительную сумму для каждого элемента следующим образом:
 
 ```
 input -> [1, 5, 1, 3]
 output -> [1, 6, 7, 10]
 ```
 
-2. What is the time complexity?
-3. What is the space complexity?
+2. Какова временная сложность?
+3. Какова пространственная сложность?
 
-## Solution
+## Решение
 
-Click [here to view the solution](solution.py)
+Нажмите [здесь, чтобы посмотреть решение](solution.py)

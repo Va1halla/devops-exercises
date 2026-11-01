@@ -1,8 +1,8 @@
-## Removing Characters
+## Удаление символов
 
-1. How to remove a trailing slash ('/') from a string?
-2. How to remove the first character from a string?
+1. Как удалить завершающий слеш ('/') из строки?
+2. Как удалить первый символ из строки?
 
-### Solution
+### Решение
 
 1. `string.rstrip('/')`

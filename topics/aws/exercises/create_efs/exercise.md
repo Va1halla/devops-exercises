@@ -1,12 +1,12 @@
-## AWS - Create EFS
+## AWS - создание EFS
  
-### Requirements
+### Требования
 
-Two EC2 instances in different availability zones
+Два экземпляра EC2 в разных зонах доступности (availability zones)
 
-### Objectives
+### Цели
 
-1. Create an EFS with the following properties
-  1. Set lifecycle management to 60 days
-  2. The mode should match a use case of scaling to high levels of throughput and I/O operations per second
-2. Mount the EFS in both of your EC2 instances
+1. Создать EFS со следующими параметрами
+  1. Управление жизненным циклом (lifecycle management) — 60 дней
+  2. Режим должен подходить для сценария масштабирования до высокой пропускной способности и большого числа операций ввода-вывода в секунду
+2. Смонтировать EFS на обоих экземплярах EC2

@@ -1,4 +1,4 @@
-## My first playbook - Solution
+## Мой первый playbook — решение
 
 1. `vi first_playbook.yml`
 
@@ -17,13 +17,13 @@
         state: touch
 ```
 
-2. First, edit the inventory file: `vi /etc/ansible/hosts`
+2. Сначала отредактируйте файл инвентаря (inventory): `vi /etc/ansible/hosts`
 
 ```
 [some_remote_host]
 some.remoted.host.com
 ```
 
-Run the playbook
+Запустите playbook
 
 `ansible-playbook first_playbook.yml`

@@ -1,7 +1,7 @@
-## Change Strings
+## Изменение строк
 
-Modify the string "cat" to "bat"
+Изменить строку "cat" на "bat"
 
-### Solution
+### Решение
 
-Click [here](soltuions/strings/change_strings.md) to view the solution.
+Нажмите [здесь](soltuions/strings/change_strings.md), чтобы посмотреть решение.

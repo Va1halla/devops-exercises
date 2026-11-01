@@ -1,3 +1,3 @@
-## Lists - Min Max
+## Списки — минимум и максимум
 
-How do you get the maximum and minimum values from a list?
+Как получить максимальное и минимальное значения из списка?

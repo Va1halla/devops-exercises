@@ -1,4 +1,4 @@
-## Update and Upgrade apt packages task - Solution
+## Задача обновления apt-пакетов (update и upgrade) — решение
 
 ```
 - name: "update and upgrade apt packages."

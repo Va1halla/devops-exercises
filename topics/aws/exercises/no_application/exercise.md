@@ -1,8 +1,8 @@
-## No Application :'(
+## Нет приложения :'(
 
-### Objectives
+### Цели
 
-Explain what might be possible reasons for the following issues:
+Объяснить возможные причины следующих проблем:
 
-1. Getting "time out" when trying to reach an application running on EC2 instance
-2. Getting "connection refused" error
+1. Получение "time out" при попытке обратиться к приложению, работающему на экземпляре EC2
+2. Получение ошибки "connection refused"

@@ -1,10 +1,10 @@
-## Basic Date
+## Простая дата
 
-### Objectives
+### Цели
 
-1. Write a script that will put the current date in a file called "the_date.txt"
+1. Написать скрипт, который запишет текущую дату в файл с именем "the_date.txt"
 
-### Solution
+### Решение
 
 ```
 #!/usr/bin/env bash

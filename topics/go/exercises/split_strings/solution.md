@@ -1,12 +1,12 @@
-# Split Strings
+# Разделение строк
 
-## Objectives
+## Задачи
 
-1. Define a variable with the value of this name/string: `Alexander Supertramp`
-2. Using the variable you defined, print only the first name
-3. Using the variable you defined, print only the surname
+1. Определите переменную со значением этого имени/строки: `Alexander Supertramp`
+2. Используя определённую переменную, выведите только имя
+3. Используя определённую переменную, выведите только фамилию
 
-## Solution
+## Решение
 
 ```Go
 package main

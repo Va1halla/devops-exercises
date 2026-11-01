@@ -1,12 +1,12 @@
-# Launch EC2 instance
+# Запуск инстанса EC2
 
-## Requirements
+## Требования
 
-* AWS account
+* Аккаунт AWS
 
-## Objectives
+## Задачи
 
-1. Write Terraform configuration for launching an EC2 instance
-2. Run the commands to apply the configuration and create the EC2 instance
-3. What happens if you run again `terraform apply`?
-4. Destroy the instance you've created with Terraform
+1. Написать конфигурацию Terraform для запуска инстанса EC2
+2. Выполнить команды, чтобы применить конфигурацию и создать инстанс EC2
+3. Что произойдёт, если снова выполнить `terraform apply`?
+4. Удалить созданный с помощью Terraform инстанс

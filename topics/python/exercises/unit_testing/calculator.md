@@ -1,6 +1,6 @@
-# Calculator - Unit Tests
+# Калькулятор — модульные тесты
 
-Write unit tests for the following functions
+Написать модульные тесты (unit tests) для следующих функций
 
 ```python
 def add(x, y):

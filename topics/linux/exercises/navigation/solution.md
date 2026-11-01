@@ -1,20 +1,20 @@
-# Navigation
+# Навигация
 
-## Requirements
+## Требования
 
 1. Linux :)
 
-## Objectives
+## Задачи
 
-1. Change directory to `/tmp`
-2. Move to parent directory
-3. Change directory to home directory
-4. Move to parent directory
-5. Move again to parent directory
-   1. Where are you at? Verify with a command
-6. Change to last visited directory
+1. Перейти в каталог `/tmp`
+2. Перейти в родительский каталог
+3. Перейти в домашний каталог
+4. Перейти в родительский каталог
+5. Ещё раз перейти в родительский каталог
+   1. Где вы сейчас находитесь? Проверить с помощью команды
+6. Перейти в последний посещённый каталог
 
-## Solution
+## Решение
 
 ```
 cd /tmp
@@ -22,7 +22,7 @@ cd ..
 cd ~
 cd ..
 cd ..
-# root (/)
+# корень (/)
 pwd
 cd -
 ```

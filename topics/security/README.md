@@ -1,148 +1,148 @@
-# Security
+# Безопасность
 
 <details>
-<summary>What is DevSecOps? What its core principals?</summary><br><b>
+<summary>Что такое DevSecOps? Каковы его основные принципы?</summary><br><b>
 
-A couple of quotations from chosen companies:
+Несколько цитат от некоторых компаний:
 
-[Snyk](https://snyk.io/series/devsecops): "DevSecOps refers to the integration of security practices into a DevOps software delivery model. Its foundation is a culture where development and operations are enabled through process and tooling to take part in a shared responsibility for delivering secure software."
+[Snyk](https://snyk.io/series/devsecops): «DevSecOps означает интеграцию практик безопасности в модель поставки ПО DevOps. Её основа — культура, в которой процессы и инструменты дают разработке и эксплуатации возможность участвовать в общей ответственности за поставку безопасного ПО».
 
-[Red Hat](https://www.redhat.com/en/topics/devops/what-is-devsecops): "DevSecOps stands for development, security, and operations. It's an approach to culture, automation, and platform design that integrates security as a shared responsibility throughout the entire IT lifecycle."
+[Red Hat](https://www.redhat.com/en/topics/devops/what-is-devsecops): «DevSecOps расшифровывается как development, security и operations (разработка, безопасность и эксплуатация). Это подход к культуре, автоматизации и проектированию платформ, который интегрирует безопасность как общую ответственность на протяжении всего жизненного цикла ИТ».
 
-[Jfrog](https://jfrog.com/devops-tools/what-is-devsecops): "DevSecOps principles and practices parallel those of traditional DevOps with integrated and multidisciplinary teams, working together to enable secure continuous software delivery. The DevSecOps development lifecycle is a repetitive process that starts with a developer writing code, a build being triggered, the software package deployed to a production environment and monitored for issues identified in the runtime but includes security at each of these stages."
+[Jfrog](https://jfrog.com/devops-tools/what-is-devsecops): «Принципы и практики DevSecOps аналогичны принципам и практикам традиционного DevOps: интегрированные многопрофильные команды работают вместе, обеспечивая безопасную непрерывную поставку ПО. Жизненный цикл разработки DevSecOps — это повторяющийся процесс, который начинается с того, что разработчик пишет код, затем запускается сборка, пакет ПО развёртывается в production-среде и отслеживается на предмет проблем, выявленных во время выполнения, но при этом безопасность включена в каждый из этих этапов».
 </b></details>
 
 <details>
-<summary>What the "Zero Trust" concept means? How Organizations deal with it?</summary><br><b>
+<summary>Что означает концепция «нулевого доверия» (Zero Trust)? Как организации с ней работают?</summary><br><b>
 
-[Codefresh definition](https://codefresh.io/security-testing/codefresh-runner-overview): "Zero trust is a security concept that is centered around the idea that organizations should never trust anyone or anything that does not originate from their domains. Organizations seeking zero trust automatically assume that any external services it commissions have security breaches and may leak sensitive information"
+[Определение Codefresh](https://codefresh.io/security-testing/codefresh-runner-overview): «Нулевое доверие — это концепция безопасности, основанная на идее, что организации никогда не должны доверять никому и ничему, что не происходит из их доменов. Организации, стремящиеся к нулевому доверию, автоматически исходят из того, что у любых привлекаемых ими внешних сервисов есть бреши в безопасности и через них может утечь конфиденциальная информация»
 </b></details>
 
 <details>
-<summary>Explain the principle of least privilege</summary><br><b>
+<summary>Объясните принцип наименьших привилегий (principle of least privilege)</summary><br><b>
 
-The principle of least privilege refers to the practice of providing minimal permissions to users, roles, and service accounts that allow them to perform their functions. If an entity does not require an access right then it should not have that right.
+Принцип наименьших привилегий — это практика предоставления пользователям, ролям и сервисным учётным записям минимальных разрешений, позволяющих им выполнять свои функции. Если сущности не нужно какое-либо право доступа, у неё не должно быть этого права.
 </b></details>
 
 <details>
-<summary>What it means to be "FIPS compliant"?</summary><br><b>
+<summary>Что значит быть «совместимым с FIPS» (FIPS compliant)?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is a Certificate Authority?</summary><br><b>
+<summary>Что такое удостоверяющий центр (Certificate Authority)?</summary><br><b>
  
- [wikipedia](https://en.wikipedia.org/wiki/Certificate_authority) : A certificate Authority that stores, singns and issues certificates.
+ [wikipedia](https://en.wikipedia.org/wiki/Certificate_authority) : удостоверяющий центр — это организация, которая хранит, подписывает и выпускает сертификаты.
  
- A certificate certifies the authenticity of the public key delivered by the website. It prevents [man-in-the-middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) attacks by providing a lot of information which identifie the public key. Importante information provided inside a [X.509](https://www.ssl.com/faqs/what-is-an-x-509-certificate/) certificate are like :
-  * Version Number
-  * Serial Number
-  * Signature Algorithm ID
-  * Issuer Name 
-  * Validity period
-  * Subject name
-  * Subject Public Key info
+ Сертификат удостоверяет подлинность открытого ключа, предоставленного веб-сайтом. Он предотвращает атаки типа [«человек посередине» (man-in-the-middle)](https://en.wikipedia.org/wiki/Man-in-the-middle_attack), предоставляя множество сведений, идентифицирующих открытый ключ. Важная информация, содержащаяся в сертификате [X.509](https://www.ssl.com/faqs/what-is-an-x-509-certificate/), включает:
+  * Номер версии (Version Number)
+  * Серийный номер (Serial Number)
+  * Идентификатор алгоритма подписи (Signature Algorithm ID)
+  * Имя издателя (Issuer Name) 
+  * Срок действия (Validity period)
+  * Имя субъекта (Subject name)
+  * Информация об открытом ключе субъекта (Subject Public Key info)
  
-Every certificates must be signed by a trusted authority, a certificate chain is a concatenation of multiple certificates signed by a more trusted authority from the one delivered by the website to the root Certificate Authority (CA). The root Certificate Authority is the top most trusted authority and every browsers embark their certificate natively.
+Каждый сертификат должен быть подписан доверенным центром; цепочка сертификатов — это последовательность нескольких сертификатов, каждый из которых подписан более доверенным центром, от сертификата, предоставленного веб-сайтом, до корневого удостоверяющего центра (root CA). Корневой удостоверяющий центр — самый доверенный центр на вершине иерархии, и все браузеры изначально содержат его сертификаты.
  
 </b></details>
 
 <details>
-<summary>Explain RBAC (Role-based Access Control)</summary><br><b>
+<summary>Объясните, что такое RBAC (Role-based Access Control, управление доступом на основе ролей)</summary><br><b>
 
-Access control based on user roles (i.e., a collection of access authorizations a user receives based on an explicit or implicit assumption of a given role). Role permissions may be inherited through a role hierarchy and typically reflect the permissions needed to perform defined functions within an organization. A given role may apply to a single individual or to several individuals.
+Управление доступом на основе ролей пользователей (т. е. набора прав доступа, которые пользователь получает на основании явного или неявного принятия определённой роли). Разрешения ролей могут наследоваться через иерархию ролей и обычно отражают разрешения, необходимые для выполнения определённых функций в организации. Одна роль может относиться к одному человеку или к нескольким.
 
-- RBAC mapped to job function, assumes that a person will take on different roles, overtime, within an organization and different responsibilities in relation to IT systems.
+- RBAC, привязанный к должностным функциям, предполагает, что со временем человек будет выполнять в организации разные роли и нести разную ответственность в отношении ИТ-систем.
 </b></details>
 
-#### Security - Authentication and Authorization
+#### Безопасность — аутентификация и авторизация
 
 <details>
-<summary>Explain Authentication and Authorization</summary><br><b>
+<summary>Объясните, что такое аутентификация и авторизация</summary><br><b>
 
-Authentication is the process of identifying whether a service or a person is who they claim to be.
-Authorization is the process of identifying what level of access the service or the person have (after authentication was done)
-</b></details>
-
-<details>
-<summary>What authentication methods are there?</summary><br><b>
+Аутентификация — это процесс проверки того, является ли сервис или человек тем, за кого себя выдаёт.
+Авторизация — это процесс определения уровня доступа, который есть у сервиса или человека (после того как аутентификация выполнена)
 </b></details>
 
 <details>
-<summary>Give an example of basic authentication process</summary><br><b>
-
-A user uses the browser to authenticate to some server. It does so by using the authorization field which is constructed from the username and the password combined with a single colon. The result string is encoded using a certain character set which is compatible with US-ASCII. The authorization method + a space is prepended to the encoded string.
+<summary>Какие существуют методы аутентификации?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What are the three primary factors of authentication? Give three examples of each</summary><br><b>
+<summary>Приведите пример процесса базовой аутентификации (basic authentication)</summary><br><b>
 
-Something you have
-- Smart card
-- Physical authentication device
-- Software token
-
-Something you know
-- Password
-- PIN
-- Passphrase
-
-Something you are
-- Fingerprint
-- Iris or retina scan
-- Gait analysis
+Пользователь с помощью браузера проходит аутентификацию на некотором сервере. Для этого используется поле authorization, которое составляется из имени пользователя и пароля, объединённых одним двоеточием. Полученная строка кодируется с использованием определённой кодировки, совместимой с US-ASCII. Перед закодированной строкой добавляются метод авторизации и пробел.
 </b></details>
 
 <details>
-<summary>Explain Token-based authentication</summary><br><b>
+<summary>Каковы три основных фактора аутентификации? Приведите по три примера для каждого</summary><br><b>
+
+То, что у вас есть
+- Смарт-карта
+- Физическое устройство аутентификации
+- Программный токен
+
+То, что вы знаете
+- Пароль
+- PIN-код
+- Парольная фраза
+
+То, чем вы являетесь
+- Отпечаток пальца
+- Сканирование радужной оболочки или сетчатки глаза
+- Анализ походки
 </b></details>
 
 <details>
-<summary>Explain Risk-based authentication</summary><br><b>
+<summary>Объясните аутентификацию на основе токенов (Token-based authentication)</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain what is Single Sign-On</summary><br><b>
-
-SSO (Single Sign-on), is a method of access control that enables a user to log in once and gain access to the resources of multiple software systems without being prompted to log in again.
+<summary>Объясните аутентификацию на основе рисков (Risk-based authentication)</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain how the Kerberos authentication protocol works as a SSO solution</summary><br><b>
+<summary>Объясните, что такое единый вход (Single Sign-On)</summary><br><b>
 
-Kerberos works as a SSO solution by only requiring the user to sign in using their credentials once within a specific validity time window. Kerberos authentication grants the user a Ticket Granting Ticket (TGT) from a trusted authentication server which can then be used to request service tickets for accessing various services and resources. By passing around this encrypted TGT instead of credentials, the user does not need to sign-in multiple times for each resource that has been integrated with Kerberos.
+SSO (Single Sign-on) — это метод управления доступом, позволяющий пользователю войти один раз и получить доступ к ресурсам нескольких программных систем без повторного запроса на вход.
 </b></details>
 
 <details>
-<summary>Does Kerberos make use of symmetric encryption, asymmetric encryption, both, or neither?</summary><br><b>
+<summary>Объясните, как протокол аутентификации Kerberos работает в качестве решения SSO</summary><br><b>
 
-Symmetric Encryption - Kerberos uses exclusively symmetric encryption with pre-shared keys for transmitting encrypted information and authorizing users.
+Kerberos работает как решение SSO, требуя от пользователя ввести свои учётные данные только один раз в течение определённого окна действия. При аутентификации Kerberos пользователь получает от доверенного сервера аутентификации билет на получение билетов (Ticket Granting Ticket, TGT), который затем можно использовать для запроса сервисных билетов для доступа к различным сервисам и ресурсам. Поскольку передаётся этот зашифрованный TGT, а не учётные данные, пользователю не нужно входить заново для каждого ресурса, интегрированного с Kerberos.
 </b></details>
 
 <details>
-<summary>Explain MFA (Multi-Factor Authentication)</summary><br><b>
+<summary>Использует ли Kerberos симметричное шифрование, асимметричное, оба или ни одного?</summary><br><b>
 
-Multi-Factor Authentication (Also known as 2FA). Allows the user to present two pieces of evidence, credentials, when logging into an account.
-
-- The credentials fall into any of these three categories: something you know (like a password or PIN), something you have (like a smart card), or something you are (like your fingerprint).  Credentials must come from two different categories to enhance security.
+Симметричное шифрование — Kerberos использует исключительно симметричное шифрование с заранее распределёнными ключами (pre-shared keys) для передачи зашифрованной информации и авторизации пользователей.
 </b></details>
 
 <details>
-<summary>Explain OAuth</summary><br><b>
-</b></details>
+<summary>Объясните, что такое MFA (Multi-Factor Authentication, многофакторная аутентификация)</summary><br><b>
 
-#### Security - Passwords
+Многофакторная аутентификация (также известна как 2FA). Позволяет пользователю при входе в учётную запись предъявить два доказательства — учётных данных.
 
-<details>
-<summary>How do you manage sensitive information (like passwords) in different tools and platforms?</summary><br><b>
+- Учётные данные относятся к одной из трёх категорий: то, что вы знаете (например, пароль или PIN-код), то, что у вас есть (например, смарт-карта), или то, чем вы являетесь (например, отпечаток пальца).  Для повышения безопасности учётные данные должны относиться к двум разным категориям.
 </b></details>
 
 <details>
-<summary>What password attacks are you familiar with?</summary><br><b>
+<summary>Объясните, что такое OAuth</summary><br><b>
+</b></details>
 
-  * Dictionary
-  * Brute force
-  * Password Spraying
-  * Social Engineering
+#### Безопасность — пароли
+
+<details>
+<summary>Как управлять конфиденциальной информацией (например, паролями) в различных инструментах и платформах?</summary><br><b>
+</b></details>
+
+<details>
+<summary>Какие атаки на пароли вам известны?</summary><br><b>
+
+  * Перебор по словарю (Dictionary)
+  * Полный перебор (Brute force)
+  * Распыление паролей (Password Spraying)
+  * Социальная инженерия (Social Engineering)
     * Whaling
     * Vishing
     * Phising
@@ -150,521 +150,521 @@ Multi-Factor Authentication (Also known as 2FA). Allows the user to present two 
 </b></details>
 
 <details>
-<summary>How to mitigate password attacks?</summary><br><b>
+<summary>Как противодействовать атакам на пароли?</summary><br><b>
 
-  * Strong password policy
-  * Do not reuse passwords
+  * Строгая парольная политика
+  * Не использовать пароли повторно
   * ReCaptcha
-  * Training personnel against Social Engineering
-  * Risk Based Authentication
-  * Rate limiting
+  * Обучение персонала противодействию социальной инженерии
+  * Аутентификация на основе рисков
+  * Ограничение частоты запросов (rate limiting)
   * MFA
 </b></details>
 
 <details>
-<summary>What is password salting? What attack does it help to deter?</summary><br><b>
+<summary>Что такое «соление» паролей (password salting)? Против какой атаки оно помогает?</summary><br><b>
 
-Password salting is the processing of prepending or appending a series of characters to a user's password before hashing this new combined value. This value should be different for every single user but the same salt should be applied to the same user password every time it is validated.
+Соление пароля — это процесс добавления последовательности символов в начало или конец пароля пользователя перед хешированием нового объединённого значения. Это значение (соль) должно быть разным для каждого пользователя, но к паролю одного и того же пользователя при каждой проверке должна применяться одна и та же соль.
 
- This ensures that users that have the same password will still have very different hash values stored in the password database. This process specifically helps deter rainbow table attacks since a new rainbow table would need to be computed for every single user in the database.
+ Это гарантирует, что у пользователей с одинаковыми паролями в базе паролей всё равно будут храниться совершенно разные хеш-значения. Этот процесс особенно помогает против атак с использованием радужных таблиц (rainbow tables), поскольку для каждого пользователя в базе пришлось бы вычислять новую радужную таблицу.
 </b></details>
 
-#### Security - Cookies
+#### Безопасность — cookies
 
 <details>
-<summary>What are cookies? Explain cookie-based authentication</summary><br><b>
-</b></details>
-
-<details>
-<summary>True or False? Cookie-based authentication is stateful</summary><br><b>
-
-True. Cookie-based authentication session must be kept on both server and client-side.
+<summary>Что такое cookies? Объясните аутентификацию на основе cookies</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain the flow of using cookies</summary><br><b>
+<summary>Верно или неверно? Аутентификация на основе cookies является stateful (с сохранением состояния)</summary><br><b>
 
-1. User enters credentials
-2. The server verifies the credentials -> a sessions is created and stored in the database
-3. A cookie with the session ID is set in the browser of that user
-4. On every request, the session ID is verified against the database
-5. The session is destroyed (both on client-side and server-side) when the user logs out
-</b></details>
-
-#### Security - SSH
-
-<details>
-<summary>What is SSH how does it work?</summary><br><b>
-
-[Wikipedia Definition](https://en.wikipedia.org/wiki/SSH_(Secure_Shell)): "SSH or Secure Shell is a cryptographic network protocol for operating network services securely over an unsecured network."
-
-[Hostinger.com Definition](https://www.hostinger.com/tutorials/ssh-tutorial-how-does-ssh-work): "SSH, or Secure Shell, is a remote administration protocol that allows users to control and modify their remote servers over the Internet."
-
-[This site](https://www.hostinger.com/tutorials/ssh-tutorial-how-does-ssh-work) explains it in a good way.
+Верно. Сессия при аутентификации на основе cookies должна храниться и на сервере, и на клиенте.
 </b></details>
 
 <details>
-<summary>What is the role of an SSH key?</summary><br><b>
+<summary>Объясните процесс использования cookies</summary><br><b>
+
+1. Пользователь вводит учётные данные
+2. Сервер проверяет учётные данные -> создаётся сессия, которая сохраняется в базе данных
+3. В браузере пользователя устанавливается cookie с идентификатором сессии
+4. При каждом запросе идентификатор сессии проверяется по базе данных
+5. При выходе пользователя сессия уничтожается (и на клиенте, и на сервере)
+</b></details>
+
+#### Безопасность — SSH
+
+<details>
+<summary>Что такое SSH и как он работает?</summary><br><b>
+
+[Определение из Wikipedia](https://en.wikipedia.org/wiki/SSH_(Secure_Shell)): «SSH, или Secure Shell, — это криптографический сетевой протокол для безопасной работы сетевых сервисов через незащищённую сеть».
+
+[Определение Hostinger.com](https://www.hostinger.com/tutorials/ssh-tutorial-how-does-ssh-work): «SSH, или Secure Shell, — это протокол удалённого администрирования, позволяющий пользователям управлять своими удалёнными серверами и изменять их через Интернет».
+
+[Этот сайт](https://www.hostinger.com/tutorials/ssh-tutorial-how-does-ssh-work) хорошо это объясняет.
+</b></details>
+
+<details>
+<summary>Какова роль SSH-ключа?</summary><br><b>
  
-[Wikipedia definition](https://en.wikipedia.org/wiki/Secure_Shell) : SSH uses public-key cryptography to authenticate the remote computer and allow it to authenticate the user. Two keys are created, private is stored inside user's computer to decrypt the communication then the public key is stored inside the remoted computer where user want to connect with and it is used to encrypt the communication.
+[Определение из Wikipedia](https://en.wikipedia.org/wiki/Secure_Shell) : SSH использует криптографию с открытым ключом, чтобы аутентифицировать удалённый компьютер и позволить ему аутентифицировать пользователя. Создаются два ключа: закрытый хранится на компьютере пользователя и используется для расшифровки обмена данными, а открытый ключ хранится на удалённом компьютере, к которому пользователь хочет подключиться, и используется для шифрования обмена данными.
  
 </b></details>
 
-#### Security - Cryptography
+#### Безопасность — криптография
 
 <details>
-<summary>Explain Symmetrical encryption</summary><br><b>
+<summary>Объясните, что такое симметричное шифрование</summary><br><b>
 
-A symmetric encryption is any technique where a key is used to both encrypt and decrypt the data/entire communication.
+Симметричное шифрование — это любой метод, при котором один и тот же ключ используется и для шифрования, и для расшифровки данных/всего обмена данными.
 </b></details>
 
 <details>
-<summary>Explain Asymmetrical encryption</summary><br><b>
+<summary>Объясните, что такое асимметричное шифрование</summary><br><b>
 
-A asymmetric encryption is any technique where the there is two different keys that are used for encryption and decryption, these keys are known as public key and private key.
+Асимметричное шифрование — это любой метод, при котором для шифрования и расшифровки используются два разных ключа; эти ключи называются открытым (public) и закрытым (private).
 </b></details>
 
 <details>
-<summary>What is "Key Exchange" (or "key establishment") in cryptography?</summary><br><b>
+<summary>Что такое «обмен ключами» (Key Exchange, или key establishment) в криптографии?</summary><br><b>
 
-[Wikipedia](https://en.wikipedia.org/wiki/Key_exchange): "Key exchange (also key establishment) is a method in cryptography by which cryptographic keys are exchanged between two parties, allowing use of a cryptographic algorithm."
+[Wikipedia](https://en.wikipedia.org/wiki/Key_exchange): «Обмен ключами (также установление ключей) — это метод в криптографии, с помощью которого две стороны обмениваются криптографическими ключами, что позволяет использовать криптографический алгоритм».
 </b></details>
 
 <details>
-<summary>True or False? The symmetrical encryption is making use of public and private keys where the private key is used to decrypt the data encrypted with a public key</summary><br><b>
+<summary>Верно или неверно? Симметричное шифрование использует открытый и закрытый ключи, где закрытый ключ используется для расшифровки данных, зашифрованных открытым ключом</summary><br><b>
 
-False. This description fits the asymmetrical encryption.
+Неверно. Это описание соответствует асимметричному шифрованию.
 </b></details>
 
 <details>
-<summary>True or False? The private key can be mathematically computed from a public key</summary><br><b>
-False.
+<summary>Верно или неверно? Закрытый ключ можно математически вычислить из открытого ключа</summary><br><b>
+Неверно.
 </b></details>
 
 <details>
-<summary>True or False? In the case of SSH, asymmetrical encryption is not used to the entire SSH session</summary><br><b>
+<summary>Верно или неверно? В случае SSH асимметричное шифрование используется не для всей SSH-сессии</summary><br><b>
 
-True. It is only used during the key exchange algorithm of symmetric encryption.
+Верно. Оно используется только во время алгоритма обмена ключами для симметричного шифрования.
 </b></details>
 
 <details>
-<summary>What is Hashing?</summary><br><b>
+<summary>Что такое хеширование?</summary><br><b>
 
-Hashing is a mathematical function for mapping data of arbitrary sizes to fixed-size values. This function produces a "digest" of the data that can be used for verifying that the data has not been modified (amongst other uses)
+Хеширование — это математическая функция, отображающая данные произвольного размера в значения фиксированного размера. Эта функция создаёт «дайджест» (digest) данных, который можно использовать (помимо прочего) для проверки того, что данные не были изменены
 </b></details>
 
 <details>
-<summary>How is hashing different from encryption?</summary><br><b>
+<summary>Чем хеширование отличается от шифрования?</summary><br><b>
 
-Encrypted data can be decrypted to its original value. Hashed data cannot be reversed to view the original data - hashing is a one-way function.
+Зашифрованные данные можно расшифровать до исходного значения. Хешированные данные невозможно обратить, чтобы увидеть исходные данные, — хеширование является односторонней функцией.
 </b></details>
 
 <details>
-<summary>How hashes are part of SSH?</summary><br><b>
+<summary>Как хеши используются в SSH?</summary><br><b>
 
-Hashes used in SSH to verify the authenticity of messages and to verify that nothing tampered with the data received.
+Хеши используются в SSH для проверки подлинности сообщений и того, что полученные данные никто не подменил.
 </b></details>
 
-#### Security - Attacks, Threats, and Vulnerabilities
+#### Безопасность — атаки, угрозы и уязвимости
 <details>
-<summary>Explain the following:
+<summary>Объясните следующие понятия:
 
-  * Vulnerability
-  * Exploits
-  * Risk
-  * Threat</summary><br><b>
-</b></details>
-
-<details>
-<summary>Are you familiar with "OWASP top 10"?</summary><br><b>
-
-Read about it [here](https://owasp.org/www-project-top-ten)
+  * Уязвимость (Vulnerability)
+  * Эксплойты (Exploits)
+  * Риск (Risk)
+  * Угроза (Threat)</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is XSS?</summary><br><b>
+<summary>Знакомы ли вы с "OWASP top 10"?</summary><br><b>
 
-Cross Site Scripting (XSS) is an type of a attack when the attacker inserts browser executable code within a HTTP response. Now the injected attack is not stored in the web application, it will only affect the users who open the maliciously crafted link or third-party web page. A successful attack allows the attacker to access any cookies, session tokens, or other sensitive information retained by the browser and used with that site 
-
-You can test by detecting user-defined variables and how to input them. This includes hidden or non-obvious inputs such as HTTP parameters, POST data, hidden form field values, and predefined radio or selection values. You then analyze each found vector to see if their are potential vulnerabilities, then when found you craft input data with each input vector. Then you test the crafted input and see if it works.
+Читайте об этом [здесь](https://owasp.org/www-project-top-ten)
 </b></details>
 
 <details>
-<summary>What is an SQL injection? How to manage it?</summary><br><b>
+<summary>Что такое XSS?</summary><br><b>
 
-SQL injection is an attack consists of inserts either a partial or full SQL query through data input from the browser to the web application. When a successful SQL injection happens it will allow the attacker to read sensitive information stored on the database for the web application. 
+Межсайтовый скриптинг (Cross Site Scripting, XSS) — это тип атаки, при которой злоумышленник внедряет исполняемый браузером код в HTTP-ответ. При этом внедрённая атака не хранится в веб-приложении — она затрагивает только тех пользователей, которые открывают специально созданную вредоносную ссылку или стороннюю веб-страницу. Успешная атака позволяет злоумышленнику получить доступ к любым cookies, токенам сессий или другой конфиденциальной информации, которую браузер хранит и использует для этого сайта 
 
-You can test by using a stored procedure, so the application must be sanitize the user input to get rid of the risk of code injection. If not then the user could enter bad SQL, that will then be executed within the procedure
+Тестировать можно, выявляя пользовательские переменные и способы их ввода. Сюда входят скрытые или неочевидные входные данные, такие как параметры HTTP, данные POST, значения скрытых полей форм и предопределённые значения переключателей (radio) или списков выбора. Затем каждый найденный вектор анализируется на наличие потенциальных уязвимостей, и при их обнаружении для каждого вектора ввода создаются специальные входные данные. После этого созданные данные проверяются, чтобы понять, срабатывает ли атака.
 </b></details>
 
 <details>
-<summary>What is Certification Authority?</summary><br><b>
+<summary>Что такое SQL-инъекция? Как с ней бороться?</summary><br><b>
+
+SQL-инъекция — это атака, заключающаяся во вставке частичного или полного SQL-запроса через ввод данных из браузера в веб-приложение. Успешная SQL-инъекция позволяет злоумышленнику читать конфиденциальную информацию, хранящуюся в базе данных веб-приложения. 
+
+Тестировать можно с помощью хранимой процедуры, поэтому приложение должно очищать (sanitize) пользовательский ввод, чтобы избавиться от риска внедрения кода. Иначе пользователь сможет ввести вредоносный SQL, который затем выполнится внутри процедуры
 </b></details>
 
 <details>
-<summary>How do you identify and manage vulnerabilities?</summary><br><b>
+<summary>Что такое удостоверяющий центр (Certification Authority)?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain "Privilege Restriction"</summary><br><b>
+<summary>Как выявлять уязвимости и управлять ими?</summary><br><b>
 </b></details>
 
 <details>
-<summary>How HTTPS is different from HTTP?</summary><br><b>
-The 'S' in HTTPS stands for 'secure'. HTTPS uses TLS to provide encryption of HTTP requests and responses, as well as providing verifaction by digitally signing requests and responses. As a result, HTTPS is far more secure than HTTP and is used by default for most modern websites.
+<summary>Объясните, что такое «ограничение привилегий» (Privilege Restriction)</summary><br><b>
 </b></details>
 
 <details>
-<summary>What types of firewalls are there?</summary><br><b>
+<summary>Чем HTTPS отличается от HTTP?</summary><br><b>
+Буква 'S' в HTTPS означает 'secure' (безопасный). HTTPS использует TLS для шифрования HTTP-запросов и ответов, а также для проверки подлинности с помощью цифровой подписи запросов и ответов. В результате HTTPS гораздо безопаснее HTTP и по умолчанию используется большинством современных веб-сайтов.
 </b></details>
 
 <details>
-<summary>What is DDoS attack? How do you deal with it?</summary><br><b>
+<summary>Какие бывают типы межсетевых экранов (firewalls)?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is port scanning? When is it used?</summary><br><b>
+<summary>Что такое DDoS-атака? Как с ней бороться?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the difference between asynchronous and synchronous encryption?</summary><br><b>
+<summary>Что такое сканирование портов (port scanning)? Когда оно используется?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain Man-in-the-middle attack</summary><br><b>
+<summary>В чём разница между асинхронным и синхронным шифрованием?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain CVE and CVSS</summary><br><b>
+<summary>Объясните атаку «человек посередине» (Man-in-the-middle)</summary><br><b>
+</b></details>
+
+<details>
+<summary>Объясните, что такое CVE и CVSS</summary><br><b>
  
-  [Red Hat](https://www.redhat.com/en/topics/security/what-is-cve#how-does-it-work) : "When someone refers to a CVE (Common Vulnerabilities and Exposures), they mean a security flaw that's been assigned a CVE ID number. They don’t include technical data, or information about risks, impacts, and fixes." So CVE is just identified by an ID written with 8 digits. The CVE ID have the following format:  CVE prefix + Year + Arbitrary Digits.
- Anyone can submit a vulnerability, [Exploit Database](https://www.exploit-db.com/submit) explains how it works to submit.
+  [Red Hat](https://www.redhat.com/en/topics/security/what-is-cve#how-does-it-work) : «Когда говорят о CVE (Common Vulnerabilities and Exposures), имеют в виду уязвимость безопасности, которой присвоен идентификационный номер CVE ID. Записи CVE не содержат технических данных или информации о рисках, последствиях и исправлениях». Таким образом, CVE просто идентифицируется по ID, записанному 8 цифрами. CVE ID имеет следующий формат:  префикс CVE + год + произвольные цифры.
+ Сообщить об уязвимости может любой; [Exploit Database](https://www.exploit-db.com/submit) объясняет, как это сделать.
   
-Then CVSS stands for Common Vulnerability Scoring System, it attempts to assign severity scores to vulnerabilities, allowing to ordonnance and prioritize responses and resources according to threat. 
+CVSS расшифровывается как Common Vulnerability Scoring System (общая система оценки уязвимостей); она присваивает уязвимостям оценки серьёзности, что позволяет упорядочивать и приоритизировать реагирование и ресурсы в зависимости от угрозы. 
  
 </b></details>
 
 <details>
-<summary>What is ARP Poisoning?</summary><br><b>
+<summary>Что такое ARP-спуфинг (ARP Poisoning)?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Describe how do you secure public repositories</summary><br><b>
+<summary>Опишите, как защитить публичные репозитории</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is DNS Spoofing? How to prevent it?</summary><br><b>
+<summary>Что такое подмена DNS (DNS Spoofing)? Как её предотвратить?</summary><br><b>
 
-DNS spoofing occurs when a particular DNS server’s records of “spoofed” or altered maliciously to redirect traffic to the attacker. This redirection of traffic allows the attacker to spread malware, steal data, etc.
+Подмена DNS происходит, когда записи определённого DNS-сервера «подделываются» или злонамеренно изменяются, чтобы перенаправить трафик злоумышленнику. Такое перенаправление трафика позволяет злоумышленнику распространять вредоносное ПО, красть данные и т. д.
 
-**Prevention**
-- Use encrypted data transfer protocols - Using end-to-end encryption vian SSL/TLS will help decrease the chance that a website / its visitors are compromised by DNS spoofing.
-- Use DNSSEC - DNSSEC, or Domain Name System Security Extensions, uses digitally signed DNS records to help determine data authenticity.
-- Implement DNS spoofing detection mechanisms - it’s important to implement DNS spoofing detection software. Products such as XArp help product against ARP cache poisoning by inspecting the data that comes through before transmitting it.
+**Предотвращение**
+- Использовать протоколы передачи данных с шифрованием — сквозное шифрование через SSL/TLS помогает снизить вероятность того, что веб-сайт или его посетители будут скомпрометированы подменой DNS.
+- Использовать DNSSEC — DNSSEC (Domain Name System Security Extensions) использует DNS-записи с цифровой подписью, помогая проверить подлинность данных.
+- Внедрить механизмы обнаружения подмены DNS — важно внедрить ПО для обнаружения подмены DNS. Такие продукты, как XArp, помогают защититься от отравления ARP-кэша, проверяя проходящие данные перед их передачей.
 </b></details>
 
 <details>
-<summary>What can you tell me about Stuxnet?</summary><br><b>
+<summary>Что вы можете рассказать о Stuxnet?</summary><br><b>
 
-Stuxnet is a computer worm that was originally aimed at Iran’s nuclear facilities and has since mutated and spread to other industrial and energy-producing facilities. The original Stuxnet malware attack targeted the programmable logic controllers (PLCs) used to automate machine processes. It generated a flurry of media attention after it was discovered in 2010 because it was the first known virus to be capable of crippling hardware and because it appeared to have been created by the U.S. National Security Agency, the CIA, and Israeli intelligence.
+Stuxnet — это компьютерный червь, изначально нацеленный на ядерные объекты Ирана, который впоследствии видоизменился и распространился на другие промышленные и энергетические объекты. Исходная атака вредоносного ПО Stuxnet была направлена на программируемые логические контроллеры (PLC), используемые для автоматизации машинных процессов. После обнаружения в 2010 году он вызвал шквал внимания СМИ, поскольку стал первым известным вирусом, способным выводить из строя оборудование, и поскольку, по всей видимости, был создан Агентством национальной безопасности США, ЦРУ и израильской разведкой.
 </b></details>
 
 <details>
-<summary>What can you tell me about the BootHole vulnerability?</summary><br><b>
+<summary>Что вы можете рассказать об уязвимости BootHole?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What can you tell me about Spectre?</summary><br><b>
+<summary>Что вы можете рассказать о Spectre?</summary><br><b>
 
-Spectre is an attack method which allows a hacker to “read over the shoulder” of a program it does not have access to. Using code, the hacker forces the program to pull up its encryption key allowing full access to the program
+Spectre — это метод атаки, позволяющий хакеру «подглядывать через плечо» программы, к которой у него нет доступа. С помощью кода хакер вынуждает программу извлечь свой ключ шифрования, получая полный доступ к программе
 </b></details>
 
 <details>
-<summary>Explain "Format String Vulnerability"</summary><br><b>
+<summary>Объясните, что такое «уязвимость форматной строки» (Format String Vulnerability)</summary><br><b>
 </b></details>
 
 
 <details>
-<summary>Explain DMZ</summary><br><b>
+<summary>Объясните, что такое DMZ</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain TLS</summary><br><b>
+<summary>Объясните, что такое TLS</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is CSRF? How to handle CSRF?</summary><br><b>
+<summary>Что такое CSRF? Как бороться с CSRF?</summary><br><b>
 
-Cross-Site Request Forgery (CSRF) is an attack that makes the end user to initiate a unwanted action on the web application in which the user has a authenticated session, the attacker may user an email and force the end user to click on the link and that then execute malicious actions. When an CSRF attack is successful it will compromise the end user data 
+Межсайтовая подделка запроса (Cross-Site Request Forgery, CSRF) — это атака, которая заставляет конечного пользователя выполнить нежелательное действие в веб-приложении, где у него есть аутентифицированная сессия; злоумышленник может использовать электронное письмо, вынуждая пользователя перейти по ссылке, которая затем выполняет вредоносные действия. Успешная CSRF-атака компрометирует данные конечного пользователя 
 
-You can use OWASP ZAP to analyze a "request", and if it appears that there no protection against cross-site request forgery when the Security Level is set to 0 (the value of csrf-token is SecurityIsDisabled.) One can use data from this request to prepare a CSRF attack by using OWASP ZAP
+Можно использовать OWASP ZAP для анализа «запроса», и если окажется, что защиты от межсайтовой подделки запроса нет, когда Security Level установлен в 0 (значение csrf-token равно SecurityIsDisabled), данные из этого запроса можно использовать для подготовки CSRF-атаки с помощью OWASP ZAP
 </b></details>
 
 <details>
-<summary>Explain HTTP Header Injection vulnerability</summary><br><b>
+<summary>Объясните уязвимость HTTP Header Injection (внедрение HTTP-заголовков)</summary><br><b>
 
-HTTP Header Injection vulnerabilities occur when user input is insecurely included within server responses headers. If an attacker can inject newline characters into the header, then they can inject new HTTP headers and also, by injecting an empty line, break out of the headers into the message body and write arbitrary content into the application's response.
+Уязвимости HTTP Header Injection возникают, когда пользовательский ввод небезопасно включается в заголовки ответов сервера. Если злоумышленник может внедрить в заголовок символы перевода строки, он может внедрить новые HTTP-заголовки, а также, внедрив пустую строку, выйти за пределы заголовков в тело сообщения и записать произвольное содержимое в ответ приложения.
 </b></details>
 
 <details>
-<summary>What security sources are you using to keep updated on latest news?</summary><br><b>
+<summary>Какие источники по безопасности вы используете, чтобы быть в курсе последних новостей?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What TCP and UDP vulnerabilities are you familiar with?</summary><br><b>
+<summary>Какие уязвимости TCP и UDP вам известны?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Do using VLANs contribute to network security?</summary><br><b>
+<summary>Способствует ли использование VLAN сетевой безопасности?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What are some examples of security architecture requirements?</summary><br><b>
+<summary>Приведите примеры требований к архитектуре безопасности</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is air-gapped network (or air-gapped environment)? What its advantages and disadvantages?</summary><br><b>
+<summary>Что такое изолированная сеть (air-gapped network, или air-gapped environment)? Каковы её преимущества и недостатки?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain what is Buffer Overflow</summary><br><b>
+<summary>Объясните, что такое переполнение буфера (Buffer Overflow)</summary><br><b>
 
-A buffer overflow (or buffer overrun) occurs when the volume of data exceeds the storage capacity of the memory buffer. As a result, the program attempting to write the data to the buffer overwrites adjacent memory locations.
+Переполнение буфера (buffer overflow, или buffer overrun) происходит, когда объём данных превышает ёмкость буфера памяти. В результате программа, пытающаяся записать данные в буфер, перезаписывает соседние области памяти.
 </b></details>
 
 <details>
-<summary>What is Nonce?</summary><br><b>
+<summary>Что такое Nonce?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is SSRF?</summary><br><b>
+<summary>Что такое SSRF?</summary><br><b>
 
-SSRF (Server-side request forgery) it's a vulnerability where you can make a server make arbitrary requests to anywhere you want.
+SSRF (Server-side request forgery, подделка запросов на стороне сервера) — это уязвимость, позволяющая заставить сервер выполнять произвольные запросы куда угодно.
 
-Read more about it at [portswigger.net](https://portswigger.net/web-security/ssrf)
+Подробнее об этом на [portswigger.net](https://portswigger.net/web-security/ssrf)
 </b></details>
 
 <details>
-<summary>Explain MAC flooding attack</summary><br><b>
+<summary>Объясните атаку MAC flooding</summary><br><b>
 
-MAC address flooding attack (CAM table flooding attack) is a type of network attack where an attacker connected to a switch port floods the switch interface with very large number of Ethernet frames with different fake source MAC address.
+Атака переполнения MAC-адресами (MAC address flooding, или CAM table flooding) — это тип сетевой атаки, при которой злоумышленник, подключённый к порту коммутатора, заваливает интерфейс коммутатора огромным количеством Ethernet-кадров с разными поддельными MAC-адресами источника.
 </b></details>
 
 <details>
-<summary>What is port flooding?</summary><br><b>
+<summary>Что такое port flooding?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is "Diffie-Hellman key exchange" and how does it work?</summary><br><b>
+<summary>Что такое «обмен ключами Диффи — Хеллмана» (Diffie-Hellman key exchange) и как он работает?</summary><br><b>
 
-Have you heard of [The Two General's Problem](https://en.wikipedia.org/wiki/Two_Generals%27_Problem)? The Diffie-Hellman key exchange is a solution to this problem to allow for the secure exchange of cryptographic keys over an encrypted channel.
+Слышали ли вы о [задаче двух генералов (The Two General's Problem)](https://en.wikipedia.org/wiki/Two_Generals%27_Problem)? Обмен ключами Диффи — Хеллмана — решение этой задачи, позволяющее безопасно обмениваться криптографическими ключами через зашифрованный канал.
 
-It works using public/private key pairs (asymmetric encryption). Two parties that wish to communicate securely over a public channel will each generate a public/private key pair and distribute the public key to the other party (note that public keys are free to be exchanged over a public channel). From here, each party can derive a shared key using a combination of their personal private key and the public key of the other party. This combined key can now be used as a symmetric encryption key for communications.
+Он работает с использованием пар открытых/закрытых ключей (асимметричное шифрование). Каждая из двух сторон, желающих безопасно общаться через публичный канал, генерирует пару открытого и закрытого ключей и передаёт открытый ключ другой стороне (открытыми ключами можно свободно обмениваться через публичный канал). Далее каждая сторона может вычислить общий ключ, используя комбинацию своего закрытого ключа и открытого ключа другой стороны. Этот объединённый ключ теперь можно использовать как симметричный ключ шифрования для обмена данными.
 </b></details>
 
 <details>
-<summary>Explain "Forward Secrecy"</summary><br><b>
+<summary>Объясните, что такое «прямая секретность» (Forward Secrecy)</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is Cache Poisoned Denial of Service?</summary><br><b>
+<summary>Что такое Cache Poisoned Denial of Service (отказ в обслуживании через отравление кэша)?</summary><br><b>
 
-CPDoS or Cache Poisoned Denial of Service. It poisons the CDN cache. By manipulating certain header requests, the attacker forces the origin server to return a Bad Request error which is stored in the CDN’s cache. Thus, every request that comes after the attack will get an error page.
+CPDoS, или Cache Poisoned Denial of Service. Эта атака отравляет кэш CDN. Манипулируя определёнными заголовками запросов, злоумышленник заставляет исходный (origin) сервер вернуть ошибку Bad Request, которая сохраняется в кэше CDN. В результате каждый запрос после атаки будет получать страницу с ошибкой.
 </b></details>
 
 <details>
-<summary>What is the difference if any between SSL and TLS?</summary><br><b>
+<summary>Есть ли разница между SSL и TLS, и если есть, то какая?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What's SSL termination (or SSL offloading)?</summary><br><b>
+<summary>Что такое SSL termination (или SSL offloading)?</summary><br><b>
 
-SSL termination is the process of decrypting encrypted traffic. The advantage in SSL termination is that the server doesn't have to perform it, we can use SSL termination to reduce the load on the server, speed up some processes, and allow the server to focus on its core functionality (e.g. deliver content)
+SSL termination — это процесс расшифровки зашифрованного трафика. Преимущество SSL termination в том, что серверу не нужно выполнять его самому: с помощью SSL termination можно снизить нагрузку на сервер, ускорить некоторые процессы и позволить серверу сосредоточиться на своей основной функции (например, доставке контента)
 </b></details>
 
 <details>
-<summary>What is SNI (Server Name Indication)?</summary><br><b>
+<summary>Что такое SNI (Server Name Indication)?</summary><br><b>
 
-[Wikipedia](https://en.wikipedia.org/wiki/Server_Name_Indication): "an extension to the Transport Layer Security (TLS) computer networking protocol by which a client indicates which hostname it is attempting to connect to at the start of the handshaking process"
+[Wikipedia](https://en.wikipedia.org/wiki/Server_Name_Indication): «расширение компьютерного сетевого протокола Transport Layer Security (TLS), с помощью которого клиент в начале процесса установления соединения (handshake) указывает, к какому имени хоста он пытается подключиться»
 </b></details>
 
 <details>
-<summary>What benefits SNI introduces?</summary><br><b>
+<summary>Какие преимущества даёт SNI?</summary><br><b>
 
-SNI allows a single server to serve multiple certificates using the same IP and port.<br>
-Practically this means that a single IP can server multiple web services/pages, each using a different certificate.
+SNI позволяет одному серверу обслуживать несколько сертификатов, используя один и тот же IP-адрес и порт.<br>
+На практике это означает, что один IP-адрес может обслуживать несколько веб-сервисов/страниц, каждый из которых использует свой сертификат.
 </b></details>
 
 <details>
-<summary>Explain "Web Cache Deception Attach"</summary><br><b>
+<summary>Объясните, что такое "Web Cache Deception Attach" (атака обмана веб-кэша)</summary><br><b>
 
-[This blog post](https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html) explains it in detail.
+[Эта статья в блоге](https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html) подробно это объясняет.
 </b></details>
 
-#### Security - Threats
+#### Безопасность — угрозы
 
 <details>
-<summary>Explain "Advanced persistent threat (APT)"</summary><br><b>
-</b></details>
-
-<details>
-<summary>What is a "Backdoor" in information security?</summary><br><b>
-</b></details>
-
-#### Software Supply Chain & Security 
-
-<details>
-<summary>Briefly describe what a software supply chain is. </summary><br><b>
-
-A company’s software supply chain consists of any third party or open source component which could be used to compromise the final product. Such component is usually an API provided by an actor. For instance Twilio who offers mobile communication APIs to their customers. 
-
-[WhiteSource](https://www.whitesourcesoftware.com/resources/blog/software-supply-chain-security-the-basics-and-four-critical-best-practices/): "Enterprise software projects increasingly depend on third-party and open source components. These components are created and maintained by individuals who are not employed by the organization developing the primary software, and who do not necessarily use the same security policies as the organization. This poses a security risk, because differences or inconsistencies between these policies can create overlooked areas of vulnerability that attackers seek to exploit." 
+<summary>Объясните, что такое «целенаправленная продолжительная угроза» (Advanced persistent threat, APT)</summary><br><b>
 </b></details>
 
 <details>
-<summary>What're some benefits of a software supply chain? </summary><br><b>
+<summary>Что такое «бэкдор» (Backdoor) в информационной безопасности?</summary><br><b>
+</b></details>
 
-[Increment](https://increment.com/apis/apis-supply-chain-software/): Resource-saving. Using and paying for existing solutions to resource-heavy problems saves time as well as money. Hence resulting in efficient, cheap and greater opportunities to develop and deploy software products for consumers. 
+#### Цепочка поставок ПО и безопасность 
+
+<details>
+<summary>Кратко опишите, что такое цепочка поставок ПО (software supply chain). </summary><br><b>
+
+Цепочка поставок ПО компании состоит из любых сторонних компонентов или компонентов с открытым исходным кодом, через которые может быть скомпрометирован конечный продукт. Таким компонентом обычно является API, предоставляемый каким-либо участником. Например, Twilio, предлагающий своим клиентам API для мобильной связи. 
+
+[WhiteSource](https://www.whitesourcesoftware.com/resources/blog/software-supply-chain-security-the-basics-and-four-critical-best-practices/): «Корпоративные программные проекты всё больше зависят от сторонних компонентов и компонентов с открытым исходным кодом. Эти компоненты создаются и поддерживаются людьми, которые не работают в организации, разрабатывающей основное ПО, и не обязательно следуют тем же политикам безопасности, что и организация. Это создаёт риск безопасности, поскольку различия или несоответствия между этими политиками могут порождать незамеченные уязвимые места, которые стремятся использовать злоумышленники». 
 </b></details>
 
 <details>
-<summary> Give three examples of three potential security threats related to the software supply chain and describe them.</summary><br><b>
+<summary>Каковы некоторые преимущества цепочки поставок ПО? </summary><br><b>
+
+[Increment](https://increment.com/apis/apis-supply-chain-software/): Экономия ресурсов. Использование готовых (платных) решений для ресурсоёмких задач экономит время и деньги. В результате появляются более эффективные, дешёвые и широкие возможности для разработки и развёртывания программных продуктов для потребителей. 
+</b></details>
+
+<details>
+<summary> Приведите три примера потенциальных угроз безопасности, связанных с цепочкой поставок ПО, и опишите их.</summary><br><b>
 
 [IEEE](https://ieeexplore.ieee.org/abstract/document/9203862): 
 
-  * Sensitive data being exposed or lost.
-    * In a software supply chain, sensitive data may be passed throughout the chain. Security threats involve loss or exposure of this data, such as customer credit card details.
-  * Cloud technology.
-    * Data sharing in the cloud might jeopardize the privacy of the data within the chain.
-  * Third-party vendors.
-    * Third-party vendors’ code solutions might not provide sufficient cybersecurity and risk being a potential subject to data breaches.
+  * Раскрытие или утечка конфиденциальных данных.
+    * В цепочке поставок ПО конфиденциальные данные могут передаваться по всей цепочке. Угрозы безопасности включают утрату или раскрытие этих данных, например данных кредитных карт клиентов.
+  * Облачные технологии.
+    * Совместное использование данных в облаке может поставить под угрозу конфиденциальность данных в цепочке.
+  * Сторонние поставщики.
+    * Решения сторонних поставщиков могут не обеспечивать достаточной кибербезопасности и потенциально стать объектом утечек данных.
 </b></details>
 
-#### Package management & Security 
+#### Управление пакетами и безопасность 
 
 <details>
-<summary> What is a package manager?
+<summary> Что такое пакетный менеджер (package manager)?
 </summary><br><b>
 
-[Baudry et al.](https://arxiv.org/pdf/2001.07808.pdf): "A tool that allows you to easily download, add and thus reuse programming libraries in your project." E.g. npm or yarn.
+[Baudry et al.](https://arxiv.org/pdf/2001.07808.pdf): «Инструмент, позволяющий легко загружать, добавлять и, таким образом, повторно использовать программные библиотеки в проекте». Например, npm или yarn.
 </b></details>
 
 <details>
-<summary> What is a build tool?
+<summary> Что такое инструмент сборки (build tool)?
 </summary><br><b>
 
-[Baudry et al.](https://arxiv.org/pdf/2001.07808.pdf): "A tool that fetches the packages (dependencies) that are required to compile, test and deploy your application." 
+[Baudry et al.](https://arxiv.org/pdf/2001.07808.pdf): «Инструмент, который получает пакеты (зависимости), необходимые для компиляции, тестирования и развёртывания приложения». 
 </b></details>
 
 <details>
-<summary> Describe bloated dependencies.
-</summary><br><b>
-
-[Baudry et al.](https://arxiv.org/pdf/2001.07808.pdf): 
-An application usually has different dependencies. Typically, not all of them are required for building and running the application. Bloated dependencies is the concept of including the unnecessary dependencies for building and running your application. 
-</b></details>
-
-<details>
-<summary> Explain a few cons of bloated dependencies.
+<summary> Опишите, что такое раздутые зависимости (bloated dependencies).
 </summary><br><b>
 
 [Baudry et al.](https://arxiv.org/pdf/2001.07808.pdf): 
-
-  * Challenging to manage.
-  * Decreases performance of the application.
-  * Risk for malicious code that a threathening actor can take advantage of. 
+У приложения обычно есть различные зависимости. Как правило, не все они нужны для сборки и запуска приложения. Раздутые зависимости — это включение ненужных для сборки и запуска приложения зависимостей. 
 </b></details>
 
 <details>
-<summary> What solutions are there for managing project dependencies?
+<summary> Объясните несколько недостатков раздутых зависимостей.
 </summary><br><b>
 
-[Npm.js documentation](https://docs.npmjs.com/cli/v8/commands/npm-prune): Use clean-up commands that are usually provided by the package manager authors. For instance, npm prune will remove any extraneous package. Another command is npm audit which will scan your repository and report any vulnerable dependencies found.
+[Baudry et al.](https://arxiv.org/pdf/2001.07808.pdf): 
+
+  * Ими сложно управлять.
+  * Они снижают производительность приложения.
+  * Риск вредоносного кода, которым может воспользоваться злоумышленник. 
 </b></details>
 
 <details>
-<summary> What is a threatening actor and how can this actor take advantage of open source or third party vendor's packages/libraries? 
+<summary> Какие существуют решения для управления зависимостями проекта?
 </summary><br><b>
 
-[Wikipedia](https://en.wikipedia.org/wiki/Threat_actor): A threatening actor is one or more people who target technical artifacts such as software, networks and/or devices with the purpose of harming it.
-
-[Aquasec](https://www.aquasec.com/cloud-native-academy/devsecops/supply-chain-security/): An attacking actor may identify, target and inject malicious software in a vulnerable part of an open source package or a third party vendor’s code. The consumer of this code may consequently and unknowingly deploy the malicious code throughout their pipelines, thus infecting their own projects. An example of this happening is the hack of [SolarWinds](https://www.npr.org/2021/04/16/985439655/a-worst-nightmare-cyberattack-the-untold-story-of-the-solarwinds-hack).
+[Документация Npm.js](https://docs.npmjs.com/cli/v8/commands/npm-prune): Использовать команды очистки, которые обычно предоставляют авторы пакетного менеджера. Например, npm prune удалит все лишние пакеты. Другая команда — npm audit, которая просканирует репозиторий и сообщит обо всех найденных уязвимых зависимостях.
 </b></details>
 
 <details>
-<summary> How can you make sure that you use trustworthy packages for your project?
+<summary> Кто такой злоумышленник (threatening actor) и как он может воспользоваться пакетами/библиотеками с открытым исходным кодом или от сторонних поставщиков? 
 </summary><br><b>
 
-You can’t. You will always be exposed to security risk once you start using open source or vendor packages. The goal is to minimize the risk in order to avoid security breaches. This could be done by:
+[Wikipedia](https://en.wikipedia.org/wiki/Threat_actor): Злоумышленник — это один или несколько человек, которые атакуют технические артефакты, такие как ПО, сети и/или устройства, с целью причинить им вред.
 
-  * Regularly update the project's dependencies to apply latest bug fixes and vulnerability clean-ups.
-  * However, unless you trust the author, do not update your dependencies instantly, since package updates recently have been a common target by hackers.
-  * Check for changes of the file content in previous versions. 
+[Aquasec](https://www.aquasec.com/cloud-native-academy/devsecops/supply-chain-security/): Атакующий может обнаружить уязвимую часть пакета с открытым исходным кодом или кода стороннего поставщика, нацелиться на неё и внедрить туда вредоносное ПО. В результате потребитель этого кода может, сам того не зная, развернуть вредоносный код в своих конвейерах, заразив собственные проекты. Пример такого случая — взлом [SolarWinds](https://www.npr.org/2021/04/16/985439655/a-worst-nightmare-cyberattack-the-untold-story-of-the-solarwinds-hack).
 </b></details>
 
 <details>
-<summary> Explain checksum.
+<summary> Как убедиться, что в проекте используются надёжные пакеты?
 </summary><br><b>
 
-[Fred Cohen (permission needed)](https://reader.elsevier.com/reader/sd/pii/0167404887900319?token=D5339ABC064AD9A2B50B74D8CE890B0E22A302A0BC461A50078D407BEA01052737DC6AAEF95A854E72A73B6D0C67E260&originRegion=eu-west-1&originCreation=20220502180611): Checksum is a way to verify the integrity of information in systems with no built-in protection. In other words, it provides a way of validating that the content of a file or a package / library is intact. This is useful since attacks or errors may occur during transmission of files. However, it requires that the package author has run a checksum function for the file / package which creates a specific hash for that version of the file. A minor change of the file content will result in a different checksum. If you have access to the original checksum of the file, you may run checksum on your own. In case the resulting checksum matches the original one, no changes have been made in the file. You can now conclude that no error or malicious injection was done during transmission of the file. 
-</b></details>
+Никак. Как только вы начинаете использовать пакеты с открытым исходным кодом или от поставщиков, вы всегда подвержены риску безопасности. Цель — минимизировать риск, чтобы избежать нарушений безопасности. Это можно сделать так:
 
-## Microsegmentation
-
-<details>
-<summary>What is Microsegmentation?</summary><br><b>
-
-- Security method
-- Managing network access between endpoints (processes, devices, instances)
-- A method in which security policies are applied to limit traffic
-  - based on concepts such as "Zero Trust" and "Least Privileged"
-- The result of Microsegmentation should be:
-  - Reduced attack ability
-  - Better breach containment
+  * Регулярно обновлять зависимости проекта, чтобы применять последние исправления ошибок и устранения уязвимостей.
+  * Однако, если вы не доверяете автору, не обновляйте зависимости сразу, поскольку обновления пакетов в последнее время стали частой целью хакеров.
+  * Проверять изменения содержимого файлов по сравнению с предыдущими версиями. 
 </b></details>
 
 <details>
-<summary>Why do we need Microsegmentation solutions? Why using something such as firewalls isn't enough?</summary><br><b>
+<summary> Объясните, что такое контрольная сумма (checksum).
+</summary><br><b>
 
-- Firewalls focused on north-south traffic. Basically traffic that is outside of the company perimeter
-- Traffic that is considered west-east, internal workflows and communication, is usually left untreated
+[Fred Cohen (требуется разрешение)](https://reader.elsevier.com/reader/sd/pii/0167404887900319?token=D5339ABC064AD9A2B50B74D8CE890B0E22A302A0BC461A50078D407BEA01052737DC6AAEF95A854E72A73B6D0C67E260&originRegion=eu-west-1&originCreation=20220502180611): Контрольная сумма — это способ проверить целостность информации в системах без встроенной защиты. Иными словами, она позволяет убедиться, что содержимое файла или пакета/библиотеки не повреждено. Это полезно, так как при передаче файлов могут произойти атаки или ошибки. Однако для этого требуется, чтобы автор пакета вычислил контрольную сумму файла/пакета, которая создаёт определённый хеш для этой версии файла. Малейшее изменение содержимого файла приведёт к другой контрольной сумме. Если у вас есть исходная контрольная сумма файла, можно вычислить контрольную сумму самостоятельно. Если полученная контрольная сумма совпадает с исходной, файл не изменялся. Тогда можно сделать вывод, что при передаче файла не произошло ни ошибки, ни вредоносного внедрения. 
+</b></details>
+
+## Микросегментация
+
+<details>
+<summary>Что такое микросегментация (Microsegmentation)?</summary><br><b>
+
+- Метод обеспечения безопасности
+- Управление сетевым доступом между конечными точками (процессами, устройствами, инстансами)
+- Метод, при котором для ограничения трафика применяются политики безопасности
+  - основанные на таких концепциях, как «нулевое доверие» (Zero Trust) и «наименьшие привилегии» (Least Privileged)
+- Результатом микросегментации должны быть:
+  - Снижение возможностей для атаки
+  - Лучшее сдерживание последствий взлома
 </b></details>
 
 <details>
-<summary>How Microsegmentation is applied?</summary><br><b>
+<summary>Зачем нужны решения для микросегментации? Почему недостаточно использовать, например, межсетевые экраны?</summary><br><b>
 
- There are different ways to apply Microsegmentation:
-
-- Cloud Native: Using cloud embedded capabilities such as security groups, firewalls, etc.
-- Agent: Agents running on the different endpoints (instances, services, etc.)
-- Network: Modify network devices and their configuration to create microsegmentation 
-
+- Межсетевые экраны ориентированы на трафик «север — юг» (north-south), то есть по сути на трафик за пределами периметра компании
+- Трафик «запад — восток» (west-east) — внутренние рабочие процессы и взаимодействие — обычно остаётся без обработки
 </b></details>
 
 <details>
-<summary>What are ephemeral environments in the context of Microsegmentation?</summary><br><b>
+<summary>Как применяется микросегментация?</summary><br><b>
 
-- These are short-lived resources like containers or serverless functions that start and stop quickly.
-- Because they don’t last long, they need security rules that can change just as fast.
-- Microsegmentation helps by giving each one exactly the network access it needs — nothing more.
+ Существуют разные способы применения микросегментации:
 
-</b></details>
-
-<details>
-<summary>How does Microsegmentation help prevent lateral movement?</summary><br><b>
-
-- It sets tight rules for how services or systems can talk to each other.
-- If one system gets hacked, the attacker can’t easily move to others.
-- By dividing systems into smaller zones, it makes the whole network harder to break into.
+- Cloud Native: использование встроенных возможностей облака, таких как группы безопасности (security groups), межсетевые экраны и т. д.
+- Агент: агенты, работающие на различных конечных точках (инстансах, сервисах и т. д.)
+- Сеть: изменение сетевых устройств и их конфигурации для создания микросегментации 
 
 </b></details>
 
 <details>
-<summary>What challenges arise when scaling Microsegmentation?</summary><br><b>
+<summary>Что такое эфемерные окружения (ephemeral environments) в контексте микросегментации?</summary><br><b>
 
-- As more systems get added, managing all the rules becomes harder.
-- It’s tough to keep security rules consistent when everything’s changing all the time.
-- You also have to be careful not to slow things down while keeping everything secure.
+- Это короткоживущие ресурсы, такие как контейнеры или бессерверные (serverless) функции, которые быстро запускаются и останавливаются.
+- Поскольку они существуют недолго, им нужны правила безопасности, которые могут меняться так же быстро.
+- Микросегментация помогает, предоставляя каждому из них ровно тот сетевой доступ, который ему нужен, — и не более.
+
+</b></details>
+
+<details>
+<summary>Как микросегментация помогает предотвратить горизонтальное перемещение (lateral movement)?</summary><br><b>
+
+- Она задаёт строгие правила того, как сервисы или системы могут взаимодействовать друг с другом.
+- Если одна система взломана, злоумышленнику непросто перейти к другим.
+- Разделение систем на меньшие зоны усложняет проникновение во всю сеть.
+
+</b></details>
+
+<details>
+<summary>Какие трудности возникают при масштабировании микросегментации?</summary><br><b>
+
+- По мере добавления систем управлять всеми правилами становится сложнее.
+- Трудно поддерживать согласованность правил безопасности, когда всё постоянно меняется.
+- Также нужно следить за тем, чтобы обеспечение безопасности не замедляло работу.
 
 </b></details>
 

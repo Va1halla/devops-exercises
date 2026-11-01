@@ -1,13 +1,13 @@
-# Maps 101
+# Map 101
 
-## Objectives
+## Задачи
 
-1. Create an empty map of string keys and string values called "profile".
-2. Add the following data to the map
-   1. First Name (provided string)
-   2. Last Name (provided as string)
-   3. Age (provided as int)
+1. Создайте пустой map со строковыми ключами и строковыми значениями с именем "profile".
+2. Добавьте в map следующие данные
+   1. First Name (передаётся строкой)
+   2. Last Name (передаётся строкой)
+   3. Age (передаётся как int)
 
-## Solution
+## Решение
 
-Click [here](main.go) to view the solution
+Нажмите [здесь](main.go), чтобы посмотреть решение

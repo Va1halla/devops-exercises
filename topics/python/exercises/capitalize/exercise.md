@@ -1,21 +1,21 @@
-# Capitalize - HackerRank
+# Capitalize — HackerRank
 
-Note: this question is from [HackerRank](https://www.hackerrank.com/challenges/capitalize/problem)
+Примечание: этот вопрос взят с [HackerRank](https://www.hackerrank.com/challenges/capitalize/problem)
 
-## Objectives
+## Цели
 
-You are asked to ensure that the first and last names of people begin with a capital letter in their passports. For example, alison heck should be capitalised correctly as Alison Heck.
+Нужно обеспечить, чтобы имена и фамилии людей в паспортах начинались с заглавной буквы. Например, alison heck должно быть правильно записано как Alison Heck.
 
-Given a full name, your task is to capitalize the name appropriately.
+Дано полное имя, задача — правильно расставить заглавные буквы.
 
-Sample Input
+Пример ввода
 
 chris alan
 
-Sample Output
+Пример вывода
 
 Chris Alan
 
-## Solution
+## Решение
 
-Click [here](solution.py) to view the solution
+Нажмите [здесь](solution.py), чтобы посмотреть решение

@@ -1,5 +1,5 @@
-## AWS - Budget Setup
+## AWS - настройка бюджета
 
-### Objectives
+### Цели
 
-Setup a cost budget in your AWS account based on your needs.
+Настроить бюджет затрат в своём аккаунте AWS в соответствии со своими потребностями.

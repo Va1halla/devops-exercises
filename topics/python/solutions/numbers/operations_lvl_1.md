@@ -1,6 +1,6 @@
-## Operations
+## Операции
 
-What is the result of the following operations in Python?
+Каков результат следующих операций в Python?
 
 1. `4 / 3`
 2. `4 // 3`
@@ -9,11 +9,11 @@ What is the result of the following operations in Python?
 5. `4 *** 3`
 6. `4 % 3`
 
-### Solution
+### Решение
 
 1. `1.333333`
 2. `1`
 3. `12`
 4. `64`
-5. invalid syntax :) 
+5. некорректный синтаксис :) 
 6. `1`

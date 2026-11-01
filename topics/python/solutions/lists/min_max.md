@@ -1,8 +1,8 @@
-## Lists - Min Max
+## Списки — минимум и максимум
 
-How do you get the maximum and minimum values from a list?
+Как получить максимальное и минимальное значения из списка?
 
-### Solution
+### Решение
 
-Maximum: max(some_list)
-Minimum: min(some_list)
+Максимум: max(some_list)
+Минимум: min(some_list)

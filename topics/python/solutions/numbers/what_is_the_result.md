@@ -1,12 +1,12 @@
-## What is the result?
+## Каков результат?
 
-What is the value of each of the following variables?
+Каково значение каждой из следующих переменных?
 
 1. `x = 5,000`
 2. `x = 5_000`
 3. `x = 5_0_0`
 
-### Solution
+### Решение
 
 1. `(5,0)`
 2. `5000`

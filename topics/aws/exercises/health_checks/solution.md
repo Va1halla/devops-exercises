@@ -1,33 +1,33 @@
-## AWS Route 53 - Health Checks
+## AWS Route 53 - проверки состояния (Health Checks)
 
-## Requirements
+## Требования
 
-3 web instances in different AZs.
+3 веб-экземпляра в разных AZ.
 
-## Objectives 
+## Цели 
 
-1. For each instance create a health checks with the following properties:
-  1. Name it after the AZ where the instance resides
-  2. Failure threshold should be 5
+1. Для каждого экземпляра создать проверку состояния со следующими параметрами:
+  1. Назвать её по имени AZ, в которой находится экземпляр
+  2. Порог отказа (failure threshold) — 5
 
-2. Edit the security group of one of your instances and remove HTTP rules.
-  1. Did it change the status of the health check?
+2. Отредактировать группу безопасности одного из экземпляров и удалить правила HTTP.
+  1. Изменился ли статус проверки состояния?
 
-### Solution
+### Решение
 
-#### Console
+#### Консоль
 
-1. Go to Route 53
-2. Click on "Health Checks" in the left-side menu
-3. Click on "Create health check"
-4. Insert the name: us-east-2
+1. Перейти в Route 53
+2. Нажать "Health Checks" в меню слева
+3. Нажать "Create health check"
+4. Ввести имя: us-east-2
 5. What to monitor: endpoint
-6. Insert the IP address of the instance
-7. Insert the endpoint /health if your web instance supports that endpoint
-8. In advanced configuration, set Failure threshold to 5
-9. Click on "next" and then on "Create health check"
-10. Repeat steps 1-9 for the other two instances you have
+6. Ввести IP-адрес экземпляра
+7. Ввести эндпоинт /health, если веб-экземпляр его поддерживает
+8. В расширенной конфигурации установить Failure threshold в 5
+9. Нажать "next", а затем "Create health check"
+10. Повторить шаги 1-9 для двух других экземпляров
 
-1. Go to security group of one of your instances
-2. Click on "Actions" -> Edit inbound rules -> Delete HTTP based rules
-3. Go back to health checks page and after a couple of seconds you should see that the status becomes "unhealthy"
+1. Открыть группу безопасности одного из экземпляров
+2. Нажать "Actions" -> Edit inbound rules -> удалить правила для HTTP
+3. Вернуться на страницу проверок состояния — через пару секунд статус должен смениться на "unhealthy"

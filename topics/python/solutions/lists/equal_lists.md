@@ -1,6 +1,6 @@
-## Equal Lists
+## Равные списки
 
-What is the result of each of the following? explain
+Каков результат каждого из следующих выражений? Объясните
 
 1. `[] == []` - True
 2. `[] is []` - False

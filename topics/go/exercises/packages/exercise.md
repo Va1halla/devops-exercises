@@ -1,11 +1,11 @@
-# Packages
+# Пакеты
 
-## Objectives
+## Задачи
 
-1. Using the `time` package, print `The time now is: <TIME>`
-2. Using the `math/rand` package, generate random integer between 0 and 100
-3. Using the `math` package calculate the square of `9`
+1. С помощью пакета `time` выведите `The time now is: <TIME>`
+2. С помощью пакета `math/rand` сгенерируйте случайное целое число от 0 до 100
+3. С помощью пакета `math` вычислите квадрат `9`
 
-## Solution
+## Решение
 
-Click [here](main.go) to view the solution
+Нажмите [здесь](main.go), чтобы посмотреть решение

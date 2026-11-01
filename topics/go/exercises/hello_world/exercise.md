@@ -1,9 +1,9 @@
 # Hello World
 
-## Objectives
+## Задачи
 
-Write a program that prints "Hello World" :)
+Напишите программу, которая выводит "Hello World" :)
 
-## Solution
+## Решение
 
-Click [here](main.go) to view the solution
+Нажмите [здесь](main.go), чтобы посмотреть решение

@@ -1,14 +1,14 @@
-## AWS Auto Scaling Groups - Basics
+## AWS Auto Scaling Groups - основы
 
-### Requirements
+### Требования
 
-Zero EC2 instances running
+Ни одного работающего экземпляра EC2
 
-### Objectives
+### Цели
 
-A. Create a scaling group for web servers with the following properties:
-  * Amazon Linux 2 AMI
-  * t2.micro as the instance type
+A. Создать группу масштабирования для веб-серверов со следующими параметрами:
+  * AMI Amazon Linux 2
+  * тип экземпляра t2.micro
   * user data:
 ```
 yum install -y httpd
@@ -16,33 +16,33 @@ systemctl start httpd
 systemctl enable httpd
 ```
 
-B. Were new instances created since you created the auto scaling group? How many? Why?
-C. Change desired capacity to 2. Did it launch more instances?
-D. Change back the desired capacity to 1. What is the result of this action?
+B. Были ли созданы новые экземпляры после создания auto scaling group? Сколько? Почему?
+C. Изменить желаемую ёмкость (desired capacity) на 2. Запустились ли дополнительные экземпляры?
+D. Вернуть желаемую ёмкость на 1. Каков результат этого действия?
 
-### Solution
+### Решение
 
-#### Console
+#### Консоль
 
 A.
-1. Go to EC2 service
-2. Click on "Auto Scaling Groups" under "Auto Scaling"
-3. Click on "Create Auto Scaling Group"
-4. Insert a name
-5. Click on "Create a launch template"
-  1. Insert a name and a version for the template
-  2. Select an AMI to use (Amazon Linux 2)
-  3. Select t2.micro instance type
-  4. Select a key pair
-  5. Attach a security group
-  6. Under "Advanced" insert the user data
-  7. Click on "Create"
-6. Choose the launch template you've just created and click on "Next"
-7. Choose "Adhere to launch template"
-8. Choose in which AZs to launch and click on "Next"
-9. Link it to ALB (if you don't have one, create it)
-10. Mark ELB health check in addition to EC2. Click on "Next" until you reach the review page and click on "Create auto scaling group"
+1. Перейти в сервис EC2
+2. Нажать "Auto Scaling Groups" в разделе "Auto Scaling"
+3. Нажать "Create Auto Scaling Group"
+4. Ввести имя
+5. Нажать "Create a launch template"
+  1. Ввести имя и версию шаблона
+  2. Выбрать AMI (Amazon Linux 2)
+  3. Выбрать тип экземпляра t2.micro
+  4. Выбрать пару ключей (key pair)
+  5. Подключить группу безопасности
+  6. В разделе "Advanced" вставить user data
+  7. Нажать "Create"
+6. Выбрать только что созданный launch template и нажать "Next"
+7. Выбрать "Adhere to launch template"
+8. Выбрать AZ для запуска и нажать "Next"
+9. Привязать к ALB (если его нет — создать)
+10. Отметить проверку состояния ELB в дополнение к EC2. Нажимать "Next" до страницы обзора и нажать "Create auto scaling group"
 
-B. One instance was launched to met the criteria of the auto scaling group we've created. The reason it launched only one is due to "Desired capacity" set to 1.
-C. Change it by going to your auto scaling group -> Details -> Edit -> "2 desired capacity". This should create another instance if only one is running
-D. Reducing desired capacity back to 1 will terminate one of the instances (assuming 2 are running).
+B. Был запущен один экземпляр, чтобы выполнить условия созданной auto scaling group. Запущен только один, потому что "Desired capacity" равна 1.
+C. Изменить её можно так: auto scaling group -> Details -> Edit -> "2 desired capacity". Если работает только один экземпляр, будет создан ещё один
+D. Уменьшение желаемой ёмкости обратно до 1 приведёт к завершению одного из экземпляров (если работают два).

@@ -1,4 +1,4 @@
-## Data Types - Solution
+## Типы данных — решение
 
 1. a = [1, 2, 3, 4, 5] -> list
 2. b = "Hello, is it me you looking for?" -> string
@@ -7,6 +7,6 @@
 5. i = 0.100 -> float
 6. i = True -> bool
 
-### Bonus question - Answer
+### Бонусный вопрос — ответ
 
 `type(...)`

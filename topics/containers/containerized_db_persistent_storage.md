@@ -1,6 +1,6 @@
-# Containerized DB with Persistent Storage
+# База данных в контейнере с постоянным хранилищем
 
-1. Run a container with a database of any type of you prefer (MySql, PostgreSQL, Mongo, etc.)
-  1. Use a mount point on the host for the database instead of using the container storage for that
-  2. Explain why using the host storage instead of the container one might be a better choice
-2. Verify the container is running
+1. Запустите контейнер с базой данных любого типа на ваш выбор (MySql, PostgreSQL, Mongo и т.д.)
+  1. Используйте для базы данных точку монтирования на хосте вместо хранилища контейнера
+  2. Объясните, почему использование хранилища хоста вместо хранилища контейнера может быть более удачным выбором
+2. Убедитесь, что контейнер запущен

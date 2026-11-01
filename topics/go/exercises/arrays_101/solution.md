@@ -1,23 +1,23 @@
-# Arrays 101
+# Массивы 101
 
-## Objectives
+## Задачи
 
-1. Create an empty array of integers of size 10
-2. Create an arrays of strings and fill it with 4 different strings
-3. Can you mix different data types in one array?
-4. You've created an empty array with the size of 10. Once declared can you add items to it? Can you add 50 items?
-5. There is an array called 'games'. Assign the string "Donkey Kong" to the first place in the array
-6. There is an array called "movies". Print the following:
-   1. The array itself
-   2. The second item in the array
-   3. The length of the array
+1. Создайте пустой массив целых чисел размером 10
+2. Создайте массив строк и заполните его 4 разными строками
+3. Можно ли смешивать разные типы данных в одном массиве?
+4. Создан пустой массив размером 10. Можно ли добавлять в него элементы после объявления? Можно ли добавить 50 элементов?
+5. Есть массив с именем 'games'. Присвойте строку "Donkey Kong" первой позиции массива
+6. Есть массив с именем "movies". Выведите следующее:
+   1. Сам массив
+   2. Второй элемент массива
+   3. Длину массива
 
-## Solution
+## Решение
 
 1. `var numbers = [10]int{}`
 2. `var strings = [4]string{"some", "random", "strings", ":)"}`
-3. No, you can't mix data types in the same array
-4. Yes, you can add items to an array after it's declared. No, you can't at 50 items to an array of size 10. You can add items up to the size of the array.
+3. Нет, смешивать типы данных в одном массиве нельзя
+4. Да, элементы в массив можно добавлять после его объявления. Нет, добавить 50 элементов в массив размером 10 нельзя. Элементы можно добавлять только в пределах размера массива.
 5. `games[0] = "Donkey Kong"`
 6. 
    1. `fmt.Printf("Array: %v\n", movies)`

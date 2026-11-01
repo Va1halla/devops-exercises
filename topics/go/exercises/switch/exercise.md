@@ -1,12 +1,12 @@
 # Switch
 
-## Objectives
+## Задачи
 
-1. Generate a number between 0 and 10 and using switch statement do the following:
-   1. If it's 1 print "One is the loneliest number that you'll ever do"
-   2. If it's 2 print "Two can be as bad as one. It's the loneliest number since the number one"
-   3. For any other number print "Sorry, no mention of the number in the song"
+1. Сгенерируйте число от 0 до 10 и с помощью оператора switch сделайте следующее:
+   1. Если это 1, выведите "One is the loneliest number that you'll ever do"
+   2. Если это 2, выведите "Two can be as bad as one. It's the loneliest number since the number one"
+   3. Для любого другого числа выведите "Sorry, no mention of the number in the song"
 
-## Solution
+## Решение
 
-Click [here](main.go) to view the solution.
+Нажмите [здесь](main.go), чтобы посмотреть решение.

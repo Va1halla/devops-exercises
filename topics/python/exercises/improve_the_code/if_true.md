@@ -1,6 +1,6 @@
 ## If True
 
-Improve the following block of code:
+Улучшить следующий блок кода:
 
 ```
 y = 0
@@ -12,6 +12,6 @@ if x == False:
     y = y + 2
 ```
 
-### Solution
+### Решение
 
-Click [here](../../solutions/improve_the_code/if_true.md) to view the solution
+Нажмите [здесь](../../solutions/improve_the_code/if_true.md), чтобы посмотреть решение

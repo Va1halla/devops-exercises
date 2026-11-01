@@ -1,7 +1,7 @@
-### Set up a CDK Project
+### Настройка проекта CDK
 
-Initialize a CDK project and set up files required to build a CDK project.
+Инициализировать проект CDK и подготовить файлы, необходимые для сборки проекта CDK.
 
-## Solution
+## Решение
 
-Click [here](solution.md) to view the solution.
+Нажмите [здесь](solution.md), чтобы посмотреть решение.

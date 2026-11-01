@@ -1,28 +1,28 @@
-# Find the Runner-Up Score! (HackerRank Challenge)
+# Найти второй результат! (задача HackerRank)
 
-The following challenge is from [HackerRank](https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem)
+Эта задача взята с [HackerRank](https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem)
 
-Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score. You are given  scores. Store them in a list and find the score of the runner-up.
+Дана таблица результатов участников университетского дня спорта, нужно найти второй по величине результат. Даны  результатов. Сохранить их в списке и найти результат занявшего второе место.
 
-Input Format
+Формат ввода
 
-The first line contains . The second line contains an array   of  integers each separated by a space.
+Первая строка содержит . Вторая строка содержит массив   из  целых чисел, разделённых пробелами.
 
-Constraints
+Ограничения
 
-Output Format
+Формат вывода
 
-Print the runner-up score.
+Вывести второй по величине результат.
 
-Sample Input 0
+Пример ввода 0
 
 5
 2 3 6 6 5
 
-Sample Output 0
+Пример вывода 0
 
 5
 
-## Solution
+## Решение
 
-Click [here](solution.py) to view the solution.
+Нажмите [здесь](solution.py), чтобы посмотреть решение.

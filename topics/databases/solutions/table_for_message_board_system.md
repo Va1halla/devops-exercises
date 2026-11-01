@@ -1,24 +1,24 @@
-## Database Table for Message Board System
+## Таблица базы данных для системы доски сообщений
 
-### Instructions
+### Инструкции
 
-Design a database table for a message board system. It should include the following information:
+Спроектировать таблицу базы данных для системы доски сообщений. Она должна включать следующую информацию:
 
-  * Personal details
-  * Who saw the message and when
-  * Replies
-  * Tagged people in the message
-  * Message categories
+  * Личные данные
+  * Кто и когда видел сообщение
+  * Ответы
+  * Люди, отмеченные в сообщении
+  * Категории сообщений
 
-Notes:
+Примечания:
 
-  * No SQL is needed
-  * You should include: table names, field names, data types and mention the foreign keys used.
+  * SQL не нужен
+  * Нужно указать: имена таблиц, имена полей, типы данных, а также используемые внешние ключи.
 
-### Solution
+### Решение
 
-Note: This is just one possible design
-2nd Note: PK = primary key, FK = Foreign key
+Примечание: это лишь один из возможных вариантов
+Примечание 2: PK = первичный ключ (primary key), FK = внешний ключ (Foreign key)
 
                                 ----- People -----
                                 ID int PK

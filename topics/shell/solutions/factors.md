@@ -1,14 +1,14 @@
-## Shell Scripting - Factors
+## Скрипты на Shell — делители
 
-### Objectives
+### Цели
 
-Write a script that when given a number, will:
+Написать скрипт, который при получении числа:
 
-* Check if the number has 2 as factor, if yes it will print "one factor"
-* Check if the number has 3 as factor, if yes it will print "one factor...actually two!"
-* If none of them (2 and 3) is a factor, print the number itself
+* Проверит, является ли 2 делителем числа, и если да, выведет "one factor"
+* Проверит, является ли 3 делителем числа, и если да, выведет "one factor...actually two!"
+* Если ни одно из них (2 и 3) не является делителем, выведет само число
 
-### Solution
+### Решение
 
 ```
 #!/usr/bin/env bash

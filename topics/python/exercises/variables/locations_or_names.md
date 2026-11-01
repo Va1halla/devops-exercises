@@ -1,5 +1,5 @@
-## Locations or Names
+## Области памяти или имена
 
-What do you think about the following statement:
+Что вы думаете о следующем утверждении:
 
-In Python, variables are locations, not just names. So `x = 1` is really the value of 1 in the memory location called x.
+В Python переменные — это области памяти, а не просто имена. Поэтому `x = 1` — это на самом деле значение 1 в области памяти с именем x.

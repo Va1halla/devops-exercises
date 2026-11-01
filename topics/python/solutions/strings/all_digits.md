@@ -1,7 +1,7 @@
-## All Digits
+## Все цифры
 
-1. How to check if all characters in a given string are digits?
+1. Как проверить, что все символы в заданной строке являются цифрами?
 
-### Solution
+### Решение
 
 1. `string.isdigit`

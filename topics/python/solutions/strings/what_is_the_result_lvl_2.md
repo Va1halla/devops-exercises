@@ -1,12 +1,12 @@
-## What is the result? - Level 2
+## Каков результат? — уровень 2
 
-What is the result of each of the following statements?
+Каков результат каждого из следующих выражений?
 
 1. `"123456"[0]`
 2. `"123456"[-1]`
 3. `print("\\a\\b\a\c")`
 
-### Solution
+### Решение
 
 1. `'1'`
 2. `'6'`

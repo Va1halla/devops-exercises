@@ -1,20 +1,20 @@
-# NODEJS BASIC INTERVIEW QUESTIONS
+# БАЗОВЫЕ ВОПРОСЫ ПО NODEJS С СОБЕСЕДОВАНИЙ
 
-# OBJECTIVE
+# ЦЕЛЬ
 
-To Tell about the basic questions asked in node to me in many interviews
+Рассказать о базовых вопросах по Node, которые мне задавали на многих собеседованиях
 
-1. What is Nodejs ?
-2. How many threads does nodejs have ?
-3. How do nodejs work ?
-4. Is nodejs Single Threaded Or Multi Threaded ?
-5. what is node cluster ?
-6. Does parent process depends on the child preocess ?
-7. How many types of module do nodejs have ?
-8. Why nodejs ?
-9. What is npm ?
-10. Difference between pacakage.json and pacakage-lock.json ?
-11. What is the difference betwwen creating a server with http and a framework ?
-12. What do you mean by non-blocking ?
-13. What is event loop ?
-14. What is event driven ?
+1. Что такое Nodejs?
+2. Сколько потоков у nodejs?
+3. Как работает nodejs?
+4. Nodejs однопоточный или многопоточный?
+5. Что такое node cluster?
+6. Зависит ли родительский процесс от дочернего?
+7. Сколько типов модулей есть в nodejs?
+8. Почему nodejs?
+9. Что такое npm?
+10. В чём разница между pacakage.json и pacakage-lock.json?
+11. В чём разница между созданием сервера с помощью http и с помощью фреймворка?
+12. Что означает «неблокирующий» (non-blocking)?
+13. Что такое event loop?
+14. Что такое событийно-ориентированный (event driven) подход?

@@ -1,8 +1,8 @@
-# Data Types
+# Типы данных
 
-## Objectives
+## Задачи
 
-1. What is the result of the following program? Why?
+1. Каков результат выполнения следующей программы? Почему?
 
 ```Go
 package main
@@ -16,7 +16,7 @@ func main() {
 }
 ```
 
-2. What is the result of the following program? Why?
+2. Каков результат выполнения следующей программы? Почему?
 
 ```Go
 package main
@@ -29,7 +29,7 @@ func main() {
 }
 ```
 
-3. Fix the following program by modifying one of the lines (but not adding or removing lines)
+3. Исправьте следующую программу, изменив одну из строк (не добавляя и не удаляя строки)
 
 ```Go
 package main
@@ -43,7 +43,7 @@ func main() {
 }
 ```
 
-4. Modify the following program to print the types of the variables
+4. Измените следующую программу так, чтобы она выводила типы переменных
 
 ```Go
 package main
@@ -57,13 +57,13 @@ func main() {
 }
 ```
 
-## Solution
+## Решение
 
-1. Error. Go is statically typed and you need to tell Go Compiler the data type when doing variable declaration.
+1. Ошибка. Go — язык со статической типизацией, и при объявлении переменной нужно сообщить компилятору Go тип данных.
 
-2. It will print 2. The reason it doesn't fail (even though you didn't declare the type) is due to Go performing type inference where it infers the type from the assigned value
+2. Будет выведено 2. Ошибки нет (хотя тип не объявлен), потому что Go выполняет вывод типов (type inference): тип определяется по присвоенному значению
 
-3. Declare the type of userName
+3. Объявить тип userName
 
 ```Go
 package main
