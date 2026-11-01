@@ -1,14 +1,14 @@
 <p align="center"><img src="images/devops_exercises.png"/></p>
 
-:information_source: &nbsp;This repo contains questions and exercises on various technical topics, sometimes related to DevOps and SRE
+:information_source: &nbsp;Этот репозиторий содержит вопросы и упражнения по различным техническим темам, иногда связанным с DevOps и SRE
 
-:bar_chart: &nbsp;There are currently **2624** exercises and questions
+:bar_chart: &nbsp;Сейчас здесь **2624** упражнения и вопроса
 
-:warning: &nbsp;You can use these for preparing for an interview but most of the questions and exercises don't represent an actual interview. Please read [FAQ page](faq.md) for more details
+:warning: &nbsp;Их можно использовать для подготовки к собеседованию, но большинство вопросов и упражнений не отражают реальное собеседование. Подробнее — на [странице FAQ](faq.md)
 
-:stop_sign: &nbsp;If you are interested in pursuing a career as DevOps engineer, learning some of the concepts mentioned here would be useful, but you should know it's not about learning all the topics and technologies mentioned in this repository
+:stop_sign: &nbsp;Если вы хотите построить карьеру DevOps-инженера, изучить некоторые из упомянутых здесь понятий будет полезно, но важно понимать, что дело не в изучении всех тем и технологий, перечисленных в этом репозитории
 
-:pencil: &nbsp;You can add more exercises by submitting pull requests :) Read about contribution guidelines [here](CONTRIBUTING.md)
+:pencil: &nbsp;Добавить новые упражнения можно, отправив pull request :) О правилах участия можно прочитать [здесь](CONTRIBUTING.md)
 
 ****
 
@@ -20,21 +20,21 @@
   <tr>
     <td align="center"><a href="topics/devops/README.md"><img src="images/devops.png" width="75px;" height="75px;" alt="DevOps" /><br /><b>DevOps</b></a></td>
     <td align="center"><a href="topics/git/README.md"><img src="images/git.png" width="75px;" height="75px;" alt="Git"/><br /><b>Git</b></a></td>
-    <td align="center"><a href="#network"><img src="images/network.png" width="75px;" height="75px;" alt="Network"/><br /><b>Network</b></a></td>
-    <td align="center"><a href="#hardware"><img src="images/hardware.png" width="75px;" height="75px;" alt="Hardware"/><br /><b>Hardware</b></a></td>
+    <td align="center"><a href="#сети"><img src="images/network.png" width="75px;" height="75px;" alt="Network"/><br /><b>Сети</b></a></td>
+    <td align="center"><a href="#аппаратное-обеспечение-hardware"><img src="images/hardware.png" width="75px;" height="75px;" alt="Hardware"/><br /><b>Оборудование</b></a></td>
     <td align="center"><a href="topics/kubernetes/README.md"><img src="images/kubernetes.png" width="75px;" height="75px;" alt="kubernetes"/><br /><b>Kubernetes</b></a></td>
   </tr>
 
   <tr>
-    <td align="center"><a href="topics/software_development/README.md"><img src="images/programming.png" width="75px;" height="75px;" alt="programming"/><br /><b>Software Development</b></a></td>
+    <td align="center"><a href="topics/software_development/README.md"><img src="images/programming.png" width="75px;" height="75px;" alt="programming"/><br /><b>Разработка ПО</b></a></td>
     <td align="center"><a href="topics/python/README.md"><img src="images/python.png" width="75px;" height="75px;" alt="Python"/><br /><b>Python</b></a></td>
     <td align="center"><a href="topics/go/README.md"><img src="images/Go.png" width="75px;" height="75px;" alt="go"/><br /><b>Go</b></a></td>
     <td align="center"><a href="topics/perl/README.md"><img src="images/perl.png" width="75px;" height="75px;" alt="perl"/><br /><b>Perl</b></a></td>
-    <td align="center"><a href="#regex"><img src="images/regex.png" width="75px;" height="75px;" alt="RegEx"/><br /><b>Regex</b></a></td>
+    <td align="center"><a href="#регулярные-выражения-regex"><img src="images/regex.png" width="75px;" height="75px;" alt="RegEx"/><br /><b>Regex</b></a></td>
   </tr>
 
   <tr>
-      <td align="center"><a href="topics/cloud/README.md"><img src="images/cloud.png" width="75px;" height="75px;" alt="Cloud"/><br /><b>Cloud</b></a></td>
+      <td align="center"><a href="topics/cloud/README.md"><img src="images/cloud.png" width="75px;" height="75px;" alt="Cloud"/><br /><b>Облака</b></a></td>
       <td align="center"><a href="topics/aws/README.md"><img src="images/aws.png" width="100px;" height="75px;" alt="aws"/><br /><b>AWS</b></a></td>
       <td align="center"><a href="topics/azure/README.md"><img src="images/azure.png" width="75px;" height="75px;" alt="azure"/><br /><b>Azure</b></a></td>
       <td align="center"><a href="topics/gcp/README.md"><img src="images/googlecloud.png" width="70px;" height="70px;" alt="Google Cloud Platform"/><br /><b>Google Cloud Platform</b></a></td>
@@ -42,40 +42,40 @@
   </tr>
 
   <tr>
-      <td align="center"><a href="#operating-system"><img src="images/os.png" width="75px;" height="75px;" alt="Operating System"/><br /><b>Operating System</b></a></td>
+      <td align="center"><a href="#операционные-системы"><img src="images/os.png" width="75px;" height="75px;" alt="Operating System"/><br /><b>Операционные системы</b></a></td>
       <td align="center"><a href="topics/linux/README.md"><img src="images/logos/linux.png" width="75px;" height="75px;" alt="Linux"/><br /><b>Linux</b></a></td>
-      <td align="center"><a href="#virtualization"><img src="images/virtualization.png" width="75px;" height="75px;" alt="Virtualization"/><br /><b>Virtualization</b></a></td>
+      <td align="center"><a href="#виртуализация"><img src="images/virtualization.png" width="75px;" height="75px;" alt="Virtualization"/><br /><b>Виртуализация</b></a></td>
       <td align="center"><a href="topics/dns/README.md"><img src="images/dns.png" width="75px;" height="75px;" alt="DNS"/><br /><b>DNS</b></a></td>
-      <td align="center"><a href="topics/shell/README.md"><img src="images/bash.png" width="75px;" height="75px;" alt="Bash"/><br /><b>Shell Scripting</b></a></td>
+      <td align="center"><a href="topics/shell/README.md"><img src="images/bash.png" width="75px;" height="75px;" alt="Bash"/><br /><b>Shell-скрипты</b></a></td>
   </tr>
 
   <tr>
-      <td align="center"><a href="topics/databases/README.md"><img src="images/databases.png" width="75px;" height="75px;" alt="Databases"/><br /><b>Databases</b></a></td>
+      <td align="center"><a href="topics/databases/README.md"><img src="images/databases.png" width="75px;" height="75px;" alt="Databases"/><br /><b>Базы данных</b></a></td>
       <td align="center"><a href="#sql"><img src="images/sql.png" width="75px;" height="75px;" alt="sql"/><br /><b>SQL</b></a></td>
       <td align="center"><a href="#mongo"><img src="images/mongo.png" width="75px;" height="75px;" alt="Mongo"/><br /><b>Mongo</b></a></td>
-      <td align="center"><a href="#testing"><img src="images/testing.png" width="75px;" height="75px;" alt="Testing"/><br /><b>Testing</b></a></td>
-      <td align="center"><a href="#big-data"><img src="images/big-data.png" width="75px;" height="75px;" alt="Big Data"/><br /><b>Big Data</b></a></td>
+      <td align="center"><a href="#тестирование"><img src="images/testing.png" width="75px;" height="75px;" alt="Testing"/><br /><b>Тестирование</b></a></td>
+      <td align="center"><a href="#big-data"><img src="images/big-data.png" width="75px;" height="75px;" alt="Big Data"/><br /><b>Большие данные</b></a></td>
 
   </tr>
 
   <tr>
       <td align="center"><a href="topics/cicd/README.md"><img src="images/cicd.png" width="75px;" height="75px;" alt="cicd"/><br /><b>CI/CD</b></a></td>
-      <td align="center"><a href="#certificates"><img src="images/certificates.png" width="75px;" height="75px;" alt="Certificates"/><br /><b>Certificates</b></a></td>
-      <td align="center"><a href="topics/containers/README.md"><img src="images/containers.png" width="75px;" height="75px;" alt="Containers"/><br /><b>Containers</b></a></td>
+      <td align="center"><a href="#сертификаты"><img src="images/certificates.png" width="75px;" height="75px;" alt="Certificates"/><br /><b>Сертификаты</b></a></td>
+      <td align="center"><a href="topics/containers/README.md"><img src="images/containers.png" width="75px;" height="75px;" alt="Containers"/><br /><b>Контейнеры</b></a></td>
       <td align="center"><a href="topics/openshift/README.md"><img src="images/openshift.png" width="75px;" height="75px;" alt="OpenShift"/><br /><b>OpenShift</b></a></td>
-      <td align="center"><a href="#storage"><img src="images/storage.png" width="75px;" height="75px;" alt="Storage"/><br /><b>Storage</b></a></td>
+      <td align="center"><a href="#хранилища-данных-storage"><img src="images/storage.png" width="75px;" height="75px;" alt="Storage"/><br /><b>Хранилища</b></a></td>
   </tr>
 
   <tr>
       <td align="center"><a href="topics/terraform/README.md"><img src="images/terraform.png" width="75px;" height="75px;" alt="Terraform"/><br /><b>Terraform</b></a></td>
       <td align="center"><a href="#puppet"><img src="images/puppet.png" width="75px;" height="75px;" alt="puppet"/><br /><b>Puppet</b></a></td>
-      <td align="center"><a href="#distributed"><img src="images/distributed.png" width="75px;" height="75px;" alt="Distributed"/><br /><b>Distributed</b></a></td>
-      <td align="center"><a href="#questions-you-ask"><img src="images/you.png" width="75px;" height="75px;" alt="you"/><br /><b>Questions you can ask</b></a></td>
+      <td align="center"><a href="#распределённые-системы"><img src="images/distributed.png" width="75px;" height="75px;" alt="Distributed"/><br /><b>Распределённые системы</b></a></td>
+      <td align="center"><a href="#questions-you-ask"><img src="images/you.png" width="75px;" height="75px;" alt="you"/><br /><b>Вопросы, которые можно задать</b></a></td>
       <td align="center"><a href="topics/ansible/README.md"><img src="images/ansible.png" width="75px;" height="75px;" alt="ansible"/><br /><b>Ansible</b></a></td>
   </tr>
 
   <tr>
-      <td align="center"><a href="topics/observability/README.md"><img src="images/observability.png" width="75px;" height="75px;" alt="observability"/><br /><b>Observability</b></a></td>
+      <td align="center"><a href="topics/observability/README.md"><img src="images/observability.png" width="75px;" height="75px;" alt="observability"/><br /><b>Наблюдаемость</b></a></td>
       <td align="center"><a href="#prometheus"><img src="images/prometheus.png" width="75px;" height="75px;" alt="Prometheus"/><br /><b>Prometheus</b></a></td>
       <td align="center"><a href="topics/circleci/README.md"><img src="images/logos/circleci.png" width="70px;" height="70px;" alt="Circle CI"/><br /><b>Circle CI</b></a></td>
       <td align="center"><a href="topics/datadog/README.md"><img src="images/logos/datadog.png" width="80px;" height="80px;" alt="DataDog"/><br /><b></b></a></td>
@@ -84,14 +84,14 @@
 
   <tr>
     <td align="center"><a href="topics/argo/README.md"><img src="images/logos/argo.png" width="80px;" height="80px;" alt="Argo"/><br /><b>Argo</b></a></td>
-    <td align="center"><a href="topics/soft_skills/README.md"><img src="images/HR.png" width="75px;" height="75px;" alt="HR"/><br /><b>Soft Skills</b></a></td>
-    <td align="center"><a href="topics/security/README.md"><img src="images/security.png" width="75px;" height="75px;" alt="security"/><br /><b>Security</b></a></td>
-    <td align="center"><a href="#system-design"><img src="images/design.png" width="75px;" height="75px;" alt="Design"/><br /><b>System Design</b></a></td>
+    <td align="center"><a href="topics/soft_skills/README.md"><img src="images/HR.png" width="75px;" height="75px;" alt="HR"/><br /><b>Гибкие навыки</b></a></td>
+    <td align="center"><a href="topics/security/README.md"><img src="images/security.png" width="75px;" height="75px;" alt="security"/><br /><b>Безопасность</b></a></td>
+    <td align="center"><a href="#проектирование-систем-system-design"><img src="images/design.png" width="75px;" height="75px;" alt="Design"/><br /><b>Проектирование систем</b></a></td>
    </tr>
 
    <tr>
-    <td align="center"><a href="topics/chaos_engineering/README.md"><img src="images/logos/chaos_engineering.png" width="75px;" height="75px;" alt="Chaos Engineering"/><br /><b>Chaos Engineering</b></a></td>
-    <td align="center"><a href="#Misc"><img src="images/general.png" width="75px;" height="75px;" alt="Misc"/><br /><b>Misc</b></a></td>
+    <td align="center"><a href="topics/chaos_engineering/README.md"><img src="images/logos/chaos_engineering.png" width="75px;" height="75px;" alt="Chaos Engineering"/><br /><b>Хаос-инжиниринг</b></a></td>
+    <td align="center"><a href="#разное"><img src="images/general.png" width="75px;" height="75px;" alt="Misc"/><br /><b>Разное</b></a></td>
     <td align="center"><a href="#elastic"><img src="images/elastic.png" width="75px;" height="75px;" alt="Elastic"/><br /><b>Elastic</b></a></td>
     <td align="center"><a href="topics/kafka/README.md"><img src="images/logos/kafka.png" width="85px;" height="80px;" alt="Kafka"/><br /><b>Kafka</b></a></td>
     <td align="center"><a href="topics/node/node_questions_basic.md"><img src="images/nodejs.png" width="85px;" height="80px;" alt="NodeJs"/><br /><b>NodeJs</b></a></td>
@@ -103,7 +103,7 @@
 <!-- prettier-ignore-end -->
 <!-- ALL-TOPICS-LIST:END -->
 
-## DevOps Applications
+## Приложения для DevOps
 
 <table>
 <tr>
@@ -114,369 +114,369 @@
 </table>
 
 
-## Network
+## Сети
 
 <details>
-<summary>In general, what do you need in order to communicate?</summary><br><b>
+<summary>Что в общем случае нужно для того, чтобы общаться?</summary><br><b>
 
-  - A common language (for the two ends to understand)
-  - A way to address who you want to communicate with
-  - A Connection (so the content of the communication can reach the recipients)
+  - Общий язык (чтобы обе стороны понимали друг друга)
+  - Способ указать, с кем вы хотите общаться (адресация)
+  - Соединение (чтобы содержимое общения могло дойти до получателей)
 
 </b></details>
 
 <details>
-<summary>What is TCP/IP?</summary><br><b>
+<summary>Что такое TCP/IP?</summary><br><b>
 
-A set of protocols that define how two or more devices can communicate with each other.
+Набор протоколов, определяющих, как два или более устройства могут взаимодействовать друг с другом.
 
-To learn more about TCP/IP, read [here](http://www.penguintutor.com/linux/basic-network-reference)
-
-</b></details>
-
-<details>
-<summary>What is Ethernet?</summary><br><b>
-
-Ethernet simply refers to the most common type of Local Area Network (LAN) used today. A LAN—in contrast to a WAN (Wide Area Network), which spans a larger geographical area—is a connected network of computers in a small area, like your office, college campus, or even home.
+Подробнее о TCP/IP можно прочитать [здесь](http://www.penguintutor.com/linux/basic-network-reference)
 
 </b></details>
 
 <details>
-<summary>What is a MAC address? What is it used for?</summary><br><b>
+<summary>Что такое Ethernet?</summary><br><b>
 
-A MAC address is a unique identification number or code used to identify individual devices on the network.
-
-Packets that are sent on the ethernet are always coming from a MAC address and sent to a MAC address. If a network adapter is receiving a packet, it is comparing the packet’s destination MAC address to the adapter’s own MAC address.
+Ethernet — это просто самый распространённый на сегодня тип локальной сети (LAN, Local Area Network). Локальная сеть — в отличие от глобальной (WAN, Wide Area Network), охватывающей большую географическую область, — это сеть связанных компьютеров на небольшой территории, например в офисе, студенческом кампусе или даже дома.
 
 </b></details>
 
 <details>
-<summary>When is this MAC address used?: ff:ff:ff:ff:ff:ff</summary><br><b>
+<summary>Что такое MAC-адрес? Для чего он используется?</summary><br><b>
 
-When a device sends a packet to the broadcast MAC address (FF:FF:FF:FF:FF:FF​), it is delivered to all stations on the local network. Ethernet broadcasts are used to resolve IP addresses to MAC addresses (by ARP) at the data link layer.
-</b></details>
+MAC-адрес — это уникальный идентификационный номер или код, используемый для идентификации отдельных устройств в сети.
 
-<details>
-<summary>What is an IP address?</summary><br><b>
-
-An Internet Protocol address (IP address) is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication.An IP address serves two main functions: host or network interface identification and location addressing.
-</b></details>
-
-<details>
-<summary>Explain the subnet mask and give an example</summary><br><b>
-
-A Subnet mask is a 32-bit number that masks an IP address and divides the IP addresses into network addresses and host addresses. Subnet Mask is made by setting network bits to all "1"s and setting host bits to all "0"s. Within a given network, out of the total usable host addresses, two are always reserved for specific purposes and cannot be allocated to any host. These are the first address, which is reserved as a network address (a.k.a network ID), and the last address used for network broadcast.
-
-[Example](https://github.com/philemonnwanne/projects/tree/main/exercises/exe-09)
+Пакеты, передаваемые по Ethernet, всегда отправляются с MAC-адреса и на MAC-адрес. Когда сетевой адаптер получает пакет, он сравнивает MAC-адрес назначения пакета с собственным MAC-адресом адаптера.
 
 </b></details>
 
 <details>
-<summary>What is a private IP address? In which scenarios/system designs, one should use it?</summary><br><b>
-Private IP addresses are assigned to the hosts in the same network to communicate with one another. As the name "private" suggests, the devices having the private IP addresses assigned can't be reached by the devices from any external network. For example, if I am living in a hostel and I want my hostel mates to join the game server I have hosted, I will ask them to join via my server's private IP address, since the network is local to the hostel.
+<summary>Когда используется MAC-адрес ff:ff:ff:ff:ff:ff?</summary><br><b>
+
+Когда устройство отправляет пакет на широковещательный MAC-адрес (FF:FF:FF:FF:FF:FF​), он доставляется всем станциям локальной сети. Широковещательные рассылки Ethernet используются для сопоставления IP-адресов с MAC-адресами (с помощью ARP) на канальном уровне.
 </b></details>
 
 <details>
-<summary>What is a public IP address? In which scenarios/system designs, one should use it?</summary><br><b>
-A public IP address is a public-facing IP address. In the event that you were hosting a game server that you want your friends to join, you will give your friends your public IP address to allow their computers to identify and locate your network and server in order for the connection to take place. One time that you would not need to use a public-facing IP address is in the event that you were playing with friends who were connected to the same network as you, in that case, you would use a private IP address. In order for someone to be able to connect to your server that is located internally, you will have to set up a port forward to tell your router to allow traffic from the public domain into your network and vice versa.
+<summary>Что такое IP-адрес?</summary><br><b>
+
+Адрес интернет-протокола (IP-адрес) — это числовая метка, назначаемая каждому устройству, подключённому к компьютерной сети, которая использует для связи интернет-протокол (Internet Protocol). IP-адрес выполняет две основные функции: идентификацию хоста или сетевого интерфейса и адресацию местоположения.
 </b></details>
 
 <details>
-<summary>Explain the OSI model. What layers there are? What each layer is responsible for?</summary><br><b>
+<summary>Объясните, что такое маска подсети, и приведите пример</summary><br><b>
 
-- Application: user end (HTTP is here)
-- Presentation: establishes context between application-layer entities (Encryption is here)
-- Session: establishes, manages, and terminates the connections
-- Transport: transfers variable-length data sequences from a source to a destination host (TCP & UDP are here)
-- Network: transfers datagrams from one network to another (IP is here)
-- Data link: provides a link between two directly connected nodes (MAC is here)
-- Physical: the electrical and physical spec of the data connection (Bits are here)
+Маска подсети (subnet mask) — это 32-битное число, которое маскирует IP-адрес и делит IP-адреса на адреса сети и адреса хостов. Маска подсети формируется так: все биты сети устанавливаются в «1», а все биты хоста — в «0». В пределах сети из общего числа пригодных адресов хостов два всегда зарезервированы для особых целей и не могут быть назначены ни одному хосту. Это первый адрес, зарезервированный как адрес сети (он же network ID), и последний адрес, используемый для широковещательной рассылки в сети.
 
-You can read more about the OSI model in [penguintutor.com](http://www.penguintutor.com/linux/basic-network-reference)
-</b></details>
-
-<details>
-<summary>For each of the following determines to which OSI layer it belongs:
-
-  * Error correction
-  * Packets routing
-  * Cables and electrical signals
-  * MAC address
-  * IP address
-  * Terminate connections
-  * 3 way handshake</summary><br><b>
-  * Error correction - Data link
-  * Packets routing - Network
-  * Cables and electrical signals - Physical
-  * MAC address - Data link
-  * IP address - Network
-  * Terminate connections - Session
-  * 3-way handshake - Transport
-</b></details>
-
-<details>
-<summary>What delivery schemes are you familiar with?</summary><br><b>
-
-Unicast: One-to-one communication where there is one sender and one receiver.
-
-Broadcast: Sending a message to everyone in the network. The address ff:ff:ff:ff:ff:ff is used for broadcasting.
-           Two common protocols which use broadcast are ARP and DHCP.
-
-Multicast: Sending a message to a group of subscribers. It can be one-to-many or many-to-many.
-</b></details>
-
-<details>
-<summary>What is CSMA/CD? Is it used in modern ethernet networks?</summary><br><b>
-
-CSMA/CD stands for Carrier Sense Multiple Access / Collision Detection.
-Its primary focus is to manage access to a shared medium/bus where only one host can transmit at a given point in time.
-
-CSMA/CD algorithm:
-
-1. Before sending a frame, it checks whether another host is already transmitting a frame.
-2. If no one is transmitting, it starts transmitting the frame.
-3. If two hosts transmit at the same time, we have a collision.
-4. Both hosts stop sending the frame and they send everyone a 'jam signal' notifying everyone that a collision occurred
-5. They are waiting for a random time before sending it again
-6. Once each host waited for a random time, they try to send the frame again and so the cycle starts again
-</b></details>
-
-<details>
-<summary>Describe the following network devices and the difference between them:
-
-  * router
-  * switch
-  * hub</summary><br><b>
-
-A router, switch, and hub are all network devices used to connect devices in a local area network (LAN). However, each device operates differently and has its specific use cases. Here is a brief description of each device and the differences between them:
-
-1. Router: a network device that connects multiple network segments together. It operates at the network layer (Layer 3) of the OSI model and uses routing protocols to direct data between networks. Routers use IP addresses to identify devices and route data packets to the correct destination.
-2. Switch: a network device that connects multiple devices on a LAN. It operates at the data link layer (Layer 2) of the OSI model and uses MAC addresses to identify devices and direct data packets to the correct destination. Switches allow devices on the same network to communicate with each other more efficiently and can prevent data collisions that can occur when multiple devices send data simultaneously.
-3. Hub: a network device that connects multiple devices through a single cable and is used to connect multiple devices without segmenting a network. However, unlike a switch, it operates at the physical layer (Layer 1) of the OSI model and simply broadcasts data packets to all devices connected to it, regardless of whether the device is the intended recipient or not. This means that data collisions can occur, and the network's efficiency can suffer as a result. Hubs are generally not used in modern network setups, as switches are more efficient and provide better network performance.
-</b></details>
-
-<details>
-<summary>What is a "Collision Domain"?</summary><br><b>
-A collision domain is a network segment in which devices can potentially interfere with each other by attempting to transmit data at the same time. When two devices transmit data at the same time, it can cause a collision, resulting in lost or corrupted data. In a collision domain, all devices share the same bandwidth, and any device can potentially interfere with the transmission of data by other devices.
-</b></details>
-
-<details>
-<summary>What is a "Broadcast Domain"?</summary><br><b>
-A broadcast domain is a network segment in which all devices can communicate with each other by sending broadcast messages. A broadcast message is a message that is sent to all devices in a network rather than a specific device. In a broadcast domain, all devices can receive and process broadcast messages, regardless of whether the message was intended for them or not.
-</b></details>
-
-<details>
-<summary>three computers connected to a switch. How many collision domains are there? How many broadcast domains?</summary><br><b>
-
-Three collision domains and one broadcast domain
-</b></details>
-
-<details>
-<summary>How does a router work?</summary><br><b>
-
-A router is a physical or virtual appliance that passes information between two or more packet-switched computer networks. A router inspects a given data packet's destination Internet Protocol address (IP address), calculates the best way for it to reach its destination, and then forwards it accordingly.
+[Пример](https://github.com/philemonnwanne/projects/tree/main/exercises/exe-09)
 
 </b></details>
 
 <details>
-<summary>What is NAT?</summary><br><b>
+<summary>Что такое частный (private) IP-адрес? В каких сценариях/архитектурах систем его следует использовать?</summary><br><b>
+Частные IP-адреса назначаются хостам в одной сети, чтобы они могли взаимодействовать друг с другом. Как следует из названия «частный», устройства с назначенными частными IP-адресами недоступны для устройств из любой внешней сети. Например, если я живу в общежитии и хочу, чтобы соседи подключились к игровому серверу, который я поднял, я попрошу их подключиться по частному IP-адресу моего сервера, поскольку сеть локальна для общежития.
+</b></details>
 
- Network Address Translation (NAT) is a process in which one or more local IP addresses are translated into one or more Global IP address and vice versa in order to provide Internet access to the local hosts.
+<details>
+<summary>Что такое публичный (public) IP-адрес? В каких сценариях/архитектурах систем его следует использовать?</summary><br><b>
+Публичный IP-адрес — это IP-адрес, доступный извне. Если вы размещаете игровой сервер и хотите, чтобы к нему подключились друзья, вы дадите им свой публичный IP-адрес, чтобы их компьютеры могли идентифицировать и найти вашу сеть и сервер и установить соединение. Публичный IP-адрес не понадобится, если вы играете с друзьями, подключёнными к той же сети, что и вы: в этом случае используется частный IP-адрес. Чтобы кто-то мог подключиться к серверу, расположенному во внутренней сети, нужно настроить проброс портов (port forward), который укажет маршрутизатору пропускать трафик из публичной сети в вашу сеть и обратно.
+</b></details>
+
+<details>
+<summary>Объясните модель OSI. Какие в ней есть уровни? За что отвечает каждый уровень?</summary><br><b>
+
+- Прикладной (Application): сторона пользователя (здесь находится HTTP)
+- Представления (Presentation): устанавливает контекст между сущностями прикладного уровня (здесь находится шифрование)
+- Сеансовый (Session): устанавливает соединения, управляет ими и завершает их
+- Транспортный (Transport): передаёт последовательности данных переменной длины от источника к хосту назначения (здесь находятся TCP и UDP)
+- Сетевой (Network): передаёт датаграммы из одной сети в другую (здесь находится IP)
+- Канальный (Data link): обеспечивает связь между двумя напрямую соединёнными узлами (здесь находится MAC)
+- Физический (Physical): электрические и физические характеристики соединения для передачи данных (здесь находятся биты)
+
+Подробнее о модели OSI можно прочитать на [penguintutor.com](http://www.penguintutor.com/linux/basic-network-reference)
+</b></details>
+
+<details>
+<summary>Определите, к какому уровню OSI относится каждое из следующего:
+
+  * Исправление ошибок
+  * Маршрутизация пакетов
+  * Кабели и электрические сигналы
+  * MAC-адрес
+  * IP-адрес
+  * Завершение соединений
+  * Трёхстороннее рукопожатие (3 way handshake)</summary><br><b>
+  * Исправление ошибок — канальный
+  * Маршрутизация пакетов — сетевой
+  * Кабели и электрические сигналы — физический
+  * MAC-адрес — канальный
+  * IP-адрес — сетевой
+  * Завершение соединений — сеансовый
+  * Трёхстороннее рукопожатие — транспортный
+</b></details>
+
+<details>
+<summary>Какие схемы доставки вам известны?</summary><br><b>
+
+Unicast (одноадресная): связь «один к одному», при которой есть один отправитель и один получатель.
+
+Broadcast (широковещательная): отправка сообщения всем в сети. Для широковещательной рассылки используется адрес ff:ff:ff:ff:ff:ff.
+           Два распространённых протокола, использующих широковещание, — ARP и DHCP.
+
+Multicast (многоадресная): отправка сообщения группе подписчиков. Может быть «один ко многим» или «многие ко многим».
+</b></details>
+
+<details>
+<summary>Что такое CSMA/CD? Используется ли он в современных сетях Ethernet?</summary><br><b>
+
+CSMA/CD расшифровывается как Carrier Sense Multiple Access / Collision Detection (множественный доступ с контролем несущей и обнаружением коллизий).
+Его основная задача — управлять доступом к общей среде/шине, по которой в каждый момент времени может передавать только один хост.
+
+Алгоритм CSMA/CD:
+
+1. Перед отправкой кадра хост проверяет, не передаёт ли кадр уже другой хост.
+2. Если никто не передаёт, он начинает передачу кадра.
+3. Если два хоста передают одновременно, возникает коллизия.
+4. Оба хоста прекращают отправку кадра и рассылают всем «jam-сигнал», уведомляя о произошедшей коллизии
+5. Они ждут случайное время, прежде чем отправить кадр снова
+6. Когда каждый хост выждал случайное время, они снова пытаются отправить кадр, и цикл начинается заново
+</b></details>
+
+<details>
+<summary>Опишите следующие сетевые устройства и разницу между ними:
+
+  * маршрутизатор (router)
+  * коммутатор (switch)
+  * концентратор (hub)</summary><br><b>
+
+Маршрутизатор, коммутатор и концентратор — всё это сетевые устройства, используемые для подключения устройств в локальной сети (LAN). Однако каждое из них работает по-своему и имеет свои сценарии применения. Ниже — краткое описание каждого устройства и различий между ними:
+
+1. Маршрутизатор (router): сетевое устройство, которое соединяет несколько сегментов сети. Работает на сетевом уровне (уровень 3) модели OSI и использует протоколы маршрутизации для направления данных между сетями. Маршрутизаторы используют IP-адреса для идентификации устройств и направляют пакеты данных к нужному адресату.
+2. Коммутатор (switch): сетевое устройство, которое соединяет несколько устройств в локальной сети. Работает на канальном уровне (уровень 2) модели OSI и использует MAC-адреса для идентификации устройств и направления пакетов данных к нужному адресату. Коммутаторы позволяют устройствам в одной сети эффективнее взаимодействовать друг с другом и предотвращают коллизии данных, которые могут возникать, когда несколько устройств отправляют данные одновременно.
+3. Концентратор (hub): сетевое устройство, которое соединяет несколько устройств через один кабель и используется для подключения нескольких устройств без сегментации сети. Однако, в отличие от коммутатора, он работает на физическом уровне (уровень 1) модели OSI и просто рассылает пакеты данных всем подключённым к нему устройствам, независимо от того, является ли устройство предполагаемым получателем. Это означает, что могут возникать коллизии данных, и в результате страдает эффективность сети. Концентраторы, как правило, не используются в современных сетях, поскольку коммутаторы эффективнее и обеспечивают более высокую производительность сети.
+</b></details>
+
+<details>
+<summary>Что такое «домен коллизий» (Collision Domain)?</summary><br><b>
+Домен коллизий — это сегмент сети, в котором устройства могут мешать друг другу, пытаясь передавать данные одновременно. Когда два устройства передают данные одновременно, может возникнуть коллизия, что приводит к потере или повреждению данных. В домене коллизий все устройства делят одну и ту же полосу пропускания, и любое устройство потенциально может помешать передаче данных другими устройствами.
+</b></details>
+
+<details>
+<summary>Что такое «широковещательный домен» (Broadcast Domain)?</summary><br><b>
+Широковещательный домен — это сегмент сети, в котором все устройства могут взаимодействовать друг с другом, отправляя широковещательные сообщения. Широковещательное сообщение — это сообщение, отправляемое всем устройствам сети, а не конкретному устройству. В широковещательном домене все устройства могут получать и обрабатывать широковещательные сообщения, независимо от того, предназначалось ли сообщение им.
+</b></details>
+
+<details>
+<summary>Три компьютера подключены к коммутатору. Сколько здесь доменов коллизий? Сколько широковещательных доменов?</summary><br><b>
+
+Три домена коллизий и один широковещательный домен
+</b></details>
+
+<details>
+<summary>Как работает маршрутизатор?</summary><br><b>
+
+Маршрутизатор — это физическое или виртуальное устройство, которое передаёт информацию между двумя или более компьютерными сетями с коммутацией пакетов. Маршрутизатор проверяет IP-адрес назначения пакета данных, вычисляет наилучший путь до адресата и затем пересылает пакет соответствующим образом.
 
 </b></details>
 
 <details>
-<summary>What is a proxy? How does it work? What do we need it for?</summary><br><b>
+<summary>Что такое NAT?</summary><br><b>
 
-A proxy server acts as a gateway between you and the internet. It’s an intermediary server separating end users from the websites they browse.
+ Трансляция сетевых адресов (NAT, Network Address Translation) — это процесс, при котором один или несколько локальных IP-адресов преобразуются в один или несколько глобальных IP-адресов и обратно, чтобы обеспечить локальным хостам доступ в интернет.
 
-If you’re using a proxy server, internet traffic flows through the proxy server on its way to the address you requested. The request then comes back through that same proxy server (there are exceptions to this rule), and then the proxy server forwards the data received from the website to you.
-
-Proxy servers provide varying levels of functionality, security, and privacy depending on your use case, needs, or company policy.
 </b></details>
 
 <details>
-<summary>What is TCP? How does it work? What is the 3-way handshake?</summary><br><b>
+<summary>Что такое прокси? Как он работает? Зачем он нужен?</summary><br><b>
 
-TCP 3-way handshake or three-way handshake is a process that is used in a TCP/IP network to make a connection between server and client.
+Прокси-сервер выступает шлюзом между вами и интернетом. Это промежуточный сервер, отделяющий конечных пользователей от сайтов, которые они просматривают.
 
-A three-way handshake is primarily used to create a TCP socket connection. It works when:
+Если вы используете прокси-сервер, интернет-трафик по пути к запрошенному адресу проходит через прокси-сервер. Ответ возвращается через тот же прокси-сервер (из этого правила есть исключения), а затем прокси-сервер пересылает вам данные, полученные от сайта.
 
-- A client node sends an SYN data packet over an IP network to a server on the same or an external network. The objective of this packet is to ask/infer if the server is open for new connections.
-- The target server must have open ports that can accept and initiate new connections. When the server receives the SYN packet from the client node, it responds and returns a confirmation receipt – the ACK packet or SYN/ACK packet.
-- The client node receives the SYN/ACK from the server and responds with an ACK packet.
+Прокси-серверы обеспечивают разный уровень функциональности, безопасности и конфиденциальности в зависимости от вашего сценария, потребностей или политики компании.
 </b></details>
 
 <details>
-<summary>What is round-trip delay or round-trip time?</summary><br><b>
+<summary>Что такое TCP? Как он работает? Что такое трёхстороннее рукопожатие (3-way handshake)?</summary><br><b>
 
-From [wikipedia](https://en.wikipedia.org/wiki/Round-trip_delay): "the length of time it takes for a signal to be sent plus the length of time it takes for an acknowledgment of that signal to be received"
+Трёхстороннее рукопожатие TCP (TCP 3-way handshake, three-way handshake) — это процесс, который используется в сети TCP/IP для установления соединения между сервером и клиентом.
 
-Bonus question: what is the RTT of LAN?
+Трёхстороннее рукопожатие в основном используется для создания соединения TCP-сокета. Оно происходит так:
+
+- Клиентский узел отправляет пакет данных SYN по IP-сети серверу в той же или во внешней сети. Цель этого пакета — спросить/выяснить, открыт ли сервер для новых соединений.
+- На целевом сервере должны быть открыты порты, которые могут принимать и инициировать новые соединения. Получив пакет SYN от клиентского узла, сервер отвечает и возвращает подтверждение — пакет ACK или пакет SYN/ACK.
+- Клиентский узел получает SYN/ACK от сервера и отвечает пакетом ACK.
 </b></details>
 
 <details>
-<summary>How does an SSL handshake work?</summary><br><b>
-SSL handshake is a process that establishes a secure connection between a client and a server.
+<summary>Что такое круговая задержка (round-trip delay, round-trip time)?</summary><br><b>
 
-1. The client sends a Client Hello message to the server, which includes the client's version of the SSL/TLS protocol, a list of the cryptographic algorithms supported by the client, and a random value.
-2. The server responds with a Server Hello message, which includes the server's version of the SSL/TLS protocol, a random value, and a session ID.
-3. The server sends a Certificate message, which contains the server's certificate.
-4. The server sends a Server Hello Done message, which indicates that the server is done sending messages for the Server Hello phase.
-5. The client sends a Client Key Exchange message, which contains the client's public key.
-6. The client sends a Change Cipher Spec message, which notifies the server that the client is about to send a message encrypted with the new cipher spec.
-7. The client sends an Encrypted Handshake Message, which contains the pre-master secret encrypted with the server's public key.
-8. The server sends a Change Cipher Spec message, which notifies the client that the server is about to send a message encrypted with the new cipher spec.
-9. The server sends an Encrypted Handshake Message, which contains the pre-master secret encrypted with the client's public key.
-10. The client and server can now exchange application data.
+Из [Википедии](https://en.wikipedia.org/wiki/Round-trip_delay): «время, необходимое для отправки сигнала, плюс время, необходимое для получения подтверждения этого сигнала»
+
+Дополнительный вопрос: каков RTT в локальной сети (LAN)?
 </b></details>
 
 <details>
-<summary>What is the difference between TCP and UDP?</summary><br><b>
+<summary>Как работает SSL-рукопожатие (SSL handshake)?</summary><br><b>
+SSL-рукопожатие — это процесс, который устанавливает защищённое соединение между клиентом и сервером.
 
-TCP establishes a connection between the client and the server to guarantee the order of the packages, on the other hand, UDP does not establish a connection between the client and server and doesn't handle package orders. This makes UDP more lightweight than TCP and a perfect candidate for services like streaming.
-
-[Penguintutor.com](http://www.penguintutor.com/linux/basic-network-reference) provides a good explanation.
+1. Клиент отправляет серверу сообщение Client Hello, в котором указаны версия протокола SSL/TLS клиента, список поддерживаемых клиентом криптографических алгоритмов и случайное значение.
+2. Сервер отвечает сообщением Server Hello, в котором указаны версия протокола SSL/TLS сервера, случайное значение и идентификатор сеанса (session ID).
+3. Сервер отправляет сообщение Certificate, содержащее сертификат сервера.
+4. Сервер отправляет сообщение Server Hello Done, которое означает, что сервер закончил отправку сообщений фазы Server Hello.
+5. Клиент отправляет сообщение Client Key Exchange, содержащее открытый ключ клиента.
+6. Клиент отправляет сообщение Change Cipher Spec, уведомляющее сервер, что клиент собирается отправить сообщение, зашифрованное с новыми параметрами шифрования.
+7. Клиент отправляет Encrypted Handshake Message, содержащее pre-master secret, зашифрованный открытым ключом сервера.
+8. Сервер отправляет сообщение Change Cipher Spec, уведомляющее клиента, что сервер собирается отправить сообщение, зашифрованное с новыми параметрами шифрования.
+9. Сервер отправляет Encrypted Handshake Message, содержащее pre-master secret, зашифрованный открытым ключом клиента.
+10. Теперь клиент и сервер могут обмениваться данными приложения.
 </b></details>
 
 <details>
-<summary>What TCP/IP protocols are you familiar with?</summary><br><b>
+<summary>В чём разница между TCP и UDP?</summary><br><b>
+
+TCP устанавливает соединение между клиентом и сервером, чтобы гарантировать порядок пакетов; UDP, напротив, не устанавливает соединение между клиентом и сервером и не следит за порядком пакетов. Поэтому UDP легче TCP и отлично подходит для таких сервисов, как потоковая передача (streaming).
+
+Хорошее объяснение есть на [Penguintutor.com](http://www.penguintutor.com/linux/basic-network-reference).
 </b></details>
 
 <details>
-<summary>Explain the "default gateway"</summary><br><b>
-
-A default gateway serves as an access point or IP router that a networked computer uses to send information to a computer in another network or the internet.
+<summary>Какие протоколы TCP/IP вам известны?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is ARP? How does it work?</summary><br><b>
+<summary>Объясните, что такое «шлюз по умолчанию» (default gateway)</summary><br><b>
 
-ARP stands for Address Resolution Protocol. When you try to ping an IP address on your local network, say 192.168.1.1, your system has to turn the IP address 192.168.1.1 into a MAC address. This involves using ARP to resolve the address, hence its name.
-
-Systems keep an ARP look-up table where they store information about what IP addresses are associated with what MAC addresses. When trying to send a packet to an IP address, the system will first consult this table to see if it already knows the MAC address. If there is a value cached, ARP is not used.
+Шлюз по умолчанию — это точка доступа или IP-маршрутизатор, который компьютер в сети использует для отправки информации компьютеру в другой сети или в интернет.
 </b></details>
 
 <details>
-<summary>What is TTL? What does it help to prevent?</summary><br><b>
+<summary>Что такое ARP? Как он работает?</summary><br><b>
 
-- TTL (Time to Live) is a value in an IP (Internet Protocol) packet that determines how many hops or routers a packet can travel before it is discarded. Each time a packet is forwarded by a router, the TTL value is decreased by one. When the TTL value reaches zero, the packet is dropped, and an ICMP (Internet Control Message Protocol) message is sent back to the sender indicating that the packet has expired.
-- TTL is used to prevent packets from circulating indefinitely in the network, which can cause congestion and degrade network performance.
-- It also helps to prevent packets from being trapped in routing loops, where packets continuously travel between the same set of routers without ever reaching their destination.
-- In addition, TTL can be used to help detect and prevent IP spoofing attacks, where an attacker attempts to impersonate another device on the network by using a false or fake IP address. By limiting the number of hops that a packet can travel, TTL can help prevent packets from being routed to destinations that are not legitimate.
+ARP расшифровывается как Address Resolution Protocol (протокол разрешения адресов). Когда вы пытаетесь выполнить ping IP-адреса в локальной сети, скажем 192.168.1.1, система должна преобразовать IP-адрес 192.168.1.1 в MAC-адрес. Для этого используется ARP, который разрешает адрес, — отсюда и название.
+
+Системы ведут таблицу ARP, в которой хранится информация о том, какие IP-адреса каким MAC-адресам соответствуют. При попытке отправить пакет на IP-адрес система сначала обращается к этой таблице, чтобы проверить, известен ли уже MAC-адрес. Если значение есть в кеше, ARP не используется.
 </b></details>
 
 <details>
-<summary>What is DHCP? How does it work?</summary><br><b>
+<summary>Что такое TTL? Что он помогает предотвратить?</summary><br><b>
 
-It stands for Dynamic Host Configuration Protocol and allocates IP addresses, subnet masks, and gateways to hosts. This is how it works:
-
-* A host upon entering a network broadcasts a message in search of a DHCP server (DHCP DISCOVER)
-* An offer message is sent back by the DHCP server as a packet containing lease time, subnet mask, IP addresses, etc (DHCP OFFER)
-* Depending on which offer is accepted, the client sends back a reply broadcast letting all DHCP servers know (DHCP REQUEST)
-* The server sends an acknowledgment (DHCP ACK)
-
-Read more [here](https://linuxjourney.com/lesson/dhcp-overview)
+- TTL (Time to Live, время жизни) — это значение в пакете IP (Internet Protocol), которое определяет, сколько переходов (хопов) или маршрутизаторов может пройти пакет, прежде чем он будет отброшен. Каждый раз, когда маршрутизатор пересылает пакет, значение TTL уменьшается на единицу. Когда TTL достигает нуля, пакет отбрасывается, а отправителю возвращается сообщение ICMP (Internet Control Message Protocol) о том, что срок жизни пакета истёк.
+- TTL используется, чтобы пакеты не циркулировали в сети бесконечно, что может вызывать перегрузку и снижать производительность сети.
+- Он также помогает не допустить зацикливания пакетов в петлях маршрутизации, когда пакеты постоянно ходят между одними и теми же маршрутизаторами, так и не достигая адресата.
+- Кроме того, TTL может помогать обнаруживать и предотвращать атаки с подменой IP-адреса (IP spoofing), когда злоумышленник пытается выдать себя за другое устройство в сети, используя ложный или поддельный IP-адрес. Ограничивая число переходов, которые может пройти пакет, TTL помогает не допустить маршрутизации пакетов к нелегитимным адресатам.
 </b></details>
 
 <details>
-<summary>Can you have two DHCP servers on the same network? How does it work?</summary><br><b>
+<summary>Что такое DHCP? Как он работает?</summary><br><b>
 
-It is possible to have two DHCP servers on the same network, however, it is not recommended, and it is important to configure them carefully to prevent conflicts and configuration problems.
-- When two DHCP servers are configured on the same network, there is a risk that both servers will assign IP addresses and other network configuration settings to the same device, which can cause conflicts and connectivity issues. Additionally, if the DHCP servers are configured with different network settings or options, devices on the network may receive conflicting or inconsistent configuration settings.
-- However, in some cases, it may be necessary to have two DHCP servers on the same network, such as in large networks where one DHCP server may not be able to handle all the requests. In such cases, DHCP servers can be configured to serve different IP address ranges or different subnets, so they do not interfere with each other.
+Это Dynamic Host Configuration Protocol (протокол динамической настройки узла); он выделяет хостам IP-адреса, маски подсети и шлюзы. Работает это так:
+
+* Хост, подключаясь к сети, рассылает широковещательное сообщение в поисках DHCP-сервера (DHCP DISCOVER)
+* DHCP-сервер отправляет в ответ сообщение-предложение в виде пакета, содержащего время аренды, маску подсети, IP-адреса и т.д. (DHCP OFFER)
+* В зависимости от того, какое предложение принято, клиент отправляет ответное широковещательное сообщение, уведомляя все DHCP-серверы (DHCP REQUEST)
+* Сервер отправляет подтверждение (DHCP ACK)
+
+Подробнее — [здесь](https://linuxjourney.com/lesson/dhcp-overview)
 </b></details>
 
 <details>
-<summary>What is SSL tunneling? How does it work?</summary><br><b>
+<summary>Можно ли держать два DHCP-сервера в одной сети? Как это работает?</summary><br><b>
 
-- SSL (Secure Sockets Layer) tunneling is a technique used to establish a secure, encrypted connection between two endpoints over an insecure network, such as the Internet. The SSL tunnel is created by encapsulating the traffic within an SSL connection, which provides confidentiality, integrity, and authentication.
-
-Here's how SSL tunneling works:
-
-1. A client initiates an SSL connection to a server, which involves a handshake process to establish the SSL session.
-2. Once the SSL session is established, the client and server negotiate encryption parameters, such as the encryption algorithm and key length, then exchange digital certificates to authenticate each other.
-3. The client then sends traffic through the SSL tunnel to the server, which decrypts the traffic and forwards it to its destination.
-4. The server sends traffic back through the SSL tunnel to the client, which decrypts the traffic and forwards it to the application.
+Два DHCP-сервера в одной сети иметь можно, однако это не рекомендуется, и важно тщательно их настроить, чтобы избежать конфликтов и проблем с конфигурацией.
+- Когда в одной сети настроены два DHCP-сервера, есть риск, что оба сервера назначат одному и тому же устройству IP-адреса и другие сетевые параметры, что может вызвать конфликты и проблемы со связностью. Кроме того, если DHCP-серверы настроены с разными сетевыми параметрами или опциями, устройства в сети могут получить противоречивые или несогласованные настройки.
+- Однако в некоторых случаях два DHCP-сервера в одной сети могут понадобиться, например в больших сетях, где один DHCP-сервер может не справляться со всеми запросами. В таких случаях DHCP-серверы можно настроить на обслуживание разных диапазонов IP-адресов или разных подсетей, чтобы они не мешали друг другу.
 </b></details>
 
 <details>
-<summary>What is a socket? Where can you see the list of sockets in your system?</summary><br><b>
+<summary>Что такое SSL-туннелирование? Как оно работает?</summary><br><b>
 
-- A socket is a software endpoint that enables two-way communication between processes over a network. Sockets provide a standardized interface for network communication, allowing applications to send and receive data across a network. To view the list of open sockets on a Linux system: 
+- SSL-туннелирование (SSL, Secure Sockets Layer) — это техника, позволяющая установить защищённое зашифрованное соединение между двумя конечными точками через незащищённую сеть, например интернет. SSL-туннель создаётся путём инкапсуляции трафика в SSL-соединение, которое обеспечивает конфиденциальность, целостность и аутентификацию.
+
+Вот как работает SSL-туннелирование:
+
+1. Клиент инициирует SSL-соединение с сервером, что включает процесс рукопожатия для установления SSL-сеанса.
+2. После установления SSL-сеанса клиент и сервер согласуют параметры шифрования, такие как алгоритм шифрования и длина ключа, а затем обмениваются цифровыми сертификатами для взаимной аутентификации.
+3. Затем клиент отправляет трафик через SSL-туннель серверу, который расшифровывает трафик и пересылает его адресату.
+4. Сервер отправляет трафик обратно через SSL-туннель клиенту, который расшифровывает трафик и передаёт его приложению.
+</b></details>
+
+<details>
+<summary>Что такое сокет? Где посмотреть список сокетов в системе?</summary><br><b>
+
+- Сокет — это программная конечная точка, которая обеспечивает двустороннее взаимодействие между процессами по сети. Сокеты предоставляют стандартизированный интерфейс для сетевого взаимодействия, позволяя приложениям отправлять и получать данные по сети. Чтобы посмотреть список открытых сокетов в Linux-системе: 
 ***netstat -an***
-- This command displays a list of all open sockets, along with their protocol, local address, foreign address, and state.
+- Эта команда выводит список всех открытых сокетов вместе с их протоколом, локальным адресом, удалённым адресом и состоянием.
 </b></details>
 
 <details>
-<summary>What is IPv6? Why should we consider using it if we have IPv4?</summary><br><b>
+<summary>Что такое IPv6? Почему стоит рассмотреть его использование, если есть IPv4?</summary><br><b>
 
-- IPv6 (Internet Protocol version 6) is the latest version of the Internet Protocol (IP), which is used to identify and communicate with devices on a network. IPv6 addresses are 128-bit addresses and are expressed in hexadecimal notation, such as 2001:0db8:85a3:0000:0000:8a2e:0370:7334.
+- IPv6 (Internet Protocol version 6) — последняя версия интернет-протокола (IP), который используется для идентификации устройств в сети и взаимодействия с ними. Адреса IPv6 — 128-битные и записываются в шестнадцатеричной нотации, например 2001:0db8:85a3:0000:0000:8a2e:0370:7334.
 
-There are several reasons why we should consider using IPv6 over IPv4:
+Есть несколько причин рассмотреть использование IPv6 вместо IPv4:
 
-1. Address space: IPv4 has a limited address space, which has been exhausted in many parts of the world. IPv6 provides a much larger address space, allowing for trillions of unique IP addresses.
-2. Security: IPv6 includes built-in support for IPsec, which provides end-to-end encryption and authentication for network traffic.
-3. Performance: IPv6 includes features that can help to improve network performance, such as multicast routing, which allows a single packet to be sent to multiple destinations simultaneously.
-4. Simplified network configuration: IPv6 includes features that can simplify network configuration, such as stateless autoconfiguration, which allows devices to automatically configure their own IPv6 addresses without the need for a DHCP server.
-5. Better mobility support: IPv6 includes features that can improve mobility support, such as Mobile IPv6, which allows devices to maintain their IPv6 addresses as they move between different networks.
+1. Адресное пространство: у IPv4 ограниченное адресное пространство, которое во многих частях мира уже исчерпано. IPv6 предоставляет гораздо большее адресное пространство, позволяя использовать триллионы уникальных IP-адресов.
+2. Безопасность: IPv6 включает встроенную поддержку IPsec, обеспечивающего сквозное шифрование и аутентификацию сетевого трафика.
+3. Производительность: в IPv6 есть возможности, помогающие повысить производительность сети, например многоадресная маршрутизация (multicast routing), позволяющая одновременно отправить один пакет нескольким адресатам.
+4. Упрощённая настройка сети: в IPv6 есть возможности, упрощающие настройку сети, например автоконфигурация без сохранения состояния (stateless autoconfiguration), позволяющая устройствам автоматически настраивать собственные IPv6-адреса без DHCP-сервера.
+5. Лучшая поддержка мобильности: в IPv6 есть возможности для улучшения поддержки мобильности, например Mobile IPv6, позволяющий устройствам сохранять свои IPv6-адреса при перемещении между разными сетями.
 </b></details>
 
 <details>
-<summary>What is VLAN?</summary><br><b>
+<summary>Что такое VLAN?</summary><br><b>
 
-- A VLAN (Virtual Local Area Network) is a logical network that groups together a set of devices on a physical network, regardless of their physical location. VLANs are created by configuring network switches to assign a specific VLAN ID to frames sent by devices connected to a specific port or group of ports on the switch.
+- VLAN (Virtual Local Area Network, виртуальная локальная сеть) — это логическая сеть, объединяющая набор устройств физической сети независимо от их физического расположения. VLAN создаются путём настройки сетевых коммутаторов так, чтобы кадрам, отправляемым устройствами, подключёнными к определённому порту или группе портов коммутатора, назначался определённый VLAN ID.
 </b></details>
 
 <details>
-<summary>What is MTU?</summary><br><b>
+<summary>Что такое MTU?</summary><br><b>
 	
-MTU stands for Maximum Transmission Unit. It's the size of the largest PDU (protocol Data Unit) that can be sent in a single transaction.
+MTU расшифровывается как Maximum Transmission Unit (максимальный блок передачи). Это размер самого большого PDU (Protocol Data Unit, блок данных протокола), который можно отправить за одну передачу.
 </b></details>
 
 <details>
-<summary>What happens if you send a packet that is bigger than the MTU?</summary><br><b>
+<summary>Что произойдёт, если отправить пакет больше MTU?</summary><br><b>
 	
-With the IPv4 protocol, the router can fragment the PDU and then send all the fragmented PDU through the transaction.
+В протоколе IPv4 маршрутизатор может фрагментировать PDU, а затем отправить все фрагменты PDU в рамках передачи.
 	
-With IPv6 protocol, it issues an error to the user's computer.
+В протоколе IPv6 компьютеру пользователя возвращается ошибка.
 </b></details>
 
 <details>
-<summary>True or False? Ping is using UDP because it doesn't care about reliable connection</summary><br><b>
+<summary>Верно или неверно? Ping использует UDP, потому что ему не важна надёжность соединения</summary><br><b>
 
-False. Ping is actually using ICMP (Internet Control Message Protocol) which is a network protocol used to send diagnostic messages and control messages related to network communication.
+Неверно. На самом деле ping использует ICMP (Internet Control Message Protocol) — сетевой протокол для отправки диагностических и управляющих сообщений, связанных с сетевым взаимодействием.
 </b></details>
 
 <details>
-<summary>What is SDN?</summary><br><b>
+<summary>Что такое SDN?</summary><br><b>
 
-- SDN stands for Software-Defined Networking. It is an approach to network management that emphasizes the centralization of network control, enabling administrators to manage network behavior through a software abstraction.
-- In a traditional network, network devices such as routers, switches, and firewalls are configured and managed individually, using specialized software or command-line interfaces. In contrast, SDN separates the network control plane from the data plane, allowing administrators to manage network behavior through a centralized software controller.
+- SDN расшифровывается как Software-Defined Networking (программно-определяемые сети). Это подход к управлению сетью, делающий упор на централизацию управления сетью и позволяющий администраторам управлять поведением сети через программную абстракцию.
+- В традиционной сети сетевые устройства, такие как маршрутизаторы, коммутаторы и межсетевые экраны, настраиваются и управляются по отдельности с помощью специализированного ПО или интерфейсов командной строки. SDN, напротив, отделяет плоскость управления сетью (control plane) от плоскости данных (data plane), позволяя администраторам управлять поведением сети через централизованный программный контроллер.
 </b></details>
 
 <details>
-<summary>What is ICMP? What is it used for?</summary><br><b>
+<summary>Что такое ICMP? Для чего он используется?</summary><br><b>
 
-- ICMP stands for Internet Control Message Protocol. It is a protocol used for diagnostic and control purposes in IP networks. It is a part of the Internet Protocol suite, operating at the network layer.
+- ICMP расшифровывается как Internet Control Message Protocol (протокол межсетевых управляющих сообщений). Это протокол, используемый для диагностики и управления в IP-сетях. Он входит в стек интернет-протоколов и работает на сетевом уровне.
 
-ICMP messages are used for a variety of purposes, including:
-1. Error reporting: ICMP messages are used to report errors that occur in the network, such as a packet that could not be delivered to its destination.
-2. Ping: ICMP is used to send ping messages, which are used to test whether a host or network is reachable and to measure the round-trip time for packets.
-3. Path MTU discovery: ICMP is used to discover the Maximum Transmission Unit (MTU) of a path, which is the largest packet size that can be transmitted without fragmentation.
-4. Traceroute: ICMP is used by the traceroute utility to trace the path that packets take through the network.
-5. Router discovery: ICMP is used to discover the routers in a network.
+Сообщения ICMP используются для разных целей, в том числе:
+1. Сообщения об ошибках: сообщения ICMP используются, чтобы сообщать об ошибках, возникающих в сети, например о пакете, который не удалось доставить адресату.
+2. Ping: ICMP используется для отправки ping-сообщений, с помощью которых проверяют доступность хоста или сети и измеряют время приёма-передачи (round-trip time) пакетов.
+3. Определение MTU пути (Path MTU discovery): ICMP используется для определения Maximum Transmission Unit (MTU) пути — максимального размера пакета, который можно передать без фрагментации.
+4. Traceroute: ICMP используется утилитой traceroute для отслеживания пути, который проходят пакеты по сети.
+5. Обнаружение маршрутизаторов: ICMP используется для обнаружения маршрутизаторов в сети.
 </b></details>
 
 <details>
-<summary>What is NAT? How does it work?</summary><br><b>
+<summary>Что такое NAT? Как он работает?</summary><br><b>
 
-NAT stands for Network Address Translation. It’s a way to map multiple local private addresses to a public one before transferring the information. Organizations that want multiple devices to employ a single IP address use NAT, as do most home routers.
-For example, your computer's private IP could be 192.168.1.100, but your router maps the traffic to its public IP (e.g. 1.1.1.1). Any device on the internet would see the traffic coming from your public IP (1.1.1.1) instead of your private IP (192.168.1.100).
+NAT расшифровывается как Network Address Translation (трансляция сетевых адресов). Это способ сопоставить несколько локальных частных адресов одному публичному перед передачей информации. NAT используют организации, которым нужно, чтобы несколько устройств работали через один IP-адрес, а также большинство домашних маршрутизаторов.
+Например, частный IP-адрес компьютера может быть 192.168.1.100, но маршрутизатор сопоставляет трафик со своим публичным IP-адресом (например, 1.1.1.1). Любое устройство в интернете увидит трафик, приходящий с вашего публичного IP-адреса (1.1.1.1), а не с частного (192.168.1.100).
 </b></details>
 
 <details>
-<summary>Which port number is used in each of the following protocols?:
+<summary>Какой номер порта используется в каждом из следующих протоколов?
 
   * SSH
   * SMTP
@@ -497,559 +497,559 @@ For example, your computer's private IP could be 192.168.1.100, but your router 
 </b></details>
 
 <details>
-<summary>Which factors affect network performance?</summary><br><b>
+<summary>Какие факторы влияют на производительность сети?</summary><br><b>
 
-Several factors can affect network performance, including:
+На производительность сети могут влиять несколько факторов, в том числе:
 
-1. Bandwidth: The available bandwidth of a network connection can significantly impact its performance. Networks with limited bandwidth can experience slow data transfer rates, high latency, and poor responsiveness.
-2. Latency: Latency refers to the delay that occurs when data is transmitted from one point in a network to another. High latency can result in slow network performance, especially for real-time applications like video conferencing and online gaming.
-3. Network congestion: When too many devices are using a network at the same time, network congestion can occur, leading to slow data transfer rates and poor network performance.
-4. Packet loss: Packet loss occurs when packets of data are dropped during transmission. This can result in slower network speeds and lower overall network performance.
-5. Network topology: The physical layout of a network, including the placement of switches, routers, and other network devices, can impact network performance.
-6. Network protocol: Different network protocols have different performance characteristics, which can impact network performance. For example, TCP is a reliable protocol that can guarantee the delivery of data, but it can also result in slower performance due to the overhead required for error checking and retransmission.
-7. Network security: Security measures such as firewalls and encryption can impact network performance, especially if they require significant processing power or introduce additional latency.
-8. Distance: The physical distance between devices on a network can impact network performance, especially for wireless networks where signal strength and interference can affect connectivity and data transfer rates.
+1. Полоса пропускания: доступная полоса пропускания сетевого соединения может существенно влиять на его производительность. В сетях с ограниченной полосой пропускания возможны низкая скорость передачи данных, высокая задержка и плохая отзывчивость.
+2. Задержка (latency): задержка — это время, которое проходит при передаче данных из одной точки сети в другую. Высокая задержка может приводить к низкой производительности сети, особенно для приложений реального времени, таких как видеоконференции и онлайн-игры.
+3. Перегрузка сети: когда слишком много устройств одновременно используют сеть, может возникнуть перегрузка, ведущая к низкой скорости передачи данных и плохой производительности сети.
+4. Потеря пакетов: потеря пакетов происходит, когда пакеты данных отбрасываются при передаче. Это может приводить к снижению скорости сети и общей производительности.
+5. Топология сети: физическая схема сети, включая размещение коммутаторов, маршрутизаторов и других сетевых устройств, может влиять на производительность сети.
+6. Сетевой протокол: у разных сетевых протоколов разные характеристики производительности, что может влиять на производительность сети. Например, TCP — надёжный протокол, который может гарантировать доставку данных, но из-за накладных расходов на проверку ошибок и повторную передачу он может работать медленнее.
+7. Сетевая безопасность: такие меры безопасности, как межсетевые экраны и шифрование, могут влиять на производительность сети, особенно если они требуют значительных вычислительных ресурсов или добавляют задержку.
+8. Расстояние: физическое расстояние между устройствами в сети может влиять на производительность сети, особенно в беспроводных сетях, где мощность сигнала и помехи влияют на связность и скорость передачи данных.
 </b></details>
 
 <details>
-<summary>What is APIPA?</summary><br><b>
+<summary>Что такое APIPA?</summary><br><b>
 
-APIPA is a set of IP addresses that devices are allocated
-when the main DHCP server is not reachable
+APIPA — это набор IP-адресов, которые назначаются устройствам,
+когда основной DHCP-сервер недоступен
 
 </b></details>
 
 <details>
-<summary>What IP range does APIPA use?</summary><br><b>
+<summary>Какой диапазон IP-адресов использует APIPA?</summary><br><b>
 
-APIPA uses the IP range: 169.254.0.1 - 169.254.255.254.
+APIPA использует диапазон IP-адресов: 169.254.0.1 - 169.254.255.254.
 
 </b></details>
 
-#### Control Plane and Data Plane
+#### Плоскость управления (Control Plane) и плоскость данных (Data Plane)
 
 <details>
-<summary>What does "control plane" refer to?</summary><br><b>
+<summary>Что понимается под «плоскостью управления» (control plane)?</summary><br><b>
 
-The control plane is a part of the network that decides how to route and forward packets to a different location.
+Плоскость управления — это часть сети, которая решает, как маршрутизировать и пересылать пакеты в другое место.
 </b></details>
 
 <details>
-<summary>What does "data plane" refer to?</summary><br><b>
+<summary>Что понимается под «плоскостью данных» (data plane)?</summary><br><b>
 
-The data plane is a part of the network that actually forwards the data/packets.
+Плоскость данных — это часть сети, которая фактически пересылает данные/пакеты.
 </b></details>
 
 <details>
-<summary>What does "management plane" refer to?</summary><br><b>
+<summary>Что понимается под «плоскостью менеджмента» (management plane)?</summary><br><b>
 
-It refers to monitoring and management functions.
+Имеются в виду функции мониторинга и управления.
 </b></details>
 
 <details>
-<summary>To which plane (data, control, ...) does creating routing tables belong to?</summary><br><b>
+<summary>К какой плоскости (данных, управления, ...) относится создание таблиц маршрутизации?</summary><br><b>
 
-Control Plane.
+К плоскости управления (Control Plane).
 </b></details>
 
 <details>
-<summary>Explain Spanning Tree Protocol (STP).</summary><br><b>
+<summary>Объясните протокол связующего дерева (Spanning Tree Protocol, STP).</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is link aggregation? Why is it used?</summary><br><b>
+<summary>Что такое агрегирование каналов (link aggregation)? Зачем оно используется?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is Asymmetric Routing? How to deal with it?</summary><br><b>
+<summary>Что такое асимметричная маршрутизация (Asymmetric Routing)? Как с ней справляться?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What overlay (tunnel) protocols are you familiar with?</summary><br><b>
+<summary>Какие оверлейные (туннельные) протоколы вам известны?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is GRE? How does it work?</summary><br><b>
+<summary>Что такое GRE? Как он работает?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is VXLAN? How does it work?</summary><br><b>
+<summary>Что такое VXLAN? Как он работает?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is SNAT?</summary><br><b>
+<summary>Что такое SNAT?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain OSPF.</summary><br><b>
+<summary>Объясните, что такое OSPF.</summary><br><b>
 
 
-OSPF (Open Shortest Path First) is a routing protocol that can be implemented on various types of routers. In general, OSPF is supported on most modern routers, including those from vendors such as Cisco, Juniper, and Huawei. The protocol is designed to work with IP-based networks, including both IPv4 and IPv6. Also, it uses a hierarchical network design, where routers are grouped into areas, with each area having its own topology map and routing table. This design helps to reduce the amount of routing information that needs to be exchanged between routers and improve network scalability.
+OSPF (Open Shortest Path First) — это протокол маршрутизации, который может быть реализован на разных типах маршрутизаторов. В целом OSPF поддерживается большинством современных маршрутизаторов, в том числе от таких производителей, как Cisco, Juniper и Huawei. Протокол предназначен для работы в IP-сетях, как IPv4, так и IPv6. Кроме того, он использует иерархическую архитектуру сети, в которой маршрутизаторы группируются в области (areas), и у каждой области своя карта топологии и своя таблица маршрутизации. Такая архитектура помогает сократить объём маршрутной информации, которой должны обмениваться маршрутизаторы, и улучшить масштабируемость сети.
 
-The OSPF 4 Types of routers are:
-  * Internal Router
-  * Area Border Routers
-  * Autonomous Systems Boundary Routers
-  * Backbone Routers
+В OSPF есть 4 типа маршрутизаторов:
+  * Внутренний маршрутизатор (Internal Router)
+  * Пограничные маршрутизаторы области (Area Border Routers)
+  * Пограничные маршрутизаторы автономной системы (Autonomous Systems Boundary Routers)
+  * Магистральные маршрутизаторы (Backbone Routers)
 
-  Learn more about OSPF router types: https://www.educba.com/ospf-router-types/
+  Подробнее о типах маршрутизаторов OSPF: https://www.educba.com/ospf-router-types/
 </b></details>
 
 <details>
-<summary>What is latency?</summary><br><b>
+<summary>Что такое задержка (latency)?</summary><br><b>
 	
-Latency is the time taken for information to reach its destination from the source.
+Задержка — это время, за которое информация доходит от источника до адресата.
 </b></details>
 
 <details>
-<summary>What is bandwidth?</summary><br><b>
+<summary>Что такое полоса пропускания (bandwidth)?</summary><br><b>
 	
-Bandwidth is the capacity of a communication channel to measure how much data the latter can handle over a specific time period. More bandwidth would imply more traffic handling and thus more data transfer.
+Полоса пропускания — это ёмкость канала связи, показывающая, какой объём данных он может обработать за определённый период времени. Большая полоса пропускания означает возможность обрабатывать больше трафика и, следовательно, передавать больше данных.
 </b></details>
 
 <details>
-<summary>What is throughput?</summary><br><b>
+<summary>Что такое пропускная способность (throughput)?</summary><br><b>
 	
-Throughput refers to the measurement of the real amount of data transferred over a certain period of time across any transmission channel.
+Пропускная способность — это измерение реального объёма данных, переданных за определённый период времени по любому каналу передачи.
 </b></details>
 
 <details>
-<summary>When performing a search query, what is more important, latency or throughput? And how to ensure that we manage global infrastructure?
+<summary>Что важнее при выполнении поискового запроса — задержка или пропускная способность? И как обеспечить это при управлении глобальной инфраструктурой?
 </summary><br><b>
 
-Latency. To have good latency, a search query should be forwarded to the closest data center.
+Задержка. Чтобы задержка была низкой, поисковый запрос следует направлять в ближайший центр обработки данных.
 </b></details>
 
 <details>
-<summary>When uploading a video, what is more important, latency or throughput? And how to assure that?</summary><br><b>
+<summary>Что важнее при загрузке видео — задержка или пропускная способность? И как это обеспечить?</summary><br><b>
 
-Throughput. To have good throughput, the upload stream should be routed to an underutilized link.
+Пропускная способность. Чтобы пропускная способность была высокой, поток загрузки следует направлять по недогруженному каналу.
 </b></details>
 
 <details>
-<summary>What other considerations (except latency and throughput) are there when forwarding requests?</summary><br><b>
+<summary>Что ещё (кроме задержки и пропускной способности) нужно учитывать при пересылке запросов?</summary><br><b>
 
-* Keep caches updated (which means the request could be forwarded not to the closest data center)
+* Поддерживать кеши в актуальном состоянии (что означает, что запрос может быть направлен не в ближайший центр обработки данных)
 </b></details>
 
 <details>
-<summary>Explain Spine & Leaf</summary><br><b>
-"Spine & Leaf" is a networking topology commonly used in data center environments to connect multiple switches and manage network traffic efficiently. It is also known as "spine-leaf" architecture or "leaf-spine" topology. This design provides high bandwidth, low latency, and scalability, making it ideal for modern data centers handling large volumes of data and traffic.
+<summary>Объясните архитектуру Spine & Leaf</summary><br><b>
+«Spine & Leaf» — это сетевая топология, которая обычно используется в центрах обработки данных для соединения множества коммутаторов и эффективного управления сетевым трафиком. Её также называют архитектурой «spine-leaf» или топологией «leaf-spine». Эта архитектура обеспечивает высокую полосу пропускания, низкую задержку и масштабируемость, что делает её идеальной для современных ЦОД, обрабатывающих большие объёмы данных и трафика.
 
-Within a Spine & Leaf network there are two main tipology of switches:
+В сети Spine & Leaf есть два основных типа коммутаторов:
 
-* Spine Switches: Spine switches are high-performance switches arranged in a spine layer. These switches act as the core of the network and are typically interconnected with each leaf switch. Each spine switch is connected to all the leaf switches in the data center.
-* Leaf Switches: Leaf switches are connected to end devices like servers, storage arrays, and other networking equipment. Each leaf switch is connected to every spine switch in the data center. This creates a non-blocking, full-mesh connectivity between leaf and spine switches, ensuring any leaf switch can communicate with any other leaf switch with maximum throughput.
+* Spine-коммутаторы (Spine Switches): высокопроизводительные коммутаторы, образующие spine-уровень. Эти коммутаторы выступают ядром сети и, как правило, соединены с каждым leaf-коммутатором. Каждый spine-коммутатор подключён ко всем leaf-коммутаторам в ЦОД.
+* Leaf-коммутаторы (Leaf Switches): к leaf-коммутаторам подключаются конечные устройства — серверы, системы хранения данных и другое сетевое оборудование. Каждый leaf-коммутатор подключён к каждому spine-коммутатору в ЦОД. Так создаётся неблокирующая полносвязная (full-mesh) связность между leaf- и spine-коммутаторами, благодаря которой любой leaf-коммутатор может взаимодействовать с любым другим leaf-коммутатором с максимальной пропускной способностью.
 
-The Spine & Leaf architecture has become increasingly popular in data centers due to its ability to handle the demands of modern cloud computing, virtualization, and big data applications, providing a scalable, high-performance, and reliable network infrastructure
+Архитектура Spine & Leaf становится всё популярнее в ЦОД благодаря способности справляться с нагрузками современных облачных вычислений, виртуализации и приложений для работы с большими данными, обеспечивая масштабируемую, высокопроизводительную и надёжную сетевую инфраструктуру
 </b></details>
 
 <details>
-<summary>What is Network Congestion? What can cause it?</summary><br><b>
+<summary>Что такое перегрузка сети (Network Congestion)? Чем она может быть вызвана?</summary><br><b>
 
-Network congestion occurs when there is too much data to transmit on a network and it doesn't have enough capacity to handle the demand. </br>
-This can lead to increased latency and packet loss. The causes can be multiple, such as high network usage, large file transfers, malware, hardware issues, or network design problems. </br>
-To prevent network congestion, it's important to monitor your network usage and implement strategies to limit or manage the demand.
+Перегрузка сети возникает, когда данных для передачи по сети слишком много, а её ёмкости недостаточно, чтобы справиться с нагрузкой. </br>
+Это может приводить к росту задержки и потере пакетов. Причин может быть много: высокая загрузка сети, передача больших файлов, вредоносное ПО, проблемы с оборудованием или ошибки в проектировании сети. </br>
+Чтобы предотвратить перегрузку сети, важно отслеживать использование сети и применять стратегии ограничения нагрузки или управления ею.
 </b></details>
 
 <details>
-<summary>What can you tell me about the UDP packet format? What about the TCP packet format? How is it different?</summary><br><b>
+<summary>Что можно сказать о формате пакета UDP? А о формате пакета TCP? Чем они различаются?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the exponential backoff algorithm? Where is it used?</summary><br><b>
+<summary>Что такое алгоритм экспоненциальной выдержки (exponential backoff)? Где он используется?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Using Hamming code, what would be the code word for the following data word 100111010001101?</summary><br><b>
+<summary>Каким будет кодовое слово по коду Хэмминга для слова данных 100111010001101?</summary><br><b>
 
 00110011110100011101
 </b></details>
 
 <details>
-<summary>Give examples of protocols found in the application layer</summary><br><b>
+<summary>Приведите примеры протоколов прикладного уровня</summary><br><b>
 
-* Hypertext Transfer Protocol (HTTP) - used for the webpages on the internet
-* Simple Mail Transfer Protocol (SMTP) - email transmission
-* Telecommunications Network - (TELNET) - terminal emulation to allow a client access to a telnet server
-* File Transfer Protocol (FTP) - facilitates the transfer of files between any two machines
-* Domain Name System (DNS) - domain name translation
-* Dynamic Host Configuration Protocol (DHCP) - allocates IP addresses, subnet masks, and gateways to hosts
-* Simple Network Management Protocol (SNMP) - gathers data on devices on the network
+* Hypertext Transfer Protocol (HTTP) — используется для веб-страниц в интернете
+* Simple Mail Transfer Protocol (SMTP) — передача электронной почты
+* Telecommunications Network - (TELNET) — эмуляция терминала, позволяющая клиенту получить доступ к telnet-серверу
+* File Transfer Protocol (FTP) — обеспечивает передачу файлов между любыми двумя машинами
+* Domain Name System (DNS) — преобразование доменных имён
+* Dynamic Host Configuration Protocol (DHCP) — выделяет хостам IP-адреса, маски подсети и шлюзы
+* Simple Network Management Protocol (SNMP) — собирает данные об устройствах в сети
 </b></details>
 
 <details>
-<summary>Give examples of protocols found in the Network Layer</summary><br><b>
+<summary>Приведите примеры протоколов сетевого уровня</summary><br><b>
 
-* Internet Protocol (IP) - assists in routing packets from one machine to another
-* Internet Control Message Protocol (ICMP) - lets one know what is going such as error messages and debugging information
+* Internet Protocol (IP) — помогает маршрутизировать пакеты от одной машины к другой
+* Internet Control Message Protocol (ICMP) — сообщает о происходящем, например передаёт сообщения об ошибках и отладочную информацию
 </b></details>
 
 <details>
-<summary>What is HSTS?</summary><br><b>
-HTTP Strict Transport Security is a web server directive that informs user agents and web browsers how to handle its connection through a response header sent at the very beginning and back to the browser. This forces connections over HTTPS encryption, disregarding any script's call to load any resource in that domain over HTTP.
+<summary>Что такое HSTS?</summary><br><b>
+HTTP Strict Transport Security — это директива веб-сервера, которая сообщает пользовательским агентам и веб-браузерам, как обращаться с соединением, через заголовок ответа, отправляемый браузеру в самом начале. Это принудительно переводит соединения на шифрование HTTPS, игнорируя вызовы любых скриптов, пытающихся загрузить какой-либо ресурс этого домена по HTTP.
 
-Read more [here](https://www.globalsign.com/en/blog/what-is-hsts-and-how-do-i-use-it#:~:text=HTTP%20Strict%20Transport%20Security%20(HSTS,and%20back%20to%20the%20browser.)
+Подробнее — [здесь](https://www.globalsign.com/en/blog/what-is-hsts-and-how-do-i-use-it#:~:text=HTTP%20Strict%20Transport%20Security%20(HSTS,and%20back%20to%20the%20browser.)
 </b></details>
 
-#### Network - Misc
+#### Сети — разное
 
 <details>
-<summary>What is the Internet? Is it the same as the World Wide Web?</summary><br><b>
+<summary>Что такое интернет? Это то же самое, что Всемирная паутина (World Wide Web)?</summary><br><b>
 
-The internet refers to a network of networks, transferring huge amounts of data around the globe.<br>
-The World Wide Web is an application running on millions of servers, on top of the internet, accessed through what is known as the web browser
+Интернет — это сеть сетей, передающая огромные объёмы данных по всему миру.<br>
+Всемирная паутина (World Wide Web) — это приложение, работающее на миллионах серверов поверх интернета, доступ к которому осуществляется через так называемый веб-браузер
 </b></details>
 
 <details>
-<summary>What is the ISP?</summary><br><b>
+<summary>Что такое ISP?</summary><br><b>
 
-ISP (Internet Service Provider) is the local internet company provider.
+ISP (Internet Service Provider) — это местная компания — поставщик интернет-услуг (интернет-провайдер).
 </b></details>
 
-## Operating System
+## Операционные системы
 
-### Operating System Exercises
+### Упражнения по операционным системам
 
-|Name|Topic|Objective & Instructions|Solution|Comments|
+|Название|Тема|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|----|
-|Fork 101|Fork|[Link](topics/os/fork_101.md)|[Link](topics/os/solutions/fork_101_solution.md)
-|Fork 102|Fork|[Link](topics/os/fork_102.md)|[Link](topics/os/solutions/fork_102_solution.md)
+|Fork 101|Fork|[Ссылка](topics/os/fork_101.md)|[Ссылка](topics/os/solutions/fork_101_solution.md)
+|Fork 102|Fork|[Ссылка](topics/os/fork_102.md)|[Ссылка](topics/os/solutions/fork_102_solution.md)
 
-### Operating System - Self Assessment
+### Операционные системы — самопроверка
 
 <details>
-<summary>What is an operating system?</summary><br><b>
+<summary>Что такое операционная система?</summary><br><b>
 
-From the book "Operating Systems: Three Easy Pieces":
+Из книги «Operating Systems: Three Easy Pieces»:
 
-"responsible for making it easy to run programs (even allowing you to seemingly run many at the same time), allowing programs to share memory, enabling programs to interact with devices, and other fun stuff like that".
+«отвечает за то, чтобы программы было легко запускать (и даже позволяет как будто бы запускать много программ одновременно), позволяет программам совместно использовать память, даёт программам возможность взаимодействовать с устройствами и прочие интересные вещи в этом роде».
 </b></details>
 
-#### Operating System - Process
+#### Операционные системы — процессы
 
 <details>
-<summary>Can you explain what is a process?</summary><br><b>
+<summary>Объясните, что такое процесс</summary><br><b>
 
-A process is a running program. A program is one or more instructions and the program (or process) is executed by the operating system.
-</b></details>
-
-<details>
-<summary>If you had to design an API for processes in an operating system, what would this API look like?</summary><br><b>
-
-It would support the following:
-
-* Create - allow to create new processes
-* Delete - allow to remove/destroy processes
-* State - allow to check the state of the process, whether it's running, stopped, waiting, etc.
-* Stop - allow to stop a running process
+Процесс — это выполняющаяся программа. Программа — это одна или несколько инструкций, а программа (или процесс) выполняется операционной системой.
 </b></details>
 
 <details>
-<summary>How a process is created?</summary><br><b>
+<summary>Если бы нужно было спроектировать API для процессов в операционной системе, как бы выглядел этот API?</summary><br><b>
 
-* The OS is reading program's code and any additional relevant data
-* Program's code is loaded into the memory or more specifically, into the address space of the process.
-* Memory is allocated for program's stack (aka run-time stack). The stack also initialized by the OS with data like argv, argc and parameters to main()
-* Memory is allocated for program's heap which is required for dynamically allocated data like the data structures linked lists and hash tables
-* I/O initialization tasks are performed, like in Unix/Linux based systems, where each process has 3 file descriptors (input, output and error)
-* OS is running the program, starting from main()
+Он поддерживал бы следующее:
+
+* Create — создание новых процессов
+* Delete — удаление/уничтожение процессов
+* State — проверка состояния процесса: выполняется ли он, остановлен, ожидает и т.д.
+* Stop — остановка выполняющегося процесса
 </b></details>
 
 <details>
-<summary>True or False? The loading of the program into the memory is done eagerly (all at once)</summary><br><b>
+<summary>Как создаётся процесс?</summary><br><b>
 
-False. It was true in the past but today's operating systems perform lazy loading, which means only the relevant pieces required for the process to run are loaded first.
+* ОС считывает код программы и все дополнительные необходимые данные
+* Код программы загружается в память, а точнее — в адресное пространство процесса.
+* Выделяется память под стек программы (он же стек времени выполнения, run-time stack). ОС также инициализирует стек такими данными, как argv, argc и параметры для main()
+* Выделяется память под кучу (heap) программы, которая нужна для динамически выделяемых данных, например структур данных — связных списков и хеш-таблиц
+* Выполняются задачи инициализации ввода-вывода: например, в системах на основе Unix/Linux у каждого процесса есть 3 файловых дескриптора (ввод, вывод и ошибки)
+* ОС запускает программу, начиная с main()
 </b></details>
 
 <details>
-<summary>What are different states of a process?</summary><br><b>
+<summary>Верно или неверно? Программа загружается в память «жадно» (сразу целиком)</summary><br><b>
 
-* Running - it's executing instructions
-* Ready - it's ready to run, but for different reasons it's on hold
-* Blocked - it's waiting for some operation to complete, for example I/O disk request
+Неверно. Так было раньше, но современные операционные системы выполняют ленивую загрузку (lazy loading): сначала загружаются только те части, которые нужны для запуска процесса.
 </b></details>
 
 <details>
-<summary>What are some reasons for a process to become blocked?</summary><br><b>
+<summary>В каких состояниях может находиться процесс?</summary><br><b>
 
-  - I/O operations (e.g. Reading from a disk)
-  - Waiting for a packet from a network
+* Running (выполняется) — процесс выполняет инструкции
+* Ready (готов) — процесс готов к выполнению, но по разным причинам ожидает
+* Blocked (заблокирован) — процесс ждёт завершения какой-либо операции, например запроса ввода-вывода к диску
 </b></details>
 
 <details>
-<summary>What is Inter Process Communication (IPC)?</summary><br><b>
+<summary>По каким причинам процесс может оказаться заблокированным?</summary><br><b>
 
-Inter-process communication (IPC) refers to the mechanisms provided by an operating system that allow processes to manage shared data.
+  - Операции ввода-вывода (например, чтение с диска)
+  - Ожидание пакета из сети
 </b></details>
 
 <details>
-<summary>What is "time sharing"?</summary><br><b>
+<summary>Что такое межпроцессное взаимодействие (Inter Process Communication, IPC)?</summary><br><b>
 
-Even when using a system with one physical CPU, it's possible to allow multiple users to work on it and run programs. This is possible with time sharing, where computing resources are shared in a way it seems to the user, the system has multiple CPUs, but in fact it's simply one CPU shared by applying multiprogramming and multi-tasking.
+Межпроцессное взаимодействие (IPC) — это механизмы, предоставляемые операционной системой, которые позволяют процессам управлять общими данными.
 </b></details>
 
 <details>
-<summary>What is "space sharing"?</summary><br><b>
+<summary>Что такое «разделение времени» (time sharing)?</summary><br><b>
 
-Somewhat the opposite of time sharing. While in time sharing a resource is used for a while by one entity and then the same resource can be used by another resource, in space sharing the space is shared by multiple entities but in a way where it's not being transferred between them.<br>
-It's used by one entity, until this entity decides to get rid of it. Take for example storage. In storage, a file is yours, until you decide to delete it.
+Даже в системе с одним физическим CPU можно дать возможность нескольким пользователям работать на ней и запускать программы. Это возможно благодаря разделению времени, при котором вычислительные ресурсы распределяются так, что пользователю кажется, будто в системе несколько CPU, хотя на самом деле это один CPU, который разделяется с помощью мультипрограммирования и многозадачности.
 </b></details>
 
 <details>
-<summary>What component determines which process runs at a given moment in time?</summary><br><b>
+<summary>Что такое «разделение пространства» (space sharing)?</summary><br><b>
 
-CPU scheduler
+В некотором смысле это противоположность разделению времени. Если при разделении времени ресурс некоторое время используется одной сущностью, а затем тот же ресурс может использоваться другой, то при разделении пространства пространство делится между несколькими сущностями, но так, что оно не передаётся между ними.<br>
+Оно используется одной сущностью, пока эта сущность не решит от него избавиться. Возьмём, например, хранилище: файл принадлежит вам, пока вы не решите его удалить.
 </b></details>
 
-#### Operating System - Memory
+<details>
+<summary>Какой компонент определяет, какой процесс выполняется в данный момент времени?</summary><br><b>
+
+Планировщик CPU (CPU scheduler)
+</b></details>
+
+#### Операционные системы — память
 
 <details>
-<summary>What is "virtual memory" and what purpose does serve?</summary><br><b>
+<summary>Что такое «виртуальная память» и для чего она нужна?</summary><br><b>
 
-Virtual memory combines your computer's RAM with temporary space on your hard disk. When RAM runs low, virtual memory helps to move data from RAM to a space called a paging file. Moving data to paging file can free up the RAM, so your computer can complete its work. In general, the more RAM your computer has, the faster the programs run.
+Виртуальная память объединяет оперативную память (RAM) компьютера с временным пространством на жёстком диске. Когда RAM не хватает, виртуальная память помогает переместить данные из RAM в область, называемую файлом подкачки (paging file). Перемещение данных в файл подкачки освобождает RAM, чтобы компьютер мог завершить работу. В целом, чем больше у компьютера RAM, тем быстрее работают программы.
 https://www.minitool.com/lib/virtual-memory.html
 </b></details>
 
 <details>
-<summary>What is demand paging?</summary><br><b>
+<summary>Что такое подкачка по требованию (demand paging)?</summary><br><b>
 
-Demand paging is a memory management technique where pages are loaded into physical memory only when accessed by a process. It optimizes memory usage by loading pages on demand, reducing startup latency and space overhead. However, it introduces some latency when accessing pages for the first time. Overall, it’s a cost-effective approach for managing memory resources in operating systems. 
+Подкачка по требованию — это техника управления памятью, при которой страницы загружаются в физическую память только тогда, когда процесс к ним обращается. Она оптимизирует использование памяти за счёт загрузки страниц по требованию, сокращая задержку при запуске и накладные расходы на память. Однако при первом обращении к страницам возникает некоторая задержка. В целом это экономичный подход к управлению ресурсами памяти в операционных системах. 
 </b></details>
 
 <details>
-<summary>What is copy-on-write?</summary><br><b>
-Copy-on-write (COW) is a resource management concept, with the goal to reduce unnecessary copying of information. It is a concept, which is implemented for instance within the POSIX fork syscall, which creates a duplicate process of the calling process.
+<summary>Что такое копирование при записи (copy-on-write)?</summary><br><b>
+Копирование при записи (COW) — это концепция управления ресурсами, цель которой — сократить ненужное копирование информации. Эта концепция реализована, например, в системном вызове POSIX fork, который создаёт дубликат вызывающего процесса.
 
-The idea:
-1. If resources are shared between 2 or more entities (for example shared memory segments between 2 processes), the resources don't need to be copied for every entity, but rather every entity has a READ operation access permission on the shared resource. (the shared segments are marked as read-only) 
-(Think of every entity having a pointer to the location of the shared resource, which can be dereferenced to read its value)
-2. If one entity would perform a WRITE operation on a shared resource, a problem would arise, since the resource also would be permanently changed for ALL other entities sharing it.
-(Think of a process modifying some variables on the stack, or allocatingy some data dynamically on the heap, these changes to the shared resource would also apply for ALL other processes, this is definitely an undesirable behaviour)
-3. As a solution only, if a WRITE operation is about to be performed on a shared resource, this resource gets COPIED first and then the changes are applied.
+Идея:
+1. Если ресурсы разделяются между 2 или более сущностями (например, общие сегменты памяти между 2 процессами), ресурсы не нужно копировать для каждой сущности — вместо этого у каждой сущности есть право доступа на операцию READ (чтение) к общему ресурсу. (общие сегменты помечаются как доступные только для чтения) 
+(Представьте, что у каждой сущности есть указатель на расположение общего ресурса, который можно разыменовать, чтобы прочитать его значение)
+2. Если одна из сущностей выполнит операцию WRITE (запись) над общим ресурсом, возникнет проблема, поскольку ресурс будет окончательно изменён и для ВСЕХ остальных сущностей, которые его разделяют.
+(Представьте процесс, который изменяет переменные на стеке или динамически выделяет данные в куче: эти изменения общего ресурса затронули бы и ВСЕ остальные процессы, что определённо нежелательно)
+3. Решение: только когда над общим ресурсом вот-вот будет выполнена операция WRITE, этот ресурс сначала КОПИРУЕТСЯ, а уже затем к нему применяются изменения.
 </b></details>
 
 <details>
-<summary>What is a kernel, and what does it do?</summary><br><b>
+<summary>Что такое ядро (kernel) и что оно делает?</summary><br><b>
 
-The kernel is part of the operating system and is responsible for tasks like:
+Ядро — это часть операционной системы, которая отвечает за такие задачи, как:
 
-  * Allocating memory
-  * Schedule processes
-  * Control CPU
+  * Выделение памяти
+  * Планирование процессов
+  * Управление CPU
 </b></details>
 
 <details>
-<summary>True or False? Some pieces of the code in the kernel are loaded into protected areas of the memory so applications can't overwrite them.</summary><br><b>
+<summary>Верно или неверно? Некоторые части кода ядра загружаются в защищённые области памяти, чтобы приложения не могли их перезаписать.</summary><br><b>
 
-True
+Верно
 </b></details>
 
 <details>
-<summary>What is POSIX?</summary><br><b>
+<summary>Что такое POSIX?</summary><br><b>
 
-POSIX (Portable Operating System Interface) is a set of standards that define the interface between a Unix-like operating system and application programs.
+POSIX (Portable Operating System Interface) — это набор стандартов, определяющих интерфейс между Unix-подобной операционной системой и прикладными программами.
 </b></details>
 
 <details>
-<summary>Explain what Semaphore is and what its role in operating systems.</summary><br><b>
+<summary>Объясните, что такое семафор (Semaphore) и какова его роль в операционных системах.</summary><br><b>
 
-A semaphore is a synchronization primitive used in operating systems and concurrent programming to control access to shared resources. It's a variable or abstract data type that acts as a counter or a signaling mechanism for managing access to resources by multiple processes or threads.
+Семафор — это примитив синхронизации, используемый в операционных системах и параллельном программировании для управления доступом к общим ресурсам. Это переменная или абстрактный тип данных, который служит счётчиком или сигнальным механизмом для управления доступом к ресурсам со стороны нескольких процессов или потоков.
 </b></details>
 
 <details>
-<summary>What is cache? What is buffer?</summary><br><b>
+<summary>Что такое кеш (cache)? Что такое буфер (buffer)?</summary><br><b>
 
-Cache: Cache is usually used when processes are reading and writing to the disk to make the process faster, by making similar data used by different programs easily accessible.
-Buffer: Reserved place in RAM, which is used to hold data for temporary purposes.
+Кеш: обычно используется, когда процессы читают с диска и пишут на него, чтобы ускорить процесс, делая данные, которыми пользуются разные программы, легко доступными.
+Буфер: зарезервированная область в RAM, которая используется для временного хранения данных.
 </b></details>
 
-## Virtualization
+## Виртуализация
 
 <details>
-<summary>What is Virtualization?</summary><br><b>
+<summary>Что такое виртуализация?</summary><br><b>
 
-Virtualization uses software to create an abstraction layer over computer hardware, that allows the hardware elements of a single computer - processors, memory, storage and more - to be divided into multiple virtual computers, commonly called virtual machines (VMs).
-</b></details>
-
-<details>
-<summary>What is a hypervisor?</summary><br><b>
-
-Red Hat: "A hypervisor is software that creates and runs virtual machines (VMs). A hypervisor, sometimes called a virtual machine monitor (VMM), isolates the hypervisor operating system and resources from the virtual machines and enables the creation and management of those VMs."
-
-Read more [here](https://www.redhat.com/en/topics/virtualization/what-is-a-hypervisor)
+Виртуализация с помощью программного обеспечения создаёт слой абстракции над аппаратным обеспечением компьютера, который позволяет разделить аппаратные элементы одного компьютера — процессоры, память, хранилище и прочее — на несколько виртуальных компьютеров, обычно называемых виртуальными машинами (VM).
 </b></details>
 
 <details>
-<summary>What types of hypervisors are there?</summary><br><b>
+<summary>Что такое гипервизор?</summary><br><b>
 
-Hosted hypervisors and bare-metal hypervisors.
+Red Hat: «Гипервизор — это программное обеспечение, которое создаёт и запускает виртуальные машины (VM). Гипервизор, который иногда называют монитором виртуальных машин (virtual machine monitor, VMM), изолирует операционную систему и ресурсы гипервизора от виртуальных машин и позволяет создавать эти VM и управлять ими.»
+
+Подробнее — [здесь](https://www.redhat.com/en/topics/virtualization/what-is-a-hypervisor)
 </b></details>
 
 <details>
-<summary>What are the advantages and disadvantages of bare-metal hypervisor over a hosted hypervisor?</summary><br><b>
+<summary>Какие бывают типы гипервизоров?</summary><br><b>
 
-Due to having its own drivers and a direct access to hardware components, a baremetal hypervisor will often have better performances along with stability and scalability.
-
-On the other hand, there will probably be some limitation regarding loading (any) drivers so a hosted hypervisor will usually benefit from having a better hardware compatibility.
+Хостовые (hosted) гипервизоры и гипервизоры «на голом железе» (bare-metal).
 </b></details>
 
 <details>
-<summary>What types of virtualization are there?</summary><br><b>
+<summary>Каковы преимущества и недостатки bare-metal гипервизора по сравнению с хостовым (hosted) гипервизором?</summary><br><b>
 
-Operating system virtualization
-Network functions virtualization
-Desktop virtualization
+Благодаря собственным драйверам и прямому доступу к аппаратным компонентам bare-metal гипервизор часто обеспечивает более высокую производительность, а также стабильность и масштабируемость.
+
+С другой стороны, у него, вероятно, будут некоторые ограничения на загрузку (произвольных) драйверов, поэтому хостовый гипервизор обычно выигрывает за счёт лучшей совместимости с оборудованием.
 </b></details>
 
 <details>
-<summary>Is containerization a type of Virtualization?</summary><br><b>
+<summary>Какие бывают типы виртуализации?</summary><br><b>
 
-Yes, it's a operating-system-level virtualization, where the kernel is shared and allows to use multiple isolated user-spaces instances.
+Виртуализация операционных систем
+Виртуализация сетевых функций
+Виртуализация рабочих столов
 </b></details>
 
 <details>
-<summary>How the introduction of virtual machines changed the industry and the way applications were deployed?</summary><br><b>
+<summary>Является ли контейнеризация разновидностью виртуализации?</summary><br><b>
 
-The introduction of virtual machines allowed companies to deploy multiple business applications on the same hardware, while each application is separated from each other in secured way, where each is running on its own separate operating system.
+Да, это виртуализация на уровне операционной системы, при которой ядро разделяется и позволяет использовать несколько изолированных экземпляров пользовательского пространства.
 </b></details>
 
-#### Virtual Machines
+<details>
+<summary>Как появление виртуальных машин изменило индустрию и способы развёртывания приложений?</summary><br><b>
+
+Появление виртуальных машин позволило компаниям развёртывать несколько бизнес-приложений на одном и том же оборудовании, при этом приложения надёжно изолированы друг от друга и каждое работает в своей отдельной операционной системе.
+</b></details>
+
+#### Виртуальные машины
 
 <details>
-<summary>Do we need virtual machines in the age of containers? Are they still relevant?</summary><br><b>
+<summary>Нужны ли виртуальные машины в эпоху контейнеров? Актуальны ли они до сих пор?</summary><br><b>
 
-Yes, virtual machines are still relevant even in the age of containers. While containers provide a lightweight and portable alternative to virtual machines, they do have certain limitations. Virtual machines still matter because they offer isolation and security, can run different operating systems, and are good for legacy apps. Containers limitations for example are sharing the host kernel.
+Да, виртуальные машины по-прежнему актуальны даже в эпоху контейнеров. Хотя контейнеры — лёгкая и переносимая альтернатива виртуальным машинам, у них есть определённые ограничения. Виртуальные машины по-прежнему важны, поскольку они обеспечивают изоляцию и безопасность, могут запускать разные операционные системы и хорошо подходят для унаследованных (legacy) приложений. Пример ограничения контейнеров — общее ядро хоста.
 </b></details>
 
 ## Prometheus
 
 <details>
-<summary>What is Prometheus? What are some of Prometheus's main features?</summary><br><b>
+<summary>Что такое Prometheus? Каковы основные возможности Prometheus?</summary><br><b>
 
-Prometheus is a popular open-source systems monitoring and alerting toolkit, originally developed at SoundCloud. It is designed to collect and store time-series data, and to allow for querying and analysis of that data using a powerful query language called PromQL. Prometheus is frequently used to monitor cloud-native applications, microservices, and other modern infrastructure.
+Prometheus — популярный набор инструментов с открытым исходным кодом для мониторинга систем и оповещения, изначально разработанный в SoundCloud. Он предназначен для сбора и хранения временных рядов (time-series) и позволяет выполнять запросы к этим данным и анализировать их с помощью мощного языка запросов PromQL. Prometheus часто используется для мониторинга cloud-native приложений, микросервисов и другой современной инфраструктуры.
 
-Some of the main features of Prometheus include:
+Среди основных возможностей Prometheus:
 
-    1. Data model: Prometheus uses a flexible data model that allows users to organize and label their time-series data in a way that makes sense for their particular use case. Labels are used to identify different dimensions of the data, such as the source of the data or the environment in which it was collected.
+    1. Модель данных: Prometheus использует гибкую модель данных, позволяющую пользователям организовывать и размечать метками свои временные ряды так, как имеет смысл для конкретного сценария. Метки (labels) используются для обозначения разных измерений данных, например источника данных или окружения, в котором они собраны.
 
-    2. Pull-based architecture: Prometheus uses a pull-based model to collect data from targets, meaning that the Prometheus server actively queries its targets for metrics data at regular intervals. This architecture is more scalable and reliable than a push-based model, which would require every target to push data to the server.
+    2. Pull-архитектура: Prometheus использует pull-модель для сбора данных с целей (targets): сервер Prometheus сам регулярно опрашивает свои цели, запрашивая данные метрик. Такая архитектура более масштабируема и надёжна, чем push-модель, при которой каждая цель должна была бы отправлять данные на сервер.
 
-    3. Time-series database: Prometheus stores all of its data in a time-series database, which allows users to perform queries over time ranges and to aggregate and analyze their data in various ways. The database is optimized for write-heavy workloads, and can handle a high volume of data with low latency.
+    3. База данных временных рядов: Prometheus хранит все свои данные в базе данных временных рядов, что позволяет пользователям выполнять запросы по временным диапазонам, а также агрегировать и анализировать данные разными способами. База оптимизирована для нагрузок с интенсивной записью и способна обрабатывать большие объёмы данных с низкой задержкой.
 
-    4. Alerting: Prometheus includes a powerful alerting system that allows users to define rules based on their metrics data and to send alerts when certain conditions are met. Alerts can be sent via email, chat, or other channels, and can be customized to include specific details about the problem.
+    4. Оповещения: в Prometheus есть мощная система оповещений, позволяющая пользователям задавать правила на основе данных метрик и отправлять оповещения при выполнении определённых условий. Оповещения можно отправлять по электронной почте, в чат или по другим каналам, а также настраивать их так, чтобы они содержали конкретные сведения о проблеме.
 
-    5. Visualization: Prometheus has a built-in graphing and visualization tool, called PromDash, which allows users to create custom dashboards to monitor their systems and applications. PromDash supports a variety of graph types and visualization options, and can be customized using CSS and JavaScript.
+    5. Визуализация: в Prometheus есть встроенный инструмент построения графиков и визуализации под названием PromDash, который позволяет пользователям создавать собственные дашборды для мониторинга своих систем и приложений. PromDash поддерживает различные типы графиков и варианты визуализации и может настраиваться с помощью CSS и JavaScript.
 
-Overall, Prometheus is a powerful and flexible tool for monitoring and analyzing systems and applications, and is widely used in the industry for cloud-native monitoring and observability.
+В целом Prometheus — мощный и гибкий инструмент для мониторинга и анализа систем и приложений, который широко используется в индустрии для cloud-native мониторинга и наблюдаемости (observability).
 
 </b></details>
 
 <details>
-<summary>In what scenarios it might be better to NOT use Prometheus?</summary><br><b>
+<summary>В каких сценариях лучше НЕ использовать Prometheus?</summary><br><b>
 
-From Prometheus documentation: "if you need 100% accuracy, such as for per-request billing".
+Из документации Prometheus: «если нужна 100% точность, например для тарификации по каждому запросу».
 </b></details>
 
 <details>
-<summary>Describe Prometheus architecture and components</summary><br><b>
+<summary>Опишите архитектуру и компоненты Prometheus</summary><br><b>
 
-The Prometheus architecture consists of four major components:
+Архитектура Prometheus состоит из четырёх основных компонентов:
 
-    1. Prometheus Server: The Prometheus server is responsible for collecting and storing metrics data. It has a simple built-in storage layer that allows it to store time-series data in a time-ordered database.
+    1. Сервер Prometheus (Prometheus Server): отвечает за сбор и хранение данных метрик. В нём есть простой встроенный слой хранения, позволяющий хранить временные ряды в базе данных, упорядоченной по времени.
 
-    2. Client Libraries: Prometheus provides a range of client libraries that enable applications to expose their metrics data in a format that can be ingested by the Prometheus server. These libraries are available for a range of programming languages, including Java, Python, and Go.
+    2. Клиентские библиотеки (Client Libraries): Prometheus предоставляет набор клиентских библиотек, позволяющих приложениям отдавать свои метрики в формате, который может принимать сервер Prometheus. Эти библиотеки доступны для многих языков программирования, включая Java, Python и Go.
 
-    3. Exporters: Exporters are software components that expose existing metrics from third-party systems and make them available for ingestion by the Prometheus server. Prometheus provides exporters for a range of popular technologies, including MySQL, PostgreSQL, and Apache.
+    3. Экспортеры (Exporters): программные компоненты, которые отдают существующие метрики сторонних систем и делают их доступными для сбора сервером Prometheus. Prometheus предоставляет экспортеры для ряда популярных технологий, включая MySQL, PostgreSQL и Apache.
 
-    4. Alertmanager: The Alertmanager component is responsible for processing alerts generated by the Prometheus server. It can handle alerts from multiple sources and provides a range of features for deduplicating, grouping, and routing alerts to appropriate channels.
+    4. Alertmanager: компонент Alertmanager отвечает за обработку оповещений, сгенерированных сервером Prometheus. Он может обрабатывать оповещения из нескольких источников и предоставляет ряд функций для дедупликации, группировки и маршрутизации оповещений в соответствующие каналы.
 
-Overall, the Prometheus architecture is designed to be highly scalable and resilient. The server and client libraries can be deployed in a distributed fashion to support monitoring across large-scale, highly dynamic environments
+В целом архитектура Prometheus рассчитана на высокую масштабируемость и отказоустойчивость. Сервер и клиентские библиотеки можно развёртывать распределённо, чтобы поддерживать мониторинг в крупных, очень динамичных окружениях
 </b></details>
 
 <details>
-<summary>Can you compare Prometheus to other solutions like InfluxDB for example?</summary><br><b>
+<summary>Можете сравнить Prometheus с другими решениями, например с InfluxDB?</summary><br><b>
 
-Compared to other monitoring solutions, such as InfluxDB, Prometheus is known for its high performance and scalability. It can handle large volumes of data and can easily be integrated with other tools in the monitoring ecosystem. InfluxDB, on the other hand, is known for its ease of use and simplicity. It has a user-friendly interface and provides easy-to-use APIs for collecting and querying data.
+По сравнению с другими решениями для мониторинга, такими как InfluxDB, Prometheus известен высокой производительностью и масштабируемостью. Он способен обрабатывать большие объёмы данных и легко интегрируется с другими инструментами экосистемы мониторинга. InfluxDB, в свою очередь, известна простотой и удобством использования. У неё дружественный интерфейс и простые в использовании API для сбора данных и выполнения запросов.
 
-Another popular solution, Nagios, is a more traditional monitoring system that relies on a push-based model for collecting data. Nagios has been around for a long time and is known for its stability and reliability. However, compared to Prometheus, Nagios lacks some of the more advanced features, such as multi-dimensional data model and powerful query language.
+Ещё одно популярное решение, Nagios, — более традиционная система мониторинга, которая собирает данные по push-модели. Nagios существует давно и известна стабильностью и надёжностью. Однако по сравнению с Prometheus в Nagios нет некоторых более продвинутых возможностей, таких как многомерная модель данных и мощный язык запросов.
 
-Overall, the choice of a monitoring solution depends on the specific needs and requirements of the organization. While Prometheus is a great choice for large-scale monitoring and alerting, InfluxDB may be a better fit for smaller environments that require ease of use and simplicity. Nagios remains a solid choice for organizations that prioritize stability and reliability over advanced features.
+В целом выбор решения для мониторинга зависит от конкретных потребностей и требований организации. Prometheus отлично подходит для крупномасштабного мониторинга и оповещений, тогда как InfluxDB может лучше подойти для небольших окружений, где важны простота и удобство. Nagios остаётся надёжным выбором для организаций, для которых стабильность и надёжность важнее продвинутых возможностей.
 </b></details>
 
 <details>
-<summary>What is an Alert?</summary><br><b>
-In Prometheus, an alert is a notification triggered when a specific condition or threshold is met. Alerts can be configured to trigger when certain metrics cross a certain threshold or when specific events occur. Once an alert is triggered, it can be routed to various channels, such as email, pager, or chat, to notify relevant teams or individuals to take appropriate action. Alerts are a critical component of any monitoring system, as they allow teams to proactively detect and respond to issues before they impact users or cause system downtime.
+<summary>Что такое оповещение (Alert)?</summary><br><b>
+В Prometheus оповещение — это уведомление, которое срабатывает при выполнении определённого условия или достижении порога. Оповещения можно настроить так, чтобы они срабатывали, когда определённые метрики пересекают заданный порог или когда происходят определённые события. Сработавшее оповещение можно направить в различные каналы, например по электронной почте, на пейджер или в чат, чтобы уведомить нужные команды или людей и они приняли соответствующие меры. Оповещения — критически важный компонент любой системы мониторинга, поскольку позволяют командам заранее обнаруживать проблемы и реагировать на них до того, как они затронут пользователей или приведут к простою системы.
 </b></details>
 
 <details>
-<summary>What is an Instance? What is a Job?</summary><br><b>
+<summary>Что такое Instance? Что такое Job?</summary><br><b>
 
-In Prometheus, an instance refers to a single target that is being monitored. For example, a single server or service. A job is a set of instances that perform the same function, such as a set of web servers serving the same application. Jobs allow you to define and manage a group of targets together.
+В Prometheus экземпляр (instance) — это одна отслеживаемая цель, например отдельный сервер или сервис. Задание (job) — это набор экземпляров, выполняющих одну и ту же функцию, например набор веб-серверов, обслуживающих одно и то же приложение. Задания позволяют определять группу целей и управлять ими вместе.
 
-In essence, an instance is an individual target that Prometheus collects metrics from, while a job is a collection of similar instances that can be managed as a group.
+По сути, instance — это отдельная цель, с которой Prometheus собирает метрики, а job — это набор похожих экземпляров, которыми можно управлять как группой.
 </b></details>
 
 <details>
-<summary>What core metrics types Prometheus supports?</summary><br><b>
-Prometheus supports several types of metrics, including:
+<summary>Какие основные типы метрик поддерживает Prometheus?</summary><br><b>
+Prometheus поддерживает несколько типов метрик, в том числе:
 
-    1. Counter: A monotonically increasing value used for tracking counts of events or samples. Examples include the number of requests processed or the total number of errors encountered.
+    1. Counter (счётчик): монотонно возрастающее значение, используемое для подсчёта событий или выборок. Например, число обработанных запросов или общее число возникших ошибок.
 
-    2. Gauge: A value that can go up or down, such as CPU usage or memory usage. Unlike counters, gauge values can be arbitrary, meaning they can go up and down based on changes in the system being monitored.
+    2. Gauge (датчик): значение, которое может как расти, так и уменьшаться, например загрузка CPU или использование памяти. В отличие от счётчиков, значения gauge могут быть произвольными, то есть расти и уменьшаться в зависимости от изменений в отслеживаемой системе.
 
-    3. Histogram: A set of observations or events that are divided into buckets based on their value. Histograms help in analyzing the distribution of a metric, such as request latencies or response sizes.
+    3. Histogram (гистограмма): набор наблюдений или событий, разбитых на интервалы (buckets) по их значению. Гистограммы помогают анализировать распределение метрики, например задержек запросов или размеров ответов.
 
-    4. Summary: A summary is similar to a histogram, but instead of buckets, it provides a set of quantiles for the observed values. Summaries are useful for monitoring the distribution of request latencies or response sizes over time.
+    4. Summary (сводка): summary похожа на гистограмму, но вместо интервалов предоставляет набор квантилей для наблюдаемых значений. Сводки полезны для отслеживания распределения задержек запросов или размеров ответов во времени.
 
-Prometheus also supports various functions and operators for aggregating and manipulating metrics, such as sum, max, min, and rate. These features make it a powerful tool for monitoring and alerting on system metrics.
+Prometheus также поддерживает различные функции и операторы для агрегирования метрик и работы с ними, такие как sum, max, min и rate. Благодаря этим возможностям он является мощным инструментом мониторинга и оповещения по системным метрикам.
 </b></details>
 
 <details>
-<summary>What is an exporter? What is it used for?</summary><br><b>
-The exporter serves as a bridge between the third-party system or application and Prometheus, making it possible for Prometheus to monitor and collect data from that system or application.
+<summary>Что такое экспортер (exporter)? Для чего он используется?</summary><br><b>
+Экспортер служит мостом между сторонней системой или приложением и Prometheus, давая Prometheus возможность отслеживать эту систему или приложение и собирать с них данные.
 
-The exporter acts as a server, listening on a specific network port for requests from Prometheus to scrape metrics. It collects metrics from the third-party system or application and transforms them into a format that can be understood by Prometheus. The exporter then exposes these metrics to Prometheus via an HTTP endpoint, making them available for collection and analysis.
+Экспортер работает как сервер, который слушает определённый сетевой порт и ожидает запросов Prometheus на сбор (scrape) метрик. Он собирает метрики сторонней системы или приложения и преобразует их в формат, понятный Prometheus. Затем экспортер отдаёт эти метрики Prometheus через HTTP-эндпоинт, делая их доступными для сбора и анализа.
 
-Exporters are commonly used to monitor various types of infrastructure components such as databases, web servers, and storage systems. For example, there are exporters available for monitoring popular databases such as MySQL and PostgreSQL, as well as web servers like Apache and Nginx.
+Экспортеры обычно используются для мониторинга различных компонентов инфраструктуры, таких как базы данных, веб-серверы и системы хранения. Например, существуют экспортеры для мониторинга популярных баз данных, таких как MySQL и PostgreSQL, а также веб-серверов, таких как Apache и Nginx.
 
-Overall, exporters are a critical component of the Prometheus ecosystem, allowing for the monitoring of a wide range of systems and applications, and providing a high degree of flexibility and extensibility to the platform.
+В целом экспортеры — критически важный компонент экосистемы Prometheus: они позволяют отслеживать широкий спектр систем и приложений и придают платформе высокую гибкость и расширяемость.
 </b></details>
 
 <details>
-<summary>Which Prometheus best practices?</summary><br><b>
-Here are three of them:
+<summary>Какие есть лучшие практики работы с Prometheus?</summary><br><b>
+Вот три из них:
 
-    1. Label carefully: Careful and consistent labeling of metrics is crucial for effective querying and alerting. Labels should be clear, concise, and include all relevant information about the metric.
+    1. Аккуратно расставлять метки: тщательная и единообразная разметка метрик крайне важна для эффективных запросов и оповещений. Метки должны быть понятными, лаконичными и содержать всю значимую информацию о метрике.
 
-    2. Keep metrics simple: The metrics exposed by exporters should be simple and focus on a single aspect of the system being monitored. This helps avoid confusion and ensures that the metrics are easily understandable by all members of the team.
+    2. Делать метрики простыми: метрики, которые отдают экспортеры, должны быть простыми и сосредоточенными на одном аспекте отслеживаемой системы. Это помогает избежать путаницы и гарантирует, что метрики будут понятны всем участникам команды.
 
-    3. Use alerting sparingly: While alerting is a powerful feature of Prometheus, it should be used sparingly and only for the most critical issues. Setting up too many alerts can lead to alert fatigue and result in important alerts being ignored. It is recommended to set up only the most important alerts and adjust the thresholds over time based on the actual frequency of alerts.
+    3. Не злоупотреблять оповещениями: хотя оповещения — мощная возможность Prometheus, использовать их следует умеренно и только для самых критичных проблем. Слишком большое количество оповещений может привести к «усталости от оповещений» (alert fatigue), из-за чего важные оповещения будут игнорироваться. Рекомендуется настраивать только самые важные оповещения и со временем корректировать пороги, исходя из фактической частоты срабатываний.
 </b></details>
 
 <details>
-<summary>How to get total requests in a given period of time?</summary><br><b>
-To get the total requests in a given period of time using Prometheus, you can use the *sum* function along with the *rate* function. Here is an example query that will give you the total number of requests in the last hour:
+<summary>Как получить общее число запросов за заданный период времени?</summary><br><b>
+Чтобы получить в Prometheus общее число запросов за заданный период времени, можно использовать функцию *sum* вместе с функцией *rate*. Вот пример запроса, который возвращает общее число запросов за последний час:
 
 ```
 sum(rate(http_requests_total[1h]))
 ```
-In this query, *http_requests_total* is the name of the metric that tracks the total number of HTTP requests, and the *rate* function calculates the per-second rate of requests over the last hour. The *sum* function then adds up all of the requests to give you the total number of requests in the last hour.
+В этом запросе *http_requests_total* — имя метрики, отслеживающей общее число HTTP-запросов, а функция *rate* вычисляет среднюю скорость запросов в секунду за последний час. Затем функция *sum* складывает все запросы, давая общее число запросов за последний час.
 
-You can adjust the time range by changing the duration in the *rate* function. For example, if you wanted to get the total number of requests in the last day, you could change the function to *rate(http_requests_total[1d])*.
+Временной диапазон можно изменить, поменяв длительность в функции *rate*. Например, чтобы получить общее число запросов за последние сутки, можно заменить функцию на *rate(http_requests_total[1d])*.
 </b></details>
 
 <details>
-<summary>What HA in Prometheus means?</summary><br><b>
+<summary>Что означает HA в Prometheus?</summary><br><b>
 
-HA stands for High Availability. This means that the system is designed to be highly reliable and always available, even in the face of failures or other issues. In practice, this typically involves setting up multiple instances of Prometheus and ensuring that they are all synchronized and able to work together seamlessly. This can be achieved through a variety of techniques, such as load balancing, replication, and failover mechanisms. By implementing HA in Prometheus, users can ensure that their monitoring data is always available and up-to-date, even in the face of hardware or software failures, network issues, or other problems that might otherwise cause downtime or data loss.
+HA расшифровывается как High Availability (высокая доступность). Это означает, что система спроектирована так, чтобы быть высоконадёжной и всегда доступной, даже при сбоях или других проблемах. На практике обычно для этого настраивают несколько экземпляров Prometheus и обеспечивают их синхронизацию и слаженную совместную работу. Этого можно добиться разными техниками, такими как балансировка нагрузки, репликация и механизмы аварийного переключения (failover). Реализовав HA в Prometheus, пользователи могут гарантировать, что данные мониторинга всегда доступны и актуальны, даже при сбоях оборудования или ПО, сетевых проблемах или других неполадках, которые иначе могли бы привести к простою или потере данных.
 </b></details>
 
 <details>
-<summary>How do you join two metrics?</summary><br><b>
-In Prometheus, joining two metrics can be achieved using the *join()* function. The *join()* function combines two or more time series based on their label values. It takes two mandatory arguments: *on* and *table*. The on argument specifies the labels to join *on* and the *table* argument specifies the time series to join.
+<summary>Как объединить (join) две метрики?</summary><br><b>
+В Prometheus объединить две метрики можно с помощью функции *join()*. Функция *join()* объединяет два или более временных ряда на основе значений их меток. Она принимает два обязательных аргумента: *on* и *table*. Аргумент on задаёт метки, по которым выполняется объединение (*on*), а аргумент *table* — временные ряды, которые нужно объединить.
 
-Here's an example of how to join two metrics using the *join()* function:
+Вот пример объединения двух метрик с помощью функции *join()*:
 
 ```
 sum_series(
@@ -1059,33 +1059,33 @@ sum_series(
   )
 )
 ```
-In this example, the *join()* function combines the *request_count_total* and *error_count_total* time series based on their *service* and *instance* label values. The *sum_series()* function then calculates the sum of the resulting time series
+В этом примере функция *join()* объединяет временные ряды *request_count_total* и *error_count_total* на основе значений их меток *service* и *instance*. Затем функция *sum_series()* вычисляет сумму получившихся временных рядов
 </b></details>
 
 <details>
-<summary>How to write a query that returns the value of a label?</summary><br><b>
-To write a query that returns the value of a label in Prometheus, you can use the *label_values* function. The *label_values* function takes two arguments: the name of the label and the name of the metric.
+<summary>Как написать запрос, возвращающий значение метки?</summary><br><b>
+Чтобы написать в Prometheus запрос, возвращающий значение метки, можно использовать функцию *label_values*. Функция *label_values* принимает два аргумента: имя метки и имя метрики.
 
-For example, if you have a metric called *http_requests_total* with a label called *method*, and you want to return all the values of the *method* label, you can use the following query:
+Например, если есть метрика *http_requests_total* с меткой *method* и нужно получить все значения метки *method*, можно использовать следующий запрос:
 
 ```
 label_values(http_requests_total, method)
 ```
 
-This will return a list of all the values for the *method* label in the *http_requests_total* metric. You can then use this list in further queries or to filter your data.
+Он вернёт список всех значений метки *method* в метрике *http_requests_total*. Затем этот список можно использовать в последующих запросах или для фильтрации данных.
 </b></details>
 
 <details>
-<summary>How do you convert cpu_user_seconds to cpu usage in percentage?</summary><br><b>
-To convert *cpu_user_seconds* to CPU usage in percentage, you need to divide it by the total elapsed time and the number of CPU cores, and then multiply by 100. The formula is as follows:
+<summary>Как преобразовать cpu_user_seconds в загрузку CPU в процентах?</summary><br><b>
+Чтобы преобразовать *cpu_user_seconds* в загрузку CPU в процентах, нужно разделить это значение на общее прошедшее время и на число ядер CPU, а затем умножить на 100. Формула такая:
 
 ```
 100 * sum(rate(process_cpu_user_seconds_total{job="<job-name>"}[<time-period>])) by (instance) / (<time-period> * <num-cpu-cores>)
 ```
 
-Here, *<job-name>* is the name of the job you want to query, *<time-period>* is the time range you want to query (e.g. *5m*, *1h*), and *<num-cpu-cores>* is the number of CPU cores on the machine you are querying.
+Здесь *<job-name>* — имя задания (job), к которому выполняется запрос, *<time-period>* — временной диапазон запроса (например, *5m*, *1h*), а *<num-cpu-cores>* — число ядер CPU на машине, к которой выполняется запрос.
 
-For example, to get the CPU usage in percentage for the last 5 minutes for a job named *my-job* running on a machine with 4 CPU cores, you can use the following query:
+Например, чтобы получить загрузку CPU в процентах за последние 5 минут для задания с именем *my-job*, работающего на машине с 4 ядрами CPU, можно использовать следующий запрос:
 
 ```
 100 * sum(rate(process_cpu_user_seconds_total{job="my-job"}[5m])) by (instance) / (5m * 4)
@@ -1095,43 +1095,43 @@ For example, to get the CPU usage in percentage for the last 5 minutes for a job
 ## Go
 
 <details>
-<summary>What are some characteristics of the Go programming language?</summary><br><b>
+<summary>Каковы основные характеристики языка программирования Go?</summary><br><b>
 
-  * Strong and static typing - the type of the variables can't be changed over time and they have to be defined at compile time
-  * Simplicity
-  * Fast compile times
-  * Built-in concurrency
-  * Garbage collected
-  * Platform independent
-  * Compile to standalone binary - anything you need to run your app will be compiled into one binary. Very useful for version management in run-time.
+  * Строгая статическая типизация — тип переменной не может меняться со временем и должен быть определён на этапе компиляции
+  * Простота
+  * Быстрая компиляция
+  * Встроенная поддержка конкурентности
+  * Сборка мусора
+  * Независимость от платформы
+  * Компиляция в самостоятельный бинарный файл — всё, что нужно для запуска приложения, компилируется в один бинарник. Очень удобно для управления версиями во время выполнения.
 
-Go also has good community.
+Кроме того, у Go хорошее сообщество.
 </b></details>
 
 <details>
-<summary>What is the difference between <code>var x int = 2</code> and <code>x := 2</code>?</summary><br><b>
+<summary>В чём разница между <code>var x int = 2</code> и <code>x := 2</code>?</summary><br><b>
 
-The result is the same, a variable with the value 2.
+Результат одинаковый — переменная со значением 2.
 
-With <code>var x int = 2</code> we are setting the variable type to integer while with <code>x := 2</code> we are letting Go figure out by itself the type.
+С <code>var x int = 2</code> мы явно задаём тип переменной integer, а с <code>x := 2</code> позволяем Go самостоятельно определить тип.
 </b></details>
 
 <details>
-<summary>True or False? In Go we can redeclare variables and once declared we must use it.</summary>
+<summary>Верно или неверно? В Go можно повторно объявлять переменные, а объявленную переменную обязательно нужно использовать.</summary>
 
-False. We can't redeclare variables but yes, we must use declared variables.
+Неверно. Повторно объявлять переменные нельзя, но использовать объявленные переменные действительно обязательно.
 </b></details>
 
 <details>
-<summary>What libraries of Go have you used?</summary><br><b>
+<summary>Какие библиотеки Go приходилось использовать?</summary><br><b>
 
-This should be answered based on your usage but some examples are:
+Ответ зависит от личного опыта, но вот несколько примеров:
 
-  * fmt - formatted I/O
+  * fmt — форматированный ввод-вывод
 </b></details>
 
 <details>
-<summary>What is the problem with the following block of code? How to fix it?
+<summary>В чём проблема следующего блока кода? Как её исправить?
 
 ```
 func main() {
@@ -1144,7 +1144,7 @@ func main() {
 </b></details>
 
 <details>
-<summary>The following block of code tries to convert the integer 101 to a string but instead we get "e". Why is that? How to fix it?
+<summary>Следующий блок кода пытается преобразовать целое число 101 в строку, но вместо этого получается "e". Почему так происходит? Как это исправить?
 
 
 ```go
@@ -1161,12 +1161,12 @@ func main() {
 ```
 </summary><br><b>
 
-It looks what unicode value is set at 101 and uses it for converting the integer to a string.
-If you want to get "101" you should use the package "strconv" and replace <code>y = string(x)</code> with <code>y = strconv.Itoa(x)</code>
+Go смотрит, какой символ Unicode соответствует значению 101, и использует его при преобразовании целого числа в строку.
+Чтобы получить "101", нужно использовать пакет "strconv" и заменить <code>y = string(x)</code> на <code>y = strconv.Itoa(x)</code>
 </b></details>
 
 <details>
-<summary>What is wrong with the following code?:
+<summary>Что не так со следующим кодом?:
 
 ```
 package main
@@ -1179,14 +1179,14 @@ func main() {
 ```
 </summary><br><b>
 
-Constants in Go can only be declared using constant expressions.
-But `x`, `y` and their sum is variable.
+Константы в Go можно объявлять только с помощью константных выражений.
+А `x`, `y` и их сумма — переменные.
 <br>
 <code>const initializer x + y is not a constant</code>
 </b></details>
 
 <details>
-<summary>What will be the output of the following block of code?:
+<summary>Что выведет следующий блок кода?:
 
 ```go
 package main
@@ -1207,24 +1207,24 @@ func main() {
 ```
 </summary><br><b>
 
-Go's iota identifier is used in const declarations to simplify definitions of incrementing numbers. Because it can be used in expressions, it provides a generality beyond that of simple enumerations.
+Идентификатор iota в Go используется в объявлениях const, чтобы упростить определение возрастающих чисел. Поскольку его можно использовать в выражениях, он даёт больше возможностей, чем простые перечисления.
 <br>
-`x` and `y` in the first iota group, `z` in the second.
+`x` и `y` находятся в первой группе iota, `z` — во второй.
 <br>
-[Iota page in Go Wiki](https://github.com/golang/go/wiki/Iota)
+[Страница об iota в Go Wiki](https://github.com/golang/go/wiki/Iota)
 </b></details>
 
 <details>
-<summary>What _ is used for in Go?</summary><br><b>
+<summary>Для чего в Go используется _?</summary><br><b>
 
-It avoids having to declare all the variables for the returns values.
-It is called the [blank identifier](https://golang.org/doc/effective_go.html#blank).
+Он позволяет не объявлять переменные для всех возвращаемых значений.
+Он называется [пустым идентификатором (blank identifier)](https://golang.org/doc/effective_go.html#blank).
 <br>
-[answer in SO](https://stackoverflow.com/questions/27764421/what-is-underscore-comma-in-a-go-declaration#answer-27764432)
+[ответ на SO](https://stackoverflow.com/questions/27764421/what-is-underscore-comma-in-a-go-declaration#answer-27764432)
 </b></details>
 
 <details>
-<summary>What will be the output of the following block of code?:
+<summary>Что выведет следующий блок кода?:
 
 ```go
 package main
@@ -1242,11 +1242,11 @@ func main() {
 ```
 </summary><br><b>
 
-Since the first iota is declared with the value `3` (` + 3`), the next one has the value `4`
+Поскольку первый iota объявлен со значением `3` (` + 3`), следующий получает значение `4`
 </b></details>
 
 <details>
-<summary>What will be the output of the following block of code?:
+<summary>Что выведет следующий блок кода?:
 
 ```go
 package main
@@ -1277,15 +1277,15 @@ func main() {
 ```
 </summary><br><b>
 
-Output: 2 1 3
+Вывод: 2 1 3
 
-[Aritcle about sync/waitgroup](https://tutorialedge.net/golang/go-waitgroup-tutorial/)
+[Статья о sync/waitgroup](https://tutorialedge.net/golang/go-waitgroup-tutorial/)
 
-[Golang package sync](https://golang.org/pkg/sync/)
+[Пакет sync в Golang](https://golang.org/pkg/sync/)
 </b></details>
 
 <details>
-<summary>What will be the output of the following block of code?:
+<summary>Что выведет следующий блок кода?:
 
 ```go
 package main
@@ -1324,22 +1324,22 @@ func main() {
 ```
 </summary><br><b>
 
-Output: <code><br>
+Вывод: <code><br>
 1 [5 5 5 5]<br>
 1 [5 5 5 5]<br>
 2 [5 5 5 5 5]<br>
 2 [1 2 3 4]<br>
 </code>
 
-In `mod1` a is link, and when we're using `a[i]`, we're changing `s1` value to.
-But in `mod2`, `append` creates new slice, and we're changing only `a` value, not `s2`.
+В `mod1` a — это ссылка, и, обращаясь к `a[i]`, мы изменяем и значение `s1`.
+А в `mod2` `append` создаёт новый срез (slice), и мы изменяем только значение `a`, но не `s2`.
 
-[Aritcle about arrays](https://golangbot.com/arrays-and-slices/),
-[Blog post about `append`](https://blog.golang.org/slices)
+[Статья о массивах](https://golangbot.com/arrays-and-slices/),
+[Статья в блоге об `append`](https://blog.golang.org/slices)
 </b></details>
 
 <details>
-<summary>What will be the output of the following block of code?:
+<summary>Что выведет следующий блок кода?:
 
 ```go
 package main
@@ -1380,133 +1380,133 @@ func main() {
 ```
 </summary><br><b>
 
-Output: 3
+Вывод: 3
 
-[Golang container/heap package](https://golang.org/pkg/container/heap/)
+[Пакет container/heap в Golang](https://golang.org/pkg/container/heap/)
 </b></details>
 
 ## Mongo
 
 <details>
-<summary>What are the advantages of MongoDB? Or in other words, why choosing MongoDB and not other implementation of NoSQL?</summary><br><b>
+<summary>Каковы преимущества MongoDB? Иными словами, почему стоит выбрать MongoDB, а не другую реализацию NoSQL?</summary><br><b>
 
-MongoDB advantages are as following:
-- Schemaless
-- Easy to scale-out
-- No complex joins
-- Structure of a single object is clear
+Преимущества MongoDB:
+- Отсутствие жёсткой схемы (schemaless)
+- Простое горизонтальное масштабирование (scale-out)
+- Нет сложных объединений (join)
+- Понятная структура отдельного объекта
 
 </b></details>
 
 <details>
-<summary>What is the difference between SQL and NoSQL?</summary><br><b>
+<summary>В чём разница между SQL и NoSQL?</summary><br><b>
 
-The main difference is that SQL databases are structured (data is stored in the form of
-tables with rows and columns - like an excel spreadsheet table) while NoSQL is
-unstructured, and the data storage can vary depending on how the NoSQL DB is set up, such
-as key-value pair, document-oriented, etc.
+Главное отличие в том, что SQL-базы данных структурированы (данные хранятся в виде
+таблиц со строками и столбцами — как в таблице Excel), а NoSQL
+неструктурированы, и способ хранения данных зависит от того, как настроена NoSQL-БД, например,
+пары «ключ-значение», документо-ориентированное хранение и т.д.
 </b></details>
 
 <details>
-<summary>In what scenarios would you prefer to use NoSQL/Mongo over SQL?</summary><br><b>
+<summary>В каких сценариях NoSQL/Mongo предпочтительнее SQL?</summary><br><b>
 
-  * Heterogeneous data which changes often
-  * Data consistency and integrity is not top priority
-  * Best if the database needs to scale rapidly
+  * Разнородные данные, которые часто меняются
+  * Согласованность и целостность данных не являются главным приоритетом
+  * Лучше всего, если базе данных нужно быстро масштабироваться
 </b></details>
 
 <details>
-<summary>What is a document? What is a collection?</summary><br><b>
+<summary>Что такое документ? Что такое коллекция?</summary><br><b>
 
-  * A document is a record in MongoDB, which is stored in BSON (Binary JSON) format and is the basic unit of data in MongoDB.
-  * A collection is a group of related documents stored in a single database in MongoDB.
+  * Документ — это запись в MongoDB, которая хранится в формате BSON (Binary JSON) и является базовой единицей данных в MongoDB.
+  * Коллекция — это группа связанных документов, хранящихся в одной базе данных MongoDB.
 </b></details>
 
 <details>
-<summary>What is an aggregator?</summary><br><b>
+<summary>Что такое агрегатор (aggregator)?</summary><br><b>
 
-  * An aggregator is a framework in MongoDB that performs operations on a set of data to return a single computed result.
+  * Агрегатор — это фреймворк в MongoDB, который выполняет операции над набором данных и возвращает один вычисленный результат.
 </b></details>
 
 <details>
-<summary>What is better? Embedded documents or referenced?</summary><br><b>
+<summary>Что лучше: встроенные (embedded) документы или ссылочные (referenced)?</summary><br><b>
 
-  * There is no definitive answer to which is better, it depends on the specific use case and requirements. Some explanations : Embedded documents provide atomic updates, while referenced documents allow for better normalization.
+  * Однозначного ответа нет, всё зависит от конкретного сценария и требований. Некоторые пояснения: встроенные документы обеспечивают атомарные обновления, а ссылочные позволяют лучше нормализовать данные.
 </b></details>
 
 <details>
-<summary>Have you performed data retrieval optimizations in Mongo? If not, can you think about ways to optimize a slow data retrieval?</summary><br><b>
+<summary>Приходилось ли оптимизировать выборку данных в Mongo? Если нет, какие способы оптимизировать медленную выборку данных можно предложить?</summary><br><b>
 
-  * Some ways to optimize data retrieval in MongoDB are: indexing, proper schema design, query optimization and database load balancing.
+  * Некоторые способы оптимизировать выборку данных в MongoDB: индексирование, правильное проектирование схемы, оптимизация запросов и балансировка нагрузки на базу данных.
 </b></details>
 
-##### Queries
+##### Запросы
 
 <details>
-<summary>Explain this query: <code>db.books.find({"name": /abc/})</code></summary><br><b>
-</b></details>
-
-<details>
-<summary>Explain this query: <code>db.books.find().sort({x:1})</code></summary><br><b>
+<summary>Объясните этот запрос: <code>db.books.find({"name": /abc/})</code></summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the difference between find() and find_one()?</code></summary><br><b>
+<summary>Объясните этот запрос: <code>db.books.find().sort({x:1})</code></summary><br><b>
+</b></details>
+
+<details>
+<summary>В чём разница между find() и find_one()?</code></summary><br><b>
 	
-  * `find()` returns all documents that match the query conditions.
-  * find_one() returns only one document that matches the query conditions (or null if no match is found).
+  * `find()` возвращает все документы, удовлетворяющие условиям запроса.
+  * find_one() возвращает только один документ, удовлетворяющий условиям запроса (или null, если совпадений нет).
 </b></details>
 
 <details>
-<summary>How can you export data from Mongo DB?</code></summary><br><b>
+<summary>Как экспортировать данные из Mongo DB?</code></summary><br><b>
 
 * mongoexport
-* programming languages
+* языки программирования
 </b></details>
 
 ## SQL
 
-### SQL Exercises
+### Упражнения по SQL
 
-|Name|Topic|Objective & Instructions|Solution|Comments|
+|Название|Тема|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|----|
-| Functions vs. Comparisons | Query Improvements | [Exercise](topics/sql/improve_query.md) | [Solution](topics/sql/solutions/improve_query.md)
+| Функции и сравнения | Улучшение запросов | [Упражнение](topics/sql/improve_query.md) | [Решение](topics/sql/solutions/improve_query.md)
 
-### SQL Self Assessment
+### Самопроверка по SQL
 
 <details>
-<summary>What is SQL?</summary><br><b>
+<summary>Что такое SQL?</summary><br><b>
 
-SQL (Structured Query Language) is a standard language for relational databases (like MySQL, MariaDB, ...).<br>
-It's used for reading, updating, removing and creating data in a relational database.
+SQL (Structured Query Language) — стандартный язык для реляционных баз данных (таких как MySQL, MariaDB, ...).<br>
+Он используется для чтения, обновления, удаления и создания данных в реляционной базе данных.
 </b></details>
 
 <details>
-<summary>How is SQL Different from NoSQL</summary><br><b>
+<summary>Чем SQL отличается от NoSQL</summary><br><b>
 
-The main difference is that SQL databases are structured (data is stored in the form of
-tables with rows and columns - like an excel spreadsheet table) while NoSQL is
-unstructured, and the data storage can vary depending on how the NoSQL DB is set up, such
-as key-value pair, document-oriented, etc.
+Главное отличие в том, что SQL-базы данных структурированы (данные хранятся в виде
+таблиц со строками и столбцами — как в таблице Excel), а NoSQL
+неструктурированы, и способ хранения данных зависит от того, как настроена NoSQL-БД, например,
+пары «ключ-значение», документо-ориентированное хранение и т.д.
 </b></details>
 
 <details>
-<summary>When is it best to use SQL? NoSQL?</summary><br><b>
+<summary>Когда лучше использовать SQL? А NoSQL?</summary><br><b>
 
-SQL - Best used when data integrity is crucial. SQL is typically implemented with many
-businesses and areas within the finance field due to it's ACID compliance.
+SQL — лучше всего подходит, когда критична целостность данных. SQL обычно используют многие
+компании и организации в финансовой сфере благодаря соответствию ACID.
 
-NoSQL - Great if you need to scale things quickly. NoSQL was designed with web applications
-in mind, so it works great if you need to quickly spread the same information around to
-multiple servers
+NoSQL — отлично подходит, если нужно быстро масштабироваться. NoSQL разрабатывался с прицелом
+на веб-приложения, поэтому он хорошо работает, когда нужно быстро распространить одну и ту же информацию
+по нескольким серверам
 
-Additionally, since NoSQL does not adhere to the strict table with columns and rows structure
-that Relational Databases require, you can store different data types together.
+Кроме того, поскольку NoSQL не придерживается строгой структуры таблиц со столбцами и строками,
+которую требуют реляционные базы данных, в нём можно хранить вместе данные разных типов.
 </b></details>
 
-##### Practical SQL - Basics
+##### Практический SQL — основы
 
-For these questions, we will be using the Customers and Orders tables shown below:
+В этих вопросах будут использоваться таблицы Customers и Orders, приведённые ниже:
 
 **Customers**
 
@@ -1530,14 +1530,14 @@ Customer_ID | Order_ID | Item | Price | Date_sold
 100204 | X202 | Coffee | 20.00 | 2019-04-29
 
 <details>
-<summary>How would I select all fields from this table?</summary><br><b>
+<summary>Как выбрать все поля из этой таблицы?</summary><br><b>
 
 Select * <br>
 From Customers;
 </b></details>
 
 <details>
-<summary>How many items are in John's cart?</summary><br><b>
+<summary>Сколько товаров в корзине у John?</summary><br><b>
 
 Select Items_in_cart <br>
 From Customers <br>
@@ -1545,14 +1545,14 @@ Where Customer_Name = "John Smith";
 </b></details>
 
 <details>
-<summary>What is the sum of all the cash spent across all customers?</summary><br><b>
+<summary>Какова общая сумма денег, потраченных всеми клиентами?</summary><br><b>
 
 Select SUM(Cash_spent_to_Date) as SUM_CASH <br>
 From Customers;
 </b></details>
 
 <details>
-<summary>How many people have items in their cart?</summary><br><b>
+<summary>У скольких человек есть товары в корзине?</summary><br><b>
 
 Select count(1) as Number_of_People_w_items <br>
 From Customers <br>
@@ -1560,14 +1560,14 @@ where Items_in_cart > 0;
 </b></details>
 
 <details>
-<summary>How would you join the customer table to the order table?</summary><br><b>
+<summary>Как объединить (join) таблицу клиентов с таблицей заказов?</summary><br><b>
 
-You would join them on the unique key. In this case, the unique key is Customer_ID in
-both the Customers table and Orders table
+Объединять их нужно по уникальному ключу. В данном случае уникальный ключ — Customer_ID
+как в таблице Customers, так и в таблице Orders
 </b></details>
 
 <details>
-<summary>How would you show which customer ordered which items?</summary><br><b>
+<summary>Как показать, какой клиент заказал какие товары?</summary><br><b>
 
 Select c.Customer_Name, o.Item <br>
 From Customers c <br>
@@ -1577,7 +1577,7 @@ Left Join Orders o <br>
 </b></details>
 
 <details>
-<summary>Using a with statement, how would you show who ordered cat food, and the total amount of money spent?</summary><br><b>
+<summary>Как с помощью оператора with показать, кто заказал корм для кошек, и общую потраченную сумму?</summary><br><b>
 
 with cat_food as ( <br>
 Select Customer_ID, SUM(Price) as TOTAL_PRICE <br>
@@ -1591,16 +1591,16 @@ Inner JOIN cat_food f <br>
   ON c.Customer_ID = f.Customer_ID <br>
 where c.Customer_ID in (Select Customer_ID from cat_food);
 
-Although this was a simple statement, the "with" clause really shines when
-a complex query needs to be run on a table before joining to another. With statements are nice,
-because you create a pseudo temp when running your query, instead of creating a whole new table.
+Хотя это был простой запрос, конструкция "with" по-настоящему раскрывается, когда
+перед объединением с другой таблицей нужно выполнить сложный запрос к одной из них. Операторы with удобны тем,
+что при выполнении запроса создаётся псевдовременная таблица, а не целая новая таблица.
 
-The Sum of all the purchases of cat food weren't readily available, so we used a with statement to create
-the pseudo table to retrieve the sum of the prices spent by each customer, then join the table normally.
+Сумма всех покупок корма для кошек не была доступна сразу, поэтому мы использовали оператор with, чтобы создать
+псевдотаблицу и получить сумму, потраченную каждым клиентом, а затем объединили таблицы обычным способом.
 </b></details>
 
 <details>
-<summary>Which of the following queries would you use?
+<summary>Какой из следующих запросов стоит использовать?
 
 ```
 SELECT count(*)                             SELECT count(*)
@@ -1619,26 +1619,26 @@ WHERE
   purchased_at <= '2017-31-12'
 ```
 
-When you use a function (`YEAR(purchased_at)`) it has to scan the whole database as opposed to using indexes and basically the column as it is, in its natural state.
+При использовании функции (`YEAR(purchased_at)`) приходится сканировать всю базу данных, вместо того чтобы использовать индексы и, по сути, сам столбец как есть, в его естественном виде.
 </b></details>
 
 ## OpenStack
 
 <details>
-<summary>What components/projects of OpenStack are you familiar with?</summary><br><b>
-I’m most familiar with several core OpenStack components:
+<summary>С какими компонентами/проектами OpenStack приходилось работать?</summary><br><b>
+Лучше всего мне знакомы несколько ключевых компонентов OpenStack:
 
-- Nova for compute resource provisioning, including VM lifecycle management.
-- Neutron for networking, focusing on creating and managing networks, subnets, and routers.
-- Cinder for block storage, used to attach and manage storage volumes.
-- Keystone for identity services, handling authentication and authorization.
+- Nova — для выделения вычислительных ресурсов, включая управление жизненным циклом ВМ.
+- Neutron — для работы с сетью, в первую очередь создания и управления сетями, подсетями и маршрутизаторами.
+- Cinder — для блочного хранилища, используется для подключения томов хранения и управления ими.
+- Keystone — для сервисов идентификации, отвечает за аутентификацию и авторизацию.
 
-I’ve implemented these in past projects, configuring them for scalability and security to support multi-tenant environments.
+Я внедрял их в прошлых проектах, настраивая для масштабируемости и безопасности в мультитенантных средах.
  
 </b></details>
 
 <details>
-<summary>Can you tell me what each of the following services/projects is responsible for?:
+<summary>За что отвечает каждый из следующих сервисов/проектов?:
 
   - Nova
   - Neutron
@@ -1646,146 +1646,146 @@ I’ve implemented these in past projects, configuring them for scalability and 
   - Glance
   - Keystone</summary><br><b>
 
-  * Nova - Manage virtual instances
-  * Neutron - Manage networking by providing Network as a service (NaaS)
-  * Cinder - Block Storage
-  * Glance - Manage images for virtual machines and containers (search, get and register)
-  * Keystone - Authentication service across the cloud
+  * Nova — управление виртуальными экземплярами (instances)
+  * Neutron — управление сетью, предоставление сети как сервиса (Network as a service, NaaS)
+  * Cinder — блочное хранилище (Block Storage)
+  * Glance — управление образами для виртуальных машин и контейнеров (поиск, получение и регистрация)
+  * Keystone — сервис аутентификации для всего облака
 </b></details>
 
 <details>
-<summary>Identify the service/project used for each of the following:
+<summary>Определите сервис/проект, который используется для каждого из следующих пунктов:
 
-  * Copy or snapshot instances
-  * GUI for viewing and modifying resources
-  * Block Storage
-  * Manage virtual instances
+  * Копирование или создание снимков (snapshot) экземпляров
+  * GUI для просмотра и изменения ресурсов
+  * Блочное хранилище
+  * Управление виртуальными экземплярами
 </summary><br><b>
 
-  * Glance - Images Service. Also used for copying or snapshot instances
-  * Horizon - GUI for viewing and modifying resources
-  * Cinder - Block Storage
-  * Nova - Manage virtual instances
+  * Glance — сервис образов (Images Service). Также используется для копирования и создания снимков экземпляров
+  * Horizon — GUI для просмотра и изменения ресурсов
+  * Cinder — блочное хранилище
+  * Nova — управление виртуальными экземплярами
 </b></details>
 
 <details>
-<summary>What is a tenant/project?</summary><br><b>
-In OpenStack, a project (formerly known as a tenant) is a fundamental unit of ownership and isolation for resources like virtual machines, storage volumes, and networks. Each project is owned by a specific user or group of users and provides a way to manage and segregate resources within a shared cloud environment. This ensures that one project's resources are not accessible to another unless explicitly shared.
+<summary>Что такое tenant/project?</summary><br><b>
+В OpenStack проект (project, ранее назывался tenant) — это базовая единица владения и изоляции таких ресурсов, как виртуальные машины, тома хранения и сети. Каждый проект принадлежит определённому пользователю или группе пользователей и позволяет управлять ресурсами и разделять их в общей облачной среде. Благодаря этому ресурсы одного проекта недоступны другому, если только к ним явно не предоставлен общий доступ.
 </b></details>
 
 <details>
-<summary>Determine true or false:
+<summary>Определите, верно или неверно:
 
-  * OpenStack is free to use
-  * The service responsible for networking is Glance
-  * The purpose of tenant/project is to share resources between different projects and users of OpenStack</summary><br><b>
-  * OpenStack is free to use - **True**. OpenStack is open-source software released under the Apache 2.0 license.
-  * The service responsible for networking is Glance - **False**. Neutron is the service responsible for networking. Glance is the image service.
-  * The purpose of tenant/project is to share resources between different projects and users of OpenStack - **False**. The primary purpose is to isolate resources.
+  * OpenStack можно использовать бесплатно
+  * За работу с сетью отвечает сервис Glance
+  * Назначение tenant/project — совместное использование ресурсов разными проектами и пользователями OpenStack</summary><br><b>
+  * OpenStack можно использовать бесплатно — **Верно**. OpenStack — это программное обеспечение с открытым исходным кодом, выпущенное под лицензией Apache 2.0.
+  * За работу с сетью отвечает сервис Glance — **Неверно**. За работу с сетью отвечает Neutron. Glance — это сервис образов.
+  * Назначение tenant/project — совместное использование ресурсов разными проектами и пользователями OpenStack — **Неверно**. Основное назначение — изоляция ресурсов.
 </b></details>
 
 <details>
-<summary>Describe in detail how you bring up an instance with a floating IP</summary><br><b>
-To launch an instance with a floating IP, you would follow these steps:
-1.  **Create a Network and Subnet:** First, ensure you have a private network and subnet for your instances.
-2.  **Create a Router:** Create a router and connect it to the public (external) network and your private subnet.
-3.  **Launch an Instance:** Launch a new instance, attaching it to your private network. It will receive a private IP address from the subnet.
-4.  **Allocate a Floating IP:** Allocate a new floating IP address from the public network pool to your project.
-5.  **Associate the Floating IP:** Associate the allocated floating IP with the private IP address of your instance. This allows the instance to be accessible from the internet.
+<summary>Подробно опишите, как запустить экземпляр с плавающим IP (floating IP)</summary><br><b>
+Чтобы запустить экземпляр с плавающим IP, нужно выполнить следующие шаги:
+1.  **Создать сеть и подсеть:** сначала убедиться, что для экземпляров есть частная сеть и подсеть.
+2.  **Создать маршрутизатор:** создать маршрутизатор (router) и подключить его к публичной (внешней) сети и частной подсети.
+3.  **Запустить экземпляр:** запустить новый экземпляр, подключив его к частной сети. Он получит частный IP-адрес из подсети.
+4.  **Выделить плавающий IP:** выделить проекту новый плавающий IP-адрес из пула публичной сети.
+5.  **Связать плавающий IP:** связать выделенный плавающий IP с частным IP-адресом экземпляра. После этого экземпляр станет доступен из интернета.
 </b></details>
 
 <details>
-<summary>You get a call from a customer saying: "I can ping my instance but can't connect (ssh) it". What might be the problem?</summary><br><b>
-If you can ping an instance but cannot SSH into it, the issue is likely related to one of the following:
-*   **Security Group Rules:** The security group attached to the instance may not have a rule allowing inbound traffic on TCP port 22 (the default SSH port).
-*   **Firewall on the Instance:** A firewall running on the instance itself (like `iptables` or `firewalld`) might be blocking the SSH port.
-*   **SSH Service:** The SSH daemon (`sshd`) on the instance might not be running or could be misconfigured.
-*   **Incorrect SSH Key:** You might be using the wrong private key to connect to the instance.
+<summary>Звонит клиент и говорит: «Мой экземпляр пингуется, но подключиться к нему (ssh) не получается». В чём может быть проблема?</summary><br><b>
+Если экземпляр пингуется, но подключиться к нему по SSH нельзя, проблема, скорее всего, связана с одним из следующих пунктов:
+*   **Правила группы безопасности (Security Group):** в группе безопасности, назначенной экземпляру, может отсутствовать правило, разрешающее входящий трафик на TCP-порт 22 (стандартный порт SSH).
+*   **Файрвол на экземпляре:** файрвол, работающий на самом экземпляре (например, `iptables` или `firewalld`), может блокировать порт SSH.
+*   **Сервис SSH:** демон SSH (`sshd`) на экземпляре может быть не запущен или неправильно настроен.
+*   **Неверный SSH-ключ:** для подключения к экземпляру может использоваться не тот закрытый ключ.
 </b></details>
 
 <details>
-<summary>What types of networks OpenStack supports?</summary><br><b>
-OpenStack Neutron supports several network types:
-*   **Local:** A local network is isolated to a single compute node and cannot be shared between multiple nodes.
-*   **Flat:** A flat network is a simple, non-VLAN-tagged network that is shared across all compute nodes.
-*   **VLAN:** A VLAN network uses 802.1q tagging to create isolated layer-2 broadcast domains.
-*   **VXLAN:** VXLAN (Virtual Extensible LAN) is an overlay network technology that encapsulates layer-2 frames in UDP packets, allowing for a large number of isolated networks.
-*   **GRE:** GRE (Generic Routing Encapsulation) is another overlay network technology that can be used to create private networks over a public network.
+<summary>Какие типы сетей поддерживает OpenStack?</summary><br><b>
+OpenStack Neutron поддерживает несколько типов сетей:
+*   **Local:** локальная сеть изолирована в пределах одного вычислительного узла и не может использоваться несколькими узлами совместно.
+*   **Flat:** плоская сеть — простая сеть без тегирования VLAN, общая для всех вычислительных узлов.
+*   **VLAN:** сеть VLAN использует тегирование 802.1q для создания изолированных широковещательных доменов второго уровня (L2).
+*   **VXLAN:** VXLAN (Virtual Extensible LAN) — технология оверлейных сетей, которая инкапсулирует кадры второго уровня в UDP-пакеты, что позволяет создавать большое количество изолированных сетей.
+*   **GRE:** GRE (Generic Routing Encapsulation) — ещё одна технология оверлейных сетей, с помощью которой можно создавать частные сети поверх публичной сети.
 </b></details>
 
 <details>
-<summary>How do you debug OpenStack storage issues? (tools, logs, ...)</summary><br><b>
-To debug storage issues in OpenStack (Cinder), you can use the following:
-*   **Logs:** Check the Cinder service logs (e.g., `/var/log/cinder/cinder-volume.log`, `/var/log/cinder/cinder-api.log`) for error messages.
-*   **Cinder CLI:** Use the `cinder` command-line tool to check the status of volumes, snapshots, and storage backends.
-*   **Database:** Inspect the Cinder database to check for inconsistencies in volume states or metadata.
-*   **Backend Storage:** Check the logs and status of the underlying storage system (e.g., LVM, Ceph, NFS) to identify issues with the storage itself.
+<summary>Как отлаживать проблемы с хранилищем в OpenStack? (инструменты, логи, ...)</summary><br><b>
+Для отладки проблем с хранилищем в OpenStack (Cinder) можно использовать следующее:
+*   **Логи:** проверить логи сервиса Cinder (например, `/var/log/cinder/cinder-volume.log`, `/var/log/cinder/cinder-api.log`) на наличие сообщений об ошибках.
+*   **Cinder CLI:** с помощью утилиты командной строки `cinder` проверить состояние томов, снимков и бэкендов хранения.
+*   **База данных:** изучить базу данных Cinder на предмет несоответствий в состояниях томов или метаданных.
+*   **Бэкенд хранения:** проверить логи и состояние нижележащей системы хранения (например, LVM, Ceph, NFS), чтобы выявить проблемы с самим хранилищем.
 </b></details>
 
 <details>
-<summary>How do you debug OpenStack compute issues? (tools, logs, ...)</summary><br><b>
-To debug compute issues in OpenStack (Nova), you can use the following:
-*   **Logs:** Check the Nova service logs (e.g., `/var/log/nova/nova-compute.log`, `/var/log/nova/nova-api.log`, `/var/log/nova/nova-scheduler.log`) for error messages.
-*   **Nova CLI:** Use the `nova` command-line tool to check the status of instances, hosts, and services.
-*   **Instance Console Log:** View the console log of a specific instance to see boot-up messages and other output.
-*   **Hypervisor:** Check the logs and status of the underlying hypervisor (e.g., KVM, QEMU) to identify issues with virtualization.
+<summary>Как отлаживать проблемы с вычислениями в OpenStack? (инструменты, логи, ...)</summary><br><b>
+Для отладки проблем с вычислениями в OpenStack (Nova) можно использовать следующее:
+*   **Логи:** проверить логи сервиса Nova (например, `/var/log/nova/nova-compute.log`, `/var/log/nova/nova-api.log`, `/var/log/nova/nova-scheduler.log`) на наличие сообщений об ошибках.
+*   **Nova CLI:** с помощью утилиты командной строки `nova` проверить состояние экземпляров, хостов и сервисов.
+*   **Лог консоли экземпляра:** просмотреть лог консоли конкретного экземпляра, чтобы увидеть сообщения загрузки и другой вывод.
+*   **Гипервизор:** проверить логи и состояние нижележащего гипервизора (например, KVM, QEMU), чтобы выявить проблемы с виртуализацией.
 </b></details>
 
-#### OpenStack Deployment & TripleO
+#### Развёртывание OpenStack и TripleO
 
 <details>
-<summary>Have you deployed OpenStack in the past? If yes, can you describe how you did it?</summary><br><b>
-There are several ways to deploy OpenStack, depending on the scale and complexity of the environment. Some common methods include:
-*   **DevStack:** A script-based installer designed for development and testing purposes. It deploys OpenStack from the latest source code.
-*   **Packstack:** A utility that uses Puppet modules to deploy OpenStack on CentOS or RHEL. It is suitable for proof-of-concept and small-scale production environments.
-*   **Kolla-Ansible:** A set of Ansible playbooks that deploy OpenStack services as Docker containers. This method is highly scalable and recommended for production deployments.
-*   **OpenStack-Ansible:** A collection of Ansible playbooks that deploy OpenStack services directly on bare metal or virtual machines.
-</b></details>
-
-<details>
-<summary>Are you familiar with TripleO? How is it different from Devstack or Packstack?</summary><br><b>
-
-You can read about TripleO right [here](https://docs.openstack.org/tripleo-docs/latest)
-</b></details>
-
-#### OpenStack Compute
-
-<details>
-<summary>Can you describe Nova in detail?</summary><br><b>
-
-  * Used to provision and manage virtual instances
-  * It supports Multi-Tenancy in different levels - logging, end-user control, auditing, etc.
-  * Highly scalable
-  * Authentication can be done using internal system or LDAP
-  * Supports multiple types of block storage
-  * Tries to be hardware and hypervisor agnostice
+<summary>Приходилось ли раньше разворачивать OpenStack? Если да, как это было сделано?</summary><br><b>
+Существует несколько способов развернуть OpenStack в зависимости от масштаба и сложности среды. Вот некоторые распространённые методы:
+*   **DevStack:** установщик на основе скриптов, предназначенный для разработки и тестирования. Разворачивает OpenStack из самого свежего исходного кода.
+*   **Packstack:** утилита, которая использует модули Puppet для развёртывания OpenStack на CentOS или RHEL. Подходит для проверки концепции (proof-of-concept) и небольших production-сред.
+*   **Kolla-Ansible:** набор плейбуков Ansible, которые разворачивают сервисы OpenStack в виде Docker-контейнеров. Этот метод хорошо масштабируется и рекомендуется для production-развёртываний.
+*   **OpenStack-Ansible:** коллекция плейбуков Ansible, которые разворачивают сервисы OpenStack непосредственно на физических серверах (bare metal) или виртуальных машинах.
 </b></details>
 
 <details>
-<summary>What do you know about Nova architecture and components?</summary><br><b>
+<summary>Знаком ли TripleO? Чем он отличается от Devstack или Packstack?</summary><br><b>
 
-  * nova-api - the server which serves metadata and compute APIs
-  * the different Nova components communicate by using a queue (Rabbitmq usually) and a database
-  * a request for creating an instance is inspected by nova-scheduler which determines where the instance will be created and running
-  * nova-compute is the component responsible for communicating with the hypervisor for creating the instance and manage its lifecycle
+Про TripleO можно прочитать [здесь](https://docs.openstack.org/tripleo-docs/latest)
 </b></details>
 
-#### OpenStack Networking (Neutron)
+#### Вычисления в OpenStack (Compute)
 
 <details>
-<summary>Explain Neutron in detail</summary><br><b>
+<summary>Подробно опишите Nova</summary><br><b>
 
-  * One of the core component of OpenStack and a standalone project
-  * Neutron focused on delivering networking as a service
-  * With Neutron, users can set up networks in the cloud and configure and manage a variety of network services
-  * Neutron interacts with:
-      * Keystone - authorize API calls
-      * Nova - nova communicates with neutron to plug NICs into a network
-      * Horizon - supports networking entities in the dashboard and also provides topology view which includes networking details
+  * Используется для выделения виртуальных экземпляров и управления ими
+  * Поддерживает мультитенантность на разных уровнях — логирование, контроль со стороны конечного пользователя, аудит и т.д.
+  * Хорошо масштабируется
+  * Аутентификация может выполняться с помощью внутренней системы или LDAP
+  * Поддерживает несколько типов блочных хранилищ
+  * Стремится не зависеть от оборудования и гипервизора
 </b></details>
 
 <details>
-<summary>Explain each of the following components:
+<summary>Что известно об архитектуре и компонентах Nova?</summary><br><b>
+
+  * nova-api — сервер, который обслуживает API метаданных и вычислений
+  * различные компоненты Nova взаимодействуют через очередь (обычно Rabbitmq) и базу данных
+  * запрос на создание экземпляра обрабатывает nova-scheduler, который определяет, где экземпляр будет создан и запущен
+  * nova-compute — компонент, который взаимодействует с гипервизором для создания экземпляра и управления его жизненным циклом
+</b></details>
+
+#### Сеть в OpenStack (Neutron)
+
+<details>
+<summary>Подробно объясните, что такое Neutron</summary><br><b>
+
+  * Один из ключевых компонентов OpenStack и самостоятельный проект
+  * Neutron ориентирован на предоставление сети как сервиса
+  * С помощью Neutron пользователи могут создавать сети в облаке, а также настраивать различные сетевые сервисы и управлять ими
+  * Neutron взаимодействует с:
+      * Keystone — авторизация вызовов API
+      * Nova — nova взаимодействует с neutron, чтобы подключать сетевые карты (NIC) к сети
+      * Horizon — поддерживает сетевые сущности в панели управления (dashboard), а также предоставляет представление топологии с подробностями о сети
+</b></details>
+
+<details>
+<summary>Объясните каждый из следующих компонентов:
 
   - neutron-dhcp-agent
   - neutron-l3-agent
@@ -1794,29 +1794,29 @@ You can read about TripleO right [here](https://docs.openstack.org/tripleo-docs/
   - neutron-server</summary><br><b>
 
 
-  * neutron-l3-agent - L3/NAT forwarding (provides external network access for VMs for example)
-  * neutron-dhcp-agent - DHCP services
-  * neutron-metering-agent - L3 traffic metering
-  * neutron-*-agtent - manages local vSwitch configuration on each compute (based on chosen plugin)
-  * neutron-server - exposes networking API and passes requests to other plugins if required
+  * neutron-l3-agent — пересылка L3/NAT (например, обеспечивает ВМ доступ во внешнюю сеть)
+  * neutron-dhcp-agent — сервисы DHCP
+  * neutron-metering-agent — учёт трафика L3
+  * neutron-*-agtent — управляет локальной конфигурацией vSwitch на каждом вычислительном узле (в зависимости от выбранного плагина)
+  * neutron-server — предоставляет сетевой API и при необходимости передаёт запросы другим плагинам
 </b></details>
 
 <details>
-<summary>Explain these network types:
+<summary>Объясните следующие типы сетей:
 
   - Management Network
   - Guest Network
   - API Network
   - External Network</summary><br><b>
 
-  * Management Network - used for internal communication between OpenStack components. Any IP address in this network is accessible only within the datacetner
-  * Guest Network - used for communication between instances/VMs
-  * API Network - used for services API communication. Any IP address in this network is publicly accessible
-  * External Network - used for public communication. Any IP address in this network is accessible by anyone on the internet
+  * Management Network — используется для внутреннего взаимодействия между компонентами OpenStack. Любой IP-адрес в этой сети доступен только внутри дата-центра
+  * Guest Network — используется для взаимодействия между экземплярами/ВМ
+  * API Network — используется для взаимодействия через API сервисов. Любой IP-адрес в этой сети доступен публично
+  * External Network — используется для публичного взаимодействия. Любой IP-адрес в этой сети доступен любому пользователю интернета
 </b></details>
 
 <details>
-<summary>In which order should you remove the following entities:
+<summary>В каком порядке нужно удалять следующие сущности:
 
   * Network
   * Port
@@ -1828,140 +1828,140 @@ You can read about TripleO right [here](https://docs.openstack.org/tripleo-docs/
   - Router
   - Network
 
-There are many reasons for that. One for example: you can't remove router if there are active ports assigned to it.
+Причин тому много. Например, нельзя удалить маршрутизатор, если к нему привязаны активные порты.
 </b></details>
 
 <details>
-<summary>What is a provider network?</summary><br><b>
-A provider network is a network that is created by an OpenStack administrator and maps directly to an existing physical network in the data center. It allows for direct layer-2 connectivity to instances and is typically used for providing external network access or for connecting to specific physical networks.
+<summary>Что такое сеть провайдера (provider network)?</summary><br><b>
+Сеть провайдера — это сеть, которую создаёт администратор OpenStack и которая напрямую сопоставляется с существующей физической сетью в дата-центре. Она обеспечивает экземплярам прямую связность на втором уровне и обычно используется для предоставления доступа во внешнюю сеть или для подключения к определённым физическим сетям.
 </b></details>
 
 <details>
-<summary>What components and services exist for L2 and L3?</summary><br><b>
-*   **L2 (Layer 2):** The primary L2 component is the `neutron-openvswitch-agent` (or a similar agent for other plugins), which runs on each compute node and manages the local virtual switch (e.g., Open vSwitch). It is responsible for connecting instances to virtual networks and enforcing security group rules.
-*   **L3 (Layer 3):** The `neutron-l3-agent` is responsible for providing L3 services like routing and floating IPs. It manages virtual routers that connect private networks to external networks.
+<summary>Какие компоненты и сервисы существуют для L2 и L3?</summary><br><b>
+*   **L2 (второй уровень):** основной компонент L2 — `neutron-openvswitch-agent` (или аналогичный агент для других плагинов), который работает на каждом вычислительном узле и управляет локальным виртуальным коммутатором (например, Open vSwitch). Он отвечает за подключение экземпляров к виртуальным сетям и применение правил групп безопасности.
+*   **L3 (третий уровень):** `neutron-l3-agent` отвечает за предоставление сервисов L3, таких как маршрутизация и плавающие IP. Он управляет виртуальными маршрутизаторами, которые соединяют частные сети с внешними.
 </b></details>
 
 <details>
-<summary>What is the ML2 plug-in? Explain its architecture</summary><br><b>
-ML2 (Modular Layer 2) is a framework that allows OpenStack to simultaneously utilize a variety of layer-2 networking technologies. It replaces the monolithic plugins for individual network types and provides a more flexible and extensible architecture. ML2 uses a combination of `Type` drivers (for network types like VLAN, VXLAN, etc.) and `Mechanism` drivers (for connecting to different network mechanisms like Open vSwitch, Linux Bridge, etc.).
+<summary>Что такое плагин ML2? Объясните его архитектуру</summary><br><b>
+ML2 (Modular Layer 2) — это фреймворк, который позволяет OpenStack одновременно использовать различные сетевые технологии второго уровня. Он заменяет монолитные плагины для отдельных типов сетей и предоставляет более гибкую и расширяемую архитектуру. ML2 использует сочетание драйверов `Type` (для типов сетей, таких как VLAN, VXLAN и т.д.) и драйверов `Mechanism` (для подключения к различным сетевым механизмам, таким как Open vSwitch, Linux Bridge и т.д.).
 </b></details>
 
 <details>
-<summary>What is the L2 agent? How does it works and what is it responsible for?</summary><br><b>
-The L2 agent is a service that runs on each compute node and is responsible for wiring virtual networks to instances. It communicates with the Neutron server to get the network topology and then configures the local virtual switch (e.g., Open vSwitch) to connect instances to the correct networks. It also enforces security group rules by configuring the virtual switch.
+<summary>Что такое L2-агент? Как он работает и за что отвечает?</summary><br><b>
+L2-агент — это сервис, который работает на каждом вычислительном узле и отвечает за подключение виртуальных сетей к экземплярам. Он получает топологию сети от сервера Neutron, а затем настраивает локальный виртуальный коммутатор (например, Open vSwitch), чтобы подключить экземпляры к нужным сетям. Он также применяет правила групп безопасности, настраивая виртуальный коммутатор.
 </b></details>
 
 <details>
-<summary>What is the L3 agent? How does it works and what is it responsible for?</summary><br><b>
-The L3 agent is responsible for providing layer-3 networking services, such as routing and floating IPs. It runs on network nodes and manages virtual routers that connect private networks to external networks. The L3 agent creates network namespaces for each router to provide isolation and then configures routing rules and NAT to enable traffic to flow between networks.
+<summary>Что такое L3-агент? Как он работает и за что отвечает?</summary><br><b>
+L3-агент отвечает за предоставление сетевых сервисов третьего уровня, таких как маршрутизация и плавающие IP. Он работает на сетевых узлах и управляет виртуальными маршрутизаторами, которые соединяют частные сети с внешними. L3-агент создаёт для каждого маршрутизатора сетевое пространство имён (network namespace) для изоляции, а затем настраивает правила маршрутизации и NAT, чтобы трафик мог проходить между сетями.
 </b></details>
 
 <details>
-<summary>Explain what the Metadata agent is responsible for</summary><br><b>
-The Metadata agent is responsible for providing metadata (e.g., instance ID, hostname, public keys) to instances. It runs on network nodes and acts as a proxy between instances and the Nova metadata service. When an instance requests metadata, the request is forwarded to the Metadata agent, which then retrieves the information from Nova and returns it to the instance.
+<summary>Объясните, за что отвечает агент метаданных (Metadata agent)</summary><br><b>
+Агент метаданных отвечает за предоставление экземплярам метаданных (например, ID экземпляра, имени хоста, открытых ключей). Он работает на сетевых узлах и выступает прокси между экземплярами и сервисом метаданных Nova. Когда экземпляр запрашивает метаданные, запрос передаётся агенту метаданных, который получает информацию от Nova и возвращает её экземпляру.
 </b></details>
 
 <details>
-<summary>What networking entities Neutron supports?</summary><br><b>
-Neutron supports a variety of networking entities, including:
-*   **Network:** An isolated layer-2 broadcast domain.
-*   **Subnet:** A block of IP addresses that can be assigned to instances.
-*   **Port:** A connection point for attaching a single device, such as an instance, to a virtual network.
-*   **Router:** A logical entity that connects multiple layer-2 networks.
-*   **Floating IP:** A public IP address that can be associated with an instance to provide external connectivity.
-*   **Security Group:** A collection of firewall rules that control inbound and outbound traffic to instances.
+<summary>Какие сетевые сущности поддерживает Neutron?</summary><br><b>
+Neutron поддерживает различные сетевые сущности, в том числе:
+*   **Network:** изолированный широковещательный домен второго уровня.
+*   **Subnet:** блок IP-адресов, которые можно назначать экземплярам.
+*   **Port:** точка подключения одного устройства, например экземпляра, к виртуальной сети.
+*   **Router:** логическая сущность, которая соединяет несколько сетей второго уровня.
+*   **Floating IP:** публичный IP-адрес, который можно связать с экземпляром для обеспечения внешней связности.
+*   **Security Group:** набор правил файрвола, которые управляют входящим и исходящим трафиком экземпляров.
 </b></details>
 
 <details>
-<summary>How do you debug OpenStack networking issues? (tools, logs, ...)</summary><br><b>
-To debug networking issues in OpenStack (Neutron), you can use the following:
-*   **Logs:** Check the Neutron service logs (e.g., `/var/log/neutron/neutron-server.log`, `/var/log/neutron/openvswitch-agent.log`, `/var/log/neutron/l3-agent.log`) for error messages.
-*   **Neutron CLI:** Use the `neutron` command-line tool to check the status of networks, subnets, ports, routers, and other networking entities.
-*   **`ip netns`:** Use the `ip netns` command to inspect network namespaces and the network configurations within them.
-*   **`ovs-vsctl` and `ovs-ofctl`:** Use these tools to inspect the configuration and flow tables of Open vSwitch bridges.
-*   **`tcpdump`:** Use `tcpdump` to capture and analyze network traffic on various interfaces to identify connectivity issues.
+<summary>Как отлаживать сетевые проблемы в OpenStack? (инструменты, логи, ...)</summary><br><b>
+Для отладки сетевых проблем в OpenStack (Neutron) можно использовать следующее:
+*   **Логи:** проверить логи сервиса Neutron (например, `/var/log/neutron/neutron-server.log`, `/var/log/neutron/openvswitch-agent.log`, `/var/log/neutron/l3-agent.log`) на наличие сообщений об ошибках.
+*   **Neutron CLI:** с помощью утилиты командной строки `neutron` проверить состояние сетей, подсетей, портов, маршрутизаторов и других сетевых сущностей.
+*   **`ip netns`:** с помощью команды `ip netns` изучить сетевые пространства имён и сетевую конфигурацию внутри них.
+*   **`ovs-vsctl` и `ovs-ofctl`:** с помощью этих инструментов изучить конфигурацию и таблицы потоков (flow tables) мостов Open vSwitch.
+*   **`tcpdump`:** с помощью `tcpdump` перехватывать и анализировать сетевой трафик на различных интерфейсах, чтобы выявить проблемы со связностью.
 </b></details>
 
-#### OpenStack - Glance
+#### OpenStack — Glance
 
 <details>
-<summary>Explain Glance in detail</summary><br><b>
+<summary>Подробно объясните, что такое Glance</summary><br><b>
 
-  * Glance is the OpenStack image service
-  * It handles requests related to instances disks and images
-  * Glance also used for creating snapshots for quick instances backups
-  * Users can use Glance to create new images or upload existing ones
-</b></details>
-
-<details>
-<summary>Describe Glance architecture</summary><br><b>
-
-  * glance-api - responsible for handling image API calls such as retrieval and storage. It consists of two APIs: 1. registry-api - responsible for internal requests 2. user API - can be accessed publicly
-  * glance-registry - responsible for handling image metadata requests (e.g. size, type, etc). This component is private which means it's not available publicly
-  * metadata definition service - API for custom metadata
-  * database - for storing images metadata
-  * image repository - for storing images. This can be a filesystem, swift object storage, HTTP, etc.
-</b></details>
-
-#### OpenStack - Swift
-
-<details>
-<summary>Explain Swift in detail</summary><br><b>
-
-  * Swift is Object Store service and is an highly available, distributed and consistent store designed for storing a lot of data
-  * Swift is distributing data across multiple servers while writing it to multiple disks
-  * One can choose to add additional servers to scale the cluster. All while swift maintaining integrity of the information and data replications.
+  * Glance — сервис образов OpenStack
+  * Он обрабатывает запросы, связанные с дисками и образами экземпляров
+  * Glance также используется для создания снимков для быстрого резервного копирования экземпляров
+  * С помощью Glance пользователи могут создавать новые образы или загружать существующие
 </b></details>
 
 <details>
-<summary>Can users store by default an object of 100GB in size?</summary><br><b>
+<summary>Опишите архитектуру Glance</summary><br><b>
 
-Not by default. Object Storage API limits the maximum to 5GB per object but it can be adjusted.
+  * glance-api — отвечает за обработку вызовов API образов, таких как получение и сохранение. Состоит из двух API: 1. registry-api — отвечает за внутренние запросы 2. user API — доступен публично
+  * glance-registry — отвечает за обработку запросов метаданных образов (например, размер, тип и т.д.). Этот компонент приватный, то есть публично недоступен
+  * metadata definition service — API для пользовательских метаданных
+  * database — для хранения метаданных образов
+  * image repository — для хранения образов. Это может быть файловая система, объектное хранилище swift, HTTP и т.д.
+</b></details>
+
+#### OpenStack — Swift
+
+<details>
+<summary>Подробно объясните, что такое Swift</summary><br><b>
+
+  * Swift — это сервис объектного хранилища (Object Store), высокодоступное, распределённое и согласованное хранилище, предназначенное для хранения больших объёмов данных
+  * Swift распределяет данные по нескольким серверам, записывая их на несколько дисков
+  * Для масштабирования кластера можно добавлять дополнительные серверы. При этом swift сохраняет целостность информации и репликацию данных.
 </b></details>
 
 <details>
-<summary>Explain the following in regards to Swift:
+<summary>Могут ли пользователи по умолчанию хранить объект размером 100GB?</summary><br><b>
+
+Не по умолчанию. Object Storage API ограничивает максимальный размер объекта 5GB, но это значение можно изменить.
+</b></details>
+
+<details>
+<summary>Объясните следующие понятия применительно к Swift:
 
   * Container
   * Account
   * Object
 </summary><br><b>
 
-  - Container - Defines a namespace for objects.
-  - Account - Defines a namespace for containers
-  - Object - Data content (e.g. image, document, ...)
+  - Container — задаёт пространство имён для объектов.
+  - Account — задаёт пространство имён для контейнеров
+  - Object — содержимое данных (например, образ, документ, ...)
 </b></details>
 
 <details>
-<summary>True or False? there can be two objects with the same name in the same container but not in two different containers</summary><br><b>
+<summary>Верно или неверно? В одном контейнере может быть два объекта с одинаковым именем, а в двух разных контейнерах — нет</summary><br><b>
 
-False. Two objects can have the same name if they are in different containers.
+Неверно. Два объекта могут иметь одинаковое имя, если они находятся в разных контейнерах.
 </b></details>
 
-#### OpenStack - Cinder
+#### OpenStack — Cinder
 
 <details>
-<summary>Explain Cinder in detail</summary><br><b>
+<summary>Подробно объясните, что такое Cinder</summary><br><b>
 
-  * Cinder is OpenStack Block Storage service
-  * It basically provides used with storage resources they can consume with other services such as Nova
-  * One of the most used implementations of storage supported by Cinder is LVM
-  * From user perspective this is transparent which means the user doesn't know where, behind the scenes, the storage is located or what type of storage is used
+  * Cinder — сервис блочного хранилища (Block Storage) OpenStack
+  * По сути, он предоставляет пользователям ресурсы хранения, которые они могут использовать вместе с другими сервисами, например Nova
+  * Одна из самых распространённых реализаций хранилища, поддерживаемых Cinder, — LVM
+  * Для пользователя это прозрачно: он не знает, где за кулисами находится хранилище и какой тип хранилища используется
 </b></details>
 
 <details>
-<summary>Describe Cinder's components</summary><br><b>
+<summary>Опишите компоненты Cinder</summary><br><b>
 
-  * cinder-api - receives API requests
-  * cinder-volume - manages attached block devices
-  * cinder-scheduler - responsible for storing volumes
+  * cinder-api — принимает запросы API
+  * cinder-volume — управляет подключёнными блочными устройствами
+  * cinder-scheduler — отвечает за размещение томов
 </b></details>
 
-#### OpenStack - Keystone
+#### OpenStack — Keystone
 
 <details>
-<summary>Can you describe the following concepts in regards to Keystone?
+<summary>Опишите следующие понятия применительно к Keystone:
 
   - Role
   - Tenant/Project
@@ -1970,44 +1970,44 @@ False. Two objects can have the same name if they are in different containers.
   - Token
 </summary><br><b>
 
-  - Role - A list of rights and privileges determining what a user or a project can perform
-  - Tenant/Project - Logical representation of a group of resources isolated from other groups of resources. It can be an account, organization, ...
-  - Service - An endpoint which the user can use for accessing different resources
-  - Endpoint - a network address which can be used to access a certain OpenStack service
-  - Token - Used for access resources while describing which resources can be accessed by using a scope
+  - Role — список прав и привилегий, определяющих, что может делать пользователь или проект
+  - Tenant/Project — логическое представление группы ресурсов, изолированной от других групп ресурсов. Это может быть учётная запись, организация, ...
+  - Service — конечная точка, которую пользователь может использовать для доступа к различным ресурсам
+  - Endpoint — сетевой адрес, по которому можно получить доступ к определённому сервису OpenStack
+  - Token — используется для доступа к ресурсам; с помощью области действия (scope) описывает, к каким ресурсам можно получить доступ
 </b></details>
 
 <details>
-<summary>What are the properties of a service? In other words, how a service is identified?</summary><br><b>
+<summary>Каковы свойства сервиса? Иными словами, как идентифицируется сервис?</summary><br><b>
 
-Using:
-  - Name
-  - ID number
-  - Type
-  - Description
+С помощью:
+  - имени (Name)
+  - идентификационного номера (ID)
+  - типа (Type)
+  - описания (Description)
 </b></details>
 
 <details>
-<summary>Explain the following:
+<summary>Объясните следующее:
   - PublicURL
   - InternalURL
   - AdminURL</summary><br><b>
 
-  - PublicURL - Publicly accessible through public internet
-  - InternalURL - Used for communication between services
-  - AdminURL - Used for administrative management
+  - PublicURL — публично доступен через интернет
+  - InternalURL — используется для взаимодействия между сервисами
+  - AdminURL — используется для административного управления
 </b></details>
 
 <details>
-<summary>What is a service catalog?</summary><br><b>
+<summary>Что такое каталог сервисов (service catalog)?</summary><br><b>
 
-A list of services and their endpoints
+Список сервисов и их конечных точек
 </b></details>
 
-#### OpenStack Advanced - Services
+#### OpenStack для продвинутых — сервисы
 
 <details>
-<summary>Describe each of the following services
+<summary>Опишите каждый из следующих сервисов
 
   * Swift
   * Sahara
@@ -2017,56 +2017,56 @@ A list of services and their endpoints
   * Ceilometer
 </summary><br><b>
 
-  * Swift - highly available, distributed, eventually consistent object/blob store
-  * Sahara - Manage Hadoop Clusters
-  * Ironic - Bare Metal Provisioning
-  * Trove - Database as a service that runs on OpenStack
-  * Aodh - Alarms Service
-  * Ceilometer - Track and monitor usage
+  * Swift — высокодоступное, распределённое объектное/blob-хранилище с согласованностью в конечном счёте (eventually consistent)
+  * Sahara — управление кластерами Hadoop
+  * Ironic — выделение физических серверов (Bare Metal Provisioning)
+  * Trove — база данных как сервис, работающая на OpenStack
+  * Aodh — сервис оповещений (Alarms)
+  * Ceilometer — отслеживание и мониторинг использования
 </b></details>
 
 <details>
-<summary>Identify the service/project used for each of the following:
+<summary>Определите сервис/проект, который используется для каждого из следующих пунктов:
 
-  * Database as a service which runs on OpenStack
-  * Bare Metal Provisioning
-  * Track and monitor usage
-  * Alarms Service
-  * Manage Hadoop Clusters
-  * highly available, distributed, eventually consistent object/blob store
+  * База данных как сервис, работающая на OpenStack
+  * Выделение физических серверов (Bare Metal Provisioning)
+  * Отслеживание и мониторинг использования
+  * Сервис оповещений
+  * Управление кластерами Hadoop
+  * Высокодоступное, распределённое объектное/blob-хранилище с согласованностью в конечном счёте
 </summary><br><b>
 
-  * Database as a service which runs on OpenStack - Trove
-  * Bare Metal Provisioning - Ironic
-  * Track and monitor usage - Ceilometer
-  * Alarms Service - Aodh
-  * Manage Hadoop Clusters
-  * Manage Hadoop Clusters - Sahara
-  * highly available, distributed, eventually consistent object/blob store - Swift
+  * База данных как сервис, работающая на OpenStack — Trove
+  * Выделение физических серверов — Ironic
+  * Отслеживание и мониторинг использования — Ceilometer
+  * Сервис оповещений — Aodh
+  * Управление кластерами Hadoop
+  * Управление кластерами Hadoop — Sahara
+  * Высокодоступное, распределённое объектное/blob-хранилище с согласованностью в конечном счёте — Swift
 </b></details>
 
-#### OpenStack Advanced - Keystone
+#### OpenStack для продвинутых — Keystone
 
 <details>
-<summary>Can you describe Keystone service in detail?</summary><br><b>
+<summary>Подробно опишите сервис Keystone</summary><br><b>
 
-  * You can't have OpenStack deployed without Keystone
-  * It Provides identity, policy and token services
-    * The authentication provided is for both users and services
-    * The authorization supported is token-based and user-based.
-  * There is a policy defined based on RBAC stored in a JSON file and each line in that file defines the level of access to apply
+  * Развернуть OpenStack без Keystone невозможно
+  * Он предоставляет сервисы идентификации, политик и токенов
+    * Аутентификация предоставляется как для пользователей, так и для сервисов
+    * Поддерживается авторизация на основе токенов и на основе пользователей.
+  * Существует политика на основе RBAC, хранящаяся в JSON-файле, где каждая строка определяет применяемый уровень доступа
 </b></details>
 
 <details>
-<summary>Describe Keystone architecture</summary><br><b>
+<summary>Опишите архитектуру Keystone</summary><br><b>
 
-  * There is a service API and admin API through which Keystone gets requests
-  * Keystone has four backends:
-    * Token Backend - Temporary Tokens for users and services
-    * Policy Backend - Rules management and authorization
-    * Identity Backend - users and groups (either standalone DB, LDAP, ...)
-    * Catalog Backend - Endpoints
-  * It has pluggable environment where you can integrate with:
+  * Есть service API и admin API, через которые Keystone получает запросы
+  * У Keystone четыре бэкенда:
+    * Token Backend — временные токены для пользователей и сервисов
+    * Policy Backend — управление правилами и авторизация
+    * Identity Backend — пользователи и группы (отдельная БД, LDAP, ...)
+    * Catalog Backend — конечные точки (endpoints)
+  * Подключаемая среда, которая позволяет интегрироваться с:
     * LDAP
     * KVS (Key Value Store)
     * SQL
@@ -2075,17 +2075,17 @@ A list of services and their endpoints
 </b></details>
 
 <details>
-<summary>Describe the Keystone authentication process</summary><br><b>
+<summary>Опишите процесс аутентификации в Keystone</summary><br><b>
 
-  * Keystone gets a call/request and checks whether it's from an authorized user, using username, password and authURL
-  * Once confirmed, Keystone provides a token.
-  * A token contains a list of user's projects so there is no to authenticate every time and a token can submitted instead
+  * Keystone получает вызов/запрос и проверяет, исходит ли он от авторизованного пользователя, с помощью имени пользователя, пароля и authURL
+  * После подтверждения Keystone выдаёт токен.
+  * Токен содержит список проектов пользователя, поэтому нет необходимости проходить аутентификацию каждый раз — вместо этого можно предъявить токен
 </b></details>
 
-#### OpenStack Advanced - Compute (Nova)
+#### OpenStack для продвинутых — вычисления (Nova)
 
 <details>
-<summary>What each of the following does?:
+<summary>Что делает каждый из следующих компонентов?:
 
   * nova-api
   * nova-compuate
@@ -2095,115 +2095,115 @@ A list of services and their endpoints
   * nova-scheduler
 </summary><br><b>
 
-  * nova-api - responsible for managing requests/calls
-  * nova-compute - responsible for managing instance lifecycle
-  * nova-conductor - Mediates between nova-compute and the database so nova-compute doesn't access it directly
-  * nova-cert - Manages X509 certificates for secure communication.
-  * nova-consoleauth - Authorizes tokens for users to access instance consoles.
-  * nova-scheduler - Determines which compute host an instance should be launched on based on a set of filters and weights.
+  * nova-api — отвечает за обработку запросов/вызовов
+  * nova-compute — отвечает за управление жизненным циклом экземпляров
+  * nova-conductor — посредник между nova-compute и базой данных, чтобы nova-compute не обращался к ней напрямую
+  * nova-cert — управляет сертификатами X509 для защищённого взаимодействия.
+  * nova-consoleauth — авторизует токены пользователей для доступа к консолям экземпляров.
+  * nova-scheduler — на основе набора фильтров и весов определяет, на каком вычислительном хосте запускать экземпляр.
 </b></details>
 
 <details>
-<summary>What types of Nova proxies are you familiar with?</summary><br><b>
+<summary>Какие типы прокси Nova известны?</summary><br><b>
 
-  * Nova-novncproxy - Access through VNC connections
-  * Nova-spicehtml5proxy - Access through SPICE
-  * Nova-xvpvncproxy - Access through a VNC connection
+  * Nova-novncproxy — доступ через VNC-подключения
+  * Nova-spicehtml5proxy — доступ через SPICE
+  * Nova-xvpvncproxy — доступ через VNC-подключение
 </b></details>
 
-#### OpenStack Advanced - Networking (Neutron)
+#### OpenStack для продвинутых — сеть (Neutron)
 
 <details>
-<summary>Explain BGP dynamic routing</summary><br><b>
-BGP (Border Gateway Protocol) is a standardized exterior gateway protocol used to exchange routing and reachability information among autonomous systems on the internet. In OpenStack, BGP can be used to dynamically advertise floating IP addresses and project networks to physical routers, eliminating the need for static routes and enabling more scalable and resilient network architectures.
-</b></details>
-
-<details>
-<summary>What is the role of network namespaces in OpenStack?</summary><br><b>
-Network namespaces are a Linux kernel feature that provides isolated network stacks for different processes. In OpenStack, network namespaces are used to isolate the network resources of different virtual routers and other networking services. This ensures that each router has its own set of interfaces, routing tables, and firewall rules, preventing conflicts and providing a secure multi-tenant environment.
-</b></details>
-
-#### OpenStack Advanced - Horizon
-
-<details>
-<summary>Can you describe Horizon in detail?</summary><br><b>
-
-  * Django-based project focusing on providing an OpenStack dashboard and the ability to create additional customized dashboards
-  * You can use it to access the different OpenStack services resources - instances, images, networks, ...
-    * By accessing the dashboard, users can use it to list, create, remove and modify the different resources
-  * It's also highly customizable and you can modify or add to it based on your needs
+<summary>Объясните динамическую маршрутизацию BGP</summary><br><b>
+BGP (Border Gateway Protocol) — стандартизированный протокол внешней маршрутизации, который используется для обмена информацией о маршрутах и достижимости между автономными системами в интернете. В OpenStack BGP можно использовать для динамического анонсирования плавающих IP-адресов и сетей проектов физическим маршрутизаторам, что избавляет от необходимости в статических маршрутах и позволяет строить более масштабируемые и отказоустойчивые сетевые архитектуры.
 </b></details>
 
 <details>
-<summary>What can you tell about Horizon architecture?</summary><br><b>
+<summary>Какую роль играют сетевые пространства имён (network namespaces) в OpenStack?</summary><br><b>
+Сетевые пространства имён — это функция ядра Linux, которая предоставляет изолированные сетевые стеки для разных процессов. В OpenStack сетевые пространства имён используются для изоляции сетевых ресурсов разных виртуальных маршрутизаторов и других сетевых сервисов. Благодаря этому у каждого маршрутизатора есть собственный набор интерфейсов, таблиц маршрутизации и правил файрвола, что предотвращает конфликты и обеспечивает безопасную мультитенантную среду.
+</b></details>
 
-  * API is backward compatible
-  * There are three type of dashboards: user, system and settings
-  * It provides core support for all OpenStack core projects such as Neutron, Nova, etc. (out of the box, no need to install extra packages or plugins)
-  * Anyone can extend the dashboards and add new components
-  * Horizon provides templates and core classes from which one can build its own dashboard
+#### OpenStack для продвинутых — Horizon
+
+<details>
+<summary>Подробно опишите Horizon</summary><br><b>
+
+  * Проект на основе Django, задача которого — предоставлять панель управления (dashboard) OpenStack и возможность создавать дополнительные пользовательские панели
+  * С его помощью можно получить доступ к ресурсам различных сервисов OpenStack — экземплярам, образам, сетям, ...
+    * Через панель управления пользователи могут просматривать список ресурсов, создавать, удалять и изменять их
+  * Он также хорошо настраивается, и его можно изменять или дополнять в соответствии со своими потребностями
+</b></details>
+
+<details>
+<summary>Что можно рассказать об архитектуре Horizon?</summary><br><b>
+
+  * API обратно совместим
+  * Есть три типа панелей: user, system и settings
+  * Обеспечивает базовую поддержку всех ключевых проектов OpenStack, таких как Neutron, Nova и т.д. (из коробки, без установки дополнительных пакетов или плагинов)
+  * Любой может расширять панели и добавлять новые компоненты
+  * Horizon предоставляет шаблоны и базовые классы, на основе которых можно построить собственную панель
 </b></details>
 
 ## Puppet
 
 <details>
-<summary>What is Puppet? How does it works?</summary><br><b> 
+<summary>Что такое Puppet? Как он работает?</summary><br><b> 
 
-  * Puppet is a configuration management tool ensuring that all systems are configured to a desired and predictable state.
+  * Puppet — это инструмент управления конфигурацией, который приводит все системы к желаемому и предсказуемому состоянию.
 </b></details>
 <details>
-<summary>Explain Puppet architecture</summary><br><b>
+<summary>Объясните архитектуру Puppet</summary><br><b>
 
-  * Puppet has a primary-secondary node architecture. The clients are distributed across the network and communicate with the primary-secondary environment where Puppet modules are present. The client agent sends a certificate with its ID to the server; the server then signs that certificate and sends it back to the client. This authentication allows for secure and verifiable communication between the client and the master. 
-</b></details>
-
-<details>
-<summary>Can you compare Puppet to other configuration management tools? Why did you chose to use Puppet?</summary><br><b>
-
-  * Puppet is often compared to other configuration management tools like Chef, Ansible, SaltStack, and cfengine. The choice to use Puppet often depends on an organization's needs, such as ease of use, scalability, and community support.
+  * У Puppet архитектура с основным и вторичными узлами (primary-secondary). Клиенты распределены по сети и взаимодействуют со средой primary-secondary, где находятся модули Puppet. Клиентский агент отправляет на сервер сертификат со своим ID; сервер подписывает этот сертификат и отправляет его обратно клиенту. Такая аутентификация обеспечивает защищённое и проверяемое взаимодействие между клиентом и мастером. 
 </b></details>
 
 <details>
-<summary>Explain the following:
+<summary>Сравните Puppet с другими инструментами управления конфигурацией. Почему был выбран именно Puppet?</summary><br><b>
+
+  * Puppet часто сравнивают с другими инструментами управления конфигурацией, такими как Chef, Ansible, SaltStack и cfengine. Выбор Puppet обычно зависит от потребностей организации: простоты использования, масштабируемости и поддержки сообщества.
+</b></details>
+
+<details>
+<summary>Объясните следующее:
 
   * Module
   * Manifest
   * Node
 </summary><br><b>
   
-  * Modules - are a collection of manifests, templates, and files
-  * Manifests - are the actual codes for configuring the clients
-  * Node - allows you to assign specific configurations to specific nodes
+  * Modules (модули) — это коллекции манифестов, шаблонов и файлов
+  * Manifests (манифесты) — это собственно код для настройки клиентов
+  * Node (узел) — позволяет назначать определённые конфигурации определённым узлам
 </b></details>
 
 <details>
-<summary>Explain Facter</summary><br><b>
+<summary>Объясните, что такое Facter</summary><br><b>
 
-  * Facter is a standalone tool in Puppet that collects information about a system and its configuration, such as the operating system, IP addresses, memory, and network interfaces. This information can be used in Puppet manifests to make decisions about how resources should be managed, and to customize the behavior of Puppet based on the characteristics of the system. Facter is integrated into Puppet, and its facts can be used within Puppet manifests to make decisions about resource management.
+  * Facter — это самостоятельный инструмент в Puppet, который собирает информацию о системе и её конфигурации, например об операционной системе, IP-адресах, памяти и сетевых интерфейсах. Эту информацию можно использовать в манифестах Puppet, чтобы принимать решения о том, как управлять ресурсами, и настраивать поведение Puppet в зависимости от характеристик системы. Facter интегрирован в Puppet, и его факты можно использовать в манифестах Puppet для принятия решений об управлении ресурсами.
 </b></details>
 
 <details>
-<summary>What is MCollective?</summary><br><b>
+<summary>Что такое MCollective?</summary><br><b>
 
-  * MCollective is a middleware system that integrates with Puppet to provide orchestration, remote execution, and parallel job execution capabilities.
+  * MCollective — это система промежуточного ПО (middleware), которая интегрируется с Puppet и предоставляет возможности оркестрации, удалённого выполнения и параллельного запуска заданий.
 </b></details>
 
 <details>
-<summary>Do you have experience with writing modules? Which module have you created and for what?</summary><br><b>
+<summary>Есть ли опыт написания модулей? Какой модуль был создан и для чего?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain what is Hiera</summary><br><b>
+<summary>Объясните, что такое Hiera</summary><br><b>
 
-  * Hiera is a hierarchical data store in Puppet that is used to separate data from code, allowing data to be more easily separated, managed, and reused.
+  * Hiera — это иерархическое хранилище данных в Puppet, которое используется для отделения данных от кода, что упрощает разделение, управление и повторное использование данных.
 </b></details>
 
 ## Elastic
 
 <details>
-<summary>What is the Elastic Stack?</summary><br><b>
+<summary>Что такое Elastic Stack?</summary><br><b>
 
-The Elastic Stack consists of:
+Elastic Stack состоит из:
 
   * Elasticsearch
   * Kibana
@@ -2212,148 +2212,148 @@ The Elastic Stack consists of:
   * Elastic Hadoop
   * APM Server
 
-Elasticsearch, Logstash and Kibana are also known as the ELK stack.
+Elasticsearch, Logstash и Kibana также известны как стек ELK.
 </b></details>
 
 <details>
-<summary>Explain what is Elasticsearch</summary><br><b>
+<summary>Объясните, что такое Elasticsearch</summary><br><b>
 
-From the official [docs](https://www.elastic.co/guide/en/elasticsearch/reference/current/documents-indices.html):
+Из официальной [документации](https://www.elastic.co/guide/en/elasticsearch/reference/current/documents-indices.html):
 
-"Elasticsearch is a distributed document store. Instead of storing information as rows of columnar data, Elasticsearch stores complex data structures that have been serialized as JSON documents"
+«Elasticsearch — это распределённое хранилище документов. Вместо того чтобы хранить информацию в виде строк табличных данных, Elasticsearch хранит сложные структуры данных, сериализованные в JSON-документы»
 </b></details>
 
 <details>
-<summary>What is Logstash?</summary><br><b>
+<summary>Что такое Logstash?</summary><br><b>
 	
-From the [blog](https://logit.io/blog/post/the-top-50-elk-stack-and-elasticsearch-interview-questions):
+Из [блога](https://logit.io/blog/post/the-top-50-elk-stack-and-elasticsearch-interview-questions):
 
-"Logstash is a powerful, flexible pipeline that collects, enriches and transports data. It works as an extract, transform & load (ETL) tool for collecting log messages."
+«Logstash — это мощный и гибкий конвейер (pipeline), который собирает, обогащает и передаёт данные. Он работает как инструмент извлечения, преобразования и загрузки (ETL) для сбора лог-сообщений.»
 </b></details>
 
 <details>
-<summary>Explain what beats are</summary><br><b>
+<summary>Объясните, что такое beats</summary><br><b>
 
-Beats are lightweight data shippers. These data shippers installed on the client where the data resides.
-Examples of beats: Filebeat, Metricbeat, Auditbeat. There are much more.<br>
+Beats — это легковесные агенты доставки данных (data shippers). Они устанавливаются на клиенте, где находятся данные.
+Примеры beats: Filebeat, Metricbeat, Auditbeat. Существует и множество других.<br>
 </b></details>
 
 <details>
-<summary>What is Kibana?</summary><br><b>
+<summary>Что такое Kibana?</summary><br><b>
 
-From the official docs:
+Из официальной документации:
 
-"Kibana is an open source analytics and visualization platform designed to work with Elasticsearch. You use Kibana to search, view, and interact with data stored in Elasticsearch indices. You can easily perform advanced data analysis and visualize your data in a variety of charts, tables, and maps."
+«Kibana — это платформа аналитики и визуализации с открытым исходным кодом, предназначенная для работы с Elasticsearch. Kibana используется для поиска, просмотра и взаимодействия с данными, хранящимися в индексах Elasticsearch. С её помощью можно легко выполнять сложный анализ данных и визуализировать их в виде разнообразных графиков, таблиц и карт.»
 </b></details>
 
 <details>
-<summary>Describe what happens from the moment an app logged some information until it's displayed to the user in a dashboard when the Elastic stack is used</summary><br><b>
+<summary>Опишите, что происходит с момента, когда приложение записало в лог какую-то информацию, до момента её отображения пользователю на дашборде при использовании Elastic stack</summary><br><b>
 
-The process may vary based on the chosen architecture and the processing you may want to apply to the logs. One possible workflow is:
+Процесс может различаться в зависимости от выбранной архитектуры и обработки, которую требуется применить к логам. Один из возможных вариантов:
 
-1. The data logged by the application is picked by filebeat and sent to logstash
-2. Logstash process the log based on the defined filters. Once done, the output is sent to Elasticsearch
-2. Elasticsearch stores the document it got and the document is indexed for quick future access
-4. The user creates visualizations in Kibana which based on the indexed data
-5. The user creates a dashboard which composed out of the visualization created in the previous step
+1. Данные, записанные приложением в лог, подхватываются filebeat и отправляются в logstash
+2. Logstash обрабатывает лог в соответствии с заданными фильтрами. После этого результат отправляется в Elasticsearch
+2. Elasticsearch сохраняет полученный документ, и документ индексируется для быстрого доступа в будущем
+4. Пользователь создаёт в Kibana визуализации на основе проиндексированных данных
+5. Пользователь создаёт дашборд, состоящий из визуализаций, созданных на предыдущем шаге
 </b></details>
 
 ##### Elasticsearch
 
 <details>
-<summary>What is a data node?</summary><br><b>
+<summary>Что такое узел данных (data node)?</summary><br><b>
 
-This is where data is stored and also where different processing takes place (e.g. when you search for a data).
+Это место, где хранятся данные и где выполняется различная обработка (например, при поиске данных).
 </b></details>
 
 <details>
-<summary>What is a master node?</summary><br><b>
+<summary>Что такое главный узел (master node)?</summary><br><b>
 
-Part of a master node responsibilities:
-  * Track the status of all the nodes in the cluster
-  * Verify replicas are working and the data is available from every data node.
-  * No hot nodes (no data node that works much harder than other nodes)
+Часть обязанностей главного узла:
+  * Отслеживать состояние всех узлов в кластере
+  * Проверять, что реплики работают и данные доступны с каждого узла данных.
+  * Не допускать «горячих» узлов (узлов данных, которые работают намного интенсивнее остальных)
 
-While there can be multiple master nodes in reality only of them is the elected master node.
+Хотя главных узлов может быть несколько, в действительности только один из них является избранным (elected) главным узлом.
 </b></details>
 
 <details>
-<summary>What is an ingest node?</summary><br><b>
+<summary>Что такое ingest-узел?</summary><br><b>
 
-A node which responsible for processing the data according to ingest pipeline. In case you don't need to use 
-logstash then this node can receive data from beats and process it, similarly to how it can be processed 
-in Logstash.
+Узел, отвечающий за обработку данных в соответствии с ingest pipeline. Если нет необходимости использовать
+logstash, этот узел может принимать данные от beats и обрабатывать их аналогично тому, как они могли бы обрабатываться
+в Logstash.
 </b></details>
 
 <details>
-<summary>What is Coordinating only node?</summary><br><b>
+<summary>Что такое узел только для координации (Coordinating only node)?</summary><br><b>
 
-From the official docs:
+Из официальной документации:
 
-Coordinating only nodes can benefit large clusters by offloading the coordinating node role from data and master-eligible nodes. They join the cluster and receive the full cluster state, like every other node, and they use the cluster state to route requests directly to the appropriate place(s).
+Узлы только для координации могут быть полезны большим кластерам, снимая роль координирующего узла с узлов данных и узлов, которые могут быть избраны главными (master-eligible). Они присоединяются к кластеру и получают полное состояние кластера, как и любой другой узел, и используют это состояние для маршрутизации запросов непосредственно в нужное место (места).
 
 </b></details>
 
 <details>
-<summary>How data is stored in Elasticsearch?</summary><br><b>
+<summary>Как хранятся данные в Elasticsearch?</summary><br><b>
 
-* Data is stored in an index
-* The index is spread across the cluster using shards
+* Данные хранятся в индексе
+* Индекс распределяется по кластеру с помощью шардов (shards)
 </b></details>
 
 <details>
-<summary>What is an Index?</summary><br><b>
+<summary>Что такое индекс (Index)?</summary><br><b>
 
-Index in Elasticsearch is in most cases compared to a whole database from the SQL/NoSQL world.<br>
-You can choose to have one index to hold all the data of your app or have multiple indices where each index holds different type of your app (e.g. index for each service your app is running).
+Индекс в Elasticsearch в большинстве случаев сравнивают с целой базой данных из мира SQL/NoSQL.<br>
+Можно хранить все данные приложения в одном индексе или иметь несколько индексов, каждый из которых хранит данные разного типа (например, отдельный индекс для каждого сервиса, запущенного приложением).
 
-The official docs also offer a great explanation (in general, it's really good documentation, as every project should have):
+Официальная документация также даёт отличное объяснение (в целом это действительно хорошая документация, какая должна быть у каждого проекта):
 
-"An index can be thought of as an optimized collection of documents and each document is a collection of fields, which are the key-value pairs that contain your data"
+«Индекс можно представить как оптимизированную коллекцию документов, а каждый документ — как набор полей, то есть пар ключ-значение, содержащих ваши данные»
 </b></details>
 
 <details>
-<summary>Explain Shards</summary><br><b>
+<summary>Объясните, что такое шарды (Shards)</summary><br><b>
 
-An index is split into shards and documents are hashed to a particular shard. Each shard may be on a different node in a cluster and each one of the shards is a self contained index.<br>
-This allows Elasticsearch to scale to an entire cluster of servers.
+Индекс разбивается на шарды, и документы по хешу распределяются в определённый шард. Каждый шард может находиться на отдельном узле кластера, и каждый шард является самостоятельным индексом.<br>
+Это позволяет Elasticsearch масштабироваться на целый кластер серверов.
 </b></details>
 
 <details>
-<summary>What is an Inverted Index?</summary><br><b>
+<summary>Что такое инвертированный индекс (Inverted Index)?</summary><br><b>
 
-From the official docs:
+Из официальной документации:
 
-"An inverted index lists every unique word that appears in any document and identifies all of the documents each word occurs in."
+«Инвертированный индекс содержит список всех уникальных слов, встречающихся в каком-либо документе, и для каждого слова указывает все документы, в которых оно встречается.»
 </b></details>
 
 <details>
-<summary>What is a Document?</summary><br><b>
+<summary>Что такое документ (Document)?</summary><br><b>
 
-Continuing with the comparison to SQL/NoSQL a Document in Elasticsearch is a row in table in the case of SQL or a document in a collection in the case of NoSQL.
-As in NoSQL a document is a JSON object which holds data on a unit in your app. What is this unit depends on the your app. If your app related to book then each document describes a book. If you are app is about shirts then each document is a shirt.
+Продолжая сравнение с SQL/NoSQL: документ в Elasticsearch — это строка в таблице в случае SQL или документ в коллекции в случае NoSQL.
+Как и в NoSQL, документ — это JSON-объект, содержащий данные об одной единице в приложении. Что это за единица, зависит от приложения. Если приложение связано с книгами, то каждый документ описывает книгу. Если приложение о рубашках, то каждый документ — это рубашка.
 </b></details>
 
 <details>
-<summary>You check the health of your elasticsearch cluster and it's red. What does it mean? What can cause the status to be yellow instead of green?</summary><br><b>
+<summary>При проверке состояния (health) кластера elasticsearch оно оказывается красным. Что это означает? Что может привести к тому, что статус будет жёлтым, а не зелёным?</summary><br><b>
 
-Red means some data is unavailable in your cluster. Some shards of your indices are unassigned. 
-There are some other states for the cluster.
-Yellow means that you have unassigned shards in the cluster. You can be in this state if you have single node and your indices have replicas.
-Green means that all shards in the cluster are assigned to nodes and your cluster is healthy. 
+Красный означает, что часть данных в кластере недоступна. Некоторые шарды индексов не назначены.
+Существуют и другие состояния кластера.
+Жёлтый означает, что в кластере есть неназначенные шарды. В этом состоянии можно оказаться, если узел всего один, а у индексов есть реплики.
+Зелёный означает, что все шарды в кластере назначены узлам и кластер исправен.
 </b></details>
 
 <details>
-<summary>True or False? Elasticsearch indexes all data in every field and each indexed field has the same data structure for unified and quick query ability</summary><br><b>
+<summary>Правда или ложь? Elasticsearch индексирует все данные в каждом поле, и каждое проиндексированное поле имеет одинаковую структуру данных для единообразных и быстрых запросов</summary><br><b>
 
-False.
-From the official docs:
+Ложь.
+Из официальной документации:
 
-"Each indexed field has a dedicated, optimized data structure. For example, text fields are stored in inverted indices, and numeric and geo fields are stored in BKD trees."
+«Каждое проиндексированное поле имеет собственную оптимизированную структуру данных. Например, текстовые поля хранятся в инвертированных индексах, а числовые и гео-поля — в BKD-деревьях.»
 </b></details>
 
 <details>
-<summary>What reserved fields a document has?</summary><br><b>
+<summary>Какие зарезервированные поля есть у документа?</summary><br><b>
 
   * _index
   * _id
@@ -2361,404 +2361,404 @@ From the official docs:
 </b></details>
 
 <details>
-<summary>Explain Mapping</summary><br><b>
+<summary>Объясните, что такое маппинг (Mapping)</summary><br><b>
 </b></details>
 
 <details>
-<summary>What are the advantages of defining your own mapping? (or: when would you use your own mapping?)</summary><br><b>
+<summary>Каковы преимущества определения собственного маппинга? (или: когда стоит использовать собственный маппинг?)</summary><br><b>
 
-* You can optimize fields for partial matching
-* You can define custom formats of known fields (e.g. date)
-* You can perform language-specific analysis
+* Можно оптимизировать поля для частичного совпадения
+* Можно задать собственные форматы известных полей (например, даты)
+* Можно выполнять анализ с учётом конкретного языка
 </b></details>
 
 <details>
-<summary>Explain Replicas</summary><br><b>
+<summary>Объясните, что такое реплики (Replicas)</summary><br><b>
 
-In a network/cloud environment where failures can be expected any time, it is very useful and highly recommended to have a failover mechanism in case a shard/node somehow goes offline or disappears for whatever reason.
-To this end, Elasticsearch allows you to make one or more copies of your index’s shards into what are called replica shards, or replicas for short.
+В сетевой/облачной среде, где сбои возможны в любой момент, очень полезно и настоятельно рекомендуется иметь механизм отработки отказа (failover) на случай, если шард/узел по какой-либо причине уйдёт в офлайн или исчезнет.
+Для этого Elasticsearch позволяет создавать одну или несколько копий шардов индекса — так называемые шарды-реплики, или просто реплики.
 </b></details>
 
 <details>
-<summary>Can you explain Term Frequency & Document Frequency?</summary><br><b>
+<summary>Объясните, что такое Term Frequency и Document Frequency</summary><br><b>
 
-Term Frequency is how often a term appears in a given document and Document Frequency is how often a term appears in all documents. They both are used for determining the relevance of a term by calculating Term Frequency / Document Frequency.
+Term Frequency — это частота появления термина в данном документе, а Document Frequency — частота появления термина во всех документах. Обе величины используются для определения релевантности термина путём вычисления Term Frequency / Document Frequency.
 </b></details>
 
 <details>
-<summary>You check "Current Phase" under "Index lifecycle management" and you see it's set to "hot". What does it mean?</summary><br><b>
+<summary>В разделе "Index lifecycle management" значение "Current Phase" установлено в "hot". Что это означает?</summary><br><b>
 
-"The index is actively being written to".
-More about the phases [here](https://www.elastic.co/guide/en/elasticsearch/reference/7.6/ilm-policy-definition.html)
+«В индекс активно ведётся запись».
+Подробнее о фазах — [здесь](https://www.elastic.co/guide/en/elasticsearch/reference/7.6/ilm-policy-definition.html)
 </b></details>
 
 <details>
-<summary>What this command does? <code>curl -X PUT "localhost:9200/customer/_doc/1?pretty" -H 'Content-Type: application/json' -d'{ "name": "John Doe" }'</code></summary><br><b>
+<summary>Что делает эта команда? <code>curl -X PUT "localhost:9200/customer/_doc/1?pretty" -H 'Content-Type: application/json' -d'{ "name": "John Doe" }'</code></summary><br><b>
 
-It creates customer index if it doesn't exists and adds a new document with the field name which is set to "John Dow". Also, if it's the first document it will get the ID 1.
+Она создаёт индекс customer, если его не существует, и добавляет новый документ с полем name, установленным в "John Dow". Кроме того, если это первый документ, он получит ID 1.
 </b></details>
 
 <details>
-<summary>What will happen if you run the previous command twice? What about running it 100 times?</code></summary><br><b>
+<summary>Что произойдёт, если выполнить предыдущую команду дважды? А если 100 раз?</code></summary><br><b>
 
-1. If name value was different then it would update "name" to the new value
-2. In any case, it bumps version field by one
+1. Если значение name было другим, оно будет обновлено на новое значение "name"
+2. В любом случае поле версии (version) увеличится на единицу
 </b></details>
 
 <details>
-<summary>What is the Bulk API? What would you use it for?</code></summary><br><b>
+<summary>Что такое Bulk API? Для чего его использовать?</code></summary><br><b>
 
-Bulk API is used when you need to index multiple documents. For high number of documents it would be significantly faster to use rather than individual requests since there are less network roundtrips.
+Bulk API используется, когда нужно проиндексировать несколько документов. При большом количестве документов это значительно быстрее отдельных запросов, так как сетевых обменов (roundtrips) меньше.
 </b></details>
 
 ##### Query DSL
 
 <details>
-<summary>Explain Elasticsearch query syntax (Booleans, Fields, Ranges)</summary><br><b>
+<summary>Объясните синтаксис запросов Elasticsearch (Booleans, Fields, Ranges)</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain what is Relevance Score</summary><br><b>
+<summary>Объясните, что такое оценка релевантности (Relevance Score)</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain Query Context and Filter Context</summary><br><b>
+<summary>Объясните, что такое контекст запроса (Query Context) и контекст фильтра (Filter Context)</summary><br><b>
 
-From the official docs:
+Из официальной документации:
 
-"In the query context, a query clause answers the question “How well does this document match this query clause?” Besides deciding whether or not the document matches, the query clause also calculates a relevance score in the _score meta-field."
+«В контексте запроса условие запроса отвечает на вопрос: „Насколько хорошо этот документ соответствует этому условию запроса?“ Помимо определения того, соответствует ли документ, условие запроса также вычисляет оценку релевантности в мета-поле _score.»
 
-"In a filter context, a query clause answers the question “Does this document match this query clause?” The answer is a simple Yes or No — no scores are calculated. Filter context is mostly used for filtering structured data"
+«В контексте фильтра условие запроса отвечает на вопрос: „Соответствует ли этот документ этому условию запроса?“ Ответ — просто «Да» или «Нет», оценки не вычисляются. Контекст фильтра в основном используется для фильтрации структурированных данных»
 </b></details>
 
 <details>
-<summary>Describe how would an architecture of production environment with large amounts of data would be different from a small-scale environment</summary><br><b>
+<summary>Опишите, чем архитектура production-среды с большими объёмами данных будет отличаться от небольшой среды</summary><br><b>
 
-There are several possible answers for this question. One of them is as follows:
+У этого вопроса есть несколько возможных ответов. Один из них:
 
-A small-scale architecture of elastic will consist of the elastic stack as it is. This means we will have beats, logstash, elastcsearch and kibana.<br>
-A production environment with large amounts of data can include some kind of buffering component (e.g. Reddis or RabbitMQ) and also security component such as Nginx.
+Небольшая архитектура elastic будет состоять из elastic stack как такового. То есть у нас будут beats, logstash, elastcsearch и kibana.<br>
+Production-среда с большими объёмами данных может включать какой-либо буферизующий компонент (например, Reddis или RabbitMQ), а также компонент безопасности, такой как Nginx.
 </b></details>
 
 ##### Logstash
 
 <details>
-<summary>What are Logstash plugins? What plugins types are there?</summary><br><b>
+<summary>Что такое плагины Logstash? Какие типы плагинов существуют?</summary><br><b>
 
-  * Input Plugins - how to collect data from different sources
-  * Filter Plugins - processing data
-  * Output Plugins - push data to different outputs/services/platforms
+  * Входные плагины (Input Plugins) — как собирать данные из разных источников
+  * Плагины фильтров (Filter Plugins) — обработка данных
+  * Выходные плагины (Output Plugins) — отправка данных в различные выходы/сервисы/платформы
 </b></details>
 
 <details>
-<summary>What is grok?</summary><br><b>
+<summary>Что такое grok?</summary><br><b>
 
-A logstash plugin which modifies information in one format and immerse it in another.
+Плагин logstash, который преобразует информацию из одного формата и помещает её в другой.
 </b></details>
 
 <details>
-<summary>How grok works?</summary><br><b>
+<summary>Как работает grok?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What grok patterns are you familiar with?</summary><br><b>
+<summary>С какими шаблонами (patterns) grok вы знакомы?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is `_grokparsefailure?`</summary><br><b>
+<summary>Что такое `_grokparsefailure?`</summary><br><b>
 </b></details>
 
 <details>
-<summary>How do you test or debug grok patterns?</summary><br><b>
+<summary>Как тестировать или отлаживать шаблоны grok?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What are Logstash Codecs? What codecs are there?</summary><br><b>
+<summary>Что такое кодеки Logstash (Codecs)? Какие кодеки существуют?</summary><br><b>
 </b></details>
 
 ##### Kibana
 
 <details>
-<summary>What can you find under "Discover" in Kibana?</summary><br><b>
+<summary>Что можно найти в разделе "Discover" в Kibana?</summary><br><b>
 
-The raw data as it is stored in the index. You can search and filter it.
+Необработанные данные в том виде, в каком они хранятся в индексе. Их можно искать и фильтровать.
 </b></details>
 
 <details>
-<summary>You see in Kibana, after clicking on Discover, "561 hits". What does it mean?</summary><br><b>
+<summary>После нажатия на Discover в Kibana отображается "561 hits". Что это означает?</summary><br><b>
 
-Total number of documents matching the search results. If not query used then simply the total number of documents.
+Общее количество документов, соответствующих результатам поиска. Если запрос не использовался, то просто общее количество документов.
 </b></details>
 
 <details>
-<summary>What can you find under "Visualize"?</summary><br><b>
+<summary>Что можно найти в разделе "Visualize"?</summary><br><b>
 
-"Visualize" is where you can create visual representations for your data (pie charts, graphs, ...)
+"Visualize" — это место, где можно создавать визуальные представления данных (круговые диаграммы, графики, ...)
 </b></details>
 
 <details>
-<summary>What visualization types are supported/included in Kibana?</summary><br><b>
+<summary>Какие типы визуализаций поддерживаются/включены в Kibana?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What visualization type would you use for statistical outliers</summary><br><b>
+<summary>Какой тип визуализации использовать для статистических выбросов</summary><br><b>
 </b></details>
 
 <details>
-<summary>Describe in detail how do you create a dashboard in Kibana</summary><br><b>
+<summary>Подробно опишите, как создать дашборд в Kibana</summary><br><b>
 </b></details>
 
 #### Filebeat
 
 <details>
-<summary>What is Filebeat?</summary><br><b>
+<summary>Что такое Filebeat?</summary><br><b>
 
-Filebeat is used to monitor the logging directories inside of VMs or mounted as a sidecar if exporting logs from containers, and then forward these logs onward for further processing, usually to logstash.
+Filebeat используется для мониторинга каталогов с логами внутри виртуальных машин или подключается как sidecar при экспорте логов из контейнеров, а затем пересылает эти логи дальше для последующей обработки, обычно в logstash.
 </b></details>
 
 <details>
-<summary>If one is using ELK, is it a must to also use filebeat? In what scenarios it's useful to use filebeat?</summary><br><b>
+<summary>Обязательно ли при использовании ELK использовать также filebeat? В каких сценариях filebeat полезен?</summary><br><b>
 
-Filebeat is a typical component of the ELK stack, since it was developed by Elastic to work with the other products (Logstash and Kibana). It's possible to send logs directly to logstash, though this often requires coding changes for the application. Particularly for legacy applications with little test coverage, it might be a better option to use filebeat, since you don't need to make any changes to the application code.
+Filebeat — типичный компонент стека ELK, так как он разработан Elastic для работы с другими продуктами (Logstash и Kibana). Логи можно отправлять напрямую в logstash, но это часто требует изменений в коде приложения. Особенно для унаследованных (legacy) приложений с низким покрытием тестами использование filebeat может оказаться лучшим вариантом, так как никаких изменений в коде приложения вносить не нужно.
 </b></details>
 
 <details>
-<summary>What is a harvester?</summary><br><b>
+<summary>Что такое harvester?</summary><br><b>
 
-Read [here](https://www.elastic.co/guide/en/beats/filebeat/current/how-filebeat-works.html#harvester)
+Читайте [здесь](https://www.elastic.co/guide/en/beats/filebeat/current/how-filebeat-works.html#harvester)
 </b></details>
 
 <details>
-<summary>True or False? a single harvester harvest multiple files, according to the limits set in filebeat.yml</summary><br><b>
+<summary>Правда или ложь? Один harvester обрабатывает несколько файлов в соответствии с ограничениями, заданными в filebeat.yml</summary><br><b>
 
-False. One harvester harvests one file.
+Ложь. Один harvester обрабатывает один файл.
 </b></details>
 
 <details>
-<summary>What are filebeat modules?</summary><br><b>
+<summary>Что такое модули filebeat?</summary><br><b>
 
-These are pre-configured modules for specific types of logging locations (eg, Traefik, Fargate, HAProxy) to make it easy to configure forwarding logs using filebeat. They have different configurations based on where you're collecting logs from.
+Это преднастроенные модули для определённых типов источников логов (например, Traefik, Fargate, HAProxy), упрощающие настройку пересылки логов с помощью filebeat. Их конфигурация различается в зависимости от того, откуда собираются логи.
 </b></details>
 
 #### Elastic Stack
 
 <details>
-<summary>How do you secure an Elastic Stack?</summary><br><b>
+<summary>Как защитить Elastic Stack?</summary><br><b>
 
-You can generate certificates with the provided elastic utils and change configuration to enable security using certificates model.
+Можно сгенерировать сертификаты с помощью поставляемых утилит elastic и изменить конфигурацию, чтобы включить безопасность на основе модели сертификатов.
 </b></details>
 
-## Distributed
+## Распределённые системы
 
 <details>
-<summary>Explain Distributed Computing (or Distributed System)</summary><br><b>
+<summary>Объясните, что такое распределённые вычисления (или распределённая система)</summary><br><b>
 
-According to Martin Kleppmann:
+По определению Мартина Клеппмана (Martin Kleppmann):
 
-"Many processes running on many machines...only message-passing via an unreliable network with variable delays, and the system may suffer from partial failures, unreliable clocks, and process pauses."
+«Множество процессов, работающих на множестве машин... взаимодействие только через передачу сообщений по ненадёжной сети с переменными задержками, при этом система может страдать от частичных отказов, ненадёжных часов и пауз процессов.»
 
-Another definition: "Systems that are physically separated, but logically connected"
+Другое определение: «Системы, которые физически разделены, но логически связаны»
 </b></details>
 
 <details>
-<summary>What can cause a system to fail?</summary><br><b>
+<summary>Что может привести к отказу системы?</summary><br><b>
 
-* Network
+* Сеть
 * CPU
-* Memory
-* Disk
+* Память
+* Диск
 </b></details>
 
 <details>
-<summary>Do you know what is "CAP theorem"? (aka as Brewer's theorem)</summary><br><b>
+<summary>Знаете ли вы, что такое «теорема CAP»? (также известная как теорема Брюера)</summary><br><b>
 
-According to the CAP theorem, it's not possible for a distributed data store to provide more than two of the following at the same time:
+Согласно теореме CAP, распределённое хранилище данных не может одновременно обеспечивать более двух из следующих свойств:
 
-* Availability: Every request receives a response (it doesn't has to be the most recent data)
-* Consistency: Every request receives a response with the latest/most recent data
-* Partition tolerance: Even if some the data is lost/dropped, the system keeps running
+* Доступность (Availability): каждый запрос получает ответ (не обязательно с самыми свежими данными)
+* Согласованность (Consistency): каждый запрос получает ответ с последними/самыми свежими данными
+* Устойчивость к разделению (Partition tolerance): даже если часть данных потеряна/отброшена, система продолжает работать
 </b></details>
 
 <details>
-<summary>What are the problems with the following design? How to improve it?<br>
+<summary>Какие проблемы есть у следующей архитектуры? Как её улучшить?<br>
 <img src="images/distributed/distributed_design_standby.png" width="500x;" height="350px;"/>
 </summary><br><b>
-1. The transition can take time. In other words, noticeable downtime.
-2. Standby server is a waste of resources - if first application server is running then the standby does nothing
+1. Переключение может занять время. Иными словами — заметный простой.
+2. Резервный (standby) сервер — пустая трата ресурсов: пока работает первый сервер приложения, резервный ничего не делает
 </b></details>
 
 <details>
-<summary>What are the problems with the following design? How to improve it?<br>
+<summary>Какие проблемы есть у следующей архитектуры? Как её улучшить?<br>
 <img src="images/distributed/distributed_design_lb.png" width="700x;" height="350px;"/>
 </summary><br><b>
-Issues:
-If load balancer dies , we lose the ability to communicate with the application.
+Проблемы:
+Если балансировщик нагрузки выходит из строя, теряется возможность взаимодействовать с приложением.
 
-Ways to improve:
-* Add another load balancer
-* Use DNS A record for both load balancers
-* Use message queue
+Способы улучшения:
+* Добавить ещё один балансировщик нагрузки
+* Использовать DNS-запись A для обоих балансировщиков
+* Использовать очередь сообщений
 </b></details>
 
 <details>
-<summary>What is "Shared-Nothing" architecture?</summary><br><b>
+<summary>Что такое архитектура "Shared-Nothing"?</summary><br><b>
 
-It's an architecture in which data is and retrieved from a single, non-shared, source usually exclusively connected to one node as opposed to architectures where the request can get to one of many nodes and the data will be retrieved from one shared location (storage, memory, ...).
+Это архитектура, в которой данные хранятся и извлекаются из единственного, не разделяемого источника, обычно подключённого исключительно к одному узлу, в отличие от архитектур, где запрос может попасть на один из многих узлов, а данные будут извлекаться из одного общего места (хранилище, память, ...).
 </b></details>
 
 <details>
-<summary>Explain the Sidecar Pattern (Or sidecar proxy)</summary><br><b>
+<summary>Объясните паттерн Sidecar (или sidecar proxy)</summary><br><b>
 </b></details>
 
-## Misc
+## Разное
 
-|Name|Topic|Objective & Instructions|Solution|Comments|
+|Название|Тема|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|----|
-| Highly Available "Hello World" | [Exercise](topics/devops/ha_hello_world.md) | [Solution](topics/devops/solutions/ha_hello_world.md)
+| Высокодоступный "Hello World" | [Упражнение](topics/devops/ha_hello_world.md) | [Решение](topics/devops/solutions/ha_hello_world.md)
 
 <details>
-<summary>What happens when you type in a URL in an address bar in a browser?</summary><br><b>
+<summary>Что происходит, когда вводишь URL в адресную строку браузера?</summary><br><b>
 
-1. The browser searches for the record of the domain name IP address in the DNS in the following order:
-  * Browser cache
-  * Operating system cache
-  * The DNS server configured on the user's system (can be ISP DNS, public DNS, ...)
-2. If it couldn't find a DNS record locally, a full DNS resolution is started.
-3. It connects to the server using the TCP protocol
-4. The browser sends an HTTP request to the server
-5. The server sends an HTTP response back to the browser
-6. The browser renders the response (e.g. HTML)
-7. The browser then sends subsequent requests as needed to the server to get the embedded links, javascript, images in the HTML and then steps 3 to 5 are repeated.
+1. Браузер ищет запись с IP-адресом доменного имени в DNS в следующем порядке:
+  * Кеш браузера
+  * Кеш операционной системы
+  * DNS-сервер, настроенный в системе пользователя (может быть DNS провайдера, публичный DNS, ...)
+2. Если DNS-запись не найдена локально, запускается полное DNS-разрешение.
+3. Браузер подключается к серверу по протоколу TCP
+4. Браузер отправляет серверу HTTP-запрос
+5. Сервер отправляет браузеру HTTP-ответ
+6. Браузер отрисовывает ответ (например, HTML)
+7. Затем браузер по мере необходимости отправляет серверу последующие запросы, чтобы получить встроенные ссылки, javascript, изображения из HTML, и шаги с 3 по 5 повторяются.
 
-TODO: add more details!
+TODO: добавить больше подробностей!
 </b></details>
 
 #### API
 
 <details>
-<summary>Explain what is an API</summary><br><b>
+<summary>Объясните, что такое API</summary><br><b>
 
-I like this definition from [blog.christianposta.com](https://blog.christianposta.com/microservices/api-gateways-are-going-through-an-identity-crisis):
+Мне нравится это определение с [blog.christianposta.com](https://blog.christianposta.com/microservices/api-gateways-are-going-through-an-identity-crisis):
 
-"An explicitly and purposefully defined interface designed to be invoked over a network that enables software developers to get programmatic access to data and functionality within an organization in a controlled and comfortable way."
+«Явно и целенаправленно определённый интерфейс, предназначенный для вызова по сети, который позволяет разработчикам ПО получать программный доступ к данным и функциональности внутри организации контролируемым и удобным способом.»
 </b></details>
 
 <details>
-<summary>What is an API specification?</summary><br><b>
+<summary>Что такое спецификация API?</summary><br><b>
 
-From [swagger.io](https://swagger.io/resources/articles/difference-between-api-documentation-specification):
+С [swagger.io](https://swagger.io/resources/articles/difference-between-api-documentation-specification):
 
-"An API specification provides a broad understanding of how an API behaves and how the API links with other APIs. It explains how the API functions and the results to expect when using the API"
+«Спецификация API даёт общее понимание того, как ведёт себя API и как он связан с другими API. Она объясняет, как функционирует API и каких результатов ожидать при его использовании»
 </b></details>
 
 <details>
-<summary>True or False? API Definition is the same as API Specification</summary><br><b>
+<summary>Правда или ложь? Определение API (API Definition) — то же самое, что спецификация API (API Specification)</summary><br><b>
 
-False. From [swagger.io](https://swagger.io/resources/articles/difference-between-api-documentation-specification):
+Ложь. С [swagger.io](https://swagger.io/resources/articles/difference-between-api-documentation-specification):
 
-"An API definition is similar to an API specification in that it provides an understanding of how an API is organized and how the API functions. But the API definition is aimed at machine consumption instead of human consumption of APIs."
+«Определение API похоже на спецификацию API в том, что оно даёт понимание того, как организован API и как он функционирует. Но определение API предназначено для потребления машинами, а не людьми.»
 </b></details>
 
 <details>
-<summary>What is an API gateway?</summary><br><b>
+<summary>Что такое API gateway?</summary><br><b>
 
-An API gateway is like the gatekeeper that controls how different parts talk to each other and how information is exchanged between them.
+API gateway — это что-то вроде привратника, который контролирует, как разные части общаются друг с другом и как между ними происходит обмен информацией.
 
-The API gateway provides a single point of entry for all clients, and it can perform several tasks, including routing requests to the appropriate backend service, load balancing, security and authentication, rate limiting, caching, and monitoring.
+API gateway предоставляет единую точку входа для всех клиентов и может выполнять ряд задач, включая маршрутизацию запросов к соответствующему бэкенд-сервису, балансировку нагрузки, безопасность и аутентификацию, ограничение частоты запросов (rate limiting), кеширование и мониторинг.
 
-By using an API gateway, organizations can simplify the management of their APIs, ensure consistent security and governance, and improve the performance and scalability of their backend services. They are also commonly used in microservices architectures, where there are many small, independent services that need to be accessed by different clients.
+Используя API gateway, организации могут упростить управление своими API, обеспечить единообразные безопасность и управление (governance), а также повысить производительность и масштабируемость своих бэкенд-сервисов. API gateway также часто используются в микросервисных архитектурах, где много небольших независимых сервисов, к которым должны обращаться разные клиенты.
 </b></details>
 
 <details>
-<summary>What are the advantages of using/implementing an API gateway?</summary><br><b>
+<summary>Каковы преимущества использования/внедрения API gateway?</summary><br><b>
 
-Advantages:
+Преимущества:
 
-  - Simplifies API management: Provides a single entry point for all requests, which simplifies the management and monitoring of multiple APIs.
-  - Improves security: Able to implement security features like authentication, authorization, and encryption to protect the backend services from unauthorized access.
-  - Enhances scalability: Can handle traffic spikes and distribute requests to backend services in a way that maximizes resource utilization and improves overall system performance.
-  - Enables service composition: Can combine different backend services into a single API, providing more granular control over the services that clients can access.
-  - Facilitates integration with external systems:  Can be used to expose internal services to external partners or customers, making it easier to integrate with external systems and enabling new business models.
+  - Упрощает управление API: предоставляет единую точку входа для всех запросов, что упрощает управление и мониторинг множества API.
+  - Повышает безопасность: позволяет реализовать такие функции безопасности, как аутентификация, авторизация и шифрование, для защиты бэкенд-сервисов от несанкционированного доступа.
+  - Улучшает масштабируемость: может справляться с пиками трафика и распределять запросы по бэкенд-сервисам так, чтобы максимально использовать ресурсы и повышать общую производительность системы.
+  - Позволяет компоновать сервисы: может объединять разные бэкенд-сервисы в единый API, обеспечивая более тонкий контроль над сервисами, к которым имеют доступ клиенты.
+  - Облегчает интеграцию с внешними системами: может использоваться для предоставления внутренних сервисов внешним партнёрам или клиентам, упрощая интеграцию с внешними системами и открывая новые бизнес-модели.
 
 </b></details>
 
 <details>
-<summary>What is a Payload in API?</summary><br><b>
+<summary>Что такое полезная нагрузка (Payload) в API?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is Automation? How it's related or different from Orchestration?</summary><br><b>
+<summary>Что такое автоматизация (Automation)? Как она связана с оркестрацией (Orchestration) и чем от неё отличается?</summary><br><b>
 
-Automation is the act of automating tasks to reduce human intervention or interaction in regards to IT technology and systems.<br>
-While automation focuses on a task level, Orchestration is the process of automating processes and/or workflows which consists of multiple tasks that usually across multiple systems.
+Автоматизация — это автоматизация задач с целью уменьшить участие или вмешательство человека в работу ИТ-технологий и систем.<br>
+Если автоматизация сосредоточена на уровне отдельных задач, то оркестрация — это процесс автоматизации процессов и/или рабочих процессов (workflows), состоящих из множества задач, которые обычно охватывают несколько систем.
 </b></details>
 
 <details>
-<summary>Tell me about interesting bugs you've found and also fixed</summary><br><b>
+<summary>Расскажите об интересных багах, которые вы нашли и исправили</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is a Debugger and how it works?</summary><br><b>
+<summary>Что такое отладчик (Debugger) и как он работает?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What services an application might have?</summary><br><b>
+<summary>Какие сервисы могут быть у приложения?</summary><br><b>
 
-  * Authorization
-  * Logging
-  * Authentication
-  * Ordering
-  * Front-end
-  * Back-end
+  * Авторизация
+  * Логирование
+  * Аутентификация
+  * Оформление заказов
+  * Фронтенд
+  * Бэкенд
   ...
 </b></details>
 
 <details>
-<summary>What is Metadata?</summary><br><b>
+<summary>Что такое метаданные (Metadata)?</summary><br><b>
 
-Data about data. Basically, it describes the type of information that an underlying data will hold.
+Данные о данных. По сути, они описывают тип информации, которую будут содержать исходные данные.
 </b></details>
 
 <details>
-<summary>You can use one of the following formats: JSON, YAML, XML. Which one would you use? Why?</summary><br><b>
+<summary>Можно использовать один из следующих форматов: JSON, YAML, XML. Какой из них выбрать? Почему?</summary><br><b>
 
-I can't answer this for you :)
+На этот вопрос я не могу ответить за вас :)
 </b></details>
 
 <details>
-<summary>What's KPI?</summary><br><b>
+<summary>Что такое KPI?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What's OKR?</summary><br><b>
+<summary>Что такое OKR?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What's DSL (Domain Specific Language)?</summary><br><b>
+<summary>Что такое DSL (Domain Specific Language, предметно-ориентированный язык)?</summary><br><b>
 
-Domain Specific Language (DSLs) are used to create a customised language that represents the domain such that domain experts can easily interpret it.
+Предметно-ориентированные языки (DSL) используются для создания специализированного языка, описывающего предметную область так, чтобы эксперты в этой области могли легко его понимать.
 </b></details>
 
 <details>
-<summary>What's the difference between KPI and OKR?</summary><br><b>
+<summary>В чём разница между KPI и OKR?</summary><br><b>
 </b></details>
 
 #### YAML
 
 <details>
-<summary>What is YAML?</summary><br><b>
+<summary>Что такое YAML?</summary><br><b>
 
-Data serialization language used by many technologies today like Kubernetes, Ansible, etc.
+Язык сериализации данных, который сегодня используется многими технологиями, например Kubernetes, Ansible и т.д.
 </b></details>
 
 <details>
-<summary>True or False? Any valid JSON file is also a valid YAML file</summary><br><b>
+<summary>Правда или ложь? Любой корректный JSON-файл также является корректным YAML-файлом</summary><br><b>
 
-True. Because YAML is superset of JSON.
+Правда. Потому что YAML — надмножество JSON.
 </b></details>
 
 <details>
-<summary>What is the format of the following data?
+<summary>В каком формате представлены следующие данные?
 
 ```
 {
@@ -2776,7 +2776,7 @@ JSON
 </b></details>
 
 <details>
-<summary>What is the format of the following data?
+<summary>В каком формате представлены следующие данные?
 
 ```
 applications:
@@ -2789,7 +2789,7 @@ YAML
 </b></details>
 
 <details>
-<summary>How to write a multi-line string with YAML? What use cases is it good for?</summary><br><b>
+<summary>Как записать многострочную строку в YAML? Для каких случаев это подходит?</summary><br><b>
 
 ```
 someMultiLineString: |
@@ -2798,13 +2798,13 @@ someMultiLineString: |
   I love YAML
 ```
 
-It's good for use cases like writing a shell script where each line of the script is a different command.
+Это подходит, например, для написания shell-скрипта, где каждая строка скрипта — отдельная команда.
 </b></details>
 
 <details>
-<summary>What is the difference between <code>someMultiLineString: |</code> to <code>someMultiLineString: ></code>?</summary><br><b>
+<summary>В чём разница между <code>someMultiLineString: |</code> и <code>someMultiLineString: ></code>?</summary><br><b>
 
-using `>` will make the multi-line string to fold into a single line
+При использовании `>` многострочная строка будет свёрнута в одну строку
 
 ```
 someMultiLineString: >
@@ -2815,9 +2815,9 @@ someMultiLineString: >
 </b></details>
 
 <details>
-<summary>What are placeholders in YAML?</summary><br><b>
+<summary>Что такое плейсхолдеры (placeholders) в YAML?</summary><br><b>
 
-They allow you reference values instead of directly writing them and it is used like this:
+Они позволяют ссылаться на значения вместо того, чтобы записывать их напрямую, и используются так:
 
 ```
 username: {{ my.user_name }}
@@ -2825,10 +2825,10 @@ username: {{ my.user_name }}
 </b></details>
 
 <details>
-<summary>How can you define multiple YAML components in one file?</summary><br><b>
+<summary>Как определить несколько YAML-компонентов в одном файле?</summary><br><b>
 
-Using this: `---`
-For Examples:
+С помощью этого: `---`
+Например:
 
 ```
 document_number: 1
@@ -2837,62 +2837,62 @@ document_number: 2
 ```
 </b></details>
 
-#### Firmware
+#### Прошивка (Firmware)
 
 <details>
-<summary>Explain what is a firmware</summary><br><b>
+<summary>Объясните, что такое прошивка (firmware)</summary><br><b>
 
-[Wikipedia](https://en.wikipedia.org/wiki/Firmware): "In computing, firmware is a specific class of computer software that provides the low-level control for a device's specific hardware. Firmware, such as the BIOS of a personal computer, may contain basic functions of a device, and may provide hardware abstraction services to higher-level software such as operating systems."
+[Wikipedia](https://en.wikipedia.org/wiki/Firmware): «В вычислительной технике прошивка (firmware) — это особый класс компьютерного программного обеспечения, обеспечивающий низкоуровневое управление конкретным оборудованием устройства. Прошивка, например BIOS персонального компьютера, может содержать базовые функции устройства и предоставлять сервисы аппаратной абстракции программному обеспечению более высокого уровня, такому как операционные системы.»
 </b></details>
 
 ## Cassandra
 
 <details>
-<summary>When running a cassandra cluster, how often do you need to run nodetool repair in order to keep the cluster consistent?
+<summary>Как часто при работе кластера cassandra нужно запускать nodetool repair, чтобы поддерживать согласованность кластера?
 
-  * Within the columnFamily GC-grace Once a week
-  * Less than the compacted partition minimum bytes
-  * Depended on the compaction strategy
+  * В пределах GC-grace для columnFamily, раз в неделю
+  * Реже, чем compacted partition minimum bytes
+  * Зависит от стратегии уплотнения (compaction)
 </summary><br><b>
 </b></details>
 
 ## HTTP
 
 <details>
-<summary>What is HTTP?</summary><br><b>
+<summary>Что такое HTTP?</summary><br><b>
 
-[Avinetworks](https://avinetworks.com/glossary/layer-7/): HTTP stands for Hypertext Transfer Protocol. HTTP uses TCP port 80 to enable internet communication. It is part of the Application Layer (L7) in OSI Model. 
+[Avinetworks](https://avinetworks.com/glossary/layer-7/): HTTP расшифровывается как Hypertext Transfer Protocol (протокол передачи гипертекста). HTTP использует TCP-порт 80 для обеспечения взаимодействия в интернете. Он относится к прикладному уровню (L7) модели OSI.
 </b></details>
 
 <details>
-<summary>Describe HTTP request lifecycle</summary><br><b>
+<summary>Опишите жизненный цикл HTTP-запроса</summary><br><b>
 
-* Resolve host by request to DNS resolver
-* Client SYN
-* Server SYN+ACK
-* Client SYN
-* HTTP request
-* HTTP response
+* Разрешение имени хоста запросом к DNS-резолверу
+* Клиент: SYN
+* Сервер: SYN+ACK
+* Клиент: SYN
+* HTTP-запрос
+* HTTP-ответ
 </b></details>
 
 <details>
-<summary>True or False? HTTP is stateful</summary><br><b>
+<summary>Правда или ложь? HTTP сохраняет состояние (stateful)</summary><br><b>
 
-False. It doesn't maintain state for incoming request.
+Ложь. Он не сохраняет состояние для входящих запросов.
 </b></details>
 
 <details>
-<summary>How HTTP request looks like?</summary><br><b>
+<summary>Как выглядит HTTP-запрос?</summary><br><b>
 
-It consists of:
+Он состоит из:
 
- * Request line - request type
- * Headers - content info like length, encoding, etc.
- * Body (not always included)
+ * Строки запроса (request line) — тип запроса
+ * Заголовков (headers) — информация о содержимом, например длина, кодировка и т.д.
+ * Тела (body) (присутствует не всегда)
 </b></details>
 
 <details>
-<summary>What HTTP method types are there?</summary><br><b>
+<summary>Какие типы HTTP-методов существуют?</summary><br><b>
 
 * GET
 * POST
@@ -2905,83 +2905,83 @@ It consists of:
 </b></details>
 
 <details>
-<summary>What HTTP response codes are there?</summary><br><b>
+<summary>Какие коды ответа HTTP существуют?</summary><br><b>
 
-* 1xx - informational
-* 2xx - Success
-* 3xx - Redirect
-* 4xx - Error, client fault
-* 5xx - Error, server fault
+* 1xx — информационные
+* 2xx — успех
+* 3xx — перенаправление
+* 4xx — ошибка на стороне клиента
+* 5xx — ошибка на стороне сервера
 </b></details>
 
 <details>
-<summary>What is HTTPS?</summary><br><b>
+<summary>Что такое HTTPS?</summary><br><b>
 
 
-HTTPS is a secure version of the HTTP protocol used to transfer data between a web browser and a web server. It encrypts the communication using SSL/TLS encryption to ensure that the data is private and secure.
+HTTPS — это защищённая версия протокола HTTP, используемая для передачи данных между веб-браузером и веб-сервером. Он шифрует взаимодействие с помощью SSL/TLS, чтобы данные оставались конфиденциальными и защищёнными.
 
-Learn more: https://www.cloudflare.com/learning/ssl/why-is-http-not-secure/
+Подробнее: https://www.cloudflare.com/learning/ssl/why-is-http-not-secure/
 </b></details>
 
 <details>
-<summary>Explain HTTP Cookies</summary><br><b>
+<summary>Объясните, что такое HTTP Cookies</summary><br><b>
 
-HTTP is stateless. To share state, we can use Cookies.
+HTTP не сохраняет состояние (stateless). Для обмена состоянием можно использовать Cookies.
 
-TODO: explain what is actually a Cookie
+TODO: объяснить, что на самом деле представляет собой Cookie
 </b></details>
 
 <details>
-<summary>What is HTTP Pipelining?</summary><br><b>
+<summary>Что такое HTTP Pipelining?</summary><br><b>
 </b></details>
 
 <details>
-<summary>You get "504 Gateway Timeout" error from an HTTP server. What does it mean?</summary><br><b>
+<summary>HTTP-сервер возвращает ошибку "504 Gateway Timeout". Что это означает?</summary><br><b>
 
-The server didn't receive a response from another server it communicates with in a timely manner.
+Сервер не получил своевременного ответа от другого сервера, с которым он взаимодействует.
 </b></details>
 
 <details>
-<summary>What is a proxy?</summary><br><b>
+<summary>Что такое прокси (proxy)?</summary><br><b>
 
-A proxy is a server that acts as a middleman between a client device and a destination server. It can help improve privacy, security, and performance by hiding the client's IP address, filtering content, and caching frequently accessed data. 
-  - Proxies can be used for load balancing, distributing traffic across multiple servers to help prevent server overload and improve website or application performance. They can also be used for data analysis, as they can log requests and traffic, providing useful insights into user behavior and preferences.
+Прокси — это сервер, выступающий посредником между клиентским устройством и целевым сервером. Он может повысить конфиденциальность, безопасность и производительность, скрывая IP-адрес клиента, фильтруя контент и кешируя часто запрашиваемые данные.
+  - Прокси можно использовать для балансировки нагрузки, распределяя трафик между несколькими серверами, чтобы предотвратить перегрузку серверов и повысить производительность сайта или приложения. Их также можно использовать для анализа данных, поскольку они могут логировать запросы и трафик, давая полезную информацию о поведении и предпочтениях пользователей.
 </b></details>
 
 <details>
-<summary>What is a reverse proxy?</summary><br><b>
+<summary>Что такое обратный прокси (reverse proxy)?</summary><br><b>
 
-A reverse proxy is a type of proxy server that sits between a client and a server, but it is used to manage traffic going in the opposite direction of a traditional forward proxy. In a forward proxy, the client sends requests to the proxy server, which then forwards them to the destination server. However, in a reverse proxy, the client sends requests to the destination server, but the requests are intercepted by the reverse proxy before they reach the server. 
-  - They're commonly used to improve web server performance, provide high availability and fault tolerance, and enhance security by preventing direct access to the back-end server. They are often used in large-scale web applications and high-traffic websites to manage and distribute requests to multiple servers, resulting in improved scalability and reliability.
+Обратный прокси — это тип прокси-сервера, который находится между клиентом и сервером, но используется для управления трафиком, идущим в направлении, противоположном традиционному прямому (forward) прокси. В случае прямого прокси клиент отправляет запросы прокси-серверу, который затем пересылает их целевому серверу. В случае же обратного прокси клиент отправляет запросы целевому серверу, но они перехватываются обратным прокси до того, как достигнут сервера.
+  - Обратные прокси обычно используются для повышения производительности веб-серверов, обеспечения высокой доступности и отказоустойчивости, а также для повышения безопасности за счёт запрета прямого доступа к бэкенд-серверу. Они часто применяются в крупных веб-приложениях и высоконагруженных сайтах для управления запросами и их распределения между несколькими серверами, что повышает масштабируемость и надёжность.
 </b></details>
 
 <details>
-<summary>When you publish a project, you usually publish it with a license. What types of licenses are you familiar with and which one do you prefer to use?</summary><br><b>
+<summary>При публикации проекта его обычно публикуют с лицензией. С какими типами лицензий вы знакомы и какую предпочитаете использовать?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain what is "X-Forwarded-For"</summary><br><b>
+<summary>Объясните, что такое "X-Forwarded-For"</summary><br><b>
 
-[Wikipedia](https://en.wikipedia.org/wiki/X-Forwarded-For): "The X-Forwarded-For (XFF) HTTP header field is a common method for identifying the originating IP address of a client connecting to a web server through an HTTP proxy or load balancer."
+[Wikipedia](https://en.wikipedia.org/wiki/X-Forwarded-For): «Поле HTTP-заголовка X-Forwarded-For (XFF) — распространённый способ определить исходный IP-адрес клиента, подключающегося к веб-серверу через HTTP-прокси или балансировщик нагрузки.»
 </b></details>
 
-#### Load Balancers
+#### Балансировщики нагрузки (Load Balancers)
 
 <details>
-<summary>What is a load balancer?</summary><br><b>
+<summary>Что такое балансировщик нагрузки (load balancer)?</summary><br><b>
 
-A load balancer accepts (or denies) incoming network traffic from a client, and based on some criteria (application related, network, etc.) it distributes those communications out to servers (at least one).
-</b></details>
-
-<details>
-<summary>Why to use a load balancer?</summary><br><b>
-
-* Scalability - using a load balancer, you can possibly add more servers in the backend to handle more requests/traffic from the clients, as opposed to using one server.
-* Redundancy - if one server in the backend dies, the load balancer will keep forwarding the traffic/requests to the second server so users won't even notice one of the servers in the backend is down.
+Балансировщик нагрузки принимает (или отклоняет) входящий сетевой трафик от клиента и на основе определённых критериев (связанных с приложением, сетью и т.д.) распределяет эти соединения по серверам (как минимум одному).
 </b></details>
 
 <details>
-<summary>What load balancer techniques/algorithms are you familiar with?</summary><br><b>
+<summary>Зачем использовать балансировщик нагрузки?</summary><br><b>
+
+* Масштабируемость — с балансировщиком нагрузки можно добавлять на бэкенде больше серверов для обработки большего числа запросов/трафика от клиентов, в отличие от использования одного сервера.
+* Избыточность — если один сервер на бэкенде выходит из строя, балансировщик продолжит направлять трафик/запросы на второй сервер, и пользователи даже не заметят, что один из серверов бэкенда недоступен.
+</b></details>
+
+<details>
+<summary>С какими техниками/алгоритмами балансировки нагрузки вы знакомы?</summary><br><b>
 
   * Round Robin
   * Weighted Round Robin
@@ -2995,80 +2995,80 @@ A load balancer accepts (or denies) incoming network traffic from a client, and 
 </b></details>
 
 <details>
-<summary>What are the drawbacks of round robin algorithm in load balancing?</summary><br><b>
+<summary>Каковы недостатки алгоритма round robin при балансировке нагрузки?</summary><br><b>
 
-  * A simple round robin algorithm knows nothing about the load and the spec of each server it forwards the requests to. It is possible, that multiple heavy workloads requests will get to the same server while other servers will got only lightweight requests which will result in one server doing most of the work, maybe even crashing at some point because it unable to handle all the heavy workloads requests by its own.
-  * Each request from the client creates a whole new session. This might be a problem for certain scenarios where you would like to perform multiple operations where the server has to know about the result of operation so basically, being sort of aware of the history it has with the client. In round robin, first request might hit server X, while second request might hit server Y and ask to continue processing the data that was processed on server X already.
+  * Простой алгоритм round robin ничего не знает о нагрузке и характеристиках каждого сервера, на который пересылает запросы. Возможна ситуация, когда несколько запросов с тяжёлой нагрузкой попадут на один и тот же сервер, а другие серверы получат только лёгкие запросы. В результате один сервер будет выполнять большую часть работы и, возможно, в какой-то момент даже упадёт, потому что не сможет самостоятельно справиться со всеми тяжёлыми запросами.
+  * Каждый запрос от клиента создаёт совершенно новую сессию. Это может быть проблемой в сценариях, где нужно выполнить несколько операций и серверу требуется знать результат предыдущей операции, то есть, по сути, быть в курсе истории взаимодействия с клиентом. При round robin первый запрос может попасть на сервер X, а второй — на сервер Y с просьбой продолжить обработку данных, которые уже обрабатывались на сервере X.
 </b></details>
 
 <details>
-<summary>What is an Application Load Balancer?</summary><br><b>
+<summary>Что такое Application Load Balancer?</summary><br><b>
 </b></details>
 
 <details>
-<summary>In which scenarios would you use ALB?</summary><br><b>
+<summary>В каких сценариях стоит использовать ALB?</summary><br><b>
 </b></details>
 
 <details>
-<summary>At what layers a load balancer can operate?</summary><br><b>
+<summary>На каких уровнях может работать балансировщик нагрузки?</summary><br><b>
 
-L4 and L7
+L4 и L7
 </b></details>
 
 <details>
-<summary>Can you perform load balancing without using a dedicated load balancer instance?</summary><br><b>
+<summary>Можно ли выполнять балансировку нагрузки без выделенного экземпляра балансировщика?</summary><br><b>
 
-Yes, you can use DNS for performing load balancing.
+Да, для балансировки нагрузки можно использовать DNS.
 </b></details>
 
 <details>
-<summary>What is DNS load balancing? What its advantages? When would you use it?</summary><br><b>
+<summary>Что такое балансировка нагрузки через DNS? Каковы её преимущества? Когда её использовать?</summary><br><b>
 </b></details>
 
-#### Load Balancers - Sticky Sessions
+#### Балансировщики нагрузки — липкие сессии (Sticky Sessions)
 
 <details>
-<summary>What are sticky sessions? What are their pros and cons?</summary><br><b>
+<summary>Что такое липкие сессии (sticky sessions)? Каковы их плюсы и минусы?</summary><br><b>
 
-Recommended read:
-  * [Red Hat Article](https://access.redhat.com/solutions/900933)
+Рекомендуется прочитать:
+  * [Статья Red Hat](https://access.redhat.com/solutions/900933)
 
-Cons:
-  * Can cause uneven load on instance (since requests routed to the same instances)
-Pros:
-  * Ensures in-proc sessions are not lost when a new request is created
-</b></details>
-
-<details>
-<summary>Name one use case for using sticky sessions</summary><br><b>
-
-You would like to make sure the user doesn't lose the current session data.
+Минусы:
+  * Могут вызывать неравномерную нагрузку на экземпляры (поскольку запросы направляются на одни и те же экземпляры)
+Плюсы:
+  * Гарантируют, что in-proc сессии не будут потеряны при создании нового запроса
 </b></details>
 
 <details>
-<summary>What sticky sessions use for enabling the "stickiness"?</summary><br><b>
+<summary>Назовите один сценарий использования липких сессий</summary><br><b>
 
-Cookies. There are application based cookies and duration based cookies.
+Нужно гарантировать, что пользователь не потеряет данные текущей сессии.
 </b></details>
 
 <details>
-<summary>Explain application-based cookies</summary><br><b>
+<summary>Что используют липкие сессии для обеспечения «липкости» (stickiness)?</summary><br><b>
 
-* Generated by the application and/or the load balancer
-* Usually allows to include custom data
+Cookies. Бывают cookies на основе приложения (application based) и cookies на основе длительности (duration based).
 </b></details>
 
 <details>
-<summary>Explain duration-based cookies</summary><br><b>
+<summary>Объясните, что такое cookies на основе приложения (application-based cookies)</summary><br><b>
 
-* Generated by the load balancer
-* Session is not sticky anymore once the duration elapsed
+* Генерируются приложением и/или балансировщиком нагрузки
+* Обычно позволяют включать пользовательские данные
 </b></details>
 
-#### Load Balancers - Load Balancing Algorithms
+<details>
+<summary>Объясните, что такое cookies на основе длительности (duration-based cookies)</summary><br><b>
+
+* Генерируются балансировщиком нагрузки
+* По истечении заданной длительности сессия перестаёт быть липкой
+</b></details>
+
+#### Балансировщики нагрузки — алгоритмы балансировки нагрузки
 
 <details>
-<summary>Explain each of the following load balancing techniques
+<summary>Объясните каждую из следующих техник балансировки нагрузки
 
   * Round Robin
   * Weighted Round Robin
@@ -3083,65 +3083,65 @@ Cookies. There are application based cookies and duration based cookies.
 </b></details>
 
 <details>
-<summary>Explain use case for connection draining?</summary><br><b>
-To ensure that a Classic Load Balancer stops sending requests to instances that are de-registering or unhealthy, while keeping the existing connections open, use connection draining. This enables the load balancer to complete in-flight requests made to instances that are de-registering or unhealthy.
+<summary>Объясните сценарий использования connection draining</summary><br><b>
+Чтобы Classic Load Balancer перестал отправлять запросы экземплярам, которые снимаются с регистрации или неисправны, но при этом существующие соединения оставались открытыми, используется connection draining. Это позволяет балансировщику завершить уже выполняющиеся (in-flight) запросы к экземплярам, которые снимаются с регистрации или неисправны.
 
-The maximum timeout value can be set between 1 and 3,600 seconds on both GCP and AWS.
+Максимальное значение тайм-аута можно задать в диапазоне от 1 до 3600 секунд как в GCP, так и в AWS.
 
 </b></details>
 
-#### Licenses
+#### Лицензии
 
 <details>
-<summary>Are you familiar with "Creative Commons"? What do you know about it?</summary><br><b>
+<summary>Знакомы ли вы с "Creative Commons"? Что вы о них знаете?</summary><br><b>
 
-The Creative Commons license is a set of copyright licenses that allow creators to share their work with the public while retaining some control over how it can be used. The license was developed as a response to the restrictive standards of traditional copyright laws, which limited access of creative works. Its creators to choose the terms under which their works can be shared, distributed, and used by others. They're six main types of Creative Commons licenses, each with different levels of restrictions and permissions, the six licenses are:
+Лицензии Creative Commons — это набор лицензий на авторское право, которые позволяют авторам делиться своими работами с публикой, сохраняя при этом определённый контроль над тем, как их можно использовать. Лицензии были разработаны в ответ на ограничительные нормы традиционного авторского права, которые ограничивали доступ к творческим работам. Они позволяют авторам выбирать условия, на которых их работы могут распространяться и использоваться другими. Существует шесть основных типов лицензий Creative Commons с разными уровнями ограничений и разрешений:
 
-  * Attribution (CC BY): Allows others to distribute, remix, and build upon the work, even commercially, as long as they credit the original creator.
-  * Attribution-ShareAlike (CC BY-SA): Allows others to remix and build upon the work, even commercially, as long as they credit the original creator and release any new creations under the same license.
-  * Attribution-NoDerivs (CC BY-ND): Allows others to distribute the work, even commercially, but they cannot remix or change it in any way and must credit the original creator.
-  * Attribution-NonCommercial (CC BY-NC): Allows others to remix and build upon the work, but they cannot use it commercially and must credit the original creator.
-  * Attribution-NonCommercial-ShareAlike (CC BY-NC-SA): Allows others to remix and build upon the work, but they cannot use it commercially, must credit the original creator, and must release any new creations under the same license.
-  * Attribution-NonCommercial-NoDerivs (CC BY-NC-ND): Allows others to download and share the work, but they cannot use it commercially, remix or change it in any way, and must credit the original creator.
+  * Attribution (CC BY): позволяет другим распространять, перерабатывать и развивать работу, в том числе в коммерческих целях, при условии указания автора оригинала.
+  * Attribution-ShareAlike (CC BY-SA): позволяет другим перерабатывать и развивать работу, в том числе в коммерческих целях, при условии указания автора оригинала и выпуска новых произведений под той же лицензией.
+  * Attribution-NoDerivs (CC BY-ND): позволяет другим распространять работу, в том числе в коммерческих целях, но её нельзя перерабатывать или как-либо изменять, и необходимо указывать автора оригинала.
+  * Attribution-NonCommercial (CC BY-NC): позволяет другим перерабатывать и развивать работу, но её нельзя использовать в коммерческих целях, и необходимо указывать автора оригинала.
+  * Attribution-NonCommercial-ShareAlike (CC BY-NC-SA): позволяет другим перерабатывать и развивать работу, но её нельзя использовать в коммерческих целях, необходимо указывать автора оригинала и выпускать новые произведения под той же лицензией.
+  * Attribution-NonCommercial-NoDerivs (CC BY-NC-ND): позволяет другим скачивать работу и делиться ею, но её нельзя использовать в коммерческих целях, перерабатывать или как-либо изменять, и необходимо указывать автора оригинала.
 
-Simply stated, the Creative Commons licenses are a way for creators to share their work with the public while retaining some control over how it can be used. The licenses promote creativity, innovation, and collaboration, while also respecting the rights of creators while still encouraging the responsible use of creative works.
+Проще говоря, лицензии Creative Commons — это способ для авторов делиться своими работами с публикой, сохраняя определённый контроль над тем, как их можно использовать. Эти лицензии способствуют творчеству, инновациям и сотрудничеству, уважая права авторов и одновременно поощряя ответственное использование творческих работ.
 
-More information: https://creativecommons.org/licenses/
+Подробнее: https://creativecommons.org/licenses/
 </b></details>
 
 <details>
-<summary>Explain the differences between copyleft and permissive licenses</summary><br><b>
+<summary>Объясните различия между copyleft-лицензиями и разрешительными (permissive) лицензиями</summary><br><b>
 
-In Copyleft, any derivative work must use the same licensing while in permissive licensing there are no such condition. GPL-3 is an example of copyleft license while BSD is an example of permissive license.
+При copyleft любая производная работа должна использовать ту же лицензию, тогда как у разрешительных лицензий такого условия нет. GPL-3 — пример copyleft-лицензии, а BSD — пример разрешительной лицензии.
 </b></details>
 
-#### Random
+#### Разное
 
 <details>
-<summary>How a search engine works?</summary><br><b>
-</b></details>
-
-<details>
-<summary>How auto completion works?</summary><br><b>
+<summary>Как работает поисковая система?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is faster than RAM?</summary><br><b>
-
-CPU cache.
-[Source](https://www.enterprisestorageforum.com/hardware/cache-memory/)
+<summary>Как работает автодополнение?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is a memory leak?</summary><br><b>
+<summary>Что быстрее, чем RAM?</summary><br><b>
 
-A memory leak is a programming error that occurs when a program fails to release memory that is no longer needed, causing the program to consume increasing amounts of memory over time.
-
-The leaks can lead to a variety of problems, including system crashes, performance degradation, and instability. Usually occurring after failed maintenance on older systems and compatibility with new components over time.
+Кеш процессора (CPU cache).
+[Источник](https://www.enterprisestorageforum.com/hardware/cache-memory/)
 </b></details>
 
 <details>
-<summary>What is your favorite protocol?</summary><br><b>
+<summary>Что такое утечка памяти (memory leak)?</summary><br><b>
+
+Утечка памяти — это программная ошибка, возникающая, когда программа не освобождает память, которая больше не нужна, из-за чего программа со временем потребляет всё больше памяти.
+
+Утечки могут приводить к различным проблемам, включая падения системы, снижение производительности и нестабильность. Обычно они возникают после неудачного сопровождения старых систем и из-за проблем совместимости с новыми компонентами с течением времени.
+</b></details>
+
+<details>
+<summary>Какой ваш любимый протокол?</summary><br><b>
 
 SSH
 HTTP
@@ -3151,89 +3151,89 @@ DNS
 </b></details>
 
 <details>
-<summary>What is Cache API?</summary><br><b>
+<summary>Что такое Cache API?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the C10K problem? Is it relevant today?</summary><br><b>
+<summary>Что такое проблема C10K? Актуальна ли она сегодня?</summary><br><b>
 
 https://idiallo.com/blog/c10k-2016
 </b></details>
 
-## Storage
+## Хранилища данных (Storage)
 
 <details>
-<summary>What types of storage are there?</summary><br><b>
+<summary>Какие бывают типы хранилищ?</summary><br><b>
 
-  * File
-  * Block
-  * Object
+  * Файловое (File)
+  * Блочное (Block)
+  * Объектное (Object)
 </b></details>
 
 <details>
-<summary>Explain Object Storage</summary><br><b>
+<summary>Объясните, что такое объектное хранилище (Object Storage)</summary><br><b>
 
-- Data is divided to self-contained objects
-- Objects can contain metadata
+- Данные разделяются на самодостаточные объекты
+- Объекты могут содержать метаданные
 </b></details>
 
 <details>
-<summary>What are the pros and cons of object storage?</summary><br><b>
+<summary>Каковы плюсы и минусы объектного хранилища?</summary><br><b>
 
-Pros:
-  - Usually with object storage, you pay for what you use as opposed to other storage types where you pay for the storage space you allocate
-  - Scalable storage: Object storage mostly based on a model where what you use, is what you get and you can add storage as need
-Cons:
-  - Usually performs slower than other types of storage
-  - No granular modification: to change an object, you have re-create it
+Плюсы:
+  - Обычно в объектном хранилище платят за фактически использованный объём, в отличие от других типов хранилищ, где платят за выделенное пространство
+  - Масштабируемость: объектное хранилище в основном построено на модели «сколько используешь, столько и получаешь», и объём можно добавлять по мере необходимости
+Минусы:
+  - Обычно работает медленнее, чем другие типы хранилищ
+  - Нет гранулярного изменения: чтобы изменить объект, его нужно создать заново
 </b></details>
 
 <details>
-<summary>What are some use cases for using object storage?</summary><br><b>
+<summary>Каковы типичные сценарии использования объектного хранилища?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain File Storage</summary><br><b>
+<summary>Объясните, что такое файловое хранилище (File Storage)</summary><br><b>
 
-- File Storage used for storing data in files, in a hierarchical structure
-- Some of the devices for file storage: hard drive, flash drive, cloud-based file storage
-- Files usually organized in directories
+- Файловое хранилище используется для хранения данных в файлах, в иерархической структуре
+- Некоторые устройства для файлового хранения: жёсткий диск, флеш-накопитель, облачное файловое хранилище
+- Файлы обычно организованы в каталоги
 </b></details>
 
 <details>
-<summary>What are the pros and cons of File Storage?</summary><br><b>
+<summary>Каковы плюсы и минусы файлового хранилища?</summary><br><b>
 
-Pros:
-- Users have full control of their own files and can run variety of operations on the files: delete, read, write and move.
-- Security mechanism allows for users to have a better control at things such as file locking
+Плюсы:
+- Пользователи полностью контролируют свои файлы и могут выполнять с ними различные операции: удаление, чтение, запись и перемещение.
+- Механизмы безопасности дают пользователям лучший контроль над такими вещами, как блокировка файлов
 </b></details>
 
 <details>
-<summary>What are some examples of file storage?</summary><br><b>
+<summary>Приведите примеры файловых хранилищ</summary><br><b>
 
-Local filesystem
+Локальная файловая система
 Dropbox
 Google Drive
 </b></details>
 
 <details>
-<summary>What types of storage devices are there?</summary><br><b>
+<summary>Какие бывают типы устройств хранения?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain IOPS</summary><br><b>
+<summary>Объясните, что такое IOPS</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain storage throughput</summary><br><b>
+<summary>Объясните, что такое пропускная способность хранилища (storage throughput)</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is a filesystem?</summary><br><b>
+<summary>Что такое файловая система?</summary><br><b>
 
-A file system is a way for computers and other electronic devices to organize and store data files. It provides a structure that helps to organize data into files and directories, making it easier to find and manage information. A file system is crucial for providing a way to store and manage data in an organized manner.
+Файловая система — это способ, с помощью которого компьютеры и другие электронные устройства организуют и хранят файлы данных. Она задаёт структуру, которая помогает организовать данные в файлы и каталоги, упрощая поиск информации и управление ею. Файловая система крайне важна, так как обеспечивает упорядоченное хранение данных и управление ими.
 
-Commonly used filed systems:
+Распространённые файловые системы:
   Windows:
   * NTFS
   * exFAT
@@ -3245,862 +3245,862 @@ Commonly used filed systems:
 </b></details>
 
 <details>
-<summary>Explain Dark Data</summary><br><b>
+<summary>Объясните, что такое «тёмные данные» (Dark Data)</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain MBR</summary><br><b>
+<summary>Объясните, что такое MBR</summary><br><b>
 </b></details>
 
 <a name="questions-you-ask"></a>
-## Questions you CAN ask
+## Вопросы, которые МОЖНО задать
 
-A list of questions you as a candidate can ask the interviewer during or after the interview.
-These are only a suggestion, use them carefully. Not every interviewer will be able to answer these (or happy to) which should be perhaps a red flag warning for your regarding working in such place but that's really up to you.
+Список вопросов, которые кандидат может задать интервьюеру во время или после собеседования.
+Это лишь рекомендации, используйте их осторожно. Не каждый интервьюер сможет (или захочет) ответить на них — возможно, это стоит считать тревожным сигналом в отношении работы в таком месте, но решать вам.
 
 <details>
-<summary>What do you like about working here?</summary><br><b>
+<summary>Что вам нравится в работе здесь?</summary><br><b>
 </b></details>
 
 <details>
-<summary>How does the company promote personal growth?</summary><br><b>
+<summary>Как компания способствует профессиональному росту сотрудников?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the current level of technical debt you are dealing with?</summary><br><b>
+<summary>Каков текущий уровень технического долга, с которым вы имеете дело?</summary><br><b>
 
-Be careful when asking this question - all companies, regardless of size, have some level of tech debt.
-Phrase the question in the light that all companies have the deal with this, but you want to see the current
-pain points they are dealing with <br>
+Задавать этот вопрос нужно осторожно: у всех компаний, независимо от размера, есть некоторый технический долг.
+Сформулируйте вопрос так, чтобы было понятно, что с этим сталкиваются все компании, но вам интересно, какие
+болевые точки есть у них сейчас <br>
 
-This is a great way to figure how managers deal with unplanned work, and how good they are at
-setting expectations with projects.
+Это отличный способ понять, как руководители справляются с незапланированной работой и насколько хорошо они
+умеют формировать ожидания по проектам.
 </b></details>
 
 <details>
-<summary>Why I should NOT join you? (or 'what you don't like about working here?')</summary><br><b>
+<summary>Почему мне НЕ стоит к вам присоединяться? (или «что вам не нравится в работе здесь?»)</summary><br><b>
 </b></details>
 
 <details>
-<summary>What was your favorite project you've worked on?</summary><br><b>
+<summary>Какой проект из тех, над которыми вы работали, был вашим любимым?</summary><br><b>
 
-This can give you insights in some of the cool projects a company is working on, and if
-you would enjoy working on projects like these. This is also a good way to see if
-the managers are allowing employees to learn and grow with projects outside of the
-normal work you'd do.
+Это может дать представление о некоторых интересных проектах, над которыми работает компания, и о том,
+понравилось бы вам работать над подобными проектами. Это также хороший способ узнать,
+позволяют ли руководители сотрудникам учиться и расти на проектах, выходящих за рамки
+обычной работы.
 </b></details>
 
 <details>
-<summary>If you could change one thing about your day to day, what would it be?</summary><br><b>
+<summary>Если бы вы могли изменить одну вещь в своей повседневной работе, что бы это было?</summary><br><b>
 
-Similar to the tech debt question, this helps you identify any pain points with the company.
-Additionally, it can be a great way to show how you'd be an asset to the team.<br>
+Как и вопрос о техническом долге, этот помогает выявить болевые точки компании.
+Кроме того, это отличная возможность показать, чем вы будете полезны команде.<br>
 
-For Example, if they mention they have problem X, and you've solved that in the past,
-you can show how you'd be able to mitigate that problem.
+Например, если упоминается проблема X, а вы уже решали её в прошлом,
+можно показать, как вы смогли бы её устранить.
 </b></details>
 
 <details>
-<summary>Let's say that we agree and you hire me to this position, after X months, what do you expect that I have achieved?</summary><br><b>
+<summary>Допустим, мы договорились и вы наняли меня на эту должность. Чего, по-вашему, я должен достичь через X месяцев?</summary><br><b>
 
-Not only this will tell you what is expected from you, it will also provide big hint on the type of work you are going to do in the first months of your job.
+Это не только покажет, чего от вас ожидают, но и даст хорошую подсказку о том, какой работой вы будете заниматься в первые месяцы.
 </b></details>
 
-## Testing
+## Тестирование
 
 <details>
-<summary>Explain white-box testing</summary><br><b>
-</b></details>
-
-<details>
-<summary>Explain black-box testing</summary><br><b>
+<summary>Объясните, что такое тестирование методом белого ящика (white-box testing)</summary><br><b>
 </b></details>
 
 <details>
-<summary>What are unit tests?</summary><br><b>
-
-Unit test are a software testing technique that involves systimatically breaking down a system and testing each individual part of the assembly. These tests are automated and can be run repeatedly to allow developers to catch edge case scenarios or bugs quickly while developing.
-
-The main objective of unit tests are to verify each function is producing proper outputs given a set of inputs.
+<summary>Объясните, что такое тестирование методом чёрного ящика (black-box testing)</summary><br><b>
 </b></details>
 
 <details>
-<summary>What types of tests would you run to test a web application?</summary><br><b>
+<summary>Что такое модульные тесты (unit tests)?</summary><br><b>
+
+Модульное тестирование — это метод тестирования ПО, при котором система систематически разбивается на части и каждая отдельная часть тестируется по отдельности. Такие тесты автоматизированы и могут запускаться многократно, что позволяет разработчикам быстро находить граничные случаи и ошибки в процессе разработки.
+
+Основная цель модульных тестов — проверить, что каждая функция выдаёт правильный результат для заданного набора входных данных.
 </b></details>
 
 <details>
-<summary>Explain test harness?</summary><br><b>
+<summary>Какие типы тестов нужно запустить, чтобы протестировать веб-приложение?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is A/B testing?</summary><br><b>
+<summary>Объясните, что такое тестовая обвязка (test harness)?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is network simulation and how do you perform it?</summary><br><b>
+<summary>Что такое A/B-тестирование?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What types of performances tests are you familiar with?</summary><br><b>
+<summary>Что такое имитация сети (network simulation) и как её выполнить?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain the following types of tests:
+<summary>С какими типами нагрузочных тестов (performance tests) вы знакомы?</summary><br><b>
+</b></details>
 
-  * Load Testing
-  * Stress Testing
-  * Capacity Testing
-  * Volume Testing
-  * Endurance Testing
+<details>
+<summary>Объясните следующие типы тестов:
+
+  * Нагрузочное тестирование (Load Testing)
+  * Стресс-тестирование (Stress Testing)
+  * Тестирование ёмкости (Capacity Testing)
+  * Объёмное тестирование (Volume Testing)
+  * Тестирование на выносливость (Endurance Testing)
 </summary><br><b>
 </b></details>
 
-## Regex
+## Регулярные выражения (Regex)
 
-Given a text file, perform the following exercises
+Дан текстовый файл, выполните следующие упражнения
 
-#### Extract
+#### Извлечение
 
 <details>
-<summary>Extract all the numbers</summary><br><b>
+<summary>Извлеките все числа</summary><br><b>
 
   - "\d+"
 </b></details>
 
 <details>
-<summary>Extract the first word of each line</summary><br><b>
+<summary>Извлеките первое слово каждой строки</summary><br><b>
 
   - "^\w+"
-Bonus: extract the last word of each line
+Бонус: извлеките последнее слово каждой строки
 
-  - "\w+(?=\W*$)" (in most cases, depends on line formatting)
+  - "\w+(?=\W*$)" (в большинстве случаев, зависит от форматирования строк)
 </b></details>
 
 <details>
-<summary>Extract all the IP addresses</summary><br><b>
+<summary>Извлеките все IP-адреса</summary><br><b>
 
-  - "\b(?:\d{1,3}\ .){3}\d{1,3}\b" IPV4:(This format looks for 1 to 3 digit sequence 3 times)
+  - "\b(?:\d{1,3}\ .){3}\d{1,3}\b" IPV4: (этот шаблон ищет последовательность из 1–3 цифр 3 раза)
 </b></details>
 
 <details>
-<summary>Extract dates in the format of yyyy-mm-dd or yyyy-dd-mm</summary><br><b>
+<summary>Извлеките даты в формате yyyy-mm-dd или yyyy-dd-mm</summary><br><b>
 </b></details>
 
 <details>
-<summary>Extract email addresses</summary><br><b>
+<summary>Извлеките адреса электронной почты</summary><br><b>
 
   - "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\ .[A-Za-z]{2,}\b"
 </b></details>
 
-#### Replace
+#### Замена
 
 <details>
-<summary>Replace tabs with four spaces</summary><br><b>
+<summary>Замените табуляции на четыре пробела</summary><br><b>
 </b></details>
 
 <details>
-<summary>Replace 'red' with 'green'</summary><br><b>
+<summary>Замените 'red' на 'green'</summary><br><b>
 </b></details>
 
-## System Design
+## Проектирование систем (System Design)
 
 <details>
-<summary>Explain what a "single point of failure" is. </summary><br><b>
-A "single point of failure", in a system or organization, if it were to fail would cause the entire system to fail or significantly disrupt it's operation. In other words, it is a vulnerability where there
-is no backup in place to compensate for the failure.
-</b></details>
-
-<details>
-<summary>What is CDN?</summary><br><b>
-
-CDN (Content Delivery Network) responsible for distributing content geographically. Part of it, is what is known as edge locations, aka cache proxies, that allows users to get their content quickly due to cache features and geographical distribution.
+<summary>Объясните, что такое «единая точка отказа» (single point of failure). </summary><br><b>
+«Единая точка отказа» в системе или организации — это компонент, отказ которого привёл бы к отказу всей системы или серьёзно нарушил бы её работу. Иными словами, это уязвимость, для которой
+нет резервного варианта, способного компенсировать отказ.
 </b></details>
 
 <details>
-<summary>Explain Multi-CDN</summary><br><b>
+<summary>Что такое CDN?</summary><br><b>
 
-In single CDN, the whole content is originated from content delivery network.<br>
-In multi-CDN, content is distributed across multiple different CDNs, each might be on a completely different provider/cloud.
+CDN (Content Delivery Network, сеть доставки контента) отвечает за географическое распределение контента. Её частью являются так называемые пограничные узлы (edge locations), они же кеширующие прокси, которые позволяют пользователям быстро получать контент благодаря кешированию и географическому распределению.
 </b></details>
 
 <details>
-<summary>What are the benefits of Multi-CDN over a single CDN?</summary><br><b>
+<summary>Объясните, что такое Multi-CDN</summary><br><b>
 
-* Resiliency: Relying on one CDN means no redundancy. With multiple CDNs you don't need to worry about your CDN being down
-* Flexibility in Costs: Using one CDN enforces you to specific rates of that CDN. With multiple CDNs you can take into consideration using less expensive CDNs to deliver the content.
-* Performance: With Multi-CDN there is bigger potential in choosing better locations which more close to the client asking the content
-* Scale: With multiple CDNs, you can scale services to support more extreme conditions
+При использовании одной CDN весь контент отдаётся из одной сети доставки контента.<br>
+При Multi-CDN контент распределяется между несколькими разными CDN, каждая из которых может принадлежать совершенно другому провайдеру/облаку.
 </b></details>
 
 <details>
-<summary>Explain "3-Tier Architecture" (including pros and cons)</summary><br><b>
-A "3-Tier Architecture" is a pattern used in software development for designing and structuring applications. It divides the application into 3 interconnected layers: Presentation, Business logic and Data storage.  
-PROS: 
-* Scalability
-* Security
-* Reusability
-CONS:
-* Complexity
-* Performance overhead
-* Cost and development time
+<summary>Каковы преимущества Multi-CDN перед одной CDN?</summary><br><b>
+
+* Отказоустойчивость: опора на одну CDN означает отсутствие резервирования. С несколькими CDN можно не беспокоиться о том, что CDN станет недоступна
+* Гибкость в затратах: одна CDN привязывает к её тарифам. С несколькими CDN можно рассмотреть доставку контента через более дешёвые CDN.
+* Производительность: с Multi-CDN больше возможностей выбрать более удачные узлы, расположенные ближе к клиенту, запрашивающему контент
+* Масштаб: с несколькими CDN можно масштабировать сервисы для работы в более экстремальных условиях
 </b></details>
 
 <details>
-<summary>Explain Mono-repo vs. Multi-repo.What are the cons and pros of each approach?</summary><br><b>
-In a Mono-repo, all the code for an organization is stored in a single,centralized repository.
-PROS (Mono-repo):
-* Unified tooling
-* Code Sharing
-CONS (Mono-repo):
-* Increased complexity
-* Slower cloning
-
-In a Multi-repo setup, each component is stored in it's own separate repository. Each repository has it's own version control history.
-PROS (Multi-repo):
-* Simpler to manage
-* Different teams and developers can work on different parts of the project independently, making parallel development easier.
-CONS (Multi-repo):
-* Code duplication
-* Integration challenges
+<summary>Объясните, что такое «трёхуровневая архитектура» (3-Tier Architecture), включая плюсы и минусы</summary><br><b>
+«Трёхуровневая архитектура» — это шаблон, используемый в разработке ПО для проектирования и структурирования приложений. Она разделяет приложение на 3 взаимосвязанных уровня: представление (Presentation), бизнес-логика (Business logic) и хранение данных (Data storage).  
+ПЛЮСЫ: 
+* Масштабируемость
+* Безопасность
+* Повторное использование
+МИНУСЫ:
+* Сложность
+* Накладные расходы на производительность
+* Стоимость и время разработки
 </b></details>
 
 <details>
-<summary>What are the drawbacks of monolithic architecture?</summary><br><b>
+<summary>Сравните Mono-repo и Multi-repo. Каковы плюсы и минусы каждого подхода?</summary><br><b>
+В Mono-repo весь код организации хранится в одном централизованном репозитории.
+ПЛЮСЫ (Mono-repo):
+* Единый инструментарий
+* Совместное использование кода
+МИНУСЫ (Mono-repo):
+* Повышенная сложность
+* Более медленное клонирование
 
-* Not suitable for frequent code changes and the ability to deploy new features
-* Not designed for today's infrastructure (like public clouds)
-* Scaling a team to work monolithic architecture is more challenging
-* If a single component in this architecture fails, then the entire application fails.
+В Multi-repo каждый компонент хранится в собственном отдельном репозитории. У каждого репозитория своя история версий.
+ПЛЮСЫ (Multi-repo):
+* Проще управлять
+* Разные команды и разработчики могут независимо работать над разными частями проекта, что упрощает параллельную разработку.
+МИНУСЫ (Multi-repo):
+* Дублирование кода
+* Сложности с интеграцией
 </b></details>
 
 <details>
-<summary>What are the advantages of microservices architecture over a monolithic architecture?</summary><br><b>
+<summary>Каковы недостатки монолитной архитектуры?</summary><br><b>
 
-* Each of the services individually fail without escalating into an application-wide outage.
-* Each service can be developed and maintained by a separate team and this team can choose its own tools and coding language
+* Не подходит для частых изменений кода и быстрого развёртывания новых функций
+* Не рассчитана на современную инфраструктуру (например, публичные облака)
+* Масштабировать команду для работы с монолитной архитектурой сложнее
+* Если отказывает один компонент такой архитектуры, отказывает всё приложение.
 </b></details>
 
 <details>
-<summary>What's a service mesh?</summary><br><b>
-It is a layer that facilitates communication management and control between microservices in a containerized application. It handles tasks such as load balancing, encryption, and monitoring.
+<summary>Каковы преимущества микросервисной архитектуры перед монолитной?</summary><br><b>
+
+* Каждый сервис может отказать по отдельности, не вызывая сбоя всего приложения.
+* Каждый сервис может разрабатываться и поддерживаться отдельной командой, которая может выбирать собственные инструменты и язык программирования
 </b></details>
 
 <details>
-<summary>Explain "Loose Coupling"</summary><br><b>
-In "Loose Coupling", components of a system communicate with each other with a little understanding of each other's internal workings. This improves scalability and ease of modification in complex systems.
+<summary>Что такое service mesh?</summary><br><b>
+Это слой, который упрощает управление взаимодействием и контроль над ним между микросервисами в контейнеризированном приложении. Он берёт на себя такие задачи, как балансировка нагрузки, шифрование и мониторинг.
 </b></details>
 
 <details>
-<summary>What is a message queue? When is it used?</summary><br><b>
-It is a communication mechanism used in distributed systems to enable asynchronous communication between different components. It is generally used when the systems use a microservices approach.
-</b></details>
-
-#### Scalability
-
-<details>
-<summary>Explain Scalability</summary><br><b>
-
-The ability easily grow in size and capacity based on demand and usage.
+<summary>Объясните, что такое «слабая связанность» (Loose Coupling)</summary><br><b>
+При «слабой связанности» компоненты системы взаимодействуют друг с другом, мало зная о внутреннем устройстве друг друга. Это улучшает масштабируемость и упрощает внесение изменений в сложные системы.
 </b></details>
 
 <details>
-<summary>Explain Elasticity</summary><br><b>
+<summary>Что такое очередь сообщений (message queue)? Когда она используется?</summary><br><b>
+Это механизм взаимодействия, используемый в распределённых системах для асинхронного обмена данными между разными компонентами. Обычно применяется, когда системы построены на микросервисном подходе.
+</b></details>
 
-The ability to grow but also to reduce based on what is required
+#### Масштабируемость
+
+<details>
+<summary>Объясните, что такое масштабируемость (Scalability)</summary><br><b>
+
+Способность легко увеличиваться в размере и ёмкости в зависимости от спроса и использования.
 </b></details>
 
 <details>
-<summary>Explain Disaster Recovery</summary><br><b>
+<summary>Объясните, что такое эластичность (Elasticity)</summary><br><b>
 
-
-Disaster recovery is the process of restoring critical business systems and data after a disruptive event. The goal is to minimize the impact and resume normal business activities quickly. This involves creating a plan, testing it, backing up critical data, and storing it in safe locations. In case of a disaster, the plan is then executed, backups are restored, and systems are hopefully brought back online. The recovery process may take hours or days depending on the damages of infrastructure. This makes business planning important, as a well-designed and tested disaster recovery plan can minimize the impact of a disaster and keep operations going.
+Способность как расти, так и сокращаться в зависимости от потребностей
 </b></details>
 
 <details>
-<summary>Explain Fault Tolerance and High Availability</summary><br><b>
+<summary>Объясните, что такое аварийное восстановление (Disaster Recovery)</summary><br><b>
 
-Fault Tolerance - The ability to self-heal and return to normal capacity. Also the ability to withstand a failure and remain functional.
 
-High Availability - Being able to access a resource (in some use cases, using different platforms)
+Аварийное восстановление — это процесс восстановления критически важных бизнес-систем и данных после разрушительного события. Цель — минимизировать последствия и быстро возобновить нормальную работу бизнеса. Для этого нужно составить план, протестировать его, создавать резервные копии критичных данных и хранить их в надёжных местах. В случае аварии план выполняется, резервные копии восстанавливаются, и системы, как правило, снова вводятся в строй. Процесс восстановления может занять часы или дни в зависимости от повреждений инфраструктуры. Поэтому важно планирование: хорошо продуманный и протестированный план аварийного восстановления может минимизировать последствия аварии и сохранить работоспособность.
 </b></details>
 
 <details>
-<summary>What is the difference between high availability and Disaster Recovery?</summary><br><b>
+<summary>Объясните, что такое отказоустойчивость (Fault Tolerance) и высокая доступность (High Availability)</summary><br><b>
 
-[wintellect.com](https://www.wintellect.com/high-availability-vs-disaster-recovery): "High availability, simply put, is eliminating single points of failure and disaster recovery is the process of getting a system back to an operational state when a system is rendered inoperative. In essence, disaster recovery picks up when high availability fails, so HA first."
+Отказоустойчивость (Fault Tolerance) — способность самостоятельно восстанавливаться и возвращаться к нормальной ёмкости. А также способность выдерживать отказ и оставаться работоспособным.
+
+Высокая доступность (High Availability) — возможность получить доступ к ресурсу (в некоторых случаях — с использованием разных платформ)
 </b></details>
 
 <details>
-<summary>Explain Vertical Scaling</summary><br><b>
+<summary>В чём разница между высокой доступностью и аварийным восстановлением?</summary><br><b>
 
-Vertical Scaling is the process of adding resources to increase power of existing servers. For example, adding more CPUs, adding more RAM, etc.
+[wintellect.com](https://www.wintellect.com/high-availability-vs-disaster-recovery): «Высокая доступность, проще говоря, — это устранение единых точек отказа, а аварийное восстановление — это процесс возврата системы в рабочее состояние, когда она вышла из строя. По сути, аварийное восстановление вступает в дело, когда высокая доступность не сработала, поэтому сначала HA.»
 </b></details>
 
 <details>
-<summary>What are the disadvantages of Vertical Scaling?</summary><br><b>
+<summary>Объясните, что такое вертикальное масштабирование (Vertical Scaling)</summary><br><b>
 
-With vertical scaling alone, the component still remains a single point of failure.
-In addition, it has hardware limit where if you don't have more resources, you might not be able to scale vertically.
+Вертикальное масштабирование — это процесс добавления ресурсов для увеличения мощности существующих серверов. Например, добавление CPU, RAM и т.д.
 </b></details>
 
 <details>
-<summary>Which type of cloud services usually support vertical scaling?</summary><br><b>
+<summary>Каковы недостатки вертикального масштабирования?</summary><br><b>
 
-Databases, cache. It's common mostly for non-distributed systems.
+При одном лишь вертикальном масштабировании компонент по-прежнему остаётся единой точкой отказа.
+Кроме того, есть аппаратный предел: если больше ресурсов нет, масштабироваться вертикально может быть невозможно.
 </b></details>
 
 <details>
-<summary>Explain Horizontal Scaling</summary><br><b>
+<summary>Какие типы облачных сервисов обычно поддерживают вертикальное масштабирование?</summary><br><b>
 
-Horizontal Scaling is the process of adding more resources that will be able handle requests as one unit
+Базы данных, кеш. Это характерно в основном для нераспределённых систем.
 </b></details>
 
 <details>
-<summary>What is the disadvantage of Horizontal Scaling? What is often required in order to perform Horizontal Scaling?</summary><br><b>
+<summary>Объясните, что такое горизонтальное масштабирование (Horizontal Scaling)</summary><br><b>
 
-A load balancer. You can add more resources, but if you would like them to be part of the process, you have to serve them the requests/responses.
-Also, data inconsistency is a concern with horizontal scaling.
+Горизонтальное масштабирование — это процесс добавления ресурсов, которые смогут обрабатывать запросы как единое целое
 </b></details>
 
 <details>
-<summary>Explain in which use cases will you use vertical scaling and in which use cases you will use horizontal scaling</summary><br><b>
+<summary>Каков недостаток горизонтального масштабирования? Что часто требуется для горизонтального масштабирования?</summary><br><b>
+
+Балансировщик нагрузки. Можно добавить больше ресурсов, но если нужно, чтобы они участвовали в процессе, им необходимо передавать запросы/ответы.
+Кроме того, при горизонтальном масштабировании проблемой является несогласованность данных.
 </b></details>
 
 <details>
-<summary>Explain Resiliency and what ways are there to make a system more resilient</summary><br><b>
+<summary>Объясните, в каких случаях стоит использовать вертикальное масштабирование, а в каких — горизонтальное</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain "Consistent Hashing"</summary><br><b>
+<summary>Объясните, что такое устойчивость (Resiliency) и какими способами можно сделать систему более устойчивой</summary><br><b>
 </b></details>
 
 <details>
-<summary>How would you update each of the services in the following drawing without having app (foo.com) downtime?<br>
+<summary>Объясните, что такое «согласованное хеширование» (Consistent Hashing)</summary><br><b>
+</b></details>
+
+<details>
+<summary>Как обновить каждый из сервисов на следующей схеме без простоя приложения (foo.com)?<br>
 <img src="images/design/cdn-no-downtime.png" width="300x;" height="400px;"/>
 </summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the problem with the following architecture and how would you fix it?<br>
+<summary>В чём проблема следующей архитектуры и как её исправить?<br>
 <img src="images/design/producers_consumers_issue.png" width="400x;" height="300px;"/>
 </summary><br><b>
 
-The load on the producers or consumers may be high which will then cause them to hang or crash.<br>
-Instead of working in "push mode", the consumers can pull tasks only when they are ready to handle them. It can be fixed by using a streaming platform like Kafka, Kinesis, etc. This platform will make sure to handle the high load/traffic and pass tasks/messages to consumers only when the ready to get them.
+Нагрузка на производителей (producers) или потребителей (consumers) может быть высокой, из-за чего они будут зависать или падать.<br>
+Вместо работы в «push-режиме» потребители могут забирать задачи только тогда, когда готовы их обработать. Это можно исправить с помощью потоковой платформы, такой как Kafka, Kinesis и т.д. Такая платформа справится с высокой нагрузкой/трафиком и будет передавать задачи/сообщения потребителям только тогда, когда они готовы их получить.
 
 <img src="images/design/producers_consumers_fix.png" width="300x;" height="200px;"/>
 </b></details>
 
 <details>
-<summary>Users report that there is huge spike in process time when adding little bit more data to process as an input. What might be the problem?<br>
+<summary>Пользователи сообщают о резком росте времени обработки, когда на вход подаётся лишь немного больше данных. В чём может быть проблема?<br>
 <img src="images/design/input-process-output.png" width="300x;" height="200px;"/>
 </summary><br><b>
 </b></details>
 
 <details>
-<summary>How would you scale the architecture from the previous question to hundreds of users?</summary><br><b>
+<summary>Как масштабировать архитектуру из предыдущего вопроса до сотен пользователей?</summary><br><b>
 </b></details>
 
-#### Cache
+#### Кеш
 
 <details>
-<summary>What is "cache"? In which cases would you use it?</summary><br><b>
-</b></details>
-
-<details>
-<summary>What is "distributed cache"?</summary><br><b>
+<summary>Что такое «кеш»? В каких случаях его стоит использовать?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is a "cache replacement policy"?</summary><br><b>
-
-Take a look [here](https://en.wikipedia.org/wiki/Cache_replacement_policies)
+<summary>Что такое «распределённый кеш»?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Which cache replacement policies are you familiar with?</summary><br><b>
+<summary>Что такое «политика вытеснения кеша» (cache replacement policy)?</summary><br><b>
 
-You can find a list [here](https://en.wikipedia.org/wiki/Cache_replacement_policies)
+Подробнее — [здесь](https://en.wikipedia.org/wiki/Cache_replacement_policies)
 </b></details>
 
 <details>
-<summary>Explain the following cache policies:
+<summary>С какими политиками вытеснения кеша вы знакомы?</summary><br><b>
+
+Список можно найти [здесь](https://en.wikipedia.org/wiki/Cache_replacement_policies)
+</b></details>
+
+<details>
+<summary>Объясните следующие политики кеширования:
 
   * FIFO
   * LIFO
   * LRU</summary><br><b>
 
-Read about it [here](https://en.wikipedia.org/wiki/Cache_replacement_policies)
+Об этом можно прочитать [здесь](https://en.wikipedia.org/wiki/Cache_replacement_policies)
 </b></details>
 
 <details>
-<summary>Why not writing everything to cache instead of a database/datastore?</summary><br><b>
-Caching and databases serve different purposes and are optimized for different use cases.
+<summary>Почему бы не записывать всё в кеш вместо базы данных/хранилища данных?</summary><br><b>
+Кеширование и базы данных служат разным целям и оптимизированы для разных сценариев использования.
 
-Caching is used to speed up read operations by storing frequently accessed data in memory or on a fast storage medium. By keeping data close to the application, caching reduces the latency and overhead of accessing data from a slower, more distant storage system such as a database or disk.
+Кеширование используется для ускорения операций чтения за счёт хранения часто запрашиваемых данных в памяти или на быстром носителе. Держа данные рядом с приложением, кеш снижает задержки и накладные расходы на доступ к данным из более медленной и удалённой системы хранения, такой как база данных или диск.
 
-On the other hand, databases are optimized for storing and managing persistent data. Databases are designed to handle concurrent read and write operations, enforce consistency and integrity constraints, and provide features such as indexing and querying.
+С другой стороны, базы данных оптимизированы для хранения постоянных данных и управления ими. Базы данных рассчитаны на конкурентные операции чтения и записи, обеспечивают соблюдение ограничений согласованности и целостности и предоставляют такие возможности, как индексирование и выполнение запросов.
 </b></details>
 
-#### Migrations
+#### Миграции
 
 <details>
-<summary>How you prepare for a migration? (or plan a migration)</summary><br><b>
+<summary>Как подготовиться к миграции (или спланировать её)?</summary><br><b>
 
-You can mention:
+Можно упомянуть:
 
-roll-back & roll-forward
-cut over
-dress rehearsals
-DNS redirection
-</b></details>
-
-<details>
-<summary>Explain "Branch by Abstraction" technique</summary><br><b>
-</b></details>
-
-#### Design a system
-
-<details>
-<summary>Can you design a video streaming website?</summary><br><b>
+откат и накат (roll-back & roll-forward)
+переключение (cut over)
+генеральные репетиции (dress rehearsals)
+перенаправление DNS (DNS redirection)
 </b></details>
 
 <details>
-<summary>Can you design a photo upload website?</summary><br><b>
+<summary>Объясните технику «Branch by Abstraction»</summary><br><b>
+</b></details>
+
+#### Спроектируйте систему
+
+<details>
+<summary>Спроектируйте сайт видеостриминга</summary><br><b>
 </b></details>
 
 <details>
-<summary>How would you build a URL shortener?</summary><br><b>
+<summary>Спроектируйте сайт для загрузки фотографий</summary><br><b>
 </b></details>
 
-#### More System Design Questions
+<details>
+<summary>Как построить сервис сокращения URL (URL shortener)?</summary><br><b>
+</b></details>
 
-Additional exercises can be found in [System Design Notebook](topics/system_design/README.md).
+#### Другие вопросы по проектированию систем
+
+Дополнительные упражнения можно найти в [System Design Notebook](topics/system_design/README.md).
 
 <p align="center"><a href="topics/system_design/README.md"><img src="images/system_design_notebook.png"/></a></p>
 
-## Hardware
+## Аппаратное обеспечение (Hardware)
 
 <details>
-<summary>What is a CPU?</summary><br><b>
+<summary>Что такое CPU?</summary><br><b>
 
-A central processing unit (CPU) performs basic arithmetic, logic, controlling, and input/output (I/O) operations specified by the instructions in the program. This contrasts with external components such as main memory and I/O circuitry, and specialized processors such as graphics processing units (GPUs).
+Центральный процессор (CPU) выполняет основные арифметические, логические, управляющие операции и операции ввода/вывода (I/O), заданные инструкциями программы. Этим он отличается от внешних компонентов, таких как основная память и схемы ввода/вывода, а также от специализированных процессоров, таких как графические процессоры (GPU).
 </b></details>
 
 <details>
-<summary>What is RAM?</summary><br><b>
+<summary>Что такое RAM?</summary><br><b>
 
-RAM (Random Access Memory) is the hardware in a computing device where the operating system (OS), application programs and data in current use are kept so they can be quickly reached by the device's processor. RAM is the main memory in a computer. It is much faster to read from and write to than other kinds of storage, such as a hard disk drive (HDD), solid-state drive (SSD) or optical drive.
+RAM (Random Access Memory, оперативная память) — это аппаратный компонент вычислительного устройства, в котором хранятся операционная система (ОС), прикладные программы и используемые в данный момент данные, чтобы процессор устройства мог быстро к ним обращаться. RAM — основная память компьютера. Чтение и запись в неё выполняются намного быстрее, чем в другие виды хранилищ, такие как жёсткий диск (HDD), твердотельный накопитель (SSD) или оптический привод.
 </b></details>
 
 <details>
-<summary>What is a GPU?</summary><br><b>
-A GPU, or Graphics Processing Unit, is a specialized electronic circuit designed to expedite image and video processing for display on a computer screen.
-
-</b></details>
-
-<details>
-<summary>What is an embedded system?</summary><br><b>
-
-An embedded system is a computer system - a combination of a computer processor, computer memory, and input/output peripheral devices—that has a dedicated function within a larger mechanical or electronic system. It is embedded as part of a complete device often including electrical or electronic hardware and mechanical parts. 
-</b></details>
-
-<details>
-<summary>Can you give an example of an embedded system?</summary><br><b>
-
-A common example of an embedded system is a microwave oven's digital control panel, which is managed by a microcontroller.
-
-When committed to a certain goal, Raspberry Pi can serve as an embedded system.
+<summary>Что такое GPU?</summary><br><b>
+GPU (Graphics Processing Unit, графический процессор) — это специализированная электронная схема, предназначенная для ускорения обработки изображений и видео для вывода на экран компьютера.
 
 </b></details>
 
 <details>
-<summary>What types of storage are there?</summary><br><b>
+<summary>Что такое встраиваемая система (embedded system)?</summary><br><b>
 
-There are several types of storage, including hard disk drives (HDDs), solid-state drives (SSDs), and optical drives (CD/DVD/Blu-ray). Other types of storage include USB flash drives, memory cards, and network-attached storage (NAS).
+Встраиваемая система — это компьютерная система (сочетание процессора, памяти и периферийных устройств ввода/вывода), которая выполняет специальную функцию в составе более крупной механической или электронной системы. Она встроена как часть законченного устройства, часто включающего электрическое или электронное оборудование и механические детали. 
 </b></details>
 
 <details>
-<summary>What are some considerations DevOps teams should keep in mind when selecting hardware for their job?</summary><br>
+<summary>Приведите пример встраиваемой системы</summary><br><b>
 
-Choosing the right DevOps hardware is essential for ensuring streamlined CI/CD pipelines, timely feedback loops, and consistent service availability. Here's a distilled guide on what DevOps teams should consider:
+Типичный пример встраиваемой системы — цифровая панель управления микроволновой печи, которой управляет микроконтроллер.
 
-1. **Understanding Workloads**:
-    - **CPU**: Consider the need for multi-core or high-frequency CPUs based on your tasks.
-    - **RAM**: Enough memory is vital for activities like large-scale coding or intensive automation.
-    - **Storage**: Evaluate storage speed and capacity. SSDs might be preferable for swift operations.
+Raspberry Pi, будучи выделенным под определённую задачу, может служить встраиваемой системой.
 
-2. **Expandability**:
-    - **Horizontal Growth**: Check if you can boost capacity by adding more devices.
-    - **Vertical Growth**: Determine if upgrades (like RAM, CPU) to individual machines are feasible.
+</b></details>
 
-3. **Connectivity Considerations**:
-    - **Data Transfer**: Ensure high-speed network connections for activities like code retrieval and data transfers.
-    - **Speed**: Aim for low-latency networks, particularly important for distributed tasks.
-    - **Backup Routes**: Think about having backup network routes to avoid downtimes.
+<details>
+<summary>Какие бывают типы хранилищ?</summary><br><b>
 
-4. **Consistent Uptime**:
-    - Plan for hardware backups like RAID configurations, backup power sources, or alternate network connections to ensure continuous service.
+Существует несколько типов хранилищ, включая жёсткие диски (HDD), твердотельные накопители (SSD) и оптические приводы (CD/DVD/Blu-ray). К другим типам хранилищ относятся USB-флеш-накопители, карты памяти и сетевые хранилища (NAS).
+</b></details>
 
-5. **System Compatibility**:
-    - Make sure your hardware aligns with your software, operating system, and intended platforms.
+<details>
+<summary>Что следует учитывать DevOps-командам при выборе оборудования для своей работы?</summary><br>
 
-6. **Power Efficiency**:
-    - Hardware that uses energy efficiently can reduce costs in long-term, especially in large setups.
+Правильный выбор оборудования для DevOps необходим для слаженной работы CI/CD-конвейеров, своевременной обратной связи и стабильной доступности сервисов. Краткое руководство по тому, что следует учитывать DevOps-командам:
 
-7. **Safety Measures**:
-    - Explore hardware-level security features, such as TPM, to enhance protection.
+1. **Понимание рабочих нагрузок**:
+    - **CPU**: оцените, нужны ли многоядерные или высокочастотные процессоры, исходя из ваших задач.
+    - **RAM**: достаточный объём памяти критичен для таких задач, как крупномасштабная разработка или интенсивная автоматизация.
+    - **Хранилище**: оцените скорость и ёмкость хранилища. Для быстрых операций предпочтительнее могут быть SSD.
 
-8. **Overseeing & Control**:
-    - Tools like ILOM can be beneficial for remote handling.
-    - Make sure the hardware can be seamlessly monitored for health and performance.
+2. **Расширяемость**:
+    - **Горизонтальный рост**: проверьте, можно ли увеличить ёмкость, добавив больше устройств.
+    - **Вертикальный рост**: определите, возможны ли апгрейды (например, RAM, CPU) отдельных машин.
 
-9. **Budgeting**:
-    - Consider both initial expenses and long-term costs when budgeting.
+3. **Сетевое подключение**:
+    - **Передача данных**: обеспечьте высокоскоростные сетевые подключения для таких операций, как получение кода и передача данных.
+    - **Скорость**: стремитесь к сетям с низкой задержкой, что особенно важно для распределённых задач.
+    - **Резервные маршруты**: предусмотрите резервные сетевые маршруты, чтобы избежать простоев.
 
-10. **Support & Community**:
-    - Choose hardware from reputable vendors known for reliable support.
-    - Check for available drivers, updates, and community discussions around the hardware.
+4. **Стабильная доступность**:
+    - Запланируйте аппаратное резервирование: конфигурации RAID, резервные источники питания или альтернативные сетевые подключения для непрерывной работы сервиса.
 
-11. **Planning Ahead**:
-    - Opt for hardware that can cater to both present and upcoming requirements.
+5. **Совместимость систем**:
+    - Убедитесь, что оборудование совместимо с вашим ПО, операционной системой и целевыми платформами.
 
-12. **Operational Environment**:
-    - **Temperature Control**: Ensure cooling systems to manage heat from high-performance units.
-    - **Space Management**: Assess hardware size considering available rack space.
-    - **Reliable Power**: Factor in consistent and backup power sources.
+6. **Энергоэффективность**:
+    - Энергоэффективное оборудование может снизить затраты в долгосрочной перспективе, особенно в крупных инсталляциях.
 
-13. **Cloud Coordination**:
-    - If you're leaning towards a hybrid cloud setup, focus on how local hardware will mesh with cloud resources.
+7. **Меры безопасности**:
+    - Изучите функции безопасности на аппаратном уровне, такие как TPM, для усиления защиты.
 
-14. **Life Span of Hardware**:
-    - Be aware of the hardware's expected duration and when you might need replacements or upgrades.
+8. **Наблюдение и управление**:
+    - Для удалённого управления полезны такие инструменты, как ILOM.
+    - Убедитесь, что состояние и производительность оборудования можно беспрепятственно отслеживать.
 
-15. **Optimized for Virtualization**:
-    - If utilizing virtual machines or containers, ensure the hardware is compatible and optimized for such workloads.
+9. **Бюджетирование**:
+    - При планировании бюджета учитывайте как первоначальные, так и долгосрочные затраты.
 
-16. **Adaptability**:
-    - Modular hardware allows individual component replacements, offering more flexibility.
+10. **Поддержка и сообщество**:
+    - Выбирайте оборудование от надёжных вендоров, известных качественной поддержкой.
+    - Проверьте наличие драйверов, обновлений и обсуждений оборудования в сообществе.
 
-17. **Avoiding Single Vendor Dependency**:
-    - Try to prevent reliance on a single vendor unless there are clear advantages.
+11. **Планирование на будущее**:
+    - Выбирайте оборудование, способное удовлетворить как текущие, так и будущие требования.
 
-18. **Eco-Friendly Choices**:
-    - Prioritize sustainably produced hardware that's energy-efficient and environmentally responsible.
+12. **Операционная среда**:
+    - **Контроль температуры**: обеспечьте системы охлаждения для отвода тепла от высокопроизводительных устройств.
+    - **Управление пространством**: оцените размеры оборудования с учётом доступного места в стойках.
+    - **Надёжное питание**: учитывайте стабильные и резервные источники питания.
 
-In essence, DevOps teams should choose hardware that is compatible with their tasks, versatile, gives good performance, and stays within their budget. Furthermore, long-term considerations such as maintenance, potential upgrades, and compatibility with impending technological shifts must be prioritized.
+13. **Взаимодействие с облаком**:
+    - Если вы склоняетесь к гибридному облаку, продумайте, как локальное оборудование будет сочетаться с облачными ресурсами.
+
+14. **Срок службы оборудования**:
+    - Учитывайте ожидаемый срок службы оборудования и то, когда может потребоваться замена или апгрейд.
+
+15. **Оптимизация для виртуализации**:
+    - Если используются виртуальные машины или контейнеры, убедитесь, что оборудование совместимо и оптимизировано для таких нагрузок.
+
+16. **Адаптивность**:
+    - Модульное оборудование позволяет заменять отдельные компоненты, что даёт больше гибкости.
+
+17. **Отказ от зависимости от одного вендора**:
+    - Старайтесь не зависеть от одного вендора, если нет явных преимуществ.
+
+18. **Экологичный выбор**:
+    - Отдавайте предпочтение оборудованию, произведённому устойчивым способом, энергоэффективному и экологически ответственному.
+
+В сущности, DevOps-командам следует выбирать оборудование, которое подходит под их задачи, универсально, обеспечивает хорошую производительность и укладывается в бюджет. Кроме того, приоритет нужно отдавать долгосрочным аспектам, таким как обслуживание, возможные апгрейды и совместимость с грядущими технологическими изменениями.
 
 </details>
 
 <details>
-<summary>What is the role of hardware in disaster recovery planning and implementation?</summary><br>
+<summary>Какова роль оборудования в планировании и реализации аварийного восстановления?</summary><br>
 
-Hardware is critical in disaster recovery (DR) solutions. While the broader scope of DR includes things like standard procedures, norms, and human roles, it's the hardware that keeps business processes running smoothly. Here's an outline of how hardware works with DR:
+Оборудование играет ключевую роль в решениях аварийного восстановления (DR). Хотя в широком смысле DR включает стандартные процедуры, нормы и роли людей, именно оборудование обеспечивает бесперебойную работу бизнес-процессов. Вот обзор того, как оборудование работает в рамках DR:
 
-1. **Storing Data and Ensuring Its Duplication**:
-    - **Backup Equipment**: Devices like tape storage, backup servers, and external HDDs keep essential data stored safely at a different location.
-    - **Disk Arrays**: Systems such as RAID offer a safety net. If one disk crashes, the others compensate.
+1. **Хранение данных и обеспечение их дублирования**:
+    - **Оборудование для резервного копирования**: такие устройства, как ленточные накопители, серверы резервного копирования и внешние HDD, надёжно хранят важные данные в другом месте.
+    - **Дисковые массивы**: системы вроде RAID служат страховкой. Если один диск выходит из строя, остальные компенсируют его отказ.
 
-2. **Alternate Systems for Recovery**:
-    - **Backup Servers**: These step in when the main servers falter, maintaining service flow.
-    - **Traffic Distributors**: Devices like load balancers share traffic across servers. If a server crashes, they reroute users to operational ones.
+2. **Резервные системы для восстановления**:
+    - **Резервные серверы**: подключаются, когда основные серверы дают сбой, поддерживая работу сервиса.
+    - **Распределители трафика**: такие устройства, как балансировщики нагрузки, распределяют трафик между серверами. Если сервер падает, они перенаправляют пользователей на работающие.
 
-3. **Alternate Operation Hubs**:
-    - **Ready-to-use Centers**: Locations equipped and primed to take charge immediately when the main center fails.
-    - **Basic Facilities**: Locations with necessary equipment but lacking recent data, taking longer to activate.
-    - **Semi-prepped Facilities**: Locations somewhat prepared with select systems and data, taking a moderate duration to activate.
+3. **Резервные площадки**:
+    - **Готовые к работе центры**: площадки, оснащённые и подготовленные к тому, чтобы немедленно взять работу на себя при отказе основного центра.
+    - **Базовые площадки**: площадки с необходимым оборудованием, но без актуальных данных; их запуск занимает больше времени.
+    - **Частично подготовленные площадки**: площадки, частично подготовленные с отдельными системами и данными; их запуск занимает умеренное время.
 
-4. **Power Backup Mechanisms**:
-    - **Instant Power Backup**: Devices like UPS offer power during brief outages, ensuring no abrupt shutdowns.
-    - **Long-term Power Solutions**: Generators keep vital systems operational during extended power losses.
+4. **Механизмы резервного питания**:
+    - **Мгновенное резервное питание**: такие устройства, как ИБП (UPS), обеспечивают питание во время кратковременных отключений и предотвращают внезапное выключение.
+    - **Долговременные решения для питания**: генераторы поддерживают работу критичных систем при длительных отключениях электроэнергии.
 
-5. **Networking Equipment**:
-    - **Backup Internet Connections**: Having alternatives ensures connectivity even if one provider faces issues.
-    - **Secure Connection Tools**: Devices ensuring safe remote access, especially crucial during DR situations.
+5. **Сетевое оборудование**:
+    - **Резервные интернет-подключения**: наличие альтернатив обеспечивает связь, даже если у одного провайдера возникли проблемы.
+    - **Средства защищённого подключения**: устройства, обеспечивающие безопасный удалённый доступ, что особенно важно в ситуациях DR.
 
-6. **On-site Physical Setup**:
-    - **Organized Housing**: Structures like racks to neatly store and manage hardware.
-    - **Emergency Temperature Control**: Backup cooling mechanisms to counter server overheating in HVAC malfunctions.
+6. **Физическая инфраструктура на площадке**:
+    - **Упорядоченное размещение**: конструкции вроде стоек для аккуратного размещения оборудования и управления им.
+    - **Аварийный контроль температуры**: резервные системы охлаждения, предотвращающие перегрев серверов при неисправности систем HVAC.
 
-7. **Alternate Communication Channels**:
-    - **Orbit-based Phones**: Handy when regular communication methods falter.
-    - **Direct Communication Devices**: Devices like radios useful when primary systems are down.
+7. **Альтернативные каналы связи**:
+    - **Спутниковые телефоны**: пригодятся, когда обычные средства связи не работают.
+    - **Устройства прямой связи**: такие устройства, как рации, полезны, когда основные системы недоступны.
 
-8. **Protection Mechanisms**:
-    - **Electronic Barriers & Alert Systems**: Devices like firewalls and intrusion detection keep DR systems safeguarded.
-    - **Physical Entry Control**: Systems controlling entry and monitoring, ensuring only cleared personnel have access.
+8. **Механизмы защиты**:
+    - **Электронные барьеры и системы оповещения**: такие устройства, как межсетевые экраны и системы обнаружения вторжений, защищают системы DR.
+    - **Контроль физического доступа**: системы контроля доступа и наблюдения, гарантирующие, что доступ есть только у допущенного персонала.
 
-9. **Uniformity and Compatibility in Hardware**:
-    - It's simpler to manage and replace equipment in emergencies if hardware configurations are consistent and compatible.
+9. **Единообразие и совместимость оборудования**:
+    - В чрезвычайных ситуациях проще управлять оборудованием и заменять его, если конфигурации единообразны и совместимы.
 
-10. **Equipment for Trials and Upkeep**:
-    - DR drills might use specific equipment to ensure the primary systems remain unaffected. This verifies the equipment's readiness and capacity to manage real crises.
+10. **Оборудование для учений и обслуживания**:
+    - Для учений DR может использоваться отдельное оборудование, чтобы не затрагивать основные системы. Это подтверждает готовность оборудования и его способность справиться с реальными кризисами.
 
-In summary, while software and human interventions are important in disaster recovery operations, it is the hardware that provides the underlying support. It is critical for efficient disaster recovery plans to keep this hardware resilient, duplicated, and routinely assessed.
+Итак, хотя программное обеспечение и действия людей важны в операциях аварийного восстановления, именно оборудование обеспечивает базовую опору. Для эффективных планов аварийного восстановления критически важно, чтобы это оборудование было отказоустойчивым, дублированным и регулярно проверялось.
 
 </details>
 
 <details>
-<summary>What is a RAID?</summary><br>
+<summary>Что такое RAID?</summary><br>
 <b>
-RAID is an acronym that stands for "Redundant Array of Independent Disks." It is a technique that combines numerous hard drives into a single device known as an array in order to improve performance, expand storage capacity, and/or offer redundancy to prevent data loss. RAID levels (for example, RAID 0, RAID 1, and RAID 5) provide varied benefits in terms of performance, redundancy, and storage efficiency.
+RAID — это аббревиатура от «Redundant Array of Independent Disks» (избыточный массив независимых дисков). Это технология, объединяющая несколько жёстких дисков в одно устройство, называемое массивом, чтобы повысить производительность, увеличить ёмкость хранилища и/или обеспечить избыточность для защиты от потери данных. Уровни RAID (например, RAID 0, RAID 1 и RAID 5) дают разные преимущества с точки зрения производительности, избыточности и эффективности хранения.
 
 </b></details>
 
 <details>
-<summary>What is a microcontroller?</summary><br>
+<summary>Что такое микроконтроллер?</summary><br>
 <b>
-A microcontroller is a small integrated circuit that controls certain tasks in an embedded system. It typically includes a CPU, memory, and input/output peripherals.
+Микроконтроллер — это небольшая интегральная схема, которая управляет определёнными задачами во встраиваемой системе. Обычно он включает CPU, память и периферийные устройства ввода/вывода.
 
 </b></details>
 
 <details>
-<summary>What is a Network Interface Controller or NIC?</summary><br><b>
-A Network Interface Controller (NIC) is a piece of hardware that connects a computer to a network and allows it to communicate with other devices.
+<summary>Что такое сетевой контроллер (Network Interface Controller, NIC)?</summary><br><b>
+Сетевой контроллер (NIC) — это аппаратный компонент, который подключает компьютер к сети и позволяет ему взаимодействовать с другими устройствами.
 
 </b></details>
 
 <details>
-<summary>What is a DMA?</summary><br><b>
+<summary>Что такое DMA?</summary><br><b>
 
-Direct memory access (DMA) is a feature of computer systems that allows certain hardware subsystems to access main system memory independently of the central processing unit (CPU).DMA enables devices to share and receive data from the main memory in a computer. It does this while still allowing the CPU to perform other tasks.
+Прямой доступ к памяти (Direct memory access, DMA) — это возможность компьютерных систем, позволяющая определённым аппаратным подсистемам обращаться к основной памяти системы независимо от центрального процессора (CPU). DMA позволяет устройствам передавать данные в основную память компьютера и получать их из неё. При этом CPU может продолжать выполнять другие задачи.
 </b></details>
 
 <details>
-<summary>What is a Real-Time Operating Systems?</summary><br><b>
+<summary>Что такое операционная система реального времени?</summary><br><b>
 
-A real-time operating system (RTOS) is an operating system (OS) for real-time computing applications that processes data and events that have critically defined time constraints. An RTOS is distinct from a time-sharing operating system, such as Unix, which manages the sharing of system resources with a scheduler, data buffers, or fixed task prioritization in a multitasking or multiprogramming environment. Processing time requirements need to be fully understood and bound rather than just kept as a minimum. All processing must occur within the defined constraints. Real-time operating systems are event-driven and preemptive, meaning the OS can monitor the relevant priority of competing tasks, and make changes to the task priority. Event-driven systems switch between tasks based on their priorities, while time-sharing systems switch the task based on clock interrupts.
+Операционная система реального времени (RTOS) — это операционная система (ОС) для приложений реального времени, которая обрабатывает данные и события со строго заданными временными ограничениями. RTOS отличается от ОС с разделением времени, такой как Unix, которая управляет совместным использованием системных ресурсов с помощью планировщика, буферов данных или фиксированной приоритизации задач в многозадачной или мультипрограммной среде. Требования ко времени обработки должны быть полностью понятны и ограничены, а не просто сведены к минимуму. Вся обработка должна происходить в заданных рамках. Операционные системы реального времени управляются событиями и являются вытесняющими: ОС может отслеживать относительный приоритет конкурирующих задач и изменять приоритеты задач. Системы, управляемые событиями, переключаются между задачами на основе их приоритетов, а системы с разделением времени — по прерываниям таймера.
 </b></details>
 
 <details>
-<summary>List of interrupt types</summary><br><b>
+<summary>Перечислите типы прерываний</summary><br><b>
 
-There are six classes of interrupts possible:
-* External
-* Machine check
-* I/O
-* Program
-* Restart
-* Supervisor call (SVC)
+Существует шесть классов прерываний:
+* Внешние (External)
+* Контроль машины (Machine check)
+* Ввод/вывод (I/O)
+* Программные (Program)
+* Перезапуск (Restart)
+* Вызов супервизора (Supervisor call, SVC)
 </b></details>
 
 ## Big Data
 
 <details>
-<summary>Explain what is exactly Big Data</summary><br><b>
+<summary>Объясните, что именно такое Big Data</summary><br><b>
 
-As defined by Doug Laney:
+Согласно определению Дуга Лэйни (Doug Laney):
 
-* Volume: Extremely large volumes of data
-* Velocity: Real time, batch, streams of data
-* Variety: Various forms of data, structured, semi-structured and unstructured
-* Veracity or Variability: Inconsistent, sometimes inaccurate, varying data
+* Объём (Volume): чрезвычайно большие объёмы данных
+* Скорость (Velocity): данные в реальном времени, пакетные, потоковые
+* Разнообразие (Variety): различные формы данных — структурированные, полуструктурированные и неструктурированные
+* Достоверность или изменчивость (Veracity или Variability): несогласованные, иногда неточные, меняющиеся данные
 </b></details>
 
 <details>
-<summary>What is DataOps? How is it related to DevOps?</summary><br><b>
+<summary>Что такое DataOps? Как это связано с DevOps?</summary><br><b>
 
- DataOps seeks to reduce the end-to-end cycle time of data analytics, from the origin of ideas to the literal creation of charts, graphs and models that create value. 
- DataOps combines Agile development, DevOps and statistical process controls and applies them to data analytics.
+ DataOps стремится сократить полное время цикла аналитики данных — от появления идей до непосредственного создания диаграмм, графиков и моделей, которые приносят ценность. 
+ DataOps объединяет гибкую разработку (Agile), DevOps и статистическое управление процессами и применяет их к аналитике данных.
 </b></details>
 
 <details>
-<summary>What is Data Architecture?</summary><br><b>
+<summary>Что такое архитектура данных (Data Architecture)?</summary><br><b>
 
-An answer from [talend.com](https://www.talend.com/resources/what-is-data-architecture):
+Ответ с [talend.com](https://www.talend.com/resources/what-is-data-architecture):
 
-"Data architecture is the process of standardizing how organizations collect, store, transform, distribute, and use data. The goal is to deliver relevant data to people who need it, when they need it, and help them make sense of it."
+«Архитектура данных — это процесс стандартизации того, как организации собирают, хранят, преобразуют, распространяют и используют данные. Цель — доставлять нужные данные тем, кому они нужны, тогда, когда они нужны, и помогать им в этих данных разобраться.»
 </b></details>
 
 <details>
-<summary>Explain the different formats of data</summary><br><b>
+<summary>Объясните, какие бывают форматы данных</summary><br><b>
 
-* Structured - data that has defined format and length (e.g. numbers, words)
-* Semi-structured - Doesn't conform to a specific format but is self-describing (e.g. XML, SWIFT)
-* Unstructured - does not follow a specific format (e.g. images, test messages)
+* Структурированные — данные с определённым форматом и длиной (например, числа, слова)
+* Полуструктурированные — не соответствуют конкретному формату, но являются самоописывающими (например, XML, SWIFT)
+* Неструктурированные — не следуют определённому формату (например, изображения, текстовые сообщения)
 </b></details>
 
 <details>
-<summary>What is a Data Warehouse?</summary><br><b>
+<summary>Что такое хранилище данных (Data Warehouse)?</summary><br><b>
 
-[Wikipedia's explanation on Data Warehouse](https://en.wikipedia.org/wiki/Data_warehouse)
-[Amazon's explanation on Data Warehouse](https://aws.amazon.com/data-warehouse)
+[Объяснение Data Warehouse в Wikipedia](https://en.wikipedia.org/wiki/Data_warehouse)
+[Объяснение Data Warehouse от Amazon](https://aws.amazon.com/data-warehouse)
 </b></details>
 
 <details>
-<summary>What is Data Lake?</summary><br><b>
+<summary>Что такое озеро данных (Data Lake)?</summary><br><b>
 
-[Data Lake - Wikipedia](https://en.wikipedia.org/wiki/Data_lake)
+[Data Lake — Wikipedia](https://en.wikipedia.org/wiki/Data_lake)
 </b></details>
 
 <details>
-<summary>Can you explain the difference between a data lake and a data warehouse?</summary><br><b>
+<summary>В чём разница между озером данных (data lake) и хранилищем данных (data warehouse)?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is "Data Versioning"? What models of "Data Versioning" are there?</summary><br><b>
+<summary>Что такое «версионирование данных» (Data Versioning)? Какие модели версионирования данных существуют?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is ETL?</summary><br><b>
+<summary>Что такое ETL?</summary><br><b>
 </b></details>
 
 #### Apache Hadoop
 
 <details>
-<summary>Explain what is Hadoop</summary><br><b>
+<summary>Объясните, что такое Hadoop</summary><br><b>
 
-[Apache Hadoop - Wikipedia](https://en.wikipedia.org/wiki/Apache_Hadoop)
+[Apache Hadoop — Wikipedia](https://en.wikipedia.org/wiki/Apache_Hadoop)
 </b></details>
 
 <details>
-<summary>Explain Hadoop YARN</summary><br><b>
+<summary>Объясните, что такое Hadoop YARN</summary><br><b>
 
-Responsible for managing the compute resources in clusters and scheduling users' applications
+Отвечает за управление вычислительными ресурсами в кластерах и планирование пользовательских приложений
 </b></details>
 
 <details>
-<summary>Explain Hadoop MapReduce</summary><br><b>
+<summary>Объясните, что такое Hadoop MapReduce</summary><br><b>
 
-A programming model for large-scale data processing
+Модель программирования для крупномасштабной обработки данных
 </b></details>
 
 <details>
-<summary>Explain Hadoop Distributed File Systems (HDFS)</summary><br><b>
+<summary>Объясните, что такое Hadoop Distributed File System (HDFS)</summary><br><b>
 
-* Distributed file system providing high aggregate bandwidth across the cluster.
-* For a user it looks like a regular file system structure but behind the scenes it's distributed across multiple machines in a cluster
-* Typical file size is TB and it can scale and supports millions of files
-* It's fault tolerant which means it provides automatic recovery from faults
-* It's best suited for running long batch operations rather than live analysis
+* Распределённая файловая система, обеспечивающая высокую суммарную пропускную способность в кластере.
+* Для пользователя она выглядит как обычная структура файловой системы, но «под капотом» распределена по нескольким машинам кластера
+* Типичный размер файла — терабайты; система масштабируется и поддерживает миллионы файлов
+* Она отказоустойчива, то есть обеспечивает автоматическое восстановление после сбоев
+* Лучше всего подходит для длительных пакетных операций, а не для анализа в реальном времени
 </b></details>
 
 <details>
-<summary>What do you know about HDFS architecture?</summary><br><b>
+<summary>Что известно об архитектуре HDFS?</summary><br><b>
 
-[HDFS Architecture](http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html)
+[Архитектура HDFS](http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html)
 
-* Master-slave architecture
-* Namenode - master, Datanodes - slaves
-* Files split into blocks
-* Blocks stored on datanodes
-* Namenode controls all metadata
+* Архитектура master-slave (ведущий-ведомый)
+* Namenode — ведущий (master), Datanodes — ведомые (slaves)
+* Файлы разбиваются на блоки
+* Блоки хранятся на datanodes
+* Namenode управляет всеми метаданными
 </b></details>
 
 ## Ceph
 
 <details>
-<summary>Explain what is Ceph</summary><br><b>
-Ceph is an Open-Source Distributed Storage System designed to provide excellent performance, reliability, and scalability. It's often used in cloud computing environments and Data Centers.
+<summary>Объясните, что такое Ceph</summary><br><b>
+Ceph — это распределённая система хранения с открытым исходным кодом, разработанная для обеспечения высокой производительности, надёжности и масштабируемости. Часто используется в облачных средах и центрах обработки данных.
 </b></details>
 
 <details>
-<summary>True or False? Ceph favor consistency and correctness over performances</summary><br><b>
-True
+<summary>Верно или неверно? Ceph ставит согласованность и корректность выше производительности</summary><br><b>
+Верно
 </b></details>
 
 <details>
-<summary>Which services or types of storage Ceph supports?</summary><br><b>
+<summary>Какие сервисы или типы хранилищ поддерживает Ceph?</summary><br><b>
 
-* Object (RGW)
-* Block (RBD)
-* File (CephFS)
+* Объектное (RGW)
+* Блочное (RBD)
+* Файловое (CephFS)
 </b></details>
 
 <details>
-<summary>What is RADOS?</summary><br><b>
+<summary>Что такое RADOS?</summary><br><b>
 
-* Reliable Autonomic Distributed Object Storage
-* Provides low-level data object storage service
-* Strong Consistency
-* Simplifies design and implementation of higher layers (block, file, object)
+* Reliable Autonomic Distributed Object Storage (надёжное автономное распределённое объектное хранилище)
+* Предоставляет низкоуровневый сервис хранения объектов данных
+* Строгая согласованность
+* Упрощает проектирование и реализацию более высоких уровней (блочного, файлового, объектного)
 </b></details>
 
 <details>
-<summary>Describe RADOS software components</summary><br><b>
+<summary>Опишите программные компоненты RADOS</summary><br><b>
 
 * Monitor
-  * Central authority for authentication, data placement, policy
-  * Coordination point for all other cluster components
-  * Protect critical cluster state with Paxos
+  * Центральный орган для аутентификации, размещения данных, политик
+  * Точка координации для всех остальных компонентов кластера
+  * Защищает критичное состояние кластера с помощью Paxos
 * Manager
-  * Aggregates real-time metrics (throughput, disk usage, etc.)
-  * Host for pluggable management functions
-  * 1 active, 1+ standby per cluster
+  * Собирает метрики в реальном времени (пропускная способность, использование дисков и т.д.)
+  * Хост для подключаемых функций управления
+  * 1 активный, 1+ резервных на кластер
 * OSD (Object Storage Daemon)
-  * Stores data on an HDD or SSD
-  * Services client IO requests
+  * Хранит данные на HDD или SSD
+  * Обслуживает клиентские запросы ввода/вывода
 </b></details>
 
 <details>
-<summary>What is the workflow of retrieving data from Ceph?</summary><br><b>
-The work flow is as follows:
+<summary>Как выглядит процесс получения данных из Ceph?</summary><br><b>
+Процесс выглядит так:
 
-1. The client sends a request to the ceph cluster to retrieve data:
-> **Client could be any of the following**
+1. Клиент отправляет в кластер ceph запрос на получение данных:
+> **Клиентом может быть любой из следующих**
 >> * Ceph Block Device
 >> * Ceph Object Gateway
->> * Any third party ceph client
+>> * Любой сторонний клиент ceph
 
 
-2. The client retrieves the latest cluster map from the Ceph Monitor
-3. The client uses the CRUSH algorithm to map the object to a placement group. The placement group is then assigned to a OSD.
-4. Once the placement group and the OSD Daemon are determined, the client can retrieve the data from the appropriate OSD
+2. Клиент получает актуальную карту кластера (cluster map) от Ceph Monitor
+3. Клиент с помощью алгоритма CRUSH сопоставляет объект с группой размещения (placement group). Затем группа размещения назначается OSD.
+4. Когда группа размещения и демон OSD определены, клиент может получить данные из соответствующего OSD
 
 
 </b></details>
 
 <details>
-<summary>What is the workflow of writing data to Ceph?</summary><br><b>
-The work flow is as follows:
+<summary>Как выглядит процесс записи данных в Ceph?</summary><br><b>
+Процесс выглядит так:
 
-1. The client sends a request to the ceph cluster to retrieve data
-2. The client retrieves the latest cluster map from the Ceph Monitor
-3. The client uses the CRUSH algorithm to map the object to a placement group. The placement group is then assigned to a Ceph OSD Daemon dynamically.
-4. The client sends the data to the primary OSD of the determined placement group. If the data is stored in an erasure-coded pool, the primary OSD is responsible for encoding the object into data chunks and coding chunks, and distributing them to the other OSDs. 
+1. Клиент отправляет в кластер ceph запрос на получение данных
+2. Клиент получает актуальную карту кластера (cluster map) от Ceph Monitor
+3. Клиент с помощью алгоритма CRUSH сопоставляет объект с группой размещения (placement group). Затем группа размещения динамически назначается демону Ceph OSD.
+4. Клиент отправляет данные первичному (primary) OSD определённой группы размещения. Если данные хранятся в пуле с кодами стирания (erasure-coded pool), первичный OSD отвечает за кодирование объекта в блоки данных (data chunks) и блоки кодирования (coding chunks) и их распределение по остальным OSD. 
 
 </b></details>
 
 <details>
-<summary>What are "Placement Groups"?</summary><br><b>
+<summary>Что такое «группы размещения» (Placement Groups)?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Describe in the detail the following: Objects -> Pool -> Placement Groups -> OSDs</summary><br><b>
+<summary>Подробно опишите следующее: Objects -> Pool -> Placement Groups -> OSDs</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is OMAP?</summary><br><b>
+<summary>Что такое OMAP?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is a metadata server? How it works?</summary><br><b>
+<summary>Что такое сервер метаданных (metadata server)? Как он работает?</summary><br><b>
 </b></details>
 
 ## Packer
 
 <details>
-<summary>What is Packer? What is it used for?</summary><br><b>
+<summary>Что такое Packer? Для чего он используется?</summary><br><b>
 
-In general, Packer automates machine images creation.
-It allows you to focus on configuration prior to deployment while making the images. This allows you start the instances much faster in most cases.
+В целом Packer автоматизирует создание образов машин.
+Он позволяет сосредоточиться на конфигурации до развёртывания, во время создания образов. Благодаря этому в большинстве случаев инстансы запускаются гораздо быстрее.
 </b></details>
 
 <details>
-<summary>Packer follows a "configuration->deployment" model or "deployment->configuration"?</summary><br><b>
+<summary>Packer следует модели «конфигурация->развёртывание» или «развёртывание->конфигурация»?</summary><br><b>
 
-A configuration->deployment which has some advantages like:
+Модели «конфигурация->развёртывание», у которой есть ряд преимуществ:
 
-1. Deployment Speed - you configure once prior to deployment instead of configuring every time you deploy. This allows you to start instances/services much quicker.
-2. More immutable infrastructure - with configuration->deployment it's not likely to have very different deployments since most of the configuration is done prior to the deployment. Issues like dependencies errors are handled/discovered prior to deployment in this model.
+1. Скорость развёртывания — конфигурация выполняется один раз до развёртывания, а не при каждом развёртывании. Это позволяет запускать инстансы/сервисы гораздо быстрее.
+2. Более неизменяемая (immutable) инфраструктура — при подходе «конфигурация->развёртывание» вряд ли получатся сильно различающиеся развёртывания, поскольку большая часть конфигурации выполняется заранее. Проблемы вроде ошибок зависимостей в этой модели обрабатываются/обнаруживаются до развёртывания.
 </b></details>
 
-## Release
+## Релизы
 
 <details>
-<summary>Explain Semantic Versioning</summary><br><b>
+<summary>Объясните, что такое семантическое версионирование (Semantic Versioning)</summary><br><b>
 
-[This](https://semver.org/) page explains it perfectly:
+[Эта](https://semver.org/) страница отлично это объясняет:
 
 ```
 Given a version number MAJOR.MINOR.PATCH, increment the:
@@ -4112,26 +4112,26 @@ Additional labels for pre-release and build metadata are available as extensions
 ```
 </b></details>
 
-## Certificates
+## Сертификаты
 
-If you are looking for a way to prepare for a certain exam this is the section for you. Here you'll find a list of certificates, each references to a separate file with focused questions that will help you to prepare to the exam. Good luck :)
+Если вы ищете способ подготовиться к определённому экзамену, этот раздел для вас. Здесь собран список сертификатов, каждый из которых ссылается на отдельный файл с тематическими вопросами, которые помогут подготовиться к экзамену. Удачи :)
 
 #### AWS
 
-* [Cloud Practitioner](certificates/aws-cloud-practitioner.md) (Latest update: 2020)
-* [Solutions Architect Associate](certificates/aws-solutions-architect-associate.md) (Latest update: 2021)
-* [Cloud SysOps Administration Associate](certificates/aws-cloud-sysops-associate.md) (Latest update: Oct 2022)
+* [Cloud Practitioner](certificates/aws-cloud-practitioner.md) (последнее обновление: 2020)
+* [Solutions Architect Associate](certificates/aws-solutions-architect-associate.md) (последнее обновление: 2021)
+* [Cloud SysOps Administration Associate](certificates/aws-cloud-sysops-associate.md) (последнее обновление: октябрь 2022)
 
 
 #### Azure
 
-* [AZ-900](certificates/azure-fundamentals-az-900.md) (Latest update: 2021)
+* [AZ-900](certificates/azure-fundamentals-az-900.md) (последнее обновление: 2021)
 
 #### Kubernetes
 
-* [Certified Kubernetes Administrator (CKA)](topics/kubernetes/CKA.md) (Latest update: 2022)
+* [Certified Kubernetes Administrator (CKA)](topics/kubernetes/CKA.md) (последнее обновление: 2022)
 
-## Additional DevOps and SRE Projects
+## Другие проекты по DevOps и SRE
 
 <p align="center"><a href="https://github.com/bregman-arie/sre-checklist"><img width="500px" src="images/sre_checklist.png"/></a></p>
 
@@ -4139,12 +4139,12 @@ If you are looking for a way to prepare for a certain exam this is the section f
 <p align="center"><a href="https://github.com/bregman-arie/devops-resources"><img src="images/devops_resources.png"/></a></p>
 <p align="center"><a href="https://github.com/bregman-arie/infraverse"><img src="images/infraverse.png"/></a></p>
 
-## Credits
+## Благодарности
 
-Thanks to all of our amazing [contributors](https://github.com/bregman-arie/devops-exercises/graphs/contributors) who make it easy for everyone to learn new things :)
+Спасибо всем нашим замечательным [участникам](https://github.com/bregman-arie/devops-exercises/graphs/contributors), благодаря которым каждый может легко узнавать новое :)
 
-Logos credits can be found [here](credits.md)
+Информацию об авторах логотипов можно найти [здесь](credits.md)
 
-## License
+## Лицензия
 
 [![License: CC BY-NC-ND 3.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%203.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/3.0/)
