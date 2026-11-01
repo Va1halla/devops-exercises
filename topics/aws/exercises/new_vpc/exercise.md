@@ -1,11 +1,11 @@
-# My First VPC
+# Мой первый VPC
 
-## Objectives
+## Цели
 
-1. Create a new VPC
-   1. It should have a CIDR that supports using at least 60,000 hosts
-   2. It should be named "exercise-vpc"
+1. Создать новый VPC
+   1. Его CIDR должен позволять использовать не менее 60 000 хостов
+   2. Он должен называться "exercise-vpc"
 
-## Solution
+## Решение
 
-Click [here](solution.md) to view the solution
+Нажмите [здесь](solution.md), чтобы посмотреть решение

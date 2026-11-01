@@ -1,34 +1,34 @@
 # API Gateway
 
 - [API Gateway](#api-gateway)
-  - [What is API Gateway?](#what-is-api-gateway)
-  - [Questions](#questions)
+  - [Что такое API Gateway?](#что-такое-api-gateway)
+  - [Вопросы](#вопросы)
 
-## What is API Gateway?
-With the transition from monolith to microservices architecture, clients suddenly had to contact many different services and each service had to apply the very same methods of monitoring, logging and security.
+## Что такое API Gateway?
+С переходом от монолитной архитектуры к микросервисной клиентам внезапно пришлось обращаться ко множеству разных сервисов, а каждому сервису — применять одни и те же методы мониторинга, логирования и обеспечения безопасности.
 
-To handle with this situation, the API Gateway was invented. An API management component that sits between the clients and the different services/APIs.
+Чтобы справиться с этой ситуацией, был придуман API Gateway — компонент управления API, который располагается между клиентами и различными сервисами/API.
 
-Advantages:
-  * Reducing round trips: client performance is better as the client doesn't have to contact all the different services/APIs. This is done by the API gateway itself so the client has only to contact the API gateway.
-  * Protocol Switching: The client can use one type of protocol to communicate with the API gateway, while the API gateway will use another protocol to communicate with the services (e.g. client is using HTTPS while API gateway uses HTTP)
-  * Offload Functionality: Many times you'll see that some of the services/APIs functionalities are moving to the API gateway itself like rate limiting, API logging, etc.  this allows the services to focus solely on the functionality they need to provide.
-  * Security: Instead of having all the APIs open and available for everyone, it can be available only to the API gateway and security can be applied on the API gateway so everyone contacting the different service go through the same security measurements in one consolidated component
+Преимущества:
+  * Сокращение числа обращений (round trips): производительность клиента выше, так как ему не нужно обращаться ко всем сервисам/API. Это делает сам API gateway, поэтому клиенту достаточно обратиться только к API gateway.
+  * Переключение протоколов: клиент может использовать один протокол для взаимодействия с API gateway, а API gateway — другой протокол для взаимодействия с сервисами (например, клиент использует HTTPS, а API gateway — HTTP)
+  * Вынос функциональности: часто часть функциональности сервисов/API переносится в сам API gateway, например ограничение частоты запросов (rate limiting), логирование API и т.д. Это позволяет сервисам сосредоточиться исключительно на той функциональности, которую они должны предоставлять.
+  * Безопасность: вместо того чтобы все API были открыты и доступны всем, они могут быть доступны только API gateway, а меры безопасности применяются на API gateway, так что все, кто обращается к различным сервисам, проходят через одни и те же меры безопасности в одном общем компоненте
 
-## Questions
+## Вопросы
 
 <details>
-<summary>Explain what is an API Gateway. Why it was invented</summary><br><b>
+<summary>Объясните, что такое API Gateway. Зачем он был придуман</summary><br><b>
 
-Read [here](#api-gateway) about API Gateway
+Про API Gateway можно прочитать [здесь](#api-gateway)
 </b></details>
 
 <details>
-<summary>Name three advantages of using API gateway</summary><br><b>
+<summary>Назовите три преимущества использования API gateway</summary><br><b>
 
-* Security: everyone access the different services through one component which can be secured
-* Better client performances: less round trips to perform for clients to communicate with the different services
-* Offload functionalities from services into one place: insead of each service implementing things like rate limiting, logging, ... it can all be implemented in API gateway and applied for multiple services as well as new services added in the future
+* Безопасность: доступ к различным сервисам идёт через один компонент, который можно защитить
+* Более высокая производительность клиентов: клиентам нужно меньше обращений (round trips) для взаимодействия с различными сервисами
+* Вынос функциональности из сервисов в одно место: вместо того чтобы каждый сервис реализовывал ограничение частоты запросов (rate limiting), логирование и т.д., всё это можно реализовать в API gateway и применять для множества сервисов, а также для новых сервисов, которые будут добавлены в будущем
 
-For more details read [here](#api-gateway) about API Gateway
+Подробнее про API Gateway можно прочитать [здесь](#api-gateway)
 </b></details>

@@ -1,6 +1,6 @@
-## Multiple Value Assignment
+## Множественное присваивание
 
-1. How can you write the following code differently but have the same result?
+1. Как можно записать следующий код по-другому, но с тем же результатом?
 
 ```
 a=1
@@ -8,7 +8,7 @@ b=1
 c=1
 ```
 
-### Solution
+### Решение
 
 1.
 

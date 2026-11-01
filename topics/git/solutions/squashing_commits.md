@@ -1,6 +1,6 @@
-## Git - Squashing Commits - Solution
+## Git — объединение (squash) коммитов — решение
 
-1. In a git repository, create a new file with the content "Mario" and commit the change:
+1. В git-репозитории создайте новый файл с содержимым "Mario" и закоммитьте изменение:
 
 ```
 echo "Mario" > new_file
@@ -8,51 +8,51 @@ git add new_file
 git commit -m "New file"
 ```
 
-2. Make a change to the content of the file you just created so it becomes "Mario & Luigi," then create another commit:
+2. Измените содержимое только что созданного файла на "Mario & Luigi" и создайте ещё один коммит:
 
 ```
 echo "Mario & Luigi" > new_file
 git commit -a -m "Added Luigi"
 ```
 
-3. Verify you have two separate commits by running:
+3. Убедитесь, что у вас два отдельных коммита, выполнив:
 
 ```
 git log
 ```
 
-4. Squash the two commits you've created into one commit:
+4. Объедините (squash) два созданных коммита в один:
 
 ```
 git rebase -i HEAD~2
 ```
 
-You should see something similar to:
+Вы увидите примерно следующее:
 
 ```
 pick 5412076 New file
 pick 4016808 Added Luigi
 ```
 
-Change `pick` to `squash`:
+Замените `pick` на `squash`:
 
 ```
 pick 5412076 New file
 squash 4016808 Added Luigi
 ```
 
-Save it and provide a commit message for the squashed commit.
+Сохраните файл и укажите сообщение для объединённого коммита.
 
-> **Note**: If running `git rebase -i HEAD~2` returns a fatal error (e.g., "invalid upstream 'HEAD~2'"), that usually means your second commit is actually the root commit and there's no valid parent before it. In that case, you can either:
-> * Use `git rebase -i --root` to allow rewriting the root commit, **or**
-> * Create an initial commit before these two commits so that `HEAD~2` points to valid commits.
+> **Примечание**: если `git rebase -i HEAD~2` завершается с фатальной ошибкой (например, "invalid upstream 'HEAD~2'"), обычно это значит, что второй коммит на самом деле является корневым (root) и перед ним нет допустимого родителя. В этом случае можно:
+> * Использовать `git rebase -i --root`, чтобы разрешить переписывание корневого коммита, **или**
+> * Создать начальный коммит перед этими двумя, чтобы `HEAD~2` указывал на существующие коммиты.
 
-### After you complete the exercise
+### После выполнения упражнения
 
-**Answer the following:**
+**Ответьте на вопросы:**
 
-* **What is the reason for squashing commits?**  
-  History becomes cleaner and it's easier to track changes without many small commits like "removed a character," for example.
+* **Зачем объединять коммиты?**  
+  История становится чище, и изменения проще отслеживать без множества мелких коммитов вроде, например, "removed a character".
 
-* **Is it possible to squash more than 2 commits?**  
-  Yes.
+* **Можно ли объединить больше двух коммитов?**  
+  Да.

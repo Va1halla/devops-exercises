@@ -1,8 +1,8 @@
-## Compress String
+## Сжатие строки
 
-1. Write a function that gets a string and compresses it
+1. Написать функцию, которая получает строку и сжимает её
   - 'aaaabbccc' -> 'a4b2c3'
   - 'abbbc' -> 'a1b3c1'
-2. Write a function that decompresses a given string
+2. Написать функцию, которая распаковывает заданную строку
   - 'a4b2c3' -> 'aaaabbccc'
   - 'a1b3c1' -> 'abbbc'

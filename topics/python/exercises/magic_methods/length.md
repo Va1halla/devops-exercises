@@ -1,7 +1,7 @@
-## Length Magic Method
+## Магический метод длины
 
-1. Why the code below fails when executed?
-2. Fix it so it works
+1. Почему приведённый ниже код завершается ошибкой при выполнении?
+2. Исправить его, чтобы он работал
 
 ```
 import collections

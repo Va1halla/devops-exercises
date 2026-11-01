@@ -1,7 +1,7 @@
-## Object Creation
+## Создание объекта
 
-1. Describe in detail what happens when the following code is executed: `var = 3`
+1. Подробно опишите, что происходит при выполнении следующего кода: `var = 3`
 
-### Solution
+### Решение
 
-Click [here](solutions/data_types/object_creation.md) to view the solution
+Нажмите [здесь](solutions/data_types/object_creation.md), чтобы посмотреть решение

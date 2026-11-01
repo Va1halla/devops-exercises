@@ -1,21 +1,21 @@
 # Argo Rollouts - Blue/Green
 
-## Requirements
+## Требования
 
-1. Running Kubernetes cluster
+1. Работающий кластер Kubernetes
 2. Argo Rollouts CLI
-3. Deployed app in specific version
+3. Развёрнутое приложение определённой версии
 
-## Objectives
+## Задачи
 
-1. Install Argo Rollouts controller
-2. Write a rollout manifest that use blue/green deployment and apply it
-   1. Set it to 3 replicas
-   2. Disable auto-promotions
-3. Check the rollout list
-4. Rollout a new version of your app in any way you prefer
-   1. Check the status of the rollout
+1. Установите контроллер Argo Rollouts
+2. Напишите манифест rollout, использующий blue/green-развёртывание, и примените его
+   1. Задайте 3 реплики
+   2. Отключите автоматическое продвижение (auto-promotion)
+3. Проверьте список rollout
+4. Выкатите новую версию приложения любым удобным способом
+   1. Проверьте статус rollout
 
-## Solutions
+## Решения
 
-Click [here](solution.md) to view the solution.
+Нажмите [здесь](solution.md), чтобы посмотреть решение.

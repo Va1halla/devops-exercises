@@ -1,6 +1,6 @@
-## Slicing - Level 1
+## Срезы — уровень 1
 
-What is the result of each of the following statements if `x = 'abcdefgh'`
+Каков результат каждого из следующих выражений, если `x = 'abcdefgh'`
 
 1. `x[:]`
 2. `x[2:]`
@@ -8,6 +8,6 @@ What is the result of each of the following statements if `x = 'abcdefgh'`
 4. `x[2:3]`
 5. `x[-1:]`
 
-### Solution
+### Решение
 
-Click [here](solutions/strings/slicing_lvl_1.md) to view the solution.
+Нажмите [здесь](solutions/strings/slicing_lvl_1.md), чтобы посмотреть решение.

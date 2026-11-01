@@ -1,6 +1,6 @@
-## Fix Calculator Tests
+## Исправление тестов калькулятора
 
-Fix the following Python test file to run successfully the tests
+Исправить следующий файл тестов на Python так, чтобы тесты успешно запускались
 
 ```python
 import unittest

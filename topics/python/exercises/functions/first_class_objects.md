@@ -1,3 +1,3 @@
-## First Class Objects
+## Объекты первого класса
 
-1. In Python, functions are first-class objects. What does it mean?
+1. В Python функции — объекты первого класса (first-class objects). Что это значит?

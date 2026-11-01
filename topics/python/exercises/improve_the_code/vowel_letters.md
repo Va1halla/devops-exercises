@@ -1,6 +1,6 @@
-## Vowel Letters
+## Гласные буквы
 
-1. Improve the following code
+1. Улучшить следующий код
 
 ```python
 char = input("Insert a character: ")

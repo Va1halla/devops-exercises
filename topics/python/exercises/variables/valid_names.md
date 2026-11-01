@@ -1,13 +1,13 @@
-## Valid Variable Names
+## Допустимые имена переменных
 
-1. Which of the following is a valid variable name?
+1. Какие из следующих имён переменных допустимы?
 
-* `x` - valid
-* `x_and_y` - valid
-* `x_&_y` - invalid
-* `2` - invalid
-* `2nd` - invalid
-* `_2` - valid
-* `x-y` - invalid
+* `x` — допустимо
+* `x_and_y` — допустимо
+* `x_&_y` — недопустимо
+* `2` — недопустимо
+* `2nd` — недопустимо
+* `_2` — допустимо
+* `x-y` — недопустимо
 
-2. True or False? If we defined a variable called `var` then, `VAR` is the same name as Python is not case-sensitive - False
+2. Верно или нет? Если определена переменная с именем `var`, то `VAR` — это то же имя, так как Python не чувствителен к регистру — неверно

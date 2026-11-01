@@ -1,8 +1,8 @@
-## Web Scraper
+## Веб-скрейпер
 
-1. Pick a web site to scrape
-2. Using any language you would like, write a web scraper to save some data from the site you chose
-3. Save the results to a database (doesn't matter which database, just pick one)
+1. Выберите веб-сайт для скрейпинга
+2. На любом языке напишите веб-скрейпер, который сохраняет какие-либо данные с выбранного сайта
+3. Сохраните результаты в базу данных (неважно какую, просто выберите одну)
 
 
-* Note: if you don't know which site to pick up have a look [here](http://toscrape.com)
+* Примечание: если не знаете, какой сайт выбрать, загляните [сюда](http://toscrape.com)

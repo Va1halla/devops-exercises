@@ -1,26 +1,26 @@
-## AWS Containers - Run Tasks
+## Контейнеры AWS - запуск задач (Tasks)
 
-Note: this costs money
+Примечание: это стоит денег
 
-### Objectives
+### Цели
 
-Create a task in ECS to launch in Fargate.
+Создать в ECS задачу (task) для запуска в Fargate.
 
-The task itself can be a sample app.
+Сама задача может быть демонстрационным приложением.
 
-### Solution
+### Решение
 
-#### Console
+#### Консоль
 
-1. Go to Elastic Container Service page
-2. Click on "Get Started"
-3. Choose "sample-app"
-4. Verify it's using Farget and not ECS (EC2 Instance) and click on "Next"
-5. Select "None" in Load balancer type and click on "Next"
-6. Insert cluster name (e.g. my_cluster) and click on "Next"
-7. Review everything and click on "Create"
-8. Wait for everything to complete
+1. Перейти на страницу Elastic Container Service
+2. Нажать "Get Started"
+3. Выбрать "sample-app"
+4. Убедиться, что используется Farget, а не ECS (EC2 Instance), и нажать "Next"
+5. Выбрать "None" в Load balancer type и нажать "Next"
+6. Ввести имя кластера (например, my_cluster) и нажать "Next"
+7. Проверить всё и нажать "Create"
+8. Дождаться завершения
 
-1. Go to clusters page and check the status of the task (it will take a couple of seconds/minutes before changing to "Running")
+1. Перейти на страницу кластеров и проверить статус задачи (пройдёт несколько секунд/минут, прежде чем он сменится на "Running")
 
-1. Click on the task and you'll see the launch type is Fargate
+1. Нажать на задачу — тип запуска (launch type) будет Fargate

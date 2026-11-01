@@ -1,8 +1,8 @@
-## Break Out 2
+## Выход из цикла 2
 
-Iterate over a given list of numbers and break out of it if one the numbers is 2 or 4. If you didn't any of these numbers, print a message saying so.
+Перебрать заданный список чисел и выйти из цикла, если одно из чисел равно 2 или 4. Если ни одно из этих чисел не встретилось, вывести сообщение об этом.
 
-### Solution
+### Решение
 
 ```python
 for i in li:

@@ -1,23 +1,23 @@
-# Arithmetic Operators
+# Арифметические операторы
 
-## Objectives
+## Задачи
 
-Note: every number printed in this exercise should originate from a variable and not hardcoded as part of the print statement
+Примечание: каждое число, которое выводится в этом упражнении, должно браться из переменной, а не быть жёстко прописано в выражении вывода
 
 ```Go
 Println("Packages: 100") // Wrong
 Println("Packages:", numOfPackages) // Right
 ```
 
-You are delivering packages to customers. You have 100 packages to deliver.
+Нужно доставить посылки клиентам. Всего есть 100 посылок для доставки.
 
-1. Print the number of package you are going to deliver
-   For example: "I have 100 packages to deliver"
+1. Выведите количество посылок, которые предстоит доставить
+   Например: "I have 100 packages to deliver"
 
-2. You have delivered 20 packages. Print the remaining packages to deliver
+2. Доставлено 20 посылок. Выведите количество оставшихся для доставки посылок
 
-3. The packages are going to be distributed equally between 4 customers. Print how many packages each customer receives (while mentioning the number of customers)
+3. Посылки будут поровну распределены между 4 клиентами. Выведите, сколько посылок получит каждый клиент (с указанием количества клиентов)
 
-## Solution
+## Решение
 
-Click [here](main.go) to view the solution
+Нажмите [здесь](main.go), чтобы посмотреть решение

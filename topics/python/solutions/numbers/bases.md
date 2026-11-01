@@ -1,12 +1,12 @@
-## Bases
+## Системы счисления
 
-What is the result of each of the following statements:
+Каков результат каждого из следующих выражений:
 
 1. `0b10 + 0b10`
 2. `0o10 ** 3`
 3. `0x10 & 2`
 
-### Solution
+### Решение
 
 1. `4`
 2. `512`

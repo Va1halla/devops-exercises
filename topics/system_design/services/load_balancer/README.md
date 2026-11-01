@@ -1,9 +1,9 @@
-# Load Balancer
+# Балансировщик нагрузки
 
-- [Load Balancer](#load-balancer)
-  - [What is a load balancer?](#what-is-a-load-balancer)
-  - [Consistent Hashing](#consistent-hashing)
-  - [Load Balancing Techniques](#load-balancing-techniques)
+- [Балансировщик нагрузки](#балансировщик-нагрузки)
+  - [Что такое балансировщик нагрузки?](#что-такое-балансировщик-нагрузки)
+  - [Консистентное хеширование](#консистентное-хеширование)
+  - [Методы балансировки нагрузки](#методы-балансировки-нагрузки)
     - [Round Robin](#round-robin)
     - [Weighted Round Robin](#weighted-round-robin)
     - [Least Connection](#least-connection)
@@ -14,30 +14,30 @@
     - [Source IP Hash](#source-ip-hash)
     - [URL Hash](#url-hash)
   - [Sticky Sessions](#sticky-sessions)
-  - [Health Checks](#health-checks)
-  - [Questions](#questions)
+  - [Проверки работоспособности](#проверки-работоспособности)
+  - [Вопросы](#вопросы)
 
-## What is a load balancer?
+## Что такое балансировщик нагрузки?
 
-[Wikipedia](https://en.wikipedia.org/wiki/Load_balancing_(computing)): "In computing, load balancing refers to the process of distributing a set of tasks over a set of resources (computing units), with the aim of making their overall processing more efficient."
+[Wikipedia](https://en.wikipedia.org/wiki/Load_balancing_(computing)): «В вычислительной технике балансировка нагрузки — это процесс распределения набора задач по набору ресурсов (вычислительных узлов) с целью сделать их общую обработку более эффективной.»
 
-Load balancer is a very important component in system design. You might already seen it mentioned in other sections like "horizontal scaling", so you understand that it's a very common component in many system designs.
+Балансировщик нагрузки (load balancer) — очень важный компонент в проектировании систем. Возможно, он уже встречался в других разделах, например «горизонтальное масштабирование», так что понятно, что это очень распространённый компонент во многих архитектурах систем.
 
 <p align="center">
 <img src="../../images/load_balancer/basic_architecture.png"/>
 </p>
 
-There a couple of things to remember about load balancers:
+О балансировщиках нагрузки стоит помнить несколько вещей:
 
-  * Usually the IP address of the load balancer itself is public while the addresses of the instances/servers are private (there is no reason to allow users/clients to reach them directly and bypass the load balancer)
-  * There are multiple techniques/algorithms as to how to perform the load balancing itself
+  * Обычно IP-адрес самого балансировщика нагрузки публичный, а адреса экземпляров/серверов — частные (нет причин позволять пользователям/клиентам обращаться к ним напрямую в обход балансировщика нагрузки)
+  * Существует множество методов/алгоритмов того, как выполнять саму балансировку нагрузки
 
 
-## Consistent Hashing
+## Консистентное хеширование
 
 TODO
 
-## Load Balancing Techniques
+## Методы балансировки нагрузки
 
 ### Round Robin
 
@@ -61,18 +61,18 @@ TODO
 
 TODO
 
-## Health Checks
+## Проверки работоспособности
 
 TODO
 
-## Questions
+## Вопросы
 
 <details>
-<summary>Why do we need load balancers?</summary><br><b>
+<summary>Зачем нужны балансировщики нагрузки?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What load balancing techniques are there?</summary><br><b>
+<summary>Какие существуют методы балансировки нагрузки?</summary><br><b>
 
   * Round Robin
   * Weighted Round Robin
@@ -86,45 +86,45 @@ TODO
 </b></details>
 
 <details>
-<summary>True or False? Usually, in basic architectures, the servers behind a load balancer are using private IPs while the load balancer itself is using a public IP</summary><br><b>
+<summary>Правда или ложь? Обычно в базовых архитектурах серверы за балансировщиком нагрузки используют частные IP, а сам балансировщик нагрузки — публичный IP</summary><br><b>
 
-True. This serves two purposes:
+Правда. Это служит двум целям:
 
-  * We want everyone to use the load balancer :)
-  * It provides a better security, by not allowing everyone to reach the servers directly. This way, we can secure better one component rather taking care of the security of all the instances/servers behind the load balancer
+  * Нужно, чтобы все пользовались балансировщиком нагрузки :)
+  * Это обеспечивает лучшую безопасность, так как никто не может обращаться к серверам напрямую. Таким образом, лучше защитить один компонент, чем заботиться о безопасности всех экземпляров/серверов за балансировщиком нагрузки
 </b></details>
 
 <details>
-<summary>Do you necessarily need a dedicated load balancer instance to perform load balancing? (using the round robin technique for example)</summary><br><b>
+<summary>Обязательно ли нужен выделенный экземпляр балансировщика нагрузки, чтобы выполнять балансировку нагрузки? (например, с помощью метода round robin)</summary><br><b>
 
-No, you can use a DNS server.
+Нет, можно использовать DNS-сервер.
 </b></details>
 
 <details>
-<summary>What is an application load balancer?</summary><br><b>
+<summary>Что такое балансировщик нагрузки уровня приложения (application load balancer)?</summary><br><b>
 </b></details>
 
 <details>
-<summary>At what layers a load balancer can operate?</summary><br><b>
+<summary>На каких уровнях может работать балансировщик нагрузки?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is DNS load balancing?</summary><br><b>
+<summary>Что такое балансировка нагрузки с помощью DNS?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What are the drawbacks of round robin algorithm in load balancing?</summary><br><b>
+<summary>Каковы недостатки алгоритма round robin при балансировке нагрузки?</summary><br><b>
 
-  * A simple round robin algorithm knows nothing about the load and the spec of each server it forwards the requests to. It is possible, that multiple heavy workloads requests will get to the same server while other servers will got only lightweight requests which will result in one server doing most of the work, maybe even crashing at some point because it unable to handle all the heavy workloads requests by its own.
-  * Each request from the client creates a whole new session. This might be a problem for certain scenarios where you would like to perform multiple operations where the server has to know about the result of operation so basically, being sort of aware of the history it has with the client. In round robin, first request might hit server X, while second request might hit server Y and ask to continue processing the data that was processed on server X already.
+  * Простой алгоритм round robin ничего не знает о нагрузке и характеристиках каждого сервера, которому он перенаправляет запросы. Возможно, что несколько тяжёлых запросов попадут на один и тот же сервер, а другие серверы получат только лёгкие запросы. В результате один сервер будет выполнять большую часть работы и, возможно, в какой-то момент даже упадёт, потому что не сможет в одиночку обработать все тяжёлые запросы.
+  * Каждый запрос клиента создаёт совершенно новую сессию. Это может быть проблемой в сценариях, где нужно выполнить несколько операций и сервер должен знать результат предыдущей операции, то есть по сути учитывать историю взаимодействия с клиентом. При round robin первый запрос может попасть на сервер X, а второй — на сервер Y с просьбой продолжить обработку данных, которые уже обрабатывались на сервере X.
 </b></details>
 
 <details>
-<summary>What are sticky sessions? What are their pros and cons?</summary><br><b>
+<summary>Что такое sticky sessions? Каковы их плюсы и минусы?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain each of the following load balancing techniques
+<summary>Объясните каждый из следующих методов балансировки нагрузки
 
   * Round Robin
   * Weighted Round Robin
@@ -139,7 +139,7 @@ No, you can use a DNS server.
 </b></details>
 
 <details>
-<summary>Which load balancing technique would you use for e-commerce website? Why?</summary><br><b>
+<summary>Какой метод балансировки нагрузки использовать для сайта электронной коммерции? Почему?</summary><br><b>
 
-One that supports sticky sessions so users returning to the website, would have their data loaded, in case the server don't use shared storage.
+Тот, который поддерживает sticky sessions, чтобы у пользователей, возвращающихся на сайт, загружались их данные, если серверы не используют общее хранилище.
 </b></details>

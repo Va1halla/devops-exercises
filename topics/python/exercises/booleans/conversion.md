@@ -1,6 +1,6 @@
-## Conversion
+## Преобразование
 
-What is the result of each of the following statements?
+Каков результат каждого из следующих выражений?
 
 1. `int(False)`
 2. `int(True)`
@@ -9,6 +9,6 @@ What is the result of each of the following statements?
 5. `True + 2`
 6. `float(True)`
 
-## Solution
+## Решение
 
-Click [here](../../solutions/booleans/conversion.md) to view the solution
+Нажмите [здесь](../../solutions/booleans/conversion.md), чтобы посмотреть решение

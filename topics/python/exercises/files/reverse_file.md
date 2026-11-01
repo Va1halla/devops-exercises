@@ -1,6 +1,6 @@
-## Reverse a File
+## Разворот файла
 
-Reverse an entire file. For example:
+Развернуть весь файл. Например:
 
 ```
 The
@@ -10,7 +10,7 @@ a
 File
 ```
 
-The result would be:
+Результат будет таким:
 
 ```
 File

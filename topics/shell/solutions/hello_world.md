@@ -1,11 +1,11 @@
-## Shell Scripting - Hello World
+## Скрипты на Shell — Hello World
 
-### Objectives
+### Цели
 
-1. Define a variable with the string 'Hello World'
-2. Print the value of the variable you've defined and redirect the output to the file "amazing_output.txt"
+1. Определить переменную со строкой 'Hello World'
+2. Вывести значение определённой переменной и перенаправить вывод в файл "amazing_output.txt"
 
-### Solution
+### Решение
 
 ```
 #!/usr/bin/env bash

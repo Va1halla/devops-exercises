@@ -1,25 +1,25 @@
-## AWS EC2 - Elastic Network Interfaces
+## AWS EC2 - эластичные сетевые интерфейсы (Elastic Network Interfaces)
 
-### Requirements
+### Требования
 
-* An EC2 instance with network interface
+* Экземпляр EC2 с сетевым интерфейсом
 
-### Objectives
+### Цели
 
-A. Create a network interface and attach it to the EC2 instance that already has one network interface
-B. Explain why would anyone use two network interfaces
+A. Создать сетевой интерфейс и подключить его к экземпляру EC2, у которого уже есть один сетевой интерфейс
+B. Объяснить, зачем может понадобиться два сетевых интерфейса
 
-### Solution
+### Решение
 
 A.
-1. Go to EC2 service
-2. Click on "Network Interfaces" under "Network & Security"
-3. Click on "Create network interface"
-4. Provide a description
-5. Choose a subnet (one that is in the AZ as the instance)
-6. Optionally attach a security group and click on "Create network interface"
-7. Click on "Actions" -> "Attach" and choose the instance to attach it to
-8. If you go now to "Instances" page you'll see your instance has two network interfaces
+1. Перейти в сервис EC2
+2. Нажать "Network Interfaces" в разделе "Network & Security"
+3. Нажать "Create network interface"
+4. Указать описание
+5. Выбрать подсеть (в той же AZ, что и экземпляр)
+6. При необходимости подключить группу безопасности и нажать "Create network interface"
+7. Нажать "Actions" -> "Attach" и выбрать экземпляр, к которому нужно его подключить
+8. Если теперь открыть страницу "Instances", будет видно, что у экземпляра два сетевых интерфейса
 
 B.
-1. You can move the second network interface between instances. This allows us to create kind of a failover mechanism between the instances.
+1. Второй сетевой интерфейс можно перемещать между экземплярами. Это позволяет построить своего рода механизм отказоустойчивости (failover) между экземплярами.

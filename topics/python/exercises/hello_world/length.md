@@ -1,6 +1,6 @@
-## Length
+## Длина
 
-1. How to print the length of the string 'abcd' ?
-2. How to print the length of the variable x (x is the list [5, 30 ,2]) ?
-3. What would be the length of following dictionary {'x': 3, 'y': 3} ?
-4. What would be the length of the tuple ('x', 'y') ?
+1. Как вывести длину строки 'abcd'?
+2. Как вывести длину переменной x (x — это список [5, 30 ,2])?
+3. Какова будет длина следующего словаря {'x': 3, 'y': 3}?
+4. Какова будет длина кортежа ('x', 'y')?

@@ -1,125 +1,125 @@
-# Scalability
+# Масштабируемость
 
-- [Scalability](#scalability)
-  - [Vertical Scaling](#vertical-scaling)
-    - [Use Cases](#use-cases)
-    - [Limits](#limits)
-  - [Horizontal Scaling](#horizontal-scaling)
-  - [Scalability Factor](#scalability-factor)
-    - [Linear Scalability](#linear-scalability)
-    - [Sub-Linear Scalability](#sub-linear-scalability)
-    - [Supra-Linear Scalability](#supra-linear-scalability)
-    - [Negative Scalability](#negative-scalability)
-  - [Questions](#questions)
+- [Масштабируемость](#масштабируемость)
+  - [Вертикальное масштабирование](#вертикальное-масштабирование)
+    - [Сценарии использования](#сценарии-использования)
+    - [Ограничения](#ограничения)
+  - [Горизонтальное масштабирование](#горизонтальное-масштабирование)
+  - [Коэффициент масштабируемости](#коэффициент-масштабируемости)
+    - [Линейная масштабируемость](#линейная-масштабируемость)
+    - [Сублинейная масштабируемость](#сублинейная-масштабируемость)
+    - [Сверхлинейная масштабируемость](#сверхлинейная-масштабируемость)
+    - [Отрицательная масштабируемость](#отрицательная-масштабируемость)
+  - [Вопросы](#вопросы)
 
-[Wikipedia](https://en.wikipedia.org/wiki/Scalability): "Scalability is the property of a system to handle a growing amount of work by adding resources to the system"
+[Wikipedia](https://en.wikipedia.org/wiki/Scalability): «Масштабируемость — это свойство системы справляться с растущим объёмом работы за счёт добавления в систему ресурсов»
 
-In simpler words, scalability is about answering the question whether a system or an architecture are able to scale in a way that meets the new workloads and demand.<br>
-More practically, answer questions like:
-  * if a system runs a database, does it able to handle more queries?
-  * if a system runs a service that streams videos to million of users. Will it able to stream them the same way if the amount of users would triple itself?
+Проще говоря, масштабируемость — это ответ на вопрос, способны ли система или архитектура масштабироваться так, чтобы соответствовать новым нагрузкам и потребностям.<br>
+На практике это ответы на такие вопросы:
+  * если в системе работает база данных, сможет ли она обрабатывать больше запросов?
+  * если в системе работает сервис, транслирующий видео миллионам пользователей, сможет ли он транслировать их так же, если количество пользователей утроится?
 
-Also, scaling can be performed on different components. For example, in most cloud environments scaling is supported in case of:
+Кроме того, масштабирование может выполняться для разных компонентов. Например, в большинстве облачных сред масштабирование поддерживается для:
 
-  * Virtual Machines
-  * Virtual network functions
-  * Containers
+  * Виртуальных машин
+  * Виртуальных сетевых функций
+  * Контейнеров
 
-There are different ways to scale.
+Существуют разные способы масштабирования.
 
-## Vertical Scaling
+## Вертикальное масштабирование
 
-Vertical Scaling is about adding additional resources to *the existing system/component/unit*. If for example, we have a server, a vertical scaling might be done in one or more of the following ways:
+Вертикальное масштабирование — это добавление дополнительных ресурсов *в существующую систему/компонент/узел*. Например, если есть сервер, вертикальное масштабирование может выполняться одним или несколькими из следующих способов:
 
-  * Adding more RAM to the server
-  * Adding more storage/disks
-  * Adding CPUs
+  * Добавить серверу оперативной памяти
+  * Добавить хранилища/дисков
+  * Добавить процессоров
 
 <p align="center">
 <img src="../images/scalability/vertical_scaling.png"/>
 </p>
 
-### Use Cases
+### Сценарии использования
 
-If you are looking for simple change, one that doesn't involves adding new components to your architecture and if your app/system has low traffic, then vertical scaling can be a great option
+Если нужно простое изменение, не требующее добавления новых компонентов в архитектуру, и у приложения/системы низкий трафик, вертикальное масштабирование может быть отличным вариантом
 
-### Limits
+### Ограничения
 
-The limit of vertical scaling is clear - you are able to scale until your are no longer able to physically or virtually increase the resources of your machine.
+Ограничение вертикального масштабирования очевидно: масштабироваться можно до тех пор, пока физически или виртуально возможно увеличивать ресурсы машины.
 
-## Horizontal Scaling
+## Горизонтальное масштабирование
 
-Adding more systems/units/components but at the same time, make them work together so it would seems to the client as if there is one system it interacts with.<br>
-Few examples:
+Добавление новых систем/узлов/компонентов, но при этом так, чтобы они работали вместе и клиенту казалось, что он взаимодействует с одной системой.<br>
+Несколько примеров:
 
- * Instead of one web server, having two web servers with one load balancer balancing the traffic between them
- * Instead of one database server, having two databases
+ * Вместо одного веб-сервера — два веб-сервера и один балансировщик нагрузки, распределяющий трафик между ними
+ * Вместо одного сервера баз данных — две базы данных
 
 <p align="center">
 <img src="../images/scalability/horizontal_scaling.png"/>
 </p>
 
-Point to think about: now that you know about vertical scaling and horizontal scaling, which one would you perform if you can choose only one of them?
+Над чем подумать: теперь, когда известно о вертикальном и горизонтальном масштабировании, какое из них выбрать, если можно выполнить только одно?
 
-## Scalability Factor
+## Коэффициент масштабируемости
 
-When you double the resources of your system (or design) you might expect your system to be able to handle double the workload as well, right? But this is not necessarily what will happen. Scalability factor is the term used to describe the workload your system is able to handle as a result of scaling your resources.
+Когда ресурсы системы (или архитектуры) удваиваются, можно ожидать, что система сможет справляться и с удвоенной нагрузкой, верно? Но так происходит не обязательно. Коэффициент масштабируемости (scalability factor) — это термин, описывающий нагрузку, с которой система способна справиться в результате масштабирования ресурсов.
 
-### Linear Scalability
+### Линейная масштабируемость
 
-Linear Scalability happens when the workloads your system is able to handle scale accordingly to the scale in resources. The scalability factor remains constant as you scale.<br>
-For example, you triple the resources of your system -> the system is able to handle triple the workloads. In reality, it's actually not the case most of the time.
+Линейная масштабируемость имеет место, когда нагрузка, с которой справляется система, растёт пропорционально росту ресурсов. Коэффициент масштабируемости при масштабировании остаётся постоянным.<br>
+Например, ресурсы системы утроены -> система способна справляться с утроенной нагрузкой. В реальности чаще всего это не так.
 
-### Sub-Linear Scalability
+### Сублинейная масштабируемость
 
-A more realistic outcome of scaling systems would be that some resources or component may not scale as expected (or as other resources and components). So doubling the resources will actually lead to an improvement of only x1.5 in workloads handling. In this case the scalability factor will be lower than 1.0
+Более реалистичный результат масштабирования систем — некоторые ресурсы или компоненты масштабируются не так, как ожидалось (или не так, как другие ресурсы и компоненты). Поэтому удвоение ресурсов на деле даёт улучшение обработки нагрузки лишь в 1,5 раза. В этом случае коэффициент масштабируемости меньше 1.0
 
-### Supra-Linear Scalability
+### Сверхлинейная масштабируемость
 
-This is the optimal outcome. You triple the workloads handling by "only" doubling your resources for example. In other words, the ratio in performance change is bigger than the ratio in scaling changes (e.g. adding more CPUs). A scalability factor in this case, is bigger than 1.0
+Это оптимальный результат. Например, обработка нагрузки утраивается при «всего лишь» удвоении ресурсов. Иными словами, относительное изменение производительности больше относительного изменения масштаба (например, добавления процессоров). Коэффициент масштабируемости в этом случае больше 1.0
 
-### Negative Scalability
+### Отрицательная масштабируемость
 
-It may sound crazy, but in some cases, scaling your system might actually lead to worse results and that's exactly what negative scalability is all about. Scalability factor is below 0.
+Это может прозвучать безумно, но в некоторых случаях масштабирование системы на деле приводит к худшим результатам, и именно это называется отрицательной масштабируемостью. Коэффициент масштабируемости меньше 0.
 
-## Questions
+## Вопросы
 
 <details>
-<summary>Explain Scalability</summary><br><b>
+<summary>Объясните, что такое масштабируемость</summary><br><b>
 </b></details>
 
 <details>
-<summary>Explain "Vertical Scaling" and give an example where it can help to solve an issue</summary><br><b>
+<summary>Объясните, что такое «вертикальное масштабирование», и приведите пример, когда оно помогает решить проблему</summary><br><b>
 
-Vertical scaling is the act of adding
+Вертикальное масштабирование — это добавление
 
-For example, you have a website which serve a class of 20 students. Suddenly, you are teaching multiple classes and your website has to service 40 students. In order to be able to do that, you might have to apply "vertical scaling" and add resources like RAM and CPU to the server running your website.
+Например, есть веб-сайт, который обслуживает класс из 20 студентов. Внезапно приходится вести несколько классов, и сайт должен обслуживать 40 студентов. Для этого может понадобиться «вертикальное масштабирование» — добавить ресурсы, такие как оперативная память и процессор, на сервер, где работает сайт.
 </b></details>
 
 <details>
-<summary>Why we can't usually rely solely on "vertical scaling" to solve scaling issues?</summary><br><b>
+<summary>Почему обычно нельзя полагаться только на «вертикальное масштабирование» для решения проблем масштабирования?</summary><br><b>
 
-Because you can't keep upgrading forever a certain server. At some point, you'll hit limitations of buying the best components you could and not having additional space for more components. Maybe the best RAM you could buy is 10TB, but you actually need 19TB RAM to serve all the users.
+Потому что нельзя бесконечно модернизировать один сервер. В какой-то момент упираешься в ограничения: лучшие доступные компоненты уже куплены, а места для новых компонентов нет. Возможно, лучшая оперативная память, которую можно купить, — 10 ТБ, а на самом деле для обслуживания всех пользователей нужно 19 ТБ.
 </b></details>
 
 <details>
-<summary>What is "Horizontal Scaling"?</summary><br><b>
+<summary>Что такое «горизонтальное масштабирование»?</summary><br><b>
 </b></details>
 
 <details>
-<summary>If you can only choose to perform horizontal scaling or vertical scaling, but not both, which one would you perform?</summary><br><b>
+<summary>Если можно выполнить только горизонтальное или только вертикальное масштабирование, но не оба, какое из них выбрать?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Once we perform "Horizonal Scaling", by for example adding multiple web servers instead of having one server, how do we handle client access to these servers? </summary><br><b>
+<summary>Как после «горизонтального масштабирования», например добавления нескольких веб-серверов вместо одного, организовать доступ клиентов к этим серверам? </summary><br><b>
 
-Using a load balancer
+С помощью балансировщика нагрузки
 </b></details>
 
 <details>
-<summary>Name one disadvantage and one advantage of vertical scaling over horizontal scaling</summary><br><b>
+<summary>Назовите один недостаток и одно преимущество вертикального масштабирования по сравнению с горизонтальным</summary><br><b>
 
-Advantage: Simplicity. You increase the resources (maybe also restart something) but that's it, there is no architectural change. In horizontal scaling, you usually need to add a load balancer to distribute the traffic or access to the different nodes, which is considered an architectural change.
+Преимущество: простота. Ресурсы увеличиваются (возможно, ещё что-то перезапускается), и на этом всё — архитектура не меняется. При горизонтальном масштабировании обычно нужно добавить балансировщик нагрузки, чтобы распределять трафик или доступ к разным узлам, а это считается изменением архитектуры.
 
-Disadvantage: Redundancy. When performed solely on a single server, your architecture will still suffer from redundancy - when your single server is down, your entire application is down.
+Недостаток: избыточность. Если масштабирование выполняется только на одном сервере, архитектура по-прежнему страдает от отсутствия избыточности: когда единственный сервер отказывает, всё приложение становится недоступным.
 </b></details>

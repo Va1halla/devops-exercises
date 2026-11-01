@@ -1,4 +1,4 @@
-Solutions:
+Решения:
 
     def double_number(n):
         return lambda x : x * n

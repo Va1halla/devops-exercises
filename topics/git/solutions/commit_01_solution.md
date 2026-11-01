@@ -1,4 +1,4 @@
-## Git Commit 01 - Solution
+## Git Commit 01 — решение
 
 ```
 mkdir my_repo && cd my_repo

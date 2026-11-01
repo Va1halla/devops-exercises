@@ -1,9 +1,9 @@
-## Copying Variables
+## Копирование переменных
 
-1. True or False?
+1. Верно или нет?
 
-Running `var = 3` creates an object. Running `another_var = var` creates another object with the value of `var`
+Выполнение `var = 3` создаёт объект. Выполнение `another_var = var` создаёт ещё один объект со значением `var`
 
-### Solution
+### Решение
 
-False. `another_var = var` makes `another_var` to point to the same object `var` points to. It doesn't creates another object.
+Неверно. `another_var = var` заставляет `another_var` указывать на тот же объект, на который указывает `var`. Другой объект не создаётся.

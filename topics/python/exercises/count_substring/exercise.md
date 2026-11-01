@@ -1,20 +1,20 @@
-# Count Substring
+# Подсчёт подстроки
 
-## Objectives
+## Цели
 
-In this challenge, the user enters a string and a substring. You have to print the number of times that the substring occurs in the given string. String traversal will take place from left to right, not from right to left.
+В этой задаче пользователь вводит строку и подстроку. Нужно вывести, сколько раз подстрока встречается в заданной строке. Обход строки выполняется слева направо, а не справа налево.
 
-NOTE: String letters are case-sensitive.
+ПРИМЕЧАНИЕ: регистр букв в строке учитывается.
 
-Sample Input
+Пример ввода
 
 ABCDCDC
 CDC
 
-Sample Output
+Пример вывода
 
 2
 
-## Solution
+## Решение
 
-Click [here](solution.py) to view the solution
+Нажмите [здесь](solution.py), чтобы посмотреть решение

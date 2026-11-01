@@ -1,13 +1,13 @@
 # Taints 101
 
-## Objectives
+## Цели
 
-1. Check if one of the nodes in the cluster has taints (doesn't matter which node)
-2. Create a taint on one of the nodes in your cluster with key of "app" and value of "web" and effect of "NoSchedule"
-   1. Explain what it does exactly
-   2. Verify it was applied
-3. Run a Pod that will be able to run on the node on which you applied the taint
+1. Проверить, есть ли у одного из узлов кластера ограничения (taints) (неважно, у какого узла)
+2. Создать taint на одном из узлов кластера с ключом "app", значением "web" и эффектом "NoSchedule"
+   1. Объяснить, что именно он делает
+   2. Убедиться, что он применён
+3. Запустить Pod, который сможет работать на узле, к которому применён taint
 
-## Solution
+## Решение
 
-Click [here](solution.md) to view the solution.
+Нажмите [здесь](solution.md), чтобы посмотреть решение.

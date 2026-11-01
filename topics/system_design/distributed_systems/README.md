@@ -1,42 +1,42 @@
-# Distributed Systems
+# Распределённые системы
 
-- [Distributed Systems](#distributed-systems)
-  - [What is a distributed system?](#what-is-a-distributed-system)
-  - [Fallacies of distributed systems](#fallacies-of-distributed-systems)
-  - [Clock Drift](#clock-drift)
+- [Распределённые системы](#распределённые-системы)
+  - [Что такое распределённая система?](#что-такое-распределённая-система)
+  - [Заблуждения о распределённых системах](#заблуждения-о-распределённых-системах)
+  - [Дрейф часов](#дрейф-часов)
   - [CDN](#cdn)
 
-## What is a distributed system?
+## Что такое распределённая система?
 
-* A group of computers/servers working together
-* The complexity of distributed system often hidden from the user
+* Группа компьютеров/серверов, работающих совместно
+* Сложность распределённой системы обычно скрыта от пользователя
 
 <p align="center">
 <img src="../images/distributed_systems/hidden_complexity.png"/>
 </p>
 
-## Fallacies of distributed systems
+## Заблуждения о распределённых системах
 
-There are some challenges that we have to deal with when designing and managing distributed/high-scale systems, but not so much with non-distributed systems:
+Существует ряд проблем, с которыми приходится сталкиваться при проектировании и управлении распределёнными/высоконагруженными системами, но в гораздо меньшей степени — с нераспределёнными системами:
 
-* Network Reliability: when you run a system on a single host, networking isn't as problem as when you need to to manage dozen or hundreds (and more) nodes
-* Zero Latency: running on a single host, latency is not an issue, but when managing multiple hosts, how to keep latency as close as possible to zero?
-* Bandwidth: same a latency, when running on a single host, bandwidth is infinite, but when the system is distributed you have to move data between the server so bandwidth becomes a challenge 
-* Constantly changing Topology: In distributed system, hosts and different components may go down or up meaning, the topology is constantly changing while a single host is a constant
-* Security: keeping one host secured is much more simple than securing a distributed system where not only all components should be secured but also the communication between the different hosts and components
-* Size of the team: managing one host requires less administrators than managing a distributed system with hundreds, thousands or even more hosts and components
+* Надёжность сети: когда система работает на одном хосте, сеть не так важна, как когда нужно управлять десятками или сотнями (и более) узлов
+* Нулевая задержка: при работе на одном хосте задержка не проблема, но при управлении множеством хостов возникает вопрос, как удержать задержку как можно ближе к нулю?
+* Пропускная способность: как и с задержкой, при работе на одном хосте пропускная способность бесконечна, но когда система распределена, данные приходится перемещать между серверами, и пропускная способность становится проблемой 
+* Постоянно меняющаяся топология: в распределённой системе хосты и различные компоненты могут отключаться и включаться, то есть топология постоянно меняется, тогда как один хост неизменен
+* Безопасность: защитить один хост намного проще, чем распределённую систему, где нужно защищать не только все компоненты, но и взаимодействие между различными хостами и компонентами
+* Размер команды: для управления одним хостом нужно меньше администраторов, чем для управления распределённой системой с сотнями, тысячами или даже большим количеством хостов и компонентов
 
-## Clock Drift
+## Дрейф часов
 
-[Wikipedia](https://en.wikipedia.org/wiki/Clock_drift): "Clock drift refers to several related phenomena where a clock does not run at exactly the same rate as a reference clock. That is, after some time the clock "drifts apart" or gradually desynchronizes from the other clock"
+[Wikipedia](https://en.wikipedia.org/wiki/Clock_drift): «Дрейф часов (clock drift) — это ряд связанных явлений, при которых часы идут не точно с той же скоростью, что и эталонные часы. То есть через некоторое время часы „расходятся“ или постепенно рассинхронизируются с другими часами»
 
-Synchronizing clock is a challenge in distributed systems because each system has its own clock and once the system's clock drifts, this might affect the system as a whole and lead to unintended behaviours.
+Синхронизация часов — сложная задача в распределённых системах, потому что у каждой системы свои часы, и если часы системы начинают дрейфовать, это может повлиять на систему в целом и привести к непредвиденному поведению.
 
 ## CDN
 
-[Cloudflare](https://www.cloudflare.com/en-gb/learning/cdn/what-is-a-cdn): "A content delivery network (CDN) refers to a geographically distributed group of servers which work together to provide fast delivery of Internet content."
+[Cloudflare](https://www.cloudflare.com/en-gb/learning/cdn/what-is-a-cdn): «Сеть доставки контента (CDN) — это географически распределённая группа серверов, которые работают совместно, чтобы обеспечить быструю доставку интернет-контента.»
 
-In other words, a content delivery network allows you to quickly transfer content by having servers with the content around the world or certain area. The client then, access these servers instead of the main server where the data originates from.
+Иными словами, сеть доставки контента позволяет быстро передавать контент благодаря серверам с этим контентом, расположенным по всему миру или в определённом регионе. Клиент обращается к этим серверам, а не к основному серверу, на котором изначально находятся данные.
 
 <p align="center">
 <img src="../images/cdn/cdn.png"/>

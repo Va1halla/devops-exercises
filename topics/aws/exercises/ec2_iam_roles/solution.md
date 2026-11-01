@@ -1,21 +1,21 @@
-## AWS EC2 - IAM Roles
+## AWS EC2 - роли IAM
  
-### Requirements
+### Требования
  
-1. Running EC2 instance without any IAM roles (so you if you connect the instance and try to run AWS commands, it fails)
-2. IAM role with "IAMReadOnlyAccess" policy
+1. Работающий экземпляр EC2 без ролей IAM (т.е. если подключиться к экземпляру и попытаться выполнить команды AWS, они завершатся ошибкой)
+2. Роль IAM с политикой "IAMReadOnlyAccess"
  
-### Objectives
+### Цели
 
-1. Attach a role (and if such role doesn't exists, create it) with "IAMReadOnlyAccess" policy to the EC2 instance
-2. Verify you can run AWS commands in the instance
+1. Привязать к экземпляру EC2 роль с политикой "IAMReadOnlyAccess" (если такой роли нет — создать её)
+2. Проверить, что в экземпляре можно выполнять команды AWS
  
-### Solution
+### Решение
 
-#### Console
+#### Консоль
 
-1. Go to EC2 service
-2. Click on the instance to which you would like to attach the IAM role
-3. Click on "Actions" -> "Security" -> "Modify IAM Role" 
-4. Choose the IAM role with "IAMReadOnlyAccess" policy and click on "Save"
-5. Running AWS commands now in the instance should work fine (e.g. `aws iam list-users`)
+1. Перейти в сервис EC2
+2. Выбрать экземпляр, к которому нужно привязать роль IAM
+3. Нажать "Actions" -> "Security" -> "Modify IAM Role" 
+4. Выбрать роль IAM с политикой "IAMReadOnlyAccess" и нажать "Save"
+5. Теперь команды AWS в экземпляре должны выполняться без ошибок (например, `aws iam list-users`)

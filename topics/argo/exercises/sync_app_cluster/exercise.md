@@ -1,20 +1,20 @@
-# Sync App - Cluster
+# Синхронизация приложения — кластер
 
-## Requirements
+## Требования
 
-1. Make sure you have a Kubernetes cluster running with ArgoCD installed
-1. Make sure you have an app deployed in the cluster and tracked by ArgoCD
+1. Нужен работающий кластер Kubernetes с установленным ArgoCD
+1. Нужно приложение, развёрнутое в кластере и отслеживаемое ArgoCD
 
-## Objectives
+## Задачи
 
-1. Verify the app is tracked by ArgoCD and in sync
-2. . Make a change to your application by running a `kubectl` command. The change can anything:
-   1. Changing the tag of the image
-   2. Changing the number of replicas
-   3. You can go extreme and delete the resource if you would like :)
-3. Check the app state in ArgoCD
-4. Sync the app state
+1. Убедитесь, что приложение отслеживается ArgoCD и синхронизировано (in sync)
+2. . Измените приложение, выполнив команду `kubectl`. Изменение может быть любым:
+   1. Изменить тег образа
+   2. Изменить количество реплик
+   3. Можно пойти на крайние меры и удалить ресурс, если хочется :)
+3. Проверьте состояние приложения в ArgoCD
+4. Синхронизируйте состояние приложения
 
-## Solution
+## Решение
 
-Click [here](solution.md) to view the solution
+Нажмите [здесь](solution.md), чтобы посмотреть решение

@@ -1,7 +1,7 @@
-## Choose a Data Type
+## Выбор типа данных
 
-For each of the following scenarios, choose the data type you would use
+Для каждого из следующих сценариев выбрать тип данных, который стоит использовать
 
-1. Storing the string "Hello World"
-2. Mapping between fruit names and their color
-3. A collection of numbers (sorted)
+1. Хранение строки "Hello World"
+2. Сопоставление названий фруктов и их цвета
+3. Коллекция чисел (отсортированная)

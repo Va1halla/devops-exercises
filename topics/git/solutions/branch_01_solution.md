@@ -1,4 +1,4 @@
-## Branch 01 - Solution
+## Branch 01 — решение
 
 ```
 cd some_repository
@@ -11,7 +11,7 @@ git add file2
 git commit -a -m "added file2"
 ```
 
-Verify:
+Проверка:
 
 ```
 git log (you should see two commits)

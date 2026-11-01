@@ -1,20 +1,20 @@
-## AWS EC2 - Security Groups
+## AWS EC2 - группы безопасности (Security Groups)
 
-### Requirements 
+### Требования 
 
-For this exercise you'll need:
+Для этого упражнения понадобится:
 
-1. EC2 instance with web application
-2. Security group inbound rules that allow HTTP traffic
+1. Экземпляр EC2 с веб-приложением
+2. Входящие правила группы безопасности, разрешающие HTTP-трафик
 
-### Objectives
+### Цели
 
-1. List the security groups you have in your account, in the region you are using
-2. Remove the HTTP inbound traffic rule
-3. Can you still access the application? What do you see/get?
-4. Add back the rule
-5. Can you access the application now?
+1. Вывести список групп безопасности в аккаунте в используемом регионе
+2. Удалить правило для входящего HTTP-трафика
+3. Доступно ли приложение? Что вы видите/получаете?
+4. Вернуть правило
+5. Доступно ли приложение теперь?
 
-## Solution
+## Решение
 
-Click [here to view to solution](solution.md)
+Нажмите [здесь, чтобы посмотреть решение](solution.md)

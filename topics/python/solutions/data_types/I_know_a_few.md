@@ -1,6 +1,6 @@
-## Data Types? I know a few
+## Типы данных? Знаю парочку
 
-The built-in data types:
+Встроенные типы данных:
   * dict: {'x': 1, 'y': 2}
   * list: [1, 2]
   * set: {'x', 'y'}
@@ -8,11 +8,11 @@ The built-in data types:
   * str: 'x, y'
   * tuple: ('x', 'y')
 
-There are also modules which are part of the standard library and provide their own data types:
+Есть также модули, входящие в стандартную библиотеку и предоставляющие собственные типы данных:
   * datetime
   * collections.namedtuple
   * collections.abc
   * bisect
   ...
 
-The list is quite long and be seen fully [here](https://docs.python.org/3/library/datatypes.html)
+Список довольно длинный, полностью его можно посмотреть [здесь](https://docs.python.org/3/library/datatypes.html)

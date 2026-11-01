@@ -1,12 +1,12 @@
-## Multi-Stage Builds
+## Многоэтапные сборки (multi-stage builds)
 
-### Objective
+### Цель
 
-Learn about multi-stage builds
+Изучить многоэтапные сборки
 
-### Instructions
+### Инструкции
 
-1. Without actually building an image or running any container, use the following Dockerfile and convert it to use multi-stage:
+1. Не собирая образ и не запуская контейнеров, возьмите следующий Dockerfile и преобразуйте его в многоэтапный:
 
 ```
 FROM nginx
@@ -28,11 +28,11 @@ RUN ember build — environment=prod
 CMD [ “/root/nginx-app.sh”, “nginx”, “-g”, “daemon off;” ]
 ```
 
-2. What are the benefits of using multi-stage builds?
+2. Какие преимущества дают многоэтапные сборки?
 
-### Solution
+### Решение
 
-1. One possible solution (the emphasize is on passing the app from the first stage):
+1. Одно из возможных решений (акцент на передаче приложения из первого этапа):
 
 ```
 FROM node:6
@@ -49,10 +49,10 @@ FROM nginx
 RUN mkdir -p /my_cool_app
 ADD ./config/nginx/docker.conf /etc/nginx/nginx.conf
 ADD ./config/nginx/k8s.conf /etc/nginx/nginx.conf.k8s
-# Copy build artifacts from the first stage
+# Скопировать артефакты сборки из первого этапа
 COPY — from=0 /my_cool_app/dist /my_cool_app/dist
 WORKDIR /my_cool_app
 CMD [ “/root/nginx-app.sh”, “nginx”, “-g”, “daemon off;” ]
 ```
 
-2. Multi-stages builds allow you to produce smaller container images by splitting the build process into multiple stages as we did above. The app image doesn't contain anything related to the build process except the actual app.
+2. Многоэтапные сборки позволяют получать образы контейнеров меньшего размера за счёт разделения процесса сборки на несколько этапов, как сделано выше. Образ приложения не содержит ничего, связанного с процессом сборки, кроме самого приложения.

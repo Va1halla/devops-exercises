@@ -1,12 +1,12 @@
-## Operations
+## Операции
 
-What is the result of the following operations in Python?
+Каков результат следующих операций в Python?
 
 1. `4 / 3`
 2. `4 / 0`
 3. `4 // 3`
 4. `4 // 0`
 
-### Solution
+### Решение
 
-Click [here](solutions/numbers/operations.md) to view the solution
+Нажмите [здесь](solutions/numbers/operations.md), чтобы посмотреть решение

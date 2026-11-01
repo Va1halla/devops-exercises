@@ -1,5 +1,5 @@
-# 22 Times
+# 22 раза
 
-## Objectives
+## Цели
 
-Print the character '-' 22 times (No new lines between the characters).
+Вывести символ '-' 22 раза (без переводов строки между символами).

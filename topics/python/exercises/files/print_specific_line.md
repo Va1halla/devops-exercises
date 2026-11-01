@@ -1,5 +1,5 @@
-## Print a specific line
+## Вывод определённой строки
 
-1. Print first line
-2. Print last line
-3. Print 12th line
+1. Вывести первую строку
+2. Вывести последнюю строку
+3. Вывести 12-ю строку

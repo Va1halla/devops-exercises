@@ -1,13 +1,13 @@
-## Access List Items
+## Доступ к элементам списка
 
-Given the following list `li = [2, 0 ,1, 7, 2, 0, 2, 2]` perform the following:
+Дан список `li = [2, 0 ,1, 7, 2, 0, 2, 2]`, выполнить следующее:
 
-1. Print the first item of the list - `print(li[0])`
-2. Print the last item of the list  - `print(li[-1])`
+1. Вывести первый элемент списка — `print(li[0])`
+2. Вывести последний элемент списка  — `print(li[-1])`
 
-Bonus:
+Бонус:
 
-1. Print random item of the list
+1. Вывести случайный элемент списка
 
 ```python
 from random import choice

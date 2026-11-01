@@ -1,6 +1,6 @@
-## (Advanced) Identify the data type
+## (Продвинутый уровень) Определите тип данных
 
-For each of the following, identify what is the data type of the result variable
+Для каждого из следующих случаев определить тип данных результирующей переменной
 
 1. a = {'a', 'b', 'c'}
 2. b = {'1': '2'}

@@ -1,4 +1,4 @@
-## Comparisons vs. Functions - Solution
+## Сравнения или функции - Решение
 
 ```
 SELECT count(*)

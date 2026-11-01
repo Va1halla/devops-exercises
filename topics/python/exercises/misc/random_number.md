@@ -1,3 +1,3 @@
-## Random Number
+## Случайное число
 
-Generate random number between 1 and 10
+Сгенерировать случайное число от 1 до 10

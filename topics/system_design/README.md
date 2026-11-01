@@ -2,31 +2,31 @@
 <img src="images/system_design_notebook.png"/>
 </p>
 
-> An open source project to help you learn about system design step by step
+> Проект с открытым исходным кодом, который помогает шаг за шагом изучать проектирование систем
 
-**NOTE:** The work on this repo is still in progress. Some information might be lacking or missing at this point.
+**ПРИМЕЧАНИЕ:** работа над этим репозиторием ещё продолжается. Некоторая информация на данный момент может быть неполной или отсутствовать.
 
-* [Topics](#topics)
-* [Topics Explained](#topics-explained)
-* [Exercises](#exercises)
-  * [General](#general)
+* [Темы](#topics)
+* [Объяснение тем](#topics-explained)
+* [Упражнения](#упражнения)
+  * [Общие](#общие)
   * [AWS Cloud](#aws-cloud)
-  * [Misc](#misc-exercises)
-* [Questions](#Questions)
-* [Resources](#Resources)
-* [System Design](#system-designs)
-  * [Cloud](#system-design-cloud)
-  * [Development](#system-design-development)
-  * [Generic Systems](#system-design-generic-systems)
-  * [Real-World Systems](#system-design-real-world-systems)
-* [System Design Process](#system-design-process)
-* [Interview Tips](#system-design-interview-tips)
-* [Q&A](common-qa.md)
-* [Credits](credits.md)
+  * [Разное](#misc-exercises)
+* [Вопросы](#вопросы)
+* [Ресурсы](#ресурсы)
+* [Проектирование систем](#примеры-проектирования-систем)
+  * [Облако](#system-design-cloud)
+  * [Разработка](#system-design-development)
+  * [Типовые системы](#system-design-generic-systems)
+  * [Реальные системы](#system-design-real-world-systems)
+* [Процесс проектирования системы](#процесс-проектирования-системы)
+* [Советы для собеседования](#советы-для-собеседования-по-проектированию-систем)
+* [Вопросы и ответы](common-qa.md)
+* [Благодарности](credits.md)
 
-## System Design
+## Проектирование систем
 
-### Requirements
+### Требования
 
 <!-- ALL-TOPICS-LIST:START -->
 <!-- prettier-ignore-start -->
@@ -34,9 +34,9 @@
 <center>
 <table>
   <tr>
-    <td align="center"><a href="requirements/README.md"><img src="images/requirements/requirements.png" width="160px;" alt="Requirements" /><br /><b>Requirements</b></a></td>
-    <td align="center"><a href="requirements/README.md#functional-requirements"><img src="images/requirements/functional_requirements.png" height="120px;" alt="Functional Requirements" /><br /><b>Functional Requirements</b></a></td>
-    <td align="center"><a href="requirements/README.md#non-functional-requirements"><img src="images/requirements/non_functional_requirements.png" height="120px;" alt="Requirements" /><br /><b>Non-Functional Requirements</b></a></td>
+    <td align="center"><a href="requirements/README.md"><img src="images/requirements/requirements.png" width="160px;" alt="Requirements" /><br /><b>Требования</b></a></td>
+    <td align="center"><a href="requirements/README.md#функциональные-требования"><img src="images/requirements/functional_requirements.png" height="120px;" alt="Functional Requirements" /><br /><b>Функциональные требования</b></a></td>
+    <td align="center"><a href="requirements/README.md#нефункциональные-требования"><img src="images/requirements/non_functional_requirements.png" height="120px;" alt="Requirements" /><br /><b>Нефункциональные требования</b></a></td>
   </tr>
 </table>
 </center>
@@ -44,7 +44,7 @@
 <!-- prettier-ignore-end -->
 <!-- ALL-TOPICS-LIST:END -->
 
-### Compnents/Services
+### Компоненты/сервисы
 
 <!-- ALL-TOPICS-LIST:START -->
 <!-- prettier-ignore-start -->
@@ -52,9 +52,9 @@
 <center>
 <table>
   <tr>
-    <td align="center"><a href="basic_architecture/README.md"><img src="images/basic_architecture/server.png" width="120px;" height="40px;" alt="Server" /><br /><b>Server</b></a></td>
-    <td align="center"><a href="basic_architecture/README.md"><img src="images/basic_architecture/client.png" width="100px;" height="100px;" alt="Client" /><br /><b>Client</b></a></td>
-      <td align="center"><a href="services/load_balancer/README.md"><img src="images/services/load_balancer.png" width="75px;" height="75px;" alt="Load Balancer" /><br /><b>Load Balancer</b></a></td>
+    <td align="center"><a href="basic_architecture/README.md"><img src="images/basic_architecture/server.png" width="120px;" height="40px;" alt="Server" /><br /><b>Сервер</b></a></td>
+    <td align="center"><a href="basic_architecture/README.md"><img src="images/basic_architecture/client.png" width="100px;" height="100px;" alt="Client" /><br /><b>Клиент</b></a></td>
+      <td align="center"><a href="services/load_balancer/README.md"><img src="images/services/load_balancer.png" width="75px;" height="75px;" alt="Load Balancer" /><br /><b>Балансировщик нагрузки</b></a></td>
     <td align="center"><a href="services/api_gateway/README.md"><img src="images/services/api_gateway.png" width="75px;" height="75px;" alt="API Gateway" /><br /><b>API Gateway</b></a></td>
     <td align="center"><a href="services/dns/README.md"><img src="images/dns/dns.png" width="75px;" height="75px;" alt="DNS" /><br /><b>DNS</b></a></td>
   </tr>
@@ -64,17 +64,17 @@
 <!-- prettier-ignore-end -->
 <!-- ALL-TOPICS-LIST:END -->
 
-### Scalability
+### Масштабируемость
 <!-- ALL-TOPICS-LIST:START -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <center>
 <table>
   <tr>
-    <td align="center"><a href="scalability/README.md"><img src="images/scalability/scalability.png" width="70px;" height="75px;" alt="Scalability" /><br /><b>Scalability</b></a></td>
-    <td align="center"><a href="scalability/README.md#horizontal-scaling"><img src="images/scalability/horizontal_scaling_icon.png" width="300px;" height="75px;" alt="Horizontal Scaling" /><br /><b>Horizontal Scaling</b></a></td>
-    <td align="center"><a href="scalability/README.md"><img src="images/scalability/vertical_scaling_icon.png" width="300px;" height="60px;" alt="Vertical Scaling" /><br /><b>Vertical Scaling</b></a></td>
-    <td align="center"><a href="scalability/README.md#scalability_factor"><img src="images/scalability/scalability_factor.png" width="100px;" height="80px;" alt="Scalability Factor" /><br /><b>Scalability Factor</b></a></td>
+    <td align="center"><a href="scalability/README.md"><img src="images/scalability/scalability.png" width="70px;" height="75px;" alt="Scalability" /><br /><b>Масштабируемость</b></a></td>
+    <td align="center"><a href="scalability/README.md#горизонтальное-масштабирование"><img src="images/scalability/horizontal_scaling_icon.png" width="300px;" height="75px;" alt="Horizontal Scaling" /><br /><b>Горизонтальное масштабирование</b></a></td>
+    <td align="center"><a href="scalability/README.md"><img src="images/scalability/vertical_scaling_icon.png" width="300px;" height="60px;" alt="Vertical Scaling" /><br /><b>Вертикальное масштабирование</b></a></td>
+    <td align="center"><a href="scalability/README.md#коэффициент-масштабируемости"><img src="images/scalability/scalability_factor.png" width="100px;" height="80px;" alt="Scalability Factor" /><br /><b>Коэффициент масштабируемости</b></a></td>
     
   </tr>
 </table>
@@ -83,14 +83,14 @@
 <!-- prettier-ignore-end -->
 <!-- ALL-TOPICS-LIST:END -->
 
-### Reliability Engineering
+### Инженерия надёжности
 <!-- ALL-TOPICS-LIST:START -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <center>
 <table>
   <tr>
-    <td align="center"><a href="reliability_engineering/README.md"><img src="images/reliability_engineering/availability.png" width="75px;" height="75px;" alt="Availability" /><br /><b>Availability</b></a></td>
+    <td align="center"><a href="reliability_engineering/README.md"><img src="images/reliability_engineering/availability.png" width="75px;" height="75px;" alt="Availability" /><br /><b>Доступность</b></a></td>
     <td align="center"><a href="reliability_engineering/README.md"><img src="images/reliability_engineering/failover.png" width="75px;" height="75px;" alt="Availability" /><br /><b>Failover</b></a></td>
   </tr>
   <tr>
@@ -106,14 +106,14 @@
 
 
 
-### Networking
+### Сети
 <!-- ALL-TOPICS-LIST:START -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <center>
 <table>
   <tr>
-    <td align="center"><a href="networking/README.md"><img src="images/networking/networking.png" width="70px;" height="75px;" alt="Networking" /><br /><b>Networking</b></a></td>
+    <td align="center"><a href="networking/README.md"><img src="images/networking/networking.png" width="70px;" height="75px;" alt="Networking" /><br /><b>Сети</b></a></td>
   </tr>
 </table>
 </center>
@@ -121,15 +121,15 @@
 <!-- prettier-ignore-end -->
 <!-- ALL-TOPICS-LIST:END -->
 
-### Database
+### Базы данных
 <!-- ALL-TOPICS-LIST:START -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <center>
 <table>
   <tr>
-    <td align="center"><a href="databases/README.md"><img src="images/databases/database.png" width="70px;" height="75px;" alt="Databases" /><br /><b>Databases</b></a></td>
-    <td align="center"><a href="databases/README.md#cap-theorem"><img src="images/cap_theorem/cap.png"  width="100px;" alt="CAP" /><br /><b>CAP Theorem</b></a></td>
+    <td align="center"><a href="databases/README.md"><img src="images/databases/database.png" width="70px;" height="75px;" alt="Databases" /><br /><b>Базы данных</b></a></td>
+    <td align="center"><a href="databases/README.md#теорема-cap"><img src="images/cap_theorem/cap.png"  width="100px;" alt="CAP" /><br /><b>Теорема CAP</b></a></td>
   </tr>
 </table>
 </center>
@@ -137,15 +137,15 @@
 <!-- prettier-ignore-end -->
 <!-- ALL-TOPICS-LIST:END -->
 
-### Distributed Systems
+### Распределённые системы
 <!-- ALL-TOPICS-LIST:START -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <center>
 <table>
   <tr>
-    <td align="center"><a href="distributed_systems/README.md"><img src="images/distributed_systems/distributed_systems.png" width="70px;" height="75px;" alt="Distributed Systems" /><br /><b>Distrubuted Systems</b></a></td>
-    <td align="center"><a href="distributed_systems/README.md#clock-diff"><img src="images/distributed_systems/clock_drift.png" width="70px;" height="75px;" alt="Clock Drift" /><br /><b>Clock Diff</b></a></td>
+    <td align="center"><a href="distributed_systems/README.md"><img src="images/distributed_systems/distributed_systems.png" width="70px;" height="75px;" alt="Distributed Systems" /><br /><b>Распределённые системы</b></a></td>
+    <td align="center"><a href="distributed_systems/README.md#дрейф-часов"><img src="images/distributed_systems/clock_drift.png" width="70px;" height="75px;" alt="Clock Drift" /><br /><b>Дрейф часов</b></a></td>
     <td align="center"><a href="distributed_systems/README.md#cdn"><img src="images/distributed_systems/cdn.png" width="90px;" height="75px;" alt="CDN" /><br /><b>CDN</b></a></td>
   </tr>
 </table>
@@ -154,7 +154,7 @@
 <!-- prettier-ignore-end -->
 <!-- ALL-TOPICS-LIST:END -->
 
-### Database
+### Базы данных
 <!-- ALL-TOPICS-LIST:START -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -170,34 +170,34 @@
 <!-- ALL-TOPICS-LIST:END -->
   <td align="center"><a href="reliability_engineering/README.md"><br /><b></b></a></td>
 
-## Exercises
-### General
-#### "Elementary, my dear Watson"
+## Упражнения
+### Общие
+#### «Элементарно, мой дорогой Ватсон»
 
 <details>
-<summary>The following is an architecture of a server which runs a web server and a database on it. There are a dozen of clients connecting to the server. Answer the following questions
+<summary>Ниже показана архитектура сервера, на котором работают веб-сервер и база данных. К серверу подключается десяток клиентов. Ответьте на следующие вопросы
 
 <p align="center">
 <img src="images/design/general/basic_architecture_db_web.png"/>
 </p>
 
-1. Name two issues with this architecture
-   - What term/concept in system design used to describe one of the issues you specified?
-2. Suggest an improvement to the architecture **WITHOUT** adding more components
-   1. If the suggested improvement is "vertical scaling", is it a permanent improvement?
-3. Suggest two improvements to the architecture, given that additional components can be added
+1. Назовите две проблемы этой архитектуры
+   - Какой термин/понятие проектирования систем описывает одну из названных проблем?
+2. Предложите улучшение архитектуры **БЕЗ** добавления новых компонентов
+   1. Если предлагаемое улучшение — «вертикальное масштабирование», является ли оно постоянным?
+3. Предложите два улучшения архитектуры при условии, что можно добавлять новые компоненты
 </summary><br><b>
 
-1. Two issues:
-   1. Single point of failure - if the server is down, the users would not be able to connect the application and the server will have to be restored or created from scratch
-   2. If the web process is using all the RAM and/or CPU, then it might affect the DB since it won't have enough resource to handle requests. This is true also the opposite way of DB consuming all resources, not leaving enough for web server processes.
-      - The term used to describe the issue it "scalability". The server doesn't scale by demand and eventually users will experience issues
+1. Две проблемы:
+   1. Единая точка отказа: если сервер выйдет из строя, пользователи не смогут подключиться к приложению, и сервер придётся восстанавливать или создавать с нуля
+   2. Если веб-процесс использует всю оперативную память и/или процессор, это может повлиять на БД, так как ей не хватит ресурсов для обработки запросов. Верно и обратное: БД может потреблять все ресурсы, не оставляя достаточно процессам веб-сервера.
+      - Термин, описывающий эту проблему, — «масштабируемость». Сервер не масштабируется по мере роста потребностей, и в итоге пользователи столкнутся с проблемами
 
-2. Apply [vertical scaling](#vertical-scaling). By adding more resources to the server (i.e. CPU & RAM) it will allow it to handle more load. This is nota  permanent solution because at some point the load might scale to a point where it's not possible to add more RAM and CPU to the instance nor it's really worthwhile.
+2. Применить [вертикальное масштабирование](#vertical-scaling). Добавление серверу ресурсов (т.е. процессора и оперативной памяти) позволит ему выдерживать большую нагрузку. Это не постоянное решение, так как в какой-то момент нагрузка может вырасти до уровня, когда добавить экземпляру оперативной памяти и процессоров уже невозможно или это просто нецелесообразно.
 
-3. The two improvements would be:
-   1. Separate DB and web server into two components (instead of both running on the same instance)
-   2. Apply [horizontal scaling](#horizontal-scaling) - add more web server servers (it's also possible to add more DB instances)
+3. Два улучшения:
+   1. Разделить БД и веб-сервер на два компонента (вместо того чтобы оба работали на одном экземпляре)
+   2. Применить [горизонтальное масштабирование](#horizontal-scaling) — добавить больше веб-серверов (можно также добавить больше экземпляров БД)
 
 <p align="center">
 <img src="images/design/general/basic_architecture_db_web_solution.png"/>
@@ -206,10 +206,10 @@
 
 ### AWS Cloud
 
-#### What time is it? (stateless application)
+#### Который час? (приложение без состояния)
 
 <details>
-<summary>Design the most basic architecture for a web application (server based) that tells a single user what time is it (no DB, no scaling, ...) with maximum of two components
+<summary>Спроектируйте простейшую архитектуру веб-приложения (на базе сервера), которое сообщает одному пользователю, который час (без БД, без масштабирования, ...), используя не более двух компонентов
 </summary><br><b>
 
 
@@ -217,19 +217,19 @@
 <img src="images/design/aws_cloud/what_time_is_it_1.png"/>
 </p>
 
-In this case what you need is two components:
+В этом случае нужны два компонента:
 
-* EC2 instance - this is where our application will run. A basic micro t2 instance is more than enough
-* Elastic IP address - This is the static IP address our user will use every time to reach the application. In case the instance is not operational, we could always move the IP address to one that it is (if we manage more than one instance)
+* Экземпляр EC2 — здесь будет работать приложение. Базового экземпляра micro t2 более чем достаточно
+* Elastic IP address — статический IP-адрес, который пользователь будет каждый раз использовать для доступа к приложению. Если экземпляр перестанет работать, IP-адрес всегда можно перенести на работающий (если управляется больше одного экземпляра)
 </b></details>
 
 <details>
-<summary>Your web app became a huge success and many users start using it. What might be the problem with moving from one user to multiple users and how to deal with it using a single improvement of the architecture?
+<summary>Веб-приложение стало очень успешным, и им начали пользоваться многие пользователи. Какая проблема может возникнуть при переходе от одного пользователя ко многим и как справиться с ней с помощью одного улучшения архитектуры?
 </summary><br><b>
 
-Your instance might not be strong enough to handle requests from multiple users and soon enough you might see RAM and CPU utilized fully. One way to deal with it is, to perform what is called "Vertical Scaling" which is the act of adding more resources to your instance. In AWS case, switching to an instance type with more resources like M5 for example.
+Экземпляр может оказаться недостаточно мощным для обработки запросов от множества пользователей, и довольно скоро оперативная память и процессор могут оказаться загружены полностью. Один из способов справиться с этим — выполнить так называемое «вертикальное масштабирование», то есть добавить экземпляру ресурсов. В случае AWS — перейти на тип экземпляра с большим количеством ресурсов, например M5.
 
-Note: The problem with vertical scaling (in case you have one node) is downtime (when upgrading the instance type, the instance will be down) so another thing you would want to do is "Horizontal Scaling" which is the act of adding more instances/resources.
+Примечание: проблема вертикального масштабирования (при одном узле) — простой (при смене типа экземпляра он будет недоступен), поэтому стоит также выполнить «горизонтальное масштабирование», то есть добавить экземпляров/ресурсов.
 
 <p align="center">
 <img src="images/design/aws_cloud/what_time_is_it_2.png"/>
@@ -238,37 +238,37 @@ Note: The problem with vertical scaling (in case you have one node) is downtime 
 </b></details>
 
 <details>
-<summary>You would like to change the architecture offered in the solution, to not use elastic IP addresses for obvious reasons that it's not really scalable (each EC2 instance has a different IP and users are not able to remember them all). Offer an improvement
+<summary>Нужно изменить предложенную в решении архитектуру так, чтобы не использовать elastic IP addresses по очевидной причине: это плохо масштабируется (у каждого экземпляра EC2 свой IP, и пользователи не могут запомнить их все). Предложите улучшение
 </summary><br><b>
 
-Instead of using elastic IP addresses we can add a record in the DNS, using the Route 53 service, to have a record from the type A. This way, all users will be able to access the app using an hostname and the IP address will be provided to them by the DNS
+Вместо elastic IP addresses можно добавить запись в DNS с помощью сервиса Route 53 — запись типа A. Так все пользователи смогут обращаться к приложению по имени хоста, а IP-адрес им будет выдавать DNS
 
 <p align="center">
 <img src="images/design/aws_cloud/what_time_is_it_3.png"/>
 </p>
 
-It's important to note that this solution is not optimal if you plan to scale down and up at some point. Due to the TTL value of a record, a user will keep contacting the same IP address, even if the node is already down.
+Важно отметить, что это решение не оптимально, если в какой-то момент планируется масштабирование вниз и вверх. Из-за значения TTL записи пользователь будет продолжать обращаться к тому же IP-адресу, даже если узел уже не работает.
 
-A more proper and complete architecture would be to use an ELB
+Более правильной и полной архитектурой будет использование ELB
 
 <p align="center">
 <img src="images/design/aws_cloud/what_time_is_it_4.png"/>
 </p>
 
-But even with ELB used and "Auto scaling group" for automatically scaling the nodes, this architecture is not optimal. Can you point what is the problem with current architecture? (from two different aspecs)
+Но даже с ELB и «Auto scaling group» для автоматического масштабирования узлов эта архитектура не оптимальна. Какая проблема есть у текущей архитектуры? (с двух разных точек зрения)
 </b></details>
 
 <details>
-<summary>State the issues with current architecture and what would you imrpove
+<summary>Назовите проблемы текущей архитектуры и что можно улучшить
 
 <p align="center">
 <img src="images/design/aws_cloud/what_time_is_it_4.png"/>
 </p>
 </summary><br><b>
 
-With current architecture, the application is perhaps able to scale up and down, but when the availability zone is down, your entire application is down. So the first improvement would be to make both ELB and the application itself (the EC2 instances) multi-AZ.
+В текущей архитектуре приложение, возможно, способно масштабироваться вверх и вниз, но если зона доступности (availability zone) выходит из строя, всё приложение становится недоступным. Поэтому первым улучшением будет сделать и ELB, и само приложение (экземпляры EC2) multi-AZ.
 
-Secondly, if you know you always need an instance (or two) for the application, you might want to have reserved nodes. Reserved nodes means you pay less for instances which means you save on costs.
+Во-вторых, если известно, что приложению всегда нужен один экземпляр (или два), имеет смысл использовать зарезервированные узлы (reserved nodes). Зарезервированные узлы означают, что за экземпляры платится меньше, то есть экономятся затраты.
 
 <p align="center">
 <img src="images/design/aws_cloud/what_time_is_it_5.png"/>
@@ -276,44 +276,44 @@ Secondly, if you know you always need an instance (or two) for the application, 
 
 </b></details>
 
-#### "Video Games Shop" (stateful application)
+#### «Магазин видеоигр» (приложение с состоянием)
 
 <details>
-<summary>The following architecture was proposed for an online video games shop with the requirements of:
+<summary>Для онлайн-магазина видеоигр была предложена следующая архитектура со следующими требованиями:
 
-  * Support thousands of users at any given point of time
-  * Users can register
-  * Shopping cart items shouldn't be lost when the user browsing the store
+  * Поддерживать тысячи пользователей в любой момент времени
+  * Пользователи могут регистрироваться
+  * Товары в корзине не должны теряться, пока пользователь просматривает магазин
 
 <p align="center">
 <img src="images/design/aws_cloud/video_games_shop_1.png"/>
 </p>
 
-The problem is that users report that when they browse for additional video games to buy, they lose their shopping cart. What is the problem with the current architecture and how to deal with it?
+Проблема в том, что пользователи сообщают: когда они просматривают другие видеоигры для покупки, их корзина теряется. В чём проблема текущей архитектуры и как с ней справиться?
 </summary><br><b>
 
-Such application is a stateful application, meaning it's important that we'll keep the information about the client from one session to another. It seems that with current architecture, every time the user initiates new session, it's perform against a different instance without saving client information.
+Такое приложение является приложением с состоянием (stateful), то есть важно сохранять информацию о клиенте от одной сессии к другой. Похоже, что в текущей архитектуре каждый раз, когда пользователь начинает новую сессию, она выполняется на другом экземпляре без сохранения информации о клиенте.
 
-There are a couple of solutions that can be applied in this case:
-  * Load Balancer Sticky Sessions: users will be redirected to the instance they initiated previously session with, in order to to not lose client's data. There is a disadvantage here of losing
-  * User cookies: the client/user stores the relevant data (shopping cart in this case) and in this case it doesn't matter with which EC2 instance the user interacts with, the data on the shopping cart will be sent from the client/user to the relevant instance. The disadvantages: HTTP requests are much heavier because data is attached with each request and it holds some security risks as cookies can be potentially modified
+В этом случае можно применить пару решений:
+  * Sticky Sessions балансировщика нагрузки: пользователи будут перенаправляться на тот экземпляр, с которым они ранее начали сессию, чтобы не терять данные клиента. Недостаток здесь в потере
+  * Пользовательские cookies: клиент/пользователь хранит нужные данные (в данном случае корзину), и тогда неважно, с каким экземпляром EC2 взаимодействует пользователь, — данные корзины будут отправляться от клиента/пользователя на нужный экземпляр. Недостатки: HTTP-запросы становятся намного тяжелее, так как данные прикрепляются к каждому запросу, и есть определённые риски безопасности, так как cookies потенциально могут быть изменены
 </b></details>
 
-#### "Video Games Shop"
+#### «Магазин видеоигр»
 
 <details>
-<summary>Following the last exercise, is there another way to deal with user's data (short and long term) except user's cookies and sticky sessions?
+<summary>В продолжение предыдущего упражнения: есть ли другой способ работы с данными пользователя (кратко- и долгосрочными), кроме пользовательских cookies и sticky sessions?
 </summary><br><b>
 
-There is something called "server session" where we need to add a new component to the architecture - ElastiCache or DynamoDB, to store the data on the shopping cart of each user. In order to identify it, we'll use a session ID which will be sent by the client/user every request
+Есть так называемая «серверная сессия» (server session), для которой нужно добавить в архитектуру новый компонент — ElastiCache или DynamoDB — для хранения данных корзины каждого пользователя. Для её идентификации используется идентификатор сессии (session ID), который клиент/пользователь отправляет с каждым запросом
 
-For long term data (user name, address, etc.) we'll use a database (e.g. RDS). There are a couple of variations as to how we can use it. A master instance where we'll write the data and a replication from which we'll read data:
+Для долгосрочных данных (имя пользователя, адрес и т.д.) используется база данных (например, RDS). Есть несколько вариантов её использования. Главный экземпляр (master), в который записываются данные, и реплика, из которой они читаются:
 
 <p align="center">
 <img src="images/design/aws_cloud/video_games_shop_2.png"/>
 </p>
 
-A different approach can be to use Cache + DB, where for each session, we'll check if the data is in the cache and if it's not, then we'll access the DB (this is also called "Write Through"): 
+Другой подход — использовать кэш + БД: для каждой сессии проверяется, есть ли данные в кэше, и если нет, выполняется обращение к БД (это также называют «Write Through»): 
 
 <p align="center">
 <img src="images/design/aws_cloud/video_games_shop_3.png"/>
@@ -321,50 +321,50 @@ A different approach can be to use Cache + DB, where for each session, we'll che
 
 </b></details>
 
-### Misc
+### Разное
 
-Note: Exercises may repeat themselves in different variations to practice and emphasize different concepts.
+Примечание: упражнения могут повторяться в разных вариантах, чтобы отработать и подчеркнуть разные понятия.
 
-#### "Perfectly balanced, as all things should be"
+#### «Идеальный баланс, как и должно быть во всём»
 
 <details>
-<summary>You have the following simple architecture of a server handling requests from a client. What are the drawbacks of this design and how to improve it?
+<summary>Есть следующая простая архитектура: сервер обрабатывает запросы от клиента. Каковы недостатки этой архитектуры и как её улучшить?
 <p align="center">
 <img src="images/design/basic_architecture.png"/>
 </p>
 </summary><br><b>
 
-* Limitations:
-  * Load - at some point it's possible the server will not be able to handle more requests and it will fail or cause delays
-  * Single point of failure - if the server goes down, nothing will be able to handle the requests
+* Ограничения:
+  * Нагрузка: в какой-то момент сервер может оказаться не в состоянии обрабатывать больше запросов, и он откажет или начнёт вызывать задержки
+  * Единая точка отказа: если сервер выйдет из строя, обрабатывать запросы будет нечему
 
-* How to improve:<br>
+* Как улучшить:<br>
   <p align="center">
   <img src="images/load_balancer/basic_architecture.png"/>
   </p>
 
-* Further limitations:
-    * Load was handled as well as the server being a single point of failure, but now the load balancer is a single point of failure.
+* Дальнейшие ограничения:
+    * Проблемы нагрузки и сервера как единой точки отказа решены, но теперь единой точкой отказа стал балансировщик нагрузки.
 </b></details>
 
 <details>
-<summary>Is there a way to improve the above design without adding an actual load balancer instance?</summary><br><b>
+<summary>Можно ли улучшить архитектуру выше, не добавляя отдельный экземпляр балансировщика нагрузки?</summary><br><b>
 
-Yes, one could use DNS load balancing.<br>
-Bonus question: which algorithm a DNS load balancer will use?
+Да, можно использовать балансировку нагрузки с помощью DNS.<br>
+Дополнительный вопрос: какой алгоритм будет использовать DNS-балансировщик нагрузки?
 </b></details>
 
 <details>
-<summary>What are the drawbacks of round robin algorithm in load balancing?</summary><br><b>
+<summary>Каковы недостатки алгоритма round robin при балансировке нагрузки?</summary><br><b>
 
-  * A simple round robin algorithm knows nothing about the load and the spec of each server it forwards the requests to. It is possible, that multiple heavy workloads requests will get to the same server while other servers will got only lightweight requests which will result in one server doing most of the work, maybe even crashing at some point because it unable to handle all the heavy workloads requests by its own.
-  * Each request from the client creates a whole new session. This might be a problem for certain scenarios where you would like to perform multiple operations where the server has to know about the result of operation so basically, being sort of aware of the history it has with the client. In round robin, first request might hit server X, while second request might hit server Y and ask to continue processing the data that was processed on server X already.
+  * Простой алгоритм round robin ничего не знает о нагрузке и характеристиках каждого сервера, которому он перенаправляет запросы. Возможно, что несколько тяжёлых запросов попадут на один и тот же сервер, а другие серверы получат только лёгкие запросы. В результате один сервер будет выполнять большую часть работы и, возможно, в какой-то момент даже упадёт, потому что не сможет в одиночку обработать все тяжёлые запросы.
+  * Каждый запрос клиента создаёт совершенно новую сессию. Это может быть проблемой в сценариях, где нужно выполнить несколько операций и сервер должен знать результат предыдущей операции, то есть по сути учитывать историю взаимодействия с клиентом. При round robin первый запрос может попасть на сервер X, а второй — на сервер Y с просьбой продолжить обработку данных, которые уже обрабатывались на сервере X.
 </b></details>
 
-#### "For all my actions both public and private"
+#### «За все мои поступки, публичные и личные»
 
 <details>
-<summary>The following is an architecture of a load balancer serving and three web servers. Assuming, we would like to have a secured architecture, that makes sense, where would you set a public IP and where would you set a private IP? 
+<summary>Ниже показана архитектура: балансировщик нагрузки и три веб-сервера. Если нужна разумная защищённая архитектура, где следует назначить публичный IP, а где — частный? 
 <p align="center">
 <img src="images/design/public_private_drag_and_drop.png"/>
 </p>
@@ -374,12 +374,12 @@ Bonus question: which algorithm a DNS load balancer will use?
 <img src="images/design/public_private_drag_and_drop_solution.png"/>
 </p>
 
-It makes sense to hide the web servers behind the load balancers instead of giving users direct access to them, so each one of them will have a private IP assigned to it.
-The load balancer should have a public IP since, we except anyone who would like to access a certain web page/resource, to go through the load balancer hence, it should be accessible to users.
+Имеет смысл спрятать веб-серверы за балансировщиками нагрузки, а не давать пользователям прямой доступ к ним, поэтому каждому из них будет назначен частный IP.
+Балансировщику нагрузки нужен публичный IP, так как ожидается, что все, кто хочет обратиться к определённой веб-странице/ресурсу, будут проходить через балансировщик нагрузки, а значит, он должен быть доступен пользователям.
 </b></details>
 
 <details>
-<summary>What load balancing techniques are there?</summary><br><b>
+<summary>Какие существуют методы балансировки нагрузки?</summary><br><b>
 
   * Round Robin
   * Weighted Round Robin
@@ -392,396 +392,396 @@ The load balancer should have a public IP since, we except anyone who would like
   * URL Hash
 </b></details>
 
-#### "Keep calm, all I want is your cash"
+#### «Спокойно, мне нужны только твои деньги»
 
 <details>
-<summary>The following is a simple architecture of a client making requests to web server which in turn, retrieves the data from a datastore. What are the drawbacks of this design and how to improve it?
+<summary>Ниже показана простая архитектура: клиент отправляет запросы веб-серверу, который, в свою очередь, получает данные из хранилища данных. Каковы недостатки этой архитектуры и как её улучшить?
 <p align="center">
 <img src="images/design/cache_basics_1.png"/>
 </p>
 </summary><br><b>
 
-* Limitations:
-  * Time - retrieving the data from the datastore every time a request is made from the client, might take a while
-  * Single point of failure - if the datastore is down (or even slow) it wouldn't be possible to handle the requests
-  * Load - the datastore getting all the requests can result in high load on the datastore which might result in a downtime
+* Ограничения:
+  * Время: получение данных из хранилища при каждом запросе клиента может занимать много времени
+  * Единая точка отказа: если хранилище данных недоступно (или даже просто медленное), обрабатывать запросы будет невозможно
+  * Нагрузка: хранилище данных, получающее все запросы, может испытывать высокую нагрузку, что может привести к простою
 
-* How to improve:<br>
+* Как улучшить:<br>
   <p align="center">
   <img src="images/design/cache_basics_2.png"/>
   </p>
 </b></details>
 
 <details>
-<summary>Are you able to explain what is Cache and in what cases you would use it?</summary><br><b>
+<summary>Объясните, что такое кэш и в каких случаях его стоит использовать?</summary><br><b>
 
-Why to use cache?
+Зачем использовать кэш?
 
-  * Save time - Accessing a remote datastore, and in general making network calls, takes time
-  * Reduce load - Instead of the datastore handling all the requests, we can take some of its load and reduce by accessing the cache
-  * Avoid repetitive tasks - Instead of querying the data and processing it every time, do it once and store the result in the cache
+  * Экономия времени: обращение к удалённому хранилищу данных и вообще сетевые вызовы занимают время
+  * Снижение нагрузки: вместо того чтобы хранилище данных обрабатывало все запросы, можно снять с него часть нагрузки за счёт обращения к кэшу
+  * Избежание повторяющихся задач: вместо того чтобы каждый раз запрашивать и обрабатывать данные, сделать это один раз и сохранить результат в кэше
 </b></details>
 
 <details>
-<summary>Why not storing everything in the cache?</summary><br><b>
+<summary>Почему бы не хранить в кэше всё?</summary><br><b>
 
-For multiple reasons:
+По нескольким причинам:
 
-1. The hardware on which we store the cache is in some cases much more expensive
-2. More data in the cache, the bigger it gets and longer the put/get actions will take
+1. Оборудование, на котором хранится кэш, в некоторых случаях намного дороже
+2. Чем больше данных в кэше, тем он больше и тем дольше выполняются операции put/get
 </b></details>
 
-#### "In a galaxy far, far away..."
+#### «Давным-давно в далёкой-далёкой галактике...»
 
 <details>
-<summary>The following is a system design of a remote database and three applications servers
+<summary>Ниже показана архитектура: удалённая база данных и три сервера приложений
 <p align="center">
 <img src="images/design/remote_database_1.png"/>
 </p>
 </summary><br><b>
 
-* Limitations:
-  * Latency. Every query made to the remote database will hit latency, even if small.
-  * In case the remote database crashes, the app will stop working
+* Ограничения:
+  * Задержка. Каждый запрос к удалённой базе данных будет сталкиваться с задержкой, пусть и небольшой.
+  * Если удалённая база данных упадёт, приложение перестанет работать
 
-* How to improve:<br>
+* Как улучшить:<br>
   <p align="center">
   <img src="images/design/remote_database_2.png"/>
   </p>
-  * Replicate each database to the local app server. This has several advantages. First, we are not bound to latency anymore. Secondly, a fai
+  * Реплицировать каждую базу данных на локальный сервер приложения. У этого есть несколько преимуществ. Во-первых, мы больше не зависим от задержки. Во-вторых, сбо
 
-* Further limitations:
-  * We are bound now to bandwidth
-  * If the remote database isn't accessible for a long period of time, we'll have an outdated database and each app has the potential to work against a different DB
+* Дальнейшие ограничения:
+  * Теперь мы зависим от пропускной способности
+  * Если удалённая база данных долго недоступна, у нас будет устаревшая база данных, и каждое приложение потенциально может работать с разной БД
 </b></details>
 
-#### "A bit on the slow side"
+#### «Немного медленновато»
 
 <details>
-<summary>The following is an improvement of the previous system design
+<summary>Ниже показано улучшение предыдущей архитектуры
 <p align="center">
 <img src="images/design/remote_database_2.png"/>
 </p>
 </summary><br><b>
 
-* Limitations:
-  * Queries to database might be slow, even on the server itself where the app is running
-  * Once the remote database isn't available, the local databases will not by in sync
+* Ограничения:
+  * Запросы к базе данных могут быть медленными даже на самом сервере, где работает приложение
+  * Когда удалённая база данных недоступна, локальные базы данных не будут синхронизированы
 
-* How to improve:<br>
+* Как улучшить:<br>
   <img src="images/design/remote_database_v2_1.png"/>
 </b></details>
 
-#### "Always the same one"
+#### «Всегда один и тот же»
 
 <details>
-<summary>Every request sent by the same client, is routed every time to a different web server. What problem the user might face with such design? How to fix it?
+<summary>Каждый запрос от одного и того же клиента каждый раз направляется на другой веб-сервер. С какой проблемой может столкнуться пользователь при такой архитектуре? Как это исправить?
 <p align="center">
 <img src="images/design/load_balancer/lb_sticky_sessions.png"/>
 </p>
 </summary><br><b>
 
-* The problem: the user might need to authenticate every single request, because different web servers handle its requests.
-* A possible solution: use sticky sessions where the user is routed to the same instance every single time
+* Проблема: пользователю, возможно, придётся проходить аутентификацию при каждом запросе, так как его запросы обрабатывают разные веб-серверы.
+* Возможное решение: использовать sticky sessions, при которых пользователь каждый раз направляется на один и тот же экземпляр
 
 <img src="images/design/load_balancer/lb_sticky_sessions_fix.png"/>
 </b></details>
 
-#### "Coming back to find we've failed"
+#### «Возвращаемся и видим, что потерпели неудачу»
 
 <details>
-<summary>You have a design of load balancer and a couple of web instances behind it. Sometimes the instances crash and the user report the application doesn't works for them. Name one possible way to deal with such situation.</summary><br><b>
+<summary>Есть архитектура с балансировщиком нагрузки и несколькими веб-экземплярами за ним. Иногда экземпляры падают, и пользователи сообщают, что приложение у них не работает. Назовите один возможный способ справиться с такой ситуацией.</summary><br><b>
 
-One possible way to deal with it, is by using health checks. Where an instance that doesn't pass the health check, will be excluded from the list of instances used by the load balancer to forward traffic to.
+Один из возможных способов — использовать проверки работоспособности (health checks). Экземпляр, не прошедший проверку, исключается из списка экземпляров, на которые балансировщик нагрузки перенаправляет трафик.
 <img src="images/design/load_balancer/load_balancer_health_checks.png"/>
 </b></details>
 
-#### "In any major city, minding your own business is a science"
+#### «В любом большом городе не лезть в чужие дела — это целая наука»
 
 <details>
-<summary>You have a production application using a database for reads and writes. Your organization would like to add another application to work against the same database but for analytics purposes (read only). What problem might arise from this new situation and what one improvement you can apply to the design?
+<summary>Есть рабочее (production) приложение, использующее базу данных для чтения и записи. Организация хочет добавить ещё одно приложение, работающее с той же базой данных, но для аналитики (только чтение). Какая проблема может возникнуть в этой новой ситуации и какое одно улучшение можно внести в архитектуру?
 <p align="center">
 <img src="images/design/db/analytics_application_database.png"/>
 </p>
 </summary><br><b>
 
-Adding another application to work against the same database can create additional load on your database which may lead to issues since the additional load might reach the limits of your database capacity constraints.
+Добавление ещё одного приложения, работающего с той же базой данных, может создать на неё дополнительную нагрузку, что может привести к проблемам, так как дополнительная нагрузка может достичь пределов ёмкости базы данных.
 
-One improvement to the design could be to add a read replica instance of your database. This way the new application can work against the read replica instead of the original database. The replication will be asynchronous but in most cases, for analytics applications, that's good enough.
+Одним из улучшений архитектуры может быть добавление экземпляра реплики для чтения (read replica) базы данных. Тогда новое приложение сможет работать с репликой для чтения, а не с исходной базой данных. Репликация будет асинхронной, но в большинстве случаев для аналитических приложений этого достаточно.
 
 <img src="images/design/db/analytics_application_database_improvement.png"/>
 </b></details>
 
-## Questions
+## Вопросы
 
-This is a more "simplified" version of exercises section. No drawings, no evolving exercises, no strange exercises names, just straightforward questions, each in its own category.
+Это более «упрощённая» версия раздела упражнений. Никаких схем, никаких развивающихся упражнений, никаких странных названий — просто прямые вопросы, каждый в своей категории.
 
 <details>
-<summary>Your website usually serves on average a dozen of users and has good CPU and RAM utilization. It suddenly becomes very popular and many users try to access your web server but they are experiencing issues, and CPU, RAM utilization seems to be on 100%. How would you describe the issue?</summary><br><b>
+<summary>Веб-сайт обычно обслуживает в среднем десяток пользователей, и загрузка процессора и оперативной памяти в норме. Внезапно он становится очень популярным, и многие пользователи пытаются обратиться к веб-серверу, но сталкиваются с проблемами, а загрузка процессора и оперативной памяти, похоже, достигает 100%. Как описать эту проблему?</summary><br><b>
 
-Scalability issue. The web server doesn't scales :'(<br>
-In order to avoid such issues, the web server has to scale based on the usage. More users -> More CPU, RAM utilization -> Add more resources (= scale up). An
-When there are less users accessing the website, scale down.
+Проблема масштабируемости. Веб-сервер не масштабируется :'(<br>
+Чтобы избежать таких проблем, веб-сервер должен масштабироваться в зависимости от использования. Больше пользователей -> выше загрузка процессора и оперативной памяти -> добавить ресурсы (= масштабирование вверх). An
+Когда пользователей, обращающихся к сайту, становится меньше, — масштабирование вниз.
 </b></details>
 
 
 
 
-### Cache
+### Кэш
 
 <details>
-<summary>Tell me everything you know about Cache</summary><br><b>
+<summary>Расскажите всё, что знаете о кэше</summary><br><b>
 </b></details>
 
 <details>
-<summary>True or False? While caching can reduce load time, it's increasing the load on the server</summary><br><b>
+<summary>Правда или ложь? Хотя кэширование может сократить время загрузки, оно увеличивает нагрузку на сервер</summary><br><b>
 
-False. If your server doesn't have to execute the request since the result is already in the cache, then it's actually the opposite - there is less load on the server in addition to reduced load times.
+Ложь. Если серверу не нужно выполнять запрос, так как результат уже есть в кэше, то на самом деле всё наоборот: нагрузка на сервер меньше, а время загрузки к тому же сокращается.
 </b></details>
 
 
 ### DNS
 
 <details>
-<summary>What is a DNS?</summary><br><b>
+<summary>Что такое DNS?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Can you use DNS for load balancing?</summary><br><b>
+<summary>Можно ли использовать DNS для балансировки нагрузки?</summary><br><b>
 </b></details>
 
-### Storage
+### Хранилище
 
 <details>
-<summary>What is RAID?</summary><br><b>
+<summary>Что такое RAID?</summary><br><b>
 </b></details>
 
 ### DNS
 
 <details>
-<summary>What is CDN?</summary><br><b>
+<summary>Что такое CDN?</summary><br><b>
 </b></details>
 
-### Misc
+### Разное
 
 <details>
-<summary>How operating systems able to run tasks simultaneously? for example, open a web browser while starting a game</summary><br><b>
+<summary>Как операционные системы могут выполнять задачи одновременно? Например, открыть веб-браузер во время запуска игры</summary><br><b>
 
-The CPU have multiple cores. Each task is executed by a different core.<br>
-Also, it might only appear to run simultaneously. If every process is getting CPU allocation every nanosecond, the user might think that both processes are running simultaneously.
-</b></details>
-
-<details>
-<summary>What is a VPS?</summary><br><b>
-
-[From wikipedia](https://en.wikipedia.org/wiki/Virtual_private_server): "A virtual private server (VPS) is a virtual machine sold as a service by an Internet hosting service."
+У процессора несколько ядер. Каждая задача выполняется отдельным ядром.<br>
+Кроме того, может лишь казаться, что задачи выполняются одновременно. Если каждый процесс получает процессорное время каждую наносекунду, пользователь может подумать, что оба процесса работают одновременно.
 </b></details>
 
 <details>
-<summary>True or False? VPS is basically a shared server where each user is allocated with a portion of the server OS</summary><br><b>
+<summary>Что такое VPS?</summary><br><b>
 
-False. You get a private VM that no one else can or should use.
-</b></details>
-
-### Distributed Systems
-
-<details>
-<summary>What are some of the challenges one has to face when designing and managing distributed systems, but not so much when dealing with systems/services running on a single host?</summary><br><b>
-
-See [Distributed Systems - Fallacies of distributed systems](#fallacies-of-distributed-systems)
+[Из Wikipedia](https://en.wikipedia.org/wiki/Virtual_private_server): «Виртуальный частный сервер (VPS) — это виртуальная машина, продаваемая как услуга провайдером интернет-хостинга.»
 </b></details>
 
 <details>
-<summary>What is a clock drift in regards to distributed systems?</summary><br><b>
+<summary>Правда или ложь? VPS — это, по сути, общий сервер, где каждому пользователю выделяется часть ОС сервера</summary><br><b>
 
-See [Distributed System - Clock Drift](#clock-drift)
+Ложь. Предоставляется частная ВМ, которую больше никто не может и не должен использовать.
 </b></details>
 
-## Resources
-
-There many great resources out there to learn about system design in different ways - videos, blogs, etc. I've gathered some of them here for you
-
-### By Topic
+### Распределённые системы
 
 <details>
-  <summary>System Design Introduction</summary>
+<summary>С какими проблемами приходится сталкиваться при проектировании и управлении распределёнными системами, но в гораздо меньшей степени — при работе с системами/сервисами, работающими на одном хосте?</summary><br><b>
 
-#### Articles
+См. [Распределённые системы - заблуждения о распределённых системах](#fallacies-of-distributed-systems)
+</b></details>
+
+<details>
+<summary>Что такое дрейф часов (clock drift) применительно к распределённым системам?</summary><br><b>
+
+См. [Распределённые системы - дрейф часов](#clock-drift)
+</b></details>
+
+## Ресурсы
+
+Существует множество отличных ресурсов для изучения проектирования систем разными способами — видео, блоги и т.д. Некоторые из них собраны здесь
+
+### По темам
+
+<details>
+  <summary>Введение в проектирование систем</summary>
+
+#### Статьи
 * [Introduction To Systems Design - 2020](https://medium.com/swlh/introduction-to-systems-design-9bdab73fb8)
 </details>
 
 <details>
-  <summary>Scalability</summary>
+  <summary>Масштабируемость</summary>
 
-#### Videos
+#### Видео
 * [Harvard Scalability Lecture - 2012](https://www.youtube.com/watch?v=-W9F__D3oY4&ab_channel=JorgeScott)
 
-#### Repositories
-* [awesome-scalability](https://github.com/binhnguyennus/awesome-scalability) - "An updated and organized reading list for illustrating the patterns of scalable, reliable, and performant large-scale systems"
+#### Репозитории
+* [awesome-scalability](https://github.com/binhnguyennus/awesome-scalability) - «Актуальный и упорядоченный список литературы, иллюстрирующий шаблоны масштабируемых, надёжных и производительных крупномасштабных систем»
 </details>
 
-### By Resources Type
+### По типу ресурсов
 
 <details>
-  <summary>Videos</summary>
+  <summary>Видео</summary>
 
-#### System Design
-* [Gaurav Sen](https://www.youtube.com/watch?v=xpDnVSmNFX0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX) - Excellent series of videos on system design topics
-* [System Design Interview](https://www.youtube.com/channel/UC9vLsnF6QPYuH51njmIooCQ) - How to get through system design interviews. Covering both architecture and code
-#### Scalability
+#### Проектирование систем
+* [Gaurav Sen](https://www.youtube.com/watch?v=xpDnVSmNFX0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX) - отличная серия видео по темам проектирования систем
+* [System Design Interview](https://www.youtube.com/channel/UC9vLsnF6QPYuH51njmIooCQ) - как пройти собеседование по проектированию систем. Охватывает и архитектуру, и код
+#### Масштабируемость
 * [Harvard Scalability Lecture - 2012](https://www.youtube.com/watch?v=-W9F__D3oY4&ab_channel=JorgeScott)
 </details>
 
 <details>
-  <summary>Repositories</summary>
+  <summary>Репозитории</summary>
 
-#### Scalability
-* [awesome-scalability](https://github.com/binhnguyennus/awesome-scalability) - "An updated and organized reading list for illustrating the patterns of scalable, reliable, and performant large-scale systems"
-#### System Design
-* [system-design-primer](https://github.com/donnemartin/system-design-primer) - "Learn how to design large-scale systems. Prep for the system design interview."
+#### Масштабируемость
+* [awesome-scalability](https://github.com/binhnguyennus/awesome-scalability) - «Актуальный и упорядоченный список литературы, иллюстрирующий шаблоны масштабируемых, надёжных и производительных крупномасштабных систем»
+#### Проектирование систем
+* [system-design-primer](https://github.com/donnemartin/system-design-primer) - «Узнайте, как проектировать крупномасштабные системы. Подготовьтесь к собеседованию по проектированию систем.»
 </details>
 
 <details>
-  <summary>Books</summary>
+  <summary>Книги</summary>
 </details>
 
 <details>
-  <summary>Articles</summary>
+  <summary>Статьи</summary>
 
-#### Introduction
+#### Введение
 * [Introduction To Systems Design - 2020](https://medium.com/swlh/introduction-to-systems-design-9bdab73fb8)
 </details>
 
-## System Designs
+## Примеры проектирования систем
 
 <a id="system-design-development"></a>
-### Development
+### Разработка
 
-This section focusing on the development aspect of system design (e.g. Version Control, Development Environment, etc.).
-Note: it might overlap with other sections such 'Cloud System Design'.
+Этот раздел посвящён аспекту разработки в проектировании систем (например, системы контроля версий, среда разработки и т.д.).
+Примечание: он может пересекаться с другими разделами, например «Проектирование облачных систем».
 
-For each scenario try to identify the following:
+Для каждого сценария попробуйте определить следующее:
 
-  * Problem Statement & Analysis
-  * Solution(s)
+  * Постановка задачи и анализ
+  * Решение (решения)
 
-#### Big-Scale Monorepo
+#### Крупный монорепозиторий
 
-You are part of a team which owns a Git monorepo. Recently this monorepo grown quite a lot and now includes hundred thousands of files. Recently, developers in your team complain it takes a lot of time to run some Git commands, especially those related to filesystem state (e.g. `git status` takes a couple of seconds or even minutes). What would you suggest the team to do?
+Вы входите в команду, которая владеет монорепозиторием Git. Недавно этот монорепозиторий сильно разросся и теперь содержит сотни тысяч файлов. В последнее время разработчики команды жалуются, что выполнение некоторых команд Git занимает много времени, особенно тех, что связаны с состоянием файловой системы (например, `git status` выполняется несколько секунд или даже минут). Что можно предложить команде?
 
-##### Big-Scale Monorepo - Problem Statement & Analysis
+##### Крупный монорепозиторий - постановка задачи и анализ
 
-Let's start with stating the facts:
-  * The repo has grown to include million of files
-  * It takes seconds or minutes to run Git operations while usually it takes approximately 1-2 seconds at most
+Начнём с изложения фактов:
+  * Репозиторий разросся до миллиона файлов
+  * Операции Git выполняются секунды или минуты, хотя обычно они занимают максимум около 1-2 секунд
 
-Next, it would be good to understand how exactly these different commands work in order to understand what we can do about the problem.
-In case of `git status`, it runs diffs on HEAD and the index and also the index and `working directory`, to understand what is being tracked and what's not. This results in running lstat() system call which returns a struct on each file (including information like device ID, permissions, inode number, timestamp info, etc.). Running this on hundred thousands of files takes time, which explains why `git status` takes seconds, if not minutes, to run.
+Далее полезно понять, как именно работают эти команды, чтобы понять, что можно сделать с проблемой.
+В случае `git status` выполняется сравнение (diff) HEAD с индексом, а также индекса с `working directory`, чтобы понять, что отслеживается, а что нет. Это приводит к вызову системного вызова lstat(), который возвращает структуру для каждого файла (включая такую информацию, как ID устройства, права доступа, номер inode, временные метки и т.д.). Выполнение этого для сотен тысяч файлов занимает время, что и объясняет, почему `git status` выполняется секунды, если не минуты.
 
-##### Big-Scale Monorepo - Solution(s)
+##### Крупный монорепозиторий - решение (решения)
 
-The solution should be focusing on how Git can perform less work in regards to its operations. In this case it's very technology specific, but there is always something to learn, even in specific implementations, on the general design approach.
+Решение должно быть сосредоточено на том, как Git может выполнять меньше работы в своих операциях. В данном случае это очень специфично для технологии, но даже из конкретных реализаций всегда можно что-то извлечь для общего подхода к проектированию.
 
-1. Use the built-in `fsmonitor` (filesystem monitor) of Git. With fsmonitor (which integrated with Watchman), Git spawn a daemon that will watch for any changes continuously in the working directory of your repository and will cache them . This way, when you run `git status` instead of scanning the working directory, you are using a cached state of your index.
+1. Использовать встроенный в Git `fsmonitor` (монитор файловой системы). С fsmonitor (который интегрирован с Watchman) Git запускает демон, который непрерывно отслеживает любые изменения в рабочем каталоге репозитория и кэширует их. Так при запуске `git status` вместо сканирования рабочего каталога используется кэшированное состояние индекса.
 
 <p align="center">
 <img src="images/design/development/git_fsmonitor.png"/>
 </p>
 
-2. Enable `feature.manyFile` with `git config feature.manyFiles true`. This does two things:
+2. Включить `feature.manyFile` с помощью `git config feature.manyFiles true`. Это делает две вещи:
 
-  1. Sets `index.version = 4` which enables path-prefix compression in the index
-  2. Sets `core.untrackedCache=true` which by default is set to `keep`. The untracked cache is quite important concept. What it does is to record the mtime of all the files and directories in the working directory. This way, when time comes to iterate over all the files and directories, it can skip those whom mtime wasn't updated.
+  1. Устанавливает `index.version = 4`, что включает сжатие префиксов путей в индексе
+  2. Устанавливает `core.untrackedCache=true`, который по умолчанию имеет значение `keep`. Кэш неотслеживаемых файлов (untracked cache) — довольно важное понятие. Он записывает mtime всех файлов и каталогов в рабочем каталоге. Так, когда приходит время перебрать все файлы и каталоги, можно пропустить те, у которых mtime не обновлялся.
 
-Before enabling it, you might want to run `git update-index --test-untracked-cache` to test it out and make sure mtime operational on your system.
+Перед включением можно выполнить `git update-index --test-untracked-cache`, чтобы проверить его и убедиться, что mtime в системе работает.
 
-3. Git also has the built-in `git-maintainence` command which optimizes Git repository so it's faster to run commands like `git add` or `git fatch` and also, the git repository takes less disk space. It's recommended to run this command periodically (e.g. each day).
+3. В Git также есть встроенная команда `git-maintainence`, которая оптимизирует репозиторий Git, чтобы такие команды, как `git add` или `git fatch`, выполнялись быстрее, а репозиторий занимал меньше места на диске. Эту команду рекомендуется запускать периодически (например, каждый день).
 
-4. Track only what is used/modified by developers - some repositories may include generated files that are required for the project to run properly (or support certain accessibility options), but not actually being modified by any way by the developers. In that case, tracking them is futile.
-In order to avoid populating those file in the working directory, one can use the `sparse checkout` feature of Git.
+4. Отслеживать только то, что используют/изменяют разработчики: некоторые репозитории могут содержать сгенерированные файлы, которые нужны для правильной работы проекта (или для поддержки определённых возможностей доступности), но на самом деле никак не изменяются разработчиками. В этом случае отслеживать их бессмысленно.
+Чтобы не заполнять этими файлами рабочий каталог, можно использовать функцию Git `sparse checkout`.
 
-5. Finally, with certain build systems, you can know which files are being used/relevant exactly based on the component of the project that the developer is focusing on. This, together with the `sparse checkout` can lead to a situation where only a small subset of the files are being populated in the working directory. Making commands like `git add`, `git status`, etc. really quick
+5. Наконец, с некоторыми системами сборки можно точно знать, какие файлы используются/актуальны, исходя из компонента проекта, над которым работает разработчик. Это вместе с `sparse checkout` может привести к ситуации, когда в рабочем каталоге оказывается лишь небольшое подмножество файлов. Благодаря этому такие команды, как `git add`, `git status` и т.д., выполняются действительно быстро
 
 <a id="system-design-generic-systems"></a>
-### Generic Systems
+### Типовые системы
 
-This section covers system designs of different types of applications. Nothing too specific, but yet quite common in the real world as a type of application.
+В этом разделе рассматривается проектирование различных типов приложений. Ничего слишком специфичного, но такие типы приложений довольно распространены в реальном мире.
 
-For each type of application we are going to mention its:
+Для каждого типа приложения будут указаны:
 
-  * Requirements
-  * API endpoints (public and internal)
+  * Требования
+  * API endpoints (публичные и внутренние)
 
-#### Payment and Reservation System for Parking Garages
+#### Система оплаты и бронирования для парковочных гаражей
 
-Design a payment and reservation system for parking garages that supports three type of vehicles:
+Спроектируйте систему оплаты и бронирования для парковочных гаражей, которая поддерживает три типа транспортных средств:
 
-  * regular
-  * large
-  * compact
+  * обычные
+  * крупные
+  * компактные
 
-With flat rate based on vehicle type and time
+С фиксированным тарифом в зависимости от типа транспортного средства и времени
 
-Note: if you've been told to design this type of system without any other requirements, the rate and special parking, is something you should ask about.
+Примечание: если нужно спроектировать такую систему без каких-либо других требований, о тарифах и специальных парковочных местах стоит спросить.
 
-##### Payment and Reservation System for Parking Garages - Clarifications
+##### Система оплаты и бронирования для парковочных гаражей - уточнения
 
-Ask clarifying questions such as:
+Задайте уточняющие вопросы, например:
 
-  * Who are the users and how they are going to use the system?
-  * What inputs and outputs should the system support?
-  * How much data do we expect the system to handle?
-    * How many requests per second?
+  * Кто пользователи и как они будут пользоваться системой?
+  * Какие входные и выходные данные должна поддерживать система?
+  * Какой объём данных должна обрабатывать система?
+    * Сколько запросов в секунду?
 
-##### Payment and Reservation System for Parking Garages - Requirements
+##### Система оплаты и бронирования для парковочных гаражей - требования
 
-* User to be able to reserve a parking spot and receive a ticket
-* User can't reserve a parking spot reserved by someone else
-* System to support the following types of vehicles: regular, large and compact
-* System to support flat rate based on vehicle type and time the vehicle spent in the parking
+* Пользователь может забронировать парковочное место и получить билет
+* Пользователь не может забронировать место, уже забронированное кем-то другим
+* Система поддерживает следующие типы транспортных средств: обычные, крупные и компактные
+* Система поддерживает фиксированный тариф в зависимости от типа транспортного средства и времени, проведённого им на парковке
 
-##### Payment and Reservation System for Parking Garages - API (Public Endpoints)
+##### Система оплаты и бронирования для парковочных гаражей - API (публичные endpoints)
 
 * `/reserve`
-  * Parameters: garage_id, start_time, end_time
-  * Returns: (spot_id, reservation_id)
+  * Параметры: garage_id, start_time, end_time
+  * Возвращает: (spot_id, reservation_id)
 
 * `/cancel`
-  * Parameters: reservation_id
+  * Параметры: reservation_id
 
 * `/payment`
-  * Parameters: reservation_id
-  * Use existing API like Squre, PayPal, Stripe, etc.
+  * Параметры: reservation_id
+  * Использовать существующие API, например Squre, PayPal, Stripe и т.д.
 
-##### Payment and Reservation System for Parking Garages - API (Internal Endpoints)
+##### Система оплаты и бронирования для парковочных гаражей - API (внутренние endpoints)
 
-* `/calculate_payment` - calculate the payment for reserving a parking spot
-  * Parameters: reservation_id
+* `/calculate_payment` - рассчитать оплату за бронирование парковочного места
+  * Параметры: reservation_id
 
-* `/free_spots` - get free spots where the car can park (note: small car might be able to park in bigger car spot)
-  * Parameters: garage_id, vehicle_type, time
+* `/free_spots` - получить свободные места, где может припарковаться автомобиль (примечание: маленький автомобиль может припарковаться на месте для большого)
+  * Параметры: garage_id, vehicle_type, time
 
-* `/allocate_spot` - do the actual reservation of a parking spot
-  * Parameters: garage_id, vehicle_type, time
+* `/allocate_spot` - выполнить само бронирование парковочного места
+  * Параметры: garage_id, vehicle_type, time
 
-* `/create_account` - the ability to create an account so users can use the app and reserve parking spots
-  * Parameters: email, username, first_name (optional), last_name (optional), password (optional)
+* `/create_account` - возможность создать учётную запись, чтобы пользователи могли пользоваться приложением и бронировать парковочные места
+  * Параметры: email, username, first_name (необязательно), last_name (необязательно), password (необязательно)
 
 * `/login`
-  * Parameters: email, username (optional), password
+  * Параметры: email, username (необязательно), password
 
-##### Payment and Reservation System for Parking Garages - Scale
+##### Система оплаты и бронирования для парковочных гаражей - масштаб
 
-We can assume that the number of users is limited to the number of parking spots in each garage and taking into account the number of garages of course.<br>
-Given that, users scale is pretty predictable and can't reach unexpected count (assuming no new garages can be added or fixed rate of new garages being added)
+Можно предположить, что количество пользователей ограничено количеством парковочных мест в каждом гараже с учётом, конечно, количества гаражей.<br>
+С учётом этого масштаб пользователей вполне предсказуем и не может достичь неожиданных значений (при условии, что новые гаражи не добавляются или добавляются с постоянной скоростью)
 
-##### Payment and Reservation System for Parking Garages - Data Scheme
+##### Система оплаты и бронирования для парковочных гаражей - схема данных
 
-SQL based database with the following tables
+База данных на основе SQL со следующими таблицами
 
 Reservations
 
-| Field       | Type                |
+| Поле        | Тип                 |
 | ----------- | --------------------|
 | id          | primary key, serial |
 | start       | timestamp           |
@@ -790,7 +790,7 @@ Reservations
 
 Garages
 
-| Field        | Type                |
+| Поле         | Тип                 |
 | ------------ | --------------------|
 | id           | primary key, serial |
 | zipcode      | varchar             |
@@ -801,7 +801,7 @@ Garages
 
 Spots
 
-| Field        | Type                |
+| Поле         | Тип                 |
 | ------------ | --------------------|
 | id           | primary key, serial |
 | garage_id    | foreign_key, int    |
@@ -810,7 +810,7 @@ Spots
 
 Users
 
-| Field        | Type                |
+| Поле         | Тип                 |
 | ------------ | --------------------|
 | id           | primary key, serial |
 | email        | varchar (SHA-256)   |
@@ -819,155 +819,155 @@ Users
 
 Vehicles
 
-| Field        | Type                |
+| Поле         | Тип                 |
 | ------------ | --------------------|
 | id           | primary key, serial |
 | license      | varchar             |
 | type         | enum                |
 
-##### Payment and Reservation System for Parking Garages - High-level architecture
+##### Система оплаты и бронирования для парковочных гаражей - высокоуровневая архитектура
 
 <p align="center">
 <img src="images/design/apps/garage_payment_and_reservation/high_level_architecture.png"/>
 </p>
 
 <a id="system-design-real-world-systems"></a>
-### Real-World Systems
+### Реальные системы
 
-This section covers system designs of real world applications.
+В этом разделе рассматривается проектирование реальных приложений.
 
-Each section here will include full details on the system. It's recommended, as part of your learning process, that you will NOT look at these full details and start by trying figuring them out by yourself. More specifically, for every system:
+Каждый подраздел здесь содержит полное описание системы. В процессе обучения рекомендуется НЕ смотреть на это полное описание, а начать с попытки разобраться самостоятельно. Точнее, для каждой системы:
 
-  * Create a list of its functional requirements, features
-  * Create a list of its non functional requirements
-  * Design API spec
-  * Perform high-level design
-  * Perform detailed design
+  * Составить список её функциональных требований и возможностей
+  * Составить список её нефункциональных требований
+  * Спроектировать спецификацию API
+  * Выполнить высокоуровневое проектирование
+  * Выполнить детальное проектирование
 
 #### WhatsApp
 
-##### Features / Functional Requirements
+##### Возможности / функциональные требования
 
-  * Messaging with individuals and groups (send and receive)
-  * Sharing documents, images, videos
-  * User status - online, last seen, etc.
-  * Message status - delivered, read (and who read it)
-  * Encryption - encrypt end-to-end communication
+  * Обмен сообщениями с отдельными людьми и группами (отправка и получение)
+  * Обмен документами, изображениями, видео
+  * Статус пользователя: в сети, был в сети и т.д.
+  * Статус сообщения: доставлено, прочитано (и кем прочитано)
+  * Шифрование: сквозное (end-to-end) шифрование общения
 
-##### Non Functional Requirements
+##### Нефункциональные требования
 
-  * Scale
-  * Minimal Latency
-  * High Availability
-  * Consistency
-  * Durability
+  * Масштаб
+  * Минимальная задержка
+  * Высокая доступность
+  * Согласованность
+  * Долговечность
 
-##### API Spec
+##### Спецификация API
 
-Messaging:
+Обмен сообщениями:
 
-  * Direct Chat Session
-    * Input: API key, user ID, user ID (recipient)
-  * Send Message
-    * Input: API key, session ID, message type, message
+  * Сессия личного чата
+    * Вход: API key, ID пользователя, ID пользователя (получателя)
+  * Отправка сообщения
+    * Вход: API key, ID сессии, тип сообщения, сообщение
 
-User account:
+Учётная запись пользователя:
 
-  * Register account
-    * Input: API key, user data
-  * Validate account
-    * Input: API key, user ID, validation code
+  * Регистрация учётной записи
+    * Вход: API key, данные пользователя
+  * Подтверждение учётной записи
+    * Вход: API key, ID пользователя, код подтверждения
 
-##### System Design Overview
+##### Обзор архитектуры системы
 
 TODO
 
-##### System Design Components
+##### Компоненты архитектуры системы
 
 TODO
 
 #### Amazon Video Prime
 
-##### Features / Functional Requirements
+##### Возможности / функциональные требования
 
-* Accounts
-  * Users have their account (they able to login or logout from it)
-* Uploading videos
-  * Support uploading videos (and video thumbnail) by content creators/producers
-  * Only certain accounts can upload videos not everyone
-  * Set limit for uploads
-    * Video length (e.g. 5 hours)
-    * Size per hour of video (if 5 hours and 1GB per hour = 5GB)
-    * Thumbnail size (e.g. 50 MB)
-* Streaming videos
-  * Users able to stream videos to different devices
-    * UI differ based on devices
-  * Buffering (over quality) (**Note**: A trade off)
-    * Store different quality versions of the same video
-* Browsing videos
-  * Be able to tag videos (genre, date, ...)
-  * Allow users to search for videos (based on name, tag, ...)
+* Учётные записи
+  * У пользователей есть учётная запись (они могут входить в неё и выходить из неё)
+* Загрузка видео
+  * Поддержка загрузки видео (и миниатюр видео) создателями/продюсерами контента
+  * Загружать видео могут только определённые учётные записи, а не все
+  * Ограничения на загрузку
+    * Длительность видео (например, 5 часов)
+    * Размер на час видео (если 5 часов и 1 ГБ на час = 5 ГБ)
+    * Размер миниатюры (например, 50 МБ)
+* Потоковое воспроизведение видео
+  * Пользователи могут смотреть видео в потоковом режиме на разных устройствах
+    * Интерфейс различается в зависимости от устройства
+  * Буферизация (в ущерб качеству) (**Примечание**: это компромисс)
+    * Хранить версии одного и того же видео в разном качестве
+* Просмотр каталога видео
+  * Возможность помечать видео тегами (жанр, дата, ...)
+  * Возможность для пользователей искать видео (по названию, тегу, ...)
 
-##### Non Functional Requirements
+##### Нефункциональные требования
 
-  * Reliability (Reliable video storage for storing uploaded videos and streaming them when needed)
-  * Scalability (be able to onboard users without hitting performance issues)
-  * High Availability (if one of the components fail, the system would still be usable)
+  * Надёжность (надёжное хранилище для хранения загруженных видео и их потоковой передачи по требованию)
+  * Масштабируемость (возможность подключать новых пользователей без проблем с производительностью)
+  * Высокая доступность (если один из компонентов откажет, системой всё равно можно будет пользоваться)
 
-## System Design Process
+## Процесс проектирования системы
 
-How to perform system design?
-TODO(abregman): this section is not yet ready
+Как выполнять проектирование системы?
+TODO(abregman): этот раздел ещё не готов
 
-1. Define clearly the requirements - if requirements are not clear, make sure to clarify them
-2. Answer the question what is the projected traffic?
-3. Define which quality attributes are important for your system - scalability, efficiency, reliability, etc.
+1. Чётко определить требования: если требования неясны, обязательно уточнить их
+2. Ответить на вопрос, каков прогнозируемый трафик?
+3. Определить, какие атрибуты качества важны для системы: масштабируемость, эффективность, надёжность и т.д.
 4. TODO
 
-## System Design Interview Tips
+## Советы для собеседования по проектированию систем
 
-If you are here because you have a system design interview, here are a couple of suggestions:
+Если вы здесь, потому что предстоит собеседование по проектированию систем, вот пара советов:
 
-* Choose the simplest architecture that captures the requirements (functional requirements but also expected traffic for example) of the system. No need to complicate things :)
+* Выбирать самую простую архитектуру, которая удовлетворяет требованиям к системе (функциональным требованиям, а также, например, ожидаемому трафику). Не нужно всё усложнять :)
 
-More specific suggestions based on the phase of the interview:
+Более конкретные советы в зависимости от этапа собеседования:
 
-### What to ask yourself when you see a system design
+### Что спросить у себя, увидев задачу на проектирование системы
 
-Note: You might want to ask yourself these questions also after you've done performing a system design
+Примечание: эти вопросы стоит задать себе и после того, как проектирование системы выполнено
 
-* Does it scale if I add more users?
-* Is there a single point of failure in the design?
-* Don't be shy about asking for clarifications on a given system design. Some system design are vague on purpose
+* Масштабируется ли система, если добавить больше пользователей?
+* Есть ли в архитектуре единая точка отказа?
+* Не стесняться просить уточнений по заданной задаче проектирования. Некоторые задачи на проектирование систем намеренно сформулированы расплывчато
 
-### What to ask the interviewer
+### Что спросить у интервьюера
 
-* What are the requirements?
-  * How the system is used?
-  * How much users are expected to access the system?
-  * How often the users access the system?
-  * Where the users access the system from?
-* Are there any constraints?
-* Ask for clarifications if needed. Sometimes instructions or requirements are vague on purpose.
+* Каковы требования?
+  * Как используется система?
+  * Сколько пользователей, как ожидается, будут обращаться к системе?
+  * Как часто пользователи обращаются к системе?
+  * Откуда пользователи обращаются к системе?
+* Есть ли какие-либо ограничения?
+* При необходимости просить уточнений. Иногда инструкции или требования намеренно расплывчаты.
 
-#### What to say at the beginning of the discussion on a system design
+#### Что сказать в начале обсуждения проектирования системы
 
-* List the required features of the system
-* State problem you expect to encounter
-* State the traffic you expect the system to handle
+* Перечислить необходимые возможности системы
+* Назвать проблемы, с которыми ожидается столкнуться
+* Назвать трафик, который, как ожидается, должна обрабатывать система
 
-### What you might want to state during the design or the discussion
+### Что стоит озвучивать во время проектирования или обсуждения
 
-* At each decision made about the system design, state what are the cons and pros of such decision
+* При каждом решении, принятом в ходе проектирования системы, называть минусы и плюсы такого решения
 
-## Credits
+## Благодарности
 
-The project banner, the icons used in "General" exercises section and the system design index, designed by Arie Bregman
+Баннер проекта, иконки, используемые в разделе упражнений «Общие», и указатель тем по проектированию систем созданы Arie Bregman
 
-## Contributions
+## Участие
 
-If you would like to contribute to the project, please read the [contribution guidelines](CONTRIBUTING.md)
+Если хотите внести вклад в проект, прочитайте [руководство для участников](CONTRIBUTING.md)
 
-## License
+## Лицензия
 
 [![License: CC BY-NC-ND 3.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%203.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/3.0/)

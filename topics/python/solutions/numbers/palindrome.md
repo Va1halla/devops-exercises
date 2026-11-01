@@ -1,8 +1,8 @@
-## Palindrome
+## Палиндром
 
-1. Write code that determines if a number is a Palindrome
+1. Написать код, который определяет, является ли число палиндромом
 
-## Solution
+## Решение
 
 1.
 
@@ -17,7 +17,7 @@ def isNumberPalindrome(number: Union[int, str]) -> bool:
 print(isNumberPalindrome("12321"))
 ```
 
-- Using Python3.10 that accepts using bitwise operator '|'.
+- С использованием Python3.10, который допускает использование побитового оператора '|'.
 
 ```
 def isNumberPalindrome(number: int | str) -> bool:
@@ -28,4 +28,4 @@ def isNumberPalindrome(number: int | str) -> bool:
 print(isNumberPalindrome("12321"))
 ```
 
-Note: Using slicing to reverse a list could be slower than other options like `reversed` that return an iterator.
+Примечание: разворот списка с помощью среза может быть медленнее, чем другие варианты, например `reversed`, который возвращает итератор.

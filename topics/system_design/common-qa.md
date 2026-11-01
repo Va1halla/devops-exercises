@@ -1,19 +1,19 @@
-# Q&A
+# Вопросы и ответы
 
-Q: Can I add exercises and resources?<br>
-A: Yes, you can! :D
+В: Можно ли добавлять упражнения и ресурсы?<br>
+О: Да, можно! :D
 
-Q: Why the exercises have strange names?<br>
-A: Well, that isn't nice of you :'( Anyway, I was just trying to amuse myself while creating this project so I've decided to find some quotes from movies that match the exercises somehow.
+В: Почему у упражнений такие странные названия?<br>
+О: Ну, это было не очень вежливо :'( В любом случае, я просто пытался развлечь себя во время создания этого проекта, поэтому решил подобрать цитаты из фильмов, которые как-то соответствуют упражнениям.
 
-Q: How should I learn using this repository?
-A: Good question. I would start with the theory. Understand what the different terms/topics mean, which issues they were invented to solve. Once you feel you got enough theory or you can't or don't want to learn more theory, jump to the exercises and questions sections. You managed to solve the exercises and answer the questions by yourself? great, time to do some actual system design of real systems out there.
+В: Как учиться с помощью этого репозитория?
+О: Хороший вопрос. Я бы начал с теории. Понять, что означают различные термины/темы и для решения каких проблем они были придуманы. Когда почувствуете, что теории достаточно, или не можете либо не хотите изучать теорию дальше, переходите к разделам с упражнениями и вопросами. Удалось самостоятельно решить упражнения и ответить на вопросы? Отлично, пора заняться настоящим проектированием реальных систем.
 
-Q: Why System Design is important?
-A: Try using a badly designed system
+В: Почему проектирование систем (System Design) важно?
+О: Попробуйте попользоваться плохо спроектированной системой
 
-Q: Why to create another system design repository when there are so many great repositories out there on this topic?
-A: I guess for the same reason there is more than one book/game/movie/... on the same topic. It's fun to try to approach something from a different angle. I guess I also have something for creating educational repositories...
+В: Зачем создавать ещё один репозиторий по проектированию систем, если на эту тему уже есть так много отличных репозиториев?
+О: Думаю, по той же причине, по которой на одну тему существует больше одной книги/игры/фильма/... Интересно попробовать подойти к чему-то с другой стороны. Похоже, у меня ещё и слабость к созданию обучающих репозиториев...
 
-Q: Should I use this repository for preparing to interviews?
-A: I honestly don't know. It wasn't created for this reason but it may develop to the point where it's useful for that. It does contains information on interviews, but once someone will use it for preparing for interviews and will provide me with some feedback, then I could provide more definitive answer on this one.
+В: Стоит ли использовать этот репозиторий для подготовки к собеседованиям?
+О: Честно говоря, не знаю. Он создавался не для этого, но может развиться до такой степени, что станет полезен и для этого. В нём есть информация о собеседованиях, но когда кто-нибудь воспользуется им для подготовки к собеседованиям и даст мне обратную связь, я смогу дать более определённый ответ на этот вопрос.

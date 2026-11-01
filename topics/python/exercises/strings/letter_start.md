@@ -1,3 +1,3 @@
-## Start with a Letter
+## Начинается с буквы
 
-1. How to check if a string starts with a letter?
+1. Как проверить, начинается ли строка с буквы?

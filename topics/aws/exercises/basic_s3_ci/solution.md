@@ -1,54 +1,54 @@
-# Basic CI with S3
+# Простой CI с S3
 
-## Objectives
+## Цели
 
-1. Create a new S3 bucket
-2. Add to the bucket index.html file and make it a static website
-3. Create a GitHub repo and put the index.html there
-4. Make sure to connect your AWS account to GitHub
-5. Create a CI pipeline in AWS to publish the updated index.html from GitHub every time someone makes a change to the repo, to a specific branch
+1. Создать новый бакет S3
+2. Добавить в бакет файл index.html и сделать его статическим сайтом
+3. Создать репозиторий на GitHub и положить туда index.html
+4. Подключить свой аккаунт AWS к GitHub
+5. Создать в AWS CI-пайплайн, который публикует обновлённый index.html из GitHub каждый раз, когда кто-то вносит изменения в определённую ветку репозитория
 
-## Solution
+## Решение
 
-### Manual
+### Вручную
 
-#### Create S3 bucket
+#### Создание бакета S3
 
-1. Go to S3 service in AWS console
-2. Insert bucket name and choose region
-3. Uncheck "block public access" to make it public
-4. Click on "Create bucket"
+1. Перейти в сервис S3 в консоли AWS
+2. Ввести имя бакета и выбрать регион
+3. Снять флажок "block public access", чтобы сделать бакет публичным
+4. Нажать "Create bucket"
 
-#### Static website hosting
+#### Хостинг статического сайта
 
-1. Navigate to the newly created bucket and click on "properties" tab
-2. Click on "Edit" in "Static Website Hosting" section
-3. Check "Enable" for "Static web hosting"
-4. Set "index.html" as index document and "error.html" as error document.
+1. Открыть только что созданный бакет и перейти на вкладку "properties"
+2. Нажать "Edit" в разделе "Static Website Hosting"
+3. Отметить "Enable" для "Static web hosting"
+4. Указать "index.html" как индексный документ и "error.html" как документ ошибки.
 
-#### S3 bucket permissions
+#### Права доступа к бакету S3
 
-1. Click on "Permissions" tab in the newly created S3 bucket
-2. Click on Bucket Policy -> Edit -> Policy Generator. Click on "Generate Policy" for "GetObject"
-3. Copy the generated policy and go to Permissions tab and replace it with the current policy 
+1. Открыть вкладку "Permissions" в созданном бакете S3
+2. Нажать Bucket Policy -> Edit -> Policy Generator. Нажать "Generate Policy" для "GetObject"
+3. Скопировать сгенерированную политику, перейти на вкладку Permissions и заменить ею текущую политику 
 
-#### GitHub Source
+#### Источник GitHub
 
-1. Go to Developers Tools Console and create a new connection (GitHub)
+1. Перейти в Developers Tools Console и создать новое подключение (GitHub)
 
-#### Create a CI pipeline
+#### Создание CI-пайплайна
 
-1. Go to CodePipeline in AWS console
-2. Click on "Create Pipeline" -> Insert a pipeline name -> Click on Next
-3. Choose the newly created source (GitHub) under sources
-4. Select repository name and branch name
-5. Select "AWS CodeBuild" as build provider
-6. Select "Managed Image", "standard" runtime and "new service role"
-7. In deploy stage choose the newly created S3 bucket and for deploy provider choose "Amazon S3"
-8. Review the pipeline and click on "Create pipeline"
+1. Перейти в CodePipeline в консоли AWS
+2. Нажать "Create Pipeline" -> ввести имя пайплайна -> нажать Next
+3. Выбрать только что созданный источник (GitHub) в sources
+4. Выбрать имя репозитория и ветки
+5. Выбрать "AWS CodeBuild" в качестве build provider
+6. Выбрать "Managed Image", среду выполнения "standard" и "new service role"
+7. На этапе deploy выбрать созданный бакет S3, а в качестве deploy provider — "Amazon S3"
+8. Проверить пайплайн и нажать "Create pipeline"
 
-#### Test the pipeline
+#### Проверка пайплайна
 
-1. Clone the project from GitHub
-2. Make changes to index.html and commit them (git commit -a)
-3. Push the new change, verify that the newly created AWS pipeline was triggered and check the content of the site
+1. Клонировать проект с GitHub
+2. Внести изменения в index.html и закоммитить их (git commit -a)
+3. Отправить (push) изменения, убедиться, что созданный пайплайн AWS запустился, и проверить содержимое сайта

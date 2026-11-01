@@ -1,11 +1,11 @@
-# Web App with DB
+# Веб-приложение с БД
 
-## Objectives
+## Цели
 
-Implement the following architecture:
+Реализовать следующую архитектуру:
 
 <TODO>
 
-## Solution
+## Решение
 
-Click [here](solution.md) to view the solution
+Нажмите [здесь](solution.md), чтобы посмотреть решение

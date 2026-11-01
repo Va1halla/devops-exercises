@@ -1,134 +1,127 @@
 ## Grafana
 
 <details>
-<summary>Explain what is Grafana</summary><br><b>
+<summary>Объясните, что такое Grafana</summary><br><b>
 
-[Grafana Docs](https://grafana.com/docs/grafana/latest/introduction): "Grafana is a complete observability stack that allows you to monitor and analyze metrics, logs and traces. It allows you to query, visualize, alert on and understand your data no matter where it is stored. Create, explore, and share beautiful dashboards with your team and foster a data driven culture."
+[Документация Grafana](https://grafana.com/docs/grafana/latest/introduction): «Grafana — это полноценный стек наблюдаемости, позволяющий мониторить и анализировать метрики, логи и трассировки. Он позволяет выполнять запросы, визуализировать, настраивать оповещения и понимать данные, где бы они ни хранились. Создавайте, исследуйте красивые дашборды и делитесь ими с командой, развивая культуру, основанную на данных.»
 </b></details>
 
 <details>
-<summary>What is Grafana Cloud?</summary><br><b>
+<summary>Что такое Grafana Cloud?</summary><br><b>
 
-[Grafana cloud](https://grafana.com/products/cloud/) is an edition of Grafana that is offered as a service through the cloud. The observabilty stack is set up, administered and maintained by Grafana Labs and offers both free and paid options. You can also send data from existing data sources e.g. Promethetus, Loki and visualise existing time series data.
+[Grafana cloud](https://grafana.com/products/cloud/) — это редакция Grafana, предлагаемая как сервис через облако. Стек наблюдаемости настраивается, администрируется и поддерживается Grafana Labs; доступны бесплатные и платные варианты. Также можно отправлять данные из существующих источников данных, например Promethetus, Loki, и визуализировать существующие данные временных рядов.
 </b></details>
 
 <details>
-<summary>What is Grafana Enterprise?</summary><br><b>
+<summary>Что такое Grafana Enterprise?</summary><br><b>
 
-[Grafana Enterprise](https://grafana.com/docs/grafana/latest/enterprise/#enterprise-plugins) is a commercial edition of Grafana offered with enterprise features such as _Enterprise datasource_ plugins and built-in collaboration features. The edition includes full-time support and training from the Grafana team.
+[Grafana Enterprise](https://grafana.com/docs/grafana/latest/enterprise/#enterprise-plugins) — это коммерческая редакция Grafana с корпоративными возможностями, такими как плагины _Enterprise datasource_ и встроенные функции совместной работы. Редакция включает постоянную поддержку и обучение от команды Grafana.
 </b></details>
  
 <details>
-<summary>What is the default HTTP port of Grafana?</summary><br><b>
+<summary>Какой HTTP-порт у Grafana по умолчанию?</summary><br><b>
 
-[Grafana getting started](https://grafana.com/docs/grafana/latest/getting-started/getting-started/): Grafana runs on port 3000 by default.
+[Grafana getting started](https://grafana.com/docs/grafana/latest/getting-started/getting-started/): по умолчанию Grafana работает на порту 3000.
 </b></details>
 
 <details>
-<summary>Explain how we can enforce HTTPS</summary><br><b>
+<summary>Объясните, как принудительно включить HTTPS</summary><br><b>
 
-[Grafana community](https://grafana.com/docs/grafana/latest/getting-started/getting-started/): Set the protocol to _https_ on the Configuration settings, Grafana will then expect clients to send requests using the HTTPS protocol. Any client that uses HTTP will receive an SSL/TLS error.
+[Сообщество Grafana](https://grafana.com/docs/grafana/latest/getting-started/getting-started/): установите протокол _https_ в настройках конфигурации, после чего Grafana будет ожидать, что клиенты отправляют запросы по протоколу HTTPS. Любой клиент, использующий HTTP, получит ошибку SSL/TLS.
 </b></details>
 
 <details>
-<summary>How can we install plugins for Grafana?</summary><br><b>
+<summary>Как установить плагины для Grafana?</summary><br><b>
 
-[Grafana getting started](https://grafana.com/docs/grafana/latest/plugins/installation/): Navigate to the [Grafana plugins page](https://grafana.com/grafana/plugins/), find the desired plugin and click on it, then click the installation tab. There are two ways to install depending on where your Grafana server is running:
-- Cloud: On the **For** field of the installation tab, select the name of the organization you want to install the plugin on (unless you are only part of one), then click **install plugin**. Grafana cloud will automatically install the plugin to your Grafana instance, 
-you may need to log out and back in to see the plugin.
-- Local grafana: You can use the Grafana CLI which lets you list available plugins and install them.
+[Grafana getting started](https://grafana.com/docs/grafana/latest/plugins/installation/): перейдите на [страницу плагинов Grafana](https://grafana.com/grafana/plugins/), найдите нужный плагин и нажмите на него, затем откройте вкладку installation. Есть два способа установки в зависимости от того, где работает сервер Grafana:
+- Cloud: в поле **For** на вкладке установки выберите имя организации, в которую нужно установить плагин (если вы не состоите только в одной), затем нажмите **install plugin**. Grafana cloud автоматически установит плагин в ваш инстанс Grafana, 
+возможно, потребуется выйти и снова войти, чтобы увидеть плагин.
+- Локальная grafana: можно использовать Grafana CLI, который позволяет выводить список доступных плагинов и устанавливать их.
 ```
 grafana-cli plugins list-remote
 grafana-cli plugins install <plugin-id>
 ```
-You can also install a packaged plugin by downloading the asset from the installation tab, then extract the archive into the plugin directory. The path to the plugin directory can be seen in the configuration file 
+Также можно установить упакованный плагин, скачав файл с вкладки установки и распаковав архив в каталог плагинов. Путь к каталогу плагинов указан в файле конфигурации 
  ```
  unzip my-plugin-0.2.0.zip -d YOUR_PLUGIN_DIR/my-plugin
  ```
 </b></details>
 
 <details>
-<summary>Explain what a 'Data source' is</summary><br><b>
+<summary>Объясните, что такое 'Data source'</summary><br><b>
 
-[Grafana Docs](https://grafana.com/docs/grafana/latest/datasources/): A data source is a storage backend that acts as a source of data for Grafana. Some popular data sources are Prometheus, InfluxDB, Loki, AWS cloudwatch.
+[Документация Grafana](https://grafana.com/docs/grafana/latest/datasources/): источник данных (data source) — это бэкенд хранения, который служит источником данных для Grafana. Популярные источники данных: Prometheus, InfluxDB, Loki, AWS cloudwatch.
 </b></details>
 
 <details>
-<summary>What is the "Default configuration"?</summary><br><b>
+<summary>Что такое "Default configuration"?</summary><br><b>
 
-[Grafana docs](https://grafana.com/docs/grafana/latest/administration/configuration/): The default configuration contains settings that Grafana use by default. The location depends on the OS environment, note that $WORKING_DIR refers to the working directory of Grafana.
+[Документация Grafana](https://grafana.com/docs/grafana/latest/administration/configuration/): конфигурация по умолчанию содержит настройки, которые Grafana использует по умолчанию. Расположение зависит от ОС; обратите внимание, что $WORKING_DIR обозначает рабочий каталог Grafana.
 - Windows: ```$WORKING_DIR/conf/defaults.ini```
 - Linux: ```/etc/grafana/grafana.ini```
 - macOS: ```/usr/local/etc/grafana/grafana.ini```
 </b></details>
  
 <details>
-<summary>Explain how we can add Custom configuration to Grafana</summary><br><b>
+<summary>Объясните, как добавить пользовательскую конфигурацию (Custom configuration) в Grafana</summary><br><b>
 
-[Grafana docs](https://grafana.com/docs/grafana/latest/administration/configuration/): 
-The custom configuration can be configured, either by modifying the custom configuration file or by adding environment variables that overrides default configuration. The configuration varies depending on the OS:
-- Windows: There is a file ```sample.ini``` in the same directory as the defaults.ini file, copy sample.ini and name it ```custom.ini```. Uncomment the settings you want to override.
-- Linux: Edit the configuration file at ```/etc/grafana/grafana.ini```
-- macOS: Add a configuration file named ```custom.ini``` in the conf folder, if you installed Grafana using Homebrew then you can manually edit the ```conf/defaults.ini```
-- Docker: You can override existing configuration in Grafana with environmental variables. An example is setting the Grafana instance name: ```E.g. export GF_DEFAULT_INSTANCE_NAME=my-instance```
+[Документация Grafana](https://grafana.com/docs/grafana/latest/administration/configuration/): 
+Пользовательскую конфигурацию можно задать, изменив файл пользовательской конфигурации либо добавив переменные окружения, которые переопределяют конфигурацию по умолчанию. Настройка зависит от ОС:
+- Windows: в том же каталоге, что и файл defaults.ini, есть файл ```sample.ini```; скопируйте sample.ini и назовите копию ```custom.ini```. Раскомментируйте настройки, которые нужно переопределить.
+- Linux: отредактируйте файл конфигурации ```/etc/grafana/grafana.ini```
+- macOS: добавьте файл конфигурации с именем ```custom.ini``` в папку conf; если Grafana установлена через Homebrew, можно вручную отредактировать ```conf/defaults.ini```
+- Docker: существующую конфигурацию Grafana можно переопределить переменными окружения. Пример — задание имени инстанса Grafana: ```E.g. export GF_DEFAULT_INSTANCE_NAME=my-instance```
 </b></details>
 
 <details>
-<summary>Which external authentication is supported out-of-the-box?</summary><br><b>
+<summary>Какая внешняя аутентификация поддерживается «из коробки»?</summary><br><b>
 
-[Grafana docs](https://grafana.com/docs/grafana/latest/auth/overview/): Grafana Auth is the built-in authentication system with password authentication enabled by default.
+[Документация Grafana](https://grafana.com/docs/grafana/latest/auth/overview/): Grafana Auth — это встроенная система аутентификации, в которой по умолчанию включена аутентификация по паролю.
 </b></details>
 
 <details>
-<summary>How can we import a dashboard to a Grafana instance?</summary><br><b>
+<summary>Как импортировать дашборд в инстанс Grafana?</summary><br><b>
 
-[Grafana getting started](https://grafana.com/docs/grafana/latest/dashboards/export-import/): Grafana dashboards can be imported through the Grafana UI. Click on the + icon in the sidebar and then click import. You can import a dashboard through the following options:
-- Uploading a dashboard JSON file, which is exported from the Grafana UI or fetched through the [HTTPS API](https://grafana.com/docs/grafana/latest/http_api/dashboard/#create-update-dashboard
+[Grafana getting started](https://grafana.com/docs/grafana/latest/dashboards/export-import/): дашборды Grafana можно импортировать через интерфейс Grafana. Нажмите на значок + на боковой панели, а затем import. Импортировать дашборд можно следующими способами:
+- Загрузить JSON-файл дашборда, экспортированный из интерфейса Grafana или полученный через [HTTPS API](https://grafana.com/docs/grafana/latest/http_api/dashboard/#create-update-dashboard
 )
-- Paste a Grafana dashboard URL which is found at [grafana Dashboards](https://grafana.com/grafana/dashboards/), or a dashboard unique id into the text area.
-- Paste raw Dashboard JSON text into the panel area.
-Click load afterwards.
+- Вставить в текстовое поле URL дашборда Grafana, который можно найти на [grafana Dashboards](https://grafana.com/grafana/dashboards/), или уникальный id дашборда.
+- Вставить «сырой» JSON дашборда в область панели.
+После этого нажмите load.
 </b></details>
 
 <details>
-<summary>What is the data format for the dashboard?</summary><br><b>
+<summary>В каком формате хранятся данные дашборда?</summary><br><b>
 
-[Grafana docs](https://grafana.com/docs/grafana/latest/dashboards/json-model/): Grafana dashboards are represented in JSON files as objects, they store metadata about a dashboard e.g. dashboard properties, panel metadata and variables.
+[Документация Grafana](https://grafana.com/docs/grafana/latest/dashboards/json-model/): дашборды Grafana представлены в JSON-файлах в виде объектов; они хранят метаданные дашборда, например свойства дашборда, метаданные панелей и переменные.
 
 </b></details>
 
 <details>
-<summary>Explain the steps to share your dashboard with your team</summary><br><b>
+<summary>Опишите шаги, чтобы поделиться дашбордом с командой</summary><br><b>
 
-[Grafana docs](https://grafana.com/docs/grafana/latest/sharing/share-dashboard/): Go to the homepage of your grafana Instance. Click on the share icon in the top navigation, from there three tabs are visible with the link tab shown.
-- Direct link: Click copy, send the link to a Grafana user, note that the user needs authorization to view the link. This is done by adding the user to a team.
-- Public Snapshot: Click on local snapshot to publish a snapshot to your local Grafana instance, or Publish to snapshots.raintank.io which is a free service for publishing dashboard snapshots to an external Grafana instance
-You can configure snapshots to expire after a certain time and the timeout value to collect dashboard metrics
+[Документация Grafana](https://grafana.com/docs/grafana/latest/sharing/share-dashboard/): перейдите на главную страницу инстанса grafana. Нажмите на значок share в верхней навигации — появятся три вкладки, открыта будет вкладка link.
+- Direct link: нажмите copy и отправьте ссылку пользователю Grafana; учтите, что у пользователя должны быть права на просмотр ссылки. Это делается добавлением пользователя в команду (team).
+- Public Snapshot: нажмите local snapshot, чтобы опубликовать снимок в локальном инстансе Grafana, или Publish to snapshots.raintank.io — бесплатный сервис для публикации снимков дашбордов во внешний инстанс Grafana
+Можно настроить истечение срока действия снимков через определённое время и значение таймаута для сбора метрик дашборда
 </b></details>
  
 <details>
-<summary>How can you organise your dashboards and users in Grafana?</summary><br><b>
+<summary>Как организовать дашборды и пользователей в Grafana?</summary><br><b>
 
-[Grafana docs](https://grafana.com/blog/2022/03/14/how-to-best-organize-your-teams-and-resources-in-grafana/
-): The recommended way by Grafana labs is to create Folders for grouping dashboards, library panels and alerts. Users can be organised through Teams which grants permissions to members of a group.
-- [Folders](https://grafana.com/docs/grafana/latest/dashboards/dashboard_folders/): Click the + icon in the sidebar, then click "Create folder". In the create folder page, fill an unique name for the folder and click "Create"
-- [Teams](https://grafana.com/tutorials/create-users-and-teams/) You need to be the server admin in order to create Teams. 
- 1. Click the server admin (shield) icon in the sidebar, then in the Users tab, click New user.
- 2. Enter the user details e.g. name, E-mail, Username and Password. The password can be changed later by the user
- 3. Click Create to create the user account.
+[Документация Grafana](https://grafana.com/blog/2022/03/14/how-to-best-organize-your-teams-and-resources-in-grafana/
+): Grafana labs рекомендует создавать папки (Folders) для группировки дашбордов, библиотечных панелей и оповещений. Пользователей можно организовывать с помощью команд (Teams), которые выдают права участникам группы.
+- [Folders](https://grafana.com/docs/grafana/latest/dashboards/dashboard_folders/): нажмите на значок + на боковой панели, затем "Create folder". На странице создания папки введите уникальное имя папки и нажмите "Create"
+- [Teams](https://grafana.com/tutorials/create-users-and-teams/) Для создания Teams нужно быть администратором сервера. 
+ 1. Нажмите на значок администратора сервера (щит) на боковой панели, затем на вкладке Users нажмите New user.
+ 2. Введите данные пользователя, например имя, E-mail, Username и Password. Пользователь может позже сменить пароль
+ 3. Нажмите Create, чтобы создать учётную запись пользователя.
 </b></details>
  
 <details>
-<summary>Explain the steps to create an 'Alert'</summary><br><b>
+<summary>Опишите шаги создания 'Alert'</summary><br><b>
 
-[Grafana docs](https://grafana.com/docs/grafana/latest/alerting/old-alerting/create-alerts/): 
+[Документация Grafana](https://grafana.com/docs/grafana/latest/alerting/old-alerting/create-alerts/): 
  
- "Navigate to the panel you want to add or edit an alert rule for, click the title, and then click Edit. On the Alert tab, click Create Alert. If an alert already exists for this panel, then you can just edit the fields on the Alert tab. Fill out the fields. Descriptions are listed below in Alert rule fields. When you have finished writing your rule, click Save in the upper right corner to save alert rule and the dashboard. (Optional but recommended) Click Test rule to make sure the rule returns the results you expect"
+ «Перейдите к панели, для которой нужно добавить или изменить правило оповещения, нажмите на заголовок, а затем Edit. На вкладке Alert нажмите Create Alert. Если для этой панели оповещение уже существует, можно просто отредактировать поля на вкладке Alert. Заполните поля. Описания приведены ниже в разделе Alert rule fields. Закончив писать правило, нажмите Save в правом верхнем углу, чтобы сохранить правило оповещения и дашборд. (Необязательно, но рекомендуется) Нажмите Test rule, чтобы убедиться, что правило возвращает ожидаемые результаты»
 </b></details>
-
-
- 
- 
- 
- 
-

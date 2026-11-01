@@ -1,15 +1,15 @@
-# Copy Time
+# Время копировать
 
-## Objectives
+## Задачи
 
-1. Create an empty file called `x` in `/tmp`
-2. Copy the `x` file you created to your home directory
-3. Create a copy of `x` file called `y`
-4. Create a directory called `files` and move `x` and `y` there
-5. Copy the directory "files" and name the copy `copy_of_files`
-6. Rename `copy_of_files` directory to `files2`
-7. Remove `files` and `files2` directories
+1. Создать пустой файл с именем `x` в `/tmp`
+2. Скопировать созданный файл `x` в домашний каталог
+3. Создать копию файла `x` с именем `y`
+4. Создать каталог с именем `files` и переместить туда `x` и `y`
+5. Скопировать каталог "files" и назвать копию `copy_of_files`
+6. Переименовать каталог `copy_of_files` в `files2`
+7. Удалить каталоги `files` и `files2`
 
-## Solution
+## Решение
 
-Click [here](solution.md) to view the solution.
+Нажмите [здесь](solution.md), чтобы посмотреть решение.

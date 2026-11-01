@@ -1,8 +1,8 @@
-## Break Out
+## Выход из цикла
 
-Write a loop that will keep reversing user's input until he enters the letter 'q' to quit
+Написать цикл, который будет разворачивать ввод пользователя, пока он не введёт букву 'q' для выхода
 
-## Solution
+## Решение
 
 ```python
 while True:

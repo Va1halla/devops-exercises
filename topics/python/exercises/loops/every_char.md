@@ -1,7 +1,7 @@
-## Every Character
+## Каждый символ
 
-Given a variable of a string, print character of the string on its own line.
+Дана переменная со строкой: вывести каждый символ строки на отдельной строке.
 
-### Solution
+### Решение
 
-Click [here](solutions/loops/every_char.md) to view the solution.
+Нажмите [здесь](solutions/loops/every_char.md), чтобы посмотреть решение.

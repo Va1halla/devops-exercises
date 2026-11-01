@@ -1,8 +1,8 @@
-## My First Function
+## Моя первая функция
 
-1. Write a function to print "Hello World"
+1. Написать функцию, которая выводит "Hello World"
 
-### Solution
+### Решение
 
 ```python
 def print_hello_world():

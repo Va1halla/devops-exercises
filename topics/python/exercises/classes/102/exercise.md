@@ -1,16 +1,16 @@
-# Classes 102
+# Классы 102
 
-## Objectives
+## Цели
 
-1. True or False? 
+1. Верно или нет? 
 
-* Methods are class attributes
-* While a function body isn't executed when it's defined, class body is being executed when defined
-* When assignments performed in a class, they create variables
-* Any function defined in a class is a variable
+* Методы являются атрибутами класса
+* Тело функции не выполняется при её определении, а тело класса выполняется при определении
+* Присваивания внутри класса создают переменные
+* Любая функция, определённая в классе, является переменной
 
-2. What would be the output of the following code?
+2. Каким будет вывод следующего кода?
 
-## Solution
+## Решение
 
-Click [here to view the solution](solution.md)
+Нажмите [здесь, чтобы посмотреть решение](solution.md)

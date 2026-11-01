@@ -1,16 +1,16 @@
-# ANSWERS 
+# ОТВЕТЫ 
 
-1. Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to build server-side and networking applications.
-2. Nodejs is a single threaded langauage . It handles one operation at a time.
-3. Node.js works by executing JavaScript code in a runtime environment outside of a web browser. 
-4. Node.js works by executing JavaScript code in a runtime environment outside of a web browser. mainly used for performance and scalabilty od the project
-5. Parent process manages the child process but not depend on the clid process to run parralel
-6. Three Modules mainly 
-    1. Core Module - fs , require
-    2. Local modules - like function created by us and exported or imported from one file to another
-    3. Third Party module - like npm pacakages whcih we install to do a specific kind of work
-7. NPM (Node Pacakage Manager) used for installing, managing, and sharing JavaScript packages and dependencies.
-8. Difference between pacakage.json and pacakage-lock.json
-   1.pacakage.json - contains the metadata and the dependendies of a project
-   2.pacakage-lock.json - lock the version of the installed dependencies   
+1. Node.js — это кроссплатформенная среда выполнения JavaScript с открытым исходным кодом, которая позволяет разработчикам создавать серверные и сетевые приложения.
+2. Nodejs — однопоточный язык. Он обрабатывает одну операцию за раз.
+3. Node.js выполняет код JavaScript в среде выполнения вне веб-браузера. 
+4. Node.js выполняет код JavaScript в среде выполнения вне веб-браузера. Используется в основном ради производительности и масштабируемости проекта
+5. Родительский процесс управляет дочерним процессом, но не зависит от него, чтобы работать параллельно
+6. В основном три типа модулей 
+    1. Core Module (встроенные модули) - fs , require
+    2. Local modules (локальные модули) - например, функции, созданные нами и экспортированные или импортированные из одного файла в другой
+    3. Third Party module (сторонние модули) - например, npm-пакеты, которые мы устанавливаем для выполнения определённой задачи
+7. NPM (Node Pacakage Manager) используется для установки, управления и распространения пакетов и зависимостей JavaScript.
+8. Разница между pacakage.json и pacakage-lock.json
+   1.pacakage.json - содержит метаданные и зависимости проекта
+   2.pacakage-lock.json - фиксирует версии установленных зависимостей   
 

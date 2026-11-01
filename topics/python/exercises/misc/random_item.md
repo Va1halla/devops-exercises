@@ -1,3 +1,3 @@
-## Random Item
+## Случайный элемент
 
-Write code to pick up a random item from a given list
+Написать код, который выбирает случайный элемент из заданного списка

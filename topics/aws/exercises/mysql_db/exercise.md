@@ -1,14 +1,14 @@
-## AWS Databases - MySQL DB
+## Базы данных AWS - MySQL DB
 
-### Objectives
+### Цели
 
-1. Create a MySQL database with the following properties
-  * Instance type: db.t2.micro
-  * gp2 storage
-  * Storage Auto scaling should be enabled and threshold should be set to 500 GiB
-  * Public access should be enabled
-  * Port should be set to 3306
-  * DB name: 'db'
-  * Backup retention: 10 days
+1. Создать базу данных MySQL со следующими параметрами
+  * Тип экземпляра: db.t2.micro
+  * Хранилище gp2
+  * Автомасштабирование хранилища (Storage Auto scaling) должно быть включено с порогом 500 GiB
+  * Публичный доступ должен быть включён
+  * Порт — 3306
+  * Имя БД: 'db'
+  * Хранение резервных копий: 10 дней
 
-2. Create read replica for the database you've created
+2. Создать реплику для чтения (read replica) созданной базы данных

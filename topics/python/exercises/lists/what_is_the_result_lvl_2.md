@@ -1,6 +1,6 @@
-## What is the result? - Level 2
+## Каков результат? — уровень 2
 
-1. What is the result of the following block of code?
+1. Каков результат следующего блока кода?
 
 ```python
 x = ['a', 'b', 'c']
@@ -10,6 +10,6 @@ for i in x:
     print(i)
 ```
 
-### Solution
+### Решение
 
-Click [here](solutions/lists//what_is_the_result_lvl_2.md) to view the solution.
+Нажмите [здесь](solutions/lists//what_is_the_result_lvl_2.md), чтобы посмотреть решение.

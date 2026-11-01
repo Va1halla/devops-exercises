@@ -1,15 +1,15 @@
-# Conditionals
+# Условные операторы
 
-## Objectives
+## Задачи
 
-1. Generate a random number between 1 and 100
-   1. If the number is higher than 50 print "It's closer to 100"
-   2. If the number is lower than 50 print "It's closer to 0"
-   3. Print the generated random number
-2. Modify the previous code to print "It's 50!" if the random number is 50
-3. Modify the conditional in the code you previously written to check not only if the number is higher than 50 but also if's it's even. If it's even and higher than 50, print "It's closer to 100 and it's even!"
+1. Сгенерируйте случайное число от 1 до 100
+   1. Если число больше 50, выведите "It's closer to 100"
+   2. Если число меньше 50, выведите "It's closer to 0"
+   3. Выведите сгенерированное случайное число
+2. Измените предыдущий код так, чтобы он выводил "It's 50!", если случайное число равно 50
+3. Измените условие в написанном ранее коде так, чтобы проверялось не только то, что число больше 50, но и то, что оно чётное. Если оно чётное и больше 50, выведите "It's closer to 100 and it's even!"
 
 
-## Solution
+## Решение
 
-Click [here](solution.md) to view the solution.
+Нажмите [здесь](solution.md), чтобы посмотреть решение.

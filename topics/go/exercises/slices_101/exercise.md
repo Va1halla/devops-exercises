@@ -1,12 +1,12 @@
-# Slices
+# Срезы
 
-## Objectives
+## Задачи
 
-1. Why do we need slices if we have arrays?
-2. How to define an empty slice of strings called `someSlice`?
-3. What the following lines does? `append(someSlice, 'abc')`
-4. How to retrieve the first element of the slice `someSlice`?
+1. Зачем нужны срезы (slices), если есть массивы?
+2. Как определить пустой срез строк с именем `someSlice`?
+3. Что делает следующая строка? `append(someSlice, 'abc')`
+4. Как получить первый элемент среза `someSlice`?
 
-## Solution
+## Решение
 
-Click [here](solution.md) to view the solution.
+Нажмите [здесь](solution.md), чтобы посмотреть решение.

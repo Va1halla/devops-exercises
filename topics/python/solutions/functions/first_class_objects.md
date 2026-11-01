@@ -1,15 +1,15 @@
-## First Class Objects
+## Объекты первого класса
 
-1. In Python, functions are first-class objects. What does it mean?
+1. В Python функции — объекты первого класса (first-class objects). Что это значит?
 
-### Solution
+### Решение
 
-In general, first class objects in programming languages are objects which can be assigned to variable, used as a return value and can be used as arguments or parameters.<br>
-In python you can treat functions this way. Let's say we have the following function
+В общем случае объекты первого класса в языках программирования — это объекты, которые можно присвоить переменной, использовать как возвращаемое значение и передавать как аргументы или параметры.<br>
+В Python с функциями можно обращаться именно так. Допустим, есть следующая функция
 
 ```
 def my_function():
     return 5
 ```
 
-You can then assign a function to a variables like this `x = my_function` or you can return functions as return values like this `return my_function`
+Затем функцию можно присвоить переменной, например `x = my_function`, или вернуть функцию как возвращаемое значение, например `return my_function`

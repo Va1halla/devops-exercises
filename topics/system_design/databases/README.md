@@ -1,51 +1,51 @@
-# Databases
+# Базы данных
 
-- [Databases](#databases)
-  - [What is a Database?](#what-is-a-database)
-  - [Types](#types)
+- [Базы данных](#базы-данных)
+  - [Что такое база данных?](#что-такое-база-данных)
+  - [Типы](#типы)
     - [SQL](#sql)
     - [NoSQL](#nosql)
       - [MongoDB](#mongodb)
       - [Cassandra](#cassandra)
       - [AWS DynamoDB](#aws-dynamodb)
       - [Redis](#redis)
-  - [Big Data](#big-data)
-    - [Data Lake](#data-lake)
-  - [Replication](#replication)
-  - [Partitioning](#partitioning)
-    - [Horizontal Partitioning](#horizontal-partitioning)
-    - [Vertical Partitioning](#vertical-partitioning)
-  - [ACID Compliance](#acid-compliance)
-    - [Atomicity](#atomicity)
-    - [Consistency](#consistency)
-    - [Isolation](#isolation)
-    - [Durability](#durability)
-  - [Normalization](#normalization)
-    - [Normalized Data](#normalized-data)
-    - [Denormalized Data](#denormalized-data)
-    - [CAP Theorem](#cap-theorem)
-  - [Questions](#questions)
+  - [Большие данные](#большие-данные)
+    - [Озеро данных](#озеро-данных)
+  - [Репликация](#репликация)
+  - [Партиционирование](#партиционирование)
+    - [Горизонтальное партиционирование](#горизонтальное-партиционирование)
+    - [Вертикальное партиционирование](#вертикальное-партиционирование)
+  - [Соответствие ACID](#соответствие-acid)
+    - [Атомарность](#атомарность)
+    - [Согласованность](#согласованность)
+    - [Изолированность](#изолированность)
+    - [Долговечность](#долговечность)
+  - [Нормализация](#нормализация)
+    - [Нормализованные данные](#нормализованные-данные)
+    - [Денормализованные данные](#денормализованные-данные)
+    - [Теорема CAP](#теорема-cap)
+  - [Вопросы](#вопросы)
 
-## What is a Database?
+## Что такое база данных?
 
-[Wikipedia](https://en.wikipedia.org/wiki/Database): "a database is an organized collection of data stored and accessed electronically from a computer system."
+[Wikipedia](https://en.wikipedia.org/wiki/Database): «база данных — это организованная совокупность данных, которые хранятся в компьютерной системе и к которым осуществляется электронный доступ.»
 
-Perhaps the most basic example for a database would be a file on filesystem. This file can store information on people and their addresses, it can contain information on types of wine, or any other organized data.
+Пожалуй, самый простой пример базы данных — файл в файловой системе. Такой файл может хранить информацию о людях и их адресах, о сортах вина или любые другие упорядоченные данные.
 
-Even though a file can be considered a database, you'll not find it used in system designs. Databases today are full and rich services that supports much more than just storing your data.
+Хотя файл можно считать базой данных, в архитектурах систем он не используется. Современные базы данных — это полноценные функциональные сервисы, которые умеют гораздо больше, чем просто хранить данные.
 
-## Types
+## Типы
 
 ### SQL
 
 ### NoSQL
 
-NoSQL don't use the traditional tabular relationship as in SQL databases. They are also known as "Sharded Databases" as information is [horizontally partitioned](#horizontal-partitioning).
+NoSQL не используют традиционные табличные связи, как SQL-базы данных. Их также называют «шардированными базами данных» (Sharded Databases), поскольку информация в них [горизонтально партиционирована](#горизонтальное-партиционирование).
 
-Some of the challenges with such databases is the operation of resharding - how to add or remove shards based on the scaling that has to take place?
-Another challenge is what is known as "hotspots" - how to deal with shards/partitions that are more popular than other shards? In other words, how to take into account traffic/popularity when performing partitioning?
+Одна из сложностей таких баз данных — операция решардинга (resharding): как добавлять или удалять шарды в зависимости от необходимого масштабирования?
+Другая сложность — так называемые «горячие точки» (hotspots): что делать с шардами/партициями, которые популярнее других? Иными словами, как учитывать трафик/популярность при партиционировании?
 
-Let's look at some examples of such databases
+Рассмотрим несколько примеров таких баз данных
 
 #### MongoDB
 
@@ -55,13 +55,13 @@ Let's look at some examples of such databases
 
 #### Cassandra
 
-NoSQL database. Its architecture can be can seen in the drawing below. Each node can act as a primary interface so availability is high in Cassandra architecture
+NoSQL база данных. Её архитектура показана на схеме ниже. Каждый узел может выступать основным интерфейсом, поэтому доступность в архитектуре Cassandra высокая
 
 <p align="center">
 <img src="../images/databases/cassandra_architecture.png"/>
 </p>
 
-While availability might be better in Cassandra compared to other databases, as each node can be the primary interface, it requires constantly synching them so consistency isn't at its top.
+Хотя доступность в Cassandra может быть лучше, чем в других базах данных, поскольку каждый узел может быть основным интерфейсом, узлы нужно постоянно синхронизировать, поэтому согласованность здесь не на высоте.
 
 #### AWS DynamoDB
 
@@ -73,220 +73,220 @@ TODO
 
 #### Redis
 
-Redis is an in-memory database. It's considered to very fast database for this reason. The data in Redis is stored in key-value pairs.
+Redis — это база данных в оперативной памяти (in-memory). Поэтому она считается очень быстрой. Данные в Redis хранятся в виде пар ключ-значение.
 
-It's ideal for use cases where you need to read/write often from the DB, especially in real-time systems where you don't want to be limited by I/O of disks which considered to be slower (~100us for SSD vs ~100ns in case of RAM).
+Она идеальна для сценариев, где нужно часто читать из БД или писать в неё, особенно в системах реального времени, где не хочется зависеть от ввода-вывода дисков, который считается более медленным (~100 мкс для SSD против ~100 нс для RAM).
 
-Redis is also single threaded. You might wonder how does it work as such database can hit multiple incoming requests and outgoing responses, so how is the thread not blocked, waiting for completion? The answer is I/O multiplexing - the OS allows a single thread to wain on many connections simultaneously.
+Кроме того, Redis однопоточна. Может возникнуть вопрос, как это работает, ведь на такую базу данных может приходить множество входящих запросов и исходящих ответов, — почему поток не блокируется в ожидании завершения? Ответ — мультиплексирование ввода-вывода (I/O multiplexing): ОС позволяет одному потоку ожидать на множестве соединений одновременно.
 
-## Big Data
+## Большие данные
 
-### Data Lake
+### Озеро данных
 
-Data Lake is an approach in which te data is simply organized in text files (json, csv, etc.) and is stored in a storage system (e.g. S3, Blob Storage, etc.)
+Озеро данных (Data Lake) — это подход, при котором данные просто организуются в текстовых файлах (json, csv и т.д.) и хранятся в системе хранения (например, S3, Blob Storage и т.д.)
 
-The data in data lakes is often unstructured data and there is usually another process/service for creating schema for that data (in AWS for example that would be Amazon Glue)
+Данные в озёрах данных часто неструктурированы, и обычно есть отдельный процесс/сервис для создания схемы этих данных (например, в AWS это Amazon Glue)
 
-## Replication
+## Репликация
 
-[Wikipedia](https://en.wikipedia.org/wiki/Replication_(computing)): "Replication in computing involves sharing information so as to ensure consistency between redundant resources, such as software or hardware components, to improve reliability, fault-tolerance, or accessibility."
+[Wikipedia](https://en.wikipedia.org/wiki/Replication_(computing)): «Репликация в вычислительной технике — это совместное использование информации для обеспечения согласованности между избыточными ресурсами, такими как программные или аппаратные компоненты, с целью повышения надёжности, отказоустойчивости или доступности.»
 
-You'll see in many system designs that it's quite common to have separate instance for writes and another instance for reads. Thing is, when you split it into read and write instances, you have to make sure the data is consistent. This is where replication becomes relevant.
+Во многих архитектурах систем довольно часто встречается отдельный экземпляр для записи и другой экземпляр для чтения. Дело в том, что при разделении на экземпляры для чтения и записи нужно обеспечить согласованность данных. Здесь и становится актуальной репликация.
 
-## Partitioning
+## Партиционирование
 
-The ways you divide DB tables into additional tables
+Способы разделения таблиц БД на дополнительные таблицы
 
 <p align="center">
 <img src="../images/databases/partitioning.png"/>
 </p>
 
-### Horizontal Partitioning
+### Горизонтальное партиционирование
 
-Dividing a table into multiple tables. While it's physically split, logically it's treated as one table.
+Разделение таблицы на несколько таблиц. Физически она разделена, но логически рассматривается как одна таблица.
 
-As an example, let's take a database for video games. We might have a separate database for each video game genre or each video game developer company, but eventually all treated as "video games" database so each table has the same columns.
+В качестве примера возьмём базу данных видеоигр. Можно завести отдельную базу данных для каждого жанра видеоигр или для каждой компании-разработчика, но в итоге все они рассматриваются как база данных «видеоигры», поэтому у каждой таблицы одни и те же столбцы.
 
-To summarize:
-* Divide table into multiple tables with different rows
-* Each table has the same columns but different rows
-* Horizontal partition is also known as Shard.
+Подведём итог:
+* Таблица делится на несколько таблиц с разными строками
+* У каждой таблицы одни и те же столбцы, но разные строки
+* Горизонтальную партицию также называют шардом (Shard).
 
 <p align="center">
 <img src="../images/databases/horizontal_partitioning.png"/>
 </p>
 
-### Vertical Partitioning
+### Вертикальное партиционирование
 
-Similarly to Horizontal Partitioning, we divide the table into tables. The difference is that in Vertical Partitioning each table has less columns (while in Horizontal Partitioning it's the same number of columns in each separate table)
+Как и при горизонтальном партиционировании, таблица делится на таблицы. Разница в том, что при вертикальном партиционировании у каждой таблицы меньше столбцов (тогда как при горизонтальном партиционировании количество столбцов в каждой отдельной таблице одинаково)
 
-To summarize:
-* Divide table into multiple tables with different columns
-* Each table doesn't have the same columns
+Подведём итог:
+* Таблица делится на несколько таблиц с разными столбцами
+* У таблиц разные столбцы
 
 <p align="center">
 <img src="../images/databases/vertical_partitioning.png"/>
 </p>
 
-## ACID Compliance
+## Соответствие ACID
 
-ACID Compliance is a set of database properties/principles guarantee data consistency and validity.
+Соответствие ACID (ACID Compliance) — это набор свойств/принципов базы данных, гарантирующих согласованность и корректность данных.
 
-### Atomicity 
+### Атомарность 
 
-The rule of atomicity defines that either the entire transaction succeeds or it entirely fails.
-For example if you add data, either you added it completely or you didn't add it at all, there is adding the data partially. In other words, it done once completely or it doesn't happen at all.
+Правило атомарности (atomicity) определяет, что транзакция либо целиком выполняется успешно, либо целиком завершается неудачей.
+Например, если добавляются данные, то они либо добавлены полностью, либо не добавлены вовсе — частичного добавления данных не бывает. Иными словами, операция либо выполняется целиком один раз, либо не происходит вовсе.
 
-### Consistency 
+### Согласованность 
 
-Consistency mean that whatever is written to the database would be returned if a moment after writing it, you perform a read operation.
+Согласованность (consistency) означает, что всё, что записано в базу данных, будет возвращено, если через мгновение после записи выполнить операцию чтения.
 
-### Isolation
+### Изолированность
 
-One transaction won't interfere another transaction and the other transcation won't be affected by it in any case.
+Одна транзакция не помешает другой транзакции, и другая транзакция ни в коем случае не будет затронута ею.
 
-### Durability
+### Долговечность
 
-Once a transcation is complete, the data stays in the database no matter what happens next (except delete operation of course). So if for example the database is getting showdown, rebooted, upgraded, ... the data remains as it is.
+После завершения транзакции данные остаются в базе данных, что бы ни произошло дальше (кроме, конечно, операции удаления). Так что если, например, база данных выключается, перезагружается, обновляется и т.п., данные остаются как есть.
 
-## Normalization
-### Normalized Data
+## Нормализация
+### Нормализованные данные
 
-Data broken into multiple tables and in order to get the full data, you'd have to perform joins on different tables.
+Данные разбиты на несколько таблиц, и чтобы получить полные данные, нужно выполнять соединения (joins) разных таблиц.
 
-This is the way rational databases work - there are relations between different tables and you perform lookups and joins to get full data set.
+Так работают реляционные базы данных: между разными таблицами есть связи, и для получения полного набора данных выполняются поиски (lookups) и соединения.
 
-The image below is an example of normalized data
+На изображении ниже показан пример нормализованных данных
 
 <p align="center">
 <img src="../images/databases/normalized_data.png"/>
 </p>
 
-Advantages:
+Преимущества:
 
-* Updates performed in one place since there is dedicated table for each data.
+* Обновления выполняются в одном месте, так как для каждого вида данных есть отдельная таблица.
 
-Disadvantages:
+Недостатки:
 
-* To get data, you have to perform sometimes multiple lookups
+* Чтобы получить данные, иногда приходится выполнять несколько поисков
 
-### Denormalized Data
+### Денормализованные данные
 
-All the information is stored in one place as can be seen in the image below
+Вся информация хранится в одном месте, как видно на изображении ниже
 <p align="center">
 <img src="../images/databases/denormalized_data.png"/>
 </p>
 
-Advantages:
+Преимущества:
 
-* Single lookup/query to get all the information regarding specific entry
+* Один поиск/запрос, чтобы получить всю информацию о конкретной записи
 
-Disadvantages:
+Недостатки:
 
-* To update information, a scan of all the entries/rows will have to be performed 
+* Чтобы обновить информацию, придётся просканировать все записи/строки 
 
-### CAP Theorem
+### Теорема CAP
 
-According to CAP Theorem (aka Brewer's theorem) any distributed DB can only achieve two out of the following three at any given point of time:
+Согласно теореме CAP (также известной как теорема Брюера) любая распределённая БД в любой момент времени может обеспечить только два из следующих трёх свойств:
 
-* Consistency: For any read request, the most recent write is returned
-* Availability: The DB is highly available so any request gets a response
-* Partition Tolerance: In case of a network issue, the system will continue to operate? Can the database scale horizontally?
+* Согласованность (Consistency): на любой запрос чтения возвращается результат самой последней записи
+* Доступность (Availability): БД высокодоступна, поэтому на любой запрос приходит ответ
+* Устойчивость к разделению (Partition Tolerance): продолжит ли система работать в случае сетевой проблемы? Может ли база данных масштабироваться горизонтально?
 
-CAP Theorem overtime became quite weak as most modern databases actually deal with all these aspects quite good.
-## Questions
+Со временем теорема CAP стала довольно слабой, так как большинство современных баз данных на деле довольно хорошо справляются со всеми этими аспектами.
+## Вопросы
 
 <details>
-<summary>What are the advantages of replicating a database?</summary><br><b>
+<summary>Каковы преимущества репликации базы данных?</summary><br><b>
 
-* Introducing high-availability: when creating a replication, you actually create another source of data you can use, even when your original instance is down
-* Performances are better spread: you can decide that one of the instances is for reads while the other one is for reads
-* Your app becomes more reliable: even if your database is down, the replication can still be used
+* Обеспечение высокой доступности: при создании реплики фактически появляется ещё один источник данных, который можно использовать, даже когда исходный экземпляр недоступен
+* Лучшее распределение производительности: можно решить, что один из экземпляров используется для чтения, а другой — для записи
+* Приложение становится надёжнее: даже если база данных недоступна, можно использовать реплику
 </b></details>
 
 <details>
-<summary>Explain Horizontal Partitioning</summary><br><b>
+<summary>Объясните, что такое горизонтальное партиционирование</summary><br><b>
 
-Read [here](#horizontal-partitioning)
+Читайте [здесь](#горизонтальное-партиционирование)
 </b></details>
 
 <details>
-<summary>Explain Vertical Partitioning</summary><br><b>
+<summary>Объясните, что такое вертикальное партиционирование</summary><br><b>
 
-Read [here](#vertical-partitioning)
+Читайте [здесь](#вертикальное-партиционирование)
 </b></details>
 
 <details>
-<summary>What's a Shard?</summary><br><b>
+<summary>Что такое шард (Shard)?</summary><br><b>
 
-Another name for [horizontal partitioning](#horizontal-partitioning) where a single table becomes multiple smaller tables.
+Другое название [горизонтального партиционирования](#горизонтальное-партиционирование), при котором одна таблица превращается в несколько меньших таблиц.
 </b></details>
 
 <details>
-<summary>Describe the architecture of one common database</summary><br><b>
+<summary>Опишите архитектуру одной распространённой базы данных</summary><br><b>
 
-There are a couple mentioned in this page:
+На этой странице упоминается пара таких:
 
 * [MongoDB](#mongodb)
 * [Cassandra](#cassandra)
 </b></details>
 
 <details>
-<summary>What is Resharding?</summary><br><b>
+<summary>Что такое решардинг (Resharding)?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is denormalized data? Explain the advantages and disadvantages of denormalized data</summary><br><b>
+<summary>Что такое денормализованные данные? Объясните преимущества и недостатки денормализованных данных</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is normalized data? Explain the advantages and disadvantages of normalized data</summary><br><b>
+<summary>Что такое нормализованные данные? Объясните преимущества и недостатки нормализованных данных</summary><br><b>
 </b></details>
 
 <details>
-<summary>When would you choose normalized data approach over denormalized data approach?</summary><br><b>
+<summary>Когда стоит выбрать подход с нормализованными данными вместо подхода с денормализованными данными?</summary><br><b>
 
-There is not always a clear answer on that. That very much depends on user or customer experience and the queries that will be executed on the database.
+На этот вопрос не всегда есть однозначный ответ. Многое зависит от опыта пользователей или клиентов и от запросов, которые будут выполняться к базе данных.
 
-For example, if you need to perform updates quite often and of different columns or sub-documents, then a normalizied data might be a better approach.
+Например, если обновления нужно выполнять довольно часто и для разных столбцов или вложенных документов, нормализованные данные могут оказаться лучшим подходом.
 
-If it's mainly about performing lookups then in that case a denormalized data might work better. But again, it all depends on the specific scenario.
+Если же речь в основном о поиске, то в этом случае лучше могут подойти денормализованные данные. Но, опять же, всё зависит от конкретного сценария.
 </b></details>
 
 <details>
-<summary>What is a data lake?</summary><br><b>
+<summary>Что такое озеро данных (data lake)?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What can you say on in-memory database vs. disk-based database in regards to code implementation?</summary><br><b>
+<summary>Что можно сказать о базах данных в оперативной памяти по сравнению с дисковыми с точки зрения реализации кода?</summary><br><b>
 
-Memory-based database are usually easier to implement or at least less complicated as you have to handle quite a lot of operations when writing/reading from a disk (opening a file, buffer allocation, closing a file, etc.)
+Базы данных в оперативной памяти обычно проще реализовать или, по крайней мере, они менее сложны, так как при записи на диск и чтении с него приходится выполнять довольно много операций (открытие файла, выделение буфера, закрытие файла и т.д.)
 </b></details>
 
 <details>
-<summary>When you see data in database, how do you know it was added there completely and not partially. In other words, how do you know that a write transaction to the database was completed successfully?</summary><br><b>
+<summary>Как, глядя на данные в базе данных, понять, что они были добавлены полностью, а не частично? Иными словами, как узнать, что транзакция записи в базу данных завершилась успешно?</summary><br><b>
 
-Due to atomicity in [ACID Compliance](#acid-compliance).
+Благодаря атомарности в [соответствии ACID](#соответствие-acid).
 </b></details>
 
 <details>
-<summary>Explain the CAP Theorem</summary><br><b>
+<summary>Объясните теорему CAP</summary><br><b>
 </b></details>
 
 <details>
-<summary>How do you choose a database?</summary><br><b>
+<summary>Как выбрать базу данных?</summary><br><b>
 
-Asking the following questions might help to narrow the choice:
+Сузить выбор могут помочь следующие вопросы:
 
-* Type of data you need to store (text, images, ...)
-* What is important for you? for example: consistency, availability, ... in general, trying to apply the CAP Theorem might be a good idea
-* Access patterns: do you mostly read data? write data? consistent traffic? unpredictable traffic with spikes?
+* Тип данных, которые нужно хранить (текст, изображения, ...)
+* Что важно? Например: согласованность, доступность, ... в целом неплохо попробовать применить теорему CAP
+* Шаблоны доступа: данные в основном читаются? записываются? трафик стабильный? непредсказуемый трафик с пиками?
 </b></details>
 
 <details>
-<summary>Apply the CAP Theorem on some of the modern databases</summary><br><b>
+<summary>Примените теорему CAP к некоторым современным базам данных</summary><br><b>
 
-* Cassandra: There is availability (there are multiple nodes) and there is partition-tolerance, but there is no consistency as there is no a single master in Cassandra and data has to by synched between all the nodes so you always get the same read, doesn't matter which node you approach
+* Cassandra: есть доступность (узлов несколько) и устойчивость к разделению, но нет согласованности, так как в Cassandra нет единственного главного узла (master), и данные нужно синхронизировать между всеми узлами, чтобы чтение всегда давало одинаковый результат, независимо от того, к какому узлу обращаться
 
-* MongoDB: It's partition-tolerance as it scales horizontally and there are multiple shards. It's also consistent as it's single master. But since it's a single master architecture, there is no availability. There is a single point of failure (yes, even if you have more servers and backups as you'll need to restore and sync the data at a moment of failure).
+* MongoDB: обладает устойчивостью к разделению, так как масштабируется горизонтально и имеет несколько шардов. Она также согласованна, так как у неё единственный главный узел. Но поскольку это архитектура с единственным главным узлом, доступности нет. Есть единая точка отказа (да, даже если есть дополнительные серверы и резервные копии, так как в момент отказа придётся восстанавливать и синхронизировать данные).
 </b></details>

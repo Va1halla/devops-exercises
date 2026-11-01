@@ -1,20 +1,20 @@
-## Python Characteristics - Solution
+## Характеристики Python — решение
 
-## Objectives
+## Цели
 
-1. What are some characteristics of the Python programming language?
-2. What type of applications use Python?
+1. Каковы некоторые характеристики языка программирования Python?
+2. В каких типах приложений используется Python?
 
-## Solution
+## Решение
 
 1. 
 
-* It is a high level general purpose programming language created in 1991 by Guido Van Rosum.
-* The language is interpreted, being the CPython (Written in C) the most used/maintained implementation.
-* It is strongly typed. The typing discipline is duck typing and gradual.
-* Python focuses on readability and makes use of whitespaces/identation instead of brackets { }
-* The python package manager is called PIP "pip installs packages", having more than 200.000 available packages.
-* Python comes with pip installed and a big standard library that offers the programmer many precooked solutions.
-* In python **Everything** is an object.
+* Это высокоуровневый язык программирования общего назначения, созданный в 1991 году Гвидо ван Россумом (Guido Van Rosum).
+* Язык интерпретируемый; наиболее используемая и поддерживаемая реализация — CPython (написана на C).
+* Язык со строгой типизацией. Дисциплина типизации — утиная (duck typing) и постепенная (gradual).
+* Python ориентирован на читаемость и использует пробелы/отступы вместо скобок { }
+* Менеджер пакетов Python называется PIP ("pip installs packages"), доступно более 200.000 пакетов.
+* Python поставляется с установленным pip и большой стандартной библиотекой, которая предлагает программисту множество готовых решений.
+* В Python **всё** является объектом.
 
-2. Web, Gaming, Machine Learning, Web Scrapers, Data (visualization, analytics) and more
+2. Веб, игры, машинное обучение, веб-скраперы, данные (визуализация, аналитика) и многое другое

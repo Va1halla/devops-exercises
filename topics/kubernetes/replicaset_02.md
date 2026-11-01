@@ -1,12 +1,12 @@
 ## ReplicaSet 102
 
-#### Objective
+#### Цель
 
-Learn how to operate ReplicaSets
+Научиться управлять ReplicaSet
 
-#### Instructions
+#### Инструкции
 
-1. Create a ReplicaSet with 2 replicas. The app can be anything.
-2. Verify a ReplicaSet was created and there are 2 replicas
-3. Remove the ReplicaSet but NOT the pods it created
-4. Verify you've deleted the ReplicaSet but the Pods are still running
+1. Создать ReplicaSet с 2 репликами. Приложение может быть любым.
+2. Убедиться, что ReplicaSet создан и в нём 2 реплики
+3. Удалить ReplicaSet, но НЕ созданные им Pod
+4. Убедиться, что ReplicaSet удалён, а Pod по-прежнему работают

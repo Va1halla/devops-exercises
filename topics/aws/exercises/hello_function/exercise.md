@@ -1,7 +1,7 @@
-# Hello Function
+# Функция Hello
 
-Create a basic AWS Lambda function that when given a name, will return "Hello <NAME>"
+Создать простую функцию AWS Lambda, которая получает имя и возвращает "Hello <NAME>"
 
-## Solution
+## Решение
 
-Click [here](solution.md) to view the solution.
+Нажмите [здесь](solution.md), чтобы посмотреть решение.

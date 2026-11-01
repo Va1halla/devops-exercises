@@ -1,15 +1,15 @@
-## AWS - Launch EC2 Web Instance
+## AWS - запуск веб-экземпляра EC2
 
-### Objectives
+### Цели
 
-Launch one EC2 instance with the following requirements:
+Запустить один экземпляр EC2 со следующими требованиями:
 
-1. Amazon Linux 2 image
-2. Instance type: pick up one that has 1 vCPUs and 1 GiB memory
-3. Instance storage should be deleted upon the termination of the instance
-4. When the instance starts, it should install:
-  1. Install the httpd package
-  2. Start the httpd service
-  3. Make sure the content of /var/www/html/index.html is `I made it! This is is awesome!`
-5. It should have the tag: "Type: web" and the name of the instance should be "web-1"
-6. HTTP traffic (port 80) should be accepted from anywhere
+1. Образ Amazon Linux 2
+2. Тип экземпляра: выбрать тот, у которого 1 vCPU и 1 GiB памяти
+3. Хранилище экземпляра должно удаляться при его завершении (termination)
+4. При запуске экземпляр должен:
+  1. Установить пакет httpd
+  2. Запустить сервис httpd
+  3. Сделать так, чтобы содержимое /var/www/html/index.html было `I made it! This is is awesome!`
+5. У него должен быть тег "Type: web", а имя экземпляра — "web-1"
+6. HTTP-трафик (порт 80) должен приниматься откуда угодно

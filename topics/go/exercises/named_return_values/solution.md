@@ -1,8 +1,8 @@
-# Names Return Values
+# Именованные возвращаемые значения
 
-## Objectives
+## Задачи
 
-1. What is the result of the following code?
+1. Каков результат выполнения следующего кода?
 
 ```Go
 package main
@@ -19,9 +19,9 @@ func main() {
 }
 ```
 
-2. Fix the code above
+2. Исправьте код выше
 
-3. Will the following code work properly? Explain
+3. Будет ли следующий код работать правильно? Объясните
 
 ```Go
 package main
@@ -38,9 +38,9 @@ func main() {
 }
 ```
 
-## Solution
+## Решение
 
-1. It will fail since the function defined to not return any value and it returns an integer.
+1. Произойдёт ошибка, так как функция объявлена без возвращаемого значения, а возвращает целое число.
 
 2. 
 
@@ -59,4 +59,4 @@ func main() {
 }
 ```
 
-3. Yes, it's known as "naked return". It's a return statement without any arguments that returns the named arguments (in this case `z`)
+3. Да, это так называемый «голый return» (naked return). Это оператор return без аргументов, который возвращает именованные значения (в данном случае `z`)

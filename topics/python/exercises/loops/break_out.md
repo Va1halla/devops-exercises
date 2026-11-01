@@ -1,7 +1,7 @@
-## Break Out
+## Выход из цикла
 
-Write a loop that will keep reversing user's input until he enters the letter 'q' to quit
+Написать цикл, который будет разворачивать ввод пользователя, пока он не введёт букву 'q' для выхода
 
-## Solution
+## Решение
 
-Click [here](solutions/loops/break_out.md) to view the solution.
+Нажмите [здесь](solutions/loops/break_out.md), чтобы посмотреть решение.

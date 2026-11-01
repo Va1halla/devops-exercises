@@ -1,14 +1,14 @@
-## Containerize an Application
+## Контейнеризация приложения
 
-1. Clone an open source project you would like to containerize. A couple of suggestions:
+1. Склонируйте проект с открытым исходным кодом, который хотите контейнеризировать. Пара вариантов:
 
 ```
 https://github.com/bregman-arie/node-hello-world
 https://github.com/bregman-arie/flask-hello-world
 ```
-2. Write a Dockerfile you'll use for building an image of the application (you can use any base image you would like)
-3. Build an image using the Dockerfile you've just wrote
-4. Verify the image exists
-5. [Optional] Push the image you've just built to a registry
-6. Run the application
-7. Verify the app is running
+2. Напишите Dockerfile для сборки образа приложения (можно использовать любой базовый образ)
+3. Соберите образ с помощью только что написанного Dockerfile
+4. Убедитесь, что образ существует
+5. [Необязательно] Отправьте (push) собранный образ в реестр (registry)
+6. Запустите приложение
+7. Убедитесь, что приложение работает

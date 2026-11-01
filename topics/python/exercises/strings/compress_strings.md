@@ -1,8 +1,8 @@
-## Compress Strings
+## Сжатие строк
 
-1. Write code that compresses a string
+1. Написать код, который сжимает строку
   - 'aaaabbccc' -> 'a4b2c3'
   - 'abbbc' -> 'a1b3c1'
-2. Write code that decompresses a string
+2. Написать код, который распаковывает строку
   - 'a4b2c3' -> 'aaaabbccc'
   - 'a1b3c1' -> 'abbbc'

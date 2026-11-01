@@ -1,51 +1,51 @@
-# Observability
+# Наблюдаемость (Observability)
 
-- [Observability](#observability)
-  - [Monitoring](#monitoring)
-  - [Data](#data)
+- [Наблюдаемость (Observability)](#наблюдаемость-observability)
+  - [Мониторинг](#мониторинг)
+  - [Данные](#данные)
   - [Application Performance Management](#application-performance-management)
 
 <details>
-<summary>What's Observability?</summary><br><b>
+<summary>Что такое Observability?</summary><br><b>
   
-  In distributed systems, observability is the ability to collect data about programs' execution, modules' internal states, and the communication among components.<br>
-  To improve observability, software engineers use a wide range of logging and tracing techniques to gather telemetry information, and tools to analyze and use it.<br>
-  Observability is foundational to site reliability engineering, as it is the first step in triaging a service outage.<sup title="wikipedia"><a href="https://en.wikipedia.org/wiki/Observability_(software)">[1]</a></sup>
+  В распределённых системах наблюдаемость (observability) — это возможность собирать данные о выполнении программ, внутренних состояниях модулей и взаимодействии между компонентами.<br>
+  Для улучшения наблюдаемости инженеры-программисты используют широкий спектр техник логирования и трассировки для сбора телеметрии, а также инструменты для её анализа и использования.<br>
+  Наблюдаемость лежит в основе site reliability engineering, поскольку это первый шаг в разборе (triage) сбоя сервиса.<sup title="wikipedia"><a href="https://en.wikipedia.org/wiki/Observability_(software)">[1]</a></sup>
   
 </b></details>
 
-## Monitoring
+## Мониторинг
 
 <details>
-<summary>What's monitoring? How is it related to Observability?</summary><br><b>
+<summary>Что такое мониторинг? Как он связан с Observability?</summary><br><b>
 
-Google: "Monitoring is one of the primary means by which service owners keep track of a system’s health and availability".
+Google: «Мониторинг — одно из основных средств, с помощью которых владельцы сервисов отслеживают работоспособность и доступность системы».
 </b></details>
 
 <details>
-<summary>What types of monitoring outputs are you familiar with and/or used in the past?</summary><br><b>
+<summary>С какими типами результатов мониторинга вы знакомы и/или работали в прошлом?</summary><br><b>
 
-Alerts<br>
-Tickets<br>
-Logging<br>
+Оповещения (alerts)<br>
+Тикеты<br>
+Логирование<br>
 </b></details>
 
-## Data
+## Данные
 
 <details>
-<summary>Can you mention what type of things are often montiored in the IT industry?</summary><br><b>
+<summary>Что обычно мониторят в IT-индустрии?</summary><br><b>
 
-- Hardware (CPU, RAM, ...)
-- Infrastructure (Disk capacity, Network latency, ...)
-- App (Status code, Errors in logs, ...)
+- Оборудование (CPU, RAM, ...)
+- Инфраструктуру (ёмкость дисков, задержки сети, ...)
+- Приложения (коды статуса, ошибки в логах, ...)
 </b></details>
 
 <details>
-<summary>Explain "Time Series" data</summary><br><b>
+<summary>Объясните, что такое данные "Time Series"</summary><br><b>
 
-Time series data is sequenced data, measuring certain parameter in ordered (by time) way.
+Данные временных рядов (time series) — это упорядоченные данные, измеряющие определённый параметр последовательно (по времени).
 
-An example would be CPU utilization every hour:
+Пример — загрузка CPU каждый час:
 
 ```
 08:00   17
@@ -55,9 +55,9 @@ An example would be CPU utilization every hour:
 </b></details>
 
 <details>
-<summary>Explain data aggregation</summary><br><b>
+<summary>Объясните агрегацию данных</summary><br><b>
 
-In monitoring, aggregating data is basically combining collection of values. It can be done in different ways like taking the average of multiple values, the sum of them, the count of many times they appear in the collection and other ways that mainly depend on the type of the collection (e.g. time-series would be one type).
+В мониторинге агрегация данных — это, по сути, объединение набора значений. Её можно выполнять разными способами: брать среднее нескольких значений, их сумму, количество их появлений в наборе и другими способами, которые в основном зависят от типа набора (например, time-series — один из типов).
 
 </b></details>
 
@@ -65,29 +65,29 @@ In monitoring, aggregating data is basically combining collection of values. It 
 ## Application Performance Management
 
 <details>
-<summary>What is Application Performance Management?</summary><br><b>
+<summary>Что такое Application Performance Management?</summary><br><b>
 
-- IT metrics translated into business insights
-- Practices for monitoring applications insights so we can improve performances, reduce issues and improve overall user experience
+- Преобразование IT-метрик в бизнес-выводы
+- Практики мониторинга данных о приложениях, позволяющие улучшить производительность, сократить количество проблем и улучшить общий пользовательский опыт
 
 </b></details>
 
 <details>
-<summary>Name three aspects of a project you can monitor with APM (e.g. backend)</summary><br><b>
+<summary>Назовите три аспекта проекта, которые можно мониторить с помощью APM (например, backend)</summary><br><b>
 
 - Frontend
 - Backend
-- Infra
+- Инфраструктура
 - ...
 
 </b></details>
 
 <details>
-<summary>What can be collected/monitored to perform APM monitoring?</summary><br><b>
+<summary>Что можно собирать/мониторить для APM-мониторинга?</summary><br><b>
 
-- Metrics
-- Logs
-- Events
-- Traces
+- Метрики
+- Логи
+- События
+- Трассировки (traces)
 
 </b></details>

@@ -1,12 +1,12 @@
-## Files Size
+## Размер файлов
 
-### Objectives
+### Цели
 
-1. Print the name and size of every file and directory in current path
+1. Вывести имя и размер каждого файла и каталога в текущем пути
 
-Note: use at least one for loop!
+Примечание: использовать как минимум один цикл for!
 
-### Solution
+### Решение
 
 ```
 #!/usr/bin/env bash

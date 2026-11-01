@@ -1,10 +1,10 @@
-# Go Exercise
+# Упражнения по Go
 
 <img src="images/gophers/exercise.png" />
 
-:information_source: &nbsp;This repo contains questions and exercises to learn and practice Golang
+:information_source: &nbsp;Этот репозиторий содержит вопросы и упражнения для изучения и практики Golang
 
-:bar_chart: &nbsp;There are currently **98** exercises and questions
+:bar_chart: &nbsp;Сейчас здесь **98** упражнений и вопросов
 
 <!-- ALL-TOPICS-LIST:START -->
 <!-- prettier-ignore-start -->
@@ -13,10 +13,10 @@
 
 <table>
   <tr>
-    <td align="center"><img src="images/gophers/baby.png" /><br /><b>Hello World</b><br><a href="#hello-world">- Exercises</a><br><a href="#go-101">- Questions</a></a></td>
-    <td align="center"><img src="images/gophers/strings.png" /><br /><b>Strings</b><br><a href="#strings-exercises">- Exercises</a><br><a href="#strings">- Questions</a></a></td>
-    <td align="center"><img src="images/gophers/array.png" /><br /><b>Arrays and Slices</b><br><a href="##arrays-and-slices-exercises">- Exercises</a><br><a href="#arrays-and-slices">- Questions</a></a></td>
-    <td align="center"><img src="images/gophers/loop.png" /><br /><b>Loops</b><br><a href="#loops-exercises">- Exercises</a><br><a href="#loops">- Questions</a></a></td>
+    <td align="center"><img src="images/gophers/baby.png" /><br /><b>Hello World</b><br><a href="#hello-world">- Упражнения</a><br><a href="#go-101">- Вопросы</a></a></td>
+    <td align="center"><img src="images/gophers/strings.png" /><br /><b>Строки</b><br><a href="#упражнения-со-строками">- Упражнения</a><br><a href="#строки">- Вопросы</a></a></td>
+    <td align="center"><img src="images/gophers/array.png" /><br /><b>Массивы и срезы</b><br><a href="##упражнения-с-массивами-и-срезами">- Упражнения</a><br><a href="#массивы-и-срезы">- Вопросы</a></a></td>
+    <td align="center"><img src="images/gophers/loop.png" /><br /><b>Циклы</b><br><a href="#упражнения-с-циклами">- Упражнения</a><br><a href="#циклы">- Вопросы</a></a></td>
   </tr>
 
 </table>
@@ -25,128 +25,128 @@
 <!-- prettier-ignore-end -->
 <!-- ALL-TOPICS-LIST:END -->
 
-- [Go Exercise](#go-exercise)
-  - [Exercises](#exercises)
+- [Упражнения по Go](#упражнения-по-go)
+  - [Упражнения](#упражнения)
     - [Hello World](#hello-world)
-    - [Strings Exercises](#strings-exercises)
-    - [Arrays and Slices Exercises](#arrays-and-slices-exercises)
-    - [Maps Exercises](#maps-exercises)
-    - [Loops Exercises](#loops-exercises)
-    - [Functions Exercises](#functions-exercises)
-    - [Generics Exercises](#generics-exercises)
-  - [Questions](#questions)
+    - [Упражнения со строками](#упражнения-со-строками)
+    - [Упражнения с массивами и срезами](#упражнения-с-массивами-и-срезами)
+    - [Упражнения с map](#упражнения-с-map)
+    - [Упражнения с циклами](#упражнения-с-циклами)
+    - [Упражнения с функциями](#упражнения-с-функциями)
+    - [Упражнения с дженериками](#упражнения-с-дженериками)
+  - [Вопросы](#вопросы)
     - [Go 101](#go-101)
-      - [Variables and Data Types](#variables-and-data-types)
-      - [Conversion](#conversion)
-      - [Integers](#integers)
-      - [Constants](#constants)
-    - [Logical Operators](#logical-operators)
-    - [Strings](#strings)
-    - [Conditionals](#conditionals)
+      - [Переменные и типы данных](#переменные-и-типы-данных)
+      - [Преобразование типов](#преобразование-типов)
+      - [Целые числа](#целые-числа)
+      - [Константы](#константы)
+    - [Логические операторы](#логические-операторы)
+    - [Строки](#строки)
+    - [Условные операторы](#условные-операторы)
       - [Switch](#switch)
-    - [User Input](#user-input)
-    - [Arrays and Slices](#arrays-and-slices)
-    - [Loops](#loops)
-    - [Maps](#maps)
-    - [Functions](#functions)
+    - [Пользовательский ввод](#пользовательский-ввод)
+    - [Массивы и срезы](#массивы-и-срезы)
+    - [Циклы](#циклы)
+    - [Map](#map)
+    - [Функции](#функции)
       - [Defer](#defer)
-    - [Packages](#packages)
-    - [Generics](#generics)
-  - [Projects](#projects)
-  - [Credits](#credits)
-    - [Images](#images)
+    - [Пакеты](#пакеты)
+    - [Дженерики](#дженерики)
+  - [Проекты](#проекты)
+  - [Благодарности](#благодарности)
+    - [Изображения](#изображения)
 
 
-## Exercises
+## Упражнения
 
 ### Hello World
 
-|Name|Exercise|Solution|Comments|
+|Название|Упражнение|Решение|Комментарии|
 |--------|--------|------|----|
-| Hello World! | [Exercise](exercises/hello_world/exercise.md) | [Solution](exercises/hello_world/main.go) | |
-| Variables & Constants | [Exercise](exercises/variables/exercise.md) | [Solution](exercises/variables/main.go) | |
-| Arithmetic Operators | [Exercise](exercises/arithmetic_operators/exercise.md) | [Solution](exercises/arithmetic_operators/main.go) | |
-| Data Types | [Exercise](exercises/data_types/exercise.md) | [Solution](exercises/data_types/solution.md) | |
-| User Input | [Exercise](exercises/user_input/exercise.md) | [Solution](exercises/user_input/main.go) | |
-| Packages | [Exercise](exercises/packages/exercise.md) | [Solution](exercises/packages/main.go) |
-| Logical Operators | [Exercise](exercises/logical_operators/exercise.md) | [Solution](exercises/logical_operators/solution.md) |
-| Conditionals | [Exercise](exercises/conditionals/exercise.md) | [Solution](exercises/conditionals/solution.md) | 
-| Switch | [Exercise](exercises/switch/exercise.md) | [Solution](exercises/switch/solution.md) | 
+| Hello World! | [Упражнение](exercises/hello_world/exercise.md) | [Решение](exercises/hello_world/main.go) | |
+| Переменные и константы | [Упражнение](exercises/variables/exercise.md) | [Решение](exercises/variables/main.go) | |
+| Арифметические операторы | [Упражнение](exercises/arithmetic_operators/exercise.md) | [Решение](exercises/arithmetic_operators/main.go) | |
+| Типы данных | [Упражнение](exercises/data_types/exercise.md) | [Решение](exercises/data_types/solution.md) | |
+| Пользовательский ввод | [Упражнение](exercises/user_input/exercise.md) | [Решение](exercises/user_input/main.go) | |
+| Пакеты | [Упражнение](exercises/packages/exercise.md) | [Решение](exercises/packages/main.go) |
+| Логические операторы | [Упражнение](exercises/logical_operators/exercise.md) | [Решение](exercises/logical_operators/solution.md) |
+| Условные операторы | [Упражнение](exercises/conditionals/exercise.md) | [Решение](exercises/conditionals/solution.md) | 
+| Switch | [Упражнение](exercises/switch/exercise.md) | [Решение](exercises/switch/solution.md) | 
 
 
-### Strings Exercises
+### Упражнения со строками
 
-|Name|Exercise|Solution|Comments|
+|Название|Упражнение|Решение|Комментарии|
 |--------|--------|------|----|
-| Split Strings | [Exercise](exercises/split_strings/exercise.md) | [Solution](exercises/split_strings/solution.md) | |
+| Разделение строк | [Упражнение](exercises/split_strings/exercise.md) | [Решение](exercises/split_strings/solution.md) | |
 
-### Arrays and Slices Exercises
+### Упражнения с массивами и срезами
 
-|Name|Exercise|Solution|Comments|
+|Название|Упражнение|Решение|Комментарии|
 |--------|--------|------|----|
-| Arrays 101 | [Exercise](exercises/arrays_101/exercise.md) | [Solution](exercises/arrays_101/solution.md) | |
-| Slices 101 | [Exercise](exercises/slices_101/exercise.md) | [Solution](exercises/slices_101/solution.md) | |
+| Массивы 101 | [Упражнение](exercises/arrays_101/exercise.md) | [Решение](exercises/arrays_101/solution.md) | |
+| Срезы 101 | [Упражнение](exercises/slices_101/exercise.md) | [Решение](exercises/slices_101/solution.md) | |
 
-### Maps Exercises
+### Упражнения с map
 
-|Name|Exercise|Solution|Comments|
+|Название|Упражнение|Решение|Комментарии|
 |--------|--------|------|----|
-| Maps 101 | [Exercise](exercises/maps_101/exercise.md) | [Solution](exercises/maps_101/solution.md) | |
+| Maps 101 | [Упражнение](exercises/maps_101/exercise.md) | [Решение](exercises/maps_101/solution.md) | |
 
-### Loops Exercises
+### Упражнения с циклами
 
-|Name|Exercise|Solution|Comments|
+|Название|Упражнение|Решение|Комментарии|
 |--------|--------|------|----|
-| Loops 101 | [Exercise](exercises/loops_101/exercise.md) | [Solution](exercises/loops_101/main.go) | |
-| Loops 102 | [Exercise](exercises/loops_102/exercise.md) | [Solution](exercises/loops_102/main.go) | |
-| Continue | [Exercise](exercises/continue/exercise.md) | [Solution](exercises/continue/main.go) | |
+| Циклы 101 | [Упражнение](exercises/loops_101/exercise.md) | [Решение](exercises/loops_101/main.go) | |
+| Циклы 102 | [Упражнение](exercises/loops_102/exercise.md) | [Решение](exercises/loops_102/main.go) | |
+| Continue | [Упражнение](exercises/continue/exercise.md) | [Решение](exercises/continue/main.go) | |
 
-### Functions Exercises
+### Упражнения с функциями
 
-|Name|Exercise|Solution|Comments|
+|Название|Упражнение|Решение|Комментарии|
 |--------|--------|------|----|
-| Functions 101 | [Exercise](exercises/functions_101/exercise.md) | [Solution](exercises/functions_101/solution.md) | |
-| Named Return Values | [Exercise](exercises/named_return_values/exercise.md) | [Solution](exercises/named_return_values/solution.md) | |
+| Функции 101 | [Упражнение](exercises/functions_101/exercise.md) | [Решение](exercises/functions_101/solution.md) | |
+| Именованные возвращаемые значения | [Упражнение](exercises/named_return_values/exercise.md) | [Решение](exercises/named_return_values/solution.md) | |
 
 
-### Generics Exercises
+### Упражнения с дженериками
 
-|Name| Exercise                                       | Solution                                   |Comments|
+|Название| Упражнение                                     | Решение                                    |Комментарии|
 |----|------------------------------------------------|--------------------------------------------|--------|
-| Generics 101 | [Exercise](exercises/generics_101/exercise.md) | [Solution](exercises/generics_101/main.go) | |
+| Дженерики 101 | [Упражнение](exercises/generics_101/exercise.md) | [Решение](exercises/generics_101/main.go) | |
 
-## Questions
+## Вопросы
 
 ### Go 101
 
 <details>
-<summary>What are some characteristics of the Go programming language?</summary><br><b>
+<summary>Назовите некоторые характеристики языка программирования Go</summary><br><b>
 
-  * Strong and static typing - the type of the variables can't be changed over time and they have to be defined at compile time
-  * Simplicity
-  * Fast compile times
-  * Built-in concurrency
-  * Garbage collected
-  * Platform independent
-  * Compile to standalone binary - anything you need to run your app will be compiled into one binary. Very useful for version management in run-time.
+  * Строгая и статическая типизация: тип переменных не может меняться со временем, и он должен быть определён на этапе компиляции
+  * Простота
+  * Быстрая компиляция
+  * Встроенная поддержка конкурентности
+  * Сборка мусора
+  * Независимость от платформы
+  * Компиляция в самостоятельный бинарный файл: всё, что нужно для запуска приложения, компилируется в один бинарный файл. Очень удобно для управления версиями во время выполнения.
 </b></details>
 
 <details>
-<summary>True or False? Go is a compiled, statically typed language</summary><br><b>
+<summary>Правда или ложь? Go — компилируемый язык со статической типизацией</summary><br><b>
 
-True
+Правда
 </b></details>
 
 <details>
-<summary>Why some functions and packages in Go begin with a Capital letter?</summary><br><b>
+<summary>Почему некоторые функции и пакеты в Go начинаются с заглавной буквы?</summary><br><b>
 
-Any exported variable, function, ... begins with a capital letter. In fact when using a package, you can use only the things the package exports for you and others to use.
+Любая экспортируемая переменная, функция и т.д. начинается с заглавной буквы. При использовании пакета можно пользоваться только тем, что пакет экспортирует для использования другими.
 </b></details>
 
-#### Variables and Data Types
+#### Переменные и типы данных
 
 <details>
-<summary>Demonstrate short and regular variable declaration</summary><br><b>
+<summary>Продемонстрируйте краткое и обычное объявление переменной</summary><br><b>
 
 ```Go
 package main
@@ -163,18 +163,18 @@ func main() {
 </b></details>
 
 <details>
-<summary>True or False?
+<summary>Правда или ложь?
 
-  * In Go we can redeclare variables
-  * Once a variable declared, we must use it
+  * В Go можно повторно объявлять переменные
+  * Объявленную переменную обязательно нужно использовать
 </summary>
 
-* False
-* True
+* Ложь
+* Правда
 </b></details>
 
 <details>
-<summary>What is the result of the following program?
+<summary>Каков результат выполнения следующей программы?
 
 ```
 package main
@@ -189,22 +189,22 @@ func main() {
 ```
 </summary><br><b>
 
-Error. The type userName is not defined. It has to be declared or the value assignment should happen at declaration.
+Ошибка. Тип userName не определён. Его нужно объявить, либо присвоение значения должно происходить при объявлении.
 
-So both `var userName = user` and `var userName string` are valid.
+Поэтому допустимы и `var userName = user`, и `var userName string`.
 
 </b></details>
 
 <details>
-<summary>What is the difference between <code>var x int = 2</code> and <code>x := 2</code>?</summary><br><b>
+<summary>В чём разница между <code>var x int = 2</code> и <code>x := 2</code>?</summary><br><b>
 
-The result is the same, a variable with the value 2.
+Результат одинаковый — переменная со значением 2.
 
-With <code>var x int = 2</code> we are setting the variable type to integer, while with <code>x := 2</code> we are letting Go figure out by itself the type. The result is the same, both styles can't be used in every situation. For example, short declaration can't be used outside of a function.
+В <code>var x int = 2</code> тип переменной явно задаётся как целое число, а в <code>x := 2</code> Go сам определяет тип. Результат одинаковый, но не каждый из стилей можно использовать в любой ситуации. Например, краткое объявление нельзя использовать вне функции.
 </b></details>
 
 <details>
-<summary>What would be the result of executing the following code:
+<summary>Каков будет результат выполнения следующего кода:
 
 ```Go
 package main
@@ -220,11 +220,11 @@ func main() {
 ```
 </summary><br><b>
 
-It will fail with `expected declaration, found x` as outside of a function, every statement should start with a keyword (and short variable declarations won't work).
+Произойдёт ошибка `expected declaration, found x`, так как вне функции каждое выражение должно начинаться с ключевого слова (и краткие объявления переменных работать не будут).
 </b></details>
 
 <details>
-<summary>Demonstrate a block of variable declarations (at least 3 variables)</summary><br><b>
+<summary>Продемонстрируйте блок объявлений переменных (не менее 3 переменных)</summary><br><b>
 
 ```Go
 package main
@@ -246,12 +246,12 @@ func main() {
 </b></details>
 
 <details>
-<summary>What are package level variables? What would be the reason to use them?</summary><br><b>
+<summary>Что такое переменные уровня пакета? Зачем их использовать?</summary><br><b>
 
-Package level variables are variables that defined at the package level instead of a specific function (like main for example).
+Переменные уровня пакета — это переменные, определённые на уровне пакета, а не внутри конкретной функции (например, main).
 
-If you have multiple functions in your package that use the same variables, it might make these variables available to the functions by defining them at the package level. This can be in the same file or any file under the same package.
-For example:
+Если в пакете есть несколько функций, использующих одни и те же переменные, можно сделать эти переменные доступными функциям, определив их на уровне пакета. Это может быть тот же файл или любой файл того же пакета.
+Например:
 
 ```Go
 package main
@@ -265,10 +265,10 @@ func main() {
 
 </b></details>
 
-#### Conversion
+#### Преобразование типов
 
 <details>
-<summary>What is the problem with the following block of code? How to fix it?
+<summary>В чём проблема следующего блока кода? Как её исправить?
 
 ```
 func main() {
@@ -281,7 +281,7 @@ func main() {
 </b></details>
 
 <details>
-<summary>Demonstrate type conversion</summary><br><b>
+<summary>Продемонстрируйте преобразование типов</summary><br><b>
 
 ```Go
 package main
@@ -298,7 +298,7 @@ func main() {
 </b></details>
 
 <details>
-<summary>The following block of code tries to convert the integer 101 to a string but instead we get "e". Why is that? How to fix it?
+<summary>Следующий блок кода пытается преобразовать целое число 101 в строку, но вместо этого получается "e". Почему? Как это исправить?
 
 ```
 package main
@@ -314,14 +314,14 @@ func main() {
 ```
 </summary><br><b>
 
-It looks what unicode value is set at 101 and uses it for converting the integer to a string.
-If you want to get "101" you should use the package "strconv" and replace <code>y = string(x)</code> with <code>y = strconv.Itoa(x)</code>
+Ищется символ Unicode со значением 101, и он используется для преобразования целого числа в строку.
+Чтобы получить "101", нужно использовать пакет "strconv" и заменить <code>y = string(x)</code> на <code>y = strconv.Itoa(x)</code>
 </b></details>
 
-#### Integers
+#### Целые числа
 
 <details>
-<summary>What is the result of the following program?
+<summary>Каков результат выполнения следующей программы?
 
 ```Go
 package main
@@ -337,11 +337,11 @@ func main() {
 ```
 </summary><br><b>
 
-Error. When `x` is declared as `uint` it means you can't put any negative values. But because we did put a negative value (`-3`) it will fail to compile it.
+Ошибка. Если `x` объявлена как `uint`, в неё нельзя поместить отрицательные значения. Но поскольку туда помещено отрицательное значение (`-3`), компиляция завершится ошибкой.
 </b></details>
 
 <details>
-<summary>How to print a random integer between 0 and 10?</summary><br><b>
+<summary>Как вывести случайное целое число от 0 до 10?</summary><br><b>
 
 ```
 package main
@@ -357,21 +357,21 @@ func main() {
 ```
 </b></details>
 
-#### Constants
+#### Константы
 
 <details>
-<summary>Demonstrate decelaration of constants in the following forms:
+<summary>Продемонстрируйте объявление констант в следующих формах:
 
-* Single constant
-* Multiple constants in one block
+* Одна константа
+* Несколько констант в одном блоке
   
 </summary><br><b>
 
 ```Go
-// Single constant
+// Одна константа
 const x int = 2732
 
-// Multiple constants in one block
+// Несколько констант в одном блоке
 const (
   y = 2017
   z = 2022
@@ -382,7 +382,7 @@ const (
 
 
 <details>
-<summary>What is wrong with the following code?:
+<summary>Что не так со следующим кодом?:
 
 ```Go
 package main
@@ -394,15 +394,15 @@ func main() {
 }
 ```
 </summary><br><b>
-Constants in Go can only be declared using constant expressions.
-But `x`, `y` are variables hence, their sum is variable.
+Константы в Go можно объявлять только с помощью константных выражений.
+Но `x`, `y` — переменные, поэтому их сумма тоже переменная.
 <br>
 <code>const initializer x + y is not a constant</code>
 
 </b></details>
 
 <details>
-<summary>What will be the result of executing the following code?
+<summary>Каков будет результат выполнения следующего кода?
 
 ```Go
 package main
@@ -416,11 +416,11 @@ func main() {
 ```
 </summary><br><b>
 
-It won't run. Constants cannot be declared using `:=`.
+Код не запустится. Константы нельзя объявлять с помощью `:=`.
 </b></details>
 
 <details>
-<summary>What will be the result of executing the following code?
+<summary>Каков будет результат выполнения следующего кода?
 
 ```Go
 package main
@@ -445,13 +445,14 @@ func main() {
 true
 1024
 
-The 1024 result is because we shifted a 1 bit left 10 places.
+Результат 1024 получается потому, что бит 1 сдвинут влево на 10 позиций.
 </b></details>
 
-### Logical Operators
+### Логические операторы
+
 
 <details>
-<summary>What is the output of the following code?
+<summary>Что выведет следующий код?
 
 ```Go
 package main
@@ -476,7 +477,7 @@ false
 </b></details>
 
 <details>
-<summary>What is the output of the following code?
+<summary>Что выведет следующий код?
 
 ```Go
 package main
@@ -501,7 +502,7 @@ true
 </b></details>
 
 <details>
-<summary>What is the output of the following code?
+<summary>Что выведет следующий код?
 
 ```Go
 package main
@@ -527,10 +528,10 @@ true
 ```
 </b></details>
 
-### Strings
+### Строки
 
 <details>
-<summary>Define a variable with the string value of "Hello, World"
+<summary>Определите переменную со строковым значением "Hello, World"
 </summary><br><b>
 
 
@@ -541,7 +542,7 @@ var some_string := "Hello, World"
 </b></details>
 
 <details>
-<summary>Define a variable that when printed will give this output:
+<summary>Определите переменную, при выводе которой получится следующее:
 
 ```
 Hello,
@@ -557,7 +558,7 @@ var some_string := "Hello,\nWorld"
 </b></details>
 
 <details>
-<summary>How to print "Hello,\nWorld" ?
+<summary>Как вывести "Hello,\nWorld" ?
 </summary><br><b>
 
 
@@ -576,7 +577,7 @@ func main() {
 </b></details>
 
 <details>
-<summary>What would be the output of the following code?
+<summary>Что выведет следующий код?
 
 ```Go
 package main
@@ -596,7 +597,7 @@ Hello There
 </b></details>
 
 <details>
-<summary>How to print the length of a character in Go?
+<summary>Как вывести длину строки в Go?
 </summary><br><b>
 
 ```Go
@@ -613,7 +614,7 @@ func main() {
 </b></details>
 
 <details>
-<summary>What would be the output of the following code? Why?
+<summary>Что выведет следующий код? Почему?
 
 ```Go
 var str string = "cowabunga"
@@ -622,11 +623,11 @@ fmt.Println(str[3])
 </summary><br><b>
 
 97
-Because it prints the ascii code of 'a' which is 97.
+Потому что выводится ASCII-код символа 'a', равный 97.
 </b></details>
 
 <details>
-<summary>Assuming <code>var str string = "cowabunga"</code>, What would be the output of the following lines?
+<summary>Если <code>var str string = "cowabunga"</code>, что выведут следующие строки?
 
 * `fmt.Println(str[3:5])`
 </summary><br><b>
@@ -635,21 +636,21 @@ Because it prints the ascii code of 'a' which is 97.
 </b></details>
 
 <details>
-<summary>How to check if a string variable contains the string "ob1"?
+<summary>Как проверить, содержит ли строковая переменная строку "ob1"?
 </summary><br><b>
 
 </b></details>
 
 <details>
-<summary>How to turn the string "Hi There" to "hi there" with the <code>strings</code> package?
+<summary>Как превратить строку "Hi There" в "hi there" с помощью пакета <code>strings</code>?
 </summary><br><b>
 
 </b></details>
 
-### Conditionals
+### Условные операторы
 
 <details>
-<summary>Define a variable with value of 5. Write a conditional to check if the value of the variable is bigger than 0 and if it is, print "It's bigger than 0!"</summary><br><b>
+<summary>Определите переменную со значением 5. Напишите условие, которое проверяет, больше ли значение переменной 0, и если да, выводит "It's bigger than 0!"</summary><br><b>
 
 ```Go
 x := 5
@@ -660,7 +661,7 @@ if x > 0 {
 </b></details>
 
 <details>
-<summary>Define a variable with a random value. If its value bigger than 10 print "yay!". If it's smaller than 10, print "nay!"</summary><br><b>
+<summary>Определите переменную со случайным значением. Если её значение больше 10, выведите "yay!". Если меньше 10, выведите "nay!"</summary><br><b>
 
 ```Go
 
@@ -675,7 +676,7 @@ if x > 10 {
 </b></details>
 
 <details>
-<summary>What the following code does?
+<summary>Что делает следующий код?
 
 ```Go
 package main
@@ -697,13 +698,13 @@ func main() {
 ```
 </summary><br><b>
 
-Defines a variable with random value between 0 and 100. If the random value is even, prints "Bingo!" otherwise, prints the random value itself.
+Определяет переменную со случайным значением от 0 до 100. Если случайное значение чётное, выводит "Bingo!", иначе выводит само случайное значение.
 </b></details>
 
 #### Switch
 
 <details>
-<summary>Write a switch case to check what day of the week it is. If Sunday print "Here we go". If Monday print "We have just started". For any other day print the day.
+<summary>Напишите switch case, который проверяет, какой сегодня день недели. Если воскресенье, выведите "Here we go". Если понедельник, выведите "We have just started". Для любого другого дня выведите сам день.
 </summary><br><b>
 
 ```Go
@@ -731,10 +732,10 @@ func main() {
 
 </b></details>
 
-### User Input
+### Пользовательский ввод
 
 <details>
-<summary>Fix the following program to get an input from the user regarding his name and print it
+<summary>Исправьте следующую программу, чтобы она получала от пользователя ввод с его именем и выводила его
 
 ```Go
 var name string
@@ -756,13 +757,13 @@ fmt.Println(name)
 </b></details>
 
 <details>
-<summary>Why when asking for user input, we have to specify &?</summary><br><b>
+<summary>Почему при запросе пользовательского ввода нужно указывать &?</summary><br><b>
 
-Because we want to reference the memory address of the variable, this is where the user input will be stored.
+Потому что нужно сослаться на адрес переменной в памяти — именно там будет храниться пользовательский ввод.
 </b></details>
 
 <details>
-<summary>What do we print here?
+<summary>Что здесь выводится?
 
 ```Go
 var age int = 3
@@ -772,14 +773,14 @@ fmt.Println(&age)
 ```
 </summary><br><b>
 
-The value of `age` variable and then the memory location of `age` variable
+Значение переменной `age`, а затем адрес переменной `age` в памяти
 
 </b></details>
 
-### Arrays and Slices
+### Массивы и срезы
 
 <details>
-<summary>Define an array of integers of size 4 without value (no items).</summary><br><b>
+<summary>Определите массив целых чисел размером 4 без значений (без элементов).</summary><br><b>
 
 ```Go
 var x [4]int
@@ -787,7 +788,7 @@ var x [4]int
 </b></details>
 
 <details>
-<summary>Define an array of the following colors: red, green and blue</summary><br><b>
+<summary>Определите массив из следующих цветов: red, green и blue</summary><br><b>
 
 ```Go
 var rgb = [3]string{"red", "green", "blue"}
@@ -795,7 +796,7 @@ var rgb = [3]string{"red", "green", "blue"}
 </b></details>
 
 <details>
-<summary>You defined the following array and printed it. What was the output? <code>var numbers = [10]int{}</code></summary><br><b>
+<summary>Определён и выведен следующий массив. Что было выведено? <code>var numbers = [10]int{}</code></summary><br><b>
 
 ```Go
 [0 0 0 0 0 0 0 0 0 0]
@@ -803,7 +804,7 @@ var rgb = [3]string{"red", "green", "blue"}
 </b></details>
 
 <details>
-<summary>Define an array of integers of size 10. All the values should be zeros except first one which should be 5 and the last one which should be 100</summary><br><b>
+<summary>Определите массив целых чисел размером 10. Все значения должны быть нулями, кроме первого, равного 5, и последнего, равного 100</summary><br><b>
 
 ```Go
 var arr = [10]int{5, 9: 100}
@@ -811,7 +812,7 @@ var arr = [10]int{5, 9: 100}
 </b></details>
 
 <details>
-<summary>What would be the result of the following code?
+<summary>Каков будет результат следующего кода?
 
 ```Go
 var arr = [...]int{1, 2, 3, 4}
@@ -820,11 +821,11 @@ fmt.Println(arr == anotherArr)
 ```
 </summary><br><b>
 
-The result of comparison is true.
+Результат сравнения — true.
 </b></details>
 
 <details>
-<summary>Assuming there is a defined array called <code>arr</code>, print its length</summary><br><b>
+<summary>Есть определённый массив с именем <code>arr</code>. Выведите его длину</summary><br><b>
 
 ```Go
 fmt.Println(len(arr))
@@ -832,22 +833,22 @@ fmt.Println(len(arr))
 </b></details>
 
 <details>
-<summary>True or False? An array of type [1]int is the same type as an array of [2]int</summary><br><b>
+<summary>Правда или ложь? Массив типа [1]int имеет тот же тип, что и массив [2]int</summary><br><b>
 
-False. Go treats the array size as being part of the type itself. So [1]int type != [2]int type.
+Ложь. Go считает размер массива частью самого типа. Поэтому тип [1]int != тип [2]int.
 </b></details>
 
 <details>
-<summary>True or False? If <code>var x := 2</code>, then <code>var y [x]int</code> is an array of size 2</summary><br><b>
+<summary>Правда или ложь? Если <code>var x := 2</code>, то <code>var y [x]int</code> — это массив размером 2</summary><br><b>
 
-False. It's not possible to use variable to define an array of certain size. As the size of an array is part of its type and types must be resolved at compile time, not runtime.
+Ложь. Использовать переменную для задания размера массива нельзя. Размер массива — часть его типа, а типы должны определяться на этапе компиляции, а не во время выполнения.
 </b></details>
 
 <details>
-<summary>Demonstrate defining the following slices:
+<summary>Продемонстрируйте определение следующих срезов:
 
-* without values (with nil)
-* with two values
+* без значений (с nil)
+* с двумя значениями
 </summary><br><b>
 
 `var slice []int`
@@ -855,19 +856,19 @@ False. It's not possible to use variable to define an array of certain size. As 
 </b></details>
 
 <details>
-<summary>Append to a slice called <code>b</code> the number 7</summary><br><b>
+<summary>Добавьте в срез с именем <code>b</code> число 7</summary><br><b>
 
 `b = append(b, 7)`
 </b></details>
 
 <details>
-<summary>Given that <code>var slice = []int{2, 0, 1, 7}</code> what would be the result of <code>slice = append(slice, 2, 0, 2, 2)</code></summary><br><b>
+<summary>Если <code>var slice = []int{2, 0, 1, 7}</code>, каков будет результат <code>slice = append(slice, 2, 0, 2, 2)</code></summary><br><b>
 
 `[2 0 1 7 2 0 2 2]`
 </b></details>
 
 <details>
-<summary>How to compare two slices?</summary><br><b>
+<summary>Как сравнить два среза?</summary><br><b>
 
 ```Go
 package main
@@ -888,31 +889,31 @@ func main() {
 </b></details>
 
 <details>
-<summary>Why in Go you need assign the value returned from append function as opposed of other programming languages like Python, where you don't need to do it?</summary><br><b>
+<summary>Почему в Go нужно присваивать значение, возвращаемое функцией append, в отличие от других языков программирования, например Python, где этого делать не нужно?</summary><br><b>
 
-Because in Go when you pass a something to a function, it copies it. So when we append something to a slice it appends it to a copy of it. So in order to change the original slice, we need to assign the returned copy back into the original slice.
+Потому что в Go при передаче чего-либо в функцию передаётся копия. Поэтому при добавлении чего-либо в срез оно добавляется в его копию. Чтобы изменить исходный срез, нужно присвоить возвращённую копию обратно исходному срезу.
 </b></details>
 
 <details>
-<summary>How create a slice of capacity (not size) of 20?</summary><br><b>
+<summary>Как создать срез с ёмкостью (не размером) 20?</summary><br><b>
 
 `slice := make([]int, 20)`
 </b></details>
 
 <details>
-<summary>How create a slice of size 3 ad capacity of 10?</summary><br><b>
+<summary>Как создать срез размером 3 и ёмкостью 10?</summary><br><b>
 
 `slice := make([]int, 3, 20)`
 </b></details>
 
 <details>
-<summary>What's the use case for defining in advance the capacity of a slice?</summary><br><b>
+<summary>Зачем заранее задавать ёмкость среза?</summary><br><b>
 
-It's more efficent to set the size once for a slice rather than increase its capacity every times new items added to it.
+Эффективнее один раз задать размер среза, чем увеличивать его ёмкость каждый раз при добавлении новых элементов.
 </b></details>
 
 <details>
-<summary>What's the value of <code>slice</code> after running the following code? Why?
+<summary>Каково значение <code>slice</code> после выполнения следующего кода? Почему?
 
 ```Go
 slice := make([]int, 3)
@@ -924,13 +925,13 @@ slice = append(slice, 41)
 </b></details>
 
 <details>
-<summary>True or False? When specifying the capacity of a slice, it's always best to specify a capacity that is bigger than the slice size</summary><br><b>
+<summary>Правда или ложь? При указании ёмкости среза всегда лучше указывать ёмкость больше размера среза</summary><br><b>
 
-True. Otherwise it will cause compile-time error or run-time error, depends on how you defined it.
+Правда. Иначе возникнет ошибка компиляции или ошибка во время выполнения — в зависимости от того, как срез определён.
 </b></details>
 
 <details>
-<summary>Given <code>slice := []int{1, 2, 3, 4, 5}</code> what would be the result of the following expressions:
+<summary>Если <code>slice := []int{1, 2, 3, 4, 5}</code>, каков будет результат следующих выражений:
 
 * `slice[:]`
 * `slice[2:]`
@@ -945,7 +946,7 @@ True. Otherwise it will cause compile-time error or run-time error, depends on h
 </b></details>
 
 <details>
-<summary>What's the output of the following program?
+<summary>Что выведет следующая программа?
 
 ```Go
 slice := []int{1, 2, 3}
@@ -962,13 +963,13 @@ fmt.Println("slice:", anotherSlice)
 [999 5]
 ```
 
-The expalantion is that slicing a slice isn't creating a copy of the data but rather creates another variable that shares the very same memory.
+Объяснение: взятие среза от среза не создаёт копию данных, а создаёт другую переменную, которая использует ту же самую память.
 </b></details>
 
 <details>
-<summary>How to create an independant slice of a slice?</summary><br><b>
+<summary>Как создать независимый срез от среза?</summary><br><b>
 
-When creating a slice of a slice, it will create variable that shares the same memory. To create a slice that is indepdant of the original slice, you can use the built-in function `copy`
+При создании среза от среза создаётся переменная, использующая ту же память. Чтобы создать срез, независимый от исходного, можно воспользоваться встроенной функцией `copy`
 
 ```Go
 slice := []int{1, 2, 3}
@@ -978,15 +979,15 @@ numOfElements := copy(slice, destSlice)
 ```
 </b></details>
 
-### Loops
+### Циклы
 
 <details>
-<summary>Define a simple for loop with following components:
+<summary>Определите простой цикл for со следующими компонентами:
 
-* variable `i` initialized to 0
-* expression where the variable should be smaller than 50
-* at the end of each iteration the variable value should be incremented by 1
-* In the loop itself, the value of variable `i` should be added to a variable called `sum` (initialize the variable before the loop with value of 0)
+* переменная `i`, инициализированная значением 0
+* выражение, по которому переменная должна быть меньше 50
+* в конце каждой итерации значение переменной увеличивается на 1
+* в самом цикле значение переменной `i` прибавляется к переменной с именем `sum` (инициализируйте эту переменную перед циклом значением 0)
 </summary><br><b>
 
 ```Go
@@ -998,7 +999,7 @@ for i := 0; i < 50; i++ {
 </b></details>
 
 <details>
-<summary>Implement infinite loop</summary><br><b>
+<summary>Реализуйте бесконечный цикл</summary><br><b>
 
 ```Go
 for {
@@ -1008,7 +1009,7 @@ for {
 </b></details>
 
 <details>
-<summary>What's the difference between the following two loops?
+<summary>В чём разница между следующими двумя циклами?
 
 ```Go
 for {
@@ -1021,18 +1022,18 @@ for true {
 ```
 </summary><br><b>
 
-From result perspective, there is no difference. Both are infinite loops.
+С точки зрения результата разницы нет. Оба цикла бесконечные.
 </b></details>
 
-### Maps
+### Map
 
 <details>
-<summary>Define the following map variables:
+<summary>Определите следующие переменные типа map:
 
-* an empty map where all keys are of string type, as well as the values
-* an empty map where all the keys are of string type and the values are of int type
-* A map with string type keys and int array values (non empty map, populate it with data)
-* Empty map with int type keys and string type values of size 100
+* пустой map, где все ключи, как и значения, имеют тип string
+* пустой map, где все ключи имеют тип string, а значения — тип int
+* map с ключами типа string и значениями — массивами int (непустой map, заполните его данными)
+* пустой map размером 100 с ключами типа int и значениями типа string
 </summary><br><b>
 
 `var someMap = map[string]string`
@@ -1050,25 +1051,25 @@ nonEmptyMap := map[string][]int{
 </b></details>
 
 <details>
-<summary>True or False? All keys in a single map, should have the same data type</summary><br><b>
+<summary>Правда или ложь? Все ключи в одном map должны иметь один и тот же тип данных</summary><br><b>
 
-True. This is also true for the all the values in a single map.
+Правда. Это верно и для всех значений в одном map.
 </b></details>
 
 <details>
-<summary>How to check the number of key-value pairs in a map?</summary><br><b>
+<summary>Как узнать количество пар ключ-значение в map?</summary><br><b>
 
 `len(someMap)`
 </b></details>
 
 <details>
-<summary>True or False? To compare maps, one can use "==" this way <code>someMap == anotherMap</code></summary><br><b>
+<summary>Правда или ложь? Для сравнения map можно использовать "==" так: <code>someMap == anotherMap</code></summary><br><b>
 
-False.
+Ложь.
 </b></details>
 
 <details>
-<summary>What's the output of the following code?
+<summary>Что выведет следующий код?
 
 ```Go
 someMap := map[string]int{}
@@ -1081,7 +1082,7 @@ fmt.Println(someMap["y"])
 </b></details>
 
 <details>
-<summary>What's the output of the following code?
+<summary>Что выведет следующий код?
 
 ```Go
 someMap := map[string]int{
@@ -1099,7 +1100,7 @@ fmt.Println(value, exists)
 </b></details>
 
 <details>
-<summary>Remove from the following map the key-value pair of "y"
+<summary>Удалите из следующего map пару ключ-значение для "y"
 
 ```Go
 someMap := map[string]int{
@@ -1113,10 +1114,10 @@ someMap := map[string]int{
 `delete(someMap, "y")`
 </b></details>
 
-### Functions
+### Функции
 
 <details>
-<summary>Define a function that prints "Hello World"</summary><br><b>
+<summary>Определите функцию, которая выводит "Hello World"</summary><br><b>
 
 ```Go
 func PrintHelloWorld() {
@@ -1126,7 +1127,7 @@ func PrintHelloWorld() {
 </b></details>
 
 <details>
-<summary>What the following code does?
+<summary>Что делает следующий код?
 
 ```Go
 func add(x int, y int) int {
@@ -1135,12 +1136,12 @@ func add(x int, y int) int {
 ```
 </summary><br><b>
 
-add is a function that takes two parameters (two integers) and returns their sum.
+add — это функция, которая принимает два параметра (два целых числа) и возвращает их сумму.
 </b></details>
 
 
 <details>
-<summary>Which of the following functions will work just fine?
+<summary>Какая из следующих функций будет работать нормально?
 
 ```Go
 func add(x int, y int) int {
@@ -1153,17 +1154,17 @@ func add(x, y int) int {
 ```
 </summary><br><b>
 
-Both. If two or more parameters share the same type, you can specify it only once.
+Обе. Если у двух или более параметров один и тот же тип, его можно указать только один раз.
 </b></details>
 
 <details>
-<summary>True or False? A function in Go can return either zero or one values, but not more than that</summary><br><b>
+<summary>Правда или ложь? Функция в Go может вернуть либо ноль, либо одно значение, но не больше</summary><br><b>
 
-False. A fucntion in Go can return multiple values
+Ложь. Функция в Go может возвращать несколько значений
 </b></details>
 
 <details>
-<summary>Write code that will execute the following function in a valid way
+<summary>Напишите код, который корректно вызовет следующую функцию
 
 ```Go
 func swap(x, y string) (string, string) {
@@ -1180,7 +1181,7 @@ fmt.Println(a, b)
 </b></details>
 
 <details>
-<summary>What is the result of the following code?
+<summary>Каков результат следующего кода?
 
 ```Go
 func process(num int) (x int) {
@@ -1202,7 +1203,7 @@ func main() {
 #### Defer
 
 <details>
-<summary>What will be the output of the following code? Why?
+<summary>Что выведет следующий код? Почему?
 
 ```Go
 package main
@@ -1222,16 +1223,16 @@ func main() {
 1
 ```
 
-2 is printed before 1 due to the defer statement. The `defer` statement defers the execution of the function (`fmt.Println("1")`) until the surrounding fucntion (which is `main()`) returns.
+2 выводится раньше 1 из-за оператора defer. Оператор `defer` откладывает выполнение функции (`fmt.Println("1")`) до возврата из объемлющей функции (в данном случае `main()`).
 </b></details>
 
-<details><summary>True or False? The arguments of a deferred functions are evaluated but the function itself isn't called until the surrounding function returns</summary><br><b>
+<details><summary>Правда или ложь? Аргументы отложенных функций вычисляются сразу, но сама функция не вызывается до возврата из объемлющей функции</summary><br><b>
 
-True.
+Правда.
 </b></details>
 
 <details>
-<summary>What will be the output of the following code? Why?
+<summary>Что выведет следующий код? Почему?
 
 ```Go
 package main
@@ -1265,34 +1266,34 @@ func main() {
 0
 ```
 
-Deferred functions are executed in a last-in-first-out order, this is why it prints it from 9 to 0 instead of from 0 to 9.
+Отложенные функции выполняются в порядке «последним пришёл — первым вышел» (LIFO), поэтому вывод идёт от 9 до 0, а не от 0 до 9.
 </b></details>
 
-### Packages
+### Пакеты
 
 <details>
-<summary>How do you export a variable or a function in Go for other packages to use?
+<summary>Как экспортировать переменную или функцию в Go, чтобы ими могли пользоваться другие пакеты?
 </summary><br><b>
 
-Capitalize the first letter of what you would like to export.
+Написать с заглавной буквы первую букву того, что нужно экспортировать.
 </b></details>
 
 <details>
-<summary>What are different levels of scope of variables?
+<summary>Какие существуют уровни области видимости переменных?
 </summary><br><b>
 
-* Local
-* Package
-* Global
+* Локальный
+* Пакетный
+* Глобальный
 </b></details>
 
-### Generics
+### Дженерики
 
 <details>
-<summary>How can you define your custom generic type in Golang?
+<summary>Как определить собственный обобщённый (generic) тип в Golang?
 </summary><br><b>
 
-By creating an interface.
+Создав интерфейс.
 
 ```go
 package main
@@ -1305,7 +1306,7 @@ type C interface {
 </b></details>
 
 <details>
-<summary>Why can we send both int and string to following function?
+<summary>Почему в следующую функцию можно передавать и int, и string?
 
 ```go
 package main
@@ -1323,13 +1324,13 @@ func show[T C](input T) {
 
 </summary><br><b>
 
-Because we created show function as a generic function. Therefore
-it can get types that we have in C.
+Потому что функция show создана как обобщённая (generic) функция. Поэтому
+она может принимать типы, перечисленные в C.
 
 </b></details>
 
 <details>
-<summary>Change this function to accept any type in Golang.
+<summary>Измените эту функцию так, чтобы она принимала любой тип в Golang.
 
 ```go
 package main
@@ -1343,7 +1344,7 @@ func do_log(input string) {
 
 </summary><br><b>
 
-Use any keyword.
+Использовать ключевое слово any.
 
 ```go
 package main
@@ -1357,15 +1358,16 @@ func do_log(input any) {
 
 </b></details>
 
-## Projects
+## Проекты
 
-|Name|Description|Solution|Comments|
+|Название|Описание|Решение|Комментарии|
 |--------|--------|------|----|
-| Simple Web Server | [Description](projects/simple_web_server/README.md) | [Solution](projects/simple_web_server/main.go) | |
+| Простой веб-сервер | [Описание](projects/simple_web_server/README.md) | [Решение](projects/simple_web_server/main.go) | |
 
-## Credits
+## Благодарности
 
-### Images
+### Изображения
 
-Go Gopher was designed by Renee French.
-The specific Go Gophers designs used in this project created by Arie Bregman
+Go Gopher создан Renee French.
+Конкретные изображения Go Gophers, используемые в этом проекте, созданы Arie Bregman
+

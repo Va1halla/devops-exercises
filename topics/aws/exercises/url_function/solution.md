@@ -1,20 +1,20 @@
-## URL Function
+## Функция по URL
 
-Create a basic AWS Lambda function that will be triggered when you enter a URL in the browser
+Создать простую функцию AWS Lambda, которая будет срабатывать при вводе URL в браузере
 
-### Solution
+### Решение
 
-#### Define a function
+#### Определение функции
 
-1. Go to Lambda console panel and click on `Create function`
-  1. Give the function a name like `urlFunction`
-  2. Select `Python3` runtime
-  3. Now to handle function's permissions, we can attach IAM role to our function either by setting a role or creating a new role. I selected "Create a new role from AWS policy templates"
-  4. In "Policy Templates" select "Simple Microservice Permissions"
+1. Открыть панель консоли Lambda и нажать `Create function`
+  1. Задать функции имя, например `urlFunction`
+  2. Выбрать среду выполнения `Python3`
+  3. Чтобы настроить разрешения функции, к ней можно привязать роль IAM — указав существующую или создав новую. Я выбрал "Create a new role from AWS policy templates"
+  4. В "Policy Templates" выбрать "Simple Microservice Permissions"
 
-1. Next, you should see a text editor where you will insert a code similar to the following
+1. Далее появится текстовый редактор, куда нужно вставить код наподобие следующего
 
-#### Function's code
+#### Код функции
 ```
 import json
 
@@ -23,49 +23,49 @@ def lambda_handler(event, context):
     firstName = event['name']
     return 'Hello ' + firstName
 ```
-2. Click on "Create Function"
+2. Нажать "Create Function"
 
-#### Define a test
+#### Определение теста
 
-1. Now let's test the function. Click on "Test".
-2. Select "Create new test event"
-3. Set the "Event name" to whatever you'd like. For example "TestEvent"
-4. Provide keys to test
+1. Теперь протестируем функцию. Нажать "Test".
+2. Выбрать "Create new test event"
+3. Задать любое "Event name". Например, "TestEvent"
+4. Указать ключи для теста
 
 ```
 {
   "name": 'Spyro'
 }
 ```
-5. Click on "Create"
+5. Нажать "Create"
 
-#### Test the function
+#### Тестирование функции
 
-1. Choose the test event you've create (`TestEvent`)
-2. Click on the `Test` button
-3. You should see something similar to `Execution result: succeeded`
-4. If you'll go to AWS CloudWatch, you should see a related log stream
+1. Выбрать созданное тестовое событие (`TestEvent`)
+2. Нажать кнопку `Test`
+3. Должно появиться что-то вроде `Execution result: succeeded`
+4. В AWS CloudWatch должен появиться соответствующий поток логов (log stream)
 
-#### Define a trigger
+#### Определение триггера
 
-We'll define a trigger in order to trigger the function when inserting the URL in the browser
+Определим триггер, чтобы функция срабатывала при вводе URL в браузере
 
-1. Go to "API Gateway console" and click on "New API Option"
-2. Insert the API name, description and click on "Create"
-3. Click on Action -> Create Resource
-4. Insert resource name and path (e.g. the path can be /hello) and click on "Create Resource"
-5. Select the resource we've created and click on "Create Method"
-6. For "integration type" choose "Lambda Function" and insert the lambda function name we've given to the function we previously created. Make sure to also use the same region
-7. Confirm settings and any required permissions
-8. Now click again on the resource and modify "Body Mapping Templates" so the template includes this:
+1. Перейти в "API Gateway console" и нажать "New API Option"
+2. Ввести имя API, описание и нажать "Create"
+3. Нажать Action -> Create Resource
+4. Ввести имя и путь ресурса (например, путь может быть /hello) и нажать "Create Resource"
+5. Выбрать созданный ресурс и нажать "Create Method"
+6. В "integration type" выбрать "Lambda Function" и ввести имя ранее созданной функции lambda. Обязательно использовать тот же регион
+7. Подтвердить настройки и все необходимые разрешения
+8. Снова выбрать ресурс и изменить "Body Mapping Templates" так, чтобы шаблон содержал следующее:
 
 ```
 { "name": "$input.params('name')" }
 ```
-9. Finally save and click on Actions -> Deploy API
+9. Наконец, сохранить и нажать Actions -> Deploy API
 
-#### Running the function
+#### Запуск функции
 
-1. In the API Gateway console, in stages menu, select the API we've created and click on the GET option
-2. You'll see an invoke URL you can click on. You might have to modify it to include the input so it looks similar to this: `.../hello?name=mario`
-3. You should see in your browser `Hello Mario`
+1. В консоли API Gateway в меню stages выбрать созданный API и нажать на вариант GET
+2. Появится invoke URL, по которому можно перейти. Возможно, его придётся изменить, добавив входные данные, чтобы он выглядел примерно так: `.../hello?name=mario`
+3. В браузере должно появиться `Hello Mario`

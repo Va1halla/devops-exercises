@@ -1,6 +1,6 @@
-## ReplicaSet 03 - Solution
+## ReplicaSet 03 — решение
 
-1. Create a ReplicaSet with 2 replicas. Make sure the label used for the selector and in the Pods is "type=web"
+1. Создать ReplicaSet с 2 репликами. Метка, используемая в селекторе и в Pod, должна быть "type=web"
 
 ```
 cat >> rs.yaml <<EOL
@@ -29,32 +29,32 @@ EOL
 kubectl apply -f rs.yaml
 ```
 
-2. Verify a ReplicaSet was created and there are 2 replicas
+2. Убедиться, что ReplicaSet создан и в нём 2 реплики
 
 ```
 kubectl get rs
-# OR a more specific way: kubectl get -f rs.yaml
+# ИЛИ более конкретный способ: kubectl get -f rs.yaml
 ```
 
-3. List the Pods running and save the output somewhere
+3. Вывести список запущенных Pod и где-нибудь сохранить вывод
 
 ```
 kubectl get po > running_pods.txt
 ```
 
-4. Remove the label (type=web) from one of the Pods created by the ReplicaSet
+4. Удалить метку (type=web) у одного из Pod, созданных ReplicaSet
 
 ```
 kubectl label pod <POD_NAME> type-
 ```
 
-5. List the Pods running. Are there more Pods running after removing the label? Why?
+5. Вывести список запущенных Pod. Стало ли Pod больше после удаления метки? Почему?
 
 ```
 Yes, there is an additional Pod running because once the label (used as a matching selector) was removed, the Pod became independent meaning, it's not controlled by the ReplicaSet anymore and the ReplicaSet was missing replicas based on its definition so, it created a new Pod.
 ```
 
-6. Verify the ReplicaSet indeed created a new Pod
+6. Убедиться, что ReplicaSet действительно создал новый Pod
 
 ```
 kubectl describe rs web

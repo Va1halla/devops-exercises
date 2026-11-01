@@ -1,3 +1,3 @@
-## Palindrome
+## Палиндром
 
-1. Write code that determines if a number is a Palindrome
+1. Написать код, который определяет, является ли число палиндромом

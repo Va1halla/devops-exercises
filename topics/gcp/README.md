@@ -1,176 +1,176 @@
 # Google Cloud Platform
 
 - [Google Cloud Platform](#google-cloud-platform)
-  - [Exercises](#exercises)
-    - [Account Setup](#account-setup)
+  - [Упражнения](#упражнения)
+    - [Настройка аккаунта](#настройка-аккаунта)
     - [Compute Engine](#compute-engine)
-  - [Questions](#questions)
-    - [Global Infrastructure](#global-infrastructure)
+  - [Вопросы](#вопросы)
+    - [Глобальная инфраструктура](#глобальная-инфраструктура)
       - [gcloud](#gcloud)
-    - [Resource Hierarchy](#resource-hierarchy)
-    - [IAM and Roles](#iam-and-roles)
-    - [Labels and Tags](#labels-and-tags)
+    - [Иерархия ресурсов](#иерархия-ресурсов)
+    - [IAM и роли](#iam-и-роли)
+    - [Метки и теги](#метки-и-теги)
       - [gcloud](#gcloud-1)
     - [Compute Engine](#compute-engine-1)
       - [gcloud](#gcloud-2)
-    - [Other](#other)
+    - [Другое](#другое)
     - [Google Kubernetes Engine (GKE)](#google-kubernetes-engine-gke)
     - [Anthos](#anthos)
   
-## Exercises
+## Упражнения
 
-### Account Setup
+### Настройка аккаунта
 
-|Name|Topic|Objective & Instructions|Solution|Comments|
+|Название|Тема|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|----|
-| Create a project | Organization | [Exercise](exercises/create_project/exercise.md) | [Solution](exercises/create_project/solution.md) | |
-| Assign roles | IAM | [Exercise](exercises/assign_roles/exercise.md) | [Solution](exercises/assign_roles/solution.md) | |
+| Создание проекта | Organization | [Упражнение](exercises/create_project/exercise.md) | [Решение](exercises/create_project/solution.md) | |
+| Назначение ролей | IAM | [Упражнение](exercises/assign_roles/exercise.md) | [Решение](exercises/assign_roles/solution.md) | |
 
 
 ### Compute Engine
 
-|Name|Topic|Objective & Instructions|Solution|Comments|
+|Название|Тема|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|----|
-| Create an instance | Compute, Labels | [Exercise](exercises/instance_101/exercise.md) | [Solution](exercises/instance_101/solution.md) | |
+| Создание инстанса | Compute, Labels | [Упражнение](exercises/instance_101/exercise.md) | [Решение](exercises/instance_101/solution.md) | |
 
 
-## Questions
+## Вопросы
 
-### Global Infrastructure
+### Глобальная инфраструктура
 
 <details>
-<summary>Explain each of the following
+<summary>Объясните каждое из следующих понятий
 
   * Zone
   * Region
 </summary><br><b>
 
-GCP regions are data centers hosted across different geographical locations worldwide.<br>
+Регионы (regions) GCP — это центры обработки данных, размещённые в различных географических точках по всему миру.<br>
 
-Within each region, there are multiple isolated locations known as Zones. Each zone is one or more data-centers with redundant network and connectivity and power supply. Multiple zones ensure high availability in case one of them goes down
+Внутри каждого региона есть несколько изолированных площадок, называемых зонами (Zones). Каждая зона — это один или несколько дата-центров с резервированием сети, связности и электропитания. Несколько зон обеспечивают высокую доступность на случай, если одна из них выйдет из строя
 
 </b></details>
 
 <details>
-<summary>True or False? Each GCP region is designed to be completely isolated from the other GCP regions </summary><br><b>
+<summary>Правда или ложь? Каждый регион GCP спроектирован так, чтобы быть полностью изолированным от других регионов GCP </summary><br><b>
 
-True.
+Правда.
 </b></details>
 
 <details>
-<summary>What considerations to take when choosing an GCP region for running a new application?</summary><br><b>
+<summary>Что учитывать при выборе региона GCP для запуска нового приложения?</summary><br><b>
 
-* Services Availability: not all service (and all their features) are available in every region
-* Reduced latency: deploy application in a region that is close to customers
-* Compliance: some countries have more strict rules and requirements such as making sure the data stays within the borders of the country or the region. In that case, only specific region can be used for running the application
-* Pricing: the pricing might not be consistent across regions so, the price for the same service in different regions might be different.
+* Доступность сервисов: не все сервисы (и не все их функции) доступны в каждом регионе
+* Снижение задержки: развёртывать приложение в регионе, близком к клиентам
+* Соответствие требованиям (compliance): в некоторых странах действуют более строгие правила и требования, например, чтобы данные оставались в пределах страны или региона. В этом случае для запуска приложения можно использовать только определённый регион
+* Стоимость: цены могут различаться между регионами, поэтому стоимость одного и того же сервиса в разных регионах может отличаться.
 </b></details>
 
 <details>
-<summary>True or False? All GCP services are available in all regions zones</summary><br><b>
+<summary>Правда или ложь? Все сервисы GCP доступны во всех регионах и зонах</summary><br><b>
 
-False. You can see [here](https://cloud.google.com/about/locations) which products/services available in each region.
+Ложь. [Здесь](https://cloud.google.com/about/locations) можно посмотреть, какие продукты/сервисы доступны в каждом регионе.
 </b></details>
 
 #### gcloud
 
 <details>
-<summary>How to list all regions?</summary><br><b>
+<summary>Как вывести список всех регионов?</summary><br><b>
 
 `gcloud compute regions list`
 </b></details>
 
-### Resource Hierarchy
+### Иерархия ресурсов
 
 <details>
-<summary>Explain resources hierarchy in GCP</summary><br><b>
+<summary>Объясните иерархию ресурсов в GCP</summary><br><b>
 
 Organization
   Folder
     Project
       Resources
 
-* Organizations - Company
-* Folder - usually for departments, teams, products, etc.
-* Project - can be different projects or same project but different environments (dev, staging, production)
-* Resources - actual GCP services (Compute, App engine, Storage, etc.)
+* Organizations - компания
+* Folder - обычно для отделов, команд, продуктов и т.д.
+* Project - могут быть разные проекты или один проект, но разные окружения (dev, staging, production)
+* Resources - собственно сервисы GCP (Compute, App engine, Storage и т.д.)
 
 </b></details>
 
 <details>
-<summary>True or False? In a project, you can have one or more organizations</summary><br><b>
+<summary>Правда или ложь? В проекте может быть одна или несколько организаций</summary><br><b>
 
-False. It's quite the opposite. First there is an organization and under organization you can have one or more folder with one or more projects.
+Ложь. Всё наоборот. Сначала есть организация, а в организации может быть одна или несколько папок с одним или несколькими проектами.
 </b></details>
 
 <details>
-<summary>True or False? A resource has to be associated with at least one project</summary><br><b>
+<summary>Правда или ложь? Ресурс должен быть связан как минимум с одним проектом</summary><br><b>
 
-True. You can't have resources associate with no projects.
+Правда. Ресурсы не могут существовать без привязки к проекту.
 </b></details>
 
 <details>
-<summary>True or False? Project name has to be globally unique</summary><br><b>
+<summary>Правда или ложь? Имя проекта должно быть глобально уникальным</summary><br><b>
 
-True.
+Правда.
 </b></details>
 
-### IAM and Roles
+### IAM и роли
 
 <details>
-<summary>Explain roles and permissions</summary><br><b>
+<summary>Объясните роли и разрешения (permissions)</summary><br><b>
 
-Role is an encapsulation of set of permissions. For example an "owner" role has more than 3000 assigned permissions to the different components and services of GCP.
-</b></details>
-
-<details>
-<summary>True or False? Permissive parent policy will always overrule restrictive child policy</summary><br><b>
-
-True
-</b></details>
-
-### Labels and Tags
-
-<details>
-<summary>What are labels?</summary><br><b>
-
-You can think about labels in GCP as sticky notes that you attach to different GCP resources. That makes it easier for example, to search for specific resources (like applying the label called "web-app" and search for all the resources that are related somehow to "web-app")
+Роль — это инкапсуляция набора разрешений. Например, у роли "owner" более 3000 назначенных разрешений на различные компоненты и сервисы GCP.
 </b></details>
 
 <details>
-<summary>Can you provide some examples to labels usage in GCP?</summary><br><b>
+<summary>Правда или ложь? Разрешительная политика родителя всегда перекрывает ограничительную политику потомка</summary><br><b>
 
-* Location (cost center)
-* Project (or environment, folder, etc.)
-* Service type
-* Service owner
-* Application type
-* Application owner
+Правда
+</b></details>
+
+### Метки и теги
+
+<details>
+<summary>Что такое метки (labels)?</summary><br><b>
+
+Метки в GCP можно представить как стикеры, которые прикрепляются к различным ресурсам GCP. Это упрощает, например, поиск определённых ресурсов (например, назначить метку "web-app" и искать все ресурсы, так или иначе связанные с "web-app")
 </b></details>
 
 <details>
-<summary>What are network tags and how are they different from labels? </summary><br><b>
+<summary>Приведите примеры использования меток в GCP</summary><br><b>
 
-As the name suggests, network tags can be applied only to network resources.
-While labels don't affect the resources on which they are applied, network tags do affect resources (e.g. firewall access and networking routes)
+* Местоположение (центр затрат)
+* Проект (или окружение, папка и т.д.)
+* Тип сервиса
+* Владелец сервиса
+* Тип приложения
+* Владелец приложения
+</b></details>
+
+<details>
+<summary>Что такое сетевые теги (network tags) и чем они отличаются от меток? </summary><br><b>
+
+Как следует из названия, сетевые теги можно применять только к сетевым ресурсам.
+Метки не влияют на ресурсы, к которым применяются, а сетевые теги влияют (например, на доступ через firewall и сетевые маршруты)
 </b></details>
 
 #### gcloud
 
 <details>
-<summary>List the labels of an instance called "instance-1"</summary><br><b>
+<summary>Выведите метки инстанса с именем "instance-1"</summary><br><b>
 
 `gcloud compute instances describe instance-1 --format "yaml(labels)"`
 </b></details>
 
 <details>
-<summary>Update a label to "app=db" for the instance called "instance-1"</summary><br><b>
+<summary>Измените метку на "app=db" для инстанса с именем "instance-1"</summary><br><b>
 
 `gcloud compute instances update instance-1 --update-labels app=db`
 </b></details>
 
 <details>
-<summary>Remove the label "env" from an instance called "instance-1"</summary><br><b>
+<summary>Удалите метку "env" у инстанса с именем "instance-1"</summary><br><b>
 
 `gcloud compute instances update instance-1 --remove-labels env`
 </b></details>
@@ -180,7 +180,7 @@ While labels don't affect the resources on which they are applied, network tags 
 #### gcloud
 
 <details>
-<summary>Create an instance with the following properties:
+<summary>Создайте инстанс со следующими свойствами:
 
 * name: instance-1
 * machine type: e2-micro
@@ -190,66 +190,66 @@ While labels don't affect the resources on which they are applied, network tags 
 `gcloud compute instances create instance-1 --labels app=web,env=dev --machine-type=e2-micro`
 </b></details>
 
-### Other
+### Другое
 
 <details>
-<summary>Tell me what do you know about GCP networking</summary><br><b>
+<summary>Расскажите, что вы знаете о сетях в GCP</summary><br><b>
 
-Virtual Private Cloud(VPC) network is a virtual version of physical network, implemented in Google's internal Network. VPC is a global resource in GCP.
-Subnetworks(subnets) are regional resources, ie., subnets can be created withinin regions.
+Сеть Virtual Private Cloud(VPC) — это виртуальная версия физической сети, реализованная во внутренней сети Google. VPC — глобальный ресурс в GCP.
+Подсети (subnets) — региональные ресурсы, т.е. подсети создаются в пределах регионов.
 
-VPC are created in 2 modes,
+VPC создаются в 2 режимах,
 
-1. Auto mode VPC - One subnet in each region is created automatically by GCP while creating VPC
+1. Auto mode VPC - при создании VPC GCP автоматически создаёт по одной подсети в каждом регионе
 
-2. Custom mode VPC - No subnets are automatically created. This type of network provides complete control over the subnets creation to the users. 
+2. Custom mode VPC - подсети автоматически не создаются. Такой тип сети даёт пользователям полный контроль над созданием подсетей. 
 </b></details>
 
 <details>
-<summary>Explain Cloud Functions</summary><br><b>
+<summary>Объясните, что такое Cloud Functions</summary><br><b>
 
-Google Cloud Functions is a serverless execution environment for building and connecting cloud services. With Cloud Functions you write simple, single-purpose functions that are attached to events emitted from your cloud infrastructure and services. Your function is triggered when an event being watched is fired.
-
-</b></details>
-
-<details>
-<summary>What is Cloud Datastore?</summary><br><b>
-
-Cloud Datastore is a schemaless NoSQL datastore in Google's cloud. Applications can use Datastore to query your data with SQL-like queries that support filtering and sorting. Datastore replicates data across multiple datacenters, which provides a high level of read/write availability.
+Google Cloud Functions — это бессерверная среда выполнения для создания и связывания облачных сервисов. С помощью Cloud Functions пишутся простые одноцелевые функции, привязанные к событиям, которые генерируют облачная инфраструктура и сервисы. Функция запускается, когда срабатывает отслеживаемое событие.
 
 </b></details>
 
 <details>
-<summary>What network tags are used for?</summary><br><b>
+<summary>Что такое Cloud Datastore?</summary><br><b>
 
-Network tags allow you to apply firewall rules and routes to a specific instance or set of instances: You make a firewall rule applicable to specific instances by using target tags and source tags.
-
-</b></details>
-
-<details>
-<summary>What are flow logs? Where are they enabled?</summary><br><b>
-
-VPC Flow Logs records a sample of network flows sent from and received by VM instances, including instances used as Google Kubernetes Engine nodes. These logs can be used for network monitoring, forensics, real-time security analysis, and expense optimization.
-
-Enable Flow Logs
-
-1. Open VPC Network in GCP Console
-
-2. Click the name of the subnet 
-
-3. Click EDIT button
-
-4. Set Flow Logs to On
-
-5. Click Save
-
-
+Cloud Datastore — это NoSQL-хранилище данных без схемы в облаке Google. Приложения могут использовать Datastore для запросов к данным с помощью SQL-подобных запросов, поддерживающих фильтрацию и сортировку. Datastore реплицирует данные между несколькими дата-центрами, что обеспечивает высокий уровень доступности на чтение и запись.
 
 </b></details>
 
 <details>
-<summary>How do you list buckets?</summary><br><b>
-    Two ways to do that:
+<summary>Для чего используются сетевые теги (network tags)?</summary><br><b>
+
+Сетевые теги позволяют применять правила firewall и маршруты к определённому инстансу или набору инстансов: правило firewall применяется к определённым инстансам с помощью целевых тегов (target tags) и тегов источника (source tags).
+
+</b></details>
+
+<details>
+<summary>Что такое flow logs? Где они включаются?</summary><br><b>
+
+VPC Flow Logs записывает выборку сетевых потоков, отправленных и полученных VM-инстансами, включая инстансы, используемые как узлы Google Kubernetes Engine. Эти логи можно использовать для мониторинга сети, криминалистического анализа, анализа безопасности в реальном времени и оптимизации расходов.
+
+Включение Flow Logs
+
+1. Откройте VPC Network в консоли GCP
+
+2. Нажмите на имя подсети 
+
+3. Нажмите кнопку EDIT
+
+4. Установите Flow Logs в положение On
+
+5. Нажмите Save
+
+
+
+</b></details>
+
+<details>
+<summary>Как вывести список бакетов?</summary><br><b>
+    Это можно сделать двумя способами:
 	 
    $ gsutil ls
 	 
@@ -258,195 +258,195 @@ Enable Flow Logs
 </b></details>
  
 <details>
-<summary>What Compute metadata key allows you to run code at startup?</summary><br><b>
+<summary>Какой ключ метаданных Compute позволяет запускать код при старте?</summary><br><b>
 
 startap-script
 </b></details>
 
 <details>
-<summary>What the following commands does? `gcloud deployment-manager deployments create`</summary><br><b>
+<summary>Что делает следующая команда? `gcloud deployment-manager deployments create`</summary><br><b>
 
-Deployment Manager creates a new deployment. 
+Deployment Manager создаёт новое развёртывание (deployment). 
 
 </b></details>
 
 <details>
-<summary>What is Cloud Code?</summary><br><b>
-It is a set of tools to help developers write, run and debug GCP kubernetes based applications. It provides built-in support for rapid iteration, debugging and running applications in development and production K8s environments.
+<summary>Что такое Cloud Code?</summary><br><b>
+Это набор инструментов, помогающих разработчикам писать, запускать и отлаживать приложения GCP на основе kubernetes. Он предоставляет встроенную поддержку быстрой итерации, отладки и запуска приложений в окружениях K8s для разработки и production.
 </b></details>
 
 ### Google Kubernetes Engine (GKE)
 
 <details>
-<summary>What is GKE</summary><br><b>
+<summary>Что такое GKE</summary><br><b>
 
-* It is the managed kubernetes service on GCP for deploying, managing and scaling containerised applications using Google infrastructure.
+* Это управляемый сервис kubernetes в GCP для развёртывания, управления и масштабирования контейнеризированных приложений с использованием инфраструктуры Google.
 </b></details>
 
 ### Anthos
 
 <details>
-<summary>What is Anthos</summary><br><b>
-It is a managed application platform for organisations like enterprises that require quick modernisation and certain levels
-of consistency for their legacy applications in a hybrid or multicloud world. From this explanation the core ideas can be drawn from these statements;
+<summary>Что такое Anthos</summary><br><b>
+Это управляемая платформа приложений для организаций, например крупных предприятий, которым требуется быстрая модернизация и определённый уровень
+единообразия для их унаследованных приложений в гибридном или мультиоблачном мире. Из этого объяснения можно выделить основные идеи;
 
-* Managed -> the customer does not need to worry about the underlying software integrations, they just enable the API.
-* application platform -> It consists of open source tools like K8s, Knative, Istio and Tekton
-* Enterprises -> these are usually organisations with complex needs
-* Consistency -> to have the same policies declaratively initiated to be run anywhere securely e.g on-prem, GCP or other-clouds (AWS or Azure)
+* Управляемая -> клиенту не нужно беспокоиться о базовых программных интеграциях, достаточно включить API.
+* Платформа приложений -> состоит из инструментов с открытым исходным кодом, таких как K8s, Knative, Istio и Tekton
+* Предприятия -> обычно это организации со сложными потребностями
+* Единообразие -> одни и те же политики задаются декларативно и безопасно выполняются где угодно, например on-prem, в GCP или других облаках (AWS или Azure)
 
-fun fact: Anthos is flower in greek, they grow in the ground (earth) but need rain from the clouds to flourish.
+Забавный факт: Anthos по-гречески означает «цветок»; цветы растут в земле, но для цветения им нужен дождь из облаков.
 </b></details>
 
 <details>
-<summary>List the technical components that make up Anthos</summary><br><b>
+<summary>Перечислите технические компоненты, из которых состоит Anthos</summary><br><b>
 
-* Infrastructure management - Google Kubernetes Engine (GKE)
-* Cluster management - GKE, Ingress for Anthos
-* Service management - Anthos Service Mesh
-* Policy enforcement - Anthos Config Management, Anthos Enterprise Data Protection, Policy Controller
-* Application deployment - CI/CD tools like Cloud Build, GitLab
-* Application development - Cloud Code
+* Управление инфраструктурой - Google Kubernetes Engine (GKE)
+* Управление кластерами - GKE, Ingress for Anthos
+* Управление сервисами - Anthos Service Mesh
+* Применение политик - Anthos Config Management, Anthos Enterprise Data Protection, Policy Controller
+* Развёртывание приложений - инструменты CI/CD, такие как Cloud Build, GitLab
+* Разработка приложений - Cloud Code
 </b></details>
 
 <details>
-<summary>What is the primary computing environment for Anthos to easily manage workload deployment?</summary><br><b>
+<summary>Какова основная вычислительная среда Anthos для удобного управления развёртыванием рабочих нагрузок?</summary><br><b>
 
 * Google Kubernetes Engine (GKE)
 </b></details>
 
 <details>
-<summary>How does Anthos handle the control plane and node components for GKE?</summary><br><b>
+<summary>Как Anthos управляет компонентами control plane и узлов для GKE?</summary><br><b>
 
-On GCP the kubernetes api-server is the only control plane component exposed to customers whilst compute engine manages
-instances in the project.
+В GCP kubernetes api-server — единственный компонент control plane, доступный клиентам, а compute engine управляет
+инстансами в проекте.
 </b></details>
 
 <details>
-<summary>Which load balancing options are available?</summary><br><b>
+<summary>Какие варианты балансировки нагрузки доступны?</summary><br><b>
 
-* Networking load balancing for L4 and HTTP(S) Load Balancing for L7 which are both managed services that do not require
-  additional configuration.
-* Ingress for Anthos which allows the ability to deploy a load balancer that serves an application across multiple clusters
-  on GKE
+* Networking load balancing для L4 и HTTP(S) Load Balancing для L7 — оба являются управляемыми сервисами, не требующими
+  дополнительной настройки.
+* Ingress for Anthos, позволяющий развернуть балансировщик нагрузки, который обслуживает приложение в нескольких кластерах
+  на GKE
 </b></details>
 
 <details>
-<summary>Can you deploy Anthos on AWS?</summary><br><b>
+<summary>Можно ли развернуть Anthos на AWS?</summary><br><b>
 
-* Yes, Anthos on AWS is now GA. For more read [here](https://cloud.google.com/anthos/gke/docs/aws)
+* Да, Anthos on AWS теперь в статусе GA. Подробнее [здесь](https://cloud.google.com/anthos/gke/docs/aws)
 </b></details>
 
 <details>
-<summary>List and explain the enterprise security capabilities provided by Anthos</summary><br><b>
+<summary>Перечислите и объясните корпоративные возможности безопасности, предоставляемые Anthos</summary><br><b>
 
-* Control plane security - GCP manages and maintains the K8s control plane out of the box. The user can secure the api-server by using master authorized networks and private clusters. These allow the user to disable access on the public IP address by assigning a private IP address to the master.
-* Node security - By default workloads are provisioned on Compute engine instances that use Google's Container Optimised OS. This operating system implements a locked-down firewall, limited user accounts with root disabled and a read-only filesystem. There is a further option to enable GKE Sandbox for stronger isolation in multi-tenant deployment scenarios.
-* Network security - Within a created cluster VPC, Anthos GKE leverages a powerful software-defined network that enables simple Pod-to-Pod communications. Network policies allow locking down ingress and egress connections in a given namespace. Filtering can also be implemented to incoming load-balanced traffic for services that require external access, by supplying whitelisted CIDR IP ranges.
-* Workload security - Running workloads run with limited privileges, default Docker AppArmor security policies are applied to all Kubernetes Pods. Workload identity for Anthos GKE aligns with the open source kubernetes service accounts with GCP service account permissions.
-* Audit logging - Administrators are given a way to retain, query, process and alert on events of the deployed environments.
+* Безопасность control plane - GCP управляет control plane K8s и обслуживает его «из коробки». Пользователь может защитить api-server с помощью master authorized networks и приватных кластеров. Они позволяют отключить доступ по публичному IP-адресу, назначив master'у приватный IP-адрес.
+* Безопасность узлов - по умолчанию рабочие нагрузки размещаются на инстансах Compute engine, использующих Container Optimised OS от Google. Эта операционная система реализует строго настроенный firewall, ограниченные учётные записи пользователей с отключённым root и файловую систему только для чтения. Дополнительно можно включить GKE Sandbox для более сильной изоляции в многопользовательских (multi-tenant) сценариях развёртывания.
+* Сетевая безопасность - внутри VPC созданного кластера Anthos GKE использует мощную программно-определяемую сеть, обеспечивающую простое взаимодействие Pod-to-Pod. Сетевые политики позволяют ограничивать входящие (ingress) и исходящие (egress) соединения в заданном namespace. Для сервисов, требующих внешнего доступа, также можно фильтровать входящий трафик балансировщика, задав разрешённые (whitelisted) диапазоны CIDR IP.
+* Безопасность рабочих нагрузок - рабочие нагрузки выполняются с ограниченными привилегиями, ко всем Pod'ам Kubernetes применяются политики безопасности Docker AppArmor по умолчанию. Workload identity для Anthos GKE сопоставляет сервисные аккаунты kubernetes с открытым исходным кодом с разрешениями сервисных аккаунтов GCP.
+* Журналы аудита - администраторы получают возможность хранить события развёрнутых окружений, выполнять по ним запросы, обрабатывать их и настраивать по ним оповещения.
 </b></details>
 
 <details>
-<summary>How can workloads deployed on Anthos GKE on-prem clusters securely connect to Google Cloud services?</summary><br><b>
+<summary>Как рабочие нагрузки, развёрнутые в on-prem кластерах Anthos GKE, могут безопасно подключаться к сервисам Google Cloud?</summary><br><b>
 
-* Google Cloud Virtual Private Network (Cloud VPN) - this is for secure networking
-* Google Cloud Key Management Service (Cloud KMS) - for key management
+* Google Cloud Virtual Private Network (Cloud VPN) - для защищённого сетевого взаимодействия
+* Google Cloud Key Management Service (Cloud KMS) - для управления ключами
 </b></details>
 
 <details>
-<summary>What is Island Mode configuration with regards to networking in Anthos GKE deployed on-prem?</summary><br><b>
+<summary>Что такое конфигурация Island Mode применительно к сетям в Anthos GKE, развёрнутом on-prem?</summary><br><b>
 
-* This is when pods can directly talk to each other within a cluster, but cannot be reached from outside the cluster thus forming an "island" within the network that is not connected to the external network.
+* Это когда Pod'ы могут напрямую общаться друг с другом внутри кластера, но недоступны извне кластера, образуя таким образом «остров» в сети, не связанный с внешней сетью.
 </b></details>
 
 <details>
-<summary>Explain Anthos Config Management</summary><br><b>
+<summary>Объясните, что такое Anthos Config Management</summary><br><b>
 
-It is a core component of the Anthos stack which provides platform, service and security operators with a single, unified approach to multi-cluster management that spans both on-premises and cloud environments. It closely follows K8s best practices, favoring declarative approaches over imperative operations, and actively monitors cluster state and applies the desired state as defined in Git. It includes three key components as follows:
+Это ключевой компонент стека Anthos, который предоставляет операторам платформ, сервисов и безопасности единый унифицированный подход к управлению несколькими кластерами, охватывающий как локальные (on-premises), так и облачные окружения. Он строго следует лучшим практикам K8s, предпочитая декларативные подходы императивным операциям, активно отслеживает состояние кластера и применяет желаемое состояние, определённое в Git. Он включает три ключевых компонента:
 
-1. An importer that reads from a central Git repository
-2. A component that synchronises stored configuration data into K8s objects
-3. A component that monitors drift between desired and actual cluster configurations with a capability of reconciliation when need rises.
+1. Импортёр, который читает данные из центрального Git-репозитория
+2. Компонент, который синхронизирует сохранённые данные конфигурации в объекты K8s
+3. Компонент, который отслеживает расхождение (drift) между желаемой и фактической конфигурацией кластера с возможностью согласования (reconciliation) при необходимости.
 </b></details>
 
 <details>
-<summary>How does Anthos Config Management help?</summary><br><b>
+<summary>Чем помогает Anthos Config Management?</summary><br><b>
 
-It follows common modern software development practices which makes cluster configuration, management and policy changes auditable, revertable, and versionable easily enforcing IT governance and unifying resource management in an organisation.
+Он следует распространённым современным практикам разработки ПО, благодаря чему изменения конфигурации кластеров, управления и политик становятся проверяемыми, обратимыми и версионируемыми, что упрощает применение IT-governance и унифицирует управление ресурсами в организации.
 </b></details>
 
 <details>
-<summary>What is Anthos Service Mesh?</summary><br><b>
+<summary>Что такое Anthos Service Mesh?</summary><br><b>
 
-* It is a suite of tools that assist in monitoring and managing deployed services on Anthos of all shapes and sizes whether running in cloud, hybrid or multi-cloud environments. It leverages the APIs and core components from Istio, a highly configurable and open-source service mesh platform.
+* Это набор инструментов, помогающих мониторить развёрнутые в Anthos сервисы любых форм и размеров и управлять ими, независимо от того, работают ли они в облачных, гибридных или мультиоблачных окружениях. Он использует API и основные компоненты Istio — гибко настраиваемой service mesh-платформы с открытым исходным кодом.
 </b></details>
 
 <details>
-<summary>Describe the two main components of Anthos Service Mesh</summary><br><b>
+<summary>Опишите два основных компонента Anthos Service Mesh</summary><br><b>
 
-1. Data plane - it consists of a set of distributed proxies that mediate all inbound and outbound network traffic between individual services which are configured using a centralised control plane and an open API
-2. Control plane - is a fully managed offering outside of Anthos GKE clusters to simplify management overhead and ensure highest possible availability.
+1. Data plane - состоит из набора распределённых прокси, которые выступают посредниками для всего входящего и исходящего сетевого трафика между отдельными сервисами и настраиваются с помощью централизованного control plane и открытого API
+2. Control plane - полностью управляемое решение вне кластеров Anthos GKE, упрощающее управление и обеспечивающее максимально возможную доступность.
 </b></details>
 
 <details>
-<summary>What are the components of the managed control plane of Anthos Service Mesh?</summary><br><b>
+<summary>Из каких компонентов состоит управляемый control plane Anthos Service Mesh?</summary><br><b>
 
-1. Traffic Director - it is GCP's fully managed service mesh traffic control plane, responsible for translating Istio API objects into configuration information for the distributed proxies, as well as directing service mesh ingress and egress traffic
-2. Managed CA - is a centralised certificate authority responsible for providing SSL certificates to each of the distributed proxies, authentication information and distributing secrets
-3. Operations tooling - formerly stackdriver, provides a managed ingestion point for observability and telemetry, specifically monitoring, tracing and logging data generated by each of the proxies. This powers the observability dashboard for operators to visually inspect their services and service dependencies assisting in the implementation of SRE best practices for monitoring SLIs and establishing SLOs.
+1. Traffic Director - полностью управляемый control plane трафика service mesh в GCP, отвечающий за преобразование объектов Istio API в конфигурационную информацию для распределённых прокси, а также за направление входящего и исходящего трафика service mesh
+2. Managed CA - централизованный удостоверяющий центр, отвечающий за выдачу SSL-сертификатов каждому из распределённых прокси, предоставление информации для аутентификации и распространение секретов
+3. Operations tooling - ранее stackdriver; предоставляет управляемую точку приёма данных наблюдаемости и телеметрии, а именно данных мониторинга, трассировки и логирования, генерируемых каждым из прокси. На их основе работает дашборд наблюдаемости, позволяющий операторам визуально изучать свои сервисы и зависимости между ними, что помогает внедрять лучшие практики SRE по мониторингу SLI и установлению SLO.
 </b></details>
 
 <details>
-<summary>How does Anthos Service Mesh help?</summary><br><b>
-Tool and technology integration that makes up Anthos service mesh delivers significant operational benefits to Anthos environments, with minimal additional overhead such as follows:
+<summary>Чем помогает Anthos Service Mesh?</summary><br><b>
+Интеграция инструментов и технологий, из которых состоит Anthos service mesh, даёт значительные операционные преимущества окружениям Anthos при минимальных дополнительных накладных расходах, например:
 
-* Uniform observability - the data plane reports service to service communication back to the control plane generating a service dependency graph. Traffic inspection by the proxy inserts headers to facilitate distributed tracing, capturing and reporting service logs together with service-level metrics (i.e latency, errors, availability).
-* Operational agility - fine-grained controls for managing the flow of inter-mesh (north-south) and intra-mesh (east-west) traffic are provided.
-* Policy-driven security - policies can be enforced consistently across diverse protocols and runtimes as service communications are secured by default.
+* Единообразная наблюдаемость - data plane сообщает о взаимодействии сервисов друг с другом обратно в control plane, формируя граф зависимостей сервисов. При инспекции трафика прокси добавляет заголовки для распределённой трассировки, собирает и передаёт логи сервисов вместе с метриками уровня сервиса (т.е. задержка, ошибки, доступность).
+* Операционная гибкость - предоставляются детальные средства управления потоками трафика между mesh (north-south) и внутри mesh (east-west).
+* Безопасность на основе политик - политики можно применять единообразно для различных протоколов и сред выполнения, поскольку взаимодействие сервисов защищено по умолчанию.
 </b></details>
 
 <details>
-<summary>List possible use cases of traffic controls that can be implemented within Anthos Service Mesh</summary><br><b>
+<summary>Перечислите возможные сценарии управления трафиком, которые можно реализовать в Anthos Service Mesh</summary><br><b>
 
-* Traffic splitting across differing service versions for canary or A/B testing
-* Circuit breaking to prevent cascading failures
-* Fault injection to help build resilient and fault-tolerant deployments
-* HTTP header-based traffic steering between individual services or versions
+* Разделение трафика между разными версиями сервиса для canary- или A/B-тестирования
+* Circuit breaking для предотвращения каскадных сбоев
+* Внедрение сбоев (fault injection) для построения устойчивых и отказоустойчивых развёртываний
+* Направление трафика на основе HTTP-заголовков между отдельными сервисами или версиями
 </b></details>
 
 <details>
-<summary>What is Cloud Run for Anthos?</summary><br><b>
+<summary>Что такое Cloud Run for Anthos?</summary><br><b>
 
-It is part of the Anthos stack that brings a serverless container experience to Anthos, offering a high-level platform experience on top of K8s clusters. It is built with Knative, an open-source operator for K8s that brings serverless application serving and eventing capabilities.
+Это часть стека Anthos, которая привносит в Anthos бессерверную работу с контейнерами, предлагая высокоуровневую платформу поверх кластеров K8s. Он построен на Knative — операторе для K8s с открытым исходным кодом, который добавляет возможности бессерверного обслуживания приложений и обработки событий (eventing).
 </b></details>
 
 <details>
-<summary>How does Cloud Run for Anthos simplify operations?</summary><br><b>
+<summary>Как Cloud Run for Anthos упрощает эксплуатацию?</summary><br><b>
 
-Platform teams in organisations that wish to offer developers additional tools to test, deploy and run applications can use Knative to enhance this experience on Anthos as Cloud Run. Below are some of the benefits;
+Платформенные команды в организациях, которые хотят предоставить разработчикам дополнительные инструменты для тестирования, развёртывания и запуска приложений, могут использовать Knative для улучшения этого опыта в Anthos в виде Cloud Run. Ниже перечислены некоторые преимущества;
 
-* Easy migration from K8s deployments - Without Cloud Run, platform engineers have to configure deployment, service, and HorizontalPodAutoscalers(HPA) objects to a loadbalancer and autoscaling. If application is already serving traffic it becomes hard to change configurations or roll back efficiently. Using Cloud Run all this is managed thus the Knative service manifest describes the application to be autoscaled and loadbalanced
-* Autoscaling - a sudden traffic spike may cause application containers in K8s to crash due to overload thus an efficient automated autoscaling is executed to serve the high volume of traffic
-* Networking - it has built-in load balancing capabilities and policies for traffic splitting between multiple versions of an application.
-* Releases and rollouts - supports the notion of the Knatibe API's revisions which describe new versions or different configurations of your application and canary deployments by splitting traffic.
-* Monitoring - observing and recording metrics such as latency, error rate and requests per second.
+* Простая миграция с развёртываний K8s - без Cloud Run платформенным инженерам приходится настраивать объекты deployment, service и HorizontalPodAutoscalers(HPA) для балансировки нагрузки и автомасштабирования. Если приложение уже обслуживает трафик, становится трудно эффективно менять конфигурацию или откатываться. С Cloud Run всё это управляется автоматически: манифест сервиса Knative описывает приложение, которое нужно автомасштабировать и балансировать
+* Автомасштабирование - резкий всплеск трафика может привести к падению контейнеров приложения в K8s из-за перегрузки, поэтому выполняется эффективное автоматическое масштабирование для обслуживания большого объёма трафика
+* Сеть - встроенные возможности балансировки нагрузки и политики разделения трафика между несколькими версиями приложения.
+* Релизы и выкатка - поддерживается концепция ревизий Knatibe API, которые описывают новые версии или разные конфигурации приложения, а также canary-развёртывания за счёт разделения трафика.
+* Мониторинг - наблюдение и запись метрик, таких как задержка, частота ошибок и количество запросов в секунду.
 </b></details>
 
 <details>
-<summary>List and explain three high-level out of the box autoscaling primitives offered by Cloud Run for Anthos that do not exist in K8s natively</summary><br><b>
+<summary>Перечислите и объясните три высокоуровневых встроенных примитива автомасштабирования Cloud Run for Anthos, которых нет в K8s изначально</summary><br><b>
 
-* Rapid, request-based autoscaling - default autoscalers monitor request metrics which allows Cloud Run for Anthos to handle spiky traffic patterns smoothly
-* Concurrency controls - limits such as max in-flight requests per container are enforced to ensure the container does not become overloaded and crash. More containers are added to handle the spiky traffic, buffering the requests.
-* Scale to zero - if an application is inactive for a while Cloud Run scales it down to zero to reduce its footprint. Alternatively one can turn off scale-to-zero to prevent cold starts.
+* Быстрое автомасштабирование на основе запросов - автоскейлеры по умолчанию отслеживают метрики запросов, что позволяет Cloud Run for Anthos плавно справляться с пиковыми паттернами трафика
+* Управление параллелизмом - применяются ограничения, например максимальное число одновременно обрабатываемых запросов на контейнер, чтобы контейнер не перегружался и не падал. Для обработки пикового трафика добавляются новые контейнеры, а запросы буферизуются.
+* Масштабирование до нуля - если приложение какое-то время неактивно, Cloud Run уменьшает его до нуля, чтобы сократить потребление ресурсов. Масштабирование до нуля можно отключить, чтобы избежать холодных стартов.
 </b></details>
 
 <details>
-<summary>List some Cloud Run for Anthos use cases</summary><br><b>
+<summary>Перечислите некоторые сценарии использования Cloud Run for Anthos</summary><br><b>
 
-As it does not support stateful applications or sticky sessions, it is suitable for running stateless applications such as:
+Поскольку он не поддерживает приложения с состоянием (stateful) и sticky sessions, он подходит для запуска приложений без состояния (stateless), например:
 
-* Machine learning model predictions e.g Tensorflow serving containers
-* API gateways, API middleware, web front ends and Microservices
-* Event handlers, ETL
+* Предсказания моделей машинного обучения, например контейнеры Tensorflow serving
+* API-шлюзы, промежуточное ПО для API, веб-фронтенды и микросервисы
+* Обработчики событий, ETL
 </b></details>

@@ -1,3 +1,3 @@
-## Pros and Cons
+## Плюсы и минусы
 
-Specify some of the pros and cons of Type Hinting
+Назовите некоторые плюсы и минусы аннотаций типов (Type Hinting)

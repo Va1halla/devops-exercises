@@ -1,12 +1,12 @@
-## Number of Arguments
+## Количество аргументов
 
-### Objectives
+### Цели
 
-* Write a script that will print "Got it: <argument value>" in case of one argument
-* In case no arguments were provided, it will print "Usage: ./<program name> <argument>"
-* In case of more than one argument, print "hey hey...too many!"
+* Написать скрипт, который в случае одного аргумента выводит "Got it: <argument value>"
+* Если аргументы не переданы, он выводит "Usage: ./<program name> <argument>"
+* Если аргументов больше одного, вывести "hey hey...too many!"
 
-### Solution
+### Решение
 
 ```
 #!/usr/bin/env bash

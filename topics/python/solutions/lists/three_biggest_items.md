@@ -1,14 +1,14 @@
-## Three Biggest Items
+## Три наибольших элемента
 
-1. Print three biggest items of a list
+1. Вывести три наибольших элемента списка
 
-### Solution
+### Решение
 
 ```python
 sorted(some_list, reverse=True)[:3]
 ```
 
-Or
+Или
 
 ```python
 some_list.sort(reverse=True)

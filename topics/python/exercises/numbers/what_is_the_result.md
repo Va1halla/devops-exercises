@@ -1,11 +1,11 @@
-## What is the result?
+## Каков результат?
 
-What is the value of each of the following variables?
+Каково значение каждой из следующих переменных?
 
 1. `x = 5,000`
 2. `x = 5_000`
 3. `x = 5_0_0`
 
-### Solution
+### Решение
 
-Click [here](solutions/numbers/what_is_the_result.md) for the solution
+Нажмите [здесь](solutions/numbers/what_is_the_result.md), чтобы посмотреть решение

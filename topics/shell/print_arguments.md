@@ -1,9 +1,9 @@
-## Shell Scripting - Print Arguments
+## Скрипты на Shell — вывод аргументов
 
-### Objectives
+### Цели
 
-You should include everything mentioned here in one shell script
+Всё перечисленное здесь нужно включить в один shell-скрипт
 
-1. Print the first argument passed to the script
-2. Print the number of arguments passed to the script
+1. Вывести первый аргумент, переданный скрипту
+2. Вывести количество аргументов, переданных скрипту
 3. 

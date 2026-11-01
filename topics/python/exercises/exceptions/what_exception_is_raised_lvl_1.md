@@ -1,11 +1,11 @@
-## What Exception is Raised? - Level 1
+## Какое исключение будет выброшено? — уровень 1
 
-For each of the following statement, specify what exception will be raised
+Для каждого из следующих выражений указать, какое исключение будет выброшено
 
 1. `'two' > 1`
 2. `ans = x + y`
 3. `chars = 'abc'; chars[5]`
 
-### Solution
+### Решение
 
-Click [here](solutions/exceptions/what_exception_is_raised.md) to view the solution.
+Нажмите [здесь](solutions/exceptions/what_exception_is_raised.md), чтобы посмотреть решение.

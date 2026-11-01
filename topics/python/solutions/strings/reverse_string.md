@@ -1,15 +1,15 @@
-## Reverse String
+## Разворот строки
 
-1. Reverse a string
+1. Развернуть строку
 
-### Solution
+### Решение
 
 ```
 my_string[::-1]
 ```
 
-A more visual way is:<br>
-<i>Careful: this is very slow</i>
+Более наглядный способ:<br>
+<i>Осторожно: это очень медленно</i>
 
 ```
 def reverse_string(string):

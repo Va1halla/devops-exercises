@@ -1,17 +1,17 @@
-# Kustomize - Common Labels
+# Kustomize — общие метки (Common Labels)
 
-## Requirements
+## Требования
 
-1. Running Kubernetes cluster
-2. Kubctl version 1.14 or above
+1. Работающий кластер Kubernetes
+2. Kubctl версии 1.14 или выше
 
-## Objectives
+## Цели
 
-In the current directory there is an app composed of a Deployment and Service.
+В текущем каталоге находится приложение, состоящее из Deployment и Service.
 
-1. Write a kustomization.yml file that will add to both the Service and Deployment the label "team-name: aces"
-2. Execute a kustomize command that will generate the customized k8s files with the label appended
+1. Написать файл kustomization.yml, который добавит и в Service, и в Deployment метку "team-name: aces"
+2. Выполнить команду kustomize, которая сгенерирует изменённые файлы k8s с добавленной меткой
 
-## Solution
+## Решение
 
-Click [here](solution.md) to view the solution
+Нажмите [здесь](solution.md), чтобы посмотреть решение

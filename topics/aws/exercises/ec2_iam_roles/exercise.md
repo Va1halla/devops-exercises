@@ -1,11 +1,11 @@
-## AWS EC2 - IAM Roles
+## AWS EC2 - роли IAM
  
-### Requirements
+### Требования
  
-1. Running EC2 instance without any IAM roles (so you if you connect the instance and try to run AWS commands, it fails)
-2. IAM role with "IAMReadOnlyAccess" policy
+1. Работающий экземпляр EC2 без ролей IAM (т.е. если подключиться к экземпляру и попытаться выполнить команды AWS, они завершатся ошибкой)
+2. Роль IAM с политикой "IAMReadOnlyAccess"
  
-### Objectives
+### Цели
 
-1. Attach a role (and if such role doesn't exists, create it) with "IAMReadOnlyAccess" policy to the EC2 instance
-2. Verify you can run AWS commands in the instance
+1. Привязать к экземпляру EC2 роль с политикой "IAMReadOnlyAccess" (если такой роли нет — создать её)
+2. Проверить, что в экземпляре можно выполнять команды AWS

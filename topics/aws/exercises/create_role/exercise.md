@@ -1,16 +1,16 @@
-## AWS - Create a Role
+## AWS - создание роли
 
-### Objectives
+### Цели
 
-Create a basic role to provide EC2 service with Full IAM access permissions.<br>
-In the end, run from the CLI (or CloudShell) the command to verify the role was created.
+Создать базовую роль, дающую сервису EC2 полный доступ к IAM (Full IAM access).<br>
+В конце выполнить из CLI (или CloudShell) команду, проверяющую, что роль создана.
 
-### Solution
+### Решение
 
-1. Go to AWS console -> IAM
-2. Click in the left side menu on "Access Manamgement" -> Roles
-3. Click on "Create role"
-3. Choose "AWS service" as the type of trusted entity and then choose "EC2" as a use case. Click on "Next"
-4. In permissions page, check "IAMFullAccess" and click on "Next" until you get to "Review" page
-5. In the "Review" page, give the role a name (e.g. IAMFullAcessEC2), provide a short description and click on "Create role"
-6. `aws iam list-roles` will list all the roles in the account, including the one we've just created.
+1. Перейти в консоль AWS -> IAM
+2. В меню слева нажать "Access Manamgement" -> Roles
+3. Нажать "Create role"
+3. Выбрать "AWS service" как тип доверенной сущности, затем выбрать "EC2" как сценарий использования. Нажать "Next"
+4. На странице разрешений отметить "IAMFullAccess" и нажимать "Next" до страницы "Review"
+5. На странице "Review" задать имя роли (например, IAMFullAcessEC2), добавить краткое описание и нажать "Create role"
+6. `aws iam list-roles` выведет все роли в аккаунте, включая только что созданную.

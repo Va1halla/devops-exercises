@@ -1,12 +1,12 @@
-## How to contribute
+## Как внести вклад
 
-Contribute using pull requests.
+Вносить вклад можно с помощью pull request'ов.
 
-## What to avoid
+## Чего следует избегать
 
-* Don't copy exercises from other source. 
-* If you add new images, make sure they are free and can be used. If attribution is required, add it.
+* Не копируйте упражнения из других источников. 
+* Если добавляете новые изображения, убедитесь, что они бесплатны и разрешены к использованию. Если требуется указание авторства, добавьте его.
 
-## What to do
+## Что следует делать
 
-* When adding an exercise, give it a name which is a quote from the movies (can be little bit modified)
+* При добавлении упражнения дайте ему название в виде цитаты из фильма (её можно немного изменить)

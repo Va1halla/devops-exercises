@@ -1,6 +1,6 @@
-## Walrus
+## Моржовый оператор
 
-Modify the following code so it will use the walrus operator:
+Изменить следующий код так, чтобы в нём использовался моржовый оператор (walrus operator):
 
 ```python
 x = 50
@@ -9,6 +9,6 @@ if y == 30:
     print("super")
 ```
 
-### Solution
+### Решение
 
-Click [here](../../solutions/improve_the_code/walrus.md) to view the solution
+Нажмите [здесь](../../solutions/improve_the_code/walrus.md), чтобы посмотреть решение

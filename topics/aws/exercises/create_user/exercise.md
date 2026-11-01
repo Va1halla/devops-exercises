@@ -1,9 +1,9 @@
-## IAM AWS - Create a User
+## IAM AWS - создание пользователя
 
-### Objectives
+### Цели
 
-As you probably know at this point, it's not recommended to work with the root account in AWS. For this reason you are going to create a new account which you'll use regularly as the admin account.
+Как вы, вероятно, уже знаете, работать в AWS под root-аккаунтом не рекомендуется. Поэтому нужно создать новую учётную запись, которая будет регулярно использоваться как администраторская.
 
-1. Create a user with password credentials
-2. Add the newly created user to a group called "admin" and attach to it the policy called "Administrator Access"
-3. Make sure the user has a tag called with the key `Role` and the value `DevOps`
+1. Создать пользователя с учётными данными в виде пароля
+2. Добавить нового пользователя в группу "admin" и привязать к ней политику "Administrator Access"
+3. Убедиться, что у пользователя есть тег с ключом `Role` и значением `DevOps`

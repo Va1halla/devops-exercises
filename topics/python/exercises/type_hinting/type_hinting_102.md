@@ -1,8 +1,8 @@
-## Type Hinting 102
+## Аннотации типов 102
 
-Apply type hinting for each one of the following variables:
+Добавить аннотации типов для каждой из следующих переменных:
 
-1. `abc` is a list of of two integers
-2. `qwery` is dictionary where the keys are string and values are integers
-3. `elmer` is None but at some point may set as a string
-4. `norie` is a variable containing a function that takes two integer arguments and returns a string
+1. `abc` — список из двух целых чисел
+2. `qwery` — словарь, в котором ключи — строки, а значения — целые числа
+3. `elmer` — None, но в какой-то момент может стать строкой
+4. `norie` — переменная, содержащая функцию, которая принимает два целочисленных аргумента и возвращает строку

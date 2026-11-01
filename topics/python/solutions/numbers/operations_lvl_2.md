@@ -1,6 +1,6 @@
-## Operations - Level 2
+## Операции — уровень 2
 
-What will the following block of code will print?
+Что выведет следующий блок кода?
 
 ```
 x = 3
@@ -10,6 +10,6 @@ x **= 2.0
 x += 2 * (3 + 1)
 ```
 
-### Solution
+### Решение
 
 `57.0`

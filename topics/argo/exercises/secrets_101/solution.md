@@ -1,31 +1,31 @@
-# ArgoCD Secrets 101
+# Секреты в ArgoCD 101
 
-## Requirements
+## Требования
 
-1. Running Kubernetes cluster
-2. Application k8s manifests with secrets
-3. Kubeseal binary installed
+1. Работающий кластер Kubernetes
+2. Манифесты k8s приложения, содержащие секреты (secrets)
+3. Установленный бинарный файл Kubeseal
 
-## Objectives
+## Задачи
 
-1. Install bitnami sealed controller as ArgoCD app
-2. Encrypt secrets and commit them to the repo with the k8s manifests
-3. Create an app using the secrets you encrypted
+1. Установите контроллер bitnami sealed (sealed secrets controller) как приложение ArgoCD
+2. Зашифруйте секреты и закоммитьте их в репозиторий с манифестами k8s
+3. Создайте приложение, использующее зашифрованные секреты
 
-## Solution
+## Решение
 
-1. Click on "New App"
-   1. app name: controller
-   2. project: default
-   3. sync policy: automatic
-   4. repository URL: a URL to bitnami sealed controller manifests
-   5. namespace: kube-system
+1. Нажмите "New App"
+   1. имя приложения: controller
+   2. проект: default
+   3. политика синхронизации (sync policy): automatic
+   4. URL репозитория: URL манифестов контроллера bitnami sealed
+   5. пространство имён (namespace): kube-system
 
-2. Run the following for every secret: `kubeseal < some/secret.yml > sealed_secrets/some/encrypted_secret.yaml -o yaml`
+2. Для каждого секрета выполните: `kubeseal < some/secret.yml > sealed_secrets/some/encrypted_secret.yaml -o yaml`
 
-3. Click on "New App"
-   1. app name: some-app
-   2. project: default
-   3. sync policy: automatic
-   4. repository URL: a URL to k8s manifests (including encrypted secrets)
-   5. namespace: default
+3. Нажмите "New App"
+   1. имя приложения: some-app
+   2. проект: default
+   3. политика синхронизации (sync policy): automatic
+   4. URL репозитория: URL манифестов k8s (включая зашифрованные секреты)
+   5. пространство имён (namespace): default

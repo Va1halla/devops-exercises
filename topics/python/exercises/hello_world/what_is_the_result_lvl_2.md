@@ -1,6 +1,6 @@
-## What is the result? - Level 1
+## Каков результат? — уровень 1
 
-1. What is the result of each of the following statements? explain why
+1. Каков результат каждого из следующих выражений? Объясните почему
 
   * `"" == " "`
   * `'two' > 'three'`

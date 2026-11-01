@@ -1,8 +1,8 @@
-# Bound to It
+# Привязанный к нему
 
-## Objectives
+## Цели
 
-Kratos, angry developer, wanted to track the count of how many instances are created out of the class "Car". This is the code he wrote:
+Кратос, сердитый разработчик, хотел отслеживать, сколько экземпляров класса "Car" создано. Вот код, который он написал:
 
 ```python 
 count = 0 
@@ -19,15 +19,15 @@ car = Car("Red")
 print(f"After: {count}")
 ```
 
-1. What's the problem with the code? What exception will it raise?
-2. What would you suggest Kratos to fix it?
+1. В чём проблема этого кода? Какое исключение он выбросит?
+2. Что бы вы посоветовали Кратосу, чтобы это исправить?
 
-## Solution
+## Решение
 
-1. In Python a variable inside a function is local. So when we try to increment count inside `__init__` it fails since count isn't assigned with a value. It is NOT the `count` defined above the class `Car`.
-The exception raised is `UnboundLocalError`. In other words, you have a local variable that isn't assigned with a variable and you try to access the value of that variable anyway.
+1. В Python переменная внутри функции является локальной. Поэтому попытка увеличить count внутри `__init__` завершается ошибкой, так как count не присвоено значение. Это НЕ тот `count`, который определён над классом `Car`.
+Выбрасывается исключение `UnboundLocalError`. Иными словами, есть локальная переменная, которой не присвоено значение, и при этом выполняется попытка получить её значение.
 
-2. Use class attributes:
+2. Использовать атрибуты класса:
 
 ```python         
 class Car:
@@ -44,7 +44,7 @@ print(f"After: {count}")
 ```
 
 
-Another common solution is to use `global` this way
+Ещё одно распространённое решение — использовать `global` вот так
 
 ```python
 def __init__(self, color):
@@ -53,4 +53,4 @@ def __init__(self, color):
         self.color = color
 ```
 
-But this is not recommended and it's better to avoid it.
+Но так делать не рекомендуется, и лучше этого избегать.

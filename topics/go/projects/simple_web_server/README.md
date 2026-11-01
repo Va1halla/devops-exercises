@@ -1,7 +1,7 @@
-# Simple Web Server - NOT YET READY
-## Instructions
+# Простой веб-сервер - ЕЩЁ НЕ ГОТОВО
+## Инструкции
 
-1. Create an index.html file with the following content
+1. Создайте файл index.html со следующим содержимым
 
 ```html
 <html>

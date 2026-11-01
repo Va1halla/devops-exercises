@@ -1,9 +1,9 @@
-## Objects 101
+## Объекты: основы
 
-1. What information an object in Python holds? or what attributes an object has?
- a. Explain each one of them
+1. Какую информацию хранит объект в Python? Или какие атрибуты есть у объекта?
+ a. Объясните каждый из них
 
-* ID: unique identifier of the object
-* value: what data the object actually stores (e.g. an integer, string, ...)
-* type: the data type of the value (int, boolean, string, ...) 
-* reference count: how many times the object is references/used
+* ID: уникальный идентификатор объекта
+* value: какие данные объект фактически хранит (например, целое число, строку, ...)
+* type: тип данных значения (int, boolean, string, ...) 
+* reference count: сколько раз на объект ссылаются / сколько раз он используется

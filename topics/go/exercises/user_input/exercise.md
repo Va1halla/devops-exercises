@@ -1,9 +1,9 @@
-# User Input
+# Пользовательский ввод
 
-## Objectives
+## Задачи
 
-1. Modify the following program to ask for a name and an age
-   1. Modify the print statement accordingly
+1. Измените следующую программу так, чтобы она запрашивала имя и возраст
+   1. Соответственно измените выражение вывода
 
 ```Go
 package main
@@ -15,6 +15,6 @@ func main() {
 }
 ```
 
-## Solution
+## Решение
 
-Click [here](main.go) to view the solution
+Нажмите [здесь](main.go), чтобы посмотреть решение

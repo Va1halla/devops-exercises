@@ -1,15 +1,15 @@
-# Classes 102
+# Классы 102
 
-## Objectives
+## Цели
 
-1. True or False? 
+1. Верно или нет? 
 
-* Methods are class attributes
-* While a function body isn't executed when it's defined, class body is being executed when defined
-* When assignments performed in a class, they create variables
-* Any function defined in a class is a variable
+* Методы являются атрибутами класса
+* Тело функции не выполняется при её определении, а тело класса выполняется при определении
+* Присваивания внутри класса создают переменные
+* Любая функция, определённая в классе, является переменной
 
-2. What would be the output of the following code?
+2. Каким будет вывод следующего кода?
 
 ```python
 print(1)
@@ -22,16 +22,16 @@ class Car:
 print(5)
 ```
 
-## Solution
+## Решение
 
 1.
 
-* Methods are class attributes - True
-* While a function body isn't executed when it's defined, class body is being executed when defined - True
-* When assignments performed in a class, they create variables - False, they create class attributes
-* Any function defined in a class is a variable - False, again, it's a class attribute :)
+* Методы являются атрибутами класса — верно
+* Тело функции не выполняется при её определении, а тело класса выполняется при определении — верно
+* Присваивания внутри класса создают переменные — неверно, они создают атрибуты класса
+* Любая функция, определённая в классе, является переменной — неверно, это опять же атрибут класса :)
 
-2. The output:
+2. Вывод:
 
 ```
 1

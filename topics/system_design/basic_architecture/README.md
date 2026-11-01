@@ -1,40 +1,40 @@
-# Basic Architecture
+# Базовая архитектура
 
-- [Basic Architecture](#basic-architecture)
-  - [Client](#client)
-  - [Server](#server)
-    - [What is a server?](#what-is-a-server)
-    - [Server Types](#server-types)
-  - [Clients and Servers](#clients-and-servers)
+- [Базовая архитектура](#базовая-архитектура)
+  - [Клиент](#клиент)
+  - [Сервер](#сервер)
+    - [Что такое сервер?](#что-такое-сервер)
+    - [Типы серверов](#типы-серверов)
+  - [Клиенты и серверы](#клиенты-и-серверы)
 
-## Client
+## Клиент
 
-A client refers to a software or hardware accessing a resource or a service that is served by a server.
-While in some cases the server and the client might be on the same system/host, in most cases they will be on separate systems.
+Клиент — это программное или аппаратное обеспечение, которое обращается к ресурсу или сервису, предоставляемому сервером.
+Хотя в некоторых случаях сервер и клиент могут находиться в одной системе/на одном хосте, в большинстве случаев они находятся в разных системах.
 
-Examples for clients:
+Примеры клиентов:
 
-* A Web browser that is used by a user to access a certain web page
-* A mobile phone that is used by the user to read emails
+* Веб-браузер, с помощью которого пользователь открывает определённую веб-страницу
+* Мобильный телефон, с помощью которого пользователь читает электронную почту
 
-## Server
+## Сервер
 
-### What is a server?
-A server, similarly to a client, can be a software or hardware, but as opposed to a client, its role is to serve the client. It can be by providing a certain resource to the client or let it use a service that is running on the server.
-Few examples:
+### Что такое сервер?
+Сервер, как и клиент, может быть программным или аппаратным обеспечением, но, в отличие от клиента, его роль — обслуживать клиента. Это может быть предоставление клиенту определённого ресурса или возможности пользоваться сервисом, работающим на сервере.
+Несколько примеров:
 
-* A system that stores files and allow the user to access or download them
-* A system that runs a service which allows users to listen to music
+* Система, которая хранит файлы и позволяет пользователю получать к ним доступ или скачивать их
+* Система, на которой работает сервис, позволяющий пользователям слушать музыку
 
-### Server Types
+### Типы серверов
 
-* Bare Metal: Physical Servers. An actual hardware. Often allocated per one customer, project, ... and not shared as in case of servers used for virtualization and cloud
+* Bare Metal: физические серверы. Реальное оборудование. Часто выделяется одному клиенту, проекту и т.п. и не используется совместно, как в случае серверов для виртуализации и облака
  
-* Virtual: Servers which provisioned on top of virtualization platform or a cloud (clouds like GCP, AWS and Azure for example)
+* Виртуальные: серверы, развёрнутые поверх платформы виртуализации или в облаке (например, в таких облаках, как GCP, AWS и Azure)
 
-## Clients and Servers
+## Клиенты и серверы
 
-So now that you know what is a server and what is a client, you probably understand the relationship between them where a client sends requests (or replies) to a server, while a server responds to a client based on its request.
+Теперь, когда понятно, что такое сервер и что такое клиент, ясна и связь между ними: клиент отправляет запросы (или ответы) серверу, а сервер отвечает клиенту в соответствии с его запросом.
 
 <br>
 <p align="center">

@@ -1,11 +1,11 @@
-# Functions 101
+# Функции 101
 
-## Objectives
+## Задачи
 
-1. Define a function that gets two integers, adds them and returns the result
-   1. Make sure to also write code that executes the function
+1. Определите функцию, которая получает два целых числа, складывает их и возвращает результат
+   1. Не забудьте также написать код, который вызывает эту функцию
 
-2. What is the problem with the following code? How to fix it?
+2. В чём проблема следующего кода? Как её исправить?
 
 ```Go
 package main
@@ -21,6 +21,6 @@ func main() {
 }
 ```
 
-## Solution
+## Решение
 
-Click [here](solution.md) to view the solution.
+Нажмите [здесь](solution.md), чтобы посмотреть решение.

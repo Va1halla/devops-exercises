@@ -1,6 +1,6 @@
-## Length Magic Method
+## Магический метод длины
 
-1. It will fail because the class MushroomsBasked doesn't implements __len__ magic method
+1. Код завершится ошибкой, потому что класс MushroomsBasked не реализует магический метод __len__
 
 2.
 

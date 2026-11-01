@@ -1,10 +1,10 @@
 ## Jenkins Pipelines
 
-Write/Create the following Jenkins pipelines:
+Напишите/создайте следующие Jenkins pipelines:
 
-* A pipeline which will run unit tests upon git push to a certain repository
-* A pipeline which will do to the following:
+* Pipeline, который запускает модульные тесты при git push в определённый репозиторий
+* Pipeline, который делает следующее:
 
-  * Provision an instance (can also be a container)
-  * Configure the instance as Apache web server
-  * Deploy a web application on the provisioned instance
+  * Создаёт (provision) инстанс (можно и контейнер)
+  * Настраивает инстанс как веб-сервер Apache
+  * Развёртывает веб-приложение на созданном инстансе

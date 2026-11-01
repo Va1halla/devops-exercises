@@ -1,24 +1,24 @@
-## CI for Open Source Project
+## CI для проекта с открытым исходным кодом
 
-1. Choose an open source project from Github and fork it
-2. Create a CI pipeline/workflow for the project you forked
-3. The CI pipeline/workflow will include anything that is relevant to the project you forked. For example:
-  * If it's a Python project, you will run PEP8
-  * If the project has unit tests directory, you will run these unit tests as part of the CI
-4. In a separate file, describe what is running as part of the CI and why you chose to include it. You can also describe any thoughts, dilemmas, challenge you had
+1. Выберите проект с открытым исходным кодом на Github и сделайте его форк
+2. Создайте CI-конвейер/workflow для форкнутого проекта
+3. CI-конвейер/workflow должен включать всё, что имеет отношение к форкнутому проекту. Например:
+  * Если это проект на Python, запускайте PEP8
+  * Если в проекте есть каталог с модульными тестами, запускайте эти тесты в рамках CI
+4. В отдельном файле опишите, что запускается в рамках CI и почему вы решили это включить. Можно также описать любые мысли, дилеммы и трудности, с которыми вы столкнулись
 
-### Bonus
+### Бонус
 
-Containerize the app of the project you forked using any container engine you would like (e.g. Docker, Podman).<br>
-Once you successfully ran the application in a container, submit the Dockerfile to the original project (but be prepared that the maintainer might not need/want that).
+Поместите приложение форкнутого проекта в контейнер с помощью любого движка контейнеров (например, Docker, Podman).<br>
+После того как приложение успешно запущено в контейнере, отправьте Dockerfile в исходный проект (но будьте готовы к тому, что мейнтейнеру это может быть не нужно).
 
-### Suggestions for Projects
+### Предлагаемые проекты
 
-The following is a list of projects without CI (at least at the moment):
+Ниже приведён список проектов без CI (по крайней мере на данный момент):
 
-Note: I wrote a script to find these (except the first project on the list, of course) based on some parameters in case you wonder why these projects specifically are listed.
+Примечание: на случай, если интересно, почему перечислены именно эти проекты, — я написал скрипт, который нашёл их (кроме, конечно, первого проекта в списке) по нескольким параметрам.
 
-* [This one](https://github.com/bregman-arie/devops-exercises) - We don't have CI! help! :)
+* [Этот](https://github.com/bregman-arie/devops-exercises) - У нас нет CI! Помогите! :)
 * [image retrieval platform](https://github.com/skx6/image_retrieval_platform)
 * [FollowSpot](https://github.com/jenbrissman/FollowSpot)
 * [Pyrin](https://github.com/mononobi/pyrin)

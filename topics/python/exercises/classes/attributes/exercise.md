@@ -1,11 +1,11 @@
-# Attributes
+# Атрибуты
 
-## Objectives
+## Цели
 
-1. Explain class attributes vs. instance attributes
-2. True or False? not every object in Python has attributes
-3. True or False? An attribute doesn't exist on the variable, but rather on the object that the variable refers to
+1. Объясните разницу между атрибутами класса и атрибутами экземпляра
+2. Верно или нет? Не у каждого объекта в Python есть атрибуты
+3. Верно или нет? Атрибут существует не у переменной, а у объекта, на который ссылается переменная
 
-## Solution
+## Решение
 
-Click [here to view the solution](solution.md)
+Нажмите [здесь, чтобы посмотреть решение](solution.md)

@@ -1,4 +1,4 @@
-## Objects 101
+## Объекты: основы
 
-1. What information an object in Python holds? or what attributes an object has?
- a. Explain each one of them
+1. Какую информацию хранит объект в Python? Или какие атрибуты есть у объекта?
+ a. Объясните каждый из них

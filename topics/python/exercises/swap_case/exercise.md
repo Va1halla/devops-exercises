@@ -1,16 +1,16 @@
-# Swap Case - HackerRank
+# Смена регистра — HackerRank
 
-## Objectives
+## Цели
 
-You are given a string and your task is to swap cases. In other words, convert all lowercase letters to uppercase letters and vice versa.
+Дана строка, задача — поменять регистр. Иными словами, преобразовать все строчные буквы в заглавные и наоборот.
 
-For Example:
+Например:
 
 ```
 Www.HackerRank.com → wWW.hACKERrANK.COM
 Pythonist 2 → pYTHONIST 2
 ```
 
-## Solution
+## Решение
 
-Click [here](solution.py) to view the solution
+Нажмите [здесь](solution.py), чтобы посмотреть решение

@@ -1,17 +1,17 @@
-# Arrays 101
+# Массивы 101
 
-## Objectives
+## Задачи
 
-1. Create an empty array of integers of size 10
-2. Create an arrays of strings and fill it with 4 different strings
-3. Can you mix different data types in one array?
-4. You've created an empty array with the size of 10. Once declared can you add items to it? Can you add 50 items?
-5. There is an array called 'games'. Assign the string "Donkey Kong" to the first place in the array
-6. There is an array called "movies". Print the following:
-   1. The array itself
-   2. The second item in the array
-   3. The length of the array
+1. Создайте пустой массив целых чисел размером 10
+2. Создайте массив строк и заполните его 4 разными строками
+3. Можно ли смешивать разные типы данных в одном массиве?
+4. Создан пустой массив размером 10. Можно ли добавлять в него элементы после объявления? Можно ли добавить 50 элементов?
+5. Есть массив с именем 'games'. Присвойте строку "Donkey Kong" первой позиции массива
+6. Есть массив с именем "movies". Выведите следующее:
+   1. Сам массив
+   2. Второй элемент массива
+   3. Длину массива
 
-## Solution
+## Решение
 
-Click [here](solution.md) to view the solution.
+Нажмите [здесь](solution.md), чтобы посмотреть решение.

@@ -1,18 +1,18 @@
-## Running Containers
+## Запуск контейнеров
 
-### Objective
+### Цель
 
-Learn how to run, stop and remove containers
+Научиться запускать, останавливать и удалять контейнеры
 
-### Requirements
+### Требования
 
-Make sure Podman or Docker (or any other containers engine) is installed on your system
+Убедитесь, что в системе установлен Podman или Docker (или любой другой движок контейнеров)
 
-### Instructions
+### Инструкции
 
-1. Run a container using the latest nginx image - `podman container run nginx:latest`
-2. List the containers to make sure the container is running - `podman container ls`
-3. Run another container but this time use ubuntu latest and attach to the terminal of the container - `podman container run -it ubuntu:latest /bin/bash`
-4. List again the containers. How many containers are running? - `podman container ls` -> 2
-5. Stop the containers - WARNING: the following will stop all the containers on the host: `podman stop $(podman container ls -q)` or for each container `podman stop [container id/name]`
-6. Remove the containers - WARNING: the following will remove other containers as well if such are running: `podman rm $(podman container ls -q -a)` or for each container `podman rm [container id/name]`
+1. Запустите контейнер из последней версии образа nginx - `podman container run nginx:latest`
+2. Выведите список контейнеров, чтобы убедиться, что контейнер запущен - `podman container ls`
+3. Запустите ещё один контейнер, но на этот раз используйте последнюю версию ubuntu и подключитесь к терминалу контейнера - `podman container run -it ubuntu:latest /bin/bash`
+4. Снова выведите список контейнеров. Сколько контейнеров запущено? - `podman container ls` -> 2
+5. Остановите контейнеры - ВНИМАНИЕ: следующая команда остановит все контейнеры на хосте: `podman stop $(podman container ls -q)` или для каждого контейнера `podman stop [container id/name]`
+6. Удалите контейнеры - ВНИМАНИЕ: следующая команда удалит и другие контейнеры, если они запущены: `podman rm $(podman container ls -q -a)` или для каждого контейнера `podman rm [container id/name]`

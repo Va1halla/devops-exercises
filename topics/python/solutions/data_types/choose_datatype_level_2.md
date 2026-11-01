@@ -1,7 +1,7 @@
-## Choose a Data Type - Level 2
+## Выбор типа данных — уровень 2
 
-Choose a data type in each of the following scenarios:
+Выбрать тип данных для каждого из следующих сценариев:
 
-1. A class to represent a mushroom (name and whether it's poisonous) without custom methods
+1. Класс для представления гриба (название и ядовит ли он) без собственных методов
 
 namedtuple: `Mushroom = collection.namedtuple('Mushroom', ['Oyster', False])`

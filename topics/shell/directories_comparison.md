@@ -1,5 +1,5 @@
-## Directories Comparison
+## Сравнение каталогов
 
-### Objectives
+### Цели
 
-1. You are given two directories as arguments and the output should be any difference between the two directories
+1. В качестве аргументов передаются два каталога; на выходе должны быть все различия между этими двумя каталогами

@@ -1,3 +1,3 @@
-## Ansible - Update and upgrade APT packages task
+## Ansible — задача обновления APT-пакетов
 
-1. Write a task to update and upgrade apt packages
+1. Напишите задачу (task), которая обновляет список пакетов и сами пакеты apt (update и upgrade)

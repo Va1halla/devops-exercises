@@ -1,3 +1,3 @@
-## Three Biggest Items
+## Три наибольших элемента
 
-1. Print three biggest items of a list
+1. Вывести три наибольших элемента списка

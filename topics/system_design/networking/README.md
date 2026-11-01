@@ -1,59 +1,59 @@
-# Networking
+# Сети
 
-- [Networking](#networking)
-  - [What is Networking?](#what-is-networking)
-    - [Public IP](#public-ip)
-    - [Private IP](#private-ip)
-    - [Latency](#latency)
-    - [Throughput](#throughput)
-  - [Questions](#questions)
+- [Сети](#сети)
+  - [Что такое сети?](#что-такое-сети)
+    - [Публичный IP](#публичный-ip)
+    - [Частный IP](#частный-ip)
+    - [Задержка](#задержка)
+    - [Пропускная способность](#пропускная-способность)
+  - [Вопросы](#вопросы)
 
-## What is Networking?
+## Что такое сети?
 
 TODO
 
-### Public IP
+### Публичный IP
 
-[Wikipedia](): "A public IP address, in common parlance, is a globally routable unicast IP address, meaning that the address is not an address reserved for use in private networks"
+[Wikipedia](): «Публичный IP-адрес, в общепринятом понимании, — это глобально маршрутизируемый одноадресный (unicast) IP-адрес, то есть адрес, не зарезервированный для использования в частных сетях»
 
-From system design perspective, when you have a resources or a component, you would like everyone to be able to access to, whether for direct communication (like a web server) or as a gateway for other components (like a load balancer), you should use a public IP
+С точки зрения проектирования систем, если есть ресурс или компонент, к которому должны иметь доступ все — для прямого взаимодействия (как веб-сервер) или в качестве шлюза для других компонентов (как балансировщик нагрузки), — следует использовать публичный IP
 
-### Private IP
+### Частный IP
 
-Whenever you DON'T want users to be able to globally interact with a certain component or resource, you should use a private IP address. Few examples:
+Если НЕ нужно, чтобы пользователи могли глобально взаимодействовать с определённым компонентом или ресурсом, следует использовать частный IP-адрес. Несколько примеров:
 
-  * Web servers that only the load balancer should communicate with them directly and not the users/clients themselves
-  * Internal servers that users outside the organization shouldn't access
+  * Веб-серверы, с которыми должен напрямую взаимодействовать только балансировщик нагрузки, а не сами пользователи/клиенты
+  * Внутренние серверы, к которым не должны иметь доступ пользователи вне организации
 
-Private IPs, as opposed to public IPs, don't have to be unique and each separate network, can use the same addresses (because it's private :) )
+Частные IP, в отличие от публичных, не обязаны быть уникальными, и каждая отдельная сеть может использовать одни и те же адреса (потому что они частные :) )
 
-### Latency
+### Задержка
 
-The time it takes to perform a certain task/action
+Время, необходимое для выполнения определённой задачи/действия
 
-### Throughput
+### Пропускная способность
 
-The number of tasks/actions per unit of time
+Количество задач/действий в единицу времени
 
-## Questions
+## Вопросы
 
 <details>
-<summary>What is a public IP? In which scenarios, one should use a public IP?</summary><br><b>
+<summary>Что такое публичный IP? В каких сценариях следует использовать публичный IP?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is a private IP? In which scenarios, one should use a private IP?</summary><br><b>
+<summary>Что такое частный IP? В каких сценариях следует использовать частный IP?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is latency?</summary><br><b>
+<summary>Что такое задержка (latency)?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is latency of L1 cache reference vs. L2 cache reference?</summary><br><b>
+<summary>Какова задержка обращения к кэшу L1 по сравнению с обращением к кэшу L2?</summary><br><b>
 
-L1 cache reference latency is 0.5 nanosecond
-L2 cache reference latency is 7 nanosecond
+Задержка обращения к кэшу L1 составляет 0,5 наносекунды
+Задержка обращения к кэшу L2 составляет 7 наносекунд
 
-So basically the latency of L2 cache reference is 14x L1 cache reference.
+То есть задержка обращения к кэшу L2 в 14 раз больше, чем к кэшу L1.
 </b></details>

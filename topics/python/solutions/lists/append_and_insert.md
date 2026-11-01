@@ -1,18 +1,18 @@
-## Append & Insert
+## Append и Insert
 
-1. Given the list `li = [2, 0, 2, 2]`
+1. Дан список `li = [2, 0, 2, 2]`
 
-    1. Append to the end of the list the number 7
-    2. Insert to the beginning of the list the number 1
-    3. Insert in the second place the number 20
+    1. Добавить в конец списка число 7
+    2. Вставить в начало списка число 1
+    3. Вставить на второе место число 20
 
-2. What will be the result of running the following line? `li.insert(20, 0)`
+2. Каким будет результат выполнения следующей строки? `li.insert(20, 0)`
 
-### Solution
+### Решение
 
 1. 
     1. `li.append(7)`
     2. `li.insert(0, 1)`
     3. `li.insert(1, 20)`
 
-2. It will append 0 to the end of the list
+2. В конец списка будет добавлен 0

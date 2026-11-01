@@ -1,15 +1,15 @@
-# Create buckets
+# Создание бакетов
 
-## Objectives
+## Цели
 
-1. Create the following buckets:
-   1. Private bucket
-      1. eu-west-2 region
-      2. Upload a single file to the bucket. Any file.
-   2. Public bucket
-      1. eu-west-1 region
-      2. Versioning should be enabled
+1. Создать следующие бакеты:
+   1. Приватный бакет
+      1. Регион eu-west-2
+      2. Загрузить в бакет один файл. Любой.
+   2. Публичный бакет
+      1. Регион eu-west-1
+      2. Должно быть включено версионирование (versioning)
 
-## Solution
+## Решение
 
-Click [here](solution.md) to view the solution
+Нажмите [здесь](solution.md), чтобы посмотреть решение

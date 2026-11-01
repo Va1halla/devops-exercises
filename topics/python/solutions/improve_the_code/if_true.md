@@ -1,6 +1,6 @@
 ## If True
 
-Improve the following block of code:
+Улучшить следующий блок кода:
 
 ```
 y = 0
@@ -12,7 +12,7 @@ if x == False:
     y = y + 2
 ```
 
-### Solution
+### Решение
 
 ```
 x = False

@@ -1,7 +1,7 @@
-## Great Day
+## Отличный день
 
-### Objectives
+### Цели
 
-1. Write a script that will print "Today is a great day!" unless it's given a day name and then it should print "Today is <given day>"
+1. Написать скрипт, который выводит "Today is a great day!", если только ему не передано название дня — тогда он должен вывести "Today is <given day>"
 
-Note: no need to check whether the given argument is actually a valid day
+Примечание: проверять, является ли переданный аргумент действительно корректным днём, не нужно

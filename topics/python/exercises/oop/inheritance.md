@@ -1,24 +1,24 @@
-## Inheritance
+## Наследование
 
-Explain what is inheritance and how does it work in Python
+Объясните, что такое наследование и как оно работает в Python
 
-### Solution
+### Решение
 
-By definition inheritance is the mechanism where an object acts as a base of another object, retaining all its
-properties.
+По определению наследование — это механизм, при котором объект выступает основой для другого объекта, сохраняя все свои
+свойства.
 
-So if Class B inherits from Class A, every characteristics from class A will be also available in class B.
-Class A would be the 'Base class' and B class would be the 'derived class'.
+То есть если класс B наследуется от класса A, все характеристики класса A будут доступны и в классе B.
+Класс A будет «базовым классом» (base class), а класс B — «производным классом» (derived class).
 
-This comes handy when you have several classes that share the same functionalities.
+Это удобно, когда есть несколько классов с общей функциональностью.
 
-The basic syntax is:
+Базовый синтаксис:
 
 class Base: pass
 
 class Derived(Base): pass
 
-A more forged example:
+Более проработанный пример:
 
 class Animal:
     def __init__(self):
@@ -61,6 +61,6 @@ bruno.bark()
 >>> ñom ñom ñom bone
 >>> woof woof
 
-Calling super() calls the Base method, thus, calling super().__init__() we called the Animal __init__.
+Вызов super() вызывает метод базового класса, то есть, вызывая super().__init__(), мы вызвали __init__ класса Animal.
 
-There is a more advanced python feature called MetaClasses that aid the programmer to directly control class creation.
+В Python есть более продвинутая возможность — метаклассы (MetaClasses), которые позволяют программисту напрямую управлять созданием классов.

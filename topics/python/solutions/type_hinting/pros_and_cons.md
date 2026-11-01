@@ -1,12 +1,12 @@
-## Pros and Cons - Solution
+## Плюсы и минусы — решение
 
-Specify some of the pros and cons of Type Hinting
+Назовите некоторые плюсы и минусы аннотаций типов (Type Hinting)
 
-### Solution
+### Решение
 
-Pros:
-  * Enhance IDE experience by receiving feedback (warnings, notifications, ...) on how the code is written
-  * Improves code documentation
-Cons:
-  * Requires investment (like time) which could perhaps be used for other aspects of the project
-  * While minor in most cases, might have effect on the time it takes your code to run
+Плюсы:
+  * Улучшают работу в IDE за счёт обратной связи (предупреждения, уведомления, ...) о том, как написан код
+  * Улучшают документирование кода
+Минусы:
+  * Требуют вложений (например, времени), которые можно было бы потратить на другие аспекты проекта
+  * Хотя в большинстве случаев незначительно, могут влиять на время выполнения кода

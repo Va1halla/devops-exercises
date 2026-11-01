@@ -1,85 +1,85 @@
-## Shell Scripting
+## Скрипты на Shell
 
-### Shell Scripting Exercises
+### Упражнения по скриптам на Shell
 
-|Name|Topic|Objective & Instructions|Solution|Comments|
+|Название|Тема|Цель и инструкции|Решение|Комментарии|
 |--------|--------|------|----|----|
-|Hello World|Variables|[Exercise](hello_world.md)|[Solution](solutions/hello_world.md) | Basic
-|Basic date|Variables|[Exercise](basic_date.md)|[Solution](solutions/basic_date.md) | Basic
-|Great Day|Variables|[Exercise](great_day.md)|[Solution](solutions/great_day.md) | Basic
-|Factors|Arithmetic|[Exercise](factors.md)|[Solution](solutions/factors.md) | Basic
-|Argument Check|Conditionals|[Exercise](argument_check.md)|[Solution](solutions/argument_check.md) | Basic
-|Files Size|For Loops|[Exercise](files_size.md)|[Solution](solutions/files_size.md) | Basic
-|Count Chars|Input + While Loops|[Exercise](count_chars.md)|[Solution](solutions/count_chars.md) | Basic
-|Sum|Functions|[Exercise](sum.md)|[Solution](solutions/sum.md) | Basic
-|Number of Arguments|Case Statement|[Exercise](num_of_args.md)|[Solution](solutions/num_of_args.md) | Basic
-|Empty Files|Misc|[Exercise](empty_files.md)|[Solution](solutions/empty_files.md) | Basic
-|Directories Comparison|Misc|[Exercise](directories_comparison.md)|[Solution](solutions/directories_comparison.md) | Basic
-|It's alive!|Misc|[Exercise](host_status.md)|[Solution](solutions/host_status.md) | Intermediate
+|Hello World|Переменные|[Упражнение](hello_world.md)|[Решение](solutions/hello_world.md) | Базовый
+|Простая дата|Переменные|[Упражнение](basic_date.md)|[Решение](solutions/basic_date.md) | Базовый
+|Отличный день|Переменные|[Упражнение](great_day.md)|[Решение](solutions/great_day.md) | Базовый
+|Делители|Арифметика|[Упражнение](factors.md)|[Решение](solutions/factors.md) | Базовый
+|Проверка аргумента|Условные операторы|[Упражнение](argument_check.md)|[Решение](solutions/argument_check.md) | Базовый
+|Размер файлов|Циклы for|[Упражнение](files_size.md)|[Решение](solutions/files_size.md) | Базовый
+|Подсчёт символов|Ввод + циклы while|[Упражнение](count_chars.md)|[Решение](solutions/count_chars.md) | Базовый
+|Сумма|Функции|[Упражнение](sum.md)|[Решение](solutions/sum.md) | Базовый
+|Количество аргументов|Оператор case|[Упражнение](num_of_args.md)|[Решение](solutions/num_of_args.md) | Базовый
+|Пустые файлы|Разное|[Упражнение](empty_files.md)|[Решение](solutions/empty_files.md) | Базовый
+|Сравнение каталогов|Разное|[Упражнение](directories_comparison.md)|[Решение](solutions/directories_comparison.md) | Базовый
+|Живой!|Разное|[Упражнение](host_status.md)|[Решение](solutions/host_status.md) | Средний
 
-## Shell Scripting - Self Assessment
+## Скрипты на Shell — самопроверка
 
 <details>
-<summary>What does this line in shell scripts means?: <code>#!/bin/bash</code></summary><br><b>
+<summary>Что означает эта строка в shell-скриптах: <code>#!/bin/bash</code>?</summary><br><b>
 
 
-`#!/bin/bash` is She-bang
+`#!/bin/bash` — это шебанг (She-bang)
 
-/bin/bash is the most common shell used as default shell for user login of the linux system. The shell’s name is an acronym for Bourne-again shell. Bash can execute the vast majority of scripts and thus is widely used because it has more features, is well developed and better syntax.
+/bin/bash — наиболее распространённая оболочка, используемая как оболочка по умолчанию при входе пользователя в систему Linux. Название оболочки — акроним от Bourne-again shell. Bash может выполнять подавляющее большинство скриптов и поэтому широко используется: у него больше возможностей, он хорошо развит и имеет более удобный синтаксис.
 
 </b></details>
 
 <details>
-<summary>True or False? When a certain command/line fails in a shell script, the shell script, by default, will exit and stop running</summary><br><b>
+<summary>Верно или нет? Когда определённая команда/строка в shell-скрипте завершается с ошибкой, скрипт по умолчанию завершится и прекратит выполнение</summary><br><b>
 
-Depends on the language and settings used.
-If the script is a bash script then this statement is true. When a script written in Bash fails to run a certain command it will keep running and will execute all other commands mentioned after the command which failed.
+Зависит от используемого языка и настроек.
+Если это скрипт bash, то это утверждение верно. Когда скрипту на Bash не удаётся выполнить определённую команду, он продолжает работу и выполняет все остальные команды, указанные после команды, завершившейся с ошибкой.
 
-Most of the time we might actually want the opposite to happen. In order to make Bash exist when a specific command fails, use 'set -e' in your script.
+Чаще всего на самом деле нужно обратное. Чтобы Bash завершал работу при сбое определённой команды, используйте в скрипте 'set -e'.
 </b></details>
 
 <details>
-<summary>What do you tend to include in every script you write?</summary><br><b>
+<summary>Что вы обычно включаете в каждый скрипт, который пишете?</summary><br><b>
 
-Few example:
+Несколько примеров:
 
-  * Comments on how to run it and/or what it does
-  * If a shell script, adding "set -e" since I want the script to exit if a certain command failed
+  * Комментарии о том, как его запускать и/или что он делает
+  * Если это shell-скрипт — добавление "set -e", так как нужно, чтобы скрипт завершался при сбое определённой команды
 
-You can have an entirely different answer. It's based only on your experience and preferences.
+Ответ может быть совершенно другим. Он основан только на вашем опыте и предпочтениях.
 </b></details>
 
 <details>
-<summary>Today we have tools and technologies like Ansible, Puppet, Chef, ... Why would someone still use shell scripting?</summary><br><b>
+<summary>Сегодня есть такие инструменты и технологии, как Ansible, Puppet, Chef, ... Зачем кому-то до сих пор использовать скрипты на shell?</summary><br><b>
 
-  * Speed
-  * Flexibility
-  * The module we need doesn't exist (perhaps a weak point because most CM technologies allow to use what is known as "shell" module)
-  * We are delivering the scripts to customers who don't have access to the public network and don't necessarily have Ansible installed on their systems.
+  * Скорость
+  * Гибкость
+  * Нужного модуля не существует (возможно, слабый аргумент, так как большинство CM-технологий позволяют использовать так называемый модуль "shell")
+  * Скрипты поставляются заказчикам, у которых нет доступа к публичной сети и не обязательно установлен Ansible.
 </b></details>
 
-#### Shell Scripting - Variables
+#### Скрипты на Shell — переменные
 
 <details>
-<summary>How to define a variable with the value "Hello World"?</summary><br><b>
+<summary>Как определить переменную со значением "Hello World"?</summary><br><b>
 
 `HW="Hello World`
 </b></details>
 
 <details>
-<summary>How to define a variable with the value of the current date?</summary><br><b>
+<summary>Как определить переменную со значением текущей даты?</summary><br><b>
 
 `DATE=$(date)`
 </b></details>
 
 <details>
-<summary>How to print the first argument passed to a script?</summary><br><b>
+<summary>Как вывести первый аргумент, переданный скрипту?</summary><br><b>
 
 `echo $1`
 </b></details>
 
 <details>
-<summary>Write a script to print "yay" unless an argument was passed and then print that argument</summary><br><b>
+<summary>Напишите скрипт, который выводит "yay", а если передан аргумент — выводит этот аргумент</summary><br><b>
 
 ```
 echo "${1:-yay}"
@@ -87,7 +87,7 @@ echo "${1:-yay}"
 </b></details>
 
 <details>
-<summary>What would be the output of the following script?
+<summary>Каким будет вывод следующего скрипта?
 
 ```
 #!/usr/bin/env bash
@@ -104,7 +104,7 @@ Michelangelo
 </b></details>
 
 <details>
-<summary>Explain what would be the result of each command:
+<summary>Объясните, каким будет результат каждой команды:
 
   * <code>echo $0</code>
   * <code>echo $?</code>
@@ -113,24 +113,24 @@ Michelangelo
 </b></details>
 
 <details>
-<summary>What is <code>$@</code>?</summary><br><b>
+<summary>Что такое <code>$@</code>?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is difference between <code>$@</code> and <code>$*</code>?</summary><br><b>
+<summary>В чём разница между <code>$@</code> и <code>$*</code>?</summary><br><b>
 
-`$@` is an array of all the arguments passed to the script
-`$*` is a single string of all the arguments passed to the script
+`$@` — массив всех аргументов, переданных скрипту
+`$*` — одна строка из всех аргументов, переданных скрипту
 </b></details>
 
 <details>
-<summary>How do you get input from the user in shell scripts?</summary><br><b>
+<summary>Как получить ввод от пользователя в shell-скриптах?</summary><br><b>
 
-Using the keyword <code>read</code> so for example <code>read x</code> will wait for user input and will store it in the variable x.
+С помощью ключевого слова <code>read</code>: например, <code>read x</code> будет ждать ввода пользователя и сохранит его в переменной x.
 </b></details>
 
 <details>
-<summary>How to compare variables length?</summary><br><b>
+<summary>Как сравнить длину переменных?</summary><br><b>
 
 ```
 if [ ${#1} -ne ${#2} ]; then
@@ -138,18 +138,18 @@ if [ ${#1} -ne ${#2} ]; then
 ```
 </b></details>
 
-#### Shell Scripting - Conditionals
+#### Скрипты на Shell — условные операторы
 
 <details>
-<summary>Explain conditionals and demonstrate how to use them</summary><br><b>
+<summary>Объясните, что такое условные операторы, и продемонстрируйте, как их использовать</summary><br><b>
 </b></details>
 
 <details>
-<summary>In shell scripting, how to negate a conditional?</summary><br><b>
+<summary>Как в скриптах на shell инвертировать условие?</summary><br><b>
 </b></details>
 
 <details>
-<summary>In shell scripting, how to check if a given argument is a number?</summary><br><b>
+<summary>Как в скриптах на shell проверить, является ли переданный аргумент числом?</summary><br><b>
 
 ```
 regex='^[0-9]+$'
@@ -158,50 +158,50 @@ if [[ ${var//*.} =~ $regex ]]; then
 ```
 </b></details>
 
-#### Shell Scripting - Arithmetic Operations
+#### Скрипты на Shell — арифметические операции
 
 <details>
-<summary>How to perform arithmetic operations on numbers?</summary><br><b>
+<summary>Как выполнять арифметические операции над числами?</summary><br><b>
 
-One way: `$(( 1 + 2 ))`
-Another way: `expr 1 + 2`
+Один способ: `$(( 1 + 2 ))`
+Другой способ: `expr 1 + 2`
 </b></details>
 
 <details>
-<summary>How to perform arithmetic operations on numbers?</summary><br><b>
+<summary>Как выполнять арифметические операции над числами?</summary><br><b>
 </b></details>
 
 <details>
-<summary>How to check if a given number has 4 as a factor?</summary><br><b>
+<summary>Как проверить, является ли 4 делителем заданного числа?</summary><br><b>
 
 `if [ $(($1 % 4)) -eq 0 ]; then`
 </b></details>
 
-#### Shell Scripting - Loops
+#### Скрипты на Shell — циклы
 
 <details>
-<summary>What is a loop? What types of loops are you familiar with?</summary><br><b>
+<summary>Что такое цикл? С какими типами циклов вы знакомы?</summary><br><b>
 </b></details>
 
 <details>
-<summary>Demonstrate how to use loops</summary><br><b>
+<summary>Продемонстрируйте, как использовать циклы</summary><br><b>
 </b></details>
 
-#### Shell Scripting - Troubleshooting
+#### Скрипты на Shell — устранение неполадок
 
 <details>
-<summary>How do you debug shell scripts?</summary><br><b>
+<summary>Как отлаживать shell-скрипты?</summary><br><b>
 
-Answer depends on the language you are using for writing your scripts. If Bash is used for example then:
+Ответ зависит от языка, на котором пишутся скрипты. Если, например, используется Bash, то:
 
-  * Adding -x to the script I'm running in Bash
-  * Old good way of adding echo statements
+  * Добавить -x к скрипту, запускаемому в Bash
+  * Старый добрый способ — добавить инструкции echo
 
-If Python, then using pdb is very useful.
+Если Python, то очень полезно использовать pdb.
 </b></details>
 
 <details>
-<summary>Running the following bash script, we don't get 2 as a result, why?
+<summary>При выполнении следующего скрипта bash мы не получаем в результате 2. Почему?
 
 ```
 x = 2
@@ -209,56 +209,55 @@ echo $x
 ```
 </summary><br><b>
 
-Should be `x=2`
+Должно быть `x=2`
 </b></details>
 
-#### Shell Scripting - Substring
+#### Скрипты на Shell — подстроки
 
 <details>
-<summary>How to extract everything after the last dot in a string?</summary><br><b>
+<summary>Как извлечь всё, что идёт после последней точки в строке?</summary><br><b>
 
 `${var//*.}`
 </b></details>
 
 <details>
-<summary>How to extract everything before the last dot in a string?</summary><br><b>
+<summary>Как извлечь всё, что идёт до последней точки в строке?</summary><br><b>
 
 ${var%.*}
 </b></details>
 
-#### Shell Scripting - Misc
+#### Скрипты на Shell — разное
 
 <details>
-<summary>Generate 8 digit random number</summary><br><b>
+<summary>Сгенерируйте случайное 8-значное число</summary><br><b>
 
 shuf -i 9999999-99999999 -n 1
 </b></details>
 
 <details>
-<summary>Can you give an example to some Bash best practices?</summary><br><b>
+<summary>Приведите примеры лучших практик (best practices) Bash</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the ternary operator? How do you use it in bash?</summary><br><b>
+<summary>Что такое тернарный оператор? Как его использовать в bash?</summary><br><b>
 
-A short way of using if/else. An example:
+Короткая форма if/else. Пример:
 
 [[ $a = 1 ]] && b="yes, equal" || b="nope"
 </b></details>
 
 <details>
-<summary>What does the following code do and when would you use it?
+<summary>Что делает следующий код и когда его стоит использовать?
 
 <code>diff <(ls /tmp) <(ls /var/tmp)</code>
 
 </summary><br>
-It is called 'process substitution'. It provides a way to pass the output of a command to another command when using a pipe <code>|</code> is not possible. It can be used when a command does not support <code>STDIN</code> or you need the output of multiple commands.
+Это называется «подстановкой процессов» (process substitution). Она позволяет передать вывод одной команды другой команде, когда использовать конвейер <code>|</code> невозможно. Её можно применять, когда команда не поддерживает <code>STDIN</code> или нужен вывод нескольких команд.
 https://superuser.com/a/1060002/167769
 </details>
 
 <details>
-<summary>What are you using for testing shell scripts?</summary><br><b>
+<summary>Что вы используете для тестирования shell-скриптов?</summary><br><b>
 
 bats
 </b></details>
-

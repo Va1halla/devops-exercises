@@ -1,30 +1,30 @@
-# My First VPC
+# Мой первый VPC
 
-## Objectives
+## Цели
 
-1. Create a new VPC
-   1.  It should have a CIDR that supports using at least 60,000 hosts
-   2.  It should be named "exercise-vpc"
+1. Создать новый VPC
+   1.  Его CIDR должен позволять использовать не менее 60 000 хостов
+   2.  Он должен называться "exercise-vpc"
 
-## Solution
+## Решение
 
-### Console
+### Консоль
 
-1. Under "Virtual Private Cloud" click on "Your VPCs"
-2. Click on "Create VPC"
-3. Insert a name - "exercise-vpc"
-4. Insert IPv4 CIDR block: 10.0.0.0/16
-5. Keep "Tenancy" at Default
-6. Click on "Create VPC"
+1. В разделе "Virtual Private Cloud" нажать "Your VPCs"
+2. Нажать "Create VPC"
+3. Ввести имя — "exercise-vpc"
+4. Ввести IPv4 CIDR block: 10.0.0.0/16
+5. Оставить "Tenancy" в значении Default
+6. Нажать "Create VPC"
 
 ### Terraform
 
-Click [here](terraform/main.tf) to view the solution
+Нажмите [здесь](terraform/main.tf), чтобы посмотреть решение
 
 ### Pulumi - Python
 
-Click [here](pulumi/__main__.py) to view the solution
+Нажмите [здесь](pulumi/__main__.py), чтобы посмотреть решение
 
-### Verify Solution
+### Проверка решения
 
-To verify you've create the VPC, you can run: `aws ec2 describe-vpcs -filters Name=tag:Name,Values=exercise-vpc`
+Чтобы убедиться, что VPC создан, можно выполнить: `aws ec2 describe-vpcs -filters Name=tag:Name,Values=exercise-vpc`

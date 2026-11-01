@@ -1,13 +1,13 @@
-## Type Hinting 101 - Solution
+## Аннотации типов 101 — решение
 
-Apply type hinting for each one of the following variables:
+Добавить аннотации типов для каждой из следующих переменных:
 
-1. `x` is a string
-2. `y` is an integer
-3. `z` is a list of strings
-4. `omela` is a function that takes two arguments, both strings and it also returns a string
+1. `x` — строка
+2. `y` — целое число
+3. `z` — список строк
+4. `omela` — функция, которая принимает два аргумента, оба строки, и также возвращает строку
 
-### Solution
+### Решение
 
 1. `x: str`
 2. `y: int`

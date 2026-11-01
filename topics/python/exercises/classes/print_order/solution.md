@@ -1,8 +1,8 @@
-# Print Order
+# Порядок вывода
 
-## Objectives
+## Цели
 
-1. What would be the output of the following code?
+1. Каким будет вывод следующего кода?
 
 ```python
 print(1)
@@ -18,7 +18,7 @@ car1 = Car("red")
 car2 = Car("green")
 ```
 
-## Solution
+## Решение
 
 1.
 ```
@@ -30,4 +30,4 @@ car2 = Car("green")
 3
 ```
 
-The reason 3 is printed only at the end is because function body isn't executed when it's defined, while class body IS executed when it's defined.
+3 выводится только в конце, потому что тело функции не выполняется при её определении, а тело класса ВЫПОЛНЯЕТСЯ при определении.

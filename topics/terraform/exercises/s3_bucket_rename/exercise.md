@@ -1,9 +1,9 @@
-# Rename S3 Bucket
+# Переименование S3-бакета
 
-## Requirements
+## Требования
 
-* An existing S3 bucket tracked by Terraform.
-If you don't have it, you can use the following block and run `terraform apply`:
+* Существующий S3-бакет (bucket), отслеживаемый Terraform.
+Если его нет, можно использовать следующий блок и выполнить `terraform apply`:
 
 ```terraform
 resource "aws_s3_bucket" "some_bucket" {
@@ -11,12 +11,12 @@ resource "aws_s3_bucket" "some_bucket" {
 }
 ```
 
-Attention: Since S3 buckets are globally unique, you will likely have to rename the bucket as someone else might have named it that way already.
+Внимание: поскольку имена S3-бакетов глобально уникальны, скорее всего, придётся переименовать бакет, так как кто-то другой мог уже занять это имя.
 
-## Objectives
+## Задачи
 
-1. Rename an existing S3 bucket and make sure it's still tracked by Terraform
+1. Переименовать существующий S3-бакет и убедиться, что он по-прежнему отслеживается Terraform
 
-## Solution
+## Решение
 
-Click [here to view the solution](solution.md)
+Нажмите [здесь, чтобы посмотреть решение](solution.md)

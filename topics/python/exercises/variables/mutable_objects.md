@@ -1,6 +1,6 @@
-## Mutable Objects
+## Изменяемые объекты
 
-1. What would be the output of the following program? explain
+1. Каким будет вывод следующей программы? Объясните
 
 ```
 x = [1, 2 ,3]
@@ -12,6 +12,6 @@ print(x)
 print(y)
 ```
 
-### Solution
+### Решение
 
-Click [here](solutions/variables/mutable_objects.md) to view the solution
+Нажмите [здесь](solutions/variables/mutable_objects.md), чтобы посмотреть решение
